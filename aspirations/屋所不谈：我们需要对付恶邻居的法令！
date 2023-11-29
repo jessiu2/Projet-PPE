@@ -1,0 +1,2560 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#">
+<head>
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="//www.edgeprop.my">
+<link rel="preconnect" href="//www.edgeprop.my">
+<link rel="dns-prefetch" href="//media.edgeprop.my">
+<link rel="preconnect" href="//media.edgeprop.my">
+<link rel="profile" href="https://www.w3.org/1999/xhtml/vocab" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="msvalidate.01" content="C0DC3E05676EF601517F4390C4C165C5" />
+<meta property="fb:pages" content="278966563256" />
+<meta property="fb:app_id" content="327074074598462" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="twitter:site" content="@myedgeprop" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Edgeprop.my" />
+<meta property="og:url" content="https://www.edgeprop.my/content/1785882/%E5%B1%8B%E6%89%80%E4%B8%8D%E8%B0%88%EF%BC%9A%E6%88%91%E4%BB%AC%E9%9C%80%E8%A6%81%E5%AF%B9%E4%BB%98%E6%81%B6%E9%82%BB%E5%B1%85%E7%9A%84%E6%B3%95%E4%BB%A4%EF%BC%81" />
+<meta property="og:image" content="https://media.edgeprop.my/s3fs-public/styles/newsthumbnails/public/field/image/hell_1_1.jpg" />
+<meta property="og:description" content="如今网络发达，网上有大量资讯、指南、文章、工具和清单助您选购梦想家园。尽管如此，在做购买决定前，还是..." />
+<meta property="og:title" content="屋所不谈：我们需要对付恶邻居的法令！" />
+<meta name="twitter:image:src" content="https://media.edgeprop.my/s3fs-public/styles/newsthumbnails/public/field/image/hell_1_1.jpg" />
+<meta name="twitter:description" content="如今网络发达，网上有大量资讯、指南、文章、工具和清单助您选购梦想家园。尽管如此，在做购买决定前，还是..." />
+<meta name="robot" content="index,follow" />
+<meta name="twitter:title" content="屋所不谈：我们需要对付恶邻居的法令！" />
+<meta name="twitter:card" content="如今网络发达，网上有大量资讯、指南、文章、工具和清单助您选购梦想家园。尽管如此，在做购买决定前，还是..." />
+<meta itemprop="image" content="https://media.edgeprop.my/s3fs-public/styles/newsthumbnails/public/field/image/hell_1_1.jpg" />
+<meta itemprop="description" content="如今网络发达，网上有大量资讯、指南、文章、工具和清单助您选购梦想家园。尽管如此，在做购买决定前，还是..." />
+<meta itemprop="name" content="屋所不谈：我们需要对付恶邻居的法令！" />
+<meta name="image" content="https://media.edgeprop.my/s3fs-public/styles/newsthumbnails/public/field/image/hell_1_1.jpg" />
+<meta name="description" content="如今网络发达，网上有大量资讯、指南、文章、工具和清单助您选购梦想家园。尽管如此，在做购买决定前，还是..." />
+<link rel="shortcut icon" href="https://media.edgeprop.my/E_White_32_0.png" type="image/png" />
+<title>屋所不谈：我们需要对付恶邻居的法令！ | EdgeProp.my</title>
+<link rel="search" type="application/opensearchdescription+xml" href="/search.xml" title="EdgeProp.my Search" />
+<style>
+@import url("https://www.edgeprop.my/modules/system/system.base.css?s45bzs");
+</style>
+<style>
+@import url("https://www.edgeprop.my/sites/all/modules/contrib/date/date_api/date.css?s45bzs");
+@import url("https://www.edgeprop.my/sites/all/modules/contrib/date/date_popup/themes/datepicker.1.7.css?s45bzs");
+@import url("https://www.edgeprop.my/modules/field/theme/field.css?s45bzs");
+@import url("https://www.edgeprop.my/modules/node/node.css?s45bzs");
+@import url("https://www.edgeprop.my/sites/all/modules/contrib/views/css/views.css?s45bzs");
+@import url("https://www.edgeprop.my/sites/all/modules/contrib/ckeditor/css/ckeditor.css?s45bzs");
+</style>
+<style>
+@import url("https://www.edgeprop.my/sites/all/modules/contrib/ctools/css/ctools.css?s45bzs");
+</style>
+<style>
+@import url("https://www.edgeprop.my/sites/all/themes/markone/vendor/bootstrap/css/bootstrap.min.css?s45bzs");
+@import url("https://www.edgeprop.my/sites/all/themes/markone/vendor/font-awesome/css/font-awesome.min.css?s45bzs");
+@import url("https://www.edgeprop.my/sites/all/themes/markone/vendor/ionicons/css/ionicons.min.css?s45bzs");
+@import url("https://www.edgeprop.my/sites/all/themes/markone/vendor/jquery.scrollbar/jquery.scrollbar.css?s45bzs");
+@import url("https://www.edgeprop.my/sites/all/themes/markone/vendor/owl.carousel/assets/owl.carousel.min.css?s45bzs");
+@import url("https://www.edgeprop.my/sites/all/themes/markone/vendor/404/404.css?s45bzs");
+@import url("https://www.edgeprop.my/sites/all/themes/markone/vendor/404/404-animate.css?s45bzs");
+@import url("https://www.edgeprop.my/sites/all/themes/markone/assets/css/style.css?s45bzs");
+@import url("https://www.edgeprop.my/sites/all/themes/markone/assets/css/hlogin_1506.css?s45bzs");
+</style>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>window.jQuery || document.write("<script src='/sites/all/modules/contrib/jquery_update/replace/jquery/1.10/jquery.min.js'>\x3C/script>")</script>
+<script src="https://www.edgeprop.my/misc/jquery-extend-3.4.0.js?v=1.10.2"></script>
+<script src="https://www.edgeprop.my/misc/jquery-html-prefilter-3.5.0-backport.js?v=1.10.2"></script>
+<script src="https://www.edgeprop.my/misc/jquery.once.js?v=1.2"></script>
+<script src="https://www.edgeprop.my/misc/drupal.js?s45bzs"></script>
+<script src="https://www.edgeprop.my/sites/all/themes/markone/assets/js/header_menu.js?s45bzs"></script>
+<script src="https://www.edgeprop.my/sites/all/modules/custom/api_connector/js/news-landing.js?s45bzs"></script>
+<script src="https://www.edgeprop.my/sites/all/modules/custom/api_connector/js/jquery.PrintArea.js?s45bzs"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+<script src="https://www.edgeprop.my/sites/all/modules/custom/api_connector/js/newspage.js?s45bzs"></script>
+<script src="https://www.edgeprop.my/sites/all/themes/markone/vendor/bootstrap/js/bootstrap.min.js?s45bzs"></script>
+<script src="https://www.edgeprop.my/sites/all/themes/markone/vendor/device.js/device.min.js?s45bzs"></script>
+<script src="https://www.edgeprop.my/sites/all/themes/markone/vendor/jquery-mousewheel/jquery.mousewheel.min.js?s45bzs"></script>
+<script src="https://www.edgeprop.my/sites/all/themes/markone/vendor/jquery.lazyload/jquery.lazyload.min.js?s45bzs"></script>
+<script src="https://www.edgeprop.my/sites/all/themes/markone/vendor/jquery.scrollbar/jquery.scrollbar.min.js?s45bzs"></script>
+<script src="https://www.edgeprop.my/sites/all/themes/markone/vendor/owl.carousel/owl.carousel.min.js?s45bzs"></script>
+<script src="https://www.edgeprop.my/sites/all/themes/markone/vendor/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js?s45bzs"></script>
+<script src="https://www.edgeprop.my/sites/all/themes/markone/vendor/sticky-kit/sticky-kit.min.js?s45bzs"></script>
+<script src="https://www.edgeprop.my/sites/all/themes/markone/assets/js/script.js?s45bzs"></script>
+<script src="https://www.edgeprop.my/sites/all/themes/markone/assets/js/dfp_main.js?s45bzs"></script>
+<script src="https://www.edgeprop.my/sites/all/themes/markone/assets/js/dfp_ros.js?s45bzs"></script>
+<script src="https://www.edgeprop.my/sites/all/themes/markone/assets/js/jquery.cookie.min.js?s45bzs"></script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"markone","theme_token":"2MAIxue5Jdlh5YL_26IKAWXS0WcwlJdpXI4Xg6Bz5OY","js":{"sites\/all\/themes\/bootstrap\/js\/bootstrap.js":1,"\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/1.10.2\/jquery.min.js":1,"0":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery-html-prefilter-3.5.0-backport.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/themes\/markone\/assets\/js\/header_menu.js":1,"sites\/all\/modules\/custom\/api_connector\/js\/news-landing.js":1,"sites\/all\/modules\/custom\/api_connector\/js\/jquery.PrintArea.js":1,"https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/ScrollMagic\/2.0.5\/ScrollMagic.min.js":1,"https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/ScrollMagic\/2.0.5\/plugins\/debug.addIndicators.min.js":1,"sites\/all\/modules\/custom\/api_connector\/js\/newspage.js":1,"sites\/all\/themes\/markone\/vendor\/bootstrap\/js\/bootstrap.min.js":1,"sites\/all\/themes\/markone\/vendor\/device.js\/device.min.js":1,"sites\/all\/themes\/markone\/vendor\/jquery-mousewheel\/jquery.mousewheel.min.js":1,"sites\/all\/themes\/markone\/vendor\/jquery.lazyload\/jquery.lazyload.min.js":1,"sites\/all\/themes\/markone\/vendor\/jquery.scrollbar\/jquery.scrollbar.min.js":1,"sites\/all\/themes\/markone\/vendor\/owl.carousel\/owl.carousel.min.js":1,"sites\/all\/themes\/markone\/vendor\/bootstrap-hover-dropdown\/bootstrap-hover-dropdown.min.js":1,"sites\/all\/themes\/markone\/vendor\/sticky-kit\/sticky-kit.min.js":1,"sites\/all\/themes\/markone\/assets\/js\/script.js":1,"sites\/all\/themes\/markone\/assets\/js\/dfp_main.js":1,"sites\/all\/themes\/markone\/assets\/js\/dfp_ros.js":1,"sites\/all\/themes\/markone\/assets\/js\/jquery.cookie.min.js":1},"css":{"modules\/system\/system.base.css":1,"sites\/all\/modules\/contrib\/date\/date_api\/date.css":1,"sites\/all\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"sites\/all\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/modules\/contrib\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/ctools.css":1,"sites\/all\/themes\/markone\/vendor\/bootstrap\/css\/bootstrap.min.css":1,"sites\/all\/themes\/markone\/vendor\/font-awesome\/css\/font-awesome.min.css":1,"sites\/all\/themes\/markone\/vendor\/ionicons\/css\/ionicons.min.css":1,"sites\/all\/themes\/markone\/vendor\/jquery.scrollbar\/jquery.scrollbar.css":1,"sites\/all\/themes\/markone\/vendor\/owl.carousel\/assets\/owl.carousel.min.css":1,"sites\/all\/themes\/markone\/vendor\/404\/404.css":1,"sites\/all\/themes\/markone\/vendor\/404\/404-animate.css":1,"sites\/all\/themes\/markone\/assets\/css\/style.css":1,"sites\/all\/themes\/markone\/assets\/css\/hlogin_1506.css":1}},"apicon":{"error":""},"bootstrap":{"anchorsFix":"0","anchorsSmoothScrolling":"0","formHasError":1,"popoverEnabled":1,"popoverOptions":{"animation":1,"html":0,"placement":"right","selector":"","trigger":"click","triggerAutoclose":1,"title":"","content":"","delay":0,"container":"body"},"tooltipEnabled":1,"tooltipOptions":{"animation":1,"html":0,"placement":"auto left","selector":"","trigger":"hover focus","delay":0,"container":"body"}}});</script>
+<script src="/sites/all/themes/markone/vendor/jQuery.dotdotdot/jquery.dotdotdot.min.js?opb5by"></script>
+
+<!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+    <![endif]-->
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-M7V9KJS');</script>
+
+
+<script src="https://www.googletagservices.com/tag/js/gpt.js"></script>
+<script type="text/javascript" src="https://www.googleadservices.com/pagead/conversion_async.js" charset="utf-8"></script>
+<meta name="google-site-verification" content="HfnmtTgNolfr4dlfvaiAeQHKRt0pmSX3o4lInmzUMzc" />
+
+
+<script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['TrovitAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://analytics.trovit.com/trovit-analytics.js','ta');
+    ta('init', 'my', 1, 'ba6e04b3adf49f200656760bad654155');
+    </script>
+
+</head>
+<body class="html not-front not-logged-in one-sidebar sidebar-second page-content page-content- page-content-1785882 page-content-屋所不谈：我们需要对付恶邻居的法令！ news-details-page isdesktop">
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M7V9KJS"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<div id="skip-link">
+<a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+</div>
+<style>
+body.page-content .entry-meta .em-author {
+  display:inline;
+}
+body.page-content .news-body.content h3,
+body.page-content .news-body.content h4{
+  padding-top: 0;
+    margin: 0;
+    padding-bottom: 10px;
+}
+</style>
+<div class="share-news-content in"><img class="ico" src="https://media.edgeprop.my/assets/icons/share-white-24.svg"> Share</div>
+<div class="share-news-content-box">
+<div class="share-item">
+<a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.edgeprop.my%2Fcontent%2F1785882%2F%25E5%25B1%258B%25E6%2589%2580%25E4%25B8%258D%25E8%25B0%2588%25EF%25BC%259A%25E6%2588%2591%25E4%25BB%25AC%25E9%259C%2580%25E8%25A6%2581%25E5%25AF%25B9%25E4%25BB%2598%25E6%2581%25B6%25E9%2582%25BB%25E5%25B1%2585%25E7%259A%2584%25E6%25B3%2595%25E4%25BB%25A4%25EF%25BC%2581" onclick="window.open(this.href, 'sharer-popup-facebook', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,left=370,top=115,width=626,height=438'); return false;">
+<i class="fa fa-facebook"></i>
+</a>
+<a href="https://twitter.com/share?url=http%3A%2F%2Fwww.edgeprop.my%2Fcontent%2F1785882%2F%25E5%25B1%258B%25E6%2589%2580%25E4%25B8%258D%25E8%25B0%2588%25EF%25BC%259A%25E6%2588%2591%25E4%25BB%25AC%25E9%259C%2580%25E8%25A6%2581%25E5%25AF%25B9%25E4%25BB%2598%25E6%2581%25B6%25E9%2582%25BB%25E5%25B1%2585%25E7%259A%2584%25E6%25B3%2595%25E4%25BB%25A4%25EF%25BC%2581&via=twitterdev&related=twitterapi%2Ctwitter&hashtags=EdgeProp.my%2CtheEdge&text=屋所不谈：我们需要对付恶邻居的法令！" onclick="window.open(this.href, 'sharer-popup-twitter', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,left=370,top=115,width=626,height=438'); return false;">
+<i class="fa fa-twitter"></i>
+</a>
+<a href="https://api.whatsapp.com/send?phone=&text=http%3A%2F%2Fwww.edgeprop.my%2Fcontent%2F1785882%2F%25E5%25B1%258B%25E6%2589%2580%25E4%25B8%258D%25E8%25B0%2588%25EF%25BC%259A%25E6%2588%2591%25E4%25BB%25AC%25E9%259C%2580%25E8%25A6%2581%25E5%25AF%25B9%25E4%25BB%2598%25E6%2581%25B6%25E9%2582%25BB%25E5%25B1%2585%25E7%259A%2584%25E6%25B3%2595%25E4%25BB%25A4%25EF%25BC%2581">
+<i class="fa fa-whatsapp"></i>
+</a>
+<a href="https://pinterest.com/pin/create/button/?url=http%3A%2F%2Fwww.edgeprop.my%2Fcontent%2F1785882%2F%25E5%25B1%258B%25E6%2589%2580%25E4%25B8%258D%25E8%25B0%2588%25EF%25BC%259A%25E6%2588%2591%25E4%25BB%25AC%25E9%259C%2580%25E8%25A6%2581%25E5%25AF%25B9%25E4%25BB%2598%25E6%2581%25B6%25E9%2582%25BB%25E5%25B1%2585%25E7%259A%2584%25E6%25B3%2595%25E4%25BB%25A4%25EF%25BC%2581&media=https%3A%2F%2Fmedia.edgeprop.my%2Fs3fs-public%2Ffield%2Fimage%2Fhell_1_1.jpg&description=屋所不谈：我们需要对付恶邻居的法令！" onclick="window.open(this.href, 'sharer-popup-pinterest', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,left=370,top=115,width=626,height=438'); return false;">
+<i class="fa fa-pinterest"></i>
+</a>
+<a href="https://www.linkedin.com/shareArticle?mini=true&url=http://www.edgeprop.my/content/1785882/%E5%B1%8B%E6%89%80%E4%B8%8D%E8%B0%88%EF%BC%9A%E6%88%91%E4%BB%AC%E9%9C%80%E8%A6%81%E5%AF%B9%E4%BB%98%E6%81%B6%E9%82%BB%E5%B1%85%E7%9A%84%E6%B3%95%E4%BB%A4%EF%BC%81&title=屋所不谈：我们需要对付恶邻居的法令！&summary=屋所不谈：我们需要对付恶邻居的法令！&source=" onclick="window.open(this.href, 'sharer-popup-linkedin', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,left=370,top=115,width=626,height=438'); return false;" target="_blank">
+<i class="fa fa-linkedin"></i>
+</a>
+<a href="/cdn-cgi/l/email-protection#8ab5f9ffe8e0efe9feb7cfeeedefdaf8e5faa4e7f3aaf6aa6f3b016c030a6e3207623a026536106c021b6e312663160a622c0b6f25336e31126c0b3c6308316f3b0f6d100e6c391f6e312e65360bacebe7fab1e8e5eef3b7c2e3a6aafdebe4feaafee5aaf9e2ebf8efaafee2e3f9aae4effdf9aafde3fee2aaf3e5ffa4afbaceafbacbe2fefefaafb9cbafb8ccafb8ccfdfdfda4efeeedeffaf8e5faa4e7f3afb8cce9e5e4feefe4feafb8ccbbbdb2bfb2b2b8afb8ccafb8bfcfbfafb8bfc8bbafb8bfb2c8afb8bfcfbcafb8bfb2b3afb8bfb2baafb8bfcfbeafb8bfc8b2afb8bfb2ceafb8bfcfb2afb8bfc8baafb8bfb2b2afb8bfcfccafb8bfc8c9afb8bfb3cbafb8bfcfbcafb8bfb2b2afb8bfb3bbafb8bfcfbeafb8bfc8c8afb8bfcbc9afb8bfcfb3afb8bfb3c9afb8bfb2baafb8bfcfb2afb8bfcbbcafb8bfb2bbafb8bfcfbfafb8bfcbccafb8bfc8b3afb8bfcfbeafb8bfc8c8afb8bfb3b2afb8bfcfbcafb8bfb2bbafb8bfc8bcafb8bfcfb3afb8bfb2b8afb8bfc8c8afb8bfcfbfafb8bfc8bbafb8bfb2bfafb8bfcfbdafb8bfb3cbafb8bfb2beafb8bfcfbcafb8bfc8b9afb8bfb3bfafb8bfcfbeafb8bfc8c8afb8bfcbbeafb8bfcfccafb8bfc8c9afb8bfb2bb">
+<i class="fa fa-envelope"></i>
+</a>
+<a href="javascript:void(0);">
+<i class="fa fa-print"></i>
+</a>
+</div>
+</div>
+
+<div class="next_sto_full" id="div-gpt-ad-1697702276820-0">
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+        googletag.cmd.push(function() { googletag.display('div-gpt-ad-1697702276820-0'); });
+    </script>
+</div><div class="top-nav">
+<nav class="z-index-class-new nav-new navbar-new fixed-top-new navbar-light-new navbar-expand-lg-new">
+<div class="container-full-new header-mobile-view">
+<a target="_blank" href="https://esvcs.enginemailer.com/onlineform?id=%2FXbHcRtPZ5ZTQ3XlL61kug%3D%3D&sc=2DYbqUgUNt10kq2fV5oxwg%3D%3D"><div class="subs-news">Subscribe</div></a>
+<span class="navbar-brand-new">
+
+<a href="/"><img src="/sites/all/themes/markone/logo-new.png" height="30" class="d-inline-block align-top logo-mobile" alt="EdgeProp"></a>
+
+
+</span>
+<div class="navbar-collapse-new collapse" id="basic-navbar-nav">
+<div class="ml-auto-new navbar-nav-new">
+<div class="dropdown mega-dropdown">
+<a class="nav-link-new" role="button" id="buy" href="/buy">Buy</a>
+<div class="dropdown-menu" role="menu">
+<div class="container menu-container">
+<div class="row">
+<div class="col-xs-12 col-md-3 menu-sub-section">
+<span class="nav-header">Residential for sale</span>
+<a href="/buy/malaysia/all-landed" class="dropdown-item">Landed homes</a>
+<a href="/buy/malaysia/condominium-apartment" class="dropdown-item">Condominiums and apartments</a>
+<a href="/newlaunches" class="dropdown-item">New launches</a>
+<a href="/auction/malaysia/all-residential" class="dropdown-item">Auction homes</a>
+<a href="/transactions" class="dropdown-item">Recent transactions</a>
+<a href="https://vpex.edgeprop.my/" class="dropdown-item">Virtual Property Expo 2021</a>
+<a href="http://unbouncepages.com/homefinder" class="dropdown-item">Submit home finder request</a>
+
+</div>
+<div class="col-xs-12 col-md-3 menu-sub-section">
+<span class="nav-header">Commercial for sale</span>
+<a href="/buy/malaysia/all-commercial" class="dropdown-item">All commercial</a>
+<a href="/buy/malaysia/shop" class="dropdown-item">Shophouse</a>
+<a href="/buy/malaysia/office" class="dropdown-item">Office</a>
+<a href="/buy/malaysia/hotel-leisure" class="dropdown-item">Hotel / leisure</a>
+<a href="/buy/malaysia/commercial-complex" class="dropdown-item">Commercial complex</a>
+<a href="/buy/malaysia/commercial-others" class="dropdown-item">Others</a>
+</div>
+<div class="col-xs-12 col-md-3 menu-sub-section">
+<span class="nav-header">Industrial for sale</span>
+<a href="/buy/malaysia/all-industrial" class="dropdown-item">All industrial</a>
+<a href="/buy/malaysia/factory-warehouse" class="dropdown-item">Factory / warehouse</a>
+<a href="/buy/malaysia/industrial-land" class="dropdown-item">Industrial land</a>
+<a href="/buy/malaysia/industrial-others" class="dropdown-item">Others</a>
+<a href="/buy/malaysia/agricultural-land" class="dropdown-item">Agricultural land</a>
+</div>
+<div class="col-xs-12 col-md-3 menu-sub-section">
+<span class="nav-header">Resources</span>
+
+<a href="/homeadvisor" class="dropdown-item">EdgeProp HomeAdvisor Report</a>
+
+
+<a href="/rent-vs-buy-calculator" class="dropdown-item">Buy vs Rent calculator</a>
+<a href="http://unbouncepages.com/for-sale-by-owners/" class="dropdown-item">Sell my property</a>
+
+</div>
+<div class="col-xs-12 col-md-3 menu-sub-section menu-sub-section--no-title">
+<a href="/area-outlook" class="dropdown-item">Area Outlook</a>
+<a href="/projects" class="dropdown-item">Projects Directory</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="dropdown mega-dropdown">
+<a class="nav-link-new" role="button" id="Rent" href="/rent">Rent</a>
+<div class="dropdown-menu" aria-labelledby>
+<div class="container menu-container">
+<div class="row">
+<div class="col-xs-12 col-md-3 menu-sub-section">
+<span class="nav-header">Residential for rent</span>
+<a href="/rent/malaysia/all-landed" class="dropdown-item">Landed homes</a>
+<a href="/rent/malaysia/condominium-apartment" class="dropdown-item">Condominiums and apartments</a>
+<a href="#" class="dropdown-item">New launches by developers</a>
+</div>
+<div class="col-xs-12 col-md-3 menu-sub-section">
+<span class="nav-header">Commercial for rent</span>
+<a href="/rent/malaysia/condominium-apartment" class="dropdown-item">All commercial</a>
+<a href="/rent/malaysia/shop-house" class="dropdown-item">Shophouse</a>
+<a href="/rent/malaysia/office" class="dropdown-item">Office</a>
+<a href="/rent/malaysia/hotel-leisure" class="dropdown-item">Hotel / leisure</a>
+<a href="/rent/malaysia/commercial-complex" class="dropdown-item">Commercial complex</a>
+<a href="/rent/malaysia/commercial-others" class="dropdown-item">Others</a>
+<a href="/coworking" class="dropdown-item">Coworking space</a>
+</div>
+<div class="col-xs-12 col-md-3 menu-sub-section">
+<span class="nav-header">Industrial for rent</span>
+<a href="/rent/malaysia/all-industrial" class="dropdown-item">All industrial</a>
+<a href="/rent/malaysia/factory-warehouse" class="dropdown-item">Factory / warehouse</a>
+<a href="/rent/malaysia/industrial-land" class="dropdown-item">Industrial land</a>
+<a href="/rent/malaysia/industrial-others" class="dropdown-item">Others</a>
+</div>
+<div class="col-xs-12 col-md-3 menu-sub-section">
+<span class="nav-header">Resources</span>
+
+<a href="/rent-vs-buy-calculator" class="dropdown-item">Buy vs Rent calculator</a>
+<a href="/homeadvisor" class="dropdown-item">EdgeProp HomeAdvisor Report</a>
+
+<a href="/edge-reference-price" class="dropdown-item">Edge Reference Price</a>
+<a href="http://unbouncepages.com/for-sale-by-owners/" class="dropdown-item">Sell my property</a>
+
+</div>
+<div class="col-xs-12 col-md-3 menu-sub-section menu-sub-section--no-title">
+<a href="/area-outlook" class="dropdown-item">Area Outlook</a>
+<a href="/projects" class="dropdown-item">Projects Directory</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<a class="nav-link-new" role="button" id="start" href="/start" onclick="activeClass()">START</a>
+<a class="nav-link-new" role="button" id="newlaunches" href="/new-launches" onclick="activeClass()">New Launches</a>
+
+<div class="dropdown mega-dropdown">
+<a class="nav-link-new" role="button" id="agents" href="#">Find Agents</a>
+<div class="dropdown-menu" aria-labelledby>
+<div class="container menu-container">
+<div class="row justify-content-center">
+
+<div class="col-12 col-md-4 menu-agent">
+<span class="nav-header">I need an agent</span>
+<p>Looking to buy, sell or rent? Find an agent with the right local expertise!</p>
+<a href="/agents" class="btn btn-primary btn-agents">Find Agents</a>
+</div>
+<div class="col-12 col-md-4 menu-agent">
+<span class="nav-header">I'm an agent</span>
+<p>Looking for more exposure? Sign up as a PRO agent for only RM2.19 a day.</p>
+<a href="/login" class="btn btn-danger btn-agents">Login now</a>
+<a href="/pro-agents" class="btn btn-danger btn-agents">Become a pro agent</a>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<div class="dropdown mega-dropdown">
+<a class="nav-link-new" role="button" id="news" href="/news">News</a>
+<div class="dropdown-menu" aria-labelledby>
+<div class="container menu-container">
+<div class="row">
+<div class="col-xs-12 col-md-3 menu-sub-section">
+<span class="nav-header">Real estate news</span>
+<a href="/news/search?field_category_value=editorpick" class="dropdown-item">Editor's pick</a>
+<a href="/news/search?field_category_value=news" class="dropdown-item">Latest news</a>
+<a href="/news/search?field_category_value=indepth" class="dropdown-item">In Depth stories</a>
+<a href="/news/search?field_category_value=lifestyle" class="dropdown-item">Lifestyle stories</a>
+<a href="/edgeproptv" class="dropdown-item">Videos</a>
+</div>
+<div class="col-xs-12 col-md-3 menu-sub-section">
+<span class="nav-header">Narratives</span>
+<a href="/all-narratives/malaysia-property-industry" class="dropdown-item">Malaysia Property Industry</a>
+<a href="/all-narratives/the-pulse-on-companies" class="dropdown-item">The Pulse on Companies</a>
+<a href="/all-narratives/your-local-experts" class="dropdown-item">Your Local Experts</a>
+<a href="/all-narratives/guides" class="dropdown-item">Guides</a>
+</div>
+<div class="col-xs-12 col-md-3 menu-sub-section">
+<span class="nav-header">Events</span>
+<a href="/events" class="dropdown-item">Upcoming events</a>
+<a href="/awards2021" class="dropdown-item">Best Managed & Sustainable Property Awards 2021</a>
+<a href="/awards2020" class="dropdown-item">Best Managed & Sustainable Property Awards 2020</a>
+<a href="/awards2019" class="dropdown-item">Best Managed Property Awards 2019</a>
+<a href="https://alvin5420.wixsite.com/bma2018" class="dropdown-item" target="_blank">Best Managed Property Awards 2018</a>
+<a href="/property-award-2017" class="dropdown-item">Best Managed Property Awards 2017</a>
+</div>
+<div class="col-xs-12 col-md-3 menu-sub-section">
+<span class="nav-header">Resources</span>
+
+<a href="/homeadvisor" class="dropdown-item">EdgeProp HomeAdvisor Report</a>
+
+<a href="/edge-reference-price" class="dropdown-item">Edge Reference Price</a>
+<a href="/rent-vs-buy-calculator" class="dropdown-item">Buy vs Rent calculator</a>
+<a href="http://unbouncepages.com/for-sale-by-owners/" class="dropdown-item">Sell my property</a>
+
+</div>
+<div class="col-xs-12 col-md-3 menu-sub-section menu-sub-section--no-title">
+<a href="/area-outlook" class="dropdown-item">Area Outlook</a>
+<a href="/projects" class="dropdown-item">Projects Directory</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="dropdown mega-dropdown">
+<a class="nav-link-new" role="button" id="news-search" href="#">
+<div class="header-menu-wrap">
+<span class="header-search-mazada">
+<i class="fa fa-search" aria-hidden="true"></i>
+
+</span>
+
+</div> </a>
+<div class="dropdown-menu" aria-labelledby>
+<div class="container menu-container">
+
+<div class="col-8">
+<div class="search-form content">
+<input type="text" class="search-input news-keyword" value placeholder="Search news ...">
+<button class="search-news"><i class="fa fa-search" aria-hidden="true"></i></button>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+<div class="dropdown mega-dropdown">
+<a class="nav-link-new" role="button" id="news" href="#">Resources</a>
+<div class="dropdown-menu" aria-labelledby>
+<div class="container menu-container">
+<div class="row">
+<div class="col-12 col-md-3 menu-sub-section">
+<span class="nav-header">Calculators</span>
+
+
+<a href="/rent-vs-buy-calculator" class="dropdown-item">Buy vs Rent calculator</a>
+<a href="/loancheck" class="dropdown-item">Quick Loan Check</a>
+<a href="/home-loan-report" class="dropdown-item">Credit & Loan Eligibility Report</a>
+</div>
+<div class="col-12 col-md-3 menu-sub-section">
+<span class="nav-header">Research</span>
+<a href="/location-scan" class="dropdown-item">Location Scan</a>
+<a href="/homeadvisor" class="dropdown-item">EdgeProp HomeAdvisor Report</a>
+
+<a href="/area-outlook" class="dropdown-item">Area Outlook</a>
+<a href="/projects" class="dropdown-item">Projects Directory</a>
+
+</div>
+<div class="col-12 col-md-3 menu-sub-section">
+<span class="nav-header">Home Services</span>
+<a href="http://unbouncepages.com/for-sale-by-owners/" class="dropdown-item">Sell my property</a>
+<a href="http://unbouncepages.com/homefinder" class="dropdown-item">Submit home finder request</a>
+<a href="http://zing.my/" class="dropdown-item">Renovate my property</a>
+<a href="/broadband" class="dropdown-item">Exclusive Broadband Promo</a>
+</div>
+<div class="col-12 col-md-3 menu-sub-section">
+<span class="nav-header">Q&A</span>
+<a href="/tips/3" class="dropdown-item">Legal Q&A with Chris Tan</a>
+<a href="/tips/1" class="dropdown-item">Fengshui Q&A with Dato Joey Yap</a>
+</div>
+<div class="col-12 col-md-3 menu-sub-section">
+<a class="menu-title-link" href="/guides"><span class="nav-header">Guides</span></a>
+<a href="/guides/buying" class="dropdown-item">Buying</a>
+<a href="/guides/renting" class="dropdown-item">Renting</a>
+<a href="/guides/selling" class="dropdown-item">Selling</a>
+<a href="/guides/home-financing" class="dropdown-item">Home Financing</a>
+<a href="/guides/investing" class="dropdown-item">Investing</a>
+<a href="/guides/home-improvement" class="dropdown-item">Home Improvement</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div class="separator-class-new"></div>
+<a class="nav-link-new" role="button" id="login" href="/login">Login/Sign up</a>
+
+</div>
+</div>
+<div class="m-news-search">
+<span class="header-search-mazada">
+<i class="fa fa-search" aria-hidden="true"></i>
+<i class="fa fa-times" aria-hidden="true" style="display: none;"></i>
+</span>
+<div class="header-search-popup">
+<div class="search-form content">
+<input type="text" class="search-input news-keyword" value placeholder="Enter your keyword ...">
+<button class="search-news"><i class="fa fa-search" aria-hidden="true"></i></button>
+</div>
+</div>
+</div>
+<div class="mobile-header-items-new">
+<button type="button" id="sidebarCollapse-new" class="btn btn-menu-new" onclick="openSideBar()">
+<span class="ham-btn"></span>
+</button>
+</div>
+</div>
+</nav>
+</div>
+<div class="sidebar-component-new" id="sidebar-main" onclick="closeSideBar();">
+<nav id="sidebar-new" class="scroll-vertical-new">
+<div class="row no-gutters-new">
+<div class="col sidebar-main-new" onclick="event.stopPropagation()">
+<div class="row no-gutters-new sidebar-head-new">
+<div class="col-xs-2 sidebar-close-new" onclick="closeSideBar();">
+<i class="material-icons sidebar-close-button">close</i>
+
+</div>
+<div class="col-xs-10 sidebar-getstarted-new">
+<div class="float-right right-div-new">
+<a href="/login" type="button" class="btn btn-link-new btn-link-login-new">LOGIN</a> / <a href="/register" type="button" class="btn btn-link-new btn-link-signup-new">SIGNUP</a>
+</div>
+</div>
+</div>
+<div class="menu-group-new" id="list-tab" role="tablist">
+<div class="dropdown-new nav-item-new">
+<a aria-haspopup="true" aria-expanded="false" id="sidebar-dropdown-new" href="#" class="dropdown-toggle-new nav-link-new" role="button" onclick="dropDownShow(1)">Buy <span class="border-sm-menu"></span></a>
+<div aria-labelledby="sidebar-dropdown-new" id="1" class="dropdown-menu-new hide-menu-new" x-placement="bottom-start">
+<span class="nav-header">Residential for sale</span>
+<a href="/buy/malaysia/all-landed" class="dropdown-item-new">Landed homes</a>
+<a href="/buy/malaysia/condominium-apartment" class="dropdown-item-new">Condominiums and apartments</a>
+<a href="/new-launches" class="dropdown-item-new">New launches (PropMall)</a>
+<a href="/auction/malaysia/all-residential" class="dropdown-item-new">Auction homes</a>
+<a href="/transactions" class="dropdown-item-new">Recent transactions</a>
+<a href="https://vpex.edgeprop.my/" class="dropdown-item-new">Virtual Property Expo 2021</a>
+<a href="http://unbouncepages.com/homefinder" class="dropdown-item-new">Submit home finder request</a>
+
+<span class="nav-header">Commercial for sale</span>
+<a href="/buy/malaysia/all-commercial" class="dropdown-item-new">All commercial</a>
+<a href="/buy/malaysia/shop" class="dropdown-item-new">Shophouse</a>
+<a href="/buy/malaysia/office" class="dropdown-item-new">Office</a>
+<a href="/buy/malaysia/hotel-leisure" class="dropdown-item-new">Hotel / leisure</a>
+<a href="/buy/malaysia/commercial-complex" class="dropdown-item-new">Commercial complex</a>
+<a href="/buy/malaysia/commercial-others" class="dropdown-item-new">Others</a>
+<span class="nav-header">Industrial for sale</span>
+<a href="/buy/malaysia/all-industrial" class="dropdown-item-new">All industrial</a>
+<a href="/buy/malaysia/factory-warehouse" class="dropdown-item-new">Factory / warehouse</a>
+<a href="/buy/malaysia/industrial-land" class="dropdown-item-new">Industrial land</a>
+<a href="/buy/malaysia/industrial-others" class="dropdown-item-new">Others</a>
+<a href="/buy/malaysia/agricultural-land" class="dropdown-item-new">Agricultural land</a>
+<span class="nav-header">Resources</span>
+<a href="/homeadvisor" class="dropdown-item-new">EdgeProp HomeAdvisor Report</a>
+
+<a href="/edge-reference-price" class="dropdown-item-new">Edge Reference Price</a>
+<a href="/rent-vs-buy-calculator" class="dropdown-item-new">Buy vs Rent calculator</a>
+<a href="http://unbouncepages.com/for-sale-by-owners/" class="dropdown-item-new">Sell my property</a>
+
+</div>
+</div>
+<div class="dropdown-new nav-item-new">
+<a aria-haspopup="true" aria-expanded="false" id="sidebar-dropdown-new" href="#" class="dropdown-toggle-new nav-link-new" role="button" onclick="dropDownShow(2)">Rent<span class="border-sm-menu"></span></a>
+<div aria-labelledby="sidebar-dropdown" id="2" class="dropdown-menu-new hide-menu-new" x-placement="bottom-start">
+<span class="nav-header">Residential for rent</span>
+<a href="/rent/malaysia/all-landed" class="dropdown-item-new">Landed homes</a>
+<a href="/rent/malaysia/condominium-apartment" class="dropdown-item-new">Condominiums and apartments</a>
+<a href="/new-launches" class="dropdown-item-new">New launches by developers</a>
+<span class="nav-header">Commercial for rent</span>
+<a href="/rent/malaysia/all-commercial" class="dropdown-item-new">All commercial</a>
+<a href="/rent/malaysia/shop-house" class="dropdown-item-new">Shophouse</a>
+<a href="/rent/malaysia/office" class="dropdown-item-new">Office</a>
+<a href="/rent/malaysia/hotel-leisure" class="dropdown-item-new">Hotel / leisure</a>
+<a href="/rent/malaysia/commercial-complex" class="dropdown-item-new">Commercial complex</a>
+<a href="/rent/malaysia/commercial-others" class="dropdown-item-new">Others</a>
+<a href="/coworking" class="dropdown-item-new">Coworking space</a>
+<span class="nav-header">Industrial for rent</span>
+<a href="/rent/malaysia/all-industrial" class="dropdown-item-new">All industrial</a>
+<a href="/rent/malaysia/factory-warehouse" class="dropdown-item-new">Factory / warehouse</a>
+<a href="/rent/malaysia/industrial-land" class="dropdown-item-new">Industrial land</a>
+<a href="/rent/malaysia/industrial-others" class="dropdown-item-new">Others</a>
+<span class="nav-header">Resources</span>
+<a href="/homeadvisor" class="dropdown-item-new">EdgeProp HomeAdvisor Report</a>
+
+<a href="/edge-reference-price" class="dropdown-item-new">Edge Reference Price</a>
+<a href="/rent-vs-buy-calculator" class="dropdown-item-new">Buy vs Rent calculator</a>
+<a href="http://unbouncepages.com/for-sale-by-owners/" class="dropdown-item-new">Sell my property</a>
+
+</div>
+</div>
+
+<a class="menu-group-item-new menu-group-item-action menu-padding main-sm-menu" id="list-settings-list" data-toggle="list" href="/start" role="tab" aria-controls="settings">Start</a>
+<a class="menu-group-item-new menu-group-item-action menu-padding main-sm-menu" id="list-settings-list" data-toggle="list" href="/buy?new_launch=1" role="tab" aria-controls="settings">New Launches (PropMall)</a>
+
+<div class="dropdown-new nav-item-new">
+<a aria-haspopup="true" aria-expanded="false" id="sidebar-dropdown-new" href="#" class="dropdown-toggle-new nav-link-new" role="button" onclick="dropDownShow(3)">Find Agents <span class="border-sm-menu"></span></a>
+<div aria-labelledby="sidebar-dropdown" id="3" class="dropdown-menu-new hide-menu-new" x-placement="bottom-start">
+<span class="nav-header">I need an agent</span>
+<a href="/agents" class="dropdown-item-new">Find agents</a>
+<span class="nav-header">I'm an agent</span>
+<a href="/login" class="dropdown-item-new">Login now</a>
+<a href="/pro-agents" class="dropdown-item-new">Become a pro agent</a>
+</div>
+</div>
+<div class="dropdown-new nav-item-new">
+<a aria-haspopup="true" aria-expanded="false" id="sidebar-dropdown-new" href="#" class="dropdown-toggle-new nav-link-new" role="button" onclick="dropDownShow(4)">News <span class="border-sm-menu"></span></a>
+<div aria-labelledby="sidebar-dropdown" id="4" class="dropdown-menu-new hide-menu-new" x-placement="bottom-start">
+<span class="nav-header">Real estate news</span>
+<a href="/news" class="dropdown-item-new">News Home</a>
+<a href="/news/search?field_category_value=editorpick" class="dropdown-item-new">Editor's Pick</a>
+<a href="/news/search?field_category_value=news" class="dropdown-item-new">Latest News</a>
+<a href="/news/search?field_category_value=indepth" class="dropdown-item-new">In Depth Stories</a>
+<a href="/news/search?field_category_value=lifestyle" class="dropdown-item-new">Lifestyle Stories</a>
+<a href="/edgeproptv" class="dropdown-item-new">Videos</a>
+<span class="nav-header">Narratives</span>
+<a href="/all-narratives/malaysia-property-industry" class="dropdown-item-new">Malaysia Property Industry</a>
+<a href="/all-narratives/the-pulse-on-companies" class="dropdown-item-new">The Pulse on Companies</a>
+<a href="/all-narratives/your-local-experts" class="dropdown-item-new">Your Local Experts</a>
+<a href="/all-narratives/guides" class="dropdown-item-new">Guides</a>
+<span class="nav-header">Events</span>
+<a href="/events" class="dropdown-item-new">Upcoming events</a>
+<a href="/awards2021" class="dropdown-item-new m-long-menu">Best Managed & Sustainable Property Awards 2021</a>
+<a href="/awards2020" class="dropdown-item-new m-long-menu">Best Managed & Sustainable Property Awards 2020</a>
+<a href="/awards2019" class="dropdown-item-new">Best Managed Property Awards 2019</a>
+<a href="https://alvin5420.wixsite.com/bma2018" class="dropdown-item-new" target="_blank">Best Managed Property Awards 2018</a>
+<a href="/property-award-2017" class="dropdown-item-new">Best Managed Property Awards 2017</a>
+
+
+</div>
+</div>
+
+
+<div class="dropdown-new nav-item-new">
+<a aria-haspopup="true" aria-expanded="false" id="sidebar-dropdown-new" href="#" class="dropdown-toggle-new nav-link-new" role="button" onclick="dropDownShow(5)">Resources <span class="border-sm-menu"></span></a>
+<div aria-labelledby="sidebar-dropdown" id="5" class="dropdown-menu-new hide-menu-new" x-placement="bottom-start">
+<span class="nav-header">Calculators</span>
+<a href="/edge-reference-price" class="dropdown-item-new">Edge Reference Price</a>
+<a href="/rent-vs-buy-calculator" class="dropdown-item-new">Buy vs Rent calculator</a>
+<a href="/loancheck" class="dropdown-item-new">Quick Loan Check</a>
+<a href="/home-loan-report" class="dropdown-item-new">Credit & Loan Eligibility Report</a>
+<span class="nav-header">Research</span>
+<a href="/location-scan" class="dropdown-item-new">Location Scan</a>
+<a href="/homeadvisor" class="dropdown-item-new">EdgeProp HomeAdvisor Report</a>
+
+<a href="/area-outlook" class="dropdown-item-new">Area Outlook</a>
+<a href="/projects" class="dropdown-item-new">Projects Directory</a>
+
+<span class="nav-header">Home Services</span>
+<a href="http://unbouncepages.com/for-sale-by-owners/" class="dropdown-item-new">Sell my property</a>
+<a href="http://unbouncepages.com/homefinder" class="dropdown-item-new">Submit home finder request</a>
+<a href="http://zing.my/" class="dropdown-item-new">Renovate my property</a>
+<a href="/broadband" class="dropdown-item-new">Exclusive Broadband Promo</a>
+<span class="nav-header">Q&A</span>
+<a href="/tips/3" class="dropdown-item-new">Legal Q&A with Chris Tan</a>
+<a href="/tips/1" class="dropdown-item-new">Fengshui Q&A with Dato Joey Yap</a>
+<a class="menu-title-link" href="/guides"><span class="nav-header">Guides</span></a>
+<a href="/guides/buying" class="dropdown-item-new">Buying</a>
+<a href="/guides/renting" class="dropdown-item-new">Renting</a>
+<a href="/guides/selling" class="dropdown-item-new">Selling</a>
+<a href="/guides/home-financing" class="dropdown-item-new">Home Financing</a>
+<a href="/guides/investing" class="dropdown-item-new">Investing</a>
+<a href="/guides/home-improvement" class="dropdown-item-new">Home Improvement</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</div>
+<div class="news-content-wrapper">
+<div class="wrap news-wope-theme">
+<section class="leaderboard leaderboard-1">
+
+<div class="leaderboard-wrapper">
+<div id="block-block-31" class="block block-block clearfix">
+<div id="bigleaderboard">
+<span id="width" style="display:none"></span>
+<script>
+var _now = Date.now || function() { return new Date().getTime(); };
+  var _debounce = function(func, wait, immediate) {
+	var timeout;
+	return function() {
+		var context = this, args = arguments;
+		var later = function() {
+			timeout = null;
+			if (!immediate) func.apply(context, args);
+		};
+		var callNow = immediate && !timeout;
+		clearTimeout(timeout);
+		timeout = setTimeout(later, wait);
+		if (callNow) func.apply(context, args);
+	};
+};
+document.getElementById('width').innerHTML = window.innerWidth || document.documentElement.clientWidth;
+window.addEventListener("resize", _debounce(function() {
+    //console.log ("Doing refresh");
+    document.getElementById ("width").innerHTML = window.innerWidth || document.documentElement.clientWidth;
+    googletag.pubads().refresh([window.ProdBigLeaderboardSlot]);
+  }, 200)
+);
+</script>
+<div id="div-gpt-ad-1550817326746-0" class="wide-ad">
+<script>
+		googletag.cmd.push(function() { googletag.display('div-gpt-ad-1550817326746-0'); }); 
+		</script>
+</div>
+</div>
+<style>
+#width {display:none;}
+</style>
+</div> </div>
+
+</section>
+<script>
+	(function($){
+		$(document).on('scroll', function() {
+	        if ($(window).scrollTop() >= 300) {
+	           $('.header').addClass('headertotop');
+	           // console.log('headertotop appear');
+	        } else {
+	           $('.header.headertotop').removeClass('headertotop');
+	        }
+	    });
+	})(jQuery);
+</script> <div id="content-top">
+<div class="entry-heading cat-meta-line">
+<div class="entry-categories">
+<a href="/">Main</a>>&nbsp;&nbsp;
+<a href="/news" rel="category tag">NEWS</a>
+</div>
+<div class="cleared"></div>
+<h1 class="entry-title">
+屋所不谈：我们需要对付恶邻居的法令！ </h1>
+<div class="entry-meta meta-left">
+<a class="em-author" href="/news/author?name=Datuk Chang Kim Loong & Pang Saw Pin " title="Posts by Datuk Chang Kim Loong & Pang Saw Pin " rel="author" target="_blank">Datuk Chang Kim Loong & Pang Saw Pin </a> <span class="em-date">January 14, 2021 | <span class="news-timestamp">Updated 2 years ago</span></span>
+</div>
+<div class="top2-entry-post-share meta-right">
+<div class="wope-social-share theme_2022">
+<a class="round-i-media" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.edgeprop.my%2Fcontent%2F1785882%2F%25E5%25B1%258B%25E6%2589%2580%25E4%25B8%258D%25E8%25B0%2588%25EF%25BC%259A%25E6%2588%2591%25E4%25BB%25AC%25E9%259C%2580%25E8%25A6%2581%25E5%25AF%25B9%25E4%25BB%2598%25E6%2581%25B6%25E9%2582%25BB%25E5%25B1%2585%25E7%259A%2584%25E6%25B3%2595%25E4%25BB%25A4%25EF%25BC%2581" onclick="window.open(this.href, 'sharer-popup-facebook', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,left=370,top=115,width=626,height=438'); return false;">
+
+<span class="fb"></span>
+</a>
+<a class="round-i-media" href="https://twitter.com/share?url=http%3A%2F%2Fwww.edgeprop.my%2Fcontent%2F1785882%2F%25E5%25B1%258B%25E6%2589%2580%25E4%25B8%258D%25E8%25B0%2588%25EF%25BC%259A%25E6%2588%2591%25E4%25BB%25AC%25E9%259C%2580%25E8%25A6%2581%25E5%25AF%25B9%25E4%25BB%2598%25E6%2581%25B6%25E9%2582%25BB%25E5%25B1%2585%25E7%259A%2584%25E6%25B3%2595%25E4%25BB%25A4%25EF%25BC%2581&via=twitterdev&related=twitterapi%2Ctwitter&hashtags=EdgeProp.my%2CtheEdge&text=屋所不谈：我们需要对付恶邻居的法令！" onclick="window.open(this.href, 'sharer-popup-twitter', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,left=370,top=115,width=626,height=438'); return false;">
+<span class="twitter"></span>
+</a>
+<a class="round-i-media" href="https://api.whatsapp.com/send?phone=&text=http%3A%2F%2Fwww.edgeprop.my%2Fcontent%2F1785882%2F%25E5%25B1%258B%25E6%2589%2580%25E4%25B8%258D%25E8%25B0%2588%25EF%25BC%259A%25E6%2588%2591%25E4%25BB%25AC%25E9%259C%2580%25E8%25A6%2581%25E5%25AF%25B9%25E4%25BB%2598%25E6%2581%25B6%25E9%2582%25BB%25E5%25B1%2585%25E7%259A%2584%25E6%25B3%2595%25E4%25BB%25A4%25EF%25BC%2581">
+
+<span class="whatsapp"></span>
+</a>
+<a class="round-i-media" href="https://pinterest.com/pin/create/button/?url=http%3A%2F%2Fwww.edgeprop.my%2Fcontent%2F1785882%2F%25E5%25B1%258B%25E6%2589%2580%25E4%25B8%258D%25E8%25B0%2588%25EF%25BC%259A%25E6%2588%2591%25E4%25BB%25AC%25E9%259C%2580%25E8%25A6%2581%25E5%25AF%25B9%25E4%25BB%2598%25E6%2581%25B6%25E9%2582%25BB%25E5%25B1%2585%25E7%259A%2584%25E6%25B3%2595%25E4%25BB%25A4%25EF%25BC%2581&media=https%3A%2F%2Fmedia.edgeprop.my%2Fs3fs-public%2Ffield%2Fimage%2Fhell_1_1.jpg&description=屋所不谈：我们需要对付恶邻居的法令！" onclick="window.open(this.href, 'sharer-popup-pinterest', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,left=370,top=115,width=626,height=438'); return false;">
+
+<span class="pinterest"></span>
+</a>
+<a class="round-i-media" href="https://www.linkedin.com/shareArticle?mini=true&url=http://www.edgeprop.my/content/1785882/%E5%B1%8B%E6%89%80%E4%B8%8D%E8%B0%88%EF%BC%9A%E6%88%91%E4%BB%AC%E9%9C%80%E8%A6%81%E5%AF%B9%E4%BB%98%E6%81%B6%E9%82%BB%E5%B1%85%E7%9A%84%E6%B3%95%E4%BB%A4%EF%BC%81&title=屋所不谈：我们需要对付恶邻居的法令！&summary=屋所不谈：我们需要对付恶邻居的法令！&source=" onclick="window.open(this.href, 'sharer-popup-linkedin', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,left=370,top=115,width=626,height=438'); return false;" target="_blank">
+
+<span class="linkedin"></span>
+</a>
+<a class="round-i-media" href="/cdn-cgi/l/email-protection#85baf6f0e7efe0e6f1b8c0e1e2e0d5f7eaf5abe8fca5f9a560340e630c05613d086d350d6a391f630d14613e296c19056d2304602a3c613e1d6304336c073e603400621f01633610613e216a3904a3e4e8f5bee7eae1fcb8cdeca9a5f2e4ebf1a5f1eaa5f6ede4f7e0a5f1edecf6a5ebe0f2f6a5f2ecf1eda5fceaf0aba0b5c1a0b5c4edf1f1f5a0b6c4a0b7c3a0b7c3f2f2f2abe0e1e2e0f5f7eaf5abe8fca0b7c3e6eaebf1e0ebf1a0b7c3b4b2bdb0bdbdb7a0b7c3a0b7b0c0b0a0b7b0c7b4a0b7b0bdc7a0b7b0c0b3a0b7b0bdbca0b7b0bdb5a0b7b0c0b1a0b7b0c7bda0b7b0bdc1a0b7b0c0bda0b7b0c7b5a0b7b0bdbda0b7b0c0c3a0b7b0c7c6a0b7b0bcc4a0b7b0c0b3a0b7b0bdbda0b7b0bcb4a0b7b0c0b1a0b7b0c7c7a0b7b0c4c6a0b7b0c0bca0b7b0bcc6a0b7b0bdb5a0b7b0c0bda0b7b0c4b3a0b7b0bdb4a0b7b0c0b0a0b7b0c4c3a0b7b0c7bca0b7b0c0b1a0b7b0c7c7a0b7b0bcbda0b7b0c0b3a0b7b0bdb4a0b7b0c7b3a0b7b0c0bca0b7b0bdb7a0b7b0c7c7a0b7b0c0b0a0b7b0c7b4a0b7b0bdb0a0b7b0c0b2a0b7b0bcc4a0b7b0bdb1a0b7b0c0b3a0b7b0c7b6a0b7b0bcb0a0b7b0c0b1a0b7b0c7c7a0b7b0c4b1a0b7b0c0c3a0b7b0c7c6a0b7b0bdb4">
+
+<span class="email"></span>
+</a>
+<a class="printPDF i-ss round-i-media" href="javascript:void(0);">
+
+<span class="print"></span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="main-content">
+<div id="article0" class="news-article news-details">
+<img id="prlogo" src="https://media.edgeprop.my/assets/logo/logo-new-sm.png" alt="EdgeProp" style="display: none">
+
+<div id="print-title" style="display: none">屋所不谈：我们需要对付恶邻居的法令！</div>
+<div id="meta-print" style="display: none">
+<a class="em-author" href="/news/author?name=Datuk Chang Kim Loong & Pang Saw Pin " title="Posts by Datuk Chang Kim Loong & Pang Saw Pin " rel="author" target="_blank">Datuk Chang Kim Loong & Pang Saw Pin </a> <span>January 14, 2021 |
+<span>Updated 2 years ago</span>
+</span>
+</div>
+
+<div class="billboard">
+
+<div id="div-gpt-ad-1495706668372-0" class="wide-ad"></div>
+</div>
+<div class="news-body content">
+<p>&nbsp;</p>
+<p><meta charset="utf-8" /></p>
+<p dir="ltr"><img alt src="https://media.edgeprop.my/s3fs-public/editorial/my/2021/Jan/13/hell_1.jpg" style="width: 1157px; height: 794px;" /></p>
+<p dir="ltr"><b id="docs-internal-guid-bf9d062b-7fff-d7c7-f08a-3b52490c973c">如今网络发达，网上有大量资讯、指南、文章、工具和清单助您选购梦想家园。尽管如此，在做购买决定前，还是建议您亲身去了解想要购置目标产业的细节，例如，经常被忽略的邻居素质。</b></p>
+<p dir="ltr"><b id="docs-internal-guid-bf9d062b-7fff-d7c7-f08a-3b52490c973c">在一些情况下，特别是购买新开发的项目，邻居是谁根本无从考察，唯有在新居入伙后才能揭晓住在你隔壁的到底是恶邻居还是好邻居。</b></p>
+<p dir="ltr"><b id="docs-internal-guid-bf9d062b-7fff-d7c7-f08a-3b52490c973c">一个恶邻居可能对你的生活造成巨大的困扰——平日的喧闹或凌晨聚会、不断吠叫的狗、来自隔壁猫咪的猫屎等琐碎但恼人的事情，都会打扰您和社区平静的日常生活。</b></p>
+<p dir="ltr"><em><b id="docs-internal-guid-bf9d062b-7fff-d7c7-f08a-3b52490c973c">目前法律框架无法对付恶邻居</b></em></p>
+<p dir="ltr"><b id="docs-internal-guid-bf9d062b-7fff-d7c7-f08a-3b52490c973c">依据目前的法律，邻居造成的麻烦可归为“滋扰”，属侵权行为。</b></p>
+<p dir="ltr"><b id="docs-internal-guid-bf9d062b-7fff-d7c7-f08a-3b52490c973c">在所有沟通手段和方式，如与他们和平谈判、向相关部门投诉和向警方申报等，都无济于事的情况下，最后的办法就是进行法律诉讼。</b></p>
+<p dir="ltr"><b id="docs-internal-guid-bf9d062b-7fff-d7c7-f08a-3b52490c973c">不过，并非人人愿意为这些琐碎事情向法庭提告，因为律师费昂贵且诉讼过程耗时。</b></p>
+<p dir="ltr"><b id="docs-internal-guid-bf9d062b-7fff-d7c7-f08a-3b52490c973c">因此，我们认为，政府需要立法干预，解决恶邻居造成的社会问题。</b></p>
+<p dir="ltr"><b id="docs-internal-guid-bf9d062b-7fff-d7c7-f08a-3b52490c973c">我们需要一套能以快速、低成本且有效的方式解决社区纠纷的法令。这这方面，我们可以参考新加坡《 2015年社区纠纷解决法》（简称新加坡CDRA）。</b></p>
+<p dir="ltr"><em><b id="docs-internal-guid-bf9d062b-7fff-d7c7-f08a-3b52490c973c">“邻居”的定义</b></em></p>
+<p dir="ltr"><b id="docs-internal-guid-bf9d062b-7fff-d7c7-f08a-3b52490c973c">若马来西亚要拟议相关新法令，应该参考新加坡CDRA，包含一些条例，例如，将该法令的适用范围局限在住宅产业上（新加坡CDRA适用于所有的“居住地”）。</b></p>
+<p dir="ltr"><b id="docs-internal-guid-bf9d062b-7fff-d7c7-f08a-3b52490c973c">此外，值得注意的是，新加坡CDRA中对“邻居”一词的诠释，是指与你居住在同一建筑物中，或者距离你的居住处100米内的住户，但不包括居住在同一单位内的人。</b></p>
+<p dir="ltr"><em><b id="docs-internal-guid-bf9d062b-7fff-d7c7-f08a-3b52490c973c">干扰（滋扰）</b></em></p>
+<p dir="ltr"><b id="docs-internal-guid-bf9d062b-7fff-d7c7-f08a-3b52490c973c">一般来说，定义滋扰侵权行为须先证明，是邻居的作为或不作为影响了邻居使用居住处的自由和乐趣。为了更好地说明，新加坡CDRA列出了10个邻居干扰（不详尽）的示例，即：</b></p>
+<p dir="ltr"><b id="docs-internal-guid-bf9d062b-7fff-d7c7-f08a-3b52490c973c">1. 引起过多的噪音、气味、烟雾、光线或振动</b></p>
+<p dir="ltr"><b id="docs-internal-guid-bf9d062b-7fff-d7c7-f08a-3b52490c973c">2. 在居住处或附近乱丢垃圾</b></p>
+<p dir="ltr"><b id="docs-internal-guid-bf9d062b-7fff-d7c7-f08a-3b52490c973c">3. 阻挡邻居的居住地</b></p>
+<p dir="ltr"><b id="docs-internal-guid-bf9d062b-7fff-d7c7-f08a-3b52490c973c">4. 干扰邻居的可移动资产</b></p>
+<p dir="ltr"><b id="docs-internal-guid-bf9d062b-7fff-d7c7-f08a-3b52490c973c">5. 在邻居住家附近，监视邻居和其住处</b></p>
+<p dir="ltr"><b id="docs-internal-guid-bf9d062b-7fff-d7c7-f08a-3b52490c973c">6. 硬闯邻居居住地</b></p>
+<p dir="ltr"><b id="docs-internal-guid-bf9d062b-7fff-d7c7-f08a-3b52490c973c">7. 允许动物侵入邻居居住地，并引起过多噪音或气味，或让小动物在邻居家周围排泄</b></p>
+<p dir="ltr"><b id="docs-internal-guid-bf9d062b-7fff-d7c7-f08a-3b52490c973c">8. 以粗俗、带有侮辱或恐吓性的言语辱骂邻居</b></p>
+<p dir="ltr"><b id="docs-internal-guid-bf9d062b-7fff-d7c7-f08a-3b52490c973c">9. 破坏公共设施和财产</b></p>
+<p dir="ltr"><b id="docs-internal-guid-bf9d062b-7fff-d7c7-f08a-3b52490c973c">10. 进行造成邻居困扰和烦恼的恶作剧</b></p>
+<p dir="ltr"><b id="docs-internal-guid-bf9d062b-7fff-d7c7-f08a-3b52490c973c">上述示例，可在准申诉人打算向法庭提告，并向造成滋扰的邻居索赔时，作为一定的指引。</b></p>
+<p dir="ltr"><b id="docs-internal-guid-bf9d062b-7fff-d7c7-f08a-3b52490c973c">无论如何，法庭将根据每个案件的事实和情况，来决定某个行为是否属于滋扰或不合理的干预。</b></p>
+<p dir="ltr"><em><b id="docs-internal-guid-bf9d062b-7fff-d7c7-f08a-3b52490c973c">仲裁庭——解决争端的机制</b></em></p>
+<p dir="ltr"><b id="docs-internal-guid-bf9d062b-7fff-d7c7-f08a-3b52490c973c">我们认为，拟议新法律的核心是成立仲裁庭，这是解决邻里之间争端的有效平台。</b></p>
+<p dir="ltr"><b id="docs-internal-guid-bf9d062b-7fff-d7c7-f08a-3b52490c973c">一个特别的仲裁庭可快速解决邻居的争端，因为与常规法院相比，其诉讼程序不那么正式，且较符合成本效益。与其他任何仲裁庭一样，除非仲裁庭有特别要求，否则无需聘请律师代表，诉讼方可自己提出辩论。</b></p>
+<p dir="ltr"><b id="docs-internal-guid-bf9d062b-7fff-d7c7-f08a-3b52490c973c">该仲裁庭也应被赋予权力下达常规法院的命令，例如损害赔偿、强制履行和禁制令等。另外，也许在正式开庭审理之前，先强制双方尝试调解是一个好主意，因为往往类似的争议调解成功的几率是很高的。</b></p>
+<p dir="ltr"><b id="docs-internal-guid-bf9d062b-7fff-d7c7-f08a-3b52490c973c">此外，可以预料的是，这类仲裁庭可宣判的金额赔偿有一定的限制。在新加坡CDRA中，仲裁庭可宣判的最高金额为S$ 20,000（约RM 6.10万）。因此，在设立类似仲裁庭的宣判金额范围方面，需要进行更多的研究。</b></p>
+<p dir="ltr"><b id="docs-internal-guid-bf9d062b-7fff-d7c7-f08a-3b52490c973c">此外，仲裁庭网页上也应提供所需文件清单、官方表格和文件，以及明确的指南、流程、注册费以及常见问题，以让人更容易明白如何上诉，以及让公众更容易理解仲裁庭的目的。</b></p>
+<p dir="ltr"><em><b id="docs-internal-guid-bf9d062b-7fff-d7c7-f08a-3b52490c973c">是时候立法了</b></em></p>
+<p dir="ltr"><b id="docs-internal-guid-bf9d062b-7fff-d7c7-f08a-3b52490c973c">就像拟议《住宅租赁法》一样，现在是时候让我们的立法者认真思考我们的提议，以解决恶邻居带来的社会问题。</b></p>
+<p dir="ltr"><b id="docs-internal-guid-bf9d062b-7fff-d7c7-f08a-3b52490c973c">也许，对付恶邻居的法令可以和《住宅租赁法》合并，让其更加完善。但是，与任何法律制定过程一样，我们不应盲目采用其他国家的法律，忽略本地社会、文化和经济环境等的因素。</b></p>
+<p dir="ltr"><b id="docs-internal-guid-bf9d062b-7fff-d7c7-f08a-3b52490c973c">在将其编纂为法前，需要与利益相关者进行深入的讨论和研究，从而将我们的社区变成更好。</b></p>
+<p dir="ltr"><em><b id="docs-internal-guid-bf9d062b-7fff-d7c7-f08a-3b52490c973c">本文由大马购屋者协会（HBA）法律顾问之一Pang Saw Pin和名誉秘书长拿督 Chang Kim Loong共同撰写。</b></em></p>
+<p dir="ltr"><em><b id="docs-internal-guid-bf9d062b-7fff-d7c7-f08a-3b52490c973c">HBA的联络方式：<br/>
+电邮：<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="8ae3e4ece5cae2e8eba4e5eda4e7f3">[email&#160;protected]</a><br/>
+网站：www.hba.org.my<br/>
+电话：+6012 334 5676</b></em></p>
+<p>&nbsp;</p>
+<p dir="ltr"><b id="docs-internal-guid-bf9d062b-7fff-d7c7-f08a-3b52490c973c"><a href="https://www.edgeprop.my/content/1767547/clarion-call-new-law-tackle-neighbour-hell">英文版原文</a>已刊登于2020年11月27的EdgeProp.my电子报。<a href="https://www.edgeprop.my/pullout">按此免费下载过去所有电子报</a>。</b></p>
+<p dir="ltr"><b id="docs-internal-guid-bf9d062b-7fff-d7c7-f08a-3b52490c973c"><a href="https://www.edgeprop.my/content/1767547/clarion-call-new-law-tackle-neighbour-hell">Click here to read this story in English!</a>&nbsp;</b></p>
+<p dir="ltr"><b id="docs-internal-guid-bf9d062b-7fff-d7c7-f08a-3b52490c973c">（编译：周颖珊）</b></p>
+
+
+
+<div class="ads-in-content" style="display: none">
+<div id="div-gpt-ad-1681892379070-0">
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+        googletag.cmd.push(function() { googletag.display('div-gpt-ad-1681892379070-0'); });
+    </script>
+</div>
+</div>
+</div>
+
+
+<div class="mrec-sideslide-toggle" id="div-gpt-ad-1681745272402-0">
+<script>
+        googletag.cmd.push(function() { googletag.display('div-gpt-ad-1681745272402-0'); });
+    </script>
+</div>
+
+
+<div class="bottom-entry-post-share">
+<span>SHARE</span>
+<div class="wope-social-share">
+<a class="fb-ss" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.edgeprop.my%2Fcontent%2F1785882%2F%25E5%25B1%258B%25E6%2589%2580%25E4%25B8%258D%25E8%25B0%2588%25EF%25BC%259A%25E6%2588%2591%25E4%25BB%25AC%25E9%259C%2580%25E8%25A6%2581%25E5%25AF%25B9%25E4%25BB%2598%25E6%2581%25B6%25E9%2582%25BB%25E5%25B1%2585%25E7%259A%2584%25E6%25B3%2595%25E4%25BB%25A4%25EF%25BC%2581" onclick="window.open(this.href, 'sharer-popup-facebook', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,left=370,top=115,width=626,height=438'); return false;">
+<i class="fa fa-facebook"></i>Facebook
+</a>
+<a class="twitter-ss" href="https://twitter.com/share?url=http%3A%2F%2Fwww.edgeprop.my%2Fcontent%2F1785882%2F%25E5%25B1%258B%25E6%2589%2580%25E4%25B8%258D%25E8%25B0%2588%25EF%25BC%259A%25E6%2588%2591%25E4%25BB%25AC%25E9%259C%2580%25E8%25A6%2581%25E5%25AF%25B9%25E4%25BB%2598%25E6%2581%25B6%25E9%2582%25BB%25E5%25B1%2585%25E7%259A%2584%25E6%25B3%2595%25E4%25BB%25A4%25EF%25BC%2581&via=twitterdev&related=twitterapi%2Ctwitter&hashtags=EdgeProp.my%2CtheEdge&text=屋所不谈：我们需要对付恶邻居的法令！" onclick="window.open(this.href, 'sharer-popup-twitter', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,left=370,top=115,width=626,height=438'); return false;">
+<i class="fa fa-twitter"></i>Twitter
+</a>
+<a class="i-ss ws-ss" href="https://api.whatsapp.com/send?phone=&text=http%3A%2F%2Fwww.edgeprop.my%2Fcontent%2F1785882%2F%25E5%25B1%258B%25E6%2589%2580%25E4%25B8%258D%25E8%25B0%2588%25EF%25BC%259A%25E6%2588%2591%25E4%25BB%25AC%25E9%259C%2580%25E8%25A6%2581%25E5%25AF%25B9%25E4%25BB%2598%25E6%2581%25B6%25E9%2582%25BB%25E5%25B1%2585%25E7%259A%2584%25E6%25B3%2595%25E4%25BB%25A4%25EF%25BC%2581">
+<i class="fa fa-whatsapp"></i>
+</a>
+<a class="i-ss pinterest-ss" href="https://pinterest.com/pin/create/button/?url=http%3A%2F%2Fwww.edgeprop.my%2Fcontent%2F1785882%2F%25E5%25B1%258B%25E6%2589%2580%25E4%25B8%258D%25E8%25B0%2588%25EF%25BC%259A%25E6%2588%2591%25E4%25BB%25AC%25E9%259C%2580%25E8%25A6%2581%25E5%25AF%25B9%25E4%25BB%2598%25E6%2581%25B6%25E9%2582%25BB%25E5%25B1%2585%25E7%259A%2584%25E6%25B3%2595%25E4%25BB%25A4%25EF%25BC%2581&media=https%3A%2F%2Fmedia.edgeprop.my%2Fs3fs-public%2Ffield%2Fimage%2Fhell_1_1.jpg&description=屋所不谈：我们需要对付恶邻居的法令！" onclick="window.open(this.href, 'sharer-popup-pinterest', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,left=370,top=115,width=626,height=438'); return false;">
+<i class="fa fa-pinterest"></i>
+</a>
+<a class="i-ss linkedin-ss" href="https://www.linkedin.com/shareArticle?mini=true&url=http://www.edgeprop.my/content/1785882/%E5%B1%8B%E6%89%80%E4%B8%8D%E8%B0%88%EF%BC%9A%E6%88%91%E4%BB%AC%E9%9C%80%E8%A6%81%E5%AF%B9%E4%BB%98%E6%81%B6%E9%82%BB%E5%B1%85%E7%9A%84%E6%B3%95%E4%BB%A4%EF%BC%81&title=屋所不谈：我们需要对付恶邻居的法令！&summary=屋所不谈：我们需要对付恶邻居的法令！&source=" onclick="window.open(this.href, 'sharer-popup-linkedin', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,left=370,top=115,width=626,height=438'); return false;" target="_blank">
+<i class="fa fa-linkedin"></i>
+</a>
+<a class="i-ss email-ss" href="/cdn-cgi/l/email-protection#a29dd1d7c0c8c7c1d69fe7c6c5c7f2d0cdd28ccfdb82de82471329442b22461a2f4a122a4d1e38442a3346190e4b3e224a0423470d1b46193a4423144b20194713274538264411374619064d1e2384c3cfd299c0cdc6db9feacb8e82d5c3ccd682d6cd82d1cac3d0c782d6cacbd182ccc7d5d182d5cbd6ca82dbcdd78c8792e68792e3cad6d6d28791e38790e48790e4d5d5d58cc7c6c5c7d2d0cdd28ccfdb8790e4c1cdccd6c7ccd68790e493959a979a9a908790e4879097e797879097e0938790979ae0879097e7948790979a9b8790979a92879097e796879097e09a8790979ae6879097e79a879097e0928790979a9a879097e7e4879097e0e18790979be3879097e7948790979a9a8790979b93879097e796879097e0e0879097e3e1879097e79b8790979be18790979a92879097e79a879097e3948790979a93879097e797879097e3e4879097e09b879097e796879097e0e08790979b9a879097e7948790979a93879097e094879097e79b8790979a90879097e0e0879097e797879097e0938790979a97879097e7958790979be38790979a96879097e794879097e0918790979b97879097e796879097e0e0879097e396879097e7e4879097e0e18790979a93">
+<i class="fa fa-envelope"></i>
+</a>
+<a class="printPDF i-ss print-ss" href="javascript:void(0);">
+<i class="fa fa-print"></i>
+</a>
+</div>
+</div>
+<div class="featured-properties">
+<div class="post-section-title exclusive-title">
+<h5>TOP PICKS BY EDGEPROP</h5>
+</div>
+<div class="container-fluid in-content-container">
+<div class="row row-no-gutters">
+<div class="owl-carousel owl-theme">
+<div class="col-md-4 item featured-properties-col">
+<div class="card-content-full">
+<div class="detail-similar-prop-content">
+<a target="_blank" href="/listing/sale/2468419/negeri_sembilan/seremban/landed/terracehouse/-first-house-buyer-100--loan--20x75-new-double-storey-bandar-esntek">
+<div class="card-image">
+<div class="item-list-type">
+<div class="list-type">SALE</div>
+</div>
+<div class="item-exclusive">
+<div class="exclusive">FEATURED</div>
+</div>
+<img class="prop-image" src="https://d5dkjitd3iude.cloudfront.net/eyJidWNrZXQiOiJ3d3cudGhlZWRnZXByb3BlcnR5LmNvbS5teSIsImtleSI6InMzZnMtcHVibGljXC8xMDIyMjNfMTcwMDY2ODEzMV81RWRnUHJvNV8xXzAuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozNjUsImhlaWdodCI6MjQzLCJmaXQiOiJjb3ZlciJ9fX0=" alt="Title" />
+</div>
+<h4 class="detail-similar-prop-title">BANDAR ENSTEK</h4>
+</a>
+<div class="detail-similar-prop-location">
+<p class="card-address address-clamp-short-list">
+Seremban, Negeri Sembilan </p>
+</div>
+<div class="detail-similar-prop-agent">
+<a class="agent-link" target="_blank" href="/agent/102223">by JASMINE CHAI</a>
+</div>
+<div class="detail-similar-prop-price">RM 360,000</div>
+<div class="detail-similar-prop-details">
+<b>4</b> beds |
+<b> 3</b> bath |
+<b> 2400</b> sqft </div>
+</div>
+</div>
+</div>
+<div class="col-md-4 item featured-properties-col">
+<div class="card-content-full">
+<div class="detail-similar-prop-content">
+<a target="_blank" href="/listing/sale/2468409/selangor/cyberjaya/nonlanded/condominium-apartment-servicedresidence/-monthly-rm3500-apply--nice-lakeview-condo-cyberjaya-fully-furnished">
+<div class="card-image">
+<div class="item-list-type">
+<div class="list-type">SALE</div>
+</div>
+<div class="item-exclusive">
+<div class="exclusive">FEATURED</div>
+</div>
+<img class="prop-image" src="https://d5dkjitd3iude.cloudfront.net/eyJidWNrZXQiOiJ3d3cudGhlZWRnZXByb3BlcnR5LmNvbS5teSIsImtleSI6InMzZnMtcHVibGljXC8xMDIyMjNfMTcwMDY2Nzg1Ml81RWRnUHJvNV8xXzAuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozNjUsImhlaWdodCI6MjQzLCJmaXQiOiJjb3ZlciJ9fX0=" alt="Title" />
+</div>
+<h4 class="detail-similar-prop-title">Cyberjaya</h4>
+</a>
+<div class="detail-similar-prop-location">
+<p class="card-address address-clamp-short-list">
+Cyberjaya, Selangor </p>
+</div>
+<div class="detail-similar-prop-agent">
+<a class="agent-link" target="_blank" href="/agent/102223">by JASMINE CHAI</a>
+</div>
+<div class="detail-similar-prop-price">RM 359,000</div>
+<div class="detail-similar-prop-details">
+<b>3</b> beds |
+<b> 2</b> bath |
+<b> 1500</b> sqft </div>
+</div>
+</div>
+</div>
+<div class="col-md-4 item featured-properties-col">
+<div class="card-content-full">
+<div class="detail-similar-prop-content">
+<a target="_blank" href="/listing/sale/2459524/negeri_sembilan/mantin/landed/terracehouse/-gaji-rm3500-apply--rumah-mampu-milik-20x70-satu-tingkat-1400sq-mantin">
+<div class="card-image">
+<div class="item-list-type">
+<div class="list-type">SALE</div>
+</div>
+<div class="item-exclusive">
+<div class="exclusive">FEATURED</div>
+</div>
+<img class="prop-image" src="https://d5dkjitd3iude.cloudfront.net/eyJidWNrZXQiOiJ3d3cudGhlZWRnZXByb3BlcnR5LmNvbS5teSIsImtleSI6InMzZnMtcHVibGljXC8xMDIyMjNfMTcwMDIzODM4OV81RWRnUHJvNV8xXzAuanBlZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzY1LCJoZWlnaHQiOjI0MywiZml0IjoiY292ZXIifX19" alt="Title" />
+</div>
+<h4 class="detail-similar-prop-title">Mantin</h4>
+</a>
+<div class="detail-similar-prop-location">
+<p class="card-address address-clamp-short-list">
+Mantin, Negeri Sembilan </p>
+</div>
+<div class="detail-similar-prop-agent">
+<a class="agent-link" target="_blank" href="/agent/102223">by JASMINE CHAI</a>
+</div>
+<div class="detail-similar-prop-price">RM 320,000</div>
+<div class="detail-similar-prop-details">
+<b>4</b> beds |
+<b> 2</b> bath |
+<b> 1400</b> sqft </div>
+</div>
+</div>
+</div>
+<div class="col-md-4 item featured-properties-col">
+<div class="card-content-full">
+<div class="detail-similar-prop-content">
+<a target="_blank" href="/listing/sale/2459537/negeri_sembilan/seremban/landed/terracehouse/20x75-rumah-dua-tingkat-bandar-enstek--tanah-15kaki--konsep-semi-d">
+<div class="card-image">
+<div class="item-list-type">
+<div class="list-type">SALE</div>
+</div>
+<div class="item-exclusive">
+<div class="exclusive">FEATURED</div>
+</div>
+<img class="prop-image" src="https://d5dkjitd3iude.cloudfront.net/eyJidWNrZXQiOiJ3d3cudGhlZWRnZXByb3BlcnR5LmNvbS5teSIsImtleSI6InMzZnMtcHVibGljXC8xMDIyMjNfMTcwMDI0MDIzOV81RWRnUHJvNV8xXzAuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozNjUsImhlaWdodCI6MjQzLCJmaXQiOiJjb3ZlciJ9fX0=" alt="Title" />
+</div>
+<h4 class="detail-similar-prop-title">BANDAR ENSTEK</h4>
+</a>
+<div class="detail-similar-prop-location">
+<p class="card-address address-clamp-short-list">
+Seremban, Negeri Sembilan </p>
+</div>
+<div class="detail-similar-prop-agent">
+<a class="agent-link" target="_blank" href="/agent/102223">by JASMINE CHAI</a>
+</div>
+<div class="detail-similar-prop-price">RM 360,000</div>
+<div class="detail-similar-prop-details">
+<b>4</b> beds |
+<b> 3</b> bath |
+<b> 2400</b> sqft </div>
+</div>
+</div>
+</div>
+<div class="col-md-4 item featured-properties-col">
+<div class="card-content-full">
+<div class="detail-similar-prop-content">
+<a target="_blank" href="/listing/sale/1903671/selangor/kajang/landed/residentialland/6-619-sqft-corner-bungalow-lot-sg-tangkas-taman-universiti--bangi">
+<div class="card-image">
+<div class="item-list-type">
+<div class="list-type">SALE</div>
+</div>
+<div class="item-exclusive">
+<div class="exclusive">FEATURED</div>
+</div>
+<img class="prop-image" src="https://d5dkjitd3iude.cloudfront.net/eyJidWNrZXQiOiJ3d3cudGhlZWRnZXByb3BlcnR5LmNvbS5teSIsImtleSI6InMzZnMtcHVibGljXC8xMDI3MzNfMTY5NzQ3MDk0MF81RWRnUHJvNV9waG90b18yMDIzMTAxNl8yMjAwNTdfMC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjM2NSwiaGVpZ2h0IjoyNDMsImZpdCI6ImNvdmVyIn19fQ==" alt="Title" />
+</div>
+<h4 class="detail-similar-prop-title">Taman Universiti</h4>
+</a>
+<div class="detail-similar-prop-location">
+<p class="card-address address-clamp-short-list">
+Kajang, Selangor </p>
+</div>
+<div class="detail-similar-prop-agent">
+<a class="agent-link" target="_blank" href="/agent/102733">by MUHAMAD HAFIZ BIN ZUBIR</a>
+</div>
+<div class="detail-similar-prop-price">RM 560,000</div>
+<div class="detail-similar-prop-details">
+<b>-</b> beds |
+<b> -</b> bath |
+<b> </b> sqft </div>
+</div>
+</div>
+</div>
+<div class="col-md-4 item featured-properties-col">
+<div class="card-content-full">
+<div class="detail-similar-prop-content">
+<a target="_blank" href="/listing/sale/1899681/selangor/bangi/landed/bungalow-detachedhouse-villa/renovated-bungalow-putra-hill-residensi--bandar-seri-putra--bangi">
+<div class="card-image">
+<div class="item-list-type">
+<div class="list-type">SALE</div>
+</div>
+<div class="item-exclusive">
+<div class="exclusive">FEATURED</div>
+</div>
+<img class="prop-image" src="https://d5dkjitd3iude.cloudfront.net/eyJidWNrZXQiOiJ3d3cudGhlZWRnZXByb3BlcnR5LmNvbS5teSIsImtleSI6InMzZnMtcHVibGljXC8xMDI3MzNfMTY2NzkxOTQyNF81RWRnUHJvNV9waG90b18yMDIyMTAyNV8xNDM1MzNfMC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjM2NSwiaGVpZ2h0IjoyNDMsImZpdCI6ImNvdmVyIn19fQ==" alt="Title" />
+</div>
+<h4 class="detail-similar-prop-title">Bandar Seri Putra</h4>
+</a>
+<div class="detail-similar-prop-location">
+<p class="card-address address-clamp-short-list">
+Bangi, Selangor </p>
+</div>
+<div class="detail-similar-prop-agent">
+<a class="agent-link" target="_blank" href="/agent/102733">by MUHAMAD HAFIZ BIN ZUBIR</a>
+</div>
+<div class="detail-similar-prop-price">RM 1,550,000</div>
+<div class="detail-similar-prop-details">
+<b>7</b> beds |
+<b> 7</b> bath |
+<b> 5000</b> sqft </div>
+</div>
+</div>
+</div>
+<div class="col-md-4 item featured-properties-col">
+<div class="card-content-full">
+<div class="detail-similar-prop-content">
+<a target="_blank" href="/listing/sale/1899675/selangor/bangi/landed/bungalow-detachedhouse-villa/renovated-bungalow-putra-hill-residensi--bandar-seri-putra--bangi">
+<div class="card-image">
+<div class="item-list-type">
+<div class="list-type">SALE</div>
+</div>
+<div class="item-exclusive">
+<div class="exclusive">FEATURED</div>
+</div>
+<img class="prop-image" src="https://d5dkjitd3iude.cloudfront.net/eyJidWNrZXQiOiJ3d3cudGhlZWRnZXByb3BlcnR5LmNvbS5teSIsImtleSI6InMzZnMtcHVibGljXC8xMDI3MzNfMTY2NzkxOTI1OV81RWRnUHJvNV8yc3RvcmV5YnVuZ2Fsb3dob3VzZXB1dHJhaGlsbHJlc2lkZW5zaWJhbmRhcnNlcmlwdXRyYWJhbmdpMV8wLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzY1LCJoZWlnaHQiOjI0MywiZml0IjoiY292ZXIifX19" alt="Title" />
+</div>
+<h4 class="detail-similar-prop-title">Bandar Seri Putra</h4>
+</a>
+<div class="detail-similar-prop-location">
+<p class="card-address address-clamp-short-list">
+Bangi, Selangor </p>
+</div>
+<div class="detail-similar-prop-agent">
+<a class="agent-link" target="_blank" href="/agent/102733">by MUHAMAD HAFIZ BIN ZUBIR</a>
+</div>
+<div class="detail-similar-prop-price">RM 1,700,000</div>
+<div class="detail-similar-prop-details">
+<b>6</b> beds |
+<b> 5</b> bath |
+<b> 4178</b> sqft </div>
+</div>
+</div>
+</div>
+<div class="col-md-4 item featured-properties-col">
+<div class="card-content-full">
+<div class="detail-similar-prop-content">
+<a target="_blank" href="/listing/sale/1895570/selangor/bangi/landed/bungalow-detachedhouse-villa/8-500-sqft-bungalow-banyan-close-bandar-bukit-mahkota--bangi">
+<div class="card-image">
+<div class="item-list-type">
+<div class="list-type">SALE</div>
+</div>
+<div class="item-exclusive">
+<div class="exclusive">FEATURED</div>
+</div>
+<img class="prop-image" src="https://d5dkjitd3iude.cloudfront.net/eyJidWNrZXQiOiJ3d3cudGhlZWRnZXByb3BlcnR5LmNvbS5teSIsImtleSI6InMzZnMtcHVibGljXC8xMDI3MzNfMTY2NzY1MjYyN181RWRnUHJvNV9idW5nYWxvd2RvdWJsZXN0b3JleWJhbnlhbmNsb3NlYmFuZGFyYnVraXRtYWhrb3RhYmFuZ2kxXzAuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozNjUsImhlaWdodCI6MjQzLCJmaXQiOiJjb3ZlciJ9fX0=" alt="Title" />
+</div>
+<h4 class="detail-similar-prop-title">Banyan Close</h4>
+</a>
+<div class="detail-similar-prop-location">
+<p class="card-address address-clamp-short-list">
+Bangi, Selangor </p>
+</div>
+<div class="detail-similar-prop-agent">
+<a class="agent-link" target="_blank" href="/agent/102733">by MUHAMAD HAFIZ BIN ZUBIR</a>
+</div>
+<div class="detail-similar-prop-price">RM 1,850,000</div>
+<div class="detail-similar-prop-details">
+<b>4</b> beds |
+<b> 6</b> bath |
+<b> 4580</b> sqft </div>
+</div>
+</div>
+</div>
+<div class="col-md-4 item featured-properties-col">
+<div class="card-content-full">
+<div class="detail-similar-prop-content">
+<a target="_blank" href="/listing/sale/1925567/selangor/kajang/landed/bungalow-detachedhouse-villa/-12-500-sqft--2-storey-bungalow-puncak-pinggiran-putra-sungai-merab--kajang">
+<div class="card-image">
+<div class="item-list-type">
+<div class="list-type">SALE</div>
+</div>
+<div class="item-exclusive">
+<div class="exclusive">FEATURED</div>
+</div>
+<img class="prop-image" src="https://d5dkjitd3iude.cloudfront.net/eyJidWNrZXQiOiJ3d3cudGhlZWRnZXByb3BlcnR5LmNvbS5teSIsImtleSI6InMzZnMtcHVibGljXC8xMDI3MzNfMTY2OTgxOTg3Ml81RWRnUHJvNV8xXzAuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozNjUsImhlaWdodCI6MjQzLCJmaXQiOiJjb3ZlciJ9fX0=" alt="Title" />
+</div>
+<h4 class="detail-similar-prop-title">Puncak Pinggiran Putra</h4>
+</a>
+<div class="detail-similar-prop-location">
+<p class="card-address address-clamp-short-list">
+Kajang, Selangor </p>
+</div>
+<div class="detail-similar-prop-agent">
+<a class="agent-link" target="_blank" href="/agent/102733">by MUHAMAD HAFIZ BIN ZUBIR</a>
+</div>
+<div class="detail-similar-prop-price">RM 1,750,000</div>
+<div class="detail-similar-prop-details">
+<b>6</b> beds |
+<b> 5</b> bath |
+<b> 4000</b> sqft </div>
+</div>
+</div>
+</div>
+<div class="col-md-4 item featured-properties-col">
+<div class="card-content-full">
+<div class="detail-similar-prop-content">
+<a target="_blank" href="/listing/sale/1970503/selangor/country_heights/landed/bungalow-detachedhouse-villa/-corner-lot-land-20-000-sqft--2-storey-bungalow-house-country-heights-kajang">
+<div class="card-image">
+<div class="item-list-type">
+<div class="list-type">SALE</div>
+</div>
+<div class="item-exclusive">
+<div class="exclusive">FEATURED</div>
+</div>
+<img class="prop-image" src="https://d5dkjitd3iude.cloudfront.net/eyJidWNrZXQiOiJ3d3cudGhlZWRnZXByb3BlcnR5LmNvbS5teSIsImtleSI6InMzZnMtcHVibGljXC8xMDI3MzNfMTY3MzE5MjI4MF81RWRnUHJvNV8xXzAuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozNjUsImhlaWdodCI6MjQzLCJmaXQiOiJjb3ZlciJ9fX0=" alt="Title" />
+</div>
+<h4 class="detail-similar-prop-title">Country Heights Kajang</h4>
+</a>
+<div class="detail-similar-prop-location">
+<p class="card-address address-clamp-short-list">
+Country Heights, Selangor </p>
+</div>
+<div class="detail-similar-prop-agent">
+<a class="agent-link" target="_blank" href="/agent/102733">by MUHAMAD HAFIZ BIN ZUBIR</a>
+</div>
+<div class="detail-similar-prop-price">RM 10,900,000</div>
+<div class="detail-similar-prop-details">
+<b>6</b> beds |
+<b> 9</b> bath |
+<b> 16500</b> sqft </div>
+</div>
+</div>
+</div>
+<div class="col-md-4 item featured-properties-col">
+<div class="card-content-full">
+<div class="detail-similar-prop-content">
+<a target="_blank" href="/listing/sale/1984339/selangor/kajang/landed/townhouse/-termurah-reno--end-lot-country-villas-villa-townhouse--country-heights--kajang">
+<div class="card-image">
+<div class="item-list-type">
+<div class="list-type">SALE</div>
+</div>
+<div class="item-exclusive">
+<div class="exclusive">FEATURED</div>
+</div>
+<img class="prop-image" src="https://d5dkjitd3iude.cloudfront.net/eyJidWNrZXQiOiJ3d3cudGhlZWRnZXByb3BlcnR5LmNvbS5teSIsImtleSI6InMzZnMtcHVibGljXC9zdHlsZXNcLzEwMjczM18xNjc0MDIwODk4XzVFZGdQcm81XzEwMjczM18xNjc0MDIwODI1XzVlZGdwcm81XzFfMC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjM2NSwiaGVpZ2h0IjoyNDMsImZpdCI6ImNvdmVyIn19fQ==" alt="Title" />
+</div>
+<h4 class="detail-similar-prop-title">Country Villas @ County Heights</h4>
+</a>
+<div class="detail-similar-prop-location">
+<p class="card-address address-clamp-short-list">
+Kajang, Selangor </p>
+</div>
+<div class="detail-similar-prop-agent">
+<a class="agent-link" target="_blank" href="/agent/102733">by MUHAMAD HAFIZ BIN ZUBIR</a>
+</div>
+<div class="detail-similar-prop-price">RM 480,000</div>
+<div class="detail-similar-prop-details">
+<b>3</b> beds |
+<b> 2</b> bath |
+<b> 1453</b> sqft </div>
+</div>
+</div>
+</div>
+<div class="col-md-4 item featured-properties-col">
+<div class="card-content-full">
+<div class="detail-similar-prop-content">
+<a target="_blank" href="/listing/sale/1951886/selangor/bangi/landed/bungalow-detachedhouse-villa/-10-880-sqft--2-storey-bungalow-house-seksyen-4--bandar-baru-bangi">
+<div class="card-image">
+<div class="item-list-type">
+<div class="list-type">SALE</div>
+</div>
+<div class="item-exclusive">
+<div class="exclusive">FEATURED</div>
+</div>
+<img class="prop-image" src="https://d5dkjitd3iude.cloudfront.net/eyJidWNrZXQiOiJ3d3cudGhlZWRnZXByb3BlcnR5LmNvbS5teSIsImtleSI6InMzZnMtcHVibGljXC8xMDI3MzNfMTY3MTY3ODY3Ml81RWRnUHJvNV8xXzAuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozNjUsImhlaWdodCI6MjQzLCJmaXQiOiJjb3ZlciJ9fX0=" alt="Title" />
+</div>
+<h4 class="detail-similar-prop-title">Seksyen 4, Bandar Baru Bangi</h4>
+</a>
+<div class="detail-similar-prop-location">
+<p class="card-address address-clamp-short-list">
+Bangi, Selangor </p>
+</div>
+<div class="detail-similar-prop-agent">
+<a class="agent-link" target="_blank" href="/agent/102733">by MUHAMAD HAFIZ BIN ZUBIR</a>
+</div>
+<div class="detail-similar-prop-price">RM 2,000,000</div>
+<div class="detail-similar-prop-details">
+<b>9</b> beds |
+<b> 6</b> bath |
+<b> 5700</b> sqft </div>
+</div>
+</div>
+</div>
+<div class="col-md-4 item featured-properties-col">
+<div class="card-content-full">
+<div class="detail-similar-prop-content">
+<a target="_blank" href="/listing/sale/2469785/selangor/kajang/nonlanded/condominium-apartment-servicedresidence/type-c--1183-sf-residensi-hijauan-bayu-----bangi-new-condo-nearby-ukm">
+<div class="card-image">
+<div class="item-list-type">
+<div class="list-type">SALE</div>
+</div>
+<div class="item-exclusive">
+<div class="exclusive">FEATURED</div>
+</div>
+<img class="prop-image" src="https://d5dkjitd3iude.cloudfront.net/eyJidWNrZXQiOiJ3d3cudGhlZWRnZXByb3BlcnR5LmNvbS5teSIsImtleSI6InMzZnMtcHVibGljXC85NTI5Nl8xNzAwNzI1MzQ4XzVFZGdQcm81X3Jlc2lkZW5zaWhpamF1YW5iYXl1YmFuZ2lmcmVlaG9sZGxhbmRmb3JzYWxlXzAucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozNjUsImhlaWdodCI6MjQzLCJmaXQiOiJjb3ZlciJ9fX0=" alt="Title" />
+</div>
+<h4 class="detail-similar-prop-title">Residensi Hijauan Bayu</h4>
+</a>
+<div class="detail-similar-prop-location">
+<p class="card-address address-clamp-short-list">
+Kajang, Selangor </p>
+</div>
+<div class="detail-similar-prop-agent">
+<a class="agent-link" target="_blank" href="/agent/95296">by KHAIDIR ZAKARIA</a>
+</div>
+<div class="detail-similar-prop-price">RM 454,400</div>
+<div class="detail-similar-prop-details">
+<b>4</b> beds |
+<b> 2</b> bath |
+<b> 1183</b> sqft </div>
+</div>
+</div>
+</div>
+<div class="col-md-4 item featured-properties-col">
+<div class="card-content-full">
+<div class="detail-similar-prop-content">
+<a target="_blank" href="/listing/sale/2055907/selangor/kajang/landed/bungalow-detachedhouse-villa/-8-407-sqft--1.5-storey-bungalow-desa-pinggiran-putra--kajang-for-sale">
+<div class="card-image">
+<div class="item-list-type">
+<div class="list-type">SALE</div>
+</div>
+<div class="item-exclusive">
+<div class="exclusive">FEATURED</div>
+</div>
+<img class="prop-image" src="https://d5dkjitd3iude.cloudfront.net/eyJidWNrZXQiOiJ3d3cudGhlZWRnZXByb3BlcnR5LmNvbS5teSIsImtleSI6InMzZnMtcHVibGljXC8xMDI3MzNfMTY3ODQyMjg4Ml81RWRnUHJvNV8yXzAuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozNjUsImhlaWdodCI6MjQzLCJmaXQiOiJjb3ZlciJ9fX0=" alt="Title" />
+</div>
+<h4 class="detail-similar-prop-title">Desa Pinggiran Putra</h4>
+</a>
+<div class="detail-similar-prop-location">
+<p class="card-address address-clamp-short-list">
+Kajang, Selangor </p>
+</div>
+<div class="detail-similar-prop-agent">
+<a class="agent-link" target="_blank" href="/agent/102733">by MUHAMAD HAFIZ BIN ZUBIR</a>
+</div>
+<div class="detail-similar-prop-price">RM 1,400,000</div>
+<div class="detail-similar-prop-details">
+<b>7</b> beds |
+<b> 7</b> bath |
+<b> 4500</b> sqft </div>
+</div>
+</div>
+</div>
+<div class="col-md-4 item featured-properties-col">
+<div class="card-content-full">
+<div class="detail-similar-prop-content">
+<a target="_blank" href="/listing/sale/2055929/selangor/kajang/landed/bungalow-detachedhouse-villa/-8-729-sqft--single-storey-bungalow-desa-pinggiran-putra--kajang">
+<div class="card-image">
+<div class="item-list-type">
+<div class="list-type">SALE</div>
+</div>
+<div class="item-exclusive">
+<div class="exclusive">FEATURED</div>
+</div>
+<img class="prop-image" src="https://d5dkjitd3iude.cloudfront.net/eyJidWNrZXQiOiJ3d3cudGhlZWRnZXByb3BlcnR5LmNvbS5teSIsImtleSI6InMzZnMtcHVibGljXC8xMDI3MzNfMTY3ODQyMzYxN181RWRnUHJvNV9waG90b18yMDIzMDEyMl8wOTQwMTVfMC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjM2NSwiaGVpZ2h0IjoyNDMsImZpdCI6ImNvdmVyIn19fQ==" alt="Title" />
+</div>
+<h4 class="detail-similar-prop-title">Desa Pinggiran Putra</h4>
+</a>
+<div class="detail-similar-prop-location">
+<p class="card-address address-clamp-short-list">
+Kajang, Selangor </p>
+</div>
+<div class="detail-similar-prop-agent">
+<a class="agent-link" target="_blank" href="/agent/102733">by MUHAMAD HAFIZ BIN ZUBIR</a>
+</div>
+<div class="detail-similar-prop-price">RM 1,350,000</div>
+<div class="detail-similar-prop-details">
+<b>5</b> beds |
+<b> 3</b> bath |
+<b> 1972</b> sqft </div>
+</div>
+</div>
+</div>
+<div class="col-md-4 item featured-properties-col">
+<div class="card-content-full">
+<div class="detail-similar-prop-content">
+<a target="_blank" href="/listing/sale/2056003/selangor/kajang/landed/bungalow-detachedhouse-villa/fully-furnished-2-storey-bungalow-puncak-pinggiran-putra--desa-pinggiran-putra--kajang">
+<div class="card-image">
+<div class="item-list-type">
+<div class="list-type">SALE</div>
+</div>
+<div class="item-exclusive">
+<div class="exclusive">FEATURED</div>
+</div>
+<img class="prop-image" src="https://d5dkjitd3iude.cloudfront.net/eyJidWNrZXQiOiJ3d3cudGhlZWRnZXByb3BlcnR5LmNvbS5teSIsImtleSI6InMzZnMtcHVibGljXC8xMDI3MzNfMTY3ODQyNTc2OF81RWRnUHJvNV8xXzAuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozNjUsImhlaWdodCI6MjQzLCJmaXQiOiJjb3ZlciJ9fX0=" alt="Title" />
+</div>
+<h4 class="detail-similar-prop-title">Puncak Pinggiran Putra</h4>
+</a>
+<div class="detail-similar-prop-location">
+<p class="card-address address-clamp-short-list">
+Kajang, Selangor </p>
+</div>
+<div class="detail-similar-prop-agent">
+<a class="agent-link" target="_blank" href="/agent/102733">by MUHAMAD HAFIZ BIN ZUBIR</a>
+</div>
+<div class="detail-similar-prop-price">RM 1,590,000</div>
+<div class="detail-similar-prop-details">
+<b>5</b> beds |
+<b> 5</b> bath |
+<b> 4500</b> sqft </div>
+</div>
+</div>
+</div>
+<div class="col-md-4 item featured-properties-col">
+<div class="card-content-full">
+<div class="detail-similar-prop-content">
+<a target="_blank" href="/listing/sale/2029682/selangor/shah_alam/landed/terracehouse/-24x80--double-storey-superlink-aster-grove--denai-alam--shah-alam">
+<div class="card-image">
+<div class="item-list-type">
+<div class="list-type">SALE</div>
+</div>
+<div class="item-exclusive">
+<div class="exclusive">FEATURED</div>
+</div>
+<img class="prop-image" src="https://d5dkjitd3iude.cloudfront.net/eyJidWNrZXQiOiJ3d3cudGhlZWRnZXByb3BlcnR5LmNvbS5teSIsImtleSI6InMzZnMtcHVibGljXC8xMDI3MzNfMTY3NjkwNjc5MV81RWRnUHJvNV9waG90b18yMDIzMDExMV8xNTI1MTdfMC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjM2NSwiaGVpZ2h0IjoyNDMsImZpdCI6ImNvdmVyIn19fQ==" alt="Title" />
+</div>
+<h4 class="detail-similar-prop-title">Denai Alam</h4>
+</a>
+<div class="detail-similar-prop-location">
+<p class="card-address address-clamp-short-list">
+Shah Alam, Selangor </p>
+</div>
+<div class="detail-similar-prop-agent">
+<a class="agent-link" target="_blank" href="/agent/102733">by MUHAMAD HAFIZ BIN ZUBIR</a>
+</div>
+<div class="detail-similar-prop-price">RM 920,000</div>
+<div class="detail-similar-prop-details">
+<b>4</b> beds |
+<b> 4</b> bath |
+<b> 2734</b> sqft </div>
+</div>
+</div>
+</div>
+<div class="col-md-4 item featured-properties-col">
+<div class="card-content-full">
+<div class="detail-similar-prop-content">
+<a target="_blank" href="/listing/sale/2069116/selangor/bangi/landed/terracehouse/-22-x80---double-storey-terrace-putra-96--bandar-seri-putra--bangi-for-sale">
+<div class="card-image">
+<div class="item-list-type">
+<div class="list-type">SALE</div>
+</div>
+<div class="item-exclusive">
+<div class="exclusive">FEATURED</div>
+</div>
+<img class="prop-image" src="https://d5dkjitd3iude.cloudfront.net/eyJidWNrZXQiOiJ3d3cudGhlZWRnZXByb3BlcnR5LmNvbS5teSIsImtleSI6InMzZnMtcHVibGljXC8xMDI3MzNfMTY3OTI0MzE1Nl81RWRnUHJvNV9waG90b18yMDIzMDEyNV8yMzM2NTlfMC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjM2NSwiaGVpZ2h0IjoyNDMsImZpdCI6ImNvdmVyIn19fQ==" alt="Title" />
+</div>
+<h4 class="detail-similar-prop-title">Bandar Seri Putra</h4>
+</a>
+<div class="detail-similar-prop-location">
+<p class="card-address address-clamp-short-list">
+Bangi, Selangor </p>
+</div>
+<div class="detail-similar-prop-agent">
+<a class="agent-link" target="_blank" href="/agent/102733">by MUHAMAD HAFIZ BIN ZUBIR</a>
+</div>
+<div class="detail-similar-prop-price">RM 590,000</div>
+<div class="detail-similar-prop-details">
+<b>4</b> beds |
+<b> 3</b> bath |
+<b> 2398</b> sqft </div>
+</div>
+</div>
+</div>
+<div class="col-md-4 item featured-properties-col">
+<div class="card-content-full">
+<div class="detail-similar-prop-content">
+<a target="_blank" href="/listing/sale/2043390/selangor/kajang/landed/terracehouse/renovated-2.5-storey-taman-sentosa-impian--sungai-merab--kajang">
+<div class="card-image">
+<div class="item-list-type">
+<div class="list-type">SALE</div>
+</div>
+<div class="item-exclusive">
+<div class="exclusive">FEATURED</div>
+</div>
+<img class="prop-image" src="https://d5dkjitd3iude.cloudfront.net/eyJidWNrZXQiOiJ3d3cudGhlZWRnZXByb3BlcnR5LmNvbS5teSIsImtleSI6InMzZnMtcHVibGljXC8xMDI3MzNfMTY3NzY4ODkwOV81RWRnUHJvNV9waG90b18yMDIzMDIyNl8xOTM0MTJfMC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjM2NSwiaGVpZ2h0IjoyNDMsImZpdCI6ImNvdmVyIn19fQ==" alt="Title" />
+</div>
+<h4 class="detail-similar-prop-title">Kampung Sungai Merab</h4>
+</a>
+<div class="detail-similar-prop-location">
+<p class="card-address address-clamp-short-list">
+Kajang, Selangor </p>
+</div>
+<div class="detail-similar-prop-agent">
+<a class="agent-link" target="_blank" href="/agent/102733">by MUHAMAD HAFIZ BIN ZUBIR</a>
+</div>
+<div class="detail-similar-prop-price">RM 730,000</div>
+<div class="detail-similar-prop-details">
+<b>5</b> beds |
+<b> 4</b> bath |
+<b> 2776</b> sqft </div>
+</div>
+</div>
+</div>
+<div class="col-md-4 item featured-properties-col">
+<div class="card-content-full">
+<div class="detail-similar-prop-content">
+<a target="_blank" href="/listing/sale/2080258/selangor/batu_9th_cheras/landed/bungalow-detachedhouse-villa/-12-354-sqft--3-storey-bungalow-jalan-suadamai--bandar-tun-hussein-onn--cheras">
+<div class="card-image">
+<div class="item-list-type">
+<div class="list-type">SALE</div>
+</div>
+<div class="item-exclusive">
+<div class="exclusive">FEATURED</div>
+</div>
+<img class="prop-image" src="https://d5dkjitd3iude.cloudfront.net/eyJidWNrZXQiOiJ3d3cudGhlZWRnZXByb3BlcnR5LmNvbS5teSIsImtleSI6InMzZnMtcHVibGljXC8xMDI3MzNfMTY3OTkyOTQ2M181RWRnUHJvNV8xXzAuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozNjUsImhlaWdodCI6MjQzLCJmaXQiOiJjb3ZlciJ9fX0=" alt="Title" />
+</div>
+<h4 class="detail-similar-prop-title">Bandar Tun Hussein Onn</h4>
+</a>
+<div class="detail-similar-prop-location">
+<p class="card-address address-clamp-short-list">
+Batu 9th Cheras, Selangor </p>
+</div>
+<div class="detail-similar-prop-agent">
+<a class="agent-link" target="_blank" href="/agent/102733">by MUHAMAD HAFIZ BIN ZUBIR</a>
+</div>
+<div class="detail-similar-prop-price">RM 3,900,000</div>
+<div class="detail-similar-prop-details">
+<b>6</b> beds |
+<b> 4</b> bath |
+<b> 5000</b> sqft </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="adInContent"></div>
+</div>
+</div>
+
+<style>
+    .partner-content.news-bottom .read-more.maybank {
+        background: #000;
+        color: #fff;
+}
+    </style>
+<div class="partner-content news-bottom">
+<div class="partner-title">SPONSORED CONTENT</div>
+<div class="row">
+
+
+
+<a href="/content/1907497/mori-residences-2-spells-greenery-and-sustainability-long-term-liveability" target="_blank">
+<div class="col-sm-5"><img src="https://media.edgeprop.my/s3fs-public/field/image/mori2-aerialview-8kfa-copy.jpg?y_mAS_Pl74MshTSbvCRRE5of46FHgIQP" /></div>
+<div class="col-sm-7">
+<span class="partner-desc">Mori Residences 2 spells greenery and sustainability for long-term liveability</span>
+<p>Mori Residences 2 is a mixed development located on 3.68 acres of freehold land in Rawang, Selangor. Reflecting its verdant surroundings, “Mori” literally means “forest” in Japanese.
+</p>
+<div class="read-more maybank">read more</div>
+</div>
+</a>
+</div>
+<div class="partner-bottom"></div>
+</div>
+
+<div class="related-post">
+<div class="post-section-title">
+<h5>RELATED POSTS</h5>
+</div>
+<ol>
+<li>
+<div class="related-article ">
+<a href="/content/1907673/bumiputera-lots-why-should-innocent-house-buyers-pay-state-agencies%E2%80%99-negligence" rel="bookmark" title="Bumiputera lots: Why should innocent house buyers pay for state agencies’ negligence?">
+<h6>
+Bumiputera lots: Why should innocent house buyers pay for state agencies’ negligence? </h6>
+</a>
+</div>
+<div class="line-breaker"></div>
+</li>
+<li>
+<div class="related-article ">
+<a href="/content/1907486/budget-2024-hba%E2%80%99s-response" rel="bookmark" title="Budget 2024: HBA’s response  ">
+<h6>
+Budget 2024: HBA’s response </h6>
+</a>
+</div>
+<div class="line-breaker"></div>
+</li>
+<li>
+<div class="related-article ">
+<a href="/content/1907480/akta-pembaharuan-bandar-bertentangan-dengan-perlembagaan" rel="bookmark" title="Akta Pembaharuan Bandar bertentangan dengan perlembagaan">
+<h6>
+Akta Pembaharuan Bandar bertentangan dengan perlembagaan </h6>
+</a>
+</div>
+<div class="line-breaker"></div>
+</li>
+<div class="cleared">
+</div>
+</ol>
+</div>
+
+<div id class="sidebar-widget widget_wope_posts_widget content hidden-md hidden-lg">
+<div class="sidebar-widget-title">TRENDING NOW</div>
+<div class="widget-post post-trending">
+<div class="box-thumb">
+<span class="cwp">
+1 </span>
+</div>
+<div class="box-details">
+<div class="widget-post-title">
+<a href="/content/1907853/almost-3000-unsold-property-units-penang-3q-state-assembly-told">
+Almost 3,000 unsold property units in Penang as at 3Q, state assembly told </a>
+</div>
+<div class="widget-post-meta">
+<span>
+29 Nov 2023 | Updated 50 minutes ago </span>
+</div>
+</div>
+<div class="cleared"></div>
+</div>
+<div class="widget-post post-trending">
+<div class="box-thumb">
+<span class="cwp">
+2 </span>
+</div>
+<div class="box-details">
+<div class="widget-post-title">
+<a href="/content/1907851/exchange-trx-opens-public">
+The Exchange TRX opens to the public </a>
+</div>
+<div class="widget-post-meta">
+<span>
+29 Nov 2023 | Updated 1 hour ago </span>
+</div>
+</div>
+<div class="cleared"></div>
+</div>
+<div class="widget-post post-trending">
+<div class="box-thumb">
+<span class="cwp">
+3 </span>
+</div>
+<div class="box-details">
+<div class="widget-post-title">
+<a href="/content/1907849/building-collapse-penang-island-city-council-issues-stop-work-order">
+Building collapse: Penang Island City Council issues stop work order </a>
+</div>
+<div class="widget-post-meta">
+<span>
+29 Nov 2023 | Updated 1 hour ago </span>
+</div>
+</div>
+<div class="cleared"></div>
+</div>
+<div class="widget-post post-trending">
+<div class="box-thumb">
+<span class="cwp">
+4 </span>
+</div>
+<div class="box-details">
+<div class="widget-post-title">
+<a href="/content/1907848/ijm-rimbayu-see-new-lotus’s-hypermarket-4q-next-year">
+IJM Rimbayu to see new Lotus’s hypermarket in 4Q next year </a>
+</div>
+<div class="widget-post-meta">
+<span>
+29 Nov 2023 | Updated 2 hours ago </span>
+</div>
+</div>
+<div class="cleared"></div>
+</div>
+<div class="widget-post post-trending">
+<div class="box-thumb">
+<span class="cwp">
+5 </span>
+</div>
+<div class="box-details">
+<div class="widget-post-title">
+<a href="/content/1907847/isp-group-companies-commences-construction-its-3780-bed-purpose-built-workers-accommodation-kapar">
+ISP Group of Companies commences construction of its 3,780-bed purpose-built workers accommodation in Kapar </a>
+</div>
+<div class="widget-post-meta">
+<span>
+29 Nov 2023 | Updated 3 hours ago </span>
+</div>
+</div>
+<div class="cleared"></div>
+</div>
+<div class="widget-post post-trending">
+<div class="box-thumb">
+<span class="cwp">
+6 </span>
+</div>
+<div class="box-details">
+<div class="widget-post-title">
+<a href="/content/1907846/mkh-gets-shareholders-nod-list-plantation-arm-main-market">
+MKH gets shareholders' nod to list plantation arm on Main Market </a>
+</div>
+<div class="widget-post-meta">
+<span>
+29 Nov 2023 | Updated 5 hours ago </span>
+</div>
+</div>
+<div class="cleared"></div>
+</div>
+<div class="widget-post post-trending">
+<div class="box-thumb">
+<span class="cwp">
+7 </span>
+</div>
+<div class="box-details">
+<div class="widget-post-title">
+<a href="/content/1907845/gadang-acquires-land-kwasa-damansara-undertake-residential-project">
+Gadang acquires land in Kwasa Damansara to undertake residential project </a>
+</div>
+<div class="widget-post-meta">
+<span>
+29 Nov 2023 | Updated 5 hours ago </span>
+</div>
+</div>
+<div class="cleared"></div>
+</div>
+<div class="widget-post post-trending">
+<div class="box-thumb">
+<span class="cwp">
+8 </span>
+</div>
+<div class="box-details">
+<div class="widget-post-title">
+<a href="/content/1907844/klccp-stapled-group’s-3q-net-profit-5-raises-dividend-88-sen">
+KLCCP Stapled Group’s 3Q net profit up 5%, raises dividend to 8.8 sen </a>
+</div>
+<div class="widget-post-meta">
+<span>
+29 Nov 2023 | Updated 5 hours ago </span>
+</div>
+</div>
+<div class="cleared"></div>
+</div>
+<div class="widget-post post-trending">
+<div class="box-thumb">
+<span class="cwp">
+9 </span>
+</div>
+<div class="box-details">
+<div class="widget-post-title">
+<a href="/content/1907843/blands-1q-net-profit-quadruples-rm37m">
+BLand's 1Q net profit quadruples to RM37m </a>
+</div>
+<div class="widget-post-meta">
+<span>
+29 Nov 2023 | Updated 5 hours ago </span>
+</div>
+</div>
+<div class="cleared"></div>
+</div>
+<div class="widget-post post-trending">
+<div class="box-thumb">
+<span class="cwp">
+10 </span>
+</div>
+<div class="box-details">
+<div class="widget-post-title">
+<a href="/content/1907842/tropicana-posts-25-revenue-jump-profit-tax-increasing-five-fold">
+Tropicana posts 25% revenue jump with profit before tax increasing five-fold </a>
+</div>
+<div class="widget-post-meta">
+<span>
+29 Nov 2023 | Updated 6 hours ago </span>
+</div>
+</div>
+<div class="cleared"></div>
+</div>
+<div class="widget-post post-trending">
+<div class="box-thumb">
+<span class="cwp">
+11 </span>
+</div>
+<div class="box-details">
+<div class="widget-post-title">
+<a href="/content/1907841/newly-listed-radium-posts-better-3q-earnings-46-q-o-q">
+Newly listed Radium posts better 3Q earnings, up 46% q-o-q </a>
+</div>
+<div class="widget-post-meta">
+<span>
+29 Nov 2023 | Updated 6 hours ago </span>
+</div>
+</div>
+<div class="cleared"></div>
+</div>
+<div class="widget-post post-trending">
+<div class="box-thumb">
+<span class="cwp">
+12 </span>
+</div>
+<div class="box-details">
+<div class="widget-post-title">
+<a href="/content/1907840/igb-declares-seven-sen-dividend-3q-profit-jumps-21">
+IGB declares seven sen dividend as 3Q profit jumps 21% </a>
+</div>
+<div class="widget-post-meta">
+<span>
+29 Nov 2023 | Updated 6 hours ago </span>
+</div>
+</div>
+<div class="cleared"></div>
+</div>
+<div class="widget-post post-trending">
+<div class="box-thumb">
+<span class="cwp">
+13 </span>
+</div>
+<div class="box-details">
+<div class="widget-post-title">
+<a href="/content/1907839/search-and-rescue-operation-continues-after-bayan-lepas-warehouse-collapse">
+Search and rescue operation continues after Bayan Lepas warehouse collapse </a>
+</div>
+<div class="widget-post-meta">
+<span>
+29 Nov 2023 | Updated 7 hours ago </span>
+</div>
+</div>
+<div class="cleared"></div>
+</div>
+<div class="widget-post post-trending">
+<div class="box-thumb">
+<span class="cwp">
+14 </span>
+</div>
+<div class="box-details">
+<div class="widget-post-title">
+<a href="/content/1907835/done-deal-condominium-seringin-residences-kuala-lumpur">
+DONE DEAL: Condominium, Seringin Residences, Kuala Lumpur </a>
+</div>
+<div class="widget-post-meta">
+<span>
+29 Nov 2023 | Updated 7 hours ago </span>
+</div>
+</div>
+<div class="cleared"></div>
+</div>
+<div class="widget-post post-trending">
+<div class="box-thumb">
+<span class="cwp">
+15 </span>
+</div>
+<div class="box-details">
+<div class="widget-post-title">
+<a href="/content/1907834/nga-says-260000-affordable-housing-units-built-so-far-under-12mp">
+Nga says 260,000 affordable housing units built so far under 12MP </a>
+</div>
+<div class="widget-post-meta">
+<span>
+28 Nov 2023 | Updated 1 day ago </span>
+</div>
+</div>
+<div class="cleared"></div>
+</div>
+</div>
+
+
+
+<div class="m-b-30">
+<div class="fb-comments" data-href="http://www.edgeprop.my/content/1785882/%E5%B1%8B%E6%89%80%E4%B8%8D%E8%B0%88%EF%BC%9A%E6%88%91%E4%BB%AC%E9%9C%80%E8%A6%81%E5%AF%B9%E4%BB%98%E6%81%B6%E9%82%BB%E5%B1%85%E7%9A%84%E6%B3%95%E4%BB%A4%EF%BC%81" data-numposts="3" data-width="100%"></div>
+</div>
+</div>
+</div>
+
+
+
+
+<div class="skin-ads-parallax-wrapper">
+<div class="skin-ads-parallax" id="div-gpt-ad-1658305015195-0">
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+            googletag.cmd.push(function() { googletag.display('div-gpt-ad-1658305015195-0'); });
+          </script>
+</div>
+</div>
+<div class="sidebar">
+<div id="block-block-5" class="block block-block block-mrec clearfix">
+
+<div id="div-gpt-ad-1487052089759-0" style="height:250px; width:300px;">
+<script>
+ googletag.cmd.push(function() { googletag.display('div-gpt-ad-1487052089759-0'); });
+</script>
+</div>
+</div> <div class="m-b-45"></div>
+<div id="block-block-10" class="block block-block block-mrec clearfix">
+
+<div id="div-gpt-ad-1487054467826-0" style="height:250px; width:300px;">
+<script>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1487054467826-0'); });
+</script>
+</div>
+</div> <div class="m-b-45"></div>
+<div id="block-block-11" class="block block-block block-mrec clearfix">
+
+<div id="div-gpt-ad-1487130295539-0" style="height:250px; width:300px;">
+<script>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1487130295539-0'); });
+</script>
+</div>
+</div> <div class="m-b-45"></div>
+<iframe scrolling="no" src="https://www.edgeprop.my/news-banner-ad" class="widget-tem-search news-banner-ad"></iframe>
+
+<div class="button-banner">
+
+<div id="div-gpt-ad-1487137476780-0">
+<script>
+        googletag.cmd.push(function() { googletag.display('div-gpt-ad-1487137476780-0'); });
+      </script>
+</div>
+</div>
+
+<div class="button-banner">
+<div id="div-gpt-ad-1487137602539-0">
+<script>
+        googletag.cmd.push(function() { googletag.display('div-gpt-ad-1487137602539-0'); });
+      </script>
+</div>
+</div>
+
+<div class="button-banner">
+<div id="div-gpt-ad-1487137660467-0">
+<script>
+        googletag.cmd.push(function() { googletag.display('div-gpt-ad-1487137660467-0'); });
+      </script>
+</div>
+</div>
+<div id="mc_embed_signup" class="sidebar-widget widget_mc4wp_form_widget content">
+<div class="sidebar-widget-title">Never Miss Out</div>
+
+<form class="mc-embedded-subscribe-form validate i-form" target="_blank">
+<div class="mc4wp-form-fields">
+<p>
+<label style="font-weight: 400; width: 100%;">Sign up to get breaking news, unique insights, event invites and more from EdgeProp</label>
+</p>
+<p class="mailchimp-input">
+
+<a style=" background: #000000; font-size: 14px; line-height: 16px; font-weight: normal; letter-spacing: 1px; color: #fff; padding: 10px 6px;     display: block; margin-bottom: 10px;" target="_blank" href="https://esvcs.enginemailer.com/onlineform?id=%2FXbHcRtPZ5ZTQ3XlL61kug%3D%3D&sc=2DYbqUgUNt10kq2fV5oxwg%3D%3D">Subscribe</a>
+</p>
+</div>
+
+</form>
+</div>
+
+<div id="wope_posts_widget-5" class="sidebar-widget widget_wope_posts_widget content hidden-xs hidden-sm">
+<div class="sidebar-widget-title">TRENDING NOW</div>
+<div class="widget-post post-trending">
+<div class="box-thumb">
+<span class="cwp">
+1 </span>
+</div>
+<div class="box-details">
+<div class="widget-post-title">
+<a href="/content/1907853/almost-3000-unsold-property-units-penang-3q-state-assembly-told">
+Almost 3,000 unsold property units in Penang as at 3Q, state assembly told </a>
+</div>
+<div class="widget-post-meta">
+<span>
+29 Nov 2023 | Updated 50 minutes ago </span>
+</div>
+</div>
+<div class="cleared"></div>
+</div>
+<div class="widget-post post-trending">
+<div class="box-thumb">
+<span class="cwp">
+2 </span>
+</div>
+<div class="box-details">
+<div class="widget-post-title">
+<a href="/content/1907851/exchange-trx-opens-public">
+The Exchange TRX opens to the public </a>
+</div>
+<div class="widget-post-meta">
+<span>
+29 Nov 2023 | Updated 1 hour ago </span>
+</div>
+</div>
+<div class="cleared"></div>
+</div>
+<div class="widget-post post-trending">
+<div class="box-thumb">
+<span class="cwp">
+3 </span>
+</div>
+<div class="box-details">
+<div class="widget-post-title">
+<a href="/content/1907849/building-collapse-penang-island-city-council-issues-stop-work-order">
+Building collapse: Penang Island City Council issues stop work order </a>
+</div>
+<div class="widget-post-meta">
+<span>
+29 Nov 2023 | Updated 1 hour ago </span>
+</div>
+</div>
+<div class="cleared"></div>
+</div>
+<div class="widget-post post-trending">
+<div class="box-thumb">
+<span class="cwp">
+4 </span>
+</div>
+<div class="box-details">
+<div class="widget-post-title">
+<a href="/content/1907848/ijm-rimbayu-see-new-lotus’s-hypermarket-4q-next-year">
+IJM Rimbayu to see new Lotus’s hypermarket in 4Q next year </a>
+</div>
+<div class="widget-post-meta">
+<span>
+29 Nov 2023 | Updated 2 hours ago </span>
+</div>
+</div>
+<div class="cleared"></div>
+</div>
+<div class="widget-post post-trending">
+<div class="box-thumb">
+<span class="cwp">
+5 </span>
+</div>
+<div class="box-details">
+<div class="widget-post-title">
+<a href="/content/1907847/isp-group-companies-commences-construction-its-3780-bed-purpose-built-workers-accommodation-kapar">
+ISP Group of Companies commences construction of its 3,780-bed purpose-built workers accommodation in Kapar </a>
+</div>
+<div class="widget-post-meta">
+<span>
+29 Nov 2023 | Updated 3 hours ago </span>
+</div>
+</div>
+<div class="cleared"></div>
+</div>
+<div class="widget-post post-trending">
+<div class="box-thumb">
+<span class="cwp">
+6 </span>
+</div>
+<div class="box-details">
+<div class="widget-post-title">
+<a href="/content/1907846/mkh-gets-shareholders-nod-list-plantation-arm-main-market">
+MKH gets shareholders' nod to list plantation arm on Main Market </a>
+</div>
+<div class="widget-post-meta">
+<span>
+29 Nov 2023 | Updated 5 hours ago </span>
+</div>
+</div>
+<div class="cleared"></div>
+</div>
+<div class="widget-post post-trending">
+<div class="box-thumb">
+<span class="cwp">
+7 </span>
+</div>
+<div class="box-details">
+<div class="widget-post-title">
+<a href="/content/1907845/gadang-acquires-land-kwasa-damansara-undertake-residential-project">
+Gadang acquires land in Kwasa Damansara to undertake residential project </a>
+</div>
+<div class="widget-post-meta">
+<span>
+29 Nov 2023 | Updated 5 hours ago </span>
+</div>
+</div>
+<div class="cleared"></div>
+</div>
+<div class="widget-post post-trending">
+<div class="box-thumb">
+<span class="cwp">
+8 </span>
+</div>
+<div class="box-details">
+<div class="widget-post-title">
+<a href="/content/1907844/klccp-stapled-group’s-3q-net-profit-5-raises-dividend-88-sen">
+KLCCP Stapled Group’s 3Q net profit up 5%, raises dividend to 8.8 sen </a>
+</div>
+<div class="widget-post-meta">
+<span>
+29 Nov 2023 | Updated 5 hours ago </span>
+</div>
+</div>
+<div class="cleared"></div>
+</div>
+<div class="widget-post post-trending">
+<div class="box-thumb">
+<span class="cwp">
+9 </span>
+</div>
+<div class="box-details">
+<div class="widget-post-title">
+<a href="/content/1907843/blands-1q-net-profit-quadruples-rm37m">
+BLand's 1Q net profit quadruples to RM37m </a>
+</div>
+<div class="widget-post-meta">
+<span>
+29 Nov 2023 | Updated 5 hours ago </span>
+</div>
+</div>
+<div class="cleared"></div>
+</div>
+<div class="widget-post post-trending">
+<div class="box-thumb">
+<span class="cwp">
+10 </span>
+</div>
+<div class="box-details">
+<div class="widget-post-title">
+<a href="/content/1907842/tropicana-posts-25-revenue-jump-profit-tax-increasing-five-fold">
+Tropicana posts 25% revenue jump with profit before tax increasing five-fold </a>
+</div>
+<div class="widget-post-meta">
+<span>
+29 Nov 2023 | Updated 6 hours ago </span>
+</div>
+</div>
+<div class="cleared"></div>
+</div>
+<div class="widget-post post-trending">
+<div class="box-thumb">
+<span class="cwp">
+11 </span>
+</div>
+<div class="box-details">
+<div class="widget-post-title">
+<a href="/content/1907841/newly-listed-radium-posts-better-3q-earnings-46-q-o-q">
+Newly listed Radium posts better 3Q earnings, up 46% q-o-q </a>
+</div>
+<div class="widget-post-meta">
+<span>
+29 Nov 2023 | Updated 6 hours ago </span>
+</div>
+</div>
+<div class="cleared"></div>
+</div>
+<div class="widget-post post-trending">
+<div class="box-thumb">
+<span class="cwp">
+12 </span>
+</div>
+<div class="box-details">
+<div class="widget-post-title">
+<a href="/content/1907840/igb-declares-seven-sen-dividend-3q-profit-jumps-21">
+IGB declares seven sen dividend as 3Q profit jumps 21% </a>
+</div>
+<div class="widget-post-meta">
+<span>
+29 Nov 2023 | Updated 6 hours ago </span>
+</div>
+</div>
+<div class="cleared"></div>
+</div>
+<div class="widget-post post-trending">
+<div class="box-thumb">
+<span class="cwp">
+13 </span>
+</div>
+<div class="box-details">
+<div class="widget-post-title">
+<a href="/content/1907839/search-and-rescue-operation-continues-after-bayan-lepas-warehouse-collapse">
+Search and rescue operation continues after Bayan Lepas warehouse collapse </a>
+</div>
+<div class="widget-post-meta">
+<span>
+29 Nov 2023 | Updated 7 hours ago </span>
+</div>
+</div>
+<div class="cleared"></div>
+</div>
+<div class="widget-post post-trending">
+<div class="box-thumb">
+<span class="cwp">
+14 </span>
+</div>
+<div class="box-details">
+<div class="widget-post-title">
+<a href="/content/1907835/done-deal-condominium-seringin-residences-kuala-lumpur">
+DONE DEAL: Condominium, Seringin Residences, Kuala Lumpur </a>
+</div>
+<div class="widget-post-meta">
+<span>
+29 Nov 2023 | Updated 7 hours ago </span>
+</div>
+</div>
+<div class="cleared"></div>
+</div>
+<div class="widget-post post-trending">
+<div class="box-thumb">
+<span class="cwp">
+15 </span>
+</div>
+<div class="box-details">
+<div class="widget-post-title">
+<a href="/content/1907834/nga-says-260000-affordable-housing-units-built-so-far-under-12mp">
+Nga says 260,000 affordable housing units built so far under 12MP </a>
+</div>
+<div class="widget-post-meta">
+<span>
+28 Nov 2023 | Updated 1 day ago </span>
+</div>
+</div>
+<div class="cleared"></div>
+</div>
+</div>
+<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+<script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='MOBILE';ftypes[3]='text';fnames[4]='MMERGE4';ftypes[4]='text';fnames[5]='MMERGE5';ftypes[5]='number';fnames[6]='MMERGE6';ftypes[6]='text';fnames[7]='MMERGE7';ftypes[7]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+
+</div>
+
+<div class="cleared"></div>
+</div>
+
+<div class="skin-ads-wrapper">
+<div class="skin-ads" id="div-gpt-ad-1560483658582-0">
+<script>
+          googletag.cmd.push(function() { googletag.display('div-gpt-ad-1560483658582-0'); });
+        </script>
+</div>
+</div>
+</div>
+<div class="pre-footer-new">
+<div class="pre-footer-new-app-info">
+<div class="container">
+<div class="row align-items-end">
+<div class="col-md-7 col-lg-7">
+<div class="app-info-left">
+<img class="google-rating text-center" alt="Malaysia Most Loved Property App" src="https://media.edgeprop.my/tep-assets/app-google-rating.png" />
+<h4 class="most-loved">Malaysia's Most Loved Property App</h4>
+<div class="app-info-inner">
+<div class="app-info-icons">
+<a href="https://apps.apple.com/my/app/edgeprop-buy-rent-properties/id990512776?mt=8">
+<img class="mobile-logo" alt="Get it on Apple" src="https://media.edgeprop.my/tep-assets/app-store.svg" />
+</a>
+<a href="https://play.google.com/store/apps/details?id=my.com.theedgeproperty.app">
+<img class="mobile-logo" alt="Get it on Google Play" src="https://media.edgeprop.my/tep-assets/google-play-badge.png" />
+</a>
+</div>
+<p class="app-desc">The only property app you need. More than 200,000<br/> sale/rent listings and daily property news.</p>
+</div>
+</div>
+</div>
+<div class="col-md-5 col-lg-5">
+<img class="phone-mock" src="https://media.edgeprop.my/tep-assets/tep-app-phone.png" alt="The Edge property app" />
+</div>
+</div>
+</div>
+</div>
+<div class="container container-footer">
+<div class="row">
+<div class="col-sm-3">
+<h3 class="head-new">Popular Properties for Sale</h3>
+<ul>
+<li><a href="/buy/kuala-lumpur/all-residential">For Sale in Kuala Lumpur</a></li>
+<li><a href="/buy/penang/all-residential">For Sale in Penang</a></li>
+<li><a href="/buy/Johor/all-residential">For Sale in Johor</a></li>
+<li><a href="/buy/kuala-lumpur/mont-kiara/all-residential">For Sale in Mont Kiara</a></li>
+<li><a href="/buy/kuala-lumpur/klcc/all-residential">For Sale in KLCC</a></li>
+<div class="collapse" id="sale">
+<li><a href="/buy/kuala-lumpur/sri-hartamas/all-residential">For Sale in Sri Hartamas</a></li>
+<li><a href="/buy/kuala-lumpur/ampang/all-residential">For Sale in Ampang</a></li>
+<li><a href="/buy/kuala-lumpur/bangsar/all-residential">For Sale in Bangsar</a></li>
+<li><a href="/buy/kuala-lumpur/cheras/all-residential">For Sale in Cheras</a></li>
+<li><a href="/buy/kuala-lumpur/kepong/all-residential">For Sale in Kepong</a></li>
+<li><a href="/buy/selangor/puchong/all-residential">For Sale in Puchong</a></li>
+<li><a href="/buy/selangor/subang-jaya/all-residential">For Sale in Subang Jaya</a></li>
+<li><a href="/buy/selangor/petaling-jaya/all-residential">For Sale in Petaling Jaya</a></li>
+<li><a href="/buy/selangor/shah-alam/all-residential">For Sale in Shah Alam</a></li>
+<li><a href="/buy/johor/johor-bahru/all-residential">For Sale in Johor Bahru</a></li>
+<li><a href="/buy/johor/skudai/all-residential">For Sale in Skudai</a></li>
+<li><a href="/buy/penang/georgetown/all-residential">For Sale in Georgetown</a></li>
+<li><a href="/buy/penang/ayer-itam/all-residential">For Sale in Ayer Itam</a></li>
+</div>
+<li><a class="showMore-new" data-toggle="collapse" data-target="#sale" id="salemore" onclick="changeMore('salemore')">More</a></li>
+</ul>
+</div>
+<div class="col-sm-3">
+<h3 class="head-new">Popular Properties for Rent</h3>
+<ul>
+<li><a href="/rent/kuala-lumpur/all-residential">For Rent in Kuala Lumpur</a></li>
+<li><a href="/rent/penang/all-residential">For Rent in Penang</a></li>
+<li><a href="/rent/Johor/all-residential">For Rent in Johor</a></li>
+<li><a href="/rent/kuala-lumpur/mont-kiara/all-residential">For Rent in Mont Kiara</a></li>
+<li><a href="/rent/kuala-lumpur/klcc/all-residential">For Rent in KLCC</a></li>
+<div class="collapse" id="rent">
+<li><a href="/rent/kuala-lumpur/sri-hartamas/all-residential">For Rent in Sri Hartamas</a></li>
+<li><a href="/rent/kuala-lumpur/ampang/all-residential">For Rent in Ampang</a></li>
+<li><a href="/rent/kuala-lumpur/bangsar/all-residential">For Rent in Bangsar</a></li>
+<li><a href="/rent/kuala-lumpur/cheras/all-residential">For Rent in Cheras</a></li>
+<li><a href="/rent/kuala-lumpur/kepong/all-residential">For Rent in Kepong</a></li>
+<li><a href="/rent/selangor/puchong/all-residential">For Rent in Puchong</a></li>
+<li><a href="/rent/selangor/subang-jaya/all-residential">For Rent in Subang Jaya</a></li>
+<li><a href="/rent/selangor/petaling-jaya/all-residential">For Rent in Petaling Jaya</a></li>
+<li><a href="/rent/selangor/shah-alam/all-residential">For Rent in Shah Alam</a></li>
+<li><a href="/rent/johor/johor-bahru/all-residential">For Rent in Johor Bahru</a></li>
+<li><a href="/rent/johor/skudai/all-residential">For Rent in Skudai</a></li>
+<li><a href="/rent/penang/georgetown/all-residential">For Rent in Georgetown</a></li>
+<li><a href="/rent/penang/ayer-itam/all-residential">For Rent in Ayer Itam</a></li>
+</div>
+<li><a class="showMore-new" data-toggle="collapse" data-target="#rent" id="rentmore" onclick="changeMore('rentmore')">More</a></li>
+</ul>
+</div>
+<div class="col-sm-3">
+<h3 class="head-new">New Projects</h3>
+<ul>
+<li><a href="/buy/kuala-lumpur/all-residential?new_launch=1">New Projects in Kuala Lumpur</a></li>
+<li><a href="/buy/selangor/all-residential?new_launch=1">New Projects in Selangor</a></li>
+<li><a href="/buy/penang/all-residential?new_launch=1">New Projects in Penang</a></li>
+<li><a href="/buy/johor/all-residential?new_launch=1">New Projects in Johor</a></li>
+
+<li><a href="/buy/Putrajaya/all-residential?new_launch=1">New Projects in Putrajaya</a></li>
+<div class="collapse" id="project">
+
+<li><a href="/buy/sabah/all-residential?new_launch=1">New Projects in Sabah</a></li>
+
+</div>
+<li><a class="showMore-new" data-toggle="collapse" data-target="#project" id="projectmore" onclick="changeMore('projectmore')">More</a></li>
+</ul>
+</div>
+<div class="col-sm-3">
+<h3 class="head-new">Property Prices</h3>
+<ul>
+<li><a href="/area-outlook/kuala-lumpur/cheras">Property Prices in Cheras</a></li>
+<li><a href="/area-outlook/kuala-lumpur/setapak">Property Prices in Setapak</a></li>
+<li><a href="/area-outlook/kuala-lumpur/mont-kiara">Property Prices in Mont Kiara</a></li>
+<li><a href="/area-outlook/kuala-lumpur/kepong">Property Prices in Kepong</a></li>
+<li><a href="/area-outlook/kuala-lumpur/klcc">Property Prices in KLCC</a></li>
+<div class="collapse" id="prices">
+<li><a href="/area-outlook/selangor/klang">Property Prices in Klang</a></li>
+<li><a href="/area-outlook/selangor/shah-alam">Property Prices in Shah Alam</a></li>
+<li><a href="/area-outlook/selangor/puchong">Property Prices in Puchong</a></li>
+<li><a href="/area-outlook/selangor/kajang">Property Prices in Kajang</a></li>
+<li><a href="/area-outlook/johor/johor-bahru">Property Prices in Johor Bahru</a></li>
+<li><a href="/area-outlook/johor/skudai">Property Prices in Skudai</a></li>
+<li><a href="/area-outlook/johor/ulu-tiram">Property Prices in Ulu Tiram</a></li>
+<li><a href="/area-outlook/penang/ayer-itam">Property Prices in Ayer Itam</a></li>
+<li><a href="/area-outlook/penang/bukit-mertajam">Property Prices in Bukit Mertajam</a></li>
+<li><a href="/area-outlook/penang/sungai-ara">Property Prices in Sungai Ara</a></li>
+</div>
+<li><a class="showMore-new" data-toggle="collapse" data-target="#prices" id="pricesmore" onclick="changeMore('pricesmore')">More</a></li>
+</ul>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-3">
+<h3>Properties for Sale</h3>
+<ul>
+<li><a href="/buy/kuala-lumpur/condominium-apartment">Apartments / Condos for Sale</a></li>
+<li><a href="/buy/kuala-lumpur/bungalow-detached-house-villa">Bungalows for Sale</a></li>
+<li><a href="/buy/kuala-lumpur/link-bungalow-semi-detached-house">Semi Detached Houses for Sale</a></li>
+<li><a href="/buy/kuala-lumpur/terrace-house">Terraced Houses for Sale</a></li>
+<li><a href="/buy/kuala-lumpur/all-commercial">Commercial Properties for Sale</a></li>
+</ul>
+</div>
+<div class="col-sm-3">
+<h3>Properties for Rent</h3>
+<ul>
+<li><a href="/rent/kuala-lumpur/condominium-apartment">Apartments / Condos for Rent</a></li>
+<li><a href="/rent/kuala-lumpur/bungalow-detached-house-villa">Bungalows for Rent</a></li>
+<li><a href="/rent/kuala-lumpur/link-bungalow-semi-detached-house">Semi Detached Houses for Rent</a></li>
+<li><a href="/rent/kuala-lumpur/terrace-house">Terraced Houses for Rent</a></li>
+<li><a href="/rent/kuala-lumpur/all-commercial">Commercial Properties for Rent</a></li>
+</ul>
+</div>
+<div class="col-sm-3">
+<h3>Property News</h3>
+<ul>
+<li><a href="/news/search?field_category_value=news&amp;combine=">Latest news</a></li>
+<li><a href="/news/search?field_category_value=lifestyle&amp;combine=">Lifestyle news</a></li>
+<li><a href="/news/search?field_category_value=indepth&amp;combine=">In-depth news</a></li>
+<li><a href="/edgeproptv">Video</a></li>
+<li><a href="/events">Events</a></li>
+</ul>
+</div>
+<div class="col-sm-3">
+<h3>EdgeProp.my</h3>
+<ul>
+<li><a href="/transactions">What's Sold and How Much?</a></li>
+<li><a href="/home-estimate">What's My Home Worth?</a></li>
+<li><a href="http://unbouncepages.com/for-sale-by-owners/">Sell My Home</a></li>
+<li><a href="http://unbouncepages.com/homefinder">Find My Home</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<footer class="footer-22">
+<div class="footer-layer2">
+<div class="footerRow">
+<div class="footerCol css-1jsp66u">
+<div class="imageWrapper"><img src="https://media.edgeprop.my/tep-assets/logo.png" height="30" class="d-inline-block align-top" alt="EdgeProp Malaysia"></div>
+<div>
+<div class="textBlock">
+<p>EdgeProp.my is Malaysia's most useful property website for home buyers and investors. At EdgeProp.my, you can find daily breaking news on property, and hundreds of thousands of properties for sale and rent with detailed information such as past transacted prices, maps and photos. Whether you are looking to buy or rent properties, we have the most comprehensive property listings in Malaysia, for all popular property types in the market - condominiums and apartments, landed properties, residential land and commercial properties.</p>
+<p>
+With property tools like the Edge Reference Price, Past Transacted Prices,<a href="/homeadvisor"> Home Advisor Report</a> as well as <a href="/area-outlook"> Area</a> and <a href="/projects"> Project insights</a>, you have all the resources you need to make better property decisions, anytime and every time.
+</p>
+<p>Interested in new property launches in Malaysia? Check out our featured new launches by top property developers in Malaysia.</p>
+</div>
+</div>
+</div>
+<div class="footerCol">
+<div class="footerRow">
+<div class="footerCol">
+<h3>Company</h3>
+<ul class="menuWrap">
+<li><a target="_blank" href="https://www.linkedin.com/company/edgeprop-malaysia/">Careers</a></li>
+<li><a href="/about-us">About Us</a></li>
+<li><a href="/terms-and-conditions">Terms and conditions</a></li>
+<li><a href="/privacy-policy">Privacy Policy</a></li>
+<li><a href="/contact-us">Contact us</a></li>
+</ul>
+</div>
+<div class="footerCol">
+<h3>Our websites</h3>
+<div class="webWrap">
+<a href="https://www.edgeprop.my/">
+<img alt="EdgeProp Malaysia" width="30" height="30" src="https://media.edgeprop.my/tep-assets/icon-my.png">
+<p>Malaysia</p>
+</a>
+<a href="https://www.edgeprop.sg/">
+<img alt="EdgeProp Singapore" width="30" height="30" src="https://media.edgeprop.my/tep-assets/icon-sg.png">
+<p>Singapore</p>
+</a>
+</div>
+</div>
+<div class="col-lg-12 col-md-12 news-letter-component">
+<div id="mc_embed_signup">
+<h3 style="margin-bottom: 10px">Newsletter</h3>
+<div class="subscribe-txt">Subscribe to EdgeProp.my's weekly property round-up and stay on top of real estate news, latest listings and events.</div>
+<div class="subscribe-btn"><a href="https://esvcs.enginemailer.com/onlineform?id=%2FXbHcRtPZ5ZTQ3XlL61kug%3D%3D&sc=2DYbqUgUNt10kq2fV5oxwg%3D%3D" target="_blank">Subscribe</a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="footerRow">
+<div class="footerCol fillCol">
+<div class="bottomWrap">
+<div class="socialWrap">
+<h3>Follow us</h3>
+<ul>
+<li><a href="https://www.facebook.com/myedgeprop" aria-label="EdgeProp on Facebook"><img src="https://media.edgeprop.my/images/footer/facebook.png" alt="facebook"></a></li>
+<li><a href="https://www.instagram.com/myedgeprop/" aria-label="EdgeProp on Instagram"> <img src="https://media.edgeprop.my/images/footer/instagram.png" alt="instagram"></a></li>
+<li><a href="https://twitter.com/myedgeprop" aria-label="EdgeProp on Twitter"> <img src="https://media.edgeprop.my/images/footer/twitter.png" alt="twitter"></a></li>
+</ul>
+</div>
+<div class="cpWrap">
+<p>© Copyright 2022 | EdgeProp.my</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<script>
+function changeMore(id){
+  var str = document.getElementById(id).text;
+  if(str == "More"){
+    document.getElementById(id).innerHTML = "Less";
+  }else{
+    document.getElementById(id).innerHTML = "More";
+  }
+}
+</script>
+<script type="text/javascript"> 
+    jQuery.noConflict();
+    (function ($) {
+      $(document).ready(function () {
+
+        $('#brand-toggle').click(function () {
+          // alert('hoi'); 
+          if ($('#brand-slide').hasClass('in')) {
+            $('#brand-slide').removeClass('in').addClass('out');
+          }
+          else {
+            $('#brand-slide').removeClass('out').addClass("in");
+          }  
+        });
+
+        $(function () {
+      $("#brand-toggle").click(function () {
+        if ($(this).next(".menu").css("left") != "0px")
+          $(this).next(".menu").animate({
+            left: 0
+          }, 1000);
+        else
+          $(this).next(".menu").animate({
+            left: -250
+          }, 1000);
+      });
+    });
+        // print an article
+
+        $(document).on('click', '.printPDF', function () {
+          var mode = 'iframe'; //popup
+          var close = 'iframe';
+          var options = {
+            mode: mode,
+            popClose: close
+          };
+          var article = $('#article0');
+              // printLogo = $('body.page-content .top-nav .navbar-brand-new img');
+          $('#article0 > div').hide();
+          $(article).find('#prlogo').css('height', '30px').show(); 
+          $(article).find('#print-title').css({"margin": "10px 0", "font-size": "25px", "font-weight": "bold"}).show(); 
+          $(article).find('#meta-print').css('padding-top', '10px').show(); 
+          $(article).find('div.top2-entry-post-share').hide();
+          $(article).find('div.news-body.content, div.entry-heading.cat-meta-line').show(); 
+          $('.entry-meta').hide();
+          // $(article).prepend(printLogo).css({'height': '30px'});
+          // $(article).prepend('<img id="printLogo" src="/sites/all/themes/markone/logo-new.png" />');
+          // printLogo.clone().prependTo(article).show();  
+          $('.skin-ads-parallax-wrapper').hide();
+          $('.skin-ads-wrapper').hide();
+          $(article).find('figure.caption.first').hide();
+          $(article).find('figure.first').hide();
+          $('body.page-content .featured-properties').hide(); 
+          $(article).printArea(options);
+          
+
+          // POST print PDF - reshow or rehide
+          $('.entry-meta').show();
+          $(article).find('#prlogo, #meta-print').hide();
+          $(article).find('div.top2-entry-post-share').show();
+          $(article).find('figure.caption.first').show();
+          $(article).find('figure.first').show();
+          $('body.page-content .featured-properties').show();
+
+          // $('#article0 > div,div.top2-entry-post-share').show();
+          /*$('div.related-post').hide();
+          $('div.bottom-entry-post-share').hide();*/
+
+          /*$('div.related-post').show();
+          $('div.bottom-entry-post-share').show();*/ 
+        });
+        
+      });
+      //MREC apend to article when width smaller than 1000px
+      if (document.documentElement.clientWidth<=1000){
+        // jQuery('#block-block-5, #block-block-10, #block-block-11').addClass("m-t-25");
+        jQuery('#block-block-5, #block-block-10, #block-block-11').css('border-top', '#fff solid 25px');
+        ads = [];
+        dfp = [];
+
+        ads[0] = jQuery('#block-block-5');
+        ads[1] = jQuery('#block-block-10');
+        ads[2] = jQuery('#block-block-11');
+
+        var count = jQuery("#article0 .news-body p").length;
+
+        noa = count/3;
+        //mrec1 paragraph position, currently positioned at 2nd
+        insertTo = 2;
+        for (i=1;i<=3;i++){
+          j=i-1;
+          jQuery( "#article0 .news-body p:eq("+ insertTo + ")" ).append(ads[j]);
+          insertTo += Math.floor(noa);
+          googletag.cmd.push(function() {
+              googletag.pubads().refresh();
+          });
+        }
+      }
+      // $(window).load(function () {
+      //   var quote = $('blockquote');
+      //   $( ".news-body p:first-of-type" ).before( quote );
+      // });
+      $('.featured-properties .owl-carousel').owlCarousel({
+          loop:true,
+          margin: 5,
+          nav:true,
+          dots: false,
+          autoplay:true,
+          autoplayTimeout:1500,
+          autoplayHoverPause:true,
+          navText: ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
+          responsive:{
+              0:{
+                  items:2
+              },
+              600:{
+                  items:3
+              },
+          }
+      });
+
+    })(jQuery);
+    
+  </script>
+ <div class="region region-page-bottom">
+
+<script>
+            var _comscore = _comscore || [];
+            _comscore.push({"c1":"2","c2":"10340743","c3":"","c4":"https:\/\/www.edgeprop.my\/content\/1785882\/%E5%B1%8B%E6%89%80%E4%B8%8D%E8%B0%88%EF%BC%9A%E6%88%91%E4%BB%AC%E9%9C%80%E8%A6%81%E5%AF%B9%E4%BB%98%E6%81%B6%E9%82%BB%E5%B1%85%E7%9A%84%E6%B3%95%E4%BB%A4%EF%BC%81","c5":"","c6":"","c15":""});
+            (function() {
+              var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+              s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+              el.parentNode.insertBefore(s, el);
+            })();
+          </script>
+<noscript>
+            <img src="http://b.scorecardresearch.com/p?c1=2&c2=10340743&c3=&c4=https%3A//www.edgeprop.my/content/1785882/%25E5%25B1%258B%25E6%2589%2580%25E4%25B8%258D%25E8%25B0%2588%25EF%25BC%259A%25E6%2588%2591%25E4%25BB%25AC%25E9%259C%2580%25E8%25A6%2581%25E5%25AF%25B9%25E4%25BB%2598%25E6%2581%25B6%25E9%2582%25BB%25E5%25B1%2585%25E7%259A%2584%25E6%25B3%2595%25E4%25BB%25A4%25EF%25BC%2581&c5=&c6=&c15=&cv=2.0&cj=1" />
+          </noscript>
+ </div>
+<script src="https://www.edgeprop.my/sites/all/themes/bootstrap/js/bootstrap.js?s45bzs"></script>
+
+<script type="text/javascript">
+      /* <![CDATA[ */
+      var google_conversion_id = 944543723;
+      var google_custom_params = window.google_tag_params;
+      var google_remarketing_only = true;
+      /* ]]> */
+    </script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js"></script>
+<noscript>
+      <div style="display:inline;">
+      <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/944543723/?guid=ON&amp;script=0"/>
+      </div>
+    </noscript>
+<style>iframe[name=google_conversion_frame]{display:none!important;}</style>
+
+<div class="sto-ads" style="display: none;">
+<div class="sto-ads-content">
+<span class="slide-close"><i class="ion-close"></i></span>
+
+<div id="div-gpt-ad-1554101456137-0"></div>
+<script>    
+      googletag.cmd.push(function() {     
+        googletag.display('div-gpt-ad-1554101456137-0');    
+      });       
+    </script>
+</div>
+</div>
+<div class="ads-mrec-floating" style="display: none;">
+<div class="ads-mrec-floating-content">
+<div class="pop-slide-close">Close <i class="material-icons">clear</i></div>
+
+<div id="div-gpt-ad-1666774521549-0"></div>
+<script>    
+      googletag.cmd.push(function() {       
+        googletag.display('div-gpt-ad-1666774521549-0');
+      });       
+    </script>
+</div>
+</div> <div class="catfish-ads" style="display: none;">
+
+<div class="catfish-ads-content">
+<div class="slide-close">Close <i class="material-icons">clear</i></div>
+
+<div id="div-gpt-ad-1555649770722-0"></div>
+<script>    
+      googletag.cmd.push(function() {       
+        googletag.display('div-gpt-ad-1555649770722-0');
+      });       
+    </script>
+</div>
+</div> 
+<script src="/sites/all/themes/markone/assets/js/hlogin_leanModal.js?v=3"></script>
+<script src="/sites/all/themes/markone/assets/js/hlogin_index.js?v=6"></script>
+
+<script type="text/javascript">
+     (function (w) {
+       var s = document.createElement('script');
+       s.src = '//survey.survicate.com/workspaces/684aab189370ed6567c8fb9279d11de8/web_surveys.js';
+       s.async = true;
+       var e = document.getElementsByTagName('script')[0];
+       e.parentNode.insertBefore(s, e);
+     })(window);
+    </script>
+
+<script type="text/javascript" data-cfasync="false">
+ (function(W,i,s,e,P,o,p){W['WisePopsObject']=P;W[P]=W[P]||function(){
+ (W[P].q=W[P].q||[]).push(arguments)},W[P].l=1*new Date();o=i.createElement(s),
+ p=i.getElementsByTagName(s)[0];o.async=1;o.src=e;p.parentNode.insertBefore(o,p)
+ })(window,document,'script','//loader.wisepops.com/get-loader.js?v=1&site=F64ar6yEfL','wisepops');
+  </script>
+<script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=373529631" async></script></body>
+<script type="text/javascript"> _linkedin_data_partner_id = "70637"; </script><script type="text/javascript"> (function(){var s = document.getElementsByTagName("script")[0]; var b = document.createElement("script"); b.type = "text/javascript";b.async = true; b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js"; s.parentNode.insertBefore(b, s);})(); </script> <noscript> <img height="1" width="1" style="display:none;" alt="" src="https://dc.ads.linkedin.com/collect/?pid=70637&fmt=gif" /> </noscript>
+</html>

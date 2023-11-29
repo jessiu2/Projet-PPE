@@ -1,0 +1,1669 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns:fb="//www.facebook.com/2008/fbml" xmlns:og="//opengraphprotocol.org/schema/" lang="zh" xml:lang="zh"  class="no-touch no-js">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="rei" content="3/2/2022 10.39am est" />
+
+    
+        <script tyle="text/javascript" src="/content/dam/cdc/j/cdcrSwitch.js"></script>
+        <script type="text/javascript"> 
+            if (typeof cdc === "undefined"){
+                cdc = {};
+            }
+            cdc.localizedLang="zh_cn";
+
+            if (window.cdcext === undefined) { window.cdcext = {}; }
+            cdcext.customEnvironment = "prod";
+            if (window.cdclocale === undefined) { window.cdclocale = {}; }
+            cdclocale.locale = cdc.localizedLang=="en/us"?"en_us":cdc.localizedLang;
+
+        </script> 
+         
+    
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="/c/dam/cdc/t/ctm-core.js"></script>
+<script>
+    window['adrum-start-time'] = new Date().getTime();
+    window.environ = "prod" ;
+</script>
+<script type="text/javascript" src="/c/dam/cdc/j/personalization-init.js"></script>
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <style id="targetable-styles"  class="pzn-styles">
+        .targetable, .mboxDefault, .targetable.hidden { visibility:hidden; }
+        .targetable { position:relative; }
+        .targetable.spinner > :not(.spinner-box) { opacity: 0 !important; }
+        .targetable.spinner > div.spinner-box { position: absolute; top: 50%; left: 50%;transform: translateX(-50%) translateY(-50%); }
+        div.spinner-box > div.spinner-wheel { position:relative; visibility:visible; width:4em; height:4em; border-radius:100%; border:.2em solid #cccccc; border-left-color:#049fd9; -webkit-animation: load 1.1s infinite linear; animation: load 1.1s infinite linear; } @-webkit-keyframes load{ 0%{ -ms-transform: rotate(7deg); -webkit-transform: rotate(7deg); transform: rotate(7deg); } 100%{ -ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg); } } @keyframes load{ 0%{ -ms-transform: rotate(7deg); -webkit-transform: rotate(7deg); transform: rotate(7deg); } 100%{ -ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg); } }
+        .targetable.obscured { visibility:visible; opacity:.1; transition: opacity 2s ease-in-out; -moz-transition: opacity 2s ease-in-out; -webkit-transition: opacity 2s ease-in-out; filter: blur(5px); -webkit-filter: blur(5px); -moz-filter: blur(5px); -o-filter: blur(5px); -ms-filter: blur(5px); filter: url('data:image/svg+xml;utf9,<svg%20version=\"1.1\"%20xmlns=\"http://www.w3.org/2000/svg\"><filter%20id=\"blur\"><feGaussianBlur%20stdDeviation=\"3\"%20/></filter></svg>#blur'); filter: progid: DXImageTransform.Microsoft.Blur(PixelRadius='5'); -webkit-transition: 2s -webkit-filter linear; -moz-transition: 2s -moz-filter linear; -o-transition: 2s -o-filter linear; }
+      </style>
+    
+
+
+  <script type="text/javascript">
+  		if (window.cpe === undefined) { window.cpe = {}; }
+		  if (cpe.trgt === undefined) { cpe.trgt = {}; cpe.trgt.personalizationObj=null;}
+          cpe.trgt.personalizationObj={
+			              'entity': '{"id":"1536728005243597","categoryId":"Technologies,IP,TSD Technologies Tech Note"}',
+
+          }
+    </script>
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+ 
+    <title>排除OSPF邻居故障 - Cisco</title>
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<meta name="format-detection" content="telephone=no">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8"  />
+    <meta name="description" content="本文件介绍了使开放最短路径优先（OSPF）邻居完全相邻过程中的较为常见的问题。"  />
+    <meta name="title" content="排除OSPF邻居故障"  />
+    <meta name="documentId" content="13699"  />
+    <meta name="templateName" content="eot"  />
+    <meta property="fb:app_id" content="156494687694418"  />
+    <meta name="ioContentSource" content="support"  />
+    <meta name="concept" content="IP Routing"  />
+    <meta name="secondaryConcept" content="Open Shortest Path First (OSPF)"  />
+    <meta name="docType" content="TSD Technologies Tech Note"  />
+    <meta name="iaPath" content="cisco.com#Technologies#IP#IP Routing"  />
+    <meta name="contentType" content="cisco.com#CN#postSales"  />
+    <meta name="locale" content="CN"  />
+    <meta name="language" content="zh"  />
+    <meta name="country" content="CN"  />
+    <meta name="date" content="Mon Aug 14 07:57:24 PDT 2023"  />
+    <meta name="sourceGroup" content="TACAuthoredSP"  />
+    <meta name="contentArea" content="IP Routing"  />
+    <meta name="accessLevel" content="Customer"  />
+    <meta name="accessLevel" content="Guest"  />
+    <meta name="accessLevel" content="Partner"  />
+    <meta name="entitlementExpression" content="contains( &quot;0,1,2,3,4,7&quot; , $profileField[3] )"  />
+    <meta property="og:site_name" content="Cisco"  />
+    <meta property="og:type" content="website"  />
+    <meta property="og:title" content="排除OSPF邻居故障"  />
+    <meta property="og:description" content="本文件介绍了使开放最短路径优先（OSPF）邻居完全相邻过程中的较为常见的问题。"  />
+    <meta property="og:url" content="https://www.cisco.com/c/zh_cn/support/docs/ip/open-shortest-path-first-ospf/13699-29.html"  />
+    <link rel="canonical" href="https://www.cisco.com/c/zh_cn/support/docs/ip/open-shortest-path-first-ospf/13699-29.html"/>
+	<link rel="alternate" hreflang="x-default" href="https://www.cisco.com/c/en/us/support/docs/ip/open-shortest-path-first-ospf/13699-29.html"/>
+<link rel="alternate" hreflang="pt-br" href="https://www.cisco.com/c/pt_br/support/docs/ip/open-shortest-path-first-ospf/13699-29.html"/>
+<link rel="alternate" hreflang="es-mx" href="https://www.cisco.com/c/es_mx/support/docs/ip/open-shortest-path-first-ospf/13699-29.html"/>
+<link rel="alternate" hreflang="ko-kr" href="https://www.cisco.com/c/ko_kr/support/docs/ip/open-shortest-path-first-ospf/13699-29.html"/>
+<link rel="alternate" hreflang="it-it" href="https://www.cisco.com/c/it_it/support/docs/ip/open-shortest-path-first-ospf/13699-29.html"/>
+<link rel="alternate" hreflang="ja-jp" href="https://www.cisco.com/c/ja_jp/support/docs/ip/open-shortest-path-first-ospf/13699-29.html"/>
+<link rel="alternate" hreflang="de-de" href="https://www.cisco.com/c/de_de/support/docs/ip/open-shortest-path-first-ospf/13699-29.html"/>
+<link rel="alternate" hreflang="fr-ca" href="https://www.cisco.com/c/fr_ca/support/docs/ip/open-shortest-path-first-ospf/13699-29.html"/>
+<link rel="alternate" hreflang="ar-ae" href="https://www.cisco.com/c/ar_ae/support/docs/ip/open-shortest-path-first-ospf/13699-29.html"/>
+<link rel="alternate" hreflang="nl-nl" href="https://www.cisco.com/c/nl_nl/support/docs/ip/open-shortest-path-first-ospf/13699-29.html"/>
+<link rel="alternate" hreflang="zh-tw" href="https://www.cisco.com/c/zh_tw/support/docs/ip/open-shortest-path-first-ospf/13699-29.html"/>
+<link rel="alternate" hreflang="zh-cn" href="https://www.cisco.com/c/zh_cn/support/docs/ip/open-shortest-path-first-ospf/13699-29.html"/>
+<link rel="alternate" hreflang="en-us" href="https://www.cisco.com/c/en/us/support/docs/ip/open-shortest-path-first-ospf/13699-29.html"/>
+
+
+    <meta name="Tech Zone URL" content="/t5/Routing-Protocols/Troubleshoot-OSPF-Neighbor-Problems/ta-p/941081"/>
+    
+ 
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="/etc.clientlibs/clientlibs/granite/jquery.min.js"></script>
+<script src="/etc.clientlibs/clientlibs/granite/utils.min.js"></script>
+<script src="/etc.clientlibs/clientlibs/granite/jquery/granite.min.js"></script>
+<script src="/etc.clientlibs/foundation/clientlibs/jquery.min.js"></script>
+<script src="/etc.clientlibs/foundation/clientlibs/shared.min.js"></script>
+<script src="/etc.clientlibs/cq/personalization/clientlib/underscore.min.js"></script>
+<script src="/etc.clientlibs/cq/personalization/clientlib/personalization/kernel.min.js"></script>
+<script src="/etc.clientlibs/cq/personalization/clientlib/personalization/kernel.min.js"></script>
+<script type="text/javascript">
+    $CQ(function() {
+        CQ_Analytics.SegmentMgr.loadSegments("\/etc\/segmentation");
+        CQ_Analytics.ClientContextUtils.init("\/c\/dnc\/etc\/clientcontext\/default", "\/content\/zh_cn\/support\/docs\/ip\/open\u002Dshortest\u002Dpath\u002Dfirst\u002Dospf\/13699\u002D29");
+
+        
+    });
+</script>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>body { font-family: "PingFang TC", "Microsoft JhengHei", CiscoSans, Arial, sans-serif; }</style>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="/etc/designs/cdc/clientlibs/responsive/js/foundation.min.js"></script>
+
+    <link rel="stylesheet" href="/etc/designs/cdc/clientlibs/responsive/css/responsive.min.css" type="text/css">
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+
+    <script>
+        sessionStorage.setItem("logOutIntermediateMessage", '您正在退出。');
+    </script>
+    
+    
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Custom JSON LD For Products Type -->
+
+    
+    <script type="application/ld+json">
+        [
+           
+            {
+          "@context": "http://www.schema.org",                                                                        
+          "@type": "WebPage",
+          "name": "排除OSPF邻居故障",  		  
+          "url": "https://www.cisco.com/c/zh_cn/support/docs/ip/open-shortest-path-first-ospf/13699-29.html",
+          "description": "本文件介绍了使开放最短路径优先（OSPF）邻居完全相邻过程中的较为常见的问题。",
+          "publisher": {
+              "@type": "Corporation",
+                 "name": "Cisco"
+            }
+        }]
+    </script>
+<!-- End Custom JSON LD For Products Type -->
+
+<!-- Video JSON LD -->
+
+
+
+
+<!-- End Video JSON LD -->
+
+    
+</head>
+
+<body id="wcq" class="fw-res cdc-support cdc-eot cdc-high-density cdc-full-width cdc-transform
+">
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="fw-skiplinks">
+    <ul class="container">
+        <li><a id="skiplink-content" href="#fw-content">跳转到页面内容</a></li>
+        <li><a id="skiplink-search" href="#">跳到搜索</a></li>
+
+        <li><a id="skiplink-footer" href="#fw-footer-v2" class="last">跳转到页脚</a></li>
+    </ul>
+</div>
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="module" src="/site/web-components/cn/zh/cdc-header.js"></script>
+    <cdc-header></cdc-header>
+    <nav class="fw-c-header__seo-links" aria-hidden="true" style="display:none">
+        <ul>
+            <li><a tabindex="-1" href="/c/zh_cn/index.html">Cisco.com 中国</a></li>
+            <li><a tabindex="-1" href="/c/zh_cn/products/index.html">产品和服务</a></li>
+            <li><a tabindex="-1" href="//www.cisco.com/c/zh_cn/solutions/index.html">解决方案</a></li>
+            <li><a tabindex="-1" href="/c/zh_cn/support/index.html">支持</a></li>
+            <li><a tabindex="-1" href="/c/zh_cn/training-events.html">学习</a></li>
+            <li><a tabindex="-1" href="/c/zh_cn/about/sitemap.html">了解思科</a></li>
+            <li><a tabindex="-1" href="/c/zh_cn/buy.html">购买方式</a></li>
+            <li><a tabindex="-1" href="/c/zh_cn/partners.html">合作伙伴主页</a></li>                
+            <li><a tabindex="-1" href="/c/zh_cn/partners/partner-with-cisco.html?ccid=cc000864&dtid=odiprc001129">合作伙伴计划</a></li>
+            <li><a tabindex="-1" href="/c/zh_cn/partners/support-help.html">支持</a></li>
+            <li><a tabindex="-1" href="/c/zh_cn/partners/tools.html">工具</a></li>
+            <li><a tabindex="-1" href="//locatr.cloudapps.cisco.com/WWChannels/LOCATR/openBasicSearch.do">寻找思科合作伙伴</a></li>
+            <li><a tabindex="-1" href="/c/en/us/partners/connect-with-a-partner.html">了解思科合作伙伴</a></li>
+            <li><a tabindex="-1" href="//partnersuccess.cisco.com/becomeapartner">成为思科合作伙伴</a></li>
+
+        </ul>
+    </nav>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="fw-content" class="container grid">
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+<div class="row full blowout" data-owner="ID">
+	<div class="col full ">
+		
+		        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<nav id="fw-breadcrumb" class="data-based" data-owner="ID">
+
+   
+    <ul itemscope itemtype="//schema.org/BreadcrumbList">
+        <li aria-hidden="true"><a href='#' class="skip"><span></span></a></li>
+        <li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/content/zh_cn/support/index.html'><span itemprop='name'>技术支持</span><meta itemprop='position' content='1' /></a><span class='caret'></span></li><li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/zh_cn/tech/index.html'><span itemprop='name'>对于技术的支持</span><meta itemprop='position' content='2' /></a><span class='caret'></span></li><li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/content/zh_cn/tech/ip/ip-routing/index.html'><span itemprop='name'>IP 路由</span><meta itemprop='position' content='3' /></a><span class='caret'></span></li><li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/content/zh_cn/tech/ip/ip-routing/tsd-technology-support-troubleshooting-technotes-list.html'><span itemprop='name'>故障排除技术说明</span><meta itemprop='position' content='4' /></a><span class='caret'></span></li>
+    </ul>
+</nav>
+<script>
+    if (window.cdc === undefined) { window.cdc = {}; }
+    if (cdc.breadcrumb === undefined) {
+        cdc.breadcrumb = (function () {
+            let clone = document.querySelector('#fw-breadcrumb').cloneNode(true);
+
+            let appendClone = function () {
+                let hasBreadcrumb = document.querySelector('#fw-breadcrumb') !== null,
+                    firstMarquee = document.querySelectorAll('.dmc-mq')[0];
+
+                if (!hasBreadcrumb && firstMarquee !== undefined) {
+                    firstMarquee.querySelector('.frame .inset').insertBefore(this.clone, firstMarquee.querySelector('.frame .inset').firstElementChild);
+                }
+            };
+
+            return {
+                clone: clone,
+                appendClone: appendClone
+            }
+        }());
+    }
+    //DE380224
+    var anchorChild = document.getElementsByTagName("a");
+    for(var i=0; i<anchorChild.length; i++){ 
+        if(anchorChild[i].getAttribute("itemprop")=="item")  {  
+            if ( anchorChild[i].href.includes("%3Clocale%3E") ){
+                let anchorChildHREF = anchorChild[i].href;
+                let docLocale = document.querySelector('meta[name="locale"]').getAttribute('content');
+                let docLanguage = document.querySelector('meta[name="language"]').getAttribute('content');
+                
+                var docSeparator;
+                
+                if ((docLocale.toLowerCase() == "us") && (docLanguage.toLowerCase() == "en")) {
+                    docSeparator="/";
+                } else {
+                    docSeparator="_";
+                }
+                
+                let anchorURLReplace = docLanguage.toLowerCase() + docSeparator + docLocale.toLowerCase();
+                anchorChildHREF = anchorChildHREF.replace("%3Clocale%3E", anchorURLReplace);
+                anchorChild[i].setAttribute('href', anchorChildHREF);
+            }
+        }
+    }
+</script>
+
+		
+		        <h1 id="fw-pagetitle" class="" data-owner="ID">排除OSPF邻居故障</h1>
+		
+	</div>
+</div>
+     <!--googleon: index--><!--googleon: snippet-->
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<div class="row twothirds-third visitedlinks">-->
+<!-- US49416 -->
+<!--<div class="row blowout twothirds-third visitedlinks">-->
+<div class="row blowout wide-narrow-v2 visitedlinks">
+    <!--end-->
+    <!--<div class="col two-third">-->
+    
+      <div class="col wide-v2">
+        
+            
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    if (typeof(cdc) == "undefined") cdc={};
+    if (typeof(cdc.translations) == "undefined") cdc.translations={};
+
+</script>
+
+        <div class="docHeaderComponent base-blowout">
+        <div class="linksRow">
+            
+            
+                <img class="noprint tacLogo" src="/etc/designs/cdc/fw/i/TAC_lg-icon.png"/>
+            
+            <div class="toolbar">
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="noprint" id="saveModule">
+
+<script type="text/javascript">
+    cdc.util.ensureNamespace("cdc.rc.savedoc");
+    cdc.rc.savedoc.isLoggedIn = false;
+    cdc.rc.savedoc.save = "保存";
+    cdc.rc.savedoc.saved = "已保存";
+</script>
+
+    <button class="save">
+        <label>保存</label>
+    </button>    
+
+</div> 
+    <div class="saveDocumentMessage login cdc-expandPanel"  role="region" aria-live="polite">
+        <a href="/c/login/index.html?referer=/c/zh_cn/support/docs/ip/open-shortest-path-first-ospf/13699-29.html">登录</a>以保存内容
+    </div>
+
+
+            <!-- Translation Selctor -->
+            <!-- Translation Selector is used on EOT and Books pages. if a page has a locale of en_US then it will provide a list of avaible translations, if its a translated page (non english locale) then provide the link to the english locale. -->
+
+
+
+                                <script type="text/javascript">
+                                        jQuery(document).ready(function(){
+                                                jQuery('body').addClass('nonEnglishLocale');                            
+                                                cdc.translations.locale="zh_cn";
+                                        });
+                                </script>
+                                <div class="noprint translations">
+                                        <a class="nonEnglish" href="https://www.cisco.com/c/en/us/support/docs/ip/open-shortest-path-first-ospf/13699-29.html" tabindex="-1">
+                                                <button type="button" class="translations-link anchor translationOptions simpleOverlay-trigger">
+                                                        <div class="toolbarIcon translationsIcon"></div><label class="iconLabel" id="onlyForNonEn">英语</label>
+                                                </button>
+                                        </a>
+                                </div>
+            
+
+
+<script type="text/javascript">
+/* Specifically for books at the simple overlay trigger class on English locale pages, if its a non english locale do not add the trigger. */
+        if(jQuery('body').hasClass('cdc-books') && !jQuery('a').hasClass('nonEnglish')) {
+                jQuery('.translations').addClass('simpleOverlay-trigger');
+        }
+</script>
+
+            
+                <div class="noprint downloadDocument"  ><button type="button" class="view-download-list-link anchor" aria-expanded="false"><div class="toolbarIcon downloadIcon"></div><label class="iconLabel">下载</label></button></div>
+            
+            
+                <div class="noprint printDocument js-only"><button type="button" class="anchor printPage"><div class="toolbarIcon printIcon"></div><label class="iconLabel">打印</label></button></div>
+            
+            </div>
+
+        </div>
+            <!-- Where translation selector list of available languages is set up for EOT pages, for the javascript to work must have <ul id="translationsList"> </ul> -->
+            
+            
+            <div id="download-list-container" class="noprint panelRow"  role="region" aria-live="polite" tabindex="-1">
+                <div class='download-list' aria-label="下载选项">
+                    <h3>下载选项</h3>
+                    <ul>
+                    
+                        <li>
+                            <div class="fileText">
+                                <a href="/content/zh_cn/support/docs/ip/open-shortest-path-first-ospf/13699-29.pdf" class="download-pdf"><div class="fileIcon pdfIcon"></div>PDF</a>
+                                
+                                <span class="docSize">(267.7 KB)</span>
+                                
+                                <br />
+                                <span class="description">在各种设备上使用 Adobe Reader 查看</span>
+                            </div>
+                        </li>
+                    
+                         <li>
+                            <div class="fileText">
+                                <a href="/content/zh_cn/support/docs/ip/open-shortest-path-first-ospf/13699-29.epub" class="download-epub"><div class="fileIcon epubIcon"></div>ePub</a>
+                                
+                                <span class="docSize">(80.7 KB)</span>
+                                
+                                <br />
+                                <span class="description">在 iPhone、iPad、Android、Sony Reader 或 Windows Phone 上使用各种应用查看</span>
+                             </div>
+                         </li>
+                    
+                        <li>
+                            <div class="fileText">
+                                <a href="/content/zh_cn/support/docs/ip/open-shortest-path-first-ospf/13699-29.mobi" class="download-mobi"><div class="fileIcon mobiIcon"></div>Mobi (Kindle)</a>
+                                
+                                <span class="docSize">(69.7 KB)</span>
+                                
+                                <br />
+                                <span class="description">在 Kindle 设备上查看或在多个设备上使用 Kindle 应用查看</span>
+                             </div>
+                         </li>
+                    
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div class="infobarClearFix">
+            <div class="infobar">
+				
+                    <div class="updatedDate"><span>已更新:</span> 2023 年 8 月 14 日</div>
+                                
+                
+                            <div class="documentId"><span>文档 ID:</span>13699</div>
+                      
+
+                  </div> 
+
+                      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <div class="disclaimers support">
+        
+        <div class="disclaimerButtons">
+        <div class="aboutBias">
+            <button>非歧视性语言</button>
+        </div>
+        
+        <div class="aboutTranslation">
+            <button>翻译</button>
+        </div>
+        
+        </div>
+        
+        <div class="biasfreeContent panel">
+            <h3>非歧视性语言</h3>
+            <p>此产品的文档集力求使用非歧视性语言。在本文档集中，非歧视性语言是指不隐含针对年龄、残障、性别、种族身份、族群身份、性取向、社会经济地位和交叉性的歧视的语言。由于产品软件的用户界面中使用的硬编码语言、基于 RFP 文档使用的语言或引用的第三方产品使用的语言，文档中可能无法确保完全使用非歧视性语言。 <a href="https://www.cisco.com/c/en/us/about/social-justice/inclusive-language-policy.html">深入了解</a>思科如何使用包容性语言。</p>
+        </div>
+        
+        <div class="translationContent panel">
+                <h3>关于此翻译</h3>
+                <p>思科采用人工翻译与机器翻译相结合的方式将此文档翻译成不同语言，希望全球的用户都能通过各自的语言得到支持性的内容。 
+
+请注意：即使是最好的机器翻译，其准确度也不及专业翻译人员的水平。 
+
+Cisco Systems, Inc. 对于翻译的准确性不承担任何责任，并建议您总是参考英文原始文档（已提供链接）。</p>
+        </div>
+
+    </div><!-- disclaimers -->
+
+                  
+        </div>
+    </div>
+
+
+<script>
+jQuery(document).ready(function(){
+    if(jQuery("body").hasClass("cdc-eot-toc") && jQuery(".cdc-eot-toc").find(".DocumentHistory").length > 0){
+        jQuery(".cdc-eot-toc .seeRevisions").show();
+        if(jQuery(window).width() >= 768){
+            jQuery(".cdc-eot-toc .updatedDate").nextAll(".bullet").show();
+        }
+    }else{
+      jQuery(".cdc-eot-toc .infobar .bullet").hide();
+      jQuery(".cdc-eot-toc .seeRevisions");
+      jQuery(".cdc-eot-toc .updatedDate");
+    }
+
+
+})
+</script>
+    <script src="/etc/designs/cdc/fw/clientlibs/granite-utils.min.js"></script>
+
+    
+    
+
+    
+    <script type="text/javascript">
+           if (typeof cdc === "undefined") cdc={};
+           if (typeof cdc.rc  === "undefined") cdc.rc={};
+    </script>
+    <script type="text/javascript">
+      // initialize dictionary for i18n
+      cdc.util.ensureNamespace("cdc.rc");
+      cdc.rc.eotkeys = {
+        showOnly5Products : "仅显示 5 个产品",       
+        showAllRowsProducts : "显示全部nRows产品",
+        supportCommunityUrl : "http://www.csc-china.com.cn",
+        supportCommunity : "思科社区",
+        thankYou : "谢谢",
+        viewersAlso : "查看此文档的客户还查看了以下内容", 
+        show : "显示", 
+        more : "更多", 
+        showOnly3Documents: "只显示三个文档"
+      };
+    </script>
+    
+        
+	
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+  
+    
+
+ 
+
+
+<div id="eot-doc-wrapper" >
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><div class="lia-message-template-summary-zone"> 
+ <div id="tg-body"> 
+  <div id="support-toc"> 
+   <h2>目录</h2> 
+   <div class="toc-h2"> 
+    <a href="#toc-hId-1848709331">简介</a> 
+   </div> 
+   <div class="toc-h2"> 
+    <a href="#toc-hId--703447630">先决条件</a> 
+   </div> 
+   <div class="toc-h3"> 
+    <a href="#toc-hId-842849200">要求</a> 
+   </div> 
+   <div class="toc-h3"> 
+    <a href="#toc-hId--1709307761">使用的组件</a> 
+   </div> 
+   <div class="toc-h3"> 
+    <a href="#toc-hId-33502574">规则</a> 
+   </div> 
+   <div class="toc-h2"> 
+    <a href="#toc-hId-1972826414">背景信息</a> 
+   </div> 
+   <div class="toc-h2"> 
+    <a href="#toc-hId-1163479788">邻接关系</a> 
+   </div> 
+   <div class="toc-h2"> 
+    <a href="#toc-hId--1388677173">邻居状态</a> 
+   </div> 
+   <div class="toc-h2"> 
+    <a href="#toc-hId-354133162">没有状态显示</a> 
+   </div> 
+   <div class="toc-h2"> 
+    <a href="#toc-hId--1312747234">处于 down 状态的邻居</a> 
+   </div> 
+   <div class="toc-h2"> 
+    <a href="#toc-hId-430063101">处于 init 状态邻居</a> 
+   </div> 
+   <div class="toc-h2"> 
+    <a href="#toc-hId--2122093860">处于双向状态的邻居</a> 
+   </div> 
+   <div class="toc-h2"> 
+    <a href="#toc-hId--379283525">处于 Exstart/Exchange 状态的邻居</a> 
+   </div> 
+   <div class="toc-h2"> 
+    <a href="#toc-hId-1363526810">处于 loading 状态的邻居</a> 
+   </div> 
+   <div class="toc-h2"> 
+    <a href="#toc-hId--1188630151">OSPF 邻居问题的典型原因</a> 
+   </div> 
+   <div class="toc-h2"> 
+    <a href="#toc-hId-554180184">相关信息</a> 
+   </div> 
+  </div> 
+ </div> 
+ <div class="lia-message-template-content-zone"> 
+  <p></p> 
+  <ul></ul> 
+  <p></p> 
+  <h2 id="toc-hId-1848709331">简介</h2> 
+  <p>本文档介绍开放最短路径优先(OSPF)邻居如何成为完全邻接的常见问题。</p> 
+  <h2 id="toc-hId--703447630">先决条件</h2> 
+  <h3 id="toc-hId-842849200">要求</h3> 
+  <p>本文档需要有关IP路由协议和OSPF路由协议的基本知识。要了解有关IP路由协议的详细信息，请参阅<a class="self_link" href="/content/en/us/td/docs/ios-xml/ios/iproute_pi/configuration/xe-3s/iri-xe-3s-book/iri-iprouting.html#GUID-0505BAB4-F780-446C-A8D1-92A9BB6F619D" target="_blank" rel="noopener nofollow noreferrer">如何配置基本IP路由</a>。有关OSPF的详细信息，请参阅<a href="https://www.cisco.com/c/zh_cn/tech/ip/ip-routing/index.html" target="_blank" rel="noopener nofollow noreferrer">开放最短路径优先(OSPF)支持页</a>。</p> 
+  <h3 id="toc-hId--1709307761">使用的组件</h3> 
+  <p>本文档中的信息基于列出的软件和硬件版本：</p> 
+  <ul> 
+   <li> <p>OSPF可在所有路由器中配置，例如Cisco 2900系列和第3层交换机。</p> </li> 
+   <li> <p>Cisco IOS® 软件10.0版和更高版本均支持OSPF。</p> </li> 
+  </ul> 
+  <p>本文档中的信息都是基于特定实验室环境中的设备编写的。本文档中使用的所有设备最初均采用原始（默认）配置。如果您的网络处于活动状态，请确保您了解所有命令的潜在影响。</p> 
+  <h3 id="toc-hId-33502574">规则</h3> 
+  <p>有关文档规则的详细信息，请参阅 <a href="https://www.cisco.com/c/zh_cn/support/docs/dial-access/asynchronous-connections/17016-techtip-conventions.html" target="_blank" rel="noopener nofollow noreferrer">Cisco 技术提示规则。</a></p> 
+  <h2 id="toc-hId-1972826414">背景信息</h2> 
+  <p>在成功形成OSPF邻接关系时，OSPF邻居会达到<tt>FULL</tt>邻居状态。要检查邻接关系，请输入&nbsp;<strong><code class="cCN_CmdName" style="white-space: pre-wrap; font-style: unset; font-weight: unset; font-family: unset">debug ip ospf adj</code></strong> 命令。在输入 debug 命令之前，请参阅有关 Debug 命令的重要信息。</p> 
+  <h2 id="toc-hId--579330547"></h2> 
+  <h2 id="toc-hId-1163479788">邻接关系</h2> 
+  <p>路由器是邻居这一事实不足以保证链路状态更新的交换；它们必须形成邻接关系以交换链路状态更新。邻接关系是一种高级邻居关系形式，由路由器形成，这些路由器在协商交换参数后交换路由信息。同步链路状态数据库上的视图后，路由器之间将达成 <tt>FULL 状态的邻接关系。</tt></p> 
+  <p>接口类型在邻接关系的形成过程中起着主要作用。例如，点对点链路上的邻居始终会尝试建立邻接关系，而连接到广播介质（如以太网）的路由器只能与接口上的一小部分邻居路由器建立邻接关系。</p> 
+  <p>一旦路由器与邻居形成邻接关系，它首先交换其链路状态数据库的完整副本。邻居也是一样，会轮流交换整个链路状态数据库。在经过几个邻居状态后，路由器会完全邻接。</p> 
+  <h2 id="toc-hId--1388677173">邻居状态</h2> 
+  <p>使用<strong>show ip ospf neighbor</strong>命令确定OSPF邻居的状态。此命令的输出显示以下内容之一：</p> 
+  <ul> 
+   <li> <p>什么也没有</p> </li> 
+   <li> <p><tt>state = down</tt></p> </li> 
+   <li> <p><tt>state = init</tt></p> </li> 
+   <li> <p><tt>state = exstart</tt></p> </li> 
+   <li> <p><tt>state = exchange</tt></p> </li> 
+   <li> <p><tt>state = 2-way</tt></p> </li> 
+   <li> <p><tt>state = loading</tt></p> </li> 
+  </ul> 
+  <p>也有其他的 OSPF 状态，但这里显示的状态是 <strong>show ip ospf neighbor 命令输出中最常见的几种。</strong>有关详细信息以及所有 OSPF 邻居状态的说明，请参阅 <a href="https://www.cisco.com/c/zh_cn/support/docs/ip/open-shortest-path-first-ospf/13685-13.html" target="_blank" rel="noopener nofollow noreferrer">OSPF 邻居状态。</a></p> 
+  <h2 id="toc-hId-354133162">没有状态显示</h2> 
+  <p>如果 <code class="cCN_CmdName" style="white-space: pre-wrap; font-style: unset; font-weight: unset; font-family: unset"><strong>show ip ospf neighbor</strong></code> 命令根本不显示任何内容 — 或不显示任何有关所关注的特定邻居的信息，则此路由器没有收到来自该邻居的任何“有效”OSPF HELLO。这意味着 OSPF 未接收到任何来自邻居的 HELLO 数据包，或者收到的 HELLO 数据包未通过最基本的健全性检查。</p> 
+  <p>检查以下内容：</p> 
+  <ul> 
+   <li> <p>本地路由器和邻居路由器上的接口是否为 up 并且线路协议也为 up？输入&nbsp;<strong><code class="cCN_CmdName" style="white-space: pre-wrap; font-style: unset; font-weight: unset; font-family: unset">show interface</code></strong> 命令检查接口状态。</p> </li> 
+   <li> <p>检查邻居路由器之间的IP连接，如下所示：</p> 
+    <ul> 
+     <li> <p>邻居是否响应&nbsp;<strong><code class="cCN_CmdName" style="white-space: pre-wrap; font-style: unset; font-weight: unset; font-family: unset">ping</code></strong> 命令?对分配给邻居路由器上相关接口的IP地址执行ping操作。输入&nbsp;<strong><code class="cCN_CmdName" style="white-space: pre-wrap; font-style: unset; font-weight: unset; font-family: unset">traceroute</code></strong> 命令并检验它是否只需多一跳即可到达目的地。</p> </li> 
+     <li> <p>如果输入&nbsp;<strong><code class="cCN_CmdName" style="white-space: pre-wrap; font-style: unset; font-weight: unset; font-family: unset">ping 224.0.0.5</code></strong> 命令?（224.0.0.5是OSPF HELLO发送到的IP地址。）</p> </li> 
+     <li> <p>检查可以禁止将IP数据包从一个邻居转发到另一个邻居的任何入站访问列表或其他设备（如交换机）。</p> </li> 
+    </ul> </li> 
+   <li> <p>您的接口和邻居/邻接路由器的接口上是否都启用了OSPF?输入&nbsp;<code class="cCN_CmdName" style="white-space: pre-wrap; font-style: unset; font-weight: unset; font-family: unset"><strong>show ip ospf interface</strong></code> 命令进行验证。</p> </li> 
+   <li> <p>OSPF是否配置为本地或邻居/邻接路由器接口的被动接口？输入&nbsp;<code class="cCN_CmdName" style="white-space: pre-wrap; font-style: unset; font-weight: unset; font-family: unset"><strong>show ip ospf interface</strong></code> 命令验证HELLO数据包是否应该从接口发出。活动OSPF接口显示的行类似于：</p> 
+    <blockquote> 
+     <pre>Router#show ip ospf interface <br>GigabitEthernet0/0 is up, line protocol is up <br>Internet Address 10.1.1.1/30, Area 0, Attached via Network Statement<br>Process ID 1, Router ID 10.1.1.1, Network Type BROADCAST, Cost: 1<br>Topology-MTID Cost Disabled Shutdown Topology Name<br>0 1 no no Base<br>Transmit Delay is 1 sec, State BDR, Priority 1<br>Designated Router (ID) 10.1.1.2, Interface address 10.1.1.2<br>Backup Designated router (ID) 10.1.1.1, Interface address 10.1.1.1<br>Timer intervals configured, Hello 10, Dead 40, Wait 40, Retransmit 5<br>oob-resync timeout 40<br><strong>Hello due in 00:00:05</strong><br>Supports Link-local Signaling (LLS)<br>Cisco NSF helper support enabled<br>IETF NSF helper support enabled<br>Index 1/1/1, flood queue length 0<br>Next 0x0(0)/0x0(0)/0x0(0)<br>Last flood scan length is 1, maximum is 1<br>Last flood scan time is 1 msec, maximum is 1 msec<br>Neighbor Count is 1, Adjacent neighbor count is 1 <br>Adjacent with neighbor 10.1.1.2 (Designated Router)<br>Suppress hello for 0 neighbor(s)</pre> 
+    </blockquote> </li> 
+   <li> <p>检验邻居路由器是否具有不同的路由器ID。路由器 ID 用于标识 OSPF 网络中的每个路由器。使用相同路由器的路由器会忽略彼此发送的HELLO，而不会成为邻接路由器。第一行 <code class="cCN_CmdName" style="white-space: pre-wrap; font-style: unset; font-weight: unset; font-family: unset"><strong>show ip ospf</strong></code> 命令输出显示每台路由器的当前路由器ID。</p> </li> 
+   <li> <p>检验邻居接口上的以下HELLO参数是否匹配：</p> 
+    <ul> 
+     <li> <p>OSPF区域号 — 输入&nbsp;<code class="cCN_CmdName" style="white-space: pre-wrap; font-style: unset; font-weight: unset; font-family: unset"><strong>show ip ospf interface interface-name</strong></code> 命令进行验证。</p> </li> 
+     <li> <p>OSPF区域类型，例如<tt>stub</tt>或<tt>NSSA</tt> — 输入&nbsp;<code class="cCN_CmdName" style="white-space: pre-wrap; font-style: unset; font-weight: unset; font-family: unset"><strong>show ip ospf</strong></code> 命令进行验证。</p> </li> 
+     <li> <p>子网和子网掩码 — 输入&nbsp;<code class="cCN_CmdName" style="white-space: pre-wrap; font-style: unset; font-weight: unset; font-family: unset"><strong>show interface</strong></code> 命令进行验证。</p> </li> 
+     <li> <p>OSPF HELLO和Dead计时器值 — 输入 <code class="cCN_CmdName" style="white-space: pre-wrap; font-style: unset; font-weight: unset; font-family: unset"><strong>show ip ospf interface interface-name</strong></code> 命令进行验证。</p> </li> 
+    </ul> </li> 
+   <li> <p>如果问题出在点对点链路（例如PPP或高级数据链路控制[HDLC]）上，并且此对路由器之间有多条并行链路，请验证线路是否已正确连接。假设您计划将一个路由器上的 Serial0/0 接口与其邻居上的 Serial0/0 接口进行连接、Serial1/0 与邻居的 Serial1/0 连接，但您不小心将连接关系彼此交叉了，误将每个路由器的 Serial0/0 与另一个路由器的 Serial1/0 进行了连接。此&nbsp;<code class="cCN_CmdName" style="white-space: pre-wrap; font-style: unset; font-weight: unset; font-family: unset"><strong>ping</strong></code> 命令无法发现此类问题，但OSPF无法建立邻接关系。使用思科发现协议(CDP)提供的信息验证设备互连是否正确。输入 <code class="cCN_CmdName" style="white-space: pre-wrap; font-style: unset; font-weight: unset; font-family: unset"><strong>show cdp neighbor interface-name</strong></code> 命令验证远程设备的名称和PortID是否与网络设计匹配。</p> </li> 
+  </ul> 
+  <p style="background-image: url('http://www.cisco.com/en/US/i/templates/note.gif'); background-repeat: no-repeat; background-position: 2px 4px; height: auto; width: auto; padding: 10px 5px 10px 35px; margin-top: 10px; margin-bottom: 10px; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; overflow-x: hidden;"><strong>注意</strong>:<span>OSPF邻接关系仅通过主网络形成，而不通过辅助网络。</span></p> 
+  <p>如果所有这些检查都已验证，并且&nbsp;<code class="cCN_CmdName" style="white-space: pre-wrap; font-style: unset; font-weight: unset; font-family: unset"><strong>show ip ospf neighbor</strong></code> 命令仍然显示无任何内容，因此您的问题并不常见，您可以联系<a href="https://www.cisco.com/c/zh_cn/support/web/tsd-cisco-worldwide-contacts.html" target="_blank" rel="noopener nofollow noreferrer">Cisco TAC</a>以寻求帮助。</p> 
+  <h2 id="toc-hId--1312747234">处于 down 状态的邻居</h2> 
+  <p>如果通过OSPF进程删除了邻居，则通过接收HELLO数据包动态发现的邻居可以回退到<tt>down</tt>状态。例如，当OSPF在比Dead计时器间隔长的一段时间内，没有收到来自邻居的HELLO数据包时，此类邻居的<tt>down</tt>状态是暂时的；它们会进入更高状态或从已知邻居的表中删除。这被称为“被遗忘”。</p> 
+  <p>通常，在<tt>down</tt>状态中看到的邻居使用&nbsp;<code class="cCN_CmdName" style="white-space: pre-wrap; font-style: unset; font-weight: unset; font-family: unset"><strong>neighbor</strong></code> 命令。手动配置的邻居始终会出现在 OSPF 邻居表中。如果OSPF从未收到来自手动配置的邻居的HELLO数据包，或者如果在上一个Dead计时器间隔内没有收到来自邻居的HELLO数据包，则手动配置的邻居将列为<tt>down</tt>。&nbsp;</p> 
+  <p style="background-image: url('http://www.cisco.com/en/US/i/templates/note.gif'); background-repeat: no-repeat; background-position: 2px 4px; height: auto; width: auto; padding: 10px 5px 10px 35px; margin-top: 10px; margin-bottom: 10px; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; overflow-x: hidden;"><strong>注</strong>: <code class="cCN_CmdName" style="white-space: pre-wrap; font-style: unset; font-weight: unset; font-family: unset"><strong>neighbor</strong></code> 命令只能针对以下网络类型的直连邻居进行配置：<br><br> — 非广播多路访问(NBMA)网络 — 配置有 <strong><code class="cCN_CmdName" style="white-space: pre-wrap; font-style: unset; font-weight: unset; font-family: unset">ip ospf network non-broadcast</code></strong> 命令。<br> — 非广播点对多点网络 — 配置有 <strong><code class="cCN_CmdName" style="white-space: pre-wrap; font-style: unset; font-weight: unset; font-family: unset">ip ospf network point-to-multipoint non-broadcast</code></strong> 命令。</p> 
+  <p>如果邻居处于<tt>down</tt>状态，请验证该邻居路由器是否处于打开状态、是否处于活动状态以及是否在此接口上正确配置了OSPF。使用&nbsp;<code class="cCN_CmdName" style="white-space: pre-wrap; font-style: unset; font-weight: unset; font-family: unset"><strong>ping</strong></code> 和&nbsp;<code class="cCN_CmdName" style="white-space: pre-wrap; font-style: unset; font-weight: unset; font-family: unset"><strong>traceroute</strong></code> 命令。使用OSPF邻居路由表&nbsp;<strong><code class="cCN_CmdName" style="white-space: pre-wrap; font-style: unset; font-weight: unset; font-family: unset">show ip ospf neighbor</code></strong> 命令，并执行与本文档前面的<a class="self_link" href="#anc7" target="_blank" rel="noopener nofollow noreferrer">No State Revealed</a>部分中列出的配置验证操作相同的操作。</p> 
+  <h2 id="toc-hId-430063101">处于 init 状态邻居</h2> 
+  <p><tt>init</tt>状态表示路由器收到来自邻居的HELLO数据包，但是尚未建立双向通信。Cisco 路由器会在其 HELLO 数据包的 Neighbor 字段中显示所有处于 <tt>init 状态（或更高状态）邻居的路由器 ID。</tt>要与邻居建立双向通信，路由器还必须接收邻居HELLO数据包的Neighbor字段中自己的路由器ID。有关详细示例和说明，请参阅<a href="https://www.cisco.com/c/zh_cn/support/docs/ip/open-shortest-path-first-ospf/13702-7.html" target="_blank" rel="noopener nofollow noreferrer">为什么 show ip ospf neighbor 命令显示邻居停滞在 Init 状态？</a></p> 
+  <h2 id="toc-hId--2122093860">处于双向状态的邻居</h2> 
+  <p><tt>2-way</tt>状态表示路由器已在邻居HELLO数据包的Neighbor字段中收到自己的路由器ID。从处于<tt>init</tt>状态的邻居接收数据库描述符(DBD)数据包也会导致<tt>向</tt>2-way<tt>状态的</tt>转换。在广播和<tt>非广播</tt>多路访问(NBMA)网络中，OSPF邻居2-way状态不会引起担忧。有关 <tt>2-way 状态的说明，请参阅</tt><a href="https://www.cisco.com/c/zh_cn/support/docs/ip/open-shortest-path-first-ospf/13683-11.html" target="_blank" rel="noopener nofollow noreferrer">为什么 show ip ospf neighbor 命令显示邻居停滞在 2-Way 状态？</a></p> 
+  <h2 id="toc-hId--379283525">处于 Exstart/Exchange 状态的邻居</h2> 
+  <p>处于<tt>exstart</tt>或<tt>exchange</tt>状态的OSPF邻居尝试交换DBD数据包。路由器与其邻居形成主要和次要关系。邻接关系必须持续超过此状态。如果没有，则表示DBD交换发生问题，如最大传输单元(MTU)不匹配或接收到意外的DBD序列号。有关详细信息，请参阅<a href="https://www.cisco.com/c/zh_cn/support/docs/ip/open-shortest-path-first-ospf/13684-12.html" target="_blank" rel="noopener nofollow noreferrer">为什么 OSPF 邻居停滞在 Exstart/Exchange 状态？</a></p> 
+  <h2 id="toc-hId-1363526810">处于 loading 状态的邻居</h2> 
+  <p>在 <tt>loading 状态下，路由器将发送链路状态请求数据包。</tt>在邻接时，如果路由器收到过时或丢失的链路状态通告(LSA)，它会发送链路状态请求数据包以请求LSA。未在此状态之后转换的邻居可能会交换损坏的LSA。此问题通常伴有 <tt>%OSPF-4-BADLSA 控制台消息。</tt>由于此问题不常见，请联系<a href="https://www.cisco.com/c/zh_cn/support/web/tsd-cisco-worldwide-contacts.html" target="_blank" rel="noopener nofollow noreferrer">Cisco TAC</a>寻求帮助。</p> 
+  <h2 id="toc-hId--1188630151">OSPF 邻居问题的典型原因</h2> 
+  <p>下表列出了OSPF邻居在尝试建立邻接关系时出现问题的原因，并列出了一些可用于检验问题的命令。</p> 
+  <table class="sptable" style="border-collapse:collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="border:1px solid black!important;">导致邻居邻接问题的原因</th> 
+     <th style="border:1px solid black!important;">用于诊断问题的命令</th> 
+    </tr> 
+    <tr> 
+     <td>一台路由器上没有配置 OSPF。</td> 
+     <td><strong>show ip ospf</strong></td> 
+    </tr> 
+    <tr> 
+     <td>需要 OSPF 的接口上没有激活 OSPF。</td> 
+     <td><strong>show ip ospf interface</strong></td> 
+    </tr> 
+    <tr> 
+     <td>OSPF HELLO or Dead 时间间隔参数不匹配。</td> 
+     <td><strong>show ip ospf interface</strong></td> 
+    </tr> 
+    <tr> 
+     <td><strong>相邻接口上的ip ospf network</strong>-type不匹配。</td> 
+     <td><strong>show ip ospf interface</strong></td> 
+    </tr> 
+    <tr> 
+     <td>邻居接口之间的MTU不匹配。</td> 
+     <td><strong>show interface &lt;int-type&gt;&lt;int-num&gt;</strong></td> 
+    </tr> 
+    <tr> 
+     <td>OSPF区域类型在一个邻居上是<tt>stub</tt>，但同一区域中的相邻邻居未配置为<tt>stub</tt>。</td> 
+     <td><strong>show running-config</strong> <strong>show ip ospf interface</strong></td> 
+    </tr> 
+    <tr> 
+     <td>使用相同的路由器 ID 对 OSPF 邻居进行了错误配置。</td> 
+     <td><strong>show ip ospf</strong> <strong>show ip ospf interface</strong></td> 
+    </tr> 
+    <tr> 
+     <td>OSPF 配置在邻居的辅助网络上，而非主网络上。这是阻止在接口上启用OSPF的非法配置。</td> 
+     <td><strong>show ip ospf interface</strong> <strong>show running-config</strong></td> 
+    </tr> 
+    <tr> 
+     <td>由于资源不足（如 CPU 利用率高或内存不足），无法处理 OSPF HELLO 数据包。</td> 
+     <td><strong>show memory summary</strong> <strong>show memory processor</strong></td> 
+    </tr> 
+    <tr> 
+     <td>层故障会阻止接收OSPF HELLO。</td> 
+     <td><strong>show interface</strong></td> 
+    </tr> 
+   </tbody> 
+  </table> 
+  <p style="background-image: url('http://www.cisco.com/en/US/i/templates/note.gif'); background-repeat: no-repeat; background-position: 2px 4px; height: auto; width: auto; padding: 10px 5px 10px 35px; margin-top: 10px; margin-bottom: 10px; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; overflow-x: hidden;"><strong>注意</strong>：要避免OSPF邻接关系建立时进行MTU检查，可以配置&nbsp;<strong><code class="cCN_CmdName" style="white-space: pre-wrap; font-style: unset; font-weight: unset; font-family: unset">ip ospf mtu-ignore</code></strong> 命令。但是，建议通过检查接口配置来修复任何MTU不匹配问题，而不仅仅是绕过MTU检查。</p> 
+  <h2 id="toc-hId-554180184">相关信息</h2> 
+  <ul> 
+   <li><strong> <a href="https://www.cisco.com/c/zh_cn/support/docs/ip/open-shortest-path-first-ospf/13691-20.html?referring_site=bodynav" target="_blank" rel="noopener nofollow noreferrer">为什么OSPF不在PRI、BRI或拨号器接口上建立邻接关系？</a> </strong></li> 
+   <li><strong> <a href="https://www.cisco.com/c/zh_cn/support/docs/ip/open-shortest-path-first-ospf/13688-16.html?referring_site=bodynav" target="_blank" rel="noopener nofollow noreferrer">show ip ospf neighbor 命令显示什么？</a> </strong></li> 
+   <li><strong> <a href="https://www.cisco.com/c/zh_cn/support/docs/ip/open-shortest-path-first-ospf/7039-1.html?referring_site=bodynav" target="_blank" rel="noopener nofollow noreferrer">OSPF 设计指南</a> </strong></li> 
+   <li><strong> <a href="https://www.cisco.com/c/zh_cn/support/docs/ip/open-shortest-path-first-ospf/13693-22.html?referring_site=bodynav" target="_blank" rel="noopener nofollow noreferrer">帧中继子接口上的 OSPF 初始配置</a> </strong></li> 
+   <li><strong> <a href="https://www.cisco.com/c/zh_cn/support/docs/ip/open-shortest-path-first-ospf/13690-18.html?referring_site=bodynav" target="_blank" rel="noopener nofollow noreferrer">基于非广播型链路的 OSPF 的初始配置</a> </strong></li> 
+   <li><strong> <a href="https://www.cisco.com/c/zh_cn/support/docs/ip/open-shortest-path-first-ospf/13687-15.html?referring_site=bodynav" target="_blank" rel="noopener nofollow noreferrer">基于点到点链路的 OSPF 的初始配置</a> </strong></li> 
+   <li><strong> <a href="https://www.cisco.com/c/zh_cn/support/docs/ip/open-shortest-path-first-ospf/13686-14.html?referring_site=bodynav" target="_blank" rel="noopener nofollow noreferrer">基于广播媒介的 OSPF 的初始配置</a> </strong></li> 
+   <li><strong><a href="https://www.cisco.com/c/zh_cn/support/index.html?referring_site=bodynav" target="_blank" rel="noopener nofollow noreferrer">思科技术支持和下载</a> </strong></li> 
+  </ul> 
+ </div> 
+</div> 
+<link rel="stylesheet" type="text/css" href="https://www.cisco.com/etc/designs/cdc/transformation/support-responsive.css"> 
+<style type="text/css">
+td
+{border:1px solid black;}
+table 
+{border:1px solid black;}
+</style>
+
+
+
+  <div id="eot-revision-history">
+      <h3>修订历史记录</h3>
+      <div style="overflow-x: auto;">
+          <table border="1" id="erh-table"> 
+              <tbody>
+                  <tr>
+                      <th>版本</th>
+                      <th>发布日期</th>
+                      <th>备注</th>
+                  </tr>
+                                      
+                  
+
+                        <tr class="published">
+                            <td><div align="center">3.0</div></td>
+                            <td><div align="center">14-Aug-2023</div></td>
+                            
+                                <td><div align="left">重新认证</div></td>
+                                                    
+                        </tr>
+
+                
+
+                        <tr class="published">
+                            <td><div align="center">2.0</div></td>
+                            <td><div align="center">15-Jul-2022</div></td>
+                            
+                                <td><div align="left">对文章内容进行了审核和修订，以符合现行出版标准。已更新并验证超文本链接。</div></td>
+                                                    
+                        </tr>
+
+                
+
+                        <tr class="published">
+                            <td><div align="center">1.0</div></td>
+                            <td><div align="center">10-Dec-2001</div></td>
+                            
+                                <td><div align="left">初始版本</div></td>
+                                                        
+                        </tr>
+
+                
+
+              </tbody>
+          </table>
+      </div>
+  </div>
+  
+</div>
+
+<script>
+
+  jQuery(document).ready(function() {
+      if(jQuery('.unpublished').length>0){
+          var lastRel = "1.0";
+          if(jQuery('.published').length>0){
+             lastRel  = Number(jQuery('.published td')[0].innerText)+1+".0";
+          }
+          jQuery('.preview_revision').text(lastRel);
+      }
+
+      
+  });
+</script>
+
+
+<script type="text/javascript">
+ jQuery(document).ready(function() {
+   if (typeof(cdc) == "undefined") cdc={};
+      if (typeof(cdc.eot) == "undefined") cdc.eot={};
+      cdc.eot.isEot = true; 
+      cdc.eot.isToc = false; 
+
+      var linkItemsLen=jQuery("#eot-doc-wrapper link[rel='stylesheet']").length;
+      
+      function addNewTocStyleSheet() {
+          let fileName="/etc/designs/cdc/transformation/wemdcmt_responsive.css",
+              $head = jQuery("head"),
+              linkElement = "<link rel='stylesheet' href='"+fileName+"' type='text/css' >";
+          $head.append(linkElement);                    
+      }
+      
+      if (cdc.eot.isToc && ! linkItemsLen ) {
+          addNewTocStyleSheet();
+      }  else if(cdc.eot.isEot) {
+          var linkItemsLen=jQuery("#eot-doc-wrapper link[rel='stylesheet']").length;
+          jQuery("#eot-doc-wrapper link[rel='stylesheet']").each(function(){
+          
+            var linkTag=jQuery(this);
+            var hrefVal=jQuery(linkTag).attr("href");              
+            
+            if(hrefVal!=undefined && hrefVal.indexOf("support-responsive.css")==-1 && hrefVal.indexOf("_responsive.css")==-1){
+                var fileName=hrefVal.substr(hrefVal.lastIndexOf("/")+1,hrefVal.length).split(".css")[0];
+                var filePath="/etc/designs/cdc/transformation/";
+                
+                if(fileName=="ccimr"){
+                    fileName="techdocs_responsive";
+                }else if(fileName=="support-docs"){
+                    fileName="support-responsive";
+                }else if(fileName=="framework"){
+                    fileName="responsiveframework";
+                }else if(fileName=="dcmt"){
+                    fileName="wemdcmt_responsive";
+                }else if(fileName=="techdocs_85_11_word"){
+                    fileName="techdocs_85_11_word";
+                    if (cdc.eot.isToc) {
+                        addNewTocStyleSheet();
+                    }
+                }else{
+                    fileName+="_responsive";
+                }
+                jQuery(linkTag).attr("href",filePath+fileName+".css");
+             }
+             
+           if(hrefVal.indexOf("support-responsive.css")>-1){
+               jQuery(linkTag).attr("href","/etc/designs/cdc/transformation/support-responsive.css");
+           }
+             
+        });
+             jQuery("#eot-doc-wrapper > table").wrap("<div></div>");
+             //jQuery("#eot-doc-wrapper table").parent().attr("style","overflow-x:auto !important");
+             jQuery("#eot-doc-wrapper table:not('.olh_note')").parent().css({overflowX:"auto"});// commented above line coz its overriding existing inline styles
+      } 
+ });    
+</script>
+
+	
+
+    
+
+
+
+    </div>
+
+   <!--<div class="col third">-->
+        
+            <div class="col narrow-v2" >
+     
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="rightRailComponent base-blowout">
+    
+
+    <div class="eotPersonalization">
+        <section id="eotSupportCampaign"></section>
+    </div>
+    
+      <!-- condition for support RR components -->
+
+     
+			<!-- TAC image component mandatory normal-->
+            <div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="tac-image">
+
+
+    <img class="eot-istac" src="/etc/designs/cdc/fw/i/TAC_lg-icon.png" alt="TAC Authored"/>
+    
+    
+
+
+
+</div>
+
+</div>
+
+            <div class="showComponent">
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="eot-authors">
+  
+      <h3 class="eot-authors-heading">由思科工程师提供</h3>
+  
+  
+
+  <ul>
+    
+    
+    
+  </ul>
+</div>
+
+
+
+            </div>
+        
+            <!-- mandatory -->
+            <div class="eot-feedback-container">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="eot-feedback">
+  <h3>此文档是否有帮助?</h3>
+  <span class="eot-feedback-btnwrap">
+    <button class="eot-feedback-btn eot-feedback-btn-yes">是</button>
+    <button class="eot-feedback-btn eot-feedback-btn-no">否</button>
+  </span>
+  <span lang="zh" class="eot-feedback-olwrap">
+      <a href="javascript: void(0)" class="eot-feedback-ol" onclick="window.open('https://ciscocx.qualtrics.com/jfe/form/SV_dpqK8gJRAW2GHCC?Ref=' + location.href + '&resize=false', 'feedback', 'width=650, height=460, scrollbars=1, menubar=1, resizable=1'); return false;">
+      <img id="feedback_img" border="0" style="cursor: pointer;" title="Feedback" src="//www.cisco.com/c/dam/cdc/i/Feedback_OceanBlue.png" alt="Feedback">反馈</a>
+  </span>
+</div>
+
+
+</div>
+
+            <div class="showComponent">
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="eot-vav">
+  <ul>
+  </ul>
+</div>
+            </div>
+
+            <div class="showComponent">
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="eotLetUsHelp">
+    <h3>联系我们</h3>
+    <ul>
+         <li><a id="eotLetUsHelpProdDocUrl" href="https://mycase.cloudapps.cisco.com/start?prodDocUrl=">提交支持案例</a><img src="/etc/designs/cdc/fw/i/icon_lock_small.png" alt="login required"/></li>
+        <li>(需要<a href="//www.cisco.com/c/zh_cn/services/order-services.html">思科服务合同</a>)</li>
+    </ul>
+</div>
+
+
+<script>
+    jQuery(document).ready(function() {
+        var getURL=jQuery("#eotLetUsHelpProdDocUrl").attr("href"), 
+            domInd = location.href.indexOf('cisco.com') ;
+        if ( domInd > -1 && domInd < location.href.search(/\w\/\w/) ) {
+            getURL += encodeURI(location.href);
+        }
+		jQuery("#eotLetUsHelpProdDocUrl").attr("href",getURL);
+    });
+</script>
+
+
+            </div>
+
+            <!-- mandatory -->
+            <div id="eotRightRailMBox"><!--MBox-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- IT:components/mbox/banner-mbox:V0.0.0 -->
+
+
+
+<div>
+    <div class="mboxDefault"></div>   
+    <script type="text/javascript">
+        var test="";
+        if(test!=undefined && test.trim().length>0){
+           mboxCreate('zh-cn_dg_support_eot','type=default','');
+        }else{
+           mboxCreate('zh-cn_dg_support_eot','type=default');
+        }
+       
+    </script>
+</div>
+<!--MBox--></div>
+
+            <div class="showComponent">
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+	<script type="text/javascript">
+			    var eottdatp = document.getElementsByClassName('eot-tdatp');
+			    if (eottdatp && eottdatp.style) {
+        			eottdatp.style.display="none";
+			    }
+        		  </script>
+  	
+
+
+            </div>
+
+        
+            <div class="showClass">
+                
+            </div>
+        
+
+    
+
+
+    
+
+</div>
+
+
+
+    </div>
+    
+</div>
+
+     <!--googleoff: index--><!--googleoff: snippet-->
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end: responsive fat footer re-use wrapper-->
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script type="module" src="/site/web-components/cn/zh/cdc-footer.js"></script>
+        <cdc-footer></cdc-footer>
+    
+
+<script type="text/javascript">
+    if(document.querySelector('#privacy-manager')!=null){
+        document.querySelector('#privacy-manager').href='#cookies';
+    }
+  </script>   
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="fw-overlay"></div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/etc/designs/cdc/clientlibs/responsive/js/responsive.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/etc/designs/cdc/fw/j/theater_frag/link_indicator.js"></script>
+
+
+<script src="/etc/designs/cdc/fw/m/eot_metricsrule.js" type="text/javascript"></script>
+<script src="/etc/designs/cdc/fw/lib/jqmodal.js" type="text/javascript"></script>
+    
+    
+
+    <!-- SiteCatalyst code version: H.24.4. -->
+    <noscript><img src="//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345" width="2" height="2" border="0" alt=""/></noscript>
+
+</body>
+</html>
