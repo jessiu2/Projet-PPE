@@ -31,7 +31,7 @@ if [ "$lang" = "arabe" ]; then
     lineno=1
 
     while read -r URL; do
-        reponse=$(curl -s -I -L -w "%{http_code}" -o "../aspirations/${lang}-${lineno}.html" "$URL")
+        reponse=$(curl -s -L -w "%{http_code}" -o "../aspirations/${lang}-${lineno}.html" "$URL")
         asp="../aspirations/${lang}-${lineno}.html"
 
         # Récupérer dump textuel

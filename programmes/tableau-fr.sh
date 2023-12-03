@@ -24,7 +24,7 @@ if [ "$lang" = "francais" ]; then
     </head>
     <body>
         <h1><b>Tableau</b></h1>
-        <table border="1">
+        <table border='1'>
             <tr>
                 <th>Numero ligne</th><th>URL</th><th>Aspiration</th><th>Dump textuel</th><th>Code HTTP</th><th>Encodage</th><th>Nombre d'occurences</th>
             </tr>" > "$tab"
@@ -32,9 +32,11 @@ if [ "$lang" = "francais" ]; then
 
     while read -r URL; do
         reponse=$(curl -s -L -w "%{http_code}" -o "../aspirations/${lang}-${lineno}.html" "$URL")
+        asp="../aspirations/${lang}-${lineno}.html"
 
         # Récupérer dump textuel
-        dumptext=$(lynx -dump -nolist > "../dumps-text/${lang}-${lineno}.html" "$URL")
+        dumptext=$(lynx -dump -nolist "../dumps-text/${lang}-${lineno}.html" "$URL")
+        dump="../dumps-text/${lang}-${lineno}.html"
 
         # Encodage
         encoding=$(curl -s -I -L -w "%{content_type}" -o /dev/null "$URL" | egrep -E -o "charset=\S+" | cut -d"=" -f2 | tail -n 1)
@@ -42,10 +44,10 @@ if [ "$lang" = "francais" ]; then
         occurence=$(egrep -o "$MOT" <<< "$dumptext" | wc -l)
 
         echo "<tr>
-                <td>$lineno</td><td><a href="$URL">$URL</a></td><td><a href="$reponse">Aspiration</a></td><td><a href="$dumptext">Dump</a></td><td>$encoding</td><td>$occurence</td>
+                <td>$lineno</td><td><a href=\"$URL\">$URL</a></td><td><a href=\"$asp\">Aspiration</a></td><td><a href=\"$dump\">Dump</a></td><td>$reponse</td><td>$encoding</td><td>$occurence</td>
             </tr>" >> "$tab"
 
-        lineno=$(expr $lineno + 1)
+        lineno=$((lineno + 1))
     done < "$URLS"
 
     echo "        </table>

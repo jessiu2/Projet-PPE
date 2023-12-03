@@ -5,8 +5,7 @@
  http://www.youparis.com/79-news/373-2014-fete-des-voisins
  https://m.haiwainet.cn/middle/3540917/2017/1016/content_31149126_1.html
  https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/ip-addressing/configuring-neighbor-discovery.html
- https://docs.oracle.com/cd/E19126-01/java.sys.r2/817-5962/gosnautilus-465/index.html
- https://tv.cctv.com/2019/10/29/VIDAxjynDthqsLOJ8nSlXoMT191029.shtml
+ https://docs.oracle.com/cd/E19126-01/java.sys.r2/817-5962/gosnautilus-465/index.htmlhttps://tv.cctv.com/2019/10/29/VIDAxjynDthqsLOJ8nSlXoMT191029.shtml
  https://consumer.huawei.com/cn/support/content/zh-cn00447812/
  https://www.bbc.com/ukchina/simp/uk_life/2013/08/130806_life_neighbours
  https://www.cisco.com/c/zh_cn/support/docs/ip/open-shortest-path-first-ospf/13699-29.html
