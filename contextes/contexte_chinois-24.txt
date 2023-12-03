@@ -1,0 +1,518 @@
+
+   #alternate
+
+PyG教程(3)：邻居采样
+
+   最新推荐文章于 2023-09-17 20:26:28 发布
+   斯曦巍峨 最新推荐文章于 2023-09-17 20:26:28 发布
+   阅读量4k 收藏 15
+   点赞数 9
+   分类专栏： 图神经网络框架 文章标签： 深度学习 pytorch 人工智能 GNN
+   版权声明：本文为博主原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接和本声明。
+   本文链接：https://blog.csdn.net/qq_42103091/article/details/125218735
+   版权
+   图神经网络框架 专栏收录该内容
+   9 篇文章 60 订阅
+   订阅专栏
+
+一.为什么需要邻居采样？
+
+   在GNN领域，大图是非常常见的，但由于GPU显存的限制，大图是无法放到GPU上进行训练的。为此，可以采用邻居采样，这样一来可以将GNN扩展到大
+   图上。在PyG中，邻居采样的方式有很多种，具体详解torch_geometric.loader。本文以GraphSage中的邻居采样为例进行介
+   绍，其在PyG中实现为NeighborLoader。
+
+     NeighborSampler也是PyG中关于GraphSage中邻居采样的实现，但已经被弃用，在未来版本中会被删除。
+
+二.NeighborLoader详解
+
+2.1 GraphSage邻居采样原理
+
+   假设采样的层数为 K K K，每层采样的邻居数为 S k S_k Sk​，GraphSage中邻居采样是这样进行的：
+     * 步骤一：首先给定要采样邻居的小批量节点集 B \mathcal{B} B；
+     * 步骤二：对 B \mathcal{B} B的 1 1 1跳（hop）邻居进行采样，然后得到 B 1 \mathcal{B}_1
+       B1​，然后对 B 1 \mathcal{B}_1 B1​的 1 1 1跳邻居进行采样（即最初结点集的 2 2 2跳邻居）得到 B 2
+       \mathcal{B}_2 B2​，如此往复进行 K K K次，得到最初小批量节点集相关的一个子图。
+
+   下图左是GraphSage中给出的一个2层邻居采样的示例，其中每层采样的邻居数 S k S_k Sk​是相等的（图中为3）。
+
+   graphsage
+
+2.2 API介绍
+
+   PyG中，GraphSage的邻居采样实现为torch_geometric.loader.NeighborLoader，其初始化函数参数为：
+def __init__(
+    self,
+    data: Union[Data, HeteroData],
+    num_neighbors: NumNeighbors,
+    input_nodes: InputNodes = None,
+    replace: bool = False,
+    directed: bool = True,
+    transform: Callable = None,
+    neighbor_sampler: Optional[NeighborSampler] = None,
+    **kwargs,
+)
+
+   常用参数说明如下：
+     * data：要采样的图对象，可以为异构图HeteroData，也可以为同构图Data；
+     * num_neighbors：每个节点每次迭代（每层）采样的最大邻居数，List[int]类型，例如[2,2]表示采样2层，每层中每个节
+       点最多采样2个邻居；
+     * input_nodes：从原始图中采样得到的子图中需要包含的原始图中节点索引，即2.1节中最初的 B \mathcal{B}
+       B，torch.Tensor()类型；
+     * directed：如果设置为False，将包括所有采样节点之间的所有边；
+     * **kwargs：torch.utils.data.DataLoader的额外参数，例如batch_size，shuffle（具体详见
+       该API）。
+
+2.3 采样实践
+
+   为了可视化的美观性，本小节采用的图数据是PyG中提供的KarateClub数据集，该数据集描述了一个空手道俱乐部会员的社交关系，节点为34名会
+   员，如果两位会员在俱乐部之外仍保持社交关系，则在对应节点间连边，该数据集的可视化如下所示：
+
+   karateclub
+
+   下面是对该数据集的加载、可视化以及邻居采样的源码：
+import torch
+from torch_geometric.datasets import KarateClub
+from torch_geometric.utils import to_networkx
+import networkx as nx
+import matplotlib.pyplot as plt
+from torch_geometric.loader import NeighborLoader
+
+
+def draw(graph):
+    nids = graph.n_id
+    graph = to_networkx(graph)
+    for i, nid in enumerate(nids):
+        graph.nodes[i]['txt'] = str(nid.item())
+    node_labels = nx.get_node_attributes(graph, 'txt')
+    # print(node_labels)
+    # {0: '14', 1: '32', 2: '33', 3: '18', 4: '30', 5: '28', 6: '20'}
+    nx.draw_networkx(graph, labels=node_labels, node_color='#00BFFF')
+    plt.axis("off")
+    plt.show()
+
+
+dataset = KarateClub()
+g = dataset[0]
+# print(g)
+# Data(x=[34, 34], edge_index=[2, 156], y=[34], train_mask=[34])
+g.n_id = torch.arange(g.num_nodes)
+
+for s in NeighborLoader(g, num_neighbors=[2, 2], input_nodes=torch.Tensor([14]))
+:
+    draw(s)
+    break
+
+   在上述源码中，设置的采样层数为2层、每个节点每层采样最多采样2个邻居，采样的初始节点集为{14}，其对应的采样结果如下所示：
+
+   graphsage_sampler
+
+   从上图可以看出，在第一次迭代中，采样了节点{14}的两个1跳邻居{32,33}，然后在第二次迭代中对{32,33}分别进行采样得到{2,8]}
+   和{18,30}。
+
+   需要注意是通过NeighborLoader返回的子图中，全局节点索引会映射到到与该子图对应的局部索引。因此，若要将当前采样子图中的节点映射会原
+   来图中对应的节点，可以在原始图中创建一个属性来完成两者之间的映射，例如采样实践源码中的：
+g.n_id = torch.arange(g.num_nodes)
+
+   如此以来，采样后子图中的节点同样包含n_id属性，这样就可以将子图的节点映射回去了，上述示例中对图进行可视化便利用了这一点，其对应的映射为：
+{0: '14', 1: '32', 2: '33', 3: '18', 4: '30', 5: '28', 6: '20'}
+
+结语
+
+   PyG中对于邻居采样的实现远远不止上述这一种，具体参见如下官网资料：
+     * torch_geometric.loader
+
+   [vip-limited-close.png]
+   优惠劵
+
+   [51245cda7fb14a97991f59db7ddd006e_qq_42103091.jpg!1] 斯曦巍峨
+   关注 关注
+     * 9
+       点赞
+     * 踩
+     * 15
+       收藏
+       觉得还不错? 一键收藏
+     * 打赏
+       打赏
+     * (BUTTON) 知道了
+       3
+       评论
+     *
+     * PyG教程(3)：邻居采样
+       在GNN领域，大图是非常常见的，但由于GPU显存的限制，大图是无法放到GPU上进行训练的。为此，可以采用邻居采样，这样一来可以将GNN
+       扩展到大图上。在PyG中，邻居采样的方式有很多种，具体详解`torch_geometric.loader`。本文以GraphSage中
+       的邻居采样为例进行介绍，其在PyG中实现为`NeighborLoader`。...
+       复制链接
+       扫一扫
+
+   专栏目录
+
+   pyg的NeighborLoader和LinkNeighborLoader
+   qq_40671063的博客
+   04-16 1322
+   data:要求加载或者类型数据；:
+   每轮迭代要采样邻居节点的个数，即第i-1轮要为每个节点采样个节点，如果为-1，则代表所有邻居节点都将被包含(一阶相邻邻居)，在异构图中，还可以
+   使用字典来表示每个单独的边缘类型要采样的邻居数量；:
+   中心节点集合，用来指导采样一个mini-batch内的节点，如果为None，则代表包含data中的所有节点。如果设置为
+   None，将考虑所有节点。在异构图中，需要作为包含节点类型和节点索引的元组传递。（默认值：None）
+
+   pyg在大图上面进行GNN
+   cobracanary的博客
+   02-20 766
+   今天想在reddit数据集上跑实验，发现pyg默认的sage_conv是不支持邻居采样、batch训练的，需要使用pyg提供的Neighbor
+   Loader pyg中的NeighborLoader
+
+   3 条评论 您还未登录，请先 登录 后发表或查看评论
+
+   pyG教程
+   Everyday try to become better -Kobe Bryant
+   09-14 108
+   pyG官方教程和个人笔记总结
+   PyPI 官网下载 | pyg3D-1.0.1.tar.gz
+   02-01
+   资源来自pypi官网。 资源全名：pyg3D-1.0.1.tar.gz
+
+   3-环境配置与PyG库1
+   08-03
+   一、引言PyTorch Geometric
+   (PyG)是面向几何深度学习的PyTorch的扩展库，几何深度学习指的是应用于图和其他不规则、非结构化数据的深度学习
+   pyg:初始化
+   03-08
+   pyg:初始化
+   ImportError: ‘SparseTensor‘ requires ‘torch-sparse‘
+   CSDN 精品推荐
+   08-09 262
+   安装好 `torch-geometric` 、 `torch` 和 `torch-sparse` 之后，运行从 `Github`
+   拷贝下来的图神经网络项目出现如下问题 `ImportError: 'SparseTensor' requires
+   'torch-sparse'`
+   GraphSage模型解析
+   qq_42479987的博客
+   04-09 1940
+   图卷积网络（GCN）的计算可以分为基于频域（Spectural）和基于空域（Spatial）两种方式。 频域方法：
+   图的频域卷积是在傅里叶空间完成的，我们对图的拉普拉斯矩阵进行特征值分解，特征分解更有助于我们理解图的底层特征，能够更好的找到图中的簇或者子图，
+   典型的频域方法有ChebNet，GCN等。但是图的特征值分解是一个特别耗时的操作，具有 [公式] 的复杂度，很难扩展到海量节点的场景中。
+   空域方法： 空间方法作用于节点的邻居节点，使用 K\ K K 个邻居节点来计算当前节点的属性。基
+   Task 01 图论基础与PyG库
+   sigmoid
+   06-16 453
+   Task 01 图论基础与PyG库
+   本次组队学习的第一个任务分为理论和实践两个部分，第一个部分为图论的一些基础知识，包括图的矩阵表示以及图上的性质等。 图论基础 图的定义
+   一个图由两大关键组件组成，分别为图中的节点以及节点之间的边，可以记为G={V,E}\mathcal{G}=\{\mathcal{V},
+   \mathcal{E}\}G={V,E}，其中 V={v1,…,vN}\mathcal{V}=\left\{v_{1}, \ldots,
+   v_{N}\right\}V={v1​,…,vN​} 是数量为 N
+   GNN Torch functions
+   天狼啸月1990的博客
+   10-25 1311
+   PyTorch functions related to GNN models
+   GNN教程：大规模分布式训练
+   图挖掘领域，新晋砖家 ☞ 未来可期，欢迎和静静一起学习交流吖
+   07-01 1300
+   引言
+   本文为GNN教程的DGL框架之大规模分布式训练，前面的文章中我们介绍了图神经网络框架DGL如何利用采样的技术缩小计算图的规模来通过mini-b
+   atch的方式训练模型，当图特别大的时候，非常多的batches需要被计算，因此运算时间又成了问题，一个容易想到解决方案是采用并行计算的技术，
+   很多worker同时采样，计算并且更新梯度。这篇博文重点介绍DGL的并行计算框架。 多进程方案 概括而言，目前DGL(version
+   0.3)采用的是多进程的并行方案，分布式的方案正在开发中。见下图，DGL的并行计算
+   基于知识图谱共同邻居排序采样的推荐模型.docx
+   02-23
+   基于知识图谱共同邻居排序采样的推荐模型.docx
+   PyPI 官网下载 | torch_sparse-0.6.12.tar.gz
+   01-30
+   资源来自pypi官网。 资源全名：torch_sparse-0.6.12.tar.gz
+   Core数据集+PyG实现Core分类
+   03-09
+   Core数据集+PyG实现Core分类
+   pyg-bench:脚本来编写postgresql并获取其行为
+   05-13
+   如何安装项目： 安装Redis请参阅： : sudo apt-get install libpq-dev python-dev python3
+   setup.py install 项目的选择 usage: pyg-bench [-h] --config-file CONFIG_FILE
+   [--slave] [--send-tasks] --interval INTERVAL --title TITLE --threads
+   THREADS Tests suites for postgresql optional arguments: -h, --help show
+   this help message and exit --config-file CONFIG_FILE conf
+   CS224W - Colab 5 学习笔记
+   最新发布
+   QianMo的博客
+   09-17 205
+   在之前的 Colabs 中，我们分别使用了图形类（NetworkX）和图形张量（PyG）表示法。图类 nx.Graph
+   提供了丰富的分析和操作功能，例如聚类系数和 PageRank。要将图输入模型，我们需要将图转换为张量表示，包括边张量
+   edge_index、节点属性张量 x 和 y。但只使用张量（如 PyG
+   数据集和数据中的图格式）会降低许多图操作和分析的效率和难度。因此，在本 Colab 中，我们将使用
+   DeepSNAP，它结合了这两种表示法，并为 GNN 训练/验证/测试提供了完整的管道。
+   【DGL】定义邻居采样器和数据加载器
+   yuxeaotao的博客
+   04-14 2748
+   6.1 Training GNN for Node Classification with Neighborhood
+   Samplinghttps://docs.dgl.ai/en/0.6.x/guide/minibatch-node.html#guide-mi
+   nibatch-node-classification-sampler
+   DGL提供了几个邻居采样类，这些类会生成需计算的节点在每一层计算时所需的依赖图。
+   最简单的邻居采样器是MultiLayerFullNeighborSampler，它可获取节点.
+   【PyG】异构图学习 - 图神经网络
+   C橘子
+   12-30 7555
+   使用PyG库进行异构图神经网络学习
+   第十八课.Pytorch-geometric入门(三)
+   白景屹的博客
+   09-12 4464
+   目录异构图学习 heterogeneous graph learning示例图创建异构图异构图的转换创建异构GNNAutomatically
+   Converting GNN Models（示例）补充内容：同构图下的GATConvUsing the Heterogenous
+   Convolution Wrapper（示例）Deploy Existing Heterogenous
+   Operators（示例）异构图采样器Heterogeneous Graph Samplers（示例）从CSV加载Graph 异构图学习
+   python pyg
+   08-29
+   Python
+   PyG是一个Python库，全名为pyg-0.7-py2.7.egg。它是一种用于图神经网络的库，可以进行图数据的处理和分析。它是官方提供的资
+   源，并且可以通过指定的安装方法来安装。
+   安装PyG时，需要注意的是它需要与特定的CUDA版本（如cu92，cu101，cu102，cu110）和PyTorch版本（如1.4.0，1.
+   5.0，1.6.0，1.7.0）相匹配。你可以通过在命令行中输入相应的pip命令来安装所需的PyG库和依赖项。例如，对于PyTorch
+   1.7.0和CUDA 11.0，你可以使用以下命令来安装PyG及其相关库： pip install torch-scatter -f
+   https://pytorch-geometric.com/whl/torch-1.7.0 cu110.html pip install
+   torch-sparse -f https://pytorch-geometric.com/whl/torch-1.7.0
+   cu110.html pip install torch-cluster -f
+   https://pytorch-geometric.com/whl/torch-1.7.0 cu110.html pip install
+   torch-spline-conv -f https://pytorch-geometric.com/whl/torch-1.7.0
+   cu110.html pip install torch-geometric
+   这些命令将从指定的URL下载所需的PyG和依赖项，并将其安装到你的Python环境中。
+   一旦你成功安装了PyG，你就可以使用它来处理和分析图数据。例如，你可以定义一个CustomDataset对象，并打印出其中的一个样本数据。具体
+   的代码如下： if __name__ == '__main__': dataset = CustomDataset()
+   print(dataset) # Data(edge_index=[2, 162], x=[42, 32], y=)
+   这段代码创建了一个CustomDataset对象，并打印出了其中的第一个样本数据。样本数据包括边索引(edge_index)、节点特征(x)和
+   目标标签(y)等信息。 通过使用Python
+   PyG库，你可以方便地处理和分析图数据，并进行相关的机器学习和深度学习任务。希望这些信息对你有帮助！<span
+   class="em">1</span><span class="em">2</span><span class="em">3</span>
+   #### 引用[.reference_title] - *1* [Python库 |
+   pyg-0.7-py2.7.egg](https://download.csdn.net/download/qq_38161040/85454
+   809)[target="_blank"
+   data-report-click={"spm":"1018.2226.3001.9630","extra":{"utm_source":"v
+   ip_chatgpt_common_search_pc_result","utm_medium":"distribute.pc_search_
+   result.none-task-cask-2~all~insert_cask~default-1-null.142^v93^chatsear
+   chT3_2"}}] [.reference_item style="max-width: 33.333333333333336%"] -
+   *2*
+   [python安装使用PyG图神经网络框架](https://blog.csdn.net/weixin_43540533/article/de
+   tails/111186484)[target="_blank"
+   data-report-click={"spm":"1018.2226.3001.9630","extra":{"utm_source":"v
+   ip_chatgpt_common_search_pc_result","utm_medium":"distribute.pc_search_
+   result.none-task-cask-2~all~insert_cask~default-1-null.142^v93^chatsear
+   chT3_2"}}] [.reference_item style="max-width: 33.333333333333336%"] -
+   *3*
+   [PyG自定义数据集学习笔记（持续更新](https://blog.csdn.net/weixin_45928096/article/deta
+   ils/126910291)[target="_blank"
+   data-report-click={"spm":"1018.2226.3001.9630","extra":{"utm_source":"v
+   ip_chatgpt_common_search_pc_result","utm_medium":"distribute.pc_search_
+   result.none-task-cask-2~all~insert_cask~default-1-null.142^v93^chatsear
+   chT3_2"}}] [.reference_item style="max-width: 33.333333333333336%"] [
+   .reference_list ]
+
+“相关推荐”对你有帮助么？
+
+     * 非常没帮助
+     * 没帮助
+     * 一般
+     * 有帮助
+     * 非常有帮助
+
+   ____________________ 提交
+
+   [51245cda7fb14a97991f59db7ddd006e_qq_42103091.jpg!1]
+   斯曦巍峨 CSDN认证博客专家 CSDN认证企业博客
+   码龄6年 Python领域新星创作者
+
+   129
+          原创
+
+   8709
+          周排名
+
+   5366
+          总排名
+
+   36万+
+          访问
+
+   [blog5.png]
+          等级
+
+   4030
+          积分
+
+   7158
+          粉丝
+
+   706
+          获赞
+
+   302
+          评论
+
+   2377
+          收藏
+
+   签到新秀
+   五一创作勋章
+   签到达人
+   原力探索
+   GitHub
+   笔耕不辍
+   学习力
+   技术圈认证
+   原力新人
+   阅读者勋章
+   知无不言
+   授人以渔
+   孜孜不倦
+   求知
+   分享达人
+   分享精英
+   博客之星–参与
+   持续创作
+   勤写标兵
+   创作能手
+   新人勋章
+   私信
+   关注
+
+   写文章
+
+   ____________________ [csdn-sou.png?v=1587021042]
+
+   [INS: :INS] [csdn-sou.png?v=1587021042]
+
+热门文章
+
+     * STC89C52RC单片机程序烧录方法 20491
+     * 利用Pandas来清除重复数据 19297
+     * Eclipse如何恢复默认窗口布局 14943
+     * 安装transformers报错error can‘t find rust compiler 11431
+     * Java中的高级组件面板——JTabbedPane(选项卡面板) 10794
+
+分类专栏
+
+     * Graph Learning 26篇
+     * 图神经网络框架 9篇
+     * 深度学习实战 12篇
+     * 爬虫实战 14篇
+     * python 16篇
+     * 机器学习 9篇
+     * 算法与数据结构 11篇
+     * C/C++ 8篇
+     * Java 7篇
+
+最新评论
+
+     * PyG教程(8)：计算更高效的稀疏矩阵形式
+       崴生丶: 想问一下，稀疏矩阵的行下标是起始节点类型还是结束节点类型呢？
+     * c++实现扫描线种子填充算法
+       CSDN-Ada助手: 多亏了你这篇博客, 解决了问题:
+       https://ask.csdn.net/questions/8021785, 请多输出高质量博客, 帮助更多的人
+     * 安装transformers报错error can‘t find rust compiler
+       小助手牧濑红莉栖: 泰裤辣
+     * NLP实战：面向中文电子病历的命名实体识别
+       斯曦巍峨: 有一个说明文档
+     * NLP实战：面向中文电子病历的命名实体识别
+       java全栈: 请问得到解决方案了吗
+
+您愿意向朋友推荐“博客详情页”吗？
+
+     * 强烈不推荐
+     * 不推荐
+     * 一般般
+     * 推荐
+     * 强烈推荐
+
+   ____________________ 提交
+
+最新文章
+
+     * Redis入门指南学习笔记(3)：Redis高级特性
+     * Redis入门指南学习笔记(2)：常用数据类型解析
+     * Redis入门指南学习笔记(1)：初识Redis
+
+   2023年16篇
+   2022年43篇
+   2021年18篇
+   2020年38篇
+   2019年15篇
+
+   [INS: :INS] [npsFeelGrey5.png]
+
+目录
+
+   [INS: :INS] [javascript]
+
+目录
+
+   [javascript]
+
+分类专栏
+
+     * Graph Learning 26篇
+     * 图神经网络框架 9篇
+     * 深度学习实战 12篇
+     * 爬虫实战 14篇
+     * python 16篇
+     * 机器学习 9篇
+     * 算法与数据结构 11篇
+     * C/C++ 8篇
+     * Java 7篇
+
+目录
+
+   评论 3
+   [closeBt.png]
+   被折叠的  条评论 为什么被折叠? [iconPark.png] 到【灌水乐园】发言
+   查看更多评论
+   添加红包
+   祝福语
+   ____________________
+
+   请填写红包祝福语或标题
+   红包数量
+   ____________________ 个
+
+   红包个数最小为10个
+   红包总金额
+   ____________________ 元
+
+   红包金额最低5元
+   余额支付
+   当前余额3.43元 前往充值 >
+   需支付：10.00元
+   (BUTTON) 取消 (BUTTON) 确定
+   (BUTTON) 下一步
+   (BUTTON) 知道了
+
+   成就一亿技术人!
+
+   领取后你会自动成为博主和红包主的粉丝 规则
+
+   hope_wisdom
+   发出的红包
+
+   打赏作者 [closeBt.png]
+
+          [51245cda7fb14a97991f59db7ddd006e_qq_42103091.jpg!1]
+
+   斯曦巍峨
+
+          码文不易，有条件的可以支持一下
+
+   ¥1 ¥2 ¥4 ¥6 ¥10 ¥20
+   扫码支付：¥1
+   [pay-time-out.png] 获取中
+   扫码支付
+
+   您的余额不足，请更换扫码支付或充值
+
+   打赏作者
+
+   实付元
+   使用余额支付
+   [pay-time-out.png] 点击重新获取
+   [weixin.png] [zhifubao.png] [jingdong.png] 扫码支付
+   (*) 钱包余额 0
+
+   抵扣说明：
+
+   1.余额是钱包充值的虚拟货币，按照1:1的比例进行支付金额的抵扣。
+   2.余额无法直接购买下载，可以购买VIP、付费专栏及课程。
+   余额充值
+
+   []
