@@ -12,7 +12,7 @@ do
             reponse=$(curl -s -I -w "%{http_code}" -o "../aspirations/${lang}-${lineno}.html" "$URL")
 
             #récupérer dump textuel
-            dumptext=$(lynx -dump -nolist "../dumps-text/${lang}-${lineno}.txt" "$URL")
+            dumptext=$(lynx -dump -nolist "../dumps-text/${lang}-${lineno}.html" "$URL")
 
             #encodage
             encoding=$(curl -s -I -L -w "%{content_type}" -o /dev/null "$URL" | egrep -E -o "charset=\S+" | cut -d"=" -f2 | tail -n 1)
