@@ -4,8 +4,7 @@
 
 Nous avons choisi le mot "voisin" car il s'agit d'un mot simple utilsé assez couramment. De plus, ce mot a de multiples sens dans la langue française, il désigne quelqu'un qui habite dans le même immeuble/quartier, mais il fait également référence à tout ce qui est à une distance relativement petite.
 
-E français : voisin
-
+En français : voisin
 En arabe : الجار
 En mandarin : 邻居
 
@@ -17,4 +16,4 @@ ON a pensé à un souci dans les variables mais nous n'avons pas su comment corr
 Nous avons pu générer les différents tableaux avec trois scripts, mais nous avons rencontré certains problèmes par rapport aux liens
 Le fait d'avoir créé des variables pour les chemins nous a facilité la tâche.
 Toutefois, nous avons encore des erreurs avec les liens chinois
-Quant au travail sur iTrameur, nous n'avons pas bien compris les premières consignes, mais nous allons nous travailler dessus d'ici le cours du 06/12.
+Quant au travail sur iTrameur, nous n'avons pas bien compris les premières consignes, mais nous allons travailler dessus d'inousci le cours du 06/12.
