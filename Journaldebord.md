@@ -17,4 +17,4 @@ ON a pensé à un souci dans les variables mais nous n'avons pas su comment corr
 Nous avons pu générer les différents tableaux avec trois scripts, mais nous avons rencontré certains problèmes par rapport aux liens
 Le fait d'avoir créé des variables pour les chemins nous a facilité la tâche.
 Toutefois, nous avons encore des erreurs avec les liens chinois
-Quant au travail sur iTrameur, nous n'avons pas encore eu le temps de bien prendre en main le td avant lundi soir, mais nous allons nous travailler dessus d'ici le cours du 06/12.
+Quant au travail sur iTrameur, nous n'avons pas bien compris les premières consignes, mais nous allons nous travailler dessus d'ici le cours du 06/12.
