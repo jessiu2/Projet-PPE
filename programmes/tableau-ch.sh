@@ -15,7 +15,7 @@ fi
 lang=$(basename -s .txt "$URLS")
 
 if [ "$lang" = "chinois" ]; then
-    MOT=".."
+    MOT="邻居"
 
     tab="../tableaux/tableau_${lang}.html"
     echo "<html>
