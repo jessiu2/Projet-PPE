@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
+urldecode() {
+  local url_encoded="${1//+/ }"
+  printf '%b' "${url_encoded//%/\\x}"
+}
+
 if [[ $# -ne 1 ]]; then
     echo "Usage : ./script.sh fichier"
     exit
@@ -21,17 +26,47 @@ if [ "$lang" = "arabe" ]; then
     tab="../tableaux/tableau_${lang}.html"
     echo "<html>
     <head>
-        <meta charset=\"UTF-8\">
+    <meta charset=\"UTF-8\">
+    <title>Tableau arabe</title>
+      <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            background-color: #eeeeee; /* Fond du tableau */
+        }
+        th {
+            background-color: #dcdcdc; /* Fond plus clair pour les en-têtes */
+            color: black; /* Texte en noir pour les en-têtes */
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        .url-column {
+            width: 5%; /* Largeur encore plus réduite pour la colonne URL */
+            word-break: break-all;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
     </head>
     <body>
-        <h1><b>Tableau</b></h1>
-        <table border=\"1\">
+        <table>
             <tr>
-                <th>Numero ligne</th><th>URL</th><th>Aspiration</th><th>Dump textuel</th><th>Code HTTP</th><th>Encodage</th><th>Nombre total d'occurences</th><th>Contexte</th>
+                <th>N° ligne</th><th>URL</th><th>Aspiration</th><th>Dump textuel</th><th>Code HTTP</th><th>Encodage</th><th>Nombre total d'occurences</th><th>Contexte</th>
             </tr>" > "$tab"
     lineno=1
 
-    while read -r URL; do
+  while IFS= read -r URL; do
+        # Decodage de l'URL
+        decoded_url=$(urldecode "$URL")
+
         reponse=$(curl -s -L -w "%{http_code}" -o "../aspirations/${lang}-${lineno}.html" "$URL")
         asp="../aspirations/${lang}-${lineno}.html"
 
@@ -54,7 +89,7 @@ if [ "$lang" = "arabe" ]; then
         cont="../contextes/contexte_${lang}-${lineno}.txt"
 
         echo "<tr>
-                <td>$lineno</td><td><a href=\"$URL\">$URL</a></td><td><a href=\"$asp\">Aspiration</a></td><td><a href=\"$dump\">Dump</a></td><td>$reponse</td><td>$encoding</td><td>$total_occurences</td><td><a href=\"$cont\">Voir contexte</a></td></tr>" >> "$tab"
+                <td>$lineno</td><td><a href=\"$URL\">$decoded_url</a></td><td><a href=\"$asp\">Aspiration</a></td><td><a href=\"$dump\">Dump</a></td><td>$reponse</td><td>$encoding</td><td>$total_occurences</td><td><a href=\"$cont\">Voir contexte</a></td></tr>" >> "$tab"
 
         lineno=$(expr $lineno + 1)
     done < "$URLS"
