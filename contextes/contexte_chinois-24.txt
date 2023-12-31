@@ -2,7 +2,7 @@
 
 PyG教程(3)：邻居采样
 
-   最新推荐文章于 2023-09-17 20:26:28 发布
+   最新推荐文章于 2023-04-14 12:35:03 发布
 --
    订阅专栏
 
@@ -72,18 +72,12 @@ from torch_geometric.datasets import KarateClub
        复制链接
        扫一扫
 --
-   04-16 1324
+   04-16 1438
    data:要求加载或者类型数据；:
    每轮迭代要采样邻居节点的个数，即第i-1轮要为每个节点采样个节点，如果为-1，则代表所有邻居节点都将被包含(一阶相邻邻居)，在异构图中，还可以
    使用字典来表示每个单独的边缘类型要采样的邻居数量；:
    中心节点集合，用来指导采样一个mini-batch内的节点，如果为None，则代表包含data中的所有节点。如果设置为
    None，将考虑所有节点。在异构图中，需要作为包含节点类型和节点索引的元组传递。（默认值：None）
---
-   cobracanary的博客
-   02-20 767
-   今天想在reddit数据集上跑实验，发现pyg默认的sage_conv是不支持邻居采样、batch训练的，需要使用pyg提供的Neighbor
-   Loader pyg中的NeighborLoader
-
 --
    图的频域卷积是在傅里叶空间完成的，我们对图的拉普拉斯矩阵进行特征值分解，特征分解更有助于我们理解图的底层特征，能够更好的找到图中的簇或者子图，
    典型的频域方法有ChebNet，GCN等。但是图的特征值分解是一个特别耗时的操作，具有 [公式] 的复杂度，很难扩展到海量节点的场景中。
@@ -91,19 +85,11 @@ from torch_geometric.datasets import KarateClub
    Task 01 图论基础与PyG库
    sigmoid
 --
-   很多worker同时采样，计算并且更新梯度。这篇博文重点介绍DGL的并行计算框架。 多进程方案 概括而言，目前DGL(version
-   0.3)采用的是多进程的并行方案，分布式的方案正在开发中。见下图，DGL的并行计算
-   基于知识图谱共同邻居排序采样的推荐模型.docx
-   02-23
-   基于知识图谱共同邻居排序采样的推荐模型.docx
-   PyPI 官网下载 | torch_sparse-0.6.12.tar.gz
-   01-30
---
-   数据集和数据中的图格式）会降低许多图操作和分析的效率和难度。因此，在本 Colab 中，我们将使用
-   DeepSNAP，它结合了这两种表示法，并为 GNN 训练/验证/测试提供了完整的管道。
+   10-25 1339
+   PyTorch functions related to GNN models
    【DGL】定义邻居采样器和数据加载器
    yuxeaotao的博客
-   04-14 2749
+   04-14 2807
 --
    Samplinghttps://docs.dgl.ai/en/0.6.x/guide/minibatch-node.html#guide-mi
    nibatch-node-classification-sampler
@@ -111,3 +97,20 @@ from torch_geometric.datasets import KarateClub
    最简单的邻居采样器是MultiLayerFullNeighborSampler，它可获取节点.
    【PyG】异构图学习 - 图神经网络
    C橘子
+--
+   pytorch geometric如何实现节点维度mini-batch模型训练: NeighorSampler
+   PyG的官方文档中有mini-batch和Advanced
+   mini-batching两部分内容，但实现的都是图维度的mini-batch。如何像GraphSAGE文章中对邻居进行采样从而实现节点维度m
+   ini-batch模型训练，使得大规模全连接图的GNNs模型训练成为可能，在PyG中是通过torch_geometric.Loader.Nei
+   ghborSampler实现的（早一点版本是torch_
+--
+   （1）和（2）没有改变生成阶段的顺序，而（3）则是存在实际问题。 那么我们就是添加上游任务中，生成一个排序结果，而不仅仅是候选items +
+   多样性排序 要有特定于多样性的设计，使的弱势类别更加容易获得 摘要 动机： 多样性是衡量推荐items的一个关键因.
+   图学习笔记（七）：图神经网络算法（二）——图采样、邻居聚合
+   Wangzx的博客
+   02-01 1785
+   图学习笔记（七）：图神经网络算法（二）——图采样图采样1. 为什么要图采样？图采样的原因：MiniBatch训练2. 什么是图采样？3.
+   图采样算法详解（GraphSAGE、PinSAGE）GraphSAGE (SAmple &
+   aggreGatE)邻居采样算法邻居采样算法的优点：PinSAGE：根据邻居节点重要性进行聚合的算法。 图采样 1. 为什么要图采样？
+   图采样的原因： 如果图很大，需要进行“图采样”。 权图规模太大，当代的GPU/CPU资源受限，无法一次性全图送入计算资源（难以将整张图放
+   图神经网络三剑客：GCN、GAT与GraphSAGE

@@ -26,14 +26,13 @@
 
     
 
-    <link rel="preconnect"
-      href="https://fonts.gstatic.com"
-      crossorigin />
-
       <link rel="preconnect"
       href="https://consent.trustarc.com"
-      crossorigin />
+      crossorigin />   
 
+   <link rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin />
 
     <link rel="preload"
         as="style"
@@ -42,8 +41,9 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;600;700&display=swap"
         media="print" onload="this.media='all'" />
-    <!-- <link rel="preload" as="font" href="/assets/fonts/docs-icons.woff?kuflrc" type="font/woff" crossorigin="anonymous">
-    <link rel="preload" as="font" href="/assets/fonts/docs-icons.ttf?kuflrc" type="font/ttf" crossorigin="anonymous"> -->
+
+        
+   
     <link rel="preload" as="style" href="/assets/main.css">
     <link rel="stylesheet" href="/assets/main.css">
 
@@ -356,7 +356,7 @@
             
             <button class="btn btn-secondary dropdown-toggle docsproductversiondropdown" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <p class="version-name-container">
-                     <span class="version-name">Current Release</span>
+                     <span class="version-name">14.1 - Current Release</span>
                     
                 </p>
                 <span class="docs-icon icons-arrow-version-selector"></span>
@@ -364,7 +364,9 @@
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
             
-              <a class="dropdown-item" data-version-url="/zh-cn/citrix-adc/current-release/networking/ip-addressing/configuring-neighbor-discovery.html">Current Release</a>
+              <a class="dropdown-item" data-version-url="/zh-cn/citrix-adc/current-release/networking/ip-addressing/configuring-neighbor-discovery.html">14.1 - Current Release</a>
+            
+              <a class="dropdown-item" data-version-url="/zh-cn/citrix-adc/13-1/networking/ip-addressing/configuring-neighbor-discovery.html">13.1</a>
             
               <a class="dropdown-item" data-version-url="/zh-cn/citrix-adc/13/networking/ip-addressing/configuring-neighbor-discovery.html">13.0</a>
             
@@ -1055,7 +1057,7 @@
         
         <div class="content-operations">
             <div class="download-links">
-                <a target="_blank" class="pdf" href="/zh-cn/citrix-adc/current-release/netscaler-13.1.pdf">
+                <a target="_blank" class="pdf" href="/zh-cn/citrix-adc/current-release/netscaler-14.1.pdf">
                     <span class="docs-icon icon-pdf mr-1"></span>
                     <span>查看 PDF</span>
                 </a>
@@ -1096,7 +1098,7 @@
         <ol class="breadcrumb ctx-breadcrumbs">
             <li class="breadcrumb-item"><a href="/zh-cn"><span class="docs-icon icon-home breadcrumb-icon"></span></a></li>
             <li class="breadcrumb-item"><a href="/zh-cn/citrix-adc">NetScaler</a></li>
-            <li class="breadcrumb-item"><a href="/zh-cn/citrix-adc/current-release">NetScaler 13.1</a></li>
+            <li class="breadcrumb-item"><a href="/zh-cn/citrix-adc/current-release">NetScaler 14.1</a></li>
             <li class="breadcrumb-item"><a href="/zh-cn/citrix-adc/current-release/networking">网络连接</a></li>
         </ol>
     </div>
@@ -1417,7 +1419,7 @@
         <ol class="breadcrumb ctx-breadcrumbs">
             <li class="breadcrumb-item"><a href="/zh-cn"><span class="docs-icon icon-home breadcrumb-icon"></span></a></li>
             <li class="breadcrumb-item"><a href="/zh-cn/citrix-adc">NetScaler</a></li>
-            <li class="breadcrumb-item"><a href="/zh-cn/citrix-adc/current-release">NetScaler 13.1</a></li>
+            <li class="breadcrumb-item"><a href="/zh-cn/citrix-adc/current-release">NetScaler 14.1</a></li>
             <li class="breadcrumb-item"><a href="/zh-cn/citrix-adc/current-release/networking">网络连接</a></li>
         </ol>
     </div>
@@ -1861,18 +1863,42 @@
 </div>
         
         <script>
-          var PRODUCTLIST_JSON = [{"id":"adc_main","name":"ADC","versions":[{"key":"/current-release","id":"current_release","name":"Current Release"},{"key":"/13","id":"adc_13_0","name":"13.0"},{"key":"/12-1","id":"adc_12_1","name":"12.1"}],"languages":["en-us"]},{"id":"application_delivery_management_software","name":"Application Delivery Management","versions":[{"key":"/current-release","id":"citrix_adm_software_cr","name":"Current Release"},{"key":"/13","id":"citrix_adm_software_13_0","name":"13.0"},{"key":"/12-1","id":"citrix_adm_software_12_1","name":"12.1"}],"languages":["en-us"]},{"id":"application_delivery_management","name":"Application Delivery Management 服务","versions":[],"languages":["en-us"]},{"id":"adc_cpx","name":"Citrix ADC CPX","versions":[{"key":"/current-release","id":"adc_cpx_cr","name":"Current Release"},{"key":"/13","id":"adc_cpx_13_0","name":"13.0"},{"key":"/12-1","id":"adc_cpx_12_1","name":"12.1"}],"languages":["en-us","ja-jp","zh-cn"]},{"id":"app_delivery_security","name":"Citrix App Delivery and Security","versions":[],"languages":["en-us"]},{"id":"intelligent_traffic_management","name":"Citrix Intelligent Traffic Management","versions":[],"languages":["en-us"]},{"id":"citrix_istio_adapter","name":"Citrix Istio Adapter","versions":[],"languages":["en-us"]},{"id":"citrix_observability_exporter","name":"Citrix Observability Exporter","versions":[],"languages":["en-us"]},{"id":"sd_wan_main","name":"Citrix SD-WAN","versions":[{"key":"/current-release","id":"current_release","name":"Current Release"},{"key":"/11-5","id":"sd_wan_11_5","name":"11.5 limited availability"},{"key":"/11-3","id":"sd_wan_11_3","name":"11.3"},{"key":"/11-2","id":"sd_wan_11_2","name":"11.2"},{"key":"/11-1","id":"sd_wan_11_1","name":"11.1"},{"key":"/11","id":"sd_wan_11_0","name":"11.0"},{"key":"/10-2","id":"sd_wan_10_2","name":"10.2"}],"languages":["en-us"]},{"id":"sd_wan_center_main","name":"Citrix SD-WAN Center","versions":[{"key":"/11-3","id":"sd_wan_center_11_3","name":"11.3"},{"key":"/11-2","id":"sd_wan_center_11_2","name":"11.2"},{"key":"/11-1","id":"sd_wan_center_11_1","name":"11.1"},{"key":"/11","id":"sd_wan_center_11","name":"11.0"},{"key":"/10-2","id":"sd_wan_center_10_2","name":"10.2"}],"languages":["en-us"]},{"id":"sd_wan_orchestrator","name":"Citrix SD-WAN Orchestrator","versions":[],"languages":["en-us"]},{"id":"sd_wan_wanop_main","name":"Citrix SD-WAN WANOP","versions":[{"key":"/11-3","id":"sd_wan_wanop_11_3","name":"11.3"},{"key":"/11-2","id":"sd_wan_wanop_11_2","name":"11.2"},{"key":"/11-1","id":"sd_wan_wanop_11_1","name":"11.1"},{"key":"/11","id":"sd_wan_wanop_11_0","name":"11.0"},{"key":"/10-2","id":"sd_wan_wanop_10_2","name":"10.2"}],"languages":["en-us"]},{"id":"sdwan_platforms","name":"Citrix SD-WAN 平台","versions":[],"languages":["en-us"]},{"id":"secure_internet_access","name":"Citrix Secure Internet Access","versions":[],"languages":["en-us"]},{"id":"citrix_secure_web_gateway","name":"Citrix Secure Web Gateway","versions":[{"key":"/12-1","id":"citrix_secure_web_gateway_12_1","name":"12.1"}],"languages":["en-us"]},{"id":"citrix_web_app_api_protection","name":"Citrix Web App and API Protection","versions":[],"languages":["en-us"]},{"id":"citrix_gateway","name":"Gateway","versions":[{"key":"/current-release","id":"citrix_gateway_cr","name":"Current Release"},{"key":"/13","id":"citrix_gateway_13_0","name":"13.0"},{"key":"/12-1","id":"citrix_gateway_12_1","name":"12.1"}],"languages":["en-us"]},{"id":"citrix_adc_blx","name":"NetScaler BLX","versions":[{"key":"/current-release","id":"citrix_adc_blx_13_1","name":"Current Release"},{"key":"/13","id":"citrix_adc_blx_13","name":"13.0"}],"languages":["en-us"]},{"id":"citrix_adc_sdx","name":"NetScaler SDX","versions":[{"key":"/current-release","id":"citrix_adc_sdx_cr","name":"Current Release"},{"key":"/13","id":"citrix_adc_sdx_13_0","name":"13.0"},{"key":"/12-1","id":"citrix_adc_sdx_12_1","name":"12.1"},{"key":"/11-1","id":"netscaler_sdx_11_1","name":"11.1"}],"languages":["en-us"]},{"id":"netscaler_secure_web_gateway","name":"NetScaler Secure Web Gateway","versions":[{"key":"/12","id":"netscaler_secure_web_gateway_12","name":"12.0"}],"languages":["en-us"]},{"id":"citrix_hardware_platforms","name":"硬件平台","versions":[],"languages":["en-us"]},{"id":"citrix_k8s_ingress_controller","name":"适用于 Kubernetes 的 Citrix Ingress Controller","versions":[],"languages":["en-us"]},{"id":"sd_wan_orchestrator_on_prem","name":"适用于本地的 Citrix SD-WAN Orchestrator","versions":[],"languages":["en-us"]}]
+          var PRODUCTLIST_JSON = [{"id":"adc_main","name":"ADC","versions":[{"key":"/current-release","id":"current_release","name":"14.1 - Current Release"},{"key":"/13-1","id":"adc_13_1","name":"13.1"},{"key":"/13","id":"adc_13_0","name":"13.0"},{"key":"/12-1","id":"adc_12_1","name":"12.1"}],"languages":["en-us"]},{"id":"application_delivery_management_software","name":"Application Delivery Management","versions":[{"key":"/current-release","id":"citrix_adm_software_cr","name":"14.1 - Current Release"},{"key":"/13-1","id":"citrix_adm_software_13_1","name":"13.1"},{"key":"/13","id":"citrix_adm_software_13_0","name":"13.0"},{"key":"/12-1","id":"citrix_adm_software_12_1","name":"12.1"}],"languages":["en-us"]},{"id":"application_delivery_management","name":"Application Delivery Management 服务","versions":[],"languages":["en-us"]},{"id":"adc_cpx","name":"Citrix ADC CPX","versions":[{"key":"/current-release","id":"adc_cpx_cr","name":"Current Release"},{"key":"/13-1","id":"adc_cpx_13_1","name":"13.1"},{"key":"/13","id":"adc_cpx_13_0","name":"13.0"},{"key":"/12-1","id":"adc_cpx_12_1","name":"12.1"}],"languages":["en-us","ja-jp","zh-cn"]},{"id":"app_delivery_security","name":"Citrix App Delivery and Security","versions":[],"languages":["en-us"]},{"id":"intelligent_traffic_management","name":"Citrix Intelligent Traffic Management","versions":[],"languages":["en-us"]},{"id":"citrix_istio_adapter","name":"Citrix Istio Adapter","versions":[],"languages":["en-us"]},{"id":"citrix_observability_exporter","name":"Citrix Observability Exporter","versions":[],"languages":["en-us"]},{"id":"sd_wan_main","name":"Citrix SD-WAN","versions":[{"key":"/current-release","id":"current_release","name":"Current Release"},{"key":"/11-5","id":"sd_wan_11_5","name":"11.5 limited availability"},{"key":"/11-3","id":"sd_wan_11_3","name":"11.3"},{"key":"/11-2","id":"sd_wan_11_2","name":"11.2"},{"key":"/11-1","id":"sd_wan_11_1","name":"11.1"},{"key":"/11","id":"sd_wan_11_0","name":"11.0"},{"key":"/10-2","id":"sd_wan_10_2","name":"10.2"}],"languages":["en-us"]},{"id":"sd_wan_center_main","name":"Citrix SD-WAN Center","versions":[{"key":"/11-3","id":"sd_wan_center_11_3","name":"11.3"},{"key":"/11-2","id":"sd_wan_center_11_2","name":"11.2"},{"key":"/11-1","id":"sd_wan_center_11_1","name":"11.1"},{"key":"/11","id":"sd_wan_center_11","name":"11.0"},{"key":"/10-2","id":"sd_wan_center_10_2","name":"10.2"}],"languages":["en-us"]},{"id":"sd_wan_orchestrator","name":"Citrix SD-WAN Orchestrator","versions":[],"languages":["en-us"]},{"id":"sd_wan_wanop_main","name":"Citrix SD-WAN WANOP","versions":[{"key":"/11-3","id":"sd_wan_wanop_11_3","name":"11.3"},{"key":"/11-2","id":"sd_wan_wanop_11_2","name":"11.2"},{"key":"/11-1","id":"sd_wan_wanop_11_1","name":"11.1"},{"key":"/11","id":"sd_wan_wanop_11_0","name":"11.0"},{"key":"/10-2","id":"sd_wan_wanop_10_2","name":"10.2"}],"languages":["en-us"]},{"id":"sdwan_platforms","name":"Citrix SD-WAN 平台","versions":[],"languages":["en-us"]},{"id":"secure_internet_access","name":"Citrix Secure Internet Access","versions":[],"languages":["en-us"]},{"id":"citrix_secure_web_gateway","name":"Citrix Secure Web Gateway","versions":[{"key":"/12-1","id":"citrix_secure_web_gateway_12_1","name":"12.1"}],"languages":["en-us"]},{"id":"citrix_web_app_api_protection","name":"Citrix Web App and API Protection","versions":[],"languages":["en-us"]},{"id":"citrix_gateway","name":"Gateway","versions":[{"key":"/current-release","id":"citrix_gateway_cr","name":"Current Release"},{"key":"/13-1","id":"citrix_gateway_13_1","name":"13.1"},{"key":"/13","id":"citrix_gateway_13_0","name":"13.0"},{"key":"/12-1","id":"citrix_gateway_12_1","name":"12.1"}],"languages":["en-us"]},{"id":"citrix_adc_blx","name":"NetScaler BLX","versions":[{"key":"/current-release","id":"citrix_adc_blx_14_1","name":"14.1 - Current Release"},{"key":"/13-1","id":"citrix_adc_blx_13_1","name":"13.1"},{"key":"/13","id":"citrix_adc_blx_13","name":"13.0"}],"languages":["en-us"]},{"id":"citrix_adc_sdx","name":"NetScaler SDX","versions":[{"key":"/current-release","id":"citrix_adc_sdx_cr","name":"Current Release"},{"key":"/13-1","id":"citrix_adc_sdx_13_1","name":"13.1"},{"key":"/13","id":"citrix_adc_sdx_13_0","name":"13.0"},{"key":"/12-1","id":"citrix_adc_sdx_12_1","name":"12.1"}],"languages":["en-us"]},{"id":"netscaler_secure_web_gateway","name":"NetScaler Secure Web Gateway","versions":[{"key":"/12","id":"netscaler_secure_web_gateway_12","name":"12.0"}],"languages":["en-us"]},{"id":"citrix_hardware_platforms","name":"硬件平台","versions":[],"languages":["en-us"]},{"id":"citrix_k8s_ingress_controller","name":"适用于 Kubernetes 的 Citrix Ingress Controller","versions":[],"languages":["en-us"]},{"id":"sd_wan_orchestrator_on_prem","name":"适用于本地的 Citrix SD-WAN Orchestrator","versions":[],"languages":["en-us"]}]
         </script>
        
         <!--Feedback modal closing-->
-
+        
     </div>
 </footer>
 <div id="stop" class="scroll-to-top">
     <a href="#"><span class="docs-icon icon-go-to-top"></span></a>
 </div>
 
+<div class="modal fade" id="languageModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>是否要使用您的浏览器的首选语言切换到该 Web 站点?</p>
+            </div>
+            <div class="modal-footer">
+                <button id="lanModalYes" type="button" class="btn btn-primary" data-dismiss="modal">是</button>
+                <button id="lanModalNo" type="button" class="btn btn-secondary" data-dismiss="modal">否</button>
+                <!-- You can add additional buttons here if needed -->
+            </div>
+        </div>
+    </div>
+    <script>
+        var LANGUAGE_JSON = {"en":"en-us","de":"de-de","ja":"ja-jp","zh":"zh-cn","fr":"fr-fr","es":"es-es","ko":"ko-kr","pt":"pt-br","nl":"nl-nl","it":"it-it","ru":"ru-ru","tw":"zh-tw"}
+    </script>
+</div>
 <script src="/assets/dist/bundle.js"></script>
+<div id="homepageScript"></div>
 
 <div class="container">
     <div class="modal fade modal-fullscreen" id="editModalpop" role="dialog">

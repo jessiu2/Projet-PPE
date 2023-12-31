@@ -35,16 +35,21 @@ if [ "$lang" = "chinois" ]; then
         asp="../aspirations/${lang}-${lineno}.html"
 
         # Récupérer dump textuel
-        dumptext=$(lynx -dump -nolist "../dumps-text/${lang}-${lineno}.html" "$URL")
-        dump="../dumps-text/${lang}-${lineno}.html"
+        # Changement ici : le fichier de dump sera maintenant un .txt
+        dumptext=$(lynx -dump -nolist "$URL" > "../dumps-text/${lang}-${lineno}.txt")
+        dump="../dumps-text/${lang}-${lineno}.txt"
 
         # Encodage
         encoding=$(curl -s -I -L -w "%{content_type}" -o /dev/null "$URL" | egrep -E -o "charset=\S+" | cut -d"=" -f2 | tail -n 1)
 
-        occurence=$(egrep -o "$MOT" <<< "$dumptext" | wc -l)
+        # Calculer le nombre d'occurrences du mot
+        occurence=$(grep -o "$MOT" "$dump" | wc -l)
 
-        # Extraire les contextes d'apparition du mot
-        contextes=$(grep -i -C 2 "$MOT" <<< "$dumptext" > "../contextes/contexte_${lang}-${lineno}.txt")
+         # Extraire les contextes d'apparition du mot
+    # On utilise grep avec les options -i pour l'insensibilité à la casse, -o pour récupérer uniquement le mot,
+    # -C 2 pour obtenir 2 lignes avant et après le mot, et -h pour ne pas afficher le nom du fichier dans le résultat.
+    # Ensuite, on redirige la sortie vers le fichier de contexte.
+        contextes=$(grep -i -C 2 "$MOT" "$dump" > "../contextes/contexte_${lang}-${lineno}.txt")
         cont="../contextes/contexte_${lang}-${lineno}.txt"
 
         echo "<tr>

@@ -1,0 +1,309 @@
+   #alternate alternate alternate alternate alternate alternate alternate
+   alternate alternate alternate alternate alternate alternate
+
+     * 跳转到页面内容
+     * 跳到搜索
+     * 跳转到页脚
+
+     * Cisco.com 中国
+     * 产品和服务
+     * 解决方案
+     * 支持
+     * 学习
+     * 了解思科
+     * 购买方式
+     * 合作伙伴主页
+     * 合作伙伴计划
+     * 支持
+     * 工具
+     * 寻找思科合作伙伴
+     * 了解思科合作伙伴
+     * 成为思科合作伙伴
+
+     *
+     * 技术支持
+     * 对于技术的支持
+     * IP 路由
+     * 故障排除技术说明
+
+排除OSPF邻居故障
+
+   [TAC_lg-icon.png]
+   (BUTTON) 保存
+   登录以保存内容
+   (BUTTON)
+   英语
+   (BUTTON)
+   下载
+   (BUTTON)
+   打印
+
+下载选项
+
+     * PDF (475.8 KB)
+       在各种设备上使用 Adobe Reader 查看
+     * ePub (80.5 KB)
+       在 iPhone、iPad、Android、Sony Reader 或 Windows Phone 上使用各种应用查看
+     * Mobi (Kindle) (69.4 KB)
+       在 Kindle 设备上查看或在多个设备上使用 Kindle 应用查看
+
+   已更新: 2023 年 8 月 14 日
+   文档 ID:13699
+   (BUTTON) 非歧视性语言
+   (BUTTON) 翻译
+
+非歧视性语言
+
+   此产品的文档集力求使用非歧视性语言。在本文档集中，非歧视性语言是指不隐含针对年龄、残障、性别、种族身份、族群身份、性取向、社会经济地位和交叉性
+   的歧视的语言。由于产品软件的用户界面中使用的硬编码语言、基于 RFP
+   文档使用的语言或引用的第三方产品使用的语言，文档中可能无法确保完全使用非歧视性语言。 深入了解思科如何使用包容性语言。
+
+关于此翻译
+
+   思科采用人工翻译与机器翻译相结合的方式将此文档翻译成不同语言，希望全球的用户都能通过各自的语言得到支持性的内容。
+   请注意：即使是最好的机器翻译，其准确度也不及专业翻译人员的水平。 Cisco Systems, Inc.
+   对于翻译的准确性不承担任何责任，并建议您总是参考英文原始文档（已提供链接）。
+
+目录
+
+   简介
+   先决条件
+   要求
+   使用的组件
+   规则
+   背景信息
+   邻接关系
+   邻居状态
+   没有状态显示
+   处于 down 状态的邻居
+   处于 init 状态邻居
+   处于双向状态的邻居
+   处于 Exstart/Exchange 状态的邻居
+   处于 loading 状态的邻居
+   OSPF 邻居问题的典型原因
+   相关信息
+
+简介
+
+   本文档介绍开放最短路径优先(OSPF)邻居如何成为完全邻接的常见问题。
+
+先决条件
+
+要求
+
+   本文档需要有关IP路由协议和OSPF路由协议的基本知识。要了解有关IP路由协议的详细信息，请参阅如何配置基本IP路由。有关OSPF的详细信息，
+   请参阅开放最短路径优先(OSPF)支持页。
+
+使用的组件
+
+   本文档中的信息基于列出的软件和硬件版本：
+     * OSPF可在所有路由器中配置，例如Cisco 2900系列和第3层交换机。
+     * Cisco IOS® 软件10.0版和更高版本均支持OSPF。
+
+   本文档中的信息都是基于特定实验室环境中的设备编写的。本文档中使用的所有设备最初均采用原始（默认）配置。如果您的网络处于活动状态，请确保您了解所
+   有命令的潜在影响。
+
+规则
+
+   有关文档规则的详细信息，请参阅 Cisco 技术提示规则。
+
+背景信息
+
+   在成功形成OSPF邻接关系时，OSPF邻居会达到FULL邻居状态。要检查邻接关系，请输入 debug ip ospf adj 命令。在输入
+   debug 命令之前，请参阅有关 Debug 命令的重要信息。
+
+邻接关系
+
+   路由器是邻居这一事实不足以保证链路状态更新的交换；它们必须形成邻接关系以交换链路状态更新。邻接关系是一种高级邻居关系形式，由路由器形成，这些路
+   由器在协商交换参数后交换路由信息。同步链路状态数据库上的视图后，路由器之间将达成 FULL 状态的邻接关系。
+
+   接口类型在邻接关系的形成过程中起着主要作用。例如，点对点链路上的邻居始终会尝试建立邻接关系，而连接到广播介质（如以太网）的路由器只能与接口上的
+   一小部分邻居路由器建立邻接关系。
+
+   一旦路由器与邻居形成邻接关系，它首先交换其链路状态数据库的完整副本。邻居也是一样，会轮流交换整个链路状态数据库。在经过几个邻居状态后，路由器会
+   完全邻接。
+
+邻居状态
+
+   使用show ip ospf neighbor命令确定OSPF邻居的状态。此命令的输出显示以下内容之一：
+     * 什么也没有
+     * state = down
+     * state = init
+     * state = exstart
+     * state = exchange
+     * state = 2-way
+     * state = loading
+
+   也有其他的 OSPF 状态，但这里显示的状态是 show ip ospf neighbor 命令输出中最常见的几种。有关详细信息以及所有
+   OSPF 邻居状态的说明，请参阅 OSPF 邻居状态。
+
+没有状态显示
+
+   如果 show ip ospf neighbor 命令根本不显示任何内容 —
+   或不显示任何有关所关注的特定邻居的信息，则此路由器没有收到来自该邻居的任何“有效”OSPF HELLO。这意味着 OSPF
+   未接收到任何来自邻居的 HELLO 数据包，或者收到的 HELLO 数据包未通过最基本的健全性检查。
+
+   检查以下内容：
+     * 本地路由器和邻居路由器上的接口是否为 up 并且线路协议也为 up？输入 show interface 命令检查接口状态。
+     * 检查邻居路由器之间的IP连接，如下所示：
+          + 邻居是否响应 ping 命令?对分配给邻居路由器上相关接口的IP地址执行ping操作。输入 traceroute
+            命令并检验它是否只需多一跳即可到达目的地。
+          + 如果输入 ping 224.0.0.5 命令?（224.0.0.5是OSPF HELLO发送到的IP地址。）
+          + 检查可以禁止将IP数据包从一个邻居转发到另一个邻居的任何入站访问列表或其他设备（如交换机）。
+     * 您的接口和邻居/邻接路由器的接口上是否都启用了OSPF?输入 show ip ospf interface 命令进行验证。
+     * OSPF是否配置为本地或邻居/邻接路由器接口的被动接口？输入 show ip ospf interface
+       命令验证HELLO数据包是否应该从接口发出。活动OSPF接口显示的行类似于：
+
+Router#show ip ospf interface
+GigabitEthernet0/0 is up, line protocol is up
+Internet Address 10.1.1.1/30, Area 0, Attached via Network Statement
+Process ID 1, Router ID 10.1.1.1, Network Type BROADCAST, Cost: 1
+Topology-MTID Cost Disabled Shutdown Topology Name
+0 1 no no Base
+Transmit Delay is 1 sec, State BDR, Priority 1
+Designated Router (ID) 10.1.1.2, Interface address 10.1.1.2
+Backup Designated router (ID) 10.1.1.1, Interface address 10.1.1.1
+Timer intervals configured, Hello 10, Dead 40, Wait 40, Retransmit 5
+oob-resync timeout 40
+Hello due in 00:00:05
+Supports Link-local Signaling (LLS)
+Cisco NSF helper support enabled
+IETF NSF helper support enabled
+Index 1/1/1, flood queue length 0
+Next 0x0(0)/0x0(0)/0x0(0)
+Last flood scan length is 1, maximum is 1
+Last flood scan time is 1 msec, maximum is 1 msec
+Neighbor Count is 1, Adjacent neighbor count is 1
+Adjacent with neighbor 10.1.1.2 (Designated Router)
+Suppress hello for 0 neighbor(s)
+
+     * 检验邻居路由器是否具有不同的路由器ID。路由器 ID 用于标识 OSPF
+       网络中的每个路由器。使用相同路由器的路由器会忽略彼此发送的HELLO，而不会成为邻接路由器。第一行 show ip ospf
+       命令输出显示每台路由器的当前路由器ID。
+     * 检验邻居接口上的以下HELLO参数是否匹配：
+          + OSPF区域号 — 输入 show ip ospf interface interface-name 命令进行验证。
+          + OSPF区域类型，例如stub或NSSA — 输入 show ip ospf 命令进行验证。
+          + 子网和子网掩码 — 输入 show interface 命令进行验证。
+          + OSPF HELLO和Dead计时器值 — 输入 show ip ospf interface interface-name
+            命令进行验证。
+     * 如果问题出在点对点链路（例如PPP或高级数据链路控制[HDLC]）上，并且此对路由器之间有多条并行链路，请验证线路是否已正确连接。假设
+       您计划将一个路由器上的 Serial0/0 接口与其邻居上的 Serial0/0 接口进行连接、Serial1/0 与邻居的
+       Serial1/0 连接，但您不小心将连接关系彼此交叉了，误将每个路由器的 Serial0/0 与另一个路由器的 Serial1/0
+       进行了连接。此 ping
+       命令无法发现此类问题，但OSPF无法建立邻接关系。使用思科发现协议(CDP)提供的信息验证设备互连是否正确。输入 show cdp
+       neighbor interface-name 命令验证远程设备的名称和PortID是否与网络设计匹配。
+
+   注意:OSPF邻接关系仅通过主网络形成，而不通过辅助网络。
+
+   如果所有这些检查都已验证，并且 show ip ospf neighbor 命令仍然显示无任何内容，因此您的问题并不常见，您可以联系Cisco
+   TAC以寻求帮助。
+
+处于 down 状态的邻居
+
+   如果通过OSPF进程删除了邻居，则通过接收HELLO数据包动态发现的邻居可以回退到down状态。例如，当OSPF在比Dead计时器间隔长的一段
+   时间内，没有收到来自邻居的HELLO数据包时，此类邻居的down状态是暂时的；它们会进入更高状态或从已知邻居的表中删除。这被称为“被遗忘”。
+
+   通常，在down状态中看到的邻居使用 neighbor 命令。手动配置的邻居始终会出现在 OSPF
+   邻居表中。如果OSPF从未收到来自手动配置的邻居的HELLO数据包，或者如果在上一个Dead计时器间隔内没有收到来自邻居的HELLO数据包，则
+   手动配置的邻居将列为down。
+
+   注: neighbor 命令只能针对以下网络类型的直连邻居进行配置：
+   — 非广播多路访问(NBMA)网络 — 配置有 ip ospf network non-broadcast 命令。
+   — 非广播点对多点网络 — 配置有 ip ospf network point-to-multipoint non-broadcast 命令。
+
+   如果邻居处于down状态，请验证该邻居路由器是否处于打开状态、是否处于活动状态以及是否在此接口上正确配置了OSPF。使用 ping
+   和 traceroute 命令。使用OSPF邻居路由表 show ip ospf neighbor 命令，并执行与本文档前面的No State
+   Revealed部分中列出的配置验证操作相同的操作。
+
+处于 init 状态邻居
+
+   init状态表示路由器收到来自邻居的HELLO数据包，但是尚未建立双向通信。Cisco 路由器会在其 HELLO 数据包的 Neighbor
+   字段中显示所有处于 init 状态（或更高状态）邻居的路由器
+   ID。要与邻居建立双向通信，路由器还必须接收邻居HELLO数据包的Neighbor字段中自己的路由器ID。有关详细示例和说明，请参阅为什么
+   show ip ospf neighbor 命令显示邻居停滞在 Init 状态？
+
+处于双向状态的邻居
+
+   2-way状态表示路由器已在邻居HELLO数据包的Neighbor字段中收到自己的路由器ID。从处于init状态的邻居接收数据库描述符(DBD
+   )数据包也会导致向2-way状态的转换。在广播和非广播多路访问(NBMA)网络中，OSPF邻居2-way状态不会引起担忧。有关 2-way
+   状态的说明，请参阅为什么 show ip ospf neighbor 命令显示邻居停滞在 2-Way 状态？
+
+处于 Exstart/Exchange 状态的邻居
+
+   处于exstart或exchange状态的OSPF邻居尝试交换DBD数据包。路由器与其邻居形成主要和次要关系。邻接关系必须持续超过此状态。如果
+   没有，则表示DBD交换发生问题，如最大传输单元(MTU)不匹配或接收到意外的DBD序列号。有关详细信息，请参阅为什么 OSPF 邻居停滞在
+   Exstart/Exchange 状态？
+
+处于 loading 状态的邻居
+
+   在 loading
+   状态下，路由器将发送链路状态请求数据包。在邻接时，如果路由器收到过时或丢失的链路状态通告(LSA)，它会发送链路状态请求数据包以请求LSA。未
+   在此状态之后转换的邻居可能会交换损坏的LSA。此问题通常伴有 %OSPF-4-BADLSA 控制台消息。由于此问题不常见，请联系Cisco
+   TAC寻求帮助。
+
+OSPF 邻居问题的典型原因
+
+   下表列出了OSPF邻居在尝试建立邻接关系时出现问题的原因，并列出了一些可用于检验问题的命令。
+   导致邻居邻接问题的原因 用于诊断问题的命令
+   一台路由器上没有配置 OSPF。 show ip ospf
+   需要 OSPF 的接口上没有激活 OSPF。 show ip ospf interface
+   OSPF HELLO or Dead 时间间隔参数不匹配。 show ip ospf interface
+   相邻接口上的ip ospf network-type不匹配。 show ip ospf interface
+   邻居接口之间的MTU不匹配。 show interface <int-type><int-num>
+   OSPF区域类型在一个邻居上是stub，但同一区域中的相邻邻居未配置为stub。 show running-config show ip
+   ospf interface
+   使用相同的路由器 ID 对 OSPF 邻居进行了错误配置。 show ip ospf show ip ospf interface
+   OSPF 配置在邻居的辅助网络上，而非主网络上。这是阻止在接口上启用OSPF的非法配置。 show ip ospf interface
+   show running-config
+   由于资源不足（如 CPU 利用率高或内存不足），无法处理 OSPF HELLO 数据包。 show memory summary show
+   memory processor
+   层故障会阻止接收OSPF HELLO。 show interface
+
+   注意：要避免OSPF邻接关系建立时进行MTU检查，可以配置 ip ospf mtu-ignore
+   命令。但是，建议通过检查接口配置来修复任何MTU不匹配问题，而不仅仅是绕过MTU检查。
+
+相关信息
+
+     * 为什么OSPF不在PRI、BRI或拨号器接口上建立邻接关系？
+     * show ip ospf neighbor 命令显示什么？
+     * OSPF 设计指南
+     * 帧中继子接口上的 OSPF 初始配置
+     * 基于非广播型链路的 OSPF 的初始配置
+     * 基于点到点链路的 OSPF 的初始配置
+     * 基于广播媒介的 OSPF 的初始配置
+     * 思科技术支持和下载
+
+修订历史记录
+
+   版本 发布日期 备注
+
+                                     3.0
+
+                                 14-Aug-2023
+
+   重新认证
+
+                                     2.0
+
+                                 15-Jul-2022
+
+   对文章内容进行了审核和修订，以符合现行出版标准。已更新并验证超文本链接。
+
+                                     1.0
+
+                                 10-Dec-2001
+
+   初始版本
+
+   TAC Authored
+
+由思科工程师提供
+
+此文档是否有帮助?
+
+   (BUTTON) 是 (BUTTON) 否 Feedback 反馈
+
+联系我们
+
+     * 提交支持案例 login required
+     * (需要思科服务合同)

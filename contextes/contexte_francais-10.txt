@@ -1,5 +1,3 @@
-   offert
-
    #Droits » Flux Droits » Flux des commentaires Droits » Mon voisin me
    cherche des ennuis : que prévoit la loi ? Flux des commentaires
    alternate alternate alternate
@@ -25,7 +23,7 @@ Mon voisin me cherche des ennuis : que prévoit la loi ?
    [NOUVEAU] Profiter d'un entretien juridique offert
 
 --
-   Toggle [ ]
+   Toggle
 
      * Mon voisin me cherche des ennuis : le cas du tapage nocturne
      * Que faire en cas de harcèlement par un voisin (harcèlement

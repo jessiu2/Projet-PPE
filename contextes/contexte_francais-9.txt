@@ -53,16 +53,17 @@ elle établit des règles strictes pour le stationnement sur la voie publique.
    Immobilier : peut-on interdire à son voisin de construire un vis-à-vis
        gênant ?
        Immobilier
+--
+     * Publicité
      *
    Voisin bruyant : quels recours ?
        Economie et politique
-     * Publicité
---
-       Auto
      *
    Mon voisin a installé une caméra dans la cour commune, puis-je m’y
        opposer ?
        Immobilier
+--
+       Economie et politique
      *
    Harcèlement par son voisin : procédure et sanctions
        Immobilier
@@ -73,12 +74,9 @@ elle établit des règles strictes pour le stationnement sur la voie publique.
    Recours des voisins et des tiers : principe et limites
        Votre argent
      *
---
-       Economie et politique
-     *
-   Le chien du voisin aboie, que faire pour régler la situation ?
-       Immobilier
-     *
    Réforme des retraites : les bonnes idées à copier chez nos voisins
        Votre retraite
+     *
+   "Chez nos voisins, il y a de moins en moins de régimes spéciaux"
+       Economie et politique
 

@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar" class="dark-skin" data-skin="dark">
+<head><meta charset="UTF-8" /><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>class RocketLazyLoadScripts{constructor(){this.triggerEvents=["keydown","mousedown","mousemove","touchmove","touchstart","touchend","wheel"],this.userEventHandler=this._triggerListener.bind(this),this.touchStartHandler=this._onTouchStart.bind(this),this.touchMoveHandler=this._onTouchMove.bind(this),this.touchEndHandler=this._onTouchEnd.bind(this),this.clickHandler=this._onClick.bind(this),this.interceptedClicks=[],window.addEventListener("pageshow",(e=>{this.persisted=e.persisted})),window.addEventListener("DOMContentLoaded",(()=>{this._preconnect3rdParties()})),this.delayedScripts={normal:[],async:[],defer:[]},this.allJQueries=[]}_addUserInteractionListener(e){document.hidden?e._triggerListener():(this.triggerEvents.forEach((t=>window.addEventListener(t,e.userEventHandler,{passive:!0}))),window.addEventListener("touchstart",e.touchStartHandler,{passive:!0}),window.addEventListener("mousedown",e.touchStartHandler),document.addEventListener("visibilitychange",e.userEventHandler))}_removeUserInteractionListener(){this.triggerEvents.forEach((e=>window.removeEventListener(e,this.userEventHandler,{passive:!0}))),document.removeEventListener("visibilitychange",this.userEventHandler)}_onTouchStart(e){"HTML"!==e.target.tagName&&(window.addEventListener("touchend",this.touchEndHandler),window.addEventListener("mouseup",this.touchEndHandler),window.addEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.addEventListener("mousemove",this.touchMoveHandler),e.target.addEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"onclick","rocket-onclick"))}_onTouchMove(e){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler),e.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"rocket-onclick","onclick")}_onTouchEnd(e){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler)}_onClick(e){e.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"rocket-onclick","onclick"),this.interceptedClicks.push(e),e.preventDefault(),e.stopPropagation(),e.stopImmediatePropagation()}_replayClicks(){window.removeEventListener("touchstart",this.touchStartHandler,{passive:!0}),window.removeEventListener("mousedown",this.touchStartHandler),this.interceptedClicks.forEach((e=>{e.target.dispatchEvent(new MouseEvent("click",{view:e.view,bubbles:!0,cancelable:!0}))}))}_renameDOMAttribute(e,t,n){e.hasAttribute&&e.hasAttribute(t)&&(event.target.setAttribute(n,event.target.getAttribute(t)),event.target.removeAttribute(t))}_triggerListener(){this._removeUserInteractionListener(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this._loadEverythingNow.bind(this)):this._loadEverythingNow()}_preconnect3rdParties(){let e=[];document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((t=>{if(t.hasAttribute("src")){const n=new URL(t.src).origin;n!==location.origin&&e.push({src:n,crossOrigin:t.crossOrigin||"module"===t.getAttribute("data-rocket-type")})}})),e=[...new Map(e.map((e=>[JSON.stringify(e),e]))).values()],this._batchInjectResourceHints(e,"preconnect")}async _loadEverythingNow(){this.lastBreath=Date.now(),this._delayEventListeners(),this._delayJQueryReady(this),this._handleDocumentWrite(),this._registerAllDelayedScripts(),this._preloadAllScripts(),await this._loadScriptsFromList(this.delayedScripts.normal),await this._loadScriptsFromList(this.delayedScripts.defer),await this._loadScriptsFromList(this.delayedScripts.async);try{await this._triggerDOMContentLoaded(),await this._triggerWindowLoad()}catch(e){}window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this._replayClicks()}_registerAllDelayedScripts(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((e=>{e.hasAttribute("src")?e.hasAttribute("async")&&!1!==e.async?this.delayedScripts.async.push(e):e.hasAttribute("defer")&&!1!==e.defer||"module"===e.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(e):this.delayedScripts.normal.push(e):this.delayedScripts.normal.push(e)}))}async _transformScript(e){return await this._littleBreath(),new Promise((t=>{const n=document.createElement("script");[...e.attributes].forEach((e=>{let t=e.nodeName;"type"!==t&&("data-rocket-type"===t&&(t="type"),n.setAttribute(t,e.nodeValue))})),e.hasAttribute("src")?(n.addEventListener("load",t),n.addEventListener("error",t)):(n.text=e.text,t());try{e.parentNode.replaceChild(n,e)}catch(e){t()}}))}async _loadScriptsFromList(e){const t=e.shift();return t?(await this._transformScript(t),this._loadScriptsFromList(e)):Promise.resolve()}_preloadAllScripts(){this._batchInjectResourceHints([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}_batchInjectResourceHints(e,t){var n=document.createDocumentFragment();e.forEach((e=>{if(e.src){const i=document.createElement("link");i.href=e.src,i.rel=t,"preconnect"!==t&&(i.as="script"),e.getAttribute&&"module"===e.getAttribute("data-rocket-type")&&(i.crossOrigin=!0),e.crossOrigin&&(i.crossOrigin=e.crossOrigin),n.appendChild(i)}})),document.head.appendChild(n)}_delayEventListeners(){let e={};function t(t,n){!function(t){function n(n){return e[t].eventsToRewrite.indexOf(n)>=0?"rocket-"+n:n}e[t]||(e[t]={originalFunctions:{add:t.addEventListener,remove:t.removeEventListener},eventsToRewrite:[]},t.addEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.add.apply(t,arguments)},t.removeEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.remove.apply(t,arguments)})}(t),e[t].eventsToRewrite.push(n)}function n(e,t){let n=e[t];Object.defineProperty(e,t,{get:()=>n||function(){},set(i){e["rocket"+t]=n=i}})}t(document,"DOMContentLoaded"),t(window,"DOMContentLoaded"),t(window,"load"),t(window,"pageshow"),t(document,"readystatechange"),n(document,"onreadystatechange"),n(window,"onload"),n(window,"onpageshow")}_delayJQueryReady(e){let t=window.jQuery;Object.defineProperty(window,"jQuery",{get:()=>t,set(n){if(n&&n.fn&&!e.allJQueries.includes(n)){n.fn.ready=n.fn.init.prototype.ready=function(t){e.domReadyFired?t.bind(document)(n):document.addEventListener("rocket-DOMContentLoaded",(()=>t.bind(document)(n)))};const t=n.fn.on;n.fn.on=n.fn.init.prototype.on=function(){if(this[0]===window){function e(e){return e.split(" ").map((e=>"load"===e||0===e.indexOf("load.")?"rocket-jquery-load":e)).join(" ")}"string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=e(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach((t=>{delete Object.assign(arguments[0],{[e(t)]:arguments[0][t]})[t]}))}return t.apply(this,arguments),this},e.allJQueries.push(n)}t=n}})}async _triggerDOMContentLoaded(){this.domReadyFired=!0,await this._littleBreath(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),window.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),document.dispatchEvent(new Event("rocket-readystatechange")),await this._littleBreath(),document.rocketonreadystatechange&&document.rocketonreadystatechange()}async _triggerWindowLoad(){await this._littleBreath(),window.dispatchEvent(new Event("rocket-load")),await this._littleBreath(),window.rocketonload&&window.rocketonload(),await this._littleBreath(),this.allJQueries.forEach((e=>e(window).trigger("rocket-jquery-load"))),await this._littleBreath();const e=new Event("rocket-pageshow");e.persisted=this.persisted,window.dispatchEvent(e),await this._littleBreath(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted})}_handleDocumentWrite(){const e=new Map;document.write=document.writeln=function(t){const n=document.currentScript,i=document.createRange(),r=n.parentElement;let o=e.get(n);void 0===o&&(o=n.nextSibling,e.set(n,o));const s=document.createDocumentFragment();i.setStart(s,0),s.appendChild(i.createContextualFragment(t)),r.insertBefore(s,o)}}async _littleBreath(){Date.now()-this.lastBreath>45&&(await this._requestAnimFrame(),this.lastBreath=Date.now())}async _requestAnimFrame(){return document.hidden?new Promise((e=>setTimeout(e))):new Promise((e=>requestAnimationFrame(e)))}static run(){const e=new RocketLazyLoadScripts;e._addUserInteractionListener(e)}}RocketLazyLoadScripts.run();</script>
+	
+	<link rel="profile" href="//gmpg.org/xfn/11" />
+	<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v20.11 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>ماهو مفهوم الجار - موقع المعلومات</title><link rel="stylesheet" href="//almalomat.com/wp-content/cache/min/1/126a029b1127f482c8a8a0853afd9d74.css" media="all" data-minify="1" />
+	<meta name="description" content="تتعدد المعاني والترجمات المختلفة لكلمة جار.حيث تتفق أغلبها على الشخص القريب من شخص آخر في المسكن وسنتعرف من خلال مقالنا التالي على ماهو مفهوم الجار ." />
+	<link rel="canonical" href="//almalomat.com/191687/ماهو-مفهوم-الجار/" />
+	<meta property="og:locale" content="ar_AR" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="ماهو مفهوم الجار - موقع المعلومات" />
+	<meta property="og:description" content="تتعدد المعاني والترجمات المختلفة لكلمة جار.حيث تتفق أغلبها على الشخص القريب من شخص آخر في المسكن وسنتعرف من خلال مقالنا التالي على ماهو مفهوم الجار ." />
+	<meta property="og:url" content="https://almalomat.com/191687/ماهو-مفهوم-الجار/" />
+	<meta property="og:site_name" content="موقع المعلومات" />
+	<meta property="article:published_time" content="2019-12-07T21:17:49+00:00" />
+	<meta property="og:image" content="https://almalomat.com/wp-content/uploads/2019/12/61057.jpg" />
+	<meta property="og:image:width" content="730" />
+	<meta property="og:image:height" content="410" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta name="author" content="سارة عبدالسلام" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:creator" content="@murtahil1" />
+	<meta name="twitter:site" content="@murtahil1" />
+	<meta name="twitter:label1" content="كُتب بواسطة" />
+	<meta name="twitter:data1" content="سارة عبدالسلام" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://almalomat.com/191687/%d9%85%d8%a7%d9%87%d9%88-%d9%85%d9%81%d9%87%d9%88%d9%85-%d8%a7%d9%84%d8%ac%d8%a7%d8%b1/#article","isPartOf":{"@id":"https://almalomat.com/191687/%d9%85%d8%a7%d9%87%d9%88-%d9%85%d9%81%d9%87%d9%88%d9%85-%d8%a7%d9%84%d8%ac%d8%a7%d8%b1/"},"author":{"name":"سارة عبدالسلام","@id":"https://almalomat.com/#/schema/person/15d37570197cdc36ae2088e803fe2652"},"headline":"ماهو مفهوم الجار","datePublished":"2019-12-07T21:17:49+00:00","dateModified":"2019-12-07T21:17:49+00:00","mainEntityOfPage":{"@id":"https://almalomat.com/191687/%d9%85%d8%a7%d9%87%d9%88-%d9%85%d9%81%d9%87%d9%88%d9%85-%d8%a7%d9%84%d8%ac%d8%a7%d8%b1/"},"wordCount":23,"commentCount":0,"publisher":{"@id":"https://almalomat.com/#/schema/person/ef9f7b6c7f5f8584af03f54f103b41fc"},"image":{"@id":"https://almalomat.com/191687/%d9%85%d8%a7%d9%87%d9%88-%d9%85%d9%81%d9%87%d9%88%d9%85-%d8%a7%d9%84%d8%ac%d8%a7%d8%b1/#primaryimage"},"thumbnailUrl":"https://almalomat.com/wp-content/uploads/2019/12/61057.jpg","keywords":["الجار","مفهوم"],"articleSection":["معلومات","مفاهيم ومصطلحات"],"inLanguage":"ar","potentialAction":[{"@type":"CommentAction","name":"Comment","target":["https://almalomat.com/191687/%d9%85%d8%a7%d9%87%d9%88-%d9%85%d9%81%d9%87%d9%88%d9%85-%d8%a7%d9%84%d8%ac%d8%a7%d8%b1/#respond"]}]},{"@type":"WebPage","@id":"https://almalomat.com/191687/%d9%85%d8%a7%d9%87%d9%88-%d9%85%d9%81%d9%87%d9%88%d9%85-%d8%a7%d9%84%d8%ac%d8%a7%d8%b1/","url":"https://almalomat.com/191687/%d9%85%d8%a7%d9%87%d9%88-%d9%85%d9%81%d9%87%d9%88%d9%85-%d8%a7%d9%84%d8%ac%d8%a7%d8%b1/","name":"ماهو مفهوم الجار - موقع المعلومات","isPartOf":{"@id":"https://almalomat.com/#website"},"primaryImageOfPage":{"@id":"https://almalomat.com/191687/%d9%85%d8%a7%d9%87%d9%88-%d9%85%d9%81%d9%87%d9%88%d9%85-%d8%a7%d9%84%d8%ac%d8%a7%d8%b1/#primaryimage"},"image":{"@id":"https://almalomat.com/191687/%d9%85%d8%a7%d9%87%d9%88-%d9%85%d9%81%d9%87%d9%88%d9%85-%d8%a7%d9%84%d8%ac%d8%a7%d8%b1/#primaryimage"},"thumbnailUrl":"https://almalomat.com/wp-content/uploads/2019/12/61057.jpg","datePublished":"2019-12-07T21:17:49+00:00","dateModified":"2019-12-07T21:17:49+00:00","description":"تتعدد المعاني والترجمات المختلفة لكلمة جار.حيث تتفق أغلبها على الشخص القريب من شخص آخر في المسكن وسنتعرف من خلال مقالنا التالي على ماهو مفهوم الجار .","breadcrumb":{"@id":"https://almalomat.com/191687/%d9%85%d8%a7%d9%87%d9%88-%d9%85%d9%81%d9%87%d9%88%d9%85-%d8%a7%d9%84%d8%ac%d8%a7%d8%b1/#breadcrumb"},"inLanguage":"ar","potentialAction":[{"@type":"ReadAction","target":["https://almalomat.com/191687/%d9%85%d8%a7%d9%87%d9%88-%d9%85%d9%81%d9%87%d9%88%d9%85-%d8%a7%d9%84%d8%ac%d8%a7%d8%b1/"]}]},{"@type":"ImageObject","inLanguage":"ar","@id":"https://almalomat.com/191687/%d9%85%d8%a7%d9%87%d9%88-%d9%85%d9%81%d9%87%d9%88%d9%85-%d8%a7%d9%84%d8%ac%d8%a7%d8%b1/#primaryimage","url":"https://almalomat.com/wp-content/uploads/2019/12/61057.jpg","contentUrl":"https://almalomat.com/wp-content/uploads/2019/12/61057.jpg","width":730,"height":410,"caption":"ماهو مفهوم الجار"},{"@type":"BreadcrumbList","@id":"https://almalomat.com/191687/%d9%85%d8%a7%d9%87%d9%88-%d9%85%d9%81%d9%87%d9%88%d9%85-%d8%a7%d9%84%d8%ac%d8%a7%d8%b1/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"الرئيسية","item":"https://almalomat.com/"},{"@type":"ListItem","position":2,"name":"معلومات","item":"https://almalomat.com/info2/"},{"@type":"ListItem","position":3,"name":"ماهو مفهوم الجار"}]},{"@type":"WebSite","@id":"https://almalomat.com/#website","url":"https://almalomat.com/","name":"موقع المعلومات","description":"موقع المعلومات هو عبارة عن موقع معلومات عامة وثقافية مفيدة و علمية, يسعى ليكون موسوعة في المعلومات.","publisher":{"@id":"https://almalomat.com/#/schema/person/ef9f7b6c7f5f8584af03f54f103b41fc"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://almalomat.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"ar"},{"@type":["Person","Organization"],"@id":"https://almalomat.com/#/schema/person/ef9f7b6c7f5f8584af03f54f103b41fc","name":"Fahad","image":{"@type":"ImageObject","inLanguage":"ar","@id":"https://almalomat.com/#/schema/person/image/","url":"https://almalomat.com/wp-content/uploads/2020/03/logo-darl-red-gif-mobile.gif","contentUrl":"https://almalomat.com/wp-content/uploads/2020/03/logo-darl-red-gif-mobile.gif","width":147,"height":33,"caption":"Fahad"},"logo":{"@id":"https://almalomat.com/#/schema/person/image/"}},{"@type":"Person","@id":"https://almalomat.com/#/schema/person/15d37570197cdc36ae2088e803fe2652","name":"سارة عبدالسلام","image":{"@type":"ImageObject","inLanguage":"ar","@id":"https://almalomat.com/#/schema/person/image/","url":"https://secure.gravatar.com/avatar/8f847aebdf7b7e2f8b98ea83e5d0d255?s=96&d=mm&r=g","contentUrl":"https://secure.gravatar.com/avatar/8f847aebdf7b7e2f8b98ea83e5d0d255?s=96&d=mm&r=g","caption":"سارة عبدالسلام"}}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel="amphtml" href="//almalomat.com/191687/%d9%85%d8%a7%d9%87%d9%88-%d9%85%d9%81%d9%87%d9%88%d9%85-%d8%a7%d9%84%d8%ac%d8%a7%d8%b1/amp/" /><meta name="generator" content="AMP for WP 1.0.87"/><link rel='dns-prefetch' href='//maps.googleapis.com' />
+<link rel='dns-prefetch' href='//maps.gstatic.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//fonts.gstatic.com' />
+<link rel='dns-prefetch' href='//ajax.googleapis.com' />
+<link rel='dns-prefetch' href='//apis.google.com' />
+<link rel='dns-prefetch' href='//google-analytics.com' />
+<link rel='dns-prefetch' href='//www.google-analytics.com' />
+<link rel='dns-prefetch' href='//ssl.google-analytics.com' />
+<link rel='dns-prefetch' href='//youtube.com' />
+<link rel='dns-prefetch' href='//api.pinterest.com' />
+<link rel='dns-prefetch' href='//cdnjs.cloudflare.com' />
+<link rel='dns-prefetch' href='//pixel.wp.com' />
+<link rel='dns-prefetch' href='//connect.facebook.net' />
+<link rel='dns-prefetch' href='//platform.twitter.com' />
+<link rel='dns-prefetch' href='//syndication.twitter.com' />
+<link rel='dns-prefetch' href='//platform.instagram.com' />
+<link rel='dns-prefetch' href='//disqus.com' />
+<link rel='dns-prefetch' href='//sitename.disqus.com' />
+<link rel='dns-prefetch' href='//s7.addthis.com' />
+<link rel='dns-prefetch' href='//platform.linkedin.com' />
+<link rel='dns-prefetch' href='//w.sharethis.com' />
+<link rel='dns-prefetch' href='//s0.wp.com' />
+<link rel='dns-prefetch' href='//s1.wp.com' />
+<link rel='dns-prefetch' href='//s2.wp.com' />
+<link rel='dns-prefetch' href='//s.gravatar.com' />
+<link rel='dns-prefetch' href='//0.gravatar.com' />
+<link rel='dns-prefetch' href='//2.gravatar.com' />
+<link rel='dns-prefetch' href='//1.gravatar.com' />
+<link rel='dns-prefetch' href='//stats.wp.com' />
+
+<link rel="alternate" type="application/rss+xml" title="موقع المعلومات &laquo; الخلاصة" href="//almalomat.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="موقع المعلومات &laquo; خلاصة التعليقات" href="//almalomat.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="موقع المعلومات &laquo; ماهو مفهوم الجار خلاصة التعليقات" href="//almalomat.com/191687/%d9%85%d8%a7%d9%87%d9%88-%d9%85%d9%81%d9%87%d9%88%d9%85-%d8%a7%d9%84%d8%ac%d8%a7%d8%b1/feed/" />
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	
+<style id='wp-block-library-theme-inline-css' type='text/css'>
+.wp-block-audio figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio figcaption{color:hsla(0,0%,100%,.65)}.wp-block-audio{margin:0 0 1em}.wp-block-code{border:1px solid #ccc;border-radius:4px;font-family:Menlo,Consolas,monaco,monospace;padding:.8em 1em}.wp-block-embed figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed figcaption{color:hsla(0,0%,100%,.65)}.wp-block-embed{margin:0 0 1em}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:hsla(0,0%,100%,.65)}.wp-block-image figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-image figcaption{color:hsla(0,0%,100%,.65)}.wp-block-image{margin:0 0 1em}.wp-block-pullquote{border-top:4px solid;border-bottom:4px solid;margin-bottom:1.75em;color:currentColor}.wp-block-pullquote__citation,.wp-block-pullquote cite,.wp-block-pullquote footer{color:currentColor;text-transform:uppercase;font-size:.8125em;font-style:normal}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;position:relative;font-style:normal}.wp-block-quote.has-text-align-right{border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote.has-text-align-center{border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote.is-style-plain{border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-search__button{border:1px solid #ccc;padding:.375em .625em}:where(.wp-block-group.has-background){padding:1.25em 2.375em}.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table{margin:"0 0 1em 0"}.wp-block-table thead{border-bottom:3px solid}.wp-block-table tfoot{border-top:3px solid}.wp-block-table td,.wp-block-table th{word-break:normal}.wp-block-table figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video{margin:0 0 1em}.wp-block-template-part.has-background{padding:1.25em 2.375em;margin-top:0;margin-bottom:0}
+</style>
+
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel='stylesheet' id='tie-css-print-css' href='//almalomat.com/wp-content/themes/jannah/assets/css/print.css?ver=5.4.10' type='text/css' media='print' />
+
+<style id='tie-css-style-custom-inline-css' type='text/css'>
+.brand-title,a:hover,.tie-popup-search-submit,#logo.text-logo a,.theme-header nav .components #search-submit:hover,.theme-header .header-nav .components > li:hover > a,.theme-header .header-nav .components li a:hover,.main-menu ul.cats-vertical li a.is-active,.main-menu ul.cats-vertical li a:hover,.main-nav li.mega-menu .post-meta a:hover,.main-nav li.mega-menu .post-box-title a:hover,.search-in-main-nav.autocomplete-suggestions a:hover,#main-nav .menu ul:not(.cats-horizontal) li:hover > a,#main-nav .menu ul li.current-menu-item:not(.mega-link-column) > a,.top-nav .menu li:hover > a,.top-nav .menu > .tie-current-menu > a,.search-in-top-nav.autocomplete-suggestions .post-title a:hover,div.mag-box .mag-box-options .mag-box-filter-links a.active,.mag-box-filter-links .flexMenu-viewMore:hover > a,.stars-rating-active,body .tabs.tabs .active > a,.video-play-icon,.spinner-circle:after,#go-to-content:hover,.comment-list .comment-author .fn,.commentlist .comment-author .fn,blockquote::before,blockquote cite,blockquote.quote-simple p,.multiple-post-pages a:hover,#story-index li .is-current,.latest-tweets-widget .twitter-icon-wrap span,.wide-slider-nav-wrapper .slide,.wide-next-prev-slider-wrapper .tie-slider-nav li:hover span,.review-final-score h3,#mobile-menu-icon:hover .menu-text,body .entry a,.dark-skin body .entry a,.entry .post-bottom-meta a:hover,.comment-list .comment-content a,q a,blockquote a,.widget.tie-weather-widget .icon-basecloud-bg:after,.site-footer a:hover,.site-footer .stars-rating-active,.site-footer .twitter-icon-wrap span,.site-info a:hover{color: #008080;}#instagram-link a:hover{color: #008080 !important;border-color: #008080 !important;}#theme-header #main-nav .spinner-circle:after{color: #56bfb5;}[type='submit'],.button,.generic-button a,.generic-button button,.theme-header .header-nav .comp-sub-menu a.button.guest-btn:hover,.theme-header .header-nav .comp-sub-menu a.checkout-button,nav.main-nav .menu > li.tie-current-menu > a,nav.main-nav .menu > li:hover > a,.main-menu .mega-links-head:after,.main-nav .mega-menu.mega-cat .cats-horizontal li a.is-active,#mobile-menu-icon:hover .nav-icon,#mobile-menu-icon:hover .nav-icon:before,#mobile-menu-icon:hover .nav-icon:after,.search-in-main-nav.autocomplete-suggestions a.button,.search-in-top-nav.autocomplete-suggestions a.button,.spinner > div,.post-cat,.pages-numbers li.current span,.multiple-post-pages > span,#tie-wrapper .mejs-container .mejs-controls,.mag-box-filter-links a:hover,.slider-arrow-nav a:not(.pagination-disabled):hover,.comment-list .reply a:hover,.commentlist .reply a:hover,#reading-position-indicator,#story-index-icon,.videos-block .playlist-title,.review-percentage .review-item span span,.tie-slick-dots li.slick-active button,.tie-slick-dots li button:hover,.digital-rating-static,.timeline-widget li a:hover .date:before,#wp-calendar #today,.posts-list-counter li.widget-post-list:before,.cat-counter a + span,.tie-slider-nav li span:hover,.fullwidth-area .widget_tag_cloud .tagcloud a:hover,.magazine2:not(.block-head-4) .dark-widgetized-area ul.tabs a:hover,.magazine2:not(.block-head-4) .dark-widgetized-area ul.tabs .active a,.magazine1 .dark-widgetized-area ul.tabs a:hover,.magazine1 .dark-widgetized-area ul.tabs .active a,.block-head-4.magazine2 .dark-widgetized-area .tabs.tabs .active a,.block-head-4.magazine2 .dark-widgetized-area .tabs > .active a:before,.block-head-4.magazine2 .dark-widgetized-area .tabs > .active a:after,.demo_store,.demo #logo:after,.demo #sticky-logo:after,.widget.tie-weather-widget,span.video-close-btn:hover,#go-to-top,.latest-tweets-widget .slider-links .button:not(:hover){background-color: #008080;color: #FFFFFF;}.tie-weather-widget .widget-title .the-subtitle,.block-head-4.magazine2 #footer .tabs .active a:hover{color: #FFFFFF;}pre,code,.pages-numbers li.current span,.theme-header .header-nav .comp-sub-menu a.button.guest-btn:hover,.multiple-post-pages > span,.post-content-slideshow .tie-slider-nav li span:hover,#tie-body .tie-slider-nav li > span:hover,.slider-arrow-nav a:not(.pagination-disabled):hover,.main-nav .mega-menu.mega-cat .cats-horizontal li a.is-active,.main-nav .mega-menu.mega-cat .cats-horizontal li a:hover,.main-menu .menu > li > .menu-sub-content{border-color: #008080;}.main-menu .menu > li.tie-current-menu{border-bottom-color: #008080;}.top-nav .menu li.tie-current-menu > a:before,.top-nav .menu li.menu-item-has-children:hover > a:before{border-top-color: #008080;}.main-nav .main-menu .menu > li.tie-current-menu > a:before,.main-nav .main-menu .menu > li:hover > a:before{border-top-color: #FFFFFF;}header.main-nav-light .main-nav .menu-item-has-children li:hover > a:before,header.main-nav-light .main-nav .mega-menu li:hover > a:before{border-left-color: #008080;}.rtl header.main-nav-light .main-nav .menu-item-has-children li:hover > a:before,.rtl header.main-nav-light .main-nav .mega-menu li:hover > a:before{border-right-color: #008080;border-left-color: transparent;}.top-nav ul.menu li .menu-item-has-children:hover > a:before{border-top-color: transparent;border-left-color: #008080;}.rtl .top-nav ul.menu li .menu-item-has-children:hover > a:before{border-left-color: transparent;border-right-color: #008080;}::-moz-selection{background-color: #008080;color: #FFFFFF;}::selection{background-color: #008080;color: #FFFFFF;}circle.circle_bar{stroke: #008080;}#reading-position-indicator{box-shadow: 0 0 10px rgba( 0,128,128,0.7);}#logo.text-logo a:hover,body .entry a:hover,.dark-skin body .entry a:hover,.comment-list .comment-content a:hover,.block-head-4.magazine2 .site-footer .tabs li a:hover,q a:hover,blockquote a:hover{color: #004e4e;}.button:hover,input[type='submit']:hover,.generic-button a:hover,.generic-button button:hover,a.post-cat:hover,.site-footer .button:hover,.site-footer [type='submit']:hover,.search-in-main-nav.autocomplete-suggestions a.button:hover,.search-in-top-nav.autocomplete-suggestions a.button:hover,.theme-header .header-nav .comp-sub-menu a.checkout-button:hover{background-color: #004e4e;color: #FFFFFF;}.theme-header .header-nav .comp-sub-menu a.checkout-button:not(:hover),body .entry a.button{color: #FFFFFF;}#story-index.is-compact .story-index-content{background-color: #008080;}#story-index.is-compact .story-index-content a,#story-index.is-compact .story-index-content .is-current{color: #FFFFFF;}#tie-body .section-title-default,#tie-body .mag-box-title,#tie-body #comments-title,#tie-body .review-box-header,#tie-body .comment-reply-title,#tie-body .comment-reply-title,#tie-body .related.products > h2,#tie-body .up-sells > h2,#tie-body .cross-sells > h2,#tie-body .cart_totals > h2,#tie-body .bbp-form legend{color: #FFFFFF;background-color: #008080;}#tie-body .mag-box-filter-links > li > a,#tie-body .mag-box-title h3 a,#tie-body .block-more-button{color: #FFFFFF;}#tie-body .flexMenu-viewMore:hover > a{color: #008080;}#tie-body .mag-box-filter-links > li > a:hover,#tie-body .mag-box-filter-links li > a.active{background-color: #FFFFFF;color: #008080;}#tie-body .slider-arrow-nav a{border-color: rgba(#FFFFFF ,0.2);color: #FFFFFF;}#tie-body .mag-box-title a.pagination-disabled,#tie-body .mag-box-title a.pagination-disabled:hover{color: #FFFFFF !important;}#tie-body .slider-arrow-nav a:not(.pagination-disabled):hover{background-color: #FFFFFF;border-color: #FFFFFF;color: #008080;}
+</style>
+<style id='rocket-lazyload-inline-css' type='text/css'>
+.rll-youtube-player{position:relative;padding-bottom:56.23%;height:0;overflow:hidden;max-width:100%;}.rll-youtube-player:focus-within{outline: 2px solid currentColor;outline-offset: 5px;}.rll-youtube-player iframe{position:absolute;top:0;left:0;width:100%;height:100%;z-index:100;background:0 0}.rll-youtube-player img{bottom:0;display:block;left:0;margin:auto;max-width:100%;width:100%;position:absolute;right:0;top:0;border:none;height:auto;-webkit-transition:.4s all;-moz-transition:.4s all;transition:.4s all}.rll-youtube-player img:hover{-webkit-filter:brightness(75%)}.rll-youtube-player .play{height:100%;width:100%;left:0;top:0;position:absolute;background:url(https://almalomat.com/wp-content/plugins/wp-rocket/assets/img/youtube.png) no-repeat center;background-color: transparent !important;cursor:pointer;border:none;}
+</style>
+<script type='text/javascript' src='//almalomat.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.1' id='jquery-core-js' defer></script>
+<script type='text/javascript' src='//almalomat.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js' defer></script>
+<link rel="https://api.w.org/" href="//almalomat.com/wp-json/" /><link rel="alternate" type="application/json" href="//almalomat.com/wp-json/wp/v2/posts/191687" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="//almalomat.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="//almalomat.com/wp-includes/wlwmanifest.xml" />
+<meta name="generator" content="WordPress 6.1.4" />
+<link rel='shortlink' href='//almalomat.com/?p=191687' />
+<link rel="alternate" type="application/json+oembed" href="//almalomat.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Falmalomat.com%2F191687%2F%25d9%2585%25d8%25a7%25d9%2587%25d9%2588-%25d9%2585%25d9%2581%25d9%2587%25d9%2588%25d9%2585-%25d8%25a7%25d9%2584%25d8%25ac%25d8%25a7%25d8%25b1%2F" />
+<link rel="alternate" type="text/xml+oembed" href="//almalomat.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Falmalomat.com%2F191687%2F%25d9%2585%25d8%25a7%25d9%2587%25d9%2588-%25d9%2585%25d9%2581%25d9%2587%25d9%2588%25d9%2585-%25d8%25a7%25d9%2584%25d8%25ac%25d8%25a7%25d8%25b1%2F&#038;format=xml" />
+<meta name="generator" content="Redux 4.4.4" />		<style type="text/css">
+						ol.footnotes>li {list-style-type:decimal;}
+						ol.footnotes { color:#666666; }
+ol.footnotes li { font-size:80%; }
+		</style>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- Google tag (gtag.js) -->
+<script type="rocketlazyloadscript" async src="//www.googletagmanager.com/gtag/js?id=UA-48290808-3"></script>
+<script type="rocketlazyloadscript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-48290808-3');
+</script>
+
+
+
+
+<script type="rocketlazyloadscript" data-ad-client="ca-pub-8769983744182512" async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+
+<!-- Google tag (gtag.js) -->
+<script type="rocketlazyloadscript" async src="//www.googletagmanager.com/gtag/js?id=UA-48290808-3"></script>
+<script type="rocketlazyloadscript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-48290808-3');
+</script>
+
+
+<meta name="theme-color" content="#008080" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Elementor 3.14.1; features: a11y_improvements, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-auto">
+<link rel="icon" href="//almalomat.com/wp-content/uploads/2021/10/ايقونة-ويبسايت-378x378.jpg" sizes="32x32" />
+<link rel="icon" href="//almalomat.com/wp-content/uploads/2021/10/ايقونة-ويبسايت-378x378.jpg" sizes="192x192" />
+<link rel="apple-touch-icon" href="//almalomat.com/wp-content/uploads/2021/10/ايقونة-ويبسايت-378x378.jpg" />
+<meta name="msapplication-TileImage" content="https://almalomat.com/wp-content/uploads/2021/10/ايقونة-ويبسايت-378x378.jpg" />
+<noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript></head>
+
+<body id="tie-body" class="rtl post-template-default single single-post postid-191687 single-format-standard boxed-layout block-head-7 magazine2 is-thumb-overlay-disabled is-desktop is-header-layout-1 sidebar-left has-sidebar post-layout-2 narrow-title-narrow-media hide_sidebars hide_footer hide_read_more_buttons hide_share_post_bottom elementor-default elementor-kit-303803">
+
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-dark-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0.49803921568627" /><feFuncG type="table" tableValues="0 0.49803921568627" /><feFuncB type="table" tableValues="0 0.49803921568627" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-red"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 0.27843137254902" /><feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-midnight"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0" /><feFuncG type="table" tableValues="0 0.64705882352941" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-magenta-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.78039215686275 1" /><feFuncG type="table" tableValues="0 0.94901960784314" /><feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-green"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.44705882352941 0.4" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-orange"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.098039215686275 1" /><feFuncG type="table" tableValues="0 0.66274509803922" /><feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg>
+
+<div class="background-overlay">
+
+	<div id="tie-container" class="site tie-container">
+
+		
+		<div id="tie-wrapper">
+
+			
+<header id="theme-header" class="theme-header header-layout-1 main-nav-dark main-nav-default-dark main-nav-below no-stream-item has-normal-width-logo mobile-header-centered">
+	
+<div class="main-nav-wrapper">
+	<nav id="main-nav"  class="main-nav header-nav" style="line-height:70px" aria-label="القائمة الرئيسية">
+		<div class="container">
+
+			<div class="main-menu-wrapper">
+
+				<div id="mobile-header-components-area_1" class="mobile-header-components"><ul class="components"><li class="mobile-component_menu custom-menu-link"><a href="#" id="mobile-menu-icon" class=""><span class="tie-mobile-menu-icon nav-icon is-layout-1"></span><span class="screen-reader-text">القائمة</span></a></li></ul></div>
+						<div class="header-layout-1-logo" style="width:175px">
+							
+		<div id="logo" class="image-logo" style="margin-top: 15px; margin-bottom: 15px;">
+
+			
+			<a title="موقع المعلومات" href="https://almalomat.com/">
+				
+				<picture class="tie-logo-default tie-logo-picture">
+					<source class="tie-logo-source-default tie-logo-source" data-lazy-srcset="https://almalomat.com/wp-content/uploads/2021/07/almalomat-logo-transparent-gray01.png">
+					<img class="tie-logo-img-default tie-logo-img" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20175%2040'%3E%3C/svg%3E" alt="موقع المعلومات" width="175" height="40" style="max-height:40px !important; width: auto;" data-lazy-src="//almalomat.com/wp-content/uploads/2021/07/almalomat-logo-transparent-gray01.png" /><noscript><img class="tie-logo-img-default tie-logo-img" src="//almalomat.com/wp-content/uploads/2021/07/almalomat-logo-transparent-gray01.png" alt="موقع المعلومات" width="175" height="40" style="max-height:40px !important; width: auto;" /></noscript>
+				</picture>
+						</a>
+
+			
+		</div><!-- #logo /-->
+
+								</div>
+
+						<div id="mobile-header-components-area_2" class="mobile-header-components"><ul class="components"><li class="mobile-component_search custom-menu-link">
+				<a href="#" class="tie-search-trigger-mobile">
+					<span class="tie-icon-search tie-search-icon" aria-hidden="true"></span>
+					<span class="screen-reader-text">أكتب كلمة البحث</span>
+				</a>
+			</li></ul></div>
+				<div id="menu-components-wrap">
+
+					
+		<div id="sticky-logo" class="image-logo">
+
+			
+			<a title="موقع المعلومات" href="https://almalomat.com/">
+				
+				<picture class="tie-logo-default tie-logo-picture">
+					<source class="tie-logo-source-default tie-logo-source" data-lazy-srcset="https://almalomat.com/wp-content/uploads/2021/07/almalomat-logo-transparent-gray01.png">
+					<img class="tie-logo-img-default tie-logo-img" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="موقع المعلومات" style="max-height:40px; width: auto;" data-lazy-src="//almalomat.com/wp-content/uploads/2021/07/almalomat-logo-transparent-gray01.png" /><noscript><img class="tie-logo-img-default tie-logo-img" src="//almalomat.com/wp-content/uploads/2021/07/almalomat-logo-transparent-gray01.png" alt="موقع المعلومات" style="max-height:40px; width: auto;" /></noscript>
+				</picture>
+						</a>
+
+			
+		</div><!-- #Sticky-logo /-->
+
+		<div class="flex-placeholder"></div>
+		
+					<div class="main-menu main-menu-wrap tie-alignleft">
+						<div id="main-nav-menu" class="main-menu header-menu"><ul id="menu-%d8%a7%d9%84%d9%82%d8%a7%d8%a6%d9%85%d8%a9-%d8%a7%d9%84%d8%b1%d8%a6%d9%8a%d8%b3%d9%8a%d8%a9" class="menu" role="menubar"><li id="menu-item-230700" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-230700"><a href="https://almalomat.com/">تصنيفات</a></li>
+<li id="menu-item-314984" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-314984"><a href="https://almalomat.com/last-post/">أحدث المواضيع</a></li>
+</ul></div>					</div><!-- .main-menu.tie-alignleft /-->
+
+					<ul class="components">		<li class="search-bar menu-item custom-menu-link" aria-label="بحث">
+			<form method="get" id="search" action="//almalomat.com/">
+				<input id="search-input"  inputmode="search" type="text" name="s" title="أكتب كلمة البحث" placeholder="أكتب كلمة البحث" />
+				<button id="search-submit" type="submit">
+					<span class="tie-icon-search tie-search-icon" aria-hidden="true"></span>
+					<span class="screen-reader-text">أكتب كلمة البحث</span>
+				</button>
+			</form>
+		</li>
+		</ul><!-- Components -->
+				</div><!-- #menu-components-wrap /-->
+			</div><!-- .main-menu-wrapper /-->
+		</div><!-- .container /-->
+	</nav><!-- #main-nav /-->
+</div><!-- .main-nav-wrapper /-->
+
+</header>
+
+<div id="content" class="site-content container"><div id="main-content-row" class="tie-row main-content-row">
+
+<div class="main-content tie-col-md-8 tie-col-xs-12" role="main">
+
+	
+	<article id="the-post" class="container-wrapper post-content">
+
+		
+<header class="entry-header-outer">
+
+	<nav id="breadcrumb"><a href="https://almalomat.com/"><span class="tie-icon-home" aria-hidden="true"></span> الرئيسية</a><em class="delimiter">/</em><a href="https://almalomat.com/info2/">معلومات</a><em class="delimiter">/</em><span class="current">ماهو مفهوم الجار</span></nav><script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"BreadcrumbList","@id":"#Breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"item":{"name":"\u0627\u0644\u0631\u0626\u064a\u0633\u064a\u0629","@id":"https:\/\/almalomat.com\/"}},{"@type":"ListItem","position":2,"item":{"name":"\u0645\u0639\u0644\u0648\u0645\u0627\u062a","@id":"https:\/\/almalomat.com\/info2\/"}}]}</script>
+	<div class="entry-header">
+
+		
+		<h1 class="post-title entry-title">ماهو مفهوم الجار</h1>
+
+		<div id="single-post-meta" class="post-meta clearfix"><span class="author-meta single-author no-avatars"><span class="meta-item meta-author-wrapper meta-author-29"><span class="meta-author"><a href="https://almalomat.com/author/dav1212/" class="author-name tie-icon" title="سارة عبدالسلام">سارة عبدالسلام</a></span></span></span><span class="date meta-item tie-icon">8 ديسمبر، 2019</span><span class="meta-item last-updated">آخر تحديث: 8 ديسمبر، 2019</span><div class="tie-alignright"><span class="meta-views meta-item "><span class="tie-icon-fire" aria-hidden="true"></span> 348 </span></div></div><!-- .post-meta -->	</div><!-- .entry-header /-->
+
+	
+	
+</header><!-- .entry-header-outer /-->
+
+
+		<div class="entry-content entry clearfix">
+
+			
+			<p>تتعدد المعاني والترجمات المختلفة لكلمة جار، حيث تتفق أغلبها على الشخص القريب من شخص آخر في المسكن، اليكم ماهو مفهوم الجار .</p>
+<h2>ماهو مفهوم الجار</h2>
+<h4>تشير كلمة جار إلى عدد من التعريفات</h4>
+<ul>
+<li>تجمع كلمة جار إلى جيران أو جيرة وجوار وأجوار ويشير إلى الشخص القريب المجاور في المسكن</li>
+<li>قد يعني الجار الشخص الذي يدخل شريك مع آخر  في التجارة أو في العقار السكني وقديما كان الجيران يختلطون ببعضهم البعض نظرا لضيق الحارات السكنية فقد كانت البيوت قريبة لدرجة قد يشاهدون بعضهم من خلال النوافذ</li>
+<li>الجار هو شخص أو شيء قريب ومن المهم أن يكون الشخص لطيفا مع جاره، لأنك لا تعرف أبدًا متى ستحتاج إلى اقتراض السكر أو المفتاح الإضافي لمنزلك.</li>
+<li>تترجم كلمة الجار أو neighbor و  neahgebur باللغة الإنجليزية القديمة، إلى  شخص قريب من مسكنك .</li>
+<li>في القرآن الكريم يشير الجوار إلى أهل البلدة الواحدة</li>
+</ul>
+<figure id="attachment_191718" aria-describedby="caption-attachment-191718" style="width: 730px" class="wp-caption alignnone"><img decoding="async" class="size-full wp-image-191718" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20730%20410'%3E%3C/svg%3E" alt="ماهو مفهوم الجار" width="730" height="410" data-lazy-srcset="//almalomat.com/wp-content/uploads/2019/12/3815.jpg 730w, //almalomat.com/wp-content/uploads/2019/12/3815-712x400.jpg 712w" data-lazy-sizes="(max-width: 730px) 100vw, 730px" data-lazy-src="//almalomat.com/wp-content/uploads/2019/12/3815.jpg" /><noscript><img decoding="async" class="size-full wp-image-191718" src="//almalomat.com/wp-content/uploads/2019/12/3815.jpg" alt="ماهو مفهوم الجار" width="730" height="410" srcset="//almalomat.com/wp-content/uploads/2019/12/3815.jpg 730w, //almalomat.com/wp-content/uploads/2019/12/3815-712x400.jpg 712w" sizes="(max-width: 730px) 100vw, 730px" /></noscript><figcaption id="caption-attachment-191718" class="wp-caption-text">ماهو مفهوم الجار</figcaption></figure>
+<h3>صور الجيرة المختلفة</h3>
+<h3>الجيرة في المسكن</h3>
+<p>قد يعتقد البعض أن الجار هو الشخص القريب في المسكن فقط ورغم أنه من أبرز أنواع وصور الجيرة إلا أنه توجد عدة أنواع للجيران :</p>
+<ul>
+<li>الجار في العمل</li>
+<li>الجار في المزرعة</li>
+<li>الجار في مقعد الدراسة</li>
+<li>الجار في مقعد السيارة</li>
+<li>الجار في الدراسة و العمل</li>
+<li>الجار في السوق</li>
+</ul>
+<h3>الجار في الإسلام</h3>
+<ul>
+<li>أوصى القرآن والسنة بالإحسان إلى الجار حيث جاء  ضرورة التأكيد على حقوق الجيرة في الحديث الشريف (من كان يؤمن بالله واليوم الآخر فليكرم جاره&#8221;). والذي نفسي بيده لا يؤمن عبد حتى يحب لجاره ما يحب لنفسه.</li>
+<li> يعتبر الشخص الذي يحسن إلى جاره من خيرة الناس عند الله (خير الأصحاب عند الله خيرهم لصاحبه، وخير الجيران عند الله خيرهم لجاره)</li>
+<li>من أبرز دلالات صدق الإيمان وزيادته وقوته الإحسان إلى الجيران</li>
+</ul>
+<h3>أنواع الجار كما ذكر في القرآن</h3>
+<h3>الجار القريب</h3>
+<p>جارك المسلم الذي تتصل معه بعلاقة قرابة ومن أبرز حقوقك الواجبة عليه حق القرابة وحق الجوار وحق الإسلام</p>
+<h3>الجار الجنب</h3>
+<p>الجار البعيد الذي لاتربطكك به قرابه، وهو جار له حقان، فله حق الإسلام وحق الجوار.</p>
+<p>الجار الكافر القريب</p>
+<p>الجار على غير الديانة شخص آخر له حق الجيرة والقرابة</p>
+<p>الجار الكافر غيرالقريب الذي يمتلك حق الجوار فقط</p>
+<figure id="attachment_191719" aria-describedby="caption-attachment-191719" style="width: 670px" class="wp-caption alignnone"><img decoding="async" class=" wp-image-191719" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20670%20319'%3E%3C/svg%3E" alt="ماهو مفهوم الجار" width="670" height="319" data-lazy-src="//almalomat.com/wp-content/uploads/2019/12/3913.jpg" /><noscript><img decoding="async" class=" wp-image-191719" src="//almalomat.com/wp-content/uploads/2019/12/3913.jpg" alt="ماهو مفهوم الجار" width="670" height="319" /></noscript><figcaption id="caption-attachment-191719" class="wp-caption-text">ماهو مفهوم الجار</figcaption></figure>
+<h3>حقوق الجار</h3>
+<h3>رد السلام</h3>
+<p>من حق الجار على جاره رد السلام ويعد من أبرز الحقوق العامة للمسلمين بعضهم على بعض</p>
+<h3>كف الأذى عن الجيران</h3>
+<p>حذر النبي من  إيذاء الجار لجيرانه بوضع قمامة أمام منزله أو الشجار الدائم حيث شدد على أهمية ذلك في قوله : «والله لا يؤمن، والله لا يؤمن، والله لا يؤمن». قيل: مَنْ يا رسول الله؟ قال: «مَن لا يأمن جاره بوائقه أي شروره .</p>
+<h3>قضاء حوائج الجار والإطمئنان عليه</h3>
+<p>«ما آمن بي من بات شبعانًا وجاره جائع إلى جنبه وهو يعلم».</p>
+<p>أفضل الناس من يهتمون بجيرانهم ويسألوا عن أحوالهم، فقد كانت الهدية تنتقل بين أصحاب النبي صلى الله عليه وسلم فيبعث بها إلى جاره، ويبعث بها الجار إلى جار آخر، وهكذا تدور على أكثر من عشرة</p>
+<h3>التودد إلى الجار وطلب مودته</h3>
+<p>من خلال التودد إلى الجار بالهدية والقول الحسن اللطيف</p>
+<figure id="attachment_191722" aria-describedby="caption-attachment-191722" style="width: 849px" class="wp-caption alignnone"><img decoding="async" class=" wp-image-191722" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20849%20476'%3E%3C/svg%3E" alt="ماهو مفهوم الجار" width="849" height="476" data-lazy-src="//almalomat.com/wp-content/uploads/2019/12/6107.jpg" /><noscript><img decoding="async" class=" wp-image-191722" src="//almalomat.com/wp-content/uploads/2019/12/6107.jpg" alt="ماهو مفهوم الجار" width="849" height="476" /></noscript><figcaption id="caption-attachment-191722" class="wp-caption-text">ماهو مفهوم الجار</figcaption></figure>
+<h3>المراجع</h3>
+<p><a href="https://www.collinsdictionary.com/dictionary/english/neighbour">المصدر </a></p>
+<p><a href="https://www.vocabulary.com/dictionary/neighbor">المصدر</a></p>
+<p><a href="https://www.dictionary.com/browse/neighbor">المصدر</a></p>
+<p><a href="https://www.speakingtree.in/allslides/neighbour-rights/good-neighbors">المصدر </a></p>
+
+			
+		</div><!-- .entry-content /-->
+
+				<div id="post-extra-info">
+			<div class="theiaStickySidebar">
+				<div id="single-post-meta" class="post-meta clearfix"><span class="author-meta single-author no-avatars"><span class="meta-item meta-author-wrapper meta-author-29"><span class="meta-author"><a href="https://almalomat.com/author/dav1212/" class="author-name tie-icon" title="سارة عبدالسلام">سارة عبدالسلام</a></span></span></span><span class="date meta-item tie-icon">8 ديسمبر، 2019</span><span class="meta-item last-updated">آخر تحديث: 8 ديسمبر، 2019</span><div class="tie-alignright"><span class="meta-views meta-item "><span class="tie-icon-fire" aria-hidden="true"></span> 348 </span></div></div><!-- .post-meta -->			</div>
+		</div>
+
+		<div class="clearfix"></div>
+		<script id="tie-schema-json" type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"Article","dateCreated":"2019-12-08T00:17:49+03:00","datePublished":"2019-12-08T00:17:49+03:00","dateModified":"2019-12-08T00:17:49+03:00","headline":"\u0645\u0627\u0647\u0648 \u0645\u0641\u0647\u0648\u0645 \u0627\u0644\u062c\u0627\u0631","name":"\u0645\u0627\u0647\u0648 \u0645\u0641\u0647\u0648\u0645 \u0627\u0644\u062c\u0627\u0631","keywords":"\u0627\u0644\u062c\u0627\u0631,\u0645\u0641\u0647\u0648\u0645","url":"https:\/\/almalomat.com\/191687\/%d9%85%d8%a7%d9%87%d9%88-%d9%85%d9%81%d9%87%d9%88%d9%85-%d8%a7%d9%84%d8%ac%d8%a7%d8%b1\/","description":"\u062a\u062a\u0639\u062f\u062f \u0627\u0644\u0645\u0639\u0627\u0646\u064a \u0648\u0627\u0644\u062a\u0631\u062c\u0645\u0627\u062a \u0627\u0644\u0645\u062e\u062a\u0644\u0641\u0629 \u0644\u0643\u0644\u0645\u0629 \u062c\u0627\u0631\u060c \u062d\u064a\u062b \u062a\u062a\u0641\u0642 \u0623\u063a\u0644\u0628\u0647\u0627 \u0639\u0644\u0649 \u0627\u0644\u0634\u062e\u0635 \u0627\u0644\u0642\u0631\u064a\u0628 \u0645\u0646 \u0634\u062e\u0635 \u0622\u062e\u0631 \u0641\u064a \u0627\u0644\u0645\u0633\u0643\u0646\u060c \u0627\u0644\u064a\u0643\u0645 \u0645\u0627\u0647\u0648 \u0645\u0641\u0647\u0648\u0645 \u0627\u0644\u062c\u0627\u0631 . \u0645\u0627\u0647\u0648 \u0645\u0641\u0647\u0648\u0645 \u0627\u0644\u062c\u0627\u0631 \u062a\u0634\u064a\u0631 \u0643\u0644\u0645\u0629 \u062c\u0627\u0631 \u0625\u0644\u0649 \u0639\u062f\u062f \u0645\u0646 \u0627\u0644\u062a\u0639\u0631\u064a\u0641\u0627\u062a \u062a\u062c\u0645\u0639 \u0643\u0644\u0645\u0629 \u062c\u0627\u0631 \u0625\u0644\u0649 \u062c\u064a\u0631\u0627\u0646","copyrightYear":"2019","articleSection":"\u0645\u0639\u0644\u0648\u0645\u0627\u062a,\u0645\u0641\u0627\u0647\u064a\u0645 \u0648\u0645\u0635\u0637\u0644\u062d\u0627\u062a","articleBody":"\u062a\u062a\u0639\u062f\u062f \u0627\u0644\u0645\u0639\u0627\u0646\u064a \u0648\u0627\u0644\u062a\u0631\u062c\u0645\u0627\u062a \u0627\u0644\u0645\u062e\u062a\u0644\u0641\u0629 \u0644\u0643\u0644\u0645\u0629 \u062c\u0627\u0631\u060c \u062d\u064a\u062b \u062a\u062a\u0641\u0642 \u0623\u063a\u0644\u0628\u0647\u0627 \u0639\u0644\u0649 \u0627\u0644\u0634\u062e\u0635 \u0627\u0644\u0642\u0631\u064a\u0628 \u0645\u0646 \u0634\u062e\u0635 \u0622\u062e\u0631 \u0641\u064a \u0627\u0644\u0645\u0633\u0643\u0646\u060c \u0627\u0644\u064a\u0643\u0645 \u0645\u0627\u0647\u0648 \u0645\u0641\u0647\u0648\u0645 \u0627\u0644\u062c\u0627\u0631 .\r\n\u0645\u0627\u0647\u0648 \u0645\u0641\u0647\u0648\u0645 \u0627\u0644\u062c\u0627\u0631\r\n\u062a\u0634\u064a\u0631 \u0643\u0644\u0645\u0629 \u062c\u0627\u0631 \u0625\u0644\u0649 \u0639\u062f\u062f \u0645\u0646 \u0627\u0644\u062a\u0639\u0631\u064a\u0641\u0627\u062a\r\n\r\n \t\u062a\u062c\u0645\u0639 \u0643\u0644\u0645\u0629 \u062c\u0627\u0631 \u0625\u0644\u0649 \u062c\u064a\u0631\u0627\u0646 \u0623\u0648 \u062c\u064a\u0631\u0629 \u0648\u062c\u0648\u0627\u0631 \u0648\u0623\u062c\u0648\u0627\u0631 \u0648\u064a\u0634\u064a\u0631 \u0625\u0644\u0649 \u0627\u0644\u0634\u062e\u0635 \u0627\u0644\u0642\u0631\u064a\u0628 \u0627\u0644\u0645\u062c\u0627\u0648\u0631 \u0641\u064a \u0627\u0644\u0645\u0633\u0643\u0646\r\n \t\u0642\u062f \u064a\u0639\u0646\u064a \u0627\u0644\u062c\u0627\u0631 \u0627\u0644\u0634\u062e\u0635 \u0627\u0644\u0630\u064a \u064a\u062f\u062e\u0644 \u0634\u0631\u064a\u0643 \u0645\u0639 \u0622\u062e\u0631\u00a0 \u0641\u064a \u0627\u0644\u062a\u062c\u0627\u0631\u0629 \u0623\u0648 \u0641\u064a \u0627\u0644\u0639\u0642\u0627\u0631 \u0627\u0644\u0633\u0643\u0646\u064a \u0648\u0642\u062f\u064a\u0645\u0627 \u0643\u0627\u0646 \u0627\u0644\u062c\u064a\u0631\u0627\u0646 \u064a\u062e\u062a\u0644\u0637\u0648\u0646 \u0628\u0628\u0639\u0636\u0647\u0645 \u0627\u0644\u0628\u0639\u0636 \u0646\u0638\u0631\u0627 \u0644\u0636\u064a\u0642 \u0627\u0644\u062d\u0627\u0631\u0627\u062a \u0627\u0644\u0633\u0643\u0646\u064a\u0629 \u0641\u0642\u062f \u0643\u0627\u0646\u062a \u0627\u0644\u0628\u064a\u0648\u062a \u0642\u0631\u064a\u0628\u0629 \u0644\u062f\u0631\u062c\u0629 \u0642\u062f \u064a\u0634\u0627\u0647\u062f\u0648\u0646 \u0628\u0639\u0636\u0647\u0645 \u0645\u0646 \u062e\u0644\u0627\u0644 \u0627\u0644\u0646\u0648\u0627\u0641\u0630\r\n \t\u0627\u0644\u062c\u0627\u0631 \u0647\u0648 \u0634\u062e\u0635 \u0623\u0648 \u0634\u064a\u0621 \u0642\u0631\u064a\u0628 \u0648\u0645\u0646 \u0627\u0644\u0645\u0647\u0645 \u0623\u0646 \u064a\u0643\u0648\u0646 \u0627\u0644\u0634\u062e\u0635 \u0644\u0637\u064a\u0641\u0627 \u0645\u0639 \u062c\u0627\u0631\u0647\u060c \u0644\u0623\u0646\u0643 \u0644\u0627 \u062a\u0639\u0631\u0641 \u0623\u0628\u062f\u064b\u0627 \u0645\u062a\u0649 \u0633\u062a\u062d\u062a\u0627\u062c \u0625\u0644\u0649 \u0627\u0642\u062a\u0631\u0627\u0636 \u0627\u0644\u0633\u0643\u0631 \u0623\u0648 \u0627\u0644\u0645\u0641\u062a\u0627\u062d \u0627\u0644\u0625\u0636\u0627\u0641\u064a \u0644\u0645\u0646\u0632\u0644\u0643.\r\n \t\u062a\u062a\u0631\u062c\u0645 \u0643\u0644\u0645\u0629 \u0627\u0644\u062c\u0627\u0631 \u0623\u0648 neighbor \u0648\u00a0 neahgebur \u0628\u0627\u0644\u0644\u063a\u0629 \u0627\u0644\u0625\u0646\u062c\u0644\u064a\u0632\u064a\u0629 \u0627\u0644\u0642\u062f\u064a\u0645\u0629\u060c \u0625\u0644\u0649 \u00a0\u0634\u062e\u0635 \u0642\u0631\u064a\u0628 \u0645\u0646 \u0645\u0633\u0643\u0646\u0643 .\r\n \t\u0641\u064a \u0627\u0644\u0642\u0631\u0622\u0646 \u0627\u0644\u0643\u0631\u064a\u0645 \u064a\u0634\u064a\u0631 \u0627\u0644\u062c\u0648\u0627\u0631 \u0625\u0644\u0649 \u0623\u0647\u0644 \u0627\u0644\u0628\u0644\u062f\u0629 \u0627\u0644\u0648\u0627\u062d\u062f\u0629\r\n\r\n\r\n\u0635\u0648\u0631 \u0627\u0644\u062c\u064a\u0631\u0629 \u0627\u0644\u0645\u062e\u062a\u0644\u0641\u0629\r\n\u0627\u0644\u062c\u064a\u0631\u0629 \u0641\u064a \u0627\u0644\u0645\u0633\u0643\u0646\r\n\u0642\u062f \u064a\u0639\u062a\u0642\u062f \u0627\u0644\u0628\u0639\u0636 \u0623\u0646 \u0627\u0644\u062c\u0627\u0631 \u0647\u0648 \u0627\u0644\u0634\u062e\u0635 \u0627\u0644\u0642\u0631\u064a\u0628 \u0641\u064a \u0627\u0644\u0645\u0633\u0643\u0646 \u0641\u0642\u0637 \u0648\u0631\u063a\u0645 \u0623\u0646\u0647 \u0645\u0646 \u0623\u0628\u0631\u0632 \u0623\u0646\u0648\u0627\u0639 \u0648\u0635\u0648\u0631 \u0627\u0644\u062c\u064a\u0631\u0629 \u0625\u0644\u0627 \u0623\u0646\u0647 \u062a\u0648\u062c\u062f \u0639\u062f\u0629 \u0623\u0646\u0648\u0627\u0639 \u0644\u0644\u062c\u064a\u0631\u0627\u0646 :\r\n\r\n \t\u0627\u0644\u062c\u0627\u0631 \u0641\u064a \u0627\u0644\u0639\u0645\u0644\r\n \t\u0627\u0644\u062c\u0627\u0631 \u0641\u064a \u0627\u0644\u0645\u0632\u0631\u0639\u0629\r\n \t\u0627\u0644\u062c\u0627\u0631 \u0641\u064a \u0645\u0642\u0639\u062f \u0627\u0644\u062f\u0631\u0627\u0633\u0629\r\n \t\u0627\u0644\u062c\u0627\u0631 \u0641\u064a \u0645\u0642\u0639\u062f \u0627\u0644\u0633\u064a\u0627\u0631\u0629\r\n \t\u0627\u0644\u062c\u0627\u0631 \u0641\u064a \u0627\u0644\u062f\u0631\u0627\u0633\u0629 \u0648 \u0627\u0644\u0639\u0645\u0644\r\n \t\u0627\u0644\u062c\u0627\u0631 \u0641\u064a \u0627\u0644\u0633\u0648\u0642\r\n\r\n\u0627\u0644\u062c\u0627\u0631 \u0641\u064a \u0627\u0644\u0625\u0633\u0644\u0627\u0645\r\n\r\n \t\u0623\u0648\u0635\u0649 \u0627\u0644\u0642\u0631\u0622\u0646 \u0648\u0627\u0644\u0633\u0646\u0629 \u0628\u0627\u0644\u0625\u062d\u0633\u0627\u0646 \u0625\u0644\u0649 \u0627\u0644\u062c\u0627\u0631 \u062d\u064a\u062b \u062c\u0627\u0621\u00a0 \u0636\u0631\u0648\u0631\u0629 \u0627\u0644\u062a\u0623\u0643\u064a\u062f \u0639\u0644\u0649 \u062d\u0642\u0648\u0642 \u0627\u0644\u062c\u064a\u0631\u0629 \u0641\u064a \u0627\u0644\u062d\u062f\u064a\u062b \u0627\u0644\u0634\u0631\u064a\u0641 (\u0645\u0646 \u0643\u0627\u0646 \u064a\u0624\u0645\u0646 \u0628\u0627\u0644\u0644\u0647 \u0648\u0627\u0644\u064a\u0648\u0645 \u0627\u0644\u0622\u062e\u0631 \u0641\u0644\u064a\u0643\u0631\u0645 \u062c\u0627\u0631\u0647\"). \u0648\u0627\u0644\u0630\u064a \u0646\u0641\u0633\u064a \u0628\u064a\u062f\u0647 \u0644\u0627 \u064a\u0624\u0645\u0646 \u0639\u0628\u062f \u062d\u062a\u0649 \u064a\u062d\u0628 \u0644\u062c\u0627\u0631\u0647 \u0645\u0627 \u064a\u062d\u0628 \u0644\u0646\u0641\u0633\u0647.\r\n \t\u00a0\u064a\u0639\u062a\u0628\u0631 \u0627\u0644\u0634\u062e\u0635 \u0627\u0644\u0630\u064a \u064a\u062d\u0633\u0646 \u0625\u0644\u0649 \u062c\u0627\u0631\u0647 \u0645\u0646 \u062e\u064a\u0631\u0629 \u0627\u0644\u0646\u0627\u0633 \u0639\u0646\u062f \u0627\u0644\u0644\u0647 (\u062e\u064a\u0631 \u0627\u0644\u0623\u0635\u062d\u0627\u0628 \u0639\u0646\u062f \u0627\u0644\u0644\u0647 \u062e\u064a\u0631\u0647\u0645 \u0644\u0635\u0627\u062d\u0628\u0647\u060c \u0648\u062e\u064a\u0631 \u0627\u0644\u062c\u064a\u0631\u0627\u0646 \u0639\u0646\u062f \u0627\u0644\u0644\u0647 \u062e\u064a\u0631\u0647\u0645 \u0644\u062c\u0627\u0631\u0647)\r\n \t\u0645\u0646 \u0623\u0628\u0631\u0632 \u062f\u0644\u0627\u0644\u0627\u062a \u0635\u062f\u0642 \u0627\u0644\u0625\u064a\u0645\u0627\u0646 \u0648\u0632\u064a\u0627\u062f\u062a\u0647 \u0648\u0642\u0648\u062a\u0647 \u0627\u0644\u0625\u062d\u0633\u0627\u0646 \u0625\u0644\u0649 \u0627\u0644\u062c\u064a\u0631\u0627\u0646\r\n\r\n\u0623\u0646\u0648\u0627\u0639 \u0627\u0644\u062c\u0627\u0631 \u0643\u0645\u0627 \u0630\u0643\u0631 \u0641\u064a \u0627\u0644\u0642\u0631\u0622\u0646\r\n\u0627\u0644\u062c\u0627\u0631 \u0627\u0644\u0642\u0631\u064a\u0628\r\n\u062c\u0627\u0631\u0643 \u0627\u0644\u0645\u0633\u0644\u0645 \u0627\u0644\u0630\u064a \u062a\u062a\u0635\u0644 \u0645\u0639\u0647 \u0628\u0639\u0644\u0627\u0642\u0629 \u0642\u0631\u0627\u0628\u0629 \u0648\u0645\u0646 \u0623\u0628\u0631\u0632 \u062d\u0642\u0648\u0642\u0643 \u0627\u0644\u0648\u0627\u062c\u0628\u0629 \u0639\u0644\u064a\u0647 \u062d\u0642 \u0627\u0644\u0642\u0631\u0627\u0628\u0629 \u0648\u062d\u0642 \u0627\u0644\u062c\u0648\u0627\u0631 \u0648\u062d\u0642 \u0627\u0644\u0625\u0633\u0644\u0627\u0645\r\n\u0627\u0644\u062c\u0627\u0631 \u0627\u0644\u062c\u0646\u0628\r\n\u0627\u0644\u062c\u0627\u0631 \u0627\u0644\u0628\u0639\u064a\u062f \u0627\u0644\u0630\u064a \u0644\u0627\u062a\u0631\u0628\u0637\u0643\u0643 \u0628\u0647 \u0642\u0631\u0627\u0628\u0647\u060c \u0648\u0647\u0648 \u062c\u0627\u0631 \u0644\u0647 \u062d\u0642\u0627\u0646\u060c \u0641\u0644\u0647 \u062d\u0642 \u0627\u0644\u0625\u0633\u0644\u0627\u0645 \u0648\u062d\u0642 \u0627\u0644\u062c\u0648\u0627\u0631.\r\n\r\n\u0627\u0644\u062c\u0627\u0631 \u0627\u0644\u0643\u0627\u0641\u0631 \u0627\u0644\u0642\u0631\u064a\u0628\r\n\r\n\u0627\u0644\u062c\u0627\u0631 \u0639\u0644\u0649 \u063a\u064a\u0631 \u0627\u0644\u062f\u064a\u0627\u0646\u0629 \u0634\u062e\u0635 \u0622\u062e\u0631 \u0644\u0647 \u062d\u0642 \u0627\u0644\u062c\u064a\u0631\u0629 \u0648\u0627\u0644\u0642\u0631\u0627\u0628\u0629\r\n\r\n\u0627\u0644\u062c\u0627\u0631 \u0627\u0644\u0643\u0627\u0641\u0631 \u063a\u064a\u0631\u0627\u0644\u0642\u0631\u064a\u0628 \u0627\u0644\u0630\u064a \u064a\u0645\u062a\u0644\u0643 \u062d\u0642 \u0627\u0644\u062c\u0648\u0627\u0631 \u0641\u0642\u0637\r\n\r\n\r\n\u062d\u0642\u0648\u0642 \u0627\u0644\u062c\u0627\u0631\r\n\u0631\u062f \u0627\u0644\u0633\u0644\u0627\u0645\r\n\u0645\u0646 \u062d\u0642 \u0627\u0644\u062c\u0627\u0631 \u0639\u0644\u0649 \u062c\u0627\u0631\u0647 \u0631\u062f \u0627\u0644\u0633\u0644\u0627\u0645 \u0648\u064a\u0639\u062f \u0645\u0646 \u0623\u0628\u0631\u0632 \u0627\u0644\u062d\u0642\u0648\u0642 \u0627\u0644\u0639\u0627\u0645\u0629 \u0644\u0644\u0645\u0633\u0644\u0645\u064a\u0646 \u0628\u0639\u0636\u0647\u0645 \u0639\u0644\u0649 \u0628\u0639\u0636\r\n\u0643\u0641 \u0627\u0644\u0623\u0630\u0649 \u0639\u0646 \u0627\u0644\u062c\u064a\u0631\u0627\u0646\r\n\u062d\u0630\u0631 \u0627\u0644\u0646\u0628\u064a \u0645\u0646\u00a0 \u0625\u064a\u0630\u0627\u0621 \u0627\u0644\u062c\u0627\u0631 \u0644\u062c\u064a\u0631\u0627\u0646\u0647 \u0628\u0648\u0636\u0639 \u0642\u0645\u0627\u0645\u0629 \u0623\u0645\u0627\u0645 \u0645\u0646\u0632\u0644\u0647 \u0623\u0648 \u0627\u0644\u0634\u062c\u0627\u0631 \u0627\u0644\u062f\u0627\u0626\u0645 \u062d\u064a\u062b \u0634\u062f\u062f \u0639\u0644\u0649 \u0623\u0647\u0645\u064a\u0629 \u0630\u0644\u0643 \u0641\u064a \u0642\u0648\u0644\u0647 : \u00ab\u0648\u0627\u0644\u0644\u0647 \u0644\u0627 \u064a\u0624\u0645\u0646\u060c \u0648\u0627\u0644\u0644\u0647 \u0644\u0627 \u064a\u0624\u0645\u0646\u060c \u0648\u0627\u0644\u0644\u0647 \u0644\u0627 \u064a\u0624\u0645\u0646\u00bb. \u0642\u064a\u0644: \u0645\u064e\u0646\u0652 \u064a\u0627 \u0631\u0633\u0648\u0644 \u0627\u0644\u0644\u0647\u061f \u0642\u0627\u0644: \u00ab\u0645\u064e\u0646 \u0644\u0627 \u064a\u0623\u0645\u0646 \u062c\u0627\u0631\u0647 \u0628\u0648\u0627\u0626\u0642\u0647 \u0623\u064a \u0634\u0631\u0648\u0631\u0647 .\r\n\u0642\u0636\u0627\u0621 \u062d\u0648\u0627\u0626\u062c \u0627\u0644\u062c\u0627\u0631 \u0648\u0627\u0644\u0625\u0637\u0645\u0626\u0646\u0627\u0646 \u0639\u0644\u064a\u0647\r\n\u00ab\u0645\u0627 \u0622\u0645\u0646 \u0628\u064a \u0645\u0646 \u0628\u0627\u062a \u0634\u0628\u0639\u0627\u0646\u064b\u0627 \u0648\u062c\u0627\u0631\u0647 \u062c\u0627\u0626\u0639 \u0625\u0644\u0649 \u062c\u0646\u0628\u0647 \u0648\u0647\u0648 \u064a\u0639\u0644\u0645\u00bb.\r\n\r\n\u0623\u0641\u0636\u0644 \u0627\u0644\u0646\u0627\u0633 \u0645\u0646 \u064a\u0647\u062a\u0645\u0648\u0646 \u0628\u062c\u064a\u0631\u0627\u0646\u0647\u0645 \u0648\u064a\u0633\u0623\u0644\u0648\u0627 \u0639\u0646 \u0623\u062d\u0648\u0627\u0644\u0647\u0645\u060c \u0641\u0642\u062f \u0643\u0627\u0646\u062a \u0627\u0644\u0647\u062f\u064a\u0629 \u062a\u0646\u062a\u0642\u0644 \u0628\u064a\u0646 \u0623\u0635\u062d\u0627\u0628 \u0627\u0644\u0646\u0628\u064a \u0635\u0644\u0649 \u0627\u0644\u0644\u0647 \u0639\u0644\u064a\u0647 \u0648\u0633\u0644\u0645 \u0641\u064a\u0628\u0639\u062b \u0628\u0647\u0627 \u0625\u0644\u0649 \u062c\u0627\u0631\u0647\u060c \u0648\u064a\u0628\u0639\u062b \u0628\u0647\u0627 \u0627\u0644\u062c\u0627\u0631 \u0625\u0644\u0649 \u062c\u0627\u0631 \u0622\u062e\u0631\u060c \u0648\u0647\u0643\u0630\u0627 \u062a\u062f\u0648\u0631 \u0639\u0644\u0649 \u0623\u0643\u062b\u0631 \u0645\u0646 \u0639\u0634\u0631\u0629\r\n\u0627\u0644\u062a\u0648\u062f\u062f \u0625\u0644\u0649 \u0627\u0644\u062c\u0627\u0631 \u0648\u0637\u0644\u0628 \u0645\u0648\u062f\u062a\u0647\r\n\u0645\u0646 \u062e\u0644\u0627\u0644 \u0627\u0644\u062a\u0648\u062f\u062f \u0625\u0644\u0649 \u0627\u0644\u062c\u0627\u0631 \u0628\u0627\u0644\u0647\u062f\u064a\u0629 \u0648\u0627\u0644\u0642\u0648\u0644 \u0627\u0644\u062d\u0633\u0646 \u0627\u0644\u0644\u0637\u064a\u0641\r\n\r\n\r\n\u0627\u0644\u0645\u0631\u0627\u062c\u0639\r\n\u0627\u0644\u0645\u0635\u062f\u0631\u00a0\r\n\r\n\u0627\u0644\u0645\u0635\u062f\u0631\r\n\r\n\u0627\u0644\u0645\u0635\u062f\u0631\r\n\r\n\u0627\u0644\u0645\u0635\u062f\u0631\u00a0","publisher":{"@id":"#Publisher","@type":"Organization","name":"\u0645\u0648\u0642\u0639 \u0627\u0644\u0645\u0639\u0644\u0648\u0645\u0627\u062a","logo":{"@type":"ImageObject","url":"https:\/\/almalomat.com\/wp-content\/uploads\/2021\/07\/almalomat-logo-transparent-gray01.png"},"sameAs":["https:\/\/www.facebook.com\/almalomat2\/","https:\/\/twitter.com\/almalomat2","https:\/\/www.youtube.com\/channel\/UCLrxSfgREl-picYyKUCkAqw","https:\/\/www.instagram.com\/almalomat2\/","https:\/\/play.google.com\/store\/apps\/details?id=com.almalomat"]},"sourceOrganization":{"@id":"#Publisher"},"copyrightHolder":{"@id":"#Publisher"},"mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/almalomat.com\/191687\/%d9%85%d8%a7%d9%87%d9%88-%d9%85%d9%81%d9%87%d9%88%d9%85-%d8%a7%d9%84%d8%ac%d8%a7%d8%b1\/","breadcrumb":{"@id":"#Breadcrumb"}},"author":{"@type":"Person","name":"\u0633\u0627\u0631\u0629 \u0639\u0628\u062f\u0627\u0644\u0633\u0644\u0627\u0645","url":"https:\/\/almalomat.com\/author\/dav1212\/"},"image":{"@type":"ImageObject","url":"https:\/\/almalomat.com\/wp-content\/uploads\/2019\/12\/61057.jpg","width":1200,"height":410}}</script>
+	</article><!-- #the-post /-->
+
+	<div class="stream-item stream-item-below-post">                <script data-minify="1" src="//almalomat.com/wp-content/cache/min/1/widget/js/speakol-widget-v2.js?ver=1685095354" defer></script>
+                <div class="speakol-widget" id="sp-wi-9339">
+                    <script type="rocketlazyloadscript">
+                        (spksdk = window.spksdk || []).push({
+                            widget_id: "wi-9339",
+                            element: "sp-wi-9339"
+                        });
+                    </script>
+                </div>
+            </div>
+	<div class="post-components">
+
+		
+	
+
+				<div id="related-posts" class="container-wrapper has-extra-post">
+
+					<div class="mag-box-title the-global-title">
+						<h3>مقالات ذات صلة</h3>
+					</div>
+
+					<div class="related-posts-list">
+
+					
+							<div class="related-item tie-standard">
+
+								
+			<a aria-label="ما هو ملح البحر" href="https://almalomat.com/343843/%d9%85%d8%a7-%d9%87%d9%88-%d9%85%d9%84%d8%ad-%d8%a7%d9%84%d8%a8%d8%ad%d8%b1/" class="post-thumb"><img width="390" height="220" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20390%20220'%3E%3C/svg%3E" class="attachment-jannah-image-large size-jannah-image-large wp-post-image" alt="ما هو ملح البحر" decoding="async" data-lazy-src="//almalomat.com/wp-content/uploads/2022/01/فوائد-ملح-البحر-390x220.jpg" /><noscript><img width="390" height="220" src="//almalomat.com/wp-content/uploads/2022/01/فوائد-ملح-البحر-390x220.jpg" class="attachment-jannah-image-large size-jannah-image-large wp-post-image" alt="ما هو ملح البحر" decoding="async" /></noscript></a>
+								<h3 class="post-title"><a href="https://almalomat.com/343843/%d9%85%d8%a7-%d9%87%d9%88-%d9%85%d9%84%d8%ad-%d8%a7%d9%84%d8%a8%d8%ad%d8%b1/">ما هو ملح البحر</a></h3>
+
+								<div class="post-meta clearfix"><span class="date meta-item tie-icon">17 يناير، 2022</span></div><!-- .post-meta -->							</div><!-- .related-item /-->
+
+						
+							<div class="related-item">
+
+								
+			<a aria-label="ما هو مفهوم الصراع" href="https://almalomat.com/197192/%d9%85%d8%a7-%d9%87%d9%88-%d9%85%d9%81%d9%87%d9%88%d9%85-%d8%a7%d9%84%d8%b5%d8%b1%d8%a7%d8%b9/" class="post-thumb"><img width="390" height="173" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20390%20173'%3E%3C/svg%3E" class="attachment-jannah-image-large size-jannah-image-large wp-post-image" alt="ما هو مفهوم الصراع" decoding="async" loading="lazy" data-lazy-src="//almalomat.com/wp-content/uploads/2019/12/shutterstock_2482690031-scaled.jpg" /><noscript><img width="390" height="173" src="//almalomat.com/wp-content/uploads/2019/12/shutterstock_2482690031-scaled.jpg" class="attachment-jannah-image-large size-jannah-image-large wp-post-image" alt="ما هو مفهوم الصراع" decoding="async" loading="lazy" /></noscript></a>
+								<h3 class="post-title"><a href="https://almalomat.com/197192/%d9%85%d8%a7-%d9%87%d9%88-%d9%85%d9%81%d9%87%d9%88%d9%85-%d8%a7%d9%84%d8%b5%d8%b1%d8%a7%d8%b9/">ما هو مفهوم الصراع</a></h3>
+
+								<div class="post-meta clearfix"><span class="date meta-item tie-icon">19 ديسمبر، 2019</span></div><!-- .post-meta -->							</div><!-- .related-item /-->
+
+						
+							<div class="related-item">
+
+								
+			<a aria-label="تعريف علم الجيولوجيا" href="https://almalomat.com/202673/%d8%aa%d8%b9%d8%b1%d9%8a%d9%81-%d8%b9%d9%84%d9%85-%d8%a7%d9%84%d8%ac%d9%8a%d9%88%d9%84%d9%88%d8%ac%d9%8a%d8%a7/" class="post-thumb"><img width="390" height="220" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20390%20220'%3E%3C/svg%3E" class="attachment-jannah-image-large size-jannah-image-large wp-post-image" alt="تعريف علم الجيولوجيا" decoding="async" loading="lazy" data-lazy-srcset="//almalomat.com/wp-content/uploads/2019/12/G-1-scaled.jpg 800w, //almalomat.com/wp-content/uploads/2019/12/G-1-630x354.jpg 630w, //almalomat.com/wp-content/uploads/2019/12/G-1-768x432.jpg 768w, //almalomat.com/wp-content/uploads/2019/12/G-1-810x455.jpg 810w, //almalomat.com/wp-content/uploads/2019/12/G-1-1140x641.jpg 1140w, //almalomat.com/wp-content/uploads/2019/12/G-1-711x400.jpg 711w, //almalomat.com/wp-content/uploads/2019/12/G-1-1024x576.jpg 1024w" data-lazy-sizes="(max-width: 390px) 100vw, 390px" data-lazy-src="//almalomat.com/wp-content/uploads/2019/12/G-1-scaled.jpg" /><noscript><img width="390" height="220" src="//almalomat.com/wp-content/uploads/2019/12/G-1-scaled.jpg" class="attachment-jannah-image-large size-jannah-image-large wp-post-image" alt="تعريف علم الجيولوجيا" decoding="async" loading="lazy" srcset="//almalomat.com/wp-content/uploads/2019/12/G-1-scaled.jpg 800w, //almalomat.com/wp-content/uploads/2019/12/G-1-630x354.jpg 630w, //almalomat.com/wp-content/uploads/2019/12/G-1-768x432.jpg 768w, //almalomat.com/wp-content/uploads/2019/12/G-1-810x455.jpg 810w, //almalomat.com/wp-content/uploads/2019/12/G-1-1140x641.jpg 1140w, //almalomat.com/wp-content/uploads/2019/12/G-1-711x400.jpg 711w, //almalomat.com/wp-content/uploads/2019/12/G-1-1024x576.jpg 1024w" sizes="(max-width: 390px) 100vw, 390px" /></noscript></a>
+								<h3 class="post-title"><a href="https://almalomat.com/202673/%d8%aa%d8%b9%d8%b1%d9%8a%d9%81-%d8%b9%d9%84%d9%85-%d8%a7%d9%84%d8%ac%d9%8a%d9%88%d9%84%d9%88%d8%ac%d9%8a%d8%a7/">تعريف علم الجيولوجيا</a></h3>
+
+								<div class="post-meta clearfix"><span class="date meta-item tie-icon">1 يناير، 2020</span></div><!-- .post-meta -->							</div><!-- .related-item /-->
+
+						
+							<div class="related-item">
+
+								
+			<a aria-label="تعريف علم الصرف أصطلاحاً" href="https://almalomat.com/209235/%d8%aa%d8%b9%d8%b1%d9%8a%d9%81-%d8%b9%d9%84%d9%85-%d8%a7%d9%84%d8%b5%d8%b1%d9%81-%d8%a3%d8%b5%d8%b7%d9%84%d8%a7%d8%ad%d8%a7%d9%8b/" class="post-thumb"><img width="349" height="220" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20349%20220'%3E%3C/svg%3E" class="attachment-jannah-image-large size-jannah-image-large wp-post-image" alt="" decoding="async" loading="lazy" data-lazy-src="//almalomat.com/wp-content/uploads/2020/01/morphology-answers-part-3.jpg" /><noscript><img width="349" height="220" src="//almalomat.com/wp-content/uploads/2020/01/morphology-answers-part-3.jpg" class="attachment-jannah-image-large size-jannah-image-large wp-post-image" alt="" decoding="async" loading="lazy" /></noscript></a>
+								<h3 class="post-title"><a href="https://almalomat.com/209235/%d8%aa%d8%b9%d8%b1%d9%8a%d9%81-%d8%b9%d9%84%d9%85-%d8%a7%d9%84%d8%b5%d8%b1%d9%81-%d8%a3%d8%b5%d8%b7%d9%84%d8%a7%d8%ad%d8%a7%d9%8b/">تعريف علم الصرف أصطلاحاً</a></h3>
+
+								<div class="post-meta clearfix"><span class="date meta-item tie-icon">16 يناير، 2020</span></div><!-- .post-meta -->							</div><!-- .related-item /-->
+
+						
+					</div><!-- .related-posts-list /-->
+				</div><!-- #related-posts /-->
+
+			
+				<div class="compact-comments">
+					<a id="show-comments-section" href="#" class="button">اترك تعليقاً</a>
+				</div>
+				<style>#comments{display: none;}</style>
+				<div id="comments" class="comments-area">
+
+		
+
+		<div id="add-comment-block" class="container-wrapper">	<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title the-global-title">اترك تعليقاً <small><a rel="nofollow" id="cancel-comment-reply-link" href="/191687/%D9%85%D8%A7%D9%87%D9%88-%D9%85%D9%81%D9%87%D9%88%D9%85-%D8%A7%D9%84%D8%AC%D8%A7%D8%B1/#respond" style="display:none;">إلغاء الرد</a></small></h3><form action="//almalomat.com/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate><p class="comment-notes"><span id="email-notes">لن يتم نشر عنوان بريدك الإلكتروني.</span> <span class="required-field-message">الحقول الإلزامية مشار إليها بـ <span class="required">*</span></span></p><p class="comment-form-comment"><label for="comment">التعليق <span class="required">*</span></label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required></textarea></p><p class="comment-form-author"><label for="author">الاسم <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" autocomplete="name" required /></p>
+<p class="comment-form-email"><label for="email">البريد الإلكتروني <span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" autocomplete="email" required /></p>
+<p class="comment-form-url"><label for="url">الموقع الإلكتروني</label> <input id="url" name="url" type="url" value="" size="30" maxlength="200" autocomplete="url" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="إرسال التعليق" /> <input type='hidden' name='comment_post_ID' value='191687' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="89aa78d857" /></p><p style="display: none !important;"><label>&#916;<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="ak_js" value="53"/><script type="rocketlazyloadscript">document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() );</script></p></form>	</div><!-- #respond -->
+	</div><!-- #add-comment-block /-->
+	</div><!-- .comments-area -->
+
+
+	</div><!-- .post-components /-->
+
+	
+</div><!-- .main-content -->
+
+
+	<aside class="sidebar tie-col-md-4 tie-col-xs-12 normal-side is-sticky" aria-label="القائمة الجانبية الرئيسية">
+		<div class="theiaStickySidebar">
+			<div id="posts-list-widget-3" class="container-wrapper widget posts-list"><div class="widget-title the-global-title"><div class="the-subtitle">تصفح..<span class="widget-title-icon tie-icon"></span></div></div><div class="widget-posts-list-wrapper"><div class="widget-posts-list-container posts-list-half-posts" ><ul class="posts-list-items widget-posts-wrapper">
+<li class="widget-single-post-item widget-post-list tie-standard">
+
+			<div class="post-widget-thumbnail">
+
+			
+			<a aria-label="الشاعر نواف الشلهوب" href="https://almalomat.com/363375/%d8%a7%d9%84%d8%b4%d8%a7%d8%b9%d8%b1-%d9%86%d9%88%d8%a7%d9%81-%d8%a7%d9%84%d8%b4%d9%84%d9%87%d9%88%d8%a8/" class="post-thumb"><img width="390" height="220" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20390%20220'%3E%3C/svg%3E" class="attachment-jannah-image-large size-jannah-image-large wp-post-image" alt="الشاعر نواف الشلهوب بصحبة الامير بدر" decoding="async" loading="lazy" data-lazy-src="//almalomat.com/wp-content/uploads/2023/06/الشاعر-نواف-الشلهوب-بصحبة-الامير-بدر-390x220.jpg" /><noscript><img width="390" height="220" src="//almalomat.com/wp-content/uploads/2023/06/الشاعر-نواف-الشلهوب-بصحبة-الامير-بدر-390x220.jpg" class="attachment-jannah-image-large size-jannah-image-large wp-post-image" alt="الشاعر نواف الشلهوب بصحبة الامير بدر" decoding="async" loading="lazy" /></noscript></a>		</div><!-- post-alignleft /-->
+	
+	<div class="post-widget-body ">
+		<a class="post-title the-subtitle" href="https://almalomat.com/363375/%d8%a7%d9%84%d8%b4%d8%a7%d8%b9%d8%b1-%d9%86%d9%88%d8%a7%d9%81-%d8%a7%d9%84%d8%b4%d9%84%d9%87%d9%88%d8%a8/">الشاعر نواف الشلهوب</a>
+
+		<div class="post-meta">
+			<span class="date meta-item tie-icon">15 يونيو، 2023</span>		</div>
+	</div>
+</li>
+
+<li class="widget-single-post-item widget-post-list tie-standard">
+
+			<div class="post-widget-thumbnail">
+
+			
+			<a aria-label="ما هو الفرق بين الخلية الحيوانية والنباتية" href="https://almalomat.com/363144/%d9%85%d8%a7-%d9%87%d9%88-%d8%a7%d9%84%d9%81%d8%b1%d9%82-%d8%a8%d9%8a%d9%86-%d8%a7%d9%84%d8%ae%d9%84%d9%8a%d8%a9-%d8%a7%d9%84%d8%ad%d9%8a%d9%88%d8%a7%d9%86%d9%8a%d8%a9-%d9%88%d8%a7%d9%84%d9%86%d8%a8/" class="post-thumb"><img width="390" height="220" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20390%20220'%3E%3C/svg%3E" class="attachment-jannah-image-large size-jannah-image-large wp-post-image" alt="ما هو الفرق بين الخلية الحيوانية والنباتية" decoding="async" loading="lazy" data-lazy-src="//almalomat.com/wp-content/uploads/2023/03/الفرق-بين-الخلية-الحيوانية-والنباتية2-390x220.jpg" /><noscript><img width="390" height="220" src="//almalomat.com/wp-content/uploads/2023/03/الفرق-بين-الخلية-الحيوانية-والنباتية2-390x220.jpg" class="attachment-jannah-image-large size-jannah-image-large wp-post-image" alt="ما هو الفرق بين الخلية الحيوانية والنباتية" decoding="async" loading="lazy" /></noscript></a>		</div><!-- post-alignleft /-->
+	
+	<div class="post-widget-body ">
+		<a class="post-title the-subtitle" href="https://almalomat.com/363144/%d9%85%d8%a7-%d9%87%d9%88-%d8%a7%d9%84%d9%81%d8%b1%d9%82-%d8%a8%d9%8a%d9%86-%d8%a7%d9%84%d8%ae%d9%84%d9%8a%d8%a9-%d8%a7%d9%84%d8%ad%d9%8a%d9%88%d8%a7%d9%86%d9%8a%d8%a9-%d9%88%d8%a7%d9%84%d9%86%d8%a8/">ما هو الفرق بين الخلية الحيوانية والنباتية</a>
+
+		<div class="post-meta">
+			<span class="date meta-item tie-icon">27 مارس، 2023</span>		</div>
+	</div>
+</li>
+
+<li class="widget-single-post-item widget-post-list tie-standard">
+
+			<div class="post-widget-thumbnail">
+
+			
+			<a aria-label="معلومات عن سمك القرش" href="https://almalomat.com/362579/%d9%85%d8%b9%d9%84%d9%88%d9%85%d8%a7%d8%aa-%d8%b9%d9%86-%d8%b3%d9%85%d9%83-%d8%a7%d9%84%d9%82%d8%b1%d8%b4/" class="post-thumb"><img width="390" height="220" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20390%20220'%3E%3C/svg%3E" class="attachment-jannah-image-large size-jannah-image-large wp-post-image" alt="معلومات عن سمك القرش" decoding="async" loading="lazy" data-lazy-src="//almalomat.com/wp-content/uploads/2023/02/معلومات-عن-سمك-القرش1-390x220.jpg" /><noscript><img width="390" height="220" src="//almalomat.com/wp-content/uploads/2023/02/معلومات-عن-سمك-القرش1-390x220.jpg" class="attachment-jannah-image-large size-jannah-image-large wp-post-image" alt="معلومات عن سمك القرش" decoding="async" loading="lazy" /></noscript></a>		</div><!-- post-alignleft /-->
+	
+	<div class="post-widget-body ">
+		<a class="post-title the-subtitle" href="https://almalomat.com/362579/%d9%85%d8%b9%d9%84%d9%88%d9%85%d8%a7%d8%aa-%d8%b9%d9%86-%d8%b3%d9%85%d9%83-%d8%a7%d9%84%d9%82%d8%b1%d8%b4/">معلومات عن سمك القرش</a>
+
+		<div class="post-meta">
+			<span class="date meta-item tie-icon">22 فبراير، 2023</span>		</div>
+	</div>
+</li>
+
+<li class="widget-single-post-item widget-post-list tie-standard">
+
+			<div class="post-widget-thumbnail">
+
+			
+			<a aria-label="معلومات عن مجدي يعقوب" href="https://almalomat.com/362552/%d9%85%d8%b9%d9%84%d9%88%d9%85%d8%a7%d8%aa-%d8%b9%d9%86-%d9%85%d8%ac%d8%af%d9%8a-%d9%8a%d8%b9%d9%82%d9%88%d8%a8/" class="post-thumb"><img width="390" height="220" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20390%20220'%3E%3C/svg%3E" class="attachment-jannah-image-large size-jannah-image-large wp-post-image" alt="معلومات عن مجدي يعقوب" decoding="async" loading="lazy" data-lazy-srcset="//almalomat.com/wp-content/uploads/2023/02/معلومات-عن-مجدي-يعقوب3-390x220.jpg 390w, //almalomat.com/wp-content/uploads/2023/02/معلومات-عن-مجدي-يعقوب3-630x354.jpg 630w, //almalomat.com/wp-content/uploads/2023/02/معلومات-عن-مجدي-يعقوب3.jpg 640w" data-lazy-sizes="(max-width: 390px) 100vw, 390px" data-lazy-src="//almalomat.com/wp-content/uploads/2023/02/معلومات-عن-مجدي-يعقوب3-390x220.jpg" /><noscript><img width="390" height="220" src="//almalomat.com/wp-content/uploads/2023/02/معلومات-عن-مجدي-يعقوب3-390x220.jpg" class="attachment-jannah-image-large size-jannah-image-large wp-post-image" alt="معلومات عن مجدي يعقوب" decoding="async" loading="lazy" srcset="//almalomat.com/wp-content/uploads/2023/02/معلومات-عن-مجدي-يعقوب3-390x220.jpg 390w, //almalomat.com/wp-content/uploads/2023/02/معلومات-عن-مجدي-يعقوب3-630x354.jpg 630w, //almalomat.com/wp-content/uploads/2023/02/معلومات-عن-مجدي-يعقوب3.jpg 640w" sizes="(max-width: 390px) 100vw, 390px" /></noscript></a>		</div><!-- post-alignleft /-->
+	
+	<div class="post-widget-body ">
+		<a class="post-title the-subtitle" href="https://almalomat.com/362552/%d9%85%d8%b9%d9%84%d9%88%d9%85%d8%a7%d8%aa-%d8%b9%d9%86-%d9%85%d8%ac%d8%af%d9%8a-%d9%8a%d8%b9%d9%82%d9%88%d8%a8/">معلومات عن مجدي يعقوب</a>
+
+		<div class="post-meta">
+			<span class="date meta-item tie-icon">19 فبراير، 2023</span>		</div>
+	</div>
+</li>
+
+<li class="widget-single-post-item widget-post-list tie-standard">
+
+			<div class="post-widget-thumbnail">
+
+			
+			<a aria-label="معلومات عن الديناصورات" href="https://almalomat.com/362545/%d9%85%d8%b9%d9%84%d9%88%d9%85%d8%a7%d8%aa-%d8%b9%d9%86-%d8%a7%d9%84%d8%af%d9%8a%d9%86%d8%a7%d8%b5%d9%88%d8%b1%d8%a7%d8%aa/" class="post-thumb"><img width="390" height="220" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20390%20220'%3E%3C/svg%3E" class="attachment-jannah-image-large size-jannah-image-large wp-post-image" alt="معلومات عن الديناصورات" decoding="async" loading="lazy" data-lazy-src="//almalomat.com/wp-content/uploads/2023/02/معلومات-عن-الديناصورات-390x220.jpg" /><noscript><img width="390" height="220" src="//almalomat.com/wp-content/uploads/2023/02/معلومات-عن-الديناصورات-390x220.jpg" class="attachment-jannah-image-large size-jannah-image-large wp-post-image" alt="معلومات عن الديناصورات" decoding="async" loading="lazy" /></noscript></a>		</div><!-- post-alignleft /-->
+	
+	<div class="post-widget-body ">
+		<a class="post-title the-subtitle" href="https://almalomat.com/362545/%d9%85%d8%b9%d9%84%d9%88%d9%85%d8%a7%d8%aa-%d8%b9%d9%86-%d8%a7%d9%84%d8%af%d9%8a%d9%86%d8%a7%d8%b5%d9%88%d8%b1%d8%a7%d8%aa/">معلومات عن الديناصورات</a>
+
+		<div class="post-meta">
+			<span class="date meta-item tie-icon">19 فبراير، 2023</span>		</div>
+	</div>
+</li>
+
+<li class="widget-single-post-item widget-post-list tie-standard">
+
+			<div class="post-widget-thumbnail">
+
+			
+			<a aria-label="معلومات عن مؤتمر المناخ" href="https://almalomat.com/362540/%d9%85%d8%b9%d9%84%d9%88%d9%85%d8%a7%d8%aa-%d8%b9%d9%86-%d9%85%d8%a4%d8%aa%d9%85%d8%b1-%d8%a7%d9%84%d9%85%d9%86%d8%a7%d8%ae/" class="post-thumb"><img width="390" height="220" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20390%20220'%3E%3C/svg%3E" class="attachment-jannah-image-large size-jannah-image-large wp-post-image" alt="معلومات عن مؤتمر المناخ" decoding="async" loading="lazy" data-lazy-srcset="//almalomat.com/wp-content/uploads/2023/02/معلومات-عن-مؤتمر-المناخ-390x220.jpg 390w, //almalomat.com/wp-content/uploads/2023/02/معلومات-عن-مؤتمر-المناخ-630x354.jpg 630w, //almalomat.com/wp-content/uploads/2023/02/معلومات-عن-مؤتمر-المناخ.jpg 640w" data-lazy-sizes="(max-width: 390px) 100vw, 390px" data-lazy-src="//almalomat.com/wp-content/uploads/2023/02/معلومات-عن-مؤتمر-المناخ-390x220.jpg" /><noscript><img width="390" height="220" src="//almalomat.com/wp-content/uploads/2023/02/معلومات-عن-مؤتمر-المناخ-390x220.jpg" class="attachment-jannah-image-large size-jannah-image-large wp-post-image" alt="معلومات عن مؤتمر المناخ" decoding="async" loading="lazy" srcset="//almalomat.com/wp-content/uploads/2023/02/معلومات-عن-مؤتمر-المناخ-390x220.jpg 390w, //almalomat.com/wp-content/uploads/2023/02/معلومات-عن-مؤتمر-المناخ-630x354.jpg 630w, //almalomat.com/wp-content/uploads/2023/02/معلومات-عن-مؤتمر-المناخ.jpg 640w" sizes="(max-width: 390px) 100vw, 390px" /></noscript></a>		</div><!-- post-alignleft /-->
+	
+	<div class="post-widget-body ">
+		<a class="post-title the-subtitle" href="https://almalomat.com/362540/%d9%85%d8%b9%d9%84%d9%88%d9%85%d8%a7%d8%aa-%d8%b9%d9%86-%d9%85%d8%a4%d8%aa%d9%85%d8%b1-%d8%a7%d9%84%d9%85%d9%86%d8%a7%d8%ae/">معلومات عن مؤتمر المناخ</a>
+
+		<div class="post-meta">
+			<span class="date meta-item tie-icon">19 فبراير، 2023</span>		</div>
+	</div>
+</li>
+
+<li class="widget-single-post-item widget-post-list tie-standard">
+
+			<div class="post-widget-thumbnail">
+
+			
+			<a aria-label="معلومات عن الماء" href="https://almalomat.com/362511/%d9%85%d8%b9%d9%84%d9%88%d9%85%d8%a7%d8%aa-%d8%b9%d9%86-%d8%a7%d9%84%d9%85%d8%a7%d8%a1/" class="post-thumb"><img width="390" height="220" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20390%20220'%3E%3C/svg%3E" class="attachment-jannah-image-large size-jannah-image-large wp-post-image" alt="معلومات عن الماء" decoding="async" loading="lazy" data-lazy-src="//almalomat.com/wp-content/uploads/2023/02/معلومات-عن-الماء-390x220.jpg" /><noscript><img width="390" height="220" src="//almalomat.com/wp-content/uploads/2023/02/معلومات-عن-الماء-390x220.jpg" class="attachment-jannah-image-large size-jannah-image-large wp-post-image" alt="معلومات عن الماء" decoding="async" loading="lazy" /></noscript></a>		</div><!-- post-alignleft /-->
+	
+	<div class="post-widget-body ">
+		<a class="post-title the-subtitle" href="https://almalomat.com/362511/%d9%85%d8%b9%d9%84%d9%88%d9%85%d8%a7%d8%aa-%d8%b9%d9%86-%d8%a7%d9%84%d9%85%d8%a7%d8%a1/">معلومات عن الماء</a>
+
+		<div class="post-meta">
+			<span class="date meta-item tie-icon">17 فبراير، 2023</span>		</div>
+	</div>
+</li>
+
+<li class="widget-single-post-item widget-post-list tie-standard">
+
+			<div class="post-widget-thumbnail">
+
+			
+			<a aria-label="ماهو أسرع حيوان بحري" href="https://almalomat.com/361926/%d9%85%d8%a7%d9%87%d9%88-%d8%a3%d8%b3%d8%b1%d8%b9-%d8%ad%d9%8a%d9%88%d8%a7%d9%86-%d8%a8%d8%ad%d8%b1%d9%8a/" class="post-thumb"><img width="390" height="220" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20390%20220'%3E%3C/svg%3E" class="attachment-jannah-image-large size-jannah-image-large wp-post-image" alt="ماهو أسرع حيوان بحري" decoding="async" loading="lazy" data-lazy-src="//almalomat.com/wp-content/uploads/2022/08/ماهو-أسرع-حيوان-بحري-390x220.jpg" /><noscript><img width="390" height="220" src="//almalomat.com/wp-content/uploads/2022/08/ماهو-أسرع-حيوان-بحري-390x220.jpg" class="attachment-jannah-image-large size-jannah-image-large wp-post-image" alt="ماهو أسرع حيوان بحري" decoding="async" loading="lazy" /></noscript></a>		</div><!-- post-alignleft /-->
+	
+	<div class="post-widget-body ">
+		<a class="post-title the-subtitle" href="https://almalomat.com/361926/%d9%85%d8%a7%d9%87%d9%88-%d8%a3%d8%b3%d8%b1%d8%b9-%d8%ad%d9%8a%d9%88%d8%a7%d9%86-%d8%a8%d8%ad%d8%b1%d9%8a/">ماهو أسرع حيوان بحري</a>
+
+		<div class="post-meta">
+			<span class="date meta-item tie-icon">2 سبتمبر، 2022</span>		</div>
+	</div>
+</li>
+
+<li class="widget-single-post-item widget-post-list tie-standard">
+
+			<div class="post-widget-thumbnail">
+
+			
+			<a aria-label="أنواع النباتات الطبيعية .. أشهر الأنواع في السعودية والإمارات" href="https://almalomat.com/361833/%d8%a3%d9%86%d9%88%d8%a7%d8%b9-%d8%a7%d9%84%d9%86%d8%a8%d8%a7%d8%aa%d8%a7%d8%aa-%d8%a7%d9%84%d8%b7%d8%a8%d9%8a%d8%b9%d9%8a%d8%a9-%d8%a3%d8%b4%d9%87%d8%b1-%d8%a7%d9%84%d8%a3%d9%86%d9%88%d8%a7%d8%b9/" class="post-thumb"><img width="390" height="220" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20390%20220'%3E%3C/svg%3E" class="attachment-jannah-image-large size-jannah-image-large wp-post-image" alt="أنواع النباتات الطبيعية" decoding="async" loading="lazy" data-lazy-src="//almalomat.com/wp-content/uploads/2022/08/أنواع-النباتات-الطبيعية-390x220.webp" /><noscript><img width="390" height="220" src="//almalomat.com/wp-content/uploads/2022/08/أنواع-النباتات-الطبيعية-390x220.webp" class="attachment-jannah-image-large size-jannah-image-large wp-post-image" alt="أنواع النباتات الطبيعية" decoding="async" loading="lazy" /></noscript></a>		</div><!-- post-alignleft /-->
+	
+	<div class="post-widget-body ">
+		<a class="post-title the-subtitle" href="https://almalomat.com/361833/%d8%a3%d9%86%d9%88%d8%a7%d8%b9-%d8%a7%d9%84%d9%86%d8%a8%d8%a7%d8%aa%d8%a7%d8%aa-%d8%a7%d9%84%d8%b7%d8%a8%d9%8a%d8%b9%d9%8a%d8%a9-%d8%a3%d8%b4%d9%87%d8%b1-%d8%a7%d9%84%d8%a3%d9%86%d9%88%d8%a7%d8%b9/">أنواع النباتات الطبيعية .. أشهر الأنواع في السعودية والإمارات</a>
+
+		<div class="post-meta">
+			<span class="date meta-item tie-icon">2 سبتمبر، 2022</span>		</div>
+	</div>
+</li>
+
+<li class="widget-single-post-item widget-post-list tie-standard">
+
+			<div class="post-widget-thumbnail">
+
+			
+			<a aria-label="أيام غرس النخيل ..التوقيت المثالي لزراعة أشجار النخيل" href="https://almalomat.com/361928/%d8%a3%d9%8a%d8%a7%d9%85-%d8%ba%d8%b1%d8%b3-%d8%a7%d9%84%d9%86%d8%ae%d9%8a%d9%84-%d8%a7%d9%84%d8%aa%d9%88%d9%82%d9%8a%d8%aa-%d8%a7%d9%84%d9%85%d8%ab%d8%a7%d9%84%d9%8a-%d9%84%d8%b2%d8%b1%d8%a7%d8%b9/" class="post-thumb"><img width="390" height="220" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20390%20220'%3E%3C/svg%3E" class="attachment-jannah-image-large size-jannah-image-large wp-post-image" alt="أيام غرس النخيل" decoding="async" loading="lazy" data-lazy-srcset="//almalomat.com/wp-content/uploads/2022/09/أيام-غرس-النخيل-390x220.jpg 390w, //almalomat.com/wp-content/uploads/2022/09/أيام-غرس-النخيل-630x354.jpg 630w, //almalomat.com/wp-content/uploads/2022/09/أيام-غرس-النخيل-768x432.jpg 768w, //almalomat.com/wp-content/uploads/2022/09/أيام-غرس-النخيل.jpg 800w" data-lazy-sizes="(max-width: 390px) 100vw, 390px" data-lazy-src="//almalomat.com/wp-content/uploads/2022/09/أيام-غرس-النخيل-390x220.jpg" /><noscript><img width="390" height="220" src="//almalomat.com/wp-content/uploads/2022/09/أيام-غرس-النخيل-390x220.jpg" class="attachment-jannah-image-large size-jannah-image-large wp-post-image" alt="أيام غرس النخيل" decoding="async" loading="lazy" srcset="//almalomat.com/wp-content/uploads/2022/09/أيام-غرس-النخيل-390x220.jpg 390w, //almalomat.com/wp-content/uploads/2022/09/أيام-غرس-النخيل-630x354.jpg 630w, //almalomat.com/wp-content/uploads/2022/09/أيام-غرس-النخيل-768x432.jpg 768w, //almalomat.com/wp-content/uploads/2022/09/أيام-غرس-النخيل.jpg 800w" sizes="(max-width: 390px) 100vw, 390px" /></noscript></a>		</div><!-- post-alignleft /-->
+	
+	<div class="post-widget-body ">
+		<a class="post-title the-subtitle" href="https://almalomat.com/361928/%d8%a3%d9%8a%d8%a7%d9%85-%d8%ba%d8%b1%d8%b3-%d8%a7%d9%84%d9%86%d8%ae%d9%8a%d9%84-%d8%a7%d9%84%d8%aa%d9%88%d9%82%d9%8a%d8%aa-%d8%a7%d9%84%d9%85%d8%ab%d8%a7%d9%84%d9%8a-%d9%84%d8%b2%d8%b1%d8%a7%d8%b9/">أيام غرس النخيل ..التوقيت المثالي لزراعة أشجار النخيل</a>
+
+		<div class="post-meta">
+			<span class="date meta-item tie-icon">2 سبتمبر، 2022</span>		</div>
+	</div>
+</li>
+</ul></div></div><div class="clearfix"></div></div><!-- .widget /--><div id="posts-list-widget-2" class="container-wrapper widget posts-list"><div class="widget-title the-global-title"><div class="the-subtitle">أكثر المقالات مشاهدة<span class="widget-title-icon tie-icon"></span></div></div><div class="widget-posts-list-wrapper"><div class="widget-posts-list-container posts-list-half-posts" ><ul class="posts-list-items widget-posts-wrapper">
+<li class="widget-single-post-item widget-post-list tie-standard">
+
+			<div class="post-widget-thumbnail">
+
+			
+			<a aria-label="اضرار وفوائد اورلي للتخسيس .. هل هو الخيار الأفضل لفقدان الوزن؟" href="https://almalomat.com/49137/%d8%a7%d8%b6%d8%b1%d8%a7%d8%b1-%d9%88%d9%81%d9%88%d8%a7%d8%a6%d8%af-%d8%a7%d9%88%d8%b1%d9%84%d9%8a-%d9%84%d9%84%d8%aa%d8%ae%d8%b3%d9%8a%d8%b3/" class="post-thumb"><img width="390" height="200" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20390%20200'%3E%3C/svg%3E" class="attachment-jannah-image-large size-jannah-image-large wp-post-image" alt="اضرار وفوائد اورلي للتخسيس" decoding="async" loading="lazy" data-lazy-src="//almalomat.com/wp-content/uploads/2018/11/Orly-Capsules-390x200.jpg" /><noscript><img width="390" height="200" src="//almalomat.com/wp-content/uploads/2018/11/Orly-Capsules-390x200.jpg" class="attachment-jannah-image-large size-jannah-image-large wp-post-image" alt="اضرار وفوائد اورلي للتخسيس" decoding="async" loading="lazy" /></noscript></a>		</div><!-- post-alignleft /-->
+	
+	<div class="post-widget-body ">
+		<a class="post-title the-subtitle" href="https://almalomat.com/49137/%d8%a7%d8%b6%d8%b1%d8%a7%d8%b1-%d9%88%d9%81%d9%88%d8%a7%d8%a6%d8%af-%d8%a7%d9%88%d8%b1%d9%84%d9%8a-%d9%84%d9%84%d8%aa%d8%ae%d8%b3%d9%8a%d8%b3/">اضرار وفوائد اورلي للتخسيس .. هل هو الخيار الأفضل لفقدان الوزن؟</a>
+
+		<div class="post-meta">
+			<span class="date meta-item tie-icon">12 نوفمبر، 2018</span>		</div>
+	</div>
+</li>
+
+<li class="widget-single-post-item widget-post-list tie-standard">
+
+			<div class="post-widget-thumbnail">
+
+			
+			<a aria-label="اضرار وفوائد شيتوكال للتخسيس .. كيف أستفيد منه؟ وهل له آثار جانبية؟" href="https://almalomat.com/49075/%d8%a7%d8%b6%d8%b1%d8%a7%d8%b1-%d9%88%d9%81%d9%88%d8%a7%d8%a6%d8%af-%d8%b4%d9%8a%d8%aa%d9%88%d9%83%d8%a7%d9%84-%d9%84%d9%84%d8%aa%d8%ae%d8%b3%d9%8a%d8%b3/" class="post-thumb"><img width="390" height="220" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20390%20220'%3E%3C/svg%3E" class="attachment-jannah-image-large size-jannah-image-large wp-post-image" alt="اضرار وفوائد شيتوكال للتخسيس" decoding="async" loading="lazy" data-lazy-src="//almalomat.com/wp-content/uploads/2018/11/BI2Y_W7CQAEwlqR-390x220.jpg" /><noscript><img width="390" height="220" src="//almalomat.com/wp-content/uploads/2018/11/BI2Y_W7CQAEwlqR-390x220.jpg" class="attachment-jannah-image-large size-jannah-image-large wp-post-image" alt="اضرار وفوائد شيتوكال للتخسيس" decoding="async" loading="lazy" /></noscript></a>		</div><!-- post-alignleft /-->
+	
+	<div class="post-widget-body ">
+		<a class="post-title the-subtitle" href="https://almalomat.com/49075/%d8%a7%d8%b6%d8%b1%d8%a7%d8%b1-%d9%88%d9%81%d9%88%d8%a7%d8%a6%d8%af-%d8%b4%d9%8a%d8%aa%d9%88%d9%83%d8%a7%d9%84-%d9%84%d9%84%d8%aa%d8%ae%d8%b3%d9%8a%d8%b3/">اضرار وفوائد شيتوكال للتخسيس .. كيف أستفيد منه؟ وهل له آثار جانبية؟</a>
+
+		<div class="post-meta">
+			<span class="date meta-item tie-icon">12 نوفمبر، 2018</span>		</div>
+	</div>
+</li>
+
+<li class="widget-single-post-item widget-post-list">
+
+			<div class="post-widget-thumbnail">
+
+			
+			<a aria-label="الأكلات الإيطالية المشهورة &#8230; أشهر و أفضل 8 أطباق في إيطاليا" href="https://almalomat.com/10457/%d8%a7%d9%84%d8%a3%d9%83%d9%84%d8%a7%d8%aa-%d8%a7%d9%84%d8%a5%d9%8a%d8%b7%d8%a7%d9%84%d9%8a%d8%a9-%d8%a7%d9%84%d9%85%d8%b4%d9%87%d9%88%d8%b1%d8%a9/" class="post-thumb"><img width="390" height="150" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20390%20150'%3E%3C/svg%3E" class="attachment-jannah-image-large size-jannah-image-large wp-post-image" alt="الأكلات الإيطالية المشهورة" decoding="async" loading="lazy" data-lazy-srcset="//almalomat.com/wp-content/uploads/2017/08/1426576690-7820792-1100x423.jpeg 768w, //almalomat.com/wp-content/uploads/2017/08/1426576690-7820792-1100x423-630x242.jpeg 630w, //almalomat.com/wp-content/uploads/2017/08/1426576690-7820792-1100x423-900x346.jpeg 900w" data-lazy-sizes="(max-width: 390px) 100vw, 390px" data-lazy-src="//almalomat.com/wp-content/uploads/2017/08/1426576690-7820792-1100x423.jpeg" /><noscript><img width="390" height="150" src="//almalomat.com/wp-content/uploads/2017/08/1426576690-7820792-1100x423.jpeg" class="attachment-jannah-image-large size-jannah-image-large wp-post-image" alt="الأكلات الإيطالية المشهورة" decoding="async" loading="lazy" srcset="//almalomat.com/wp-content/uploads/2017/08/1426576690-7820792-1100x423.jpeg 768w, //almalomat.com/wp-content/uploads/2017/08/1426576690-7820792-1100x423-630x242.jpeg 630w, //almalomat.com/wp-content/uploads/2017/08/1426576690-7820792-1100x423-900x346.jpeg 900w" sizes="(max-width: 390px) 100vw, 390px" /></noscript></a>		</div><!-- post-alignleft /-->
+	
+	<div class="post-widget-body ">
+		<a class="post-title the-subtitle" href="https://almalomat.com/10457/%d8%a7%d9%84%d8%a3%d9%83%d9%84%d8%a7%d8%aa-%d8%a7%d9%84%d8%a5%d9%8a%d8%b7%d8%a7%d9%84%d9%8a%d8%a9-%d8%a7%d9%84%d9%85%d8%b4%d9%87%d9%88%d8%b1%d8%a9/">الأكلات الإيطالية المشهورة &#8230; أشهر و أفضل 8 أطباق في إيطاليا</a>
+
+		<div class="post-meta">
+			<span class="date meta-item tie-icon">2 أغسطس، 2017</span>		</div>
+	</div>
+</li>
+
+<li class="widget-single-post-item widget-post-list">
+
+			<div class="post-widget-thumbnail">
+
+			
+			<a aria-label="اسواق اسطنبول للتسوق للملابس" href="https://almalomat.com/3200/%d8%a7%d8%b3%d9%88%d8%a7%d9%82-%d8%a7%d8%b3%d8%b7%d9%86%d8%a8%d9%88%d9%84-%d9%84%d9%84%d8%aa%d8%b3%d9%88%d9%82-%d9%84%d9%84%d9%85%d9%84%d8%a7%d8%a8%d8%b3/" class="post-thumb"><img width="330" height="220" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20330%20220'%3E%3C/svg%3E" class="attachment-jannah-image-large size-jannah-image-large wp-post-image" alt="اسواق اسطنبول للتسوق للملابس 2" decoding="async" loading="lazy" data-lazy-srcset="//almalomat.com/wp-content/uploads/2017/01/آيا-صوفيا-منطقة-السلطان-أحمد.jpg 768w, //almalomat.com/wp-content/uploads/2017/01/آيا-صوفيا-منطقة-السلطان-أحمد-567x378.jpg 567w, //almalomat.com/wp-content/uploads/2017/01/آيا-صوفيا-منطقة-السلطان-أحمد-675x450.jpg 675w, //almalomat.com/wp-content/uploads/2017/01/آيا-صوفيا-منطقة-السلطان-أحمد-500x333.jpg 500w" data-lazy-sizes="(max-width: 330px) 100vw, 330px" data-lazy-src="//almalomat.com/wp-content/uploads/2017/01/آيا-صوفيا-منطقة-السلطان-أحمد.jpg" /><noscript><img width="330" height="220" src="//almalomat.com/wp-content/uploads/2017/01/آيا-صوفيا-منطقة-السلطان-أحمد.jpg" class="attachment-jannah-image-large size-jannah-image-large wp-post-image" alt="اسواق اسطنبول للتسوق للملابس 2" decoding="async" loading="lazy" srcset="//almalomat.com/wp-content/uploads/2017/01/آيا-صوفيا-منطقة-السلطان-أحمد.jpg 768w, //almalomat.com/wp-content/uploads/2017/01/آيا-صوفيا-منطقة-السلطان-أحمد-567x378.jpg 567w, //almalomat.com/wp-content/uploads/2017/01/آيا-صوفيا-منطقة-السلطان-أحمد-675x450.jpg 675w, //almalomat.com/wp-content/uploads/2017/01/آيا-صوفيا-منطقة-السلطان-أحمد-500x333.jpg 500w" sizes="(max-width: 330px) 100vw, 330px" /></noscript></a>		</div><!-- post-alignleft /-->
+	
+	<div class="post-widget-body ">
+		<a class="post-title the-subtitle" href="https://almalomat.com/3200/%d8%a7%d8%b3%d9%88%d8%a7%d9%82-%d8%a7%d8%b3%d8%b7%d9%86%d8%a8%d9%88%d9%84-%d9%84%d9%84%d8%aa%d8%b3%d9%88%d9%82-%d9%84%d9%84%d9%85%d9%84%d8%a7%d8%a8%d8%b3/">اسواق اسطنبول للتسوق للملابس</a>
+
+		<div class="post-meta">
+			<span class="date meta-item tie-icon">19 يناير، 2017</span>		</div>
+	</div>
+</li>
+
+<li class="widget-single-post-item widget-post-list">
+
+			<div class="post-widget-thumbnail">
+
+			
+			<a aria-label="الأسواق الرخيصة في اسطنبول .. أشهر 5 أسواق تبيع البضائع بأسعار رخيصة" href="https://almalomat.com/12610/%d8%a7%d9%84%d8%a3%d8%b3%d9%88%d8%a7%d9%82-%d8%a7%d9%84%d8%b1%d8%ae%d9%8a%d8%b5%d8%a9-%d9%81%d9%8a-%d8%a7%d8%b3%d8%b7%d9%86%d8%a8%d9%88%d9%84/" class="post-thumb"><img width="390" height="220" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20390%20220'%3E%3C/svg%3E" class="attachment-jannah-image-large size-jannah-image-large wp-post-image" alt="The Grand Bazaar" decoding="async" loading="lazy" data-lazy-srcset="//almalomat.com/wp-content/uploads/2017/09/img-20170812-140514-largejpg.jpg 768w, //almalomat.com/wp-content/uploads/2017/09/img-20170812-140514-largejpg-630x354.jpg 630w, //almalomat.com/wp-content/uploads/2017/09/img-20170812-140514-largejpg-900x506.jpg 900w" data-lazy-sizes="(max-width: 390px) 100vw, 390px" data-lazy-src="//almalomat.com/wp-content/uploads/2017/09/img-20170812-140514-largejpg.jpg" /><noscript><img width="390" height="220" src="//almalomat.com/wp-content/uploads/2017/09/img-20170812-140514-largejpg.jpg" class="attachment-jannah-image-large size-jannah-image-large wp-post-image" alt="The Grand Bazaar" decoding="async" loading="lazy" srcset="//almalomat.com/wp-content/uploads/2017/09/img-20170812-140514-largejpg.jpg 768w, //almalomat.com/wp-content/uploads/2017/09/img-20170812-140514-largejpg-630x354.jpg 630w, //almalomat.com/wp-content/uploads/2017/09/img-20170812-140514-largejpg-900x506.jpg 900w" sizes="(max-width: 390px) 100vw, 390px" /></noscript></a>		</div><!-- post-alignleft /-->
+	
+	<div class="post-widget-body ">
+		<a class="post-title the-subtitle" href="https://almalomat.com/12610/%d8%a7%d9%84%d8%a3%d8%b3%d9%88%d8%a7%d9%82-%d8%a7%d9%84%d8%b1%d8%ae%d9%8a%d8%b5%d8%a9-%d9%81%d9%8a-%d8%a7%d8%b3%d8%b7%d9%86%d8%a8%d9%88%d9%84/">الأسواق الرخيصة في اسطنبول .. أشهر 5 أسواق تبيع البضائع بأسعار رخيصة</a>
+
+		<div class="post-meta">
+			<span class="date meta-item tie-icon">14 سبتمبر، 2017</span>		</div>
+	</div>
+</li>
+
+<li class="widget-single-post-item widget-post-list">
+
+			<div class="post-widget-thumbnail">
+
+			
+			<a aria-label="اماكن التسوق في بورسعيد..ودليلك الشامل للوصول لأرخص الأسواق فى المدينة الباسلة.." href="https://almalomat.com/18511/%d8%a7%d9%85%d8%a7%d9%83%d9%86-%d8%a7%d9%84%d8%aa%d8%b3%d9%88%d9%82-%d9%81%d9%8a-%d8%a8%d9%88%d8%b1%d8%b3%d8%b9%d9%8a%d8%af/" class="post-thumb"><img width="390" height="220" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20390%20220'%3E%3C/svg%3E" class="attachment-jannah-image-large size-jannah-image-large wp-post-image" alt="اماكن التسوق في بورسعيد" decoding="async" loading="lazy" data-lazy-srcset="//almalomat.com/wp-content/uploads/2018/01/بارز-2.jpg 768w, //almalomat.com/wp-content/uploads/2018/01/بارز-2-630x354.jpg 630w, //almalomat.com/wp-content/uploads/2018/01/بارز-2-900x506.jpg 900w" data-lazy-sizes="(max-width: 390px) 100vw, 390px" data-lazy-src="//almalomat.com/wp-content/uploads/2018/01/بارز-2.jpg" /><noscript><img width="390" height="220" src="//almalomat.com/wp-content/uploads/2018/01/بارز-2.jpg" class="attachment-jannah-image-large size-jannah-image-large wp-post-image" alt="اماكن التسوق في بورسعيد" decoding="async" loading="lazy" srcset="//almalomat.com/wp-content/uploads/2018/01/بارز-2.jpg 768w, //almalomat.com/wp-content/uploads/2018/01/بارز-2-630x354.jpg 630w, //almalomat.com/wp-content/uploads/2018/01/بارز-2-900x506.jpg 900w" sizes="(max-width: 390px) 100vw, 390px" /></noscript></a>		</div><!-- post-alignleft /-->
+	
+	<div class="post-widget-body ">
+		<a class="post-title the-subtitle" href="https://almalomat.com/18511/%d8%a7%d9%85%d8%a7%d9%83%d9%86-%d8%a7%d9%84%d8%aa%d8%b3%d9%88%d9%82-%d9%81%d9%8a-%d8%a8%d9%88%d8%b1%d8%b3%d8%b9%d9%8a%d8%af/">اماكن التسوق في بورسعيد..ودليلك الشامل للوصول لأرخص الأسواق فى المدينة الباسلة..</a>
+
+		<div class="post-meta">
+			<span class="date meta-item tie-icon">21 يناير، 2018</span>		</div>
+	</div>
+</li>
+
+<li class="widget-single-post-item widget-post-list is-trending tie-standard">
+
+			<div class="post-widget-thumbnail">
+
+			
+			<a aria-label="افضل برامج المونتاج الاحترافية للكمبيوتر" href="https://almalomat.com/53178/%d8%a7%d9%81%d8%b6%d9%84-%d8%a8%d8%b1%d8%a7%d9%85%d8%ac-%d8%a7%d9%84%d9%85%d9%88%d9%86%d8%aa%d8%a7%d8%ac-%d8%a7%d9%84%d8%a7%d8%ad%d8%aa%d8%b1%d8%a7%d9%81%d9%8a%d8%a9/" class="post-thumb"><img width="390" height="220" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20390%20220'%3E%3C/svg%3E" class="attachment-jannah-image-large size-jannah-image-large wp-post-image" alt="افضل برامج المونتاج الاحترافية للكمبيوتر" decoding="async" loading="lazy" data-lazy-src="//almalomat.com/wp-content/uploads/2018/11/2018-636601204547066738-706-390x220.jpg" /><noscript><img width="390" height="220" src="//almalomat.com/wp-content/uploads/2018/11/2018-636601204547066738-706-390x220.jpg" class="attachment-jannah-image-large size-jannah-image-large wp-post-image" alt="افضل برامج المونتاج الاحترافية للكمبيوتر" decoding="async" loading="lazy" /></noscript></a>		</div><!-- post-alignleft /-->
+	
+	<div class="post-widget-body ">
+		<a class="post-title the-subtitle" href="https://almalomat.com/53178/%d8%a7%d9%81%d8%b6%d9%84-%d8%a8%d8%b1%d8%a7%d9%85%d8%ac-%d8%a7%d9%84%d9%85%d9%88%d9%86%d8%aa%d8%a7%d8%ac-%d8%a7%d9%84%d8%a7%d8%ad%d8%aa%d8%b1%d8%a7%d9%81%d9%8a%d8%a9/">افضل برامج المونتاج الاحترافية للكمبيوتر</a>
+
+		<div class="post-meta">
+			<span class="date meta-item tie-icon">1 ديسمبر، 2018</span>		</div>
+	</div>
+</li>
+
+<li class="widget-single-post-item widget-post-list">
+
+			<div class="post-widget-thumbnail">
+
+			
+			<a aria-label="افضل منتزهات الرياض للعوائل .. دليل مصور شامل أجمل 10 حدائق في الرياض بأكملها" href="https://almalomat.com/12259/%d8%a7%d9%81%d8%b6%d9%84-%d9%85%d9%86%d8%aa%d8%b2%d9%87%d8%a7%d8%aa-%d8%a7%d9%84%d8%b1%d9%8a%d8%a7%d8%b6-%d9%84%d9%84%d8%b9%d9%88%d8%a7%d8%a6%d9%84/" class="post-thumb"><img width="341" height="220" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20341%20220'%3E%3C/svg%3E" class="attachment-jannah-image-large size-jannah-image-large wp-post-image" alt="افضل منتزهات الرياض للعوائل" decoding="async" loading="lazy" data-lazy-srcset="//almalomat.com/wp-content/uploads/2017/08/67890.jpg 625w, //almalomat.com/wp-content/uploads/2017/08/67890-586x378.jpg 586w" data-lazy-sizes="(max-width: 341px) 100vw, 341px" data-lazy-src="//almalomat.com/wp-content/uploads/2017/08/67890.jpg" /><noscript><img width="341" height="220" src="//almalomat.com/wp-content/uploads/2017/08/67890.jpg" class="attachment-jannah-image-large size-jannah-image-large wp-post-image" alt="افضل منتزهات الرياض للعوائل" decoding="async" loading="lazy" srcset="//almalomat.com/wp-content/uploads/2017/08/67890.jpg 625w, //almalomat.com/wp-content/uploads/2017/08/67890-586x378.jpg 586w" sizes="(max-width: 341px) 100vw, 341px" /></noscript></a>		</div><!-- post-alignleft /-->
+	
+	<div class="post-widget-body ">
+		<a class="post-title the-subtitle" href="https://almalomat.com/12259/%d8%a7%d9%81%d8%b6%d9%84-%d9%85%d9%86%d8%aa%d8%b2%d9%87%d8%a7%d8%aa-%d8%a7%d9%84%d8%b1%d9%8a%d8%a7%d8%b6-%d9%84%d9%84%d8%b9%d9%88%d8%a7%d8%a6%d9%84/">افضل منتزهات الرياض للعوائل .. دليل مصور شامل أجمل 10 حدائق في الرياض بأكملها</a>
+
+		<div class="post-meta">
+			<span class="date meta-item tie-icon">30 أغسطس، 2017</span>		</div>
+	</div>
+</li>
+</ul></div></div><div class="clearfix"></div></div><!-- .widget /--><div id="wpsp_widget-2" class="container-wrapper widget widget_wpsp_widget"><div class="widget-title the-global-title"><div class="the-subtitle">أحدث المواضيع<span class="widget-title-icon tie-icon"></span></div></div><style>.wp-show-posts-columns#wpsp-251581 {margin-left: -2em; }.wp-show-posts-columns#wpsp-251581 .wp-show-posts-inner {margin: 0 0 2em 2em; }</style><section id="wpsp-251581" class=" wp-show-posts-columns wp-show-posts" style=""><article class=" wp-show-posts-single post-255150 post type-post status-publish format-standard has-post-thumbnail hentry category-29145 category-relations category-quran tag-29140 tag-29141 wpsp-col-6" itemtype="http://schema.org/CreativeWork" itemscope><div class="wp-show-posts-inner" style="">		<div class="wp-show-posts-image  wpsp-image-center ">
+			<a href="https://almalomat.com/255150/%d8%a2%d9%8a%d8%a7%d8%aa-%d9%82%d8%b1%d8%a2%d9%86%d9%8a%d8%a9-%d8%b9%d9%86-%d8%ac%d8%a8%d8%b1-%d8%a7%d9%84%d9%82%d9%84%d9%88%d8%a8/"  title="آيات قرآنية عن جبر القلوب">					<img width="130" height="75" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20130%2075'%3E%3C/svg%3E" alt="آيات قرآنية عن جبر القلوب" itemprop="image" class="center" data-lazy-src="//almalomat.com/wp-content/uploads/2020/10/oldage-130x75.jpg" /><noscript><img width="130" height="75" src="//almalomat.com/wp-content/uploads/2020/10/oldage-130x75.jpg" alt="آيات قرآنية عن جبر القلوب" itemprop="image" class="center" /></noscript>
+				</a>		</div>
+								<header class="wp-show-posts-entry-header">
+							<h5 class="wp-show-posts-entry-title" itemprop="headline"><a href="https://almalomat.com/255150/%d8%a2%d9%8a%d8%a7%d8%aa-%d9%82%d8%b1%d8%a2%d9%86%d9%8a%d8%a9-%d8%b9%d9%86-%d8%ac%d8%a8%d8%b1-%d8%a7%d9%84%d9%82%d9%84%d9%88%d8%a8/" rel="bookmark">آيات قرآنية عن جبر القلوب</a></h5>						</header><!-- .entry-header -->
+					</div><!-- wp-show-posts-inner --></article><article class=" wp-show-posts-single post-363375 post type-post status-publish format-standard has-post-thumbnail hentry category-poets category-biography tag-90230 tag-90231 wpsp-col-6" itemtype="http://schema.org/CreativeWork" itemscope><div class="wp-show-posts-inner" style="">		<div class="wp-show-posts-image  wpsp-image-center ">
+			<a href="https://almalomat.com/363375/%d8%a7%d9%84%d8%b4%d8%a7%d8%b9%d8%b1-%d9%86%d9%88%d8%a7%d9%81-%d8%a7%d9%84%d8%b4%d9%84%d9%87%d9%88%d8%a8/"  title="الشاعر نواف الشلهوب">					<img width="130" height="75" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20130%2075'%3E%3C/svg%3E" alt="الشاعر نواف الشلهوب" itemprop="image" class="center" data-lazy-src="//almalomat.com/wp-content/uploads/2023/06/الشاعر-نواف-الشلهوب-بصحبة-الامير-بدر-130x75.jpg" /><noscript><img width="130" height="75" src="//almalomat.com/wp-content/uploads/2023/06/الشاعر-نواف-الشلهوب-بصحبة-الامير-بدر-130x75.jpg" alt="الشاعر نواف الشلهوب" itemprop="image" class="center" /></noscript>
+				</a>		</div>
+								<header class="wp-show-posts-entry-header">
+							<h5 class="wp-show-posts-entry-title" itemprop="headline"><a href="https://almalomat.com/363375/%d8%a7%d9%84%d8%b4%d8%a7%d8%b9%d8%b1-%d9%86%d9%88%d8%a7%d9%81-%d8%a7%d9%84%d8%b4%d9%84%d9%87%d9%88%d8%a8/" rel="bookmark">الشاعر نواف الشلهوب</a></h5>						</header><!-- .entry-header -->
+					</div><!-- wp-show-posts-inner --></article><article class=" wp-show-posts-single post-363342 post type-post status-publish format-standard has-post-thumbnail hentry category-7395 tag-90209 tag-90207 tag-90210 tag-90212 tag-90211 tag-90208 wpsp-col-6" itemtype="http://schema.org/CreativeWork" itemscope><div class="wp-show-posts-inner" style="">		<div class="wp-show-posts-image  wpsp-image-center ">
+			<a href="https://almalomat.com/363342/%d9%85%d8%a7%d9%87%d9%8a-%d8%a3%d8%b9%d8%b1%d8%a7%d8%b6-%d8%b3%d8%b1%d8%b7%d8%a7%d9%86-%d8%a7%d9%84%d8%ab%d8%af%d9%8a/"  title="ماهي أعراض سرطان الثدي">					<img width="130" height="75" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20130%2075'%3E%3C/svg%3E" alt="ماهي أعراض سرطان الثدي" itemprop="image" class="center" data-lazy-src="//almalomat.com/wp-content/uploads/2023/04/ماهي-أعراض-سرطان-الثدي-130x75.jpg" /><noscript><img width="130" height="75" src="//almalomat.com/wp-content/uploads/2023/04/ماهي-أعراض-سرطان-الثدي-130x75.jpg" alt="ماهي أعراض سرطان الثدي" itemprop="image" class="center" /></noscript>
+				</a>		</div>
+								<header class="wp-show-posts-entry-header">
+							<h5 class="wp-show-posts-entry-title" itemprop="headline"><a href="https://almalomat.com/363342/%d9%85%d8%a7%d9%87%d9%8a-%d8%a3%d8%b9%d8%b1%d8%a7%d8%b6-%d8%b3%d8%b1%d8%b7%d8%a7%d9%86-%d8%a7%d9%84%d8%ab%d8%af%d9%8a/" rel="bookmark">ماهي أعراض سرطان الثدي</a></h5>						</header><!-- .entry-header -->
+					</div><!-- wp-show-posts-inner --></article><article class=" wp-show-posts-single post-363334 post type-post status-publish format-standard has-post-thumbnail hentry category-7617 tag-90199 tag-90201 tag-90198 tag-90196 tag-90197 tag-90200 wpsp-col-6" itemtype="http://schema.org/CreativeWork" itemscope><div class="wp-show-posts-inner" style="">		<div class="wp-show-posts-image  wpsp-image-center ">
+			<a href="https://almalomat.com/363334/%d9%85%d8%a7%d9%87%d9%8a-%d8%a3%d9%81%d8%b6%d9%84-%d9%88%d8%b3%d8%a7%d8%a6%d9%84-%d9%85%d9%86%d8%b9-%d8%a7%d9%84%d8%ad%d9%85%d9%84/"  title="ماهي أفضل وسائل منع الحمل">					<img width="130" height="75" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20130%2075'%3E%3C/svg%3E" alt="ماهي أفضل وسائل منع الحمل" itemprop="image" class="center" data-lazy-src="//almalomat.com/wp-content/uploads/2023/04/ماهي-أفضل-وسائل-منع-الحمل-130x75.jpg" /><noscript><img width="130" height="75" src="//almalomat.com/wp-content/uploads/2023/04/ماهي-أفضل-وسائل-منع-الحمل-130x75.jpg" alt="ماهي أفضل وسائل منع الحمل" itemprop="image" class="center" /></noscript>
+				</a>		</div>
+								<header class="wp-show-posts-entry-header">
+							<h5 class="wp-show-posts-entry-title" itemprop="headline"><a href="https://almalomat.com/363334/%d9%85%d8%a7%d9%87%d9%8a-%d8%a3%d9%81%d8%b6%d9%84-%d9%88%d8%b3%d8%a7%d8%a6%d9%84-%d9%85%d9%86%d8%b9-%d8%a7%d9%84%d8%ad%d9%85%d9%84/" rel="bookmark">ماهي أفضل وسائل منع الحمل</a></h5>						</header><!-- .entry-header -->
+					</div><!-- wp-show-posts-inner --></article><article class=" wp-show-posts-single post-363330 post type-post status-publish format-standard has-post-thumbnail hentry category-60979 category-vegetable tag-363 tag-90194 tag-90193 tag-90195 wpsp-col-6" itemtype="http://schema.org/CreativeWork" itemscope><div class="wp-show-posts-inner" style="">		<div class="wp-show-posts-image  wpsp-image-center ">
+			<a href="https://almalomat.com/363330/%d9%85%d8%a7%d9%87%d9%88-%d8%a7%d9%84%d9%82%d8%ab%d8%a7%d8%a1/"  title="ماهو القثاء">					<img width="130" height="75" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20130%2075'%3E%3C/svg%3E" alt="ماهو القثاء" itemprop="image" class="center" data-lazy-src="//almalomat.com/wp-content/uploads/2023/04/ماهو-القثاء-130x75.jpg" /><noscript><img width="130" height="75" src="//almalomat.com/wp-content/uploads/2023/04/ماهو-القثاء-130x75.jpg" alt="ماهو القثاء" itemprop="image" class="center" /></noscript>
+				</a>		</div>
+								<header class="wp-show-posts-entry-header">
+							<h5 class="wp-show-posts-entry-title" itemprop="headline"><a href="https://almalomat.com/363330/%d9%85%d8%a7%d9%87%d9%88-%d8%a7%d9%84%d9%82%d8%ab%d8%a7%d8%a1/" rel="bookmark">ماهو القثاء</a></h5>						</header><!-- .entry-header -->
+					</div><!-- wp-show-posts-inner --></article><article class=" wp-show-posts-single post-363322 post type-post status-publish format-standard has-post-thumbnail hentry category-ask-islam tag-29178 tag-90192 tag-90190 tag-14103 tag-8194 tag-90191 tag-10027 wpsp-col-6" itemtype="http://schema.org/CreativeWork" itemscope><div class="wp-show-posts-inner" style="">		<div class="wp-show-posts-image  wpsp-image-center ">
+			<a href="https://almalomat.com/363322/%d9%85%d9%86-%d9%87%d9%85-%d8%a7%d9%84%d8%a3%d8%b9%d8%b1%d8%a7%d9%81/"  title="من هم الأعراف">					<img width="130" height="75" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20130%2075'%3E%3C/svg%3E" alt="من هم الأعراف" itemprop="image" class="center" data-lazy-src="//almalomat.com/wp-content/uploads/2023/04/من-هم-الأعراف-130x75.jpg" /><noscript><img width="130" height="75" src="//almalomat.com/wp-content/uploads/2023/04/من-هم-الأعراف-130x75.jpg" alt="من هم الأعراف" itemprop="image" class="center" /></noscript>
+				</a>		</div>
+								<header class="wp-show-posts-entry-header">
+							<h5 class="wp-show-posts-entry-title" itemprop="headline"><a href="https://almalomat.com/363322/%d9%85%d9%86-%d9%87%d9%85-%d8%a7%d9%84%d8%a3%d8%b9%d8%b1%d8%a7%d9%81/" rel="bookmark">من هم الأعراف</a></h5>						</header><!-- .entry-header -->
+					</div><!-- wp-show-posts-inner --></article><article class=" wp-show-posts-single post-363318 post type-post status-publish format-standard has-post-thumbnail hentry category-60979 category-herbs tag-90189 tag-90183 tag-90187 tag-90186 tag-90188 wpsp-col-6" itemtype="http://schema.org/CreativeWork" itemscope><div class="wp-show-posts-inner" style="">		<div class="wp-show-posts-image  wpsp-image-center ">
+			<a href="https://almalomat.com/363318/%d9%85%d8%a7-%d9%87%d9%88-%d8%a7%d9%84%d8%b7%d8%b1%d8%ae%d9%88%d9%86/"  title="ما هو الطرخون">					<img width="130" height="75" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20130%2075'%3E%3C/svg%3E" alt="ما هو الطرخون" itemprop="image" class="center" data-lazy-src="//almalomat.com/wp-content/uploads/2023/04/ما-هو-الطرخون-130x75.jpg" /><noscript><img width="130" height="75" src="//almalomat.com/wp-content/uploads/2023/04/ما-هو-الطرخون-130x75.jpg" alt="ما هو الطرخون" itemprop="image" class="center" /></noscript>
+				</a>		</div>
+								<header class="wp-show-posts-entry-header">
+							<h5 class="wp-show-posts-entry-title" itemprop="headline"><a href="https://almalomat.com/363318/%d9%85%d8%a7-%d9%87%d9%88-%d8%a7%d9%84%d8%b7%d8%b1%d8%ae%d9%88%d9%86/" rel="bookmark">ما هو الطرخون</a></h5>						</header><!-- .entry-header -->
+					</div><!-- wp-show-posts-inner --></article><div class="wpsp-clear"></div></section><!-- .wp-show-posts --><div class="clearfix"></div></div><!-- .widget /-->		</div><!-- .theiaStickySidebar /-->
+	</aside><!-- .sidebar /-->
+	</div><!-- .main-content-row /--></div><!-- #content /-->
+<footer id="footer" class="site-footer dark-skin dark-widgetized-area">
+
+	
+			<div id="site-info" class="site-info site-info-layout-2">
+				<div class="container">
+					<div class="tie-row">
+						<div class="tie-col-md-12">
+
+							<div class="copyright-text copyright-text-first">جميع الحقوق محفوظة &copy; المعلومات 2023</div><div class="footer-menu"><ul id="menu-%d8%ad%d9%88%d9%84-%d8%a7%d9%84%d9%85%d9%88%d9%82%d8%b9" class="menu"><li id="menu-item-229775" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-229775"><a href="https://almalomat.com/%d8%b3%d9%8a%d8%a7%d8%b3%d8%a9-%d8%a7%d9%84%d8%ae%d8%b5%d9%88%d8%b5%d9%8a%d8%a9/">سياسة الخصوصية  </a></li>
+<li id="menu-item-171916" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-171916"><a href="https://almalomat.com/%d8%a7%d8%aa%d9%81%d8%a7%d9%82%d9%8a%d8%a9-%d8%a7%d9%84%d8%a7%d8%b3%d8%aa%d8%ae%d8%af%d8%a7%d9%85/">اتفاقية الاستخدام  </a></li>
+<li id="menu-item-253170" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-253170"><a href="https://almalomat.com/%d9%85%d9%86-%d9%86%d8%ad%d9%86/">من نحن  </a></li>
+<li id="menu-item-171917" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-171917"><a href="https://almalomat.com/contact-us/">الاتصال بنا</a></li>
+</ul></div>
+						</div><!-- .tie-col /-->
+					</div><!-- .tie-row /-->
+				</div><!-- .container /-->
+			</div><!-- #site-info /-->
+			
+</footer><!-- #footer /-->
+
+
+
+		</div><!-- #tie-wrapper /-->
+
+		
+	<aside class=" side-aside normal-side dark-skin dark-widgetized-area appear-from-left" aria-label="القائمة الجانبية الثانوية" style="visibility: hidden;">
+		<div data-height="100%" class="side-aside-wrapper has-custom-scroll">
+
+			<a href="#" class="close-side-aside remove big-btn light-btn">
+				<span class="screen-reader-text">إغلاق</span>
+			</a><!-- .close-side-aside /-->
+
+
+			
+				<div id="mobile-container">
+
+					
+					<div id="mobile-menu" class="hide-menu-icons">
+											</div><!-- #mobile-menu /-->
+
+											<div id="mobile-search">
+							<form role="search" method="get" class="search-form" action="//almalomat.com/">
+				<label>
+					<span class="screen-reader-text">البحث عن:</span>
+					<input type="search" class="search-field" placeholder="بحث &hellip;" value="" name="s" />
+				</label>
+				<input type="submit" class="search-submit" value="بحث" />
+			</form>						</div><!-- #mobile-search /-->
+						
+				</div><!-- #mobile-container /-->
+			
+
+			
+		</div><!-- .side-aside-wrapper /-->
+	</aside><!-- .side-aside /-->
+
+	
+	</div><!-- #tie-container /-->
+</div><!-- .background-overlay /-->
+
+<div id="autocomplete-suggestions" class="autocomplete-suggestions"></div><div id="is-scroller-outer"><div id="is-scroller"></div></div><div id="fb-root"></div>	<div id="tie-popup-search-mobile" class="tie-popup tie-popup-search-wrap" style="display: none;">
+		<a href="#" class="tie-btn-close remove big-btn light-btn">
+			<span class="screen-reader-text">إغلاق</span>
+		</a>
+		<div class="popup-search-wrap-inner">
+			<div class="live-search-parent pop-up-live-search" data-skin="live-search-popup" aria-label="بحث">
+				<form method="get" class="tie-popup-search-form" action="//almalomat.com/">
+					<input class="tie-popup-search-input is-ajax-search" inputmode="search" type="text" name="s" title="أكتب كلمة البحث" autocomplete="off" placeholder="أكتب كلمة البحث" />
+					<button class="tie-popup-search-submit" type="submit">
+						<span class="tie-icon-search tie-search-icon" aria-hidden="true"></span>
+						<span class="screen-reader-text">أكتب كلمة البحث</span>
+					</button>
+				</form>
+			</div><!-- .pop-up-live-search /-->
+		</div><!-- .popup-search-wrap-inner /-->
+	</div><!-- .tie-popup-search-wrap /-->
+	<script type='text/javascript' src='//almalomat.com/wp-content/plugins/table-of-contents-plus/front.min.js?ver=2302' id='toc-front-js' defer></script>
+<script type='text/javascript' id='rocket-browser-checker-js-after'>
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+</script>
+<script type='text/javascript' id='rocket-preload-links-js-extra'>
+/* <![CDATA[ */
+var RocketPreloadLinksConfig = {"excludeUris":"\/(?:.+\/)?feed(?:\/(?:.+\/?)?)?$|\/(?:.+\/)?embed\/|\/(index\\.php\/)?wp\\-json(\/.*|$)|\/wp-admin\/|\/logout\/|\/wp-login.php|\/refer\/|\/go\/|\/recommend\/|\/recommends\/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"https:\/\/almalomat.com","onHoverDelay":"100","rateThrottle":"3"};
+/* ]]> */
+</script>
+<script type='text/javascript' id='rocket-preload-links-js-after'>
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+</script>
+<script type='text/javascript' id='tie-scripts-js-extra'>
+/* <![CDATA[ */
+var tie = {"is_rtl":"1","ajaxurl":"https:\/\/almalomat.com\/wp-admin\/admin-ajax.php","is_taqyeem_active":"","is_sticky_video":"","mobile_menu_top":"","mobile_menu_active":"area_1","mobile_menu_parent":"","lightbox_all":"","lightbox_gallery":"","lightbox_skin":"dark","lightbox_thumb":"horizontal","lightbox_arrows":"","is_singular":"1","autoload_posts":"","reading_indicator":"","lazyload":"","select_share":"","select_share_twitter":"","select_share_facebook":"","select_share_linkedin":"","select_share_email":"","facebook_app_id":"5303202981","twitter_username":"murtahil1","responsive_tables":"true","ad_blocker_detector":"","sticky_behavior":"default","sticky_desktop":"true","sticky_mobile":"","sticky_mobile_behavior":"default","ajax_loader":"<div class=\"loader-overlay\">\n\t\t\t\t<div class=\"spinner\">\n\t\t\t\t\t<div class=\"bounce1\"><\/div>\n\t\t\t\t\t<div class=\"bounce2\"><\/div>\n\t\t\t\t\t<div class=\"bounce3\"> <\/div>\n\t\t\t\t<\/div>\n\t\t\t<\/div>","type_to_search":"","lang_no_results":"\u0644\u0645 \u064a\u062a\u0645 \u0627\u0644\u0639\u062b\u0648\u0631 \u0639\u0644\u0649 \u0646\u062a\u0627\u0626\u062c","sticky_share_mobile":"","sticky_share_post":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='//almalomat.com/wp-content/themes/jannah/assets/js/scripts.min.js?ver=5.4.10' id='tie-scripts-js' defer></script>
+<script type='text/javascript' id='tie-scripts-js-after'>window.addEventListener('DOMContentLoaded', function() {
+				jQuery.ajax({
+					type : "GET",
+					url  : "https://almalomat.com/wp-admin/admin-ajax.php",
+					data : "postviews_id=191687&action=tie_postviews",
+					cache: !1,
+					success: function( data ){
+						jQuery("#single-post-meta").find(".meta-views").html( data );
+					}
+				});
+
+			
+});</script>
+<script type='text/javascript' src='//almalomat.com/wp-content/themes/jannah/assets/js/sliders.min.js?ver=5.4.10' id='tie-js-sliders-js' defer></script>
+<script data-minify="1" type='text/javascript' src='//almalomat.com/wp-content/cache/min/1/wp-content/themes/jannah/assets/js/shortcodes.js?ver=1685095354' id='tie-js-shortcodes-js' defer></script>
+<script type='text/javascript' src='//almalomat.com/wp-content/themes/jannah/assets/js/desktop.min.js?ver=5.4.10' id='tie-js-desktop-js' defer></script>
+<script data-minify="1" type='text/javascript' src='//almalomat.com/wp-content/cache/min/1/wp-content/themes/jannah/assets/js/live-search.js?ver=1685095354' id='tie-js-livesearch-js' defer></script>
+<script type='text/javascript' src='//almalomat.com/wp-content/themes/jannah/assets/js/single.min.js?ver=5.4.10' id='tie-js-single-js' defer></script>
+<script type='text/javascript' src='//almalomat.com/wp-includes/js/comment-reply.min.js?ver=6.1.4' id='comment-reply-js' defer></script>
+<script type='text/javascript' src='//almalomat.com/wp-content/plugins/wp-rocket/assets/js/heartbeat.js?ver=3.11.4.2' id='heartbeat-js' defer></script>
+<script data-minify="1" defer type='text/javascript' src='//almalomat.com/wp-content/cache/min/1/wp-content/plugins/akismet/_inc/akismet-frontend.js?ver=1685095354' id='akismet-frontend-js'></script>
+<script data-minify="1" type='text/javascript' src='//almalomat.com/wp-content/cache/min/1/wp-content/plugins/wp-show-posts/js/jquery.matchHeight.js?ver=1685095354' id='wpsp-matchHeight-js' defer></script>
+<script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="//almalomat.com/wp-content/plugins/wp-rocket/assets/js/lazyload/17.5/lazyload.min.js"></script><script>function lazyLoadThumb(e){var t='<img data-lazy-src="//i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"><noscript><img src="//i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"></noscript>',a='<button class="play" aria-label="play Youtube video"></button>';return t.replace("ID",e)+a}function lazyLoadYoutubeIframe(){var e=document.createElement("iframe"),t="ID?autoplay=1";t+=0===this.parentNode.dataset.query.length?'':'&'+this.parentNode.dataset.query;e.setAttribute("src",t.replace("ID",this.parentNode.dataset.src)),e.setAttribute("frameborder","0"),e.setAttribute("allowfullscreen","1"),e.setAttribute("allow", "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"),this.parentNode.parentNode.replaceChild(e,this.parentNode)}document.addEventListener("DOMContentLoaded",function(){var e,t,p,a=document.getElementsByClassName("rll-youtube-player");for(t=0;t<a.length;t++)e=document.createElement("div"),e.setAttribute("data-id",a[t].dataset.id),e.setAttribute("data-query", a[t].dataset.query),e.setAttribute("data-src", a[t].dataset.src),e.innerHTML=lazyLoadThumb(a[t].dataset.id),a[t].appendChild(e),p=e.querySelector('.play'),p.onclick=lazyLoadYoutubeIframe});</script>
+<script>class RocketElementorAnimation{constructor(){this.deviceMode=document.createElement("span"),this.deviceMode.id="elementor-device-mode",this.deviceMode.setAttribute("class","elementor-screen-only"),document.body.appendChild(this.deviceMode)}_detectAnimations(){let t=getComputedStyle(this.deviceMode,":after").content.replace(/"/g,"");this.animationSettingKeys=this._listAnimationSettingsKeys(t),document.querySelectorAll(".elementor-invisible[data-settings]").forEach(t=>{const e=t.getBoundingClientRect();if(e.bottom>=0&&e.top<=window.innerHeight)try{this._animateElement(t)}catch(t){}})}_animateElement(t){const e=JSON.parse(t.dataset.settings),i=e._animation_delay||e.animation_delay||0,n=e[this.animationSettingKeys.find(t=>e[t])];if("none"===n)return void t.classList.remove("elementor-invisible");t.classList.remove(n),this.currentAnimation&&t.classList.remove(this.currentAnimation),this.currentAnimation=n;let s=setTimeout(()=>{t.classList.remove("elementor-invisible"),t.classList.add("animated",n),this._removeAnimationSettings(t,e)},i);window.addEventListener("rocket-startLoading",function(){clearTimeout(s)})}_listAnimationSettingsKeys(t="mobile"){const e=[""];switch(t){case"mobile":e.unshift("_mobile");case"tablet":e.unshift("_tablet");case"desktop":e.unshift("_desktop")}const i=[];return["animation","_animation"].forEach(t=>{e.forEach(e=>{i.push(t+e)})}),i}_removeAnimationSettings(t,e){this._listAnimationSettingsKeys().forEach(t=>delete e[t]),t.dataset.settings=JSON.stringify(e)}static run(){const t=new RocketElementorAnimation;requestAnimationFrame(t._detectAnimations.bind(t))}}document.addEventListener("DOMContentLoaded",RocketElementorAnimation.run);</script></body>
+</html>
+
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1704027276 -->

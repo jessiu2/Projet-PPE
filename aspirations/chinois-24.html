@@ -8,13 +8,13 @@
     <meta name="force-rendering" content="webkit"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="report" content='{"spm":"1001.2101","extra":{"titAb":"control","lvab":"t_new"},"pid":"blog"}'>
+    <meta name="report" content='{"pid": "blog", "spm":"1001.2101"}'>
     <meta name="referrer" content="always">
     <meta http-equiv="Cache-Control" content="no-siteapp" /><link rel="alternate" media="handheld" href="#" />
     <meta name="shenma-site-verification" content="5a59773ab8077d4a62bf469ab966a63b_1497598848">
     <meta name="applicable-device" content="pc">
     <link  href="https://g.csdnimg.cn/static/logo/favicon32.ico"  rel="shortcut icon" type="image/x-icon" />
-    <title>PyG教程(3)：邻居采样_neighborloader_斯曦巍峨的博客-CSDN博客</title>
+    <title>PyG教程(3)：邻居采样_neighborloader-CSDN博客</title>
     <script>
       (function(){ 
         var el = document.createElement("script"); 
@@ -26,8 +26,8 @@
     </script>
         <meta name="keywords" content="neighborloader">
         <meta name="csdn-baidu-search"  content='{"autorun":true,"install":true,"keyword":"neighborloader"}'>
-    <meta name="description" content="文章浏览阅读4k次，点赞9次，收藏15次。在GNN领域，大图是非常常见的，但由于GPU显存的限制，大图是无法放到GPU上进行训练的。为此，可以采用邻居采样，这样一来可以将GNN扩展到大图上。在PyG中，邻居采样的方式有很多种，具体详解`torch_geometric.loader`。本文以GraphSage中的邻居采样为例进行介绍，其在PyG中实现为`NeighborLoader`。..._neighborloader">
-        <link rel="stylesheet" type="text/css" href="https://csdnimg.cn/release/blogv2/dist/pc/css/detail_enter-4cf7875a8c.min.css">
+    <meta name="description" content="文章浏览阅读4.2k次，点赞9次，收藏17次。在GNN领域，大图是非常常见的，但由于GPU显存的限制，大图是无法放到GPU上进行训练的。为此，可以采用邻居采样，这样一来可以将GNN扩展到大图上。在PyG中，邻居采样的方式有很多种，具体详解`torch_geometric.loader`。本文以GraphSage中的邻居采样为例进行介绍，其在PyG中实现为`NeighborLoader`。..._neighborloader">
+        <link rel="stylesheet" type="text/css" href="https://csdnimg.cn/release/blogv2/dist/pc/css/detail_enter-0b00df95ff.min.css">
     <style>
         #content_views pre{
             -webkit-touch-callout: none;
@@ -46,7 +46,7 @@
             user-select: none; 
         }
     </style>
-    <script type="application/ld+json">{"@context":"https://ziyuan.baidu.com/contexts/cambrian.jsonld","@id":"https://blog.csdn.net/qq_42103091/article/details/125218735","appid":"1638831770136827","pubDate":"2022-06-10T11:38:11","title":"PyG教程(3)：邻居采样_neighborloader_斯曦巍峨的博客-CSDN博客","upDate":"2022-06-10T11:42:36"}</script>
+    <script type="application/ld+json">{"@context":"https://ziyuan.baidu.com/contexts/cambrian.jsonld","@id":"https://blog.csdn.net/qq_42103091/article/details/125218735","appid":"1638831770136827","pubDate":"2022-06-10T11:38:11","title":"PyG教程(3)：邻居采样_neighborloader-CSDN博客","upDate":"2022-06-10T11:42:36"}</script>
         <link rel="stylesheet" type="text/css" href="https://csdnimg.cn/release/blogv2/dist/pc/themesSkin/skin-blackboard/skin-blackboard-3adcc2c475.min.css">
     <script src="https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js" type="text/javascript"></script>
     <script type="text/javascript">
@@ -60,8 +60,8 @@
         var blogUrl = "https://blog.csdn.net/";
         var avatar = "https://profile-avatar.csdnimg.cn/51245cda7fb14a97991f59db7ddd006e_qq_42103091.jpg!1";
         var articleTitle = "PyG教程(3)：邻居采样";
-        var articleDesc = "文章浏览阅读4k次，点赞9次，收藏15次。在GNN领域，大图是非常常见的，但由于GPU显存的限制，大图是无法放到GPU上进行训练的。为此，可以采用邻居采样，这样一来可以将GNN扩展到大图上。在PyG中，邻居采样的方式有很多种，具体详解`torch_geometric.loader`。本文以GraphSage中的邻居采样为例进行介绍，其在PyG中实现为`NeighborLoader`。..._neighborloader";
-        var articleTitles = "PyG教程(3)：邻居采样_neighborloader_斯曦巍峨的博客-CSDN博客";
+        var articleDesc = "文章浏览阅读4.2k次，点赞9次，收藏17次。在GNN领域，大图是非常常见的，但由于GPU显存的限制，大图是无法放到GPU上进行训练的。为此，可以采用邻居采样，这样一来可以将GNN扩展到大图上。在PyG中，邻居采样的方式有很多种，具体详解`torch_geometric.loader`。本文以GraphSage中的邻居采样为例进行介绍，其在PyG中实现为`NeighborLoader`。..._neighborloader";
+        var articleTitles = "PyG教程(3)：邻居采样_neighborloader-CSDN博客";
         var nickName = "斯曦巍峨";
         var articleDetailUrl = "https://blog.csdn.net/qq_42103091/article/details/125218735";
         if(window.location.host.split('.').length == 3) {
@@ -112,6 +112,7 @@
     <script>
       var articleId = 125218735;
       var commentscount = 3;
+      var commentAuth = 2;
       var curentUrl = "https://blog.csdn.net/qq_42103091/article/details/125218735";
       var myUrl = "https://my.csdn.net/";
         var highlight = ["neighbor","pytorch","loader","深度学习","人工智能","gnn","pyg","采样","邻居","教程"];//高亮数组
@@ -136,10 +137,10 @@
       var blogMoveHomeArticle = false;
       var showSearchText = "";
       var articleSource = 1;
-      var articleReport = '{"spm":"1001.2101","extra":{"titAb":"control","lvab":"t_new"},"pid":"blog"}';
+      var articleReport = '{"pid": "blog", "spm":"1001.2101"}';
         var baiduSearchChannel = 'pc_relevant'
-        var baiduSearchIdentification = '.235^v39^pc_relevant_3m_sort_dl_base2'
-        var distRequestId = '1701726859255_08392'
+        var baiduSearchIdentification = '.235^v40^pc_relevant_anti_t3'
+        var distRequestId = '1704031114240_03552'
         var initRewardObject = {
           giver: currentUserName,
           anchor: username,
@@ -149,6 +150,9 @@
         var isLikeStatus = false;
         var isUnLikeStatus = false;
         var studyLearnWord = "";
+        var unUseCount = 0;
+        var codeMaxSize = 0;
+        var overCost = true;
         var isCurrentUserVip = false;
         var contentViewsHeight = 0;
         var contentViewsCount = 0;
@@ -208,22 +212,22 @@
                 <h1 class="title-article" id="articleContentId">PyG教程(3)：邻居采样</h1>
             </div>
             <div class="article-info-box">
-                    <div class="up-time">最新推荐文章于&nbsp;2023-09-14 11:22:56&nbsp;发布</div>
+                    <div class="up-time">最新推荐文章于&nbsp;2023-06-16 20:48:13&nbsp;发布</div>
                 <div class="article-bar-top">
                     <img class="article-type-img" src="https://csdnimg.cn/release/blogv2/dist/pc/img/original.png" alt="">
                     <div class="bar-content">
                       <a class="follow-nickName " href="https://blog.csdn.net/qq_42103091" target="_blank" rel="noopener" title="斯曦巍峨">斯曦巍峨</a>
                     <img class="article-time-img article-heard-img" src="https://csdnimg.cn/release/blogv2/dist/pc/img/newCurrentTime2.png" alt="">
-                          <span class="time blog-postTime" data-time="2022-06-10 11:42:36">最新推荐文章于&nbsp;2023-09-14 11:22:56&nbsp;发布</span>
+                          <span class="time blog-postTime" data-time="2022-06-10 11:42:36">最新推荐文章于&nbsp;2023-06-16 20:48:13&nbsp;发布</span>
                    <div class="read-count-box">
                       <img class="article-read-img article-heard-img" src="https://csdnimg.cn/release/blogv2/dist/pc/img/articleReadEyes2.png" alt="">
-                      <span class="read-count">阅读量4k</span>
+                      <span class="read-count">阅读量4.2k</span>
                       <a id="blog_detail_zk_collection" class="un-collection" data-report-click='{"mod":"popu_823","spm":"1001.2101.3001.4232","ab":"new"}'>
                           <img class="article-collect-img article-heard-img un-collect-status isdefault" style="display:inline-block" src="https://csdnimg.cn/release/blogv2/dist/pc/img/tobarCollect2.png" alt="">
                           <img class="article-collect-img article-heard-img collect-status isactive" style="display:none" src="https://csdnimg.cn/release/blogv2/dist/pc/img/tobarCollectionActive2.png" alt="">
                           <span class="name">收藏</span>
                           <span class="get-collection">
-                              15
+                              17
                           </span>
                       </a>
                       <div class="read-count-box is-like">
@@ -283,7 +287,7 @@
                     </div>
                     <div class="item-m">
                         <span>9 篇文章</span>
-                        <span>60 订阅</span>
+                        <span>61 订阅</span>
                     </div>
                     <div class="item-r">
                             <a class="item-target article-column-bt articleColumnFreeBt" data-id="11859509">订阅专栏</a>
@@ -555,7 +559,7 @@ g<span class="token punctuation">.</span>n_id <span class="token operator">&#61;
 <p>PyG中对于邻居采样的实现远远不止上述这一种&#xff0c;具体参见如下官网资料&#xff1a;</p> 
 <ul><li><a href="https://pytorch-geometric.readthedocs.io/en/latest/modules/loader.html#" rel="nofollow">torch_geometric.loader</a></li></ul>
                 </div>
-                <link href="https://csdnimg.cn/release/blogv2/dist/mdeditor/css/editerView/markdown_views-98b95bb57c.css" rel="stylesheet">
+                <link href="https://csdnimg.cn/release/blogv2/dist/mdeditor/css/editerView/markdown_views-f23dff6052.css" rel="stylesheet">
                 <link href="https://csdnimg.cn/release/blogv2/dist/mdeditor/css/style-c216769e99.css" rel="stylesheet">
         </div>
         <div id="treeSkill"></div>
@@ -642,8 +646,8 @@ g<span class="token punctuation">.</span>n_id <span class="token operator">&#61;
                 <img style="display:none" id="is-collection-img-collection" class="animation-dom active-animation" src="https://csdnimg.cn/release/blogv2/dist/pc/img/tobarCollectionActive.png" alt="">
                 <img class="isdefault" id="is-collection-img" style="display:block" src="https://csdnimg.cn/release/blogv2/dist/pc/img/newCollectBlack.png" alt="">
                 <img class="isactive" id="is-collection-imgactive" style="display:none" src="https://csdnimg.cn/release/blogv2/dist/pc/img/newCollectActive.png" alt="">
-                <span class="count get-collection " data-num="15" id="get-collection">
-                    15
+                <span class="count get-collection " data-num="17" id="get-collection">
+                    17
                 </span>
               </a>
               <div class="tool-hover-tip collect">
@@ -723,8 +727,9 @@ g<span class="token punctuation">.</span>n_id <span class="token operator">&#61;
                   data-img="https://img-blog.csdnimg.cn/ba7a72683c024f4da22c25aea7a4e422.png?x-oss-process=image/resize,m_fixed,h_224,w_224"
                   data-url="https://blog.csdn.net/qq_42103091/category_11859509.html"
                   data-sum="9"
-                  data-people="60"
+                  data-people="61"
                   data-price="0"
+                  data-hotRank="0"
                   data-status="true"
                   data-oldprice="0"
                   data-join="false"
@@ -740,229 +745,11 @@ g<span class="token punctuation">.</span>n_id <span class="token operator">&#61;
 <script src="//g.csdnimg.cn/??sharewx/1.2.1/sharewx.js" type="text/javascript"></script>
 <script type="text/javascript" crossorigin src="https://g.csdnimg.cn/common/csdn-login-box/csdn-login-box.js"></script>
 <script type="text/javascript" crossorigin src="https://g.csdnimg.cn/collection-box/2.1.2/collection-box.js"></script>                <div class="first-recommend-box recommend-box ">
-<div class="recommend-item-box type_download clearfix" data-url="https://download.csdn.net/download/e2345678/2775742"  data-report-view='{"ab":"new","spm":"1001.2101.3001.6661.1","mod":"popu_871","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant_t0.none-task-download-2~default~BlogCommendFromBaidu~Paid-1-2775742-blog-125218735.235^v39^pc_relevant_3m_sort_dl_base2\",\"dist_request_id\":\"1701726859255_08392\"}","dist_request_id":"1701726859255_08392","ab_strategy":"3m_landing_cb_dl","index":"1","strategy":"2~default~BlogCommendFromBaidu~Paid","dest":"https://download.csdn.net/download/e2345678/2775742"}'>
+<div class="recommend-item-box type_download clearfix" data-url="https://download.csdn.net/download/qq_38161040/78523411"  data-report-view='{"ab":"new","spm":"1001.2101.3001.6661.1","mod":"popu_871","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant_t0.none-task-download-2~default~BlogCommendFromBaidu~Paid-1-78523411-blog-125218735.235^v40^pc_relevant_anti_t3\",\"dist_request_id\":\"1704031114240_03552\"}","dist_request_id":"1704031114240_03552","ab_strategy":"increase_t0_anti_vip","index":"1","strategy":"2~default~BlogCommendFromBaidu~Paid","dest":"https://download.csdn.net/download/qq_38161040/78523411"}'>
 	<div class="content-box">
 		<div class="content-blog display-flex">
 			<div class="title-box">
-				<a href="https://download.csdn.net/download/e2345678/2775742" class="tit" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6661.1","mod":"popu_871","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant_t0.none-task-download-2~default~BlogCommendFromBaidu~Paid-1-2775742-blog-125218735.235^v39^pc_relevant_3m_sort_dl_base2\",\"dist_request_id\":\"1701726859255_08392\"}","dist_request_id":"1701726859255_08392","ab_strategy":"3m_landing_cb_dl","index":"1","strategy":"2~default~BlogCommendFromBaidu~Paid","dest":"https://download.csdn.net/download/e2345678/2775742"}'  data-report-query='spm=1001.2101.3001.6661.1&utm_medium=distribute.pc_relevant_t0.none-task-download-2%7Edefault%7EBlogCommendFromBaidu%7EPaid-1-2775742-blog-125218735.235%5Ev39%5Epc_relevant_3m_sort_dl_base2&depth_1-utm_source=distribute.pc_relevant_t0.none-task-download-2%7Edefault%7EBlogCommendFromBaidu%7EPaid-1-2775742-blog-125218735.235%5Ev39%5Epc_relevant_3m_sort_dl_base2'>
-					<div class="left ellipsis-online ellipsis-online-1">[<em>PYG</em>]破解教学--破解入门好<em>教程</em></div>
-				</a>
-			</div>
-			<div class="info-box display-flex">
-				<div class="info display-flex">
-					<span class="info-block">10-22</span>
-				</div>
-			</div>
-		</div>
-		<div class="desc-box">
-			<a href="https://download.csdn.net/download/e2345678/2775742" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6661.1","mod":"popu_871","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant_t0.none-task-download-2~default~BlogCommendFromBaidu~Paid-1-2775742-blog-125218735.235^v39^pc_relevant_3m_sort_dl_base2\",\"dist_request_id\":\"1701726859255_08392\"}","dist_request_id":"1701726859255_08392","ab_strategy":"3m_landing_cb_dl","index":"1","strategy":"2~default~BlogCommendFromBaidu~Paid","dest":"https://download.csdn.net/download/e2345678/2775742"}'  data-report-query='spm=1001.2101.3001.6661.1&utm_medium=distribute.pc_relevant_t0.none-task-download-2%7Edefault%7EBlogCommendFromBaidu%7EPaid-1-2775742-blog-125218735.235%5Ev39%5Epc_relevant_3m_sort_dl_base2&depth_1-utm_source=distribute.pc_relevant_t0.none-task-download-2%7Edefault%7EBlogCommendFromBaidu%7EPaid-1-2775742-blog-125218735.235%5Ev39%5Epc_relevant_3m_sort_dl_base2'>
-				<div class="desc ellipsis-online ellipsis-online-1">[<em>PYG</em>]破解教学，比较不错新手可以看看！</div>
-			</a>
-		</div>
-	</div>
-</div>
-                </div>
-              <script src="https://csdnimg.cn/release/blogv2/dist/components/js/pc_wap_commontools-094b8ec121.min.js" type="text/javascript" async></script>
-                <div class="second-recommend-box recommend-box ">
-<div class="recommend-item-box type_blog clearfix" data-url="https://blog.csdn.net/qq_40990057/article/details/118400681"  data-report-view='{"ab":"new","spm":"1001.2101.3001.6650.1","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~CTRLIST~Rate-1-118400681-blog-125218735.235^v39^pc_relevant_3m_sort_dl_base2\",\"dist_request_id\":\"1701726859255_08392\"}","dist_request_id":"1701726859255_08392","ab_strategy":"3m_landing_cb_dl","index":"1","strategy":"2~default~CTRLIST~Rate","dest":"https://blog.csdn.net/qq_40990057/article/details/118400681"}'>
-	<div class="content-box">
-		<div class="content-blog display-flex">
-			<div class="title-box">
-				<a href="https://blog.csdn.net/qq_40990057/article/details/118400681" class="tit" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.1","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~CTRLIST~Rate-1-118400681-blog-125218735.235^v39^pc_relevant_3m_sort_dl_base2\",\"dist_request_id\":\"1701726859255_08392\"}","dist_request_id":"1701726859255_08392","ab_strategy":"3m_landing_cb_dl","index":"1","strategy":"2~default~CTRLIST~Rate","dest":"https://blog.csdn.net/qq_40990057/article/details/118400681"}'  data-report-query='spm=1001.2101.3001.6650.1&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-118400681-blog-125218735.235%5Ev39%5Epc_relevant_3m_sort_dl_base2&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-118400681-blog-125218735.235%5Ev39%5Epc_relevant_3m_sort_dl_base2'>
-					<div class="left ellipsis-online ellipsis-online-1">Datawhale 6月学习&mdash;&mdash;图神经网络：超大图上的节点表征学习</div>
-				</a>
-			</div>
-			<div class="info-box display-flex">
-				<div class="info">
-					<a href="https://blog.csdn.net/qq_40990057" target="_blank"><span class="blog-title">qq_40990057的博客</span></a>
-				</div>
-				<div class="info display-flex">
-					<span class="info-block time">07-02</span>
-					<span class="info-block read"><img class="read-img" src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">
-					999
-					</span>
-				</div>
-			</div>
-		</div>
-		<div class="desc-box">
-			<a href="https://blog.csdn.net/qq_40990057/article/details/118400681" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.1","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~CTRLIST~Rate-1-118400681-blog-125218735.235^v39^pc_relevant_3m_sort_dl_base2\",\"dist_request_id\":\"1701726859255_08392\"}","dist_request_id":"1701726859255_08392","ab_strategy":"3m_landing_cb_dl","index":"1","strategy":"2~default~CTRLIST~Rate","dest":"https://blog.csdn.net/qq_40990057/article/details/118400681"}'  data-report-query='spm=1001.2101.3001.6650.1&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-118400681-blog-125218735.235%5Ev39%5Epc_relevant_3m_sort_dl_base2&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-118400681-blog-125218735.235%5Ev39%5Epc_relevant_3m_sort_dl_base2'>
-				<div class="desc ellipsis-online ellipsis-online-1">前情回顾
-
-图神经网络：图数据表示及应用
-图神经网络：消息传递图神经网络
-图神经网络：基于<em>GNN</em>的节点表征学习
-图神经网络：基于<em>GNN</em>的节点预测任务及边预测任务
-
-1 超大图上的节点表征学习
-1.1 简述
-在十分庞大（节点数极多）的图上，图神经网络训练所需要的计算资源相当多，会极大地消耗计算机内存及显卡显存，这对使用者的设备带来过大的要求。
-
-图神经网络已经成功地应用于许多节点或边的预测任务，然而，在超大图上进行图神经网络的训练仍然具有挑战。普通的基于SGD的图神经网络的训练方法，要么面临着随着图神经网络层</div>
-			</a>
-		</div>
-	</div>
-</div>
-                </div>
-<a id="commentBox" name="commentBox"></a>
-<div id="pcCommentBox" class="comment-box comment-box-new2 unlogin-comment-box-new" style="display:none">
-    <div class="unlogin-comment-model">
-        <span class="unlogin-comment-tit">3&nbsp;条评论</span>
-      <span class="unlogin-comment-text">您还未登录，请先</span>
-      <span class="unlogin-comment-bt">登录</span>
-      <span class="unlogin-comment-text">后发表或查看评论</span>
-    </div>
-</div>              <div class="recommend-box insert-baidu-box recommend-box-style ">
-                <div class="recommend-item-box no-index" style="display:none"></div>
-<div class="recommend-item-box type_blog clearfix" data-url="https://blog.csdn.net/weixin_39925939/article/details/121458145"  data-report-view='{"ab":"new","spm":"1001.2101.3001.6650.2","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~CTRLIST~Rate-2-121458145-blog-125218735.235^v39^pc_relevant_3m_sort_dl_base2\",\"dist_request_id\":\"1701726859255_08392\"}","dist_request_id":"1701726859255_08392","ab_strategy":"3m_landing_cb_dl","index":"2","strategy":"2~default~CTRLIST~Rate","dest":"https://blog.csdn.net/weixin_39925939/article/details/121458145"}'>
-	<div class="content-box">
-		<div class="content-blog display-flex">
-			<div class="title-box">
-				<a href="https://blog.csdn.net/weixin_39925939/article/details/121458145" class="tit" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.2","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~CTRLIST~Rate-2-121458145-blog-125218735.235^v39^pc_relevant_3m_sort_dl_base2\",\"dist_request_id\":\"1701726859255_08392\"}","dist_request_id":"1701726859255_08392","ab_strategy":"3m_landing_cb_dl","index":"2","strategy":"2~default~CTRLIST~Rate","dest":"https://blog.csdn.net/weixin_39925939/article/details/121458145"}'  data-report-query='spm=1001.2101.3001.6650.2&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-2-121458145-blog-125218735.235%5Ev39%5Epc_relevant_3m_sort_dl_base2&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-2-121458145-blog-125218735.235%5Ev39%5Epc_relevant_3m_sort_dl_base2'>
-					<div class="left ellipsis-online ellipsis-online-1"><em>pytorch</em> geometric<em>教程</em>四 利用NeighorSampler实现节点维度的mini-batch + GraphSAGE样例</div>
-				</a>
-			</div>
-			<div class="info-box display-flex">
-				<div class="info">
-					<a href="https://blog.csdn.net/weixin_39925939" target="_blank"><span class="blog-title">weixin_39925939的博客</span></a>
-				</div>
-				<div class="info display-flex">
-					<span class="info-block time">11-23</span>
-					<span class="info-block read"><img class="read-img" src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">
-					5614
-					</span>
-				</div>
-			</div>
-		</div>
-		<div class="desc-box">
-			<a href="https://blog.csdn.net/weixin_39925939/article/details/121458145" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.2","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~CTRLIST~Rate-2-121458145-blog-125218735.235^v39^pc_relevant_3m_sort_dl_base2\",\"dist_request_id\":\"1701726859255_08392\"}","dist_request_id":"1701726859255_08392","ab_strategy":"3m_landing_cb_dl","index":"2","strategy":"2~default~CTRLIST~Rate","dest":"https://blog.csdn.net/weixin_39925939/article/details/121458145"}'  data-report-query='spm=1001.2101.3001.6650.2&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-2-121458145-blog-125218735.235%5Ev39%5Epc_relevant_3m_sort_dl_base2&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-2-121458145-blog-125218735.235%5Ev39%5Epc_relevant_3m_sort_dl_base2'>
-				<div class="desc ellipsis-online ellipsis-online-1"><em>pytorch</em> geometric如何实现节点维度mini-batch模型训练: NeighorSampler
-<em>PyG</em>的官方文档中有mini-batch和Advanced mini-batching两部分内容，但实现的都是图维度的mini-batch。如何像GraphSAGE文章中对<em>邻居</em>进行<em>采样</em>从而实现节点维度mini-batch模型训练，使得大规模全连接图的<em>GNN</em>s模型训练成为可能，在<em>PyG</em>中是通过torch_geometric.<em>Loader</em>.<em>Neighbor</em>Sampler实现的（早一点版本是torch_</div>
-			</a>
-		</div>
-	</div>
-</div>
-<div class="recommend-item-box type_blog clearfix" data-url="https://blog.csdn.net/adreammaker/article/details/132872323"  data-report-view='{"ab":"new","spm":"1001.2101.3001.6650.3","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~YuanLiJiHua~Position-3-132872323-blog-125218735.235^v39^pc_relevant_3m_sort_dl_base2\",\"dist_request_id\":\"1701726859255_08392\"}","dist_request_id":"1701726859255_08392","ab_strategy":"3m_landing_cb_dl","index":"3","strategy":"2~default~YuanLiJiHua~Position","dest":"https://blog.csdn.net/adreammaker/article/details/132872323"}'>
-	<div class="content-box">
-		<div class="content-blog display-flex">
-			<div class="title-box">
-				<a href="https://blog.csdn.net/adreammaker/article/details/132872323" class="tit" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.3","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~YuanLiJiHua~Position-3-132872323-blog-125218735.235^v39^pc_relevant_3m_sort_dl_base2\",\"dist_request_id\":\"1701726859255_08392\"}","dist_request_id":"1701726859255_08392","ab_strategy":"3m_landing_cb_dl","index":"3","strategy":"2~default~YuanLiJiHua~Position","dest":"https://blog.csdn.net/adreammaker/article/details/132872323"}'  data-report-query='spm=1001.2101.3001.6650.3&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EYuanLiJiHua%7EPosition-3-132872323-blog-125218735.235%5Ev39%5Epc_relevant_3m_sort_dl_base2&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EYuanLiJiHua%7EPosition-3-132872323-blog-125218735.235%5Ev39%5Epc_relevant_3m_sort_dl_base2'>
-					<div class="left ellipsis-online ellipsis-online-1"><em>pyG</em><em>教程</em></div>
-					<div class="tag">最新发布</div>
-				</a>
-			</div>
-			<div class="info-box display-flex">
-				<div class="info">
-					<a href="https://blog.csdn.net/adreammaker" target="_blank"><span class="blog-title">Everyday try to become better   -Kobe Bryant</span></a>
-				</div>
-				<div class="info display-flex">
-					<span class="info-block time">09-14</span>
-					<span class="info-block read"><img class="read-img" src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">
-					110
-					</span>
-				</div>
-			</div>
-		</div>
-		<div class="desc-box">
-			<a href="https://blog.csdn.net/adreammaker/article/details/132872323" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.3","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~YuanLiJiHua~Position-3-132872323-blog-125218735.235^v39^pc_relevant_3m_sort_dl_base2\",\"dist_request_id\":\"1701726859255_08392\"}","dist_request_id":"1701726859255_08392","ab_strategy":"3m_landing_cb_dl","index":"3","strategy":"2~default~YuanLiJiHua~Position","dest":"https://blog.csdn.net/adreammaker/article/details/132872323"}'  data-report-query='spm=1001.2101.3001.6650.3&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EYuanLiJiHua%7EPosition-3-132872323-blog-125218735.235%5Ev39%5Epc_relevant_3m_sort_dl_base2&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EYuanLiJiHua%7EPosition-3-132872323-blog-125218735.235%5Ev39%5Epc_relevant_3m_sort_dl_base2'>
-				<div class="desc ellipsis-online ellipsis-online-1"><em>pyG</em>官方<em>教程</em>和个人笔记总结</div>
-			</a>
-		</div>
-	</div>
-</div>
-		<dl id="recommend-item-box-tow" class="recommend-item-box type_blog clearfix">
-			
-		</dl>
-<div class="recommend-item-box type_blog clearfix" data-url="https://blog.csdn.net/yanqianglifei/article/details/118671596"  data-report-view='{"ab":"new","spm":"1001.2101.3001.6650.4","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~CTRLIST~Rate-4-118671596-blog-125218735.235^v39^pc_relevant_3m_sort_dl_base2\",\"dist_request_id\":\"1701726859255_08392\"}","dist_request_id":"1701726859255_08392","ab_strategy":"3m_landing_cb_dl","index":"4","strategy":"2~default~CTRLIST~Rate","dest":"https://blog.csdn.net/yanqianglifei/article/details/118671596"}'>
-	<div class="content-box">
-		<div class="content-blog display-flex">
-			<div class="title-box">
-				<a href="https://blog.csdn.net/yanqianglifei/article/details/118671596" class="tit" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.4","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~CTRLIST~Rate-4-118671596-blog-125218735.235^v39^pc_relevant_3m_sort_dl_base2\",\"dist_request_id\":\"1701726859255_08392\"}","dist_request_id":"1701726859255_08392","ab_strategy":"3m_landing_cb_dl","index":"4","strategy":"2~default~CTRLIST~Rate","dest":"https://blog.csdn.net/yanqianglifei/article/details/118671596"}'  data-report-query='spm=1001.2101.3001.6650.4&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-4-118671596-blog-125218735.235%5Ev39%5Epc_relevant_3m_sort_dl_base2&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-4-118671596-blog-125218735.235%5Ev39%5Epc_relevant_3m_sort_dl_base2'>
-					<div class="left ellipsis-online ellipsis-online-1">图神经网络22-DGL实战：针对边分类任务的<em>邻居</em><em>采样</em>训练方法</div>
-				</a>
-			</div>
-			<div class="info-box display-flex">
-				<div class="info">
-					<a href="https://blog.csdn.net/yanqianglifei" target="_blank"><span class="blog-title">yanqianglifei的专栏</span></a>
-				</div>
-				<div class="info display-flex">
-					<span class="info-block time">07-12</span>
-					<span class="info-block read"><img class="read-img" src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">
-					1487
-					</span>
-				</div>
-			</div>
-		</div>
-		<div class="desc-box">
-			<a href="https://blog.csdn.net/yanqianglifei/article/details/118671596" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.4","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~CTRLIST~Rate-4-118671596-blog-125218735.235^v39^pc_relevant_3m_sort_dl_base2\",\"dist_request_id\":\"1701726859255_08392\"}","dist_request_id":"1701726859255_08392","ab_strategy":"3m_landing_cb_dl","index":"4","strategy":"2~default~CTRLIST~Rate","dest":"https://blog.csdn.net/yanqianglifei/article/details/118671596"}'  data-report-query='spm=1001.2101.3001.6650.4&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-4-118671596-blog-125218735.235%5Ev39%5Epc_relevant_3m_sort_dl_base2&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-4-118671596-blog-125218735.235%5Ev39%5Epc_relevant_3m_sort_dl_base2'>
-				<div class="desc ellipsis-online ellipsis-online-1">边分类/回归的训练与节点分类/回归的训练类似，但还是有一些明显的区别。
-定义<em>邻居</em><em>采样</em>器和数据加载器
-用户可以使用和节点分类一样的<em>邻居</em><em>采样</em>器 。
-sampler = dgl.dataloading.MultiLayerFull<em>Neighbor</em>Sampler(2)
-想要用DGL提供的<em>邻居</em><em>采样</em>器做边分类，需要将其与
-:class:~dgl.dataloading.<em>pytorch</em>.EdgeDataLoad...</div>
-			</a>
-		</div>
-	</div>
-</div>
-<div class="recommend-item-box type_blog clearfix" data-url="https://blog.csdn.net/qq_40344307/article/details/122228308"  data-report-view='{"ab":"new","spm":"1001.2101.3001.6650.5","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~CTRLIST~Rate-5-122228308-blog-125218735.235^v39^pc_relevant_3m_sort_dl_base2\",\"dist_request_id\":\"1701726859255_08392\"}","dist_request_id":"1701726859255_08392","ab_strategy":"3m_landing_cb_dl","index":"5","strategy":"2~default~CTRLIST~Rate","dest":"https://blog.csdn.net/qq_40344307/article/details/122228308"}'>
-	<div class="content-box">
-		<div class="content-blog display-flex">
-			<div class="title-box">
-				<a href="https://blog.csdn.net/qq_40344307/article/details/122228308" class="tit" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.5","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~CTRLIST~Rate-5-122228308-blog-125218735.235^v39^pc_relevant_3m_sort_dl_base2\",\"dist_request_id\":\"1701726859255_08392\"}","dist_request_id":"1701726859255_08392","ab_strategy":"3m_landing_cb_dl","index":"5","strategy":"2~default~CTRLIST~Rate","dest":"https://blog.csdn.net/qq_40344307/article/details/122228308"}'  data-report-query='spm=1001.2101.3001.6650.5&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-5-122228308-blog-125218735.235%5Ev39%5Epc_relevant_3m_sort_dl_base2&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-5-122228308-blog-125218735.235%5Ev39%5Epc_relevant_3m_sort_dl_base2'>
-					<div class="left ellipsis-online ellipsis-online-1">【<em>PyG</em>】异构图学习 - 图神经网络</div>
-				</a>
-			</div>
-			<div class="info-box display-flex">
-				<div class="info">
-					<a href="https://blog.csdn.net/qq_40344307" target="_blank"><span class="blog-title">C橘子</span></a>
-				</div>
-				<div class="info display-flex">
-					<span class="info-block time">12-30</span>
-					<span class="info-block read"><img class="read-img" src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">
-					7564
-					</span>
-				</div>
-			</div>
-		</div>
-		<div class="desc-box">
-			<a href="https://blog.csdn.net/qq_40344307/article/details/122228308" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.5","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~CTRLIST~Rate-5-122228308-blog-125218735.235^v39^pc_relevant_3m_sort_dl_base2\",\"dist_request_id\":\"1701726859255_08392\"}","dist_request_id":"1701726859255_08392","ab_strategy":"3m_landing_cb_dl","index":"5","strategy":"2~default~CTRLIST~Rate","dest":"https://blog.csdn.net/qq_40344307/article/details/122228308"}'  data-report-query='spm=1001.2101.3001.6650.5&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-5-122228308-blog-125218735.235%5Ev39%5Epc_relevant_3m_sort_dl_base2&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-5-122228308-blog-125218735.235%5Ev39%5Epc_relevant_3m_sort_dl_base2'>
-				<div class="desc ellipsis-online ellipsis-online-1">使用<em>PyG</em>库进行异构图神经网络学习</div>
-			</a>
-		</div>
-	</div>
-</div>
-<div class="recommend-item-box type_blog clearfix" data-url="https://blog.csdn.net/qq_40671063/article/details/126803861"  data-report-view='{"ab":"new","spm":"1001.2101.3001.6650.6","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~CTRLIST~Rate-6-126803861-blog-125218735.235^v39^pc_relevant_3m_sort_dl_base2\",\"dist_request_id\":\"1701726859255_08392\"}","dist_request_id":"1701726859255_08392","ab_strategy":"3m_landing_cb_dl","index":"6","strategy":"2~default~CTRLIST~Rate","dest":"https://blog.csdn.net/qq_40671063/article/details/126803861"}'>
-	<div class="content-box">
-		<div class="content-blog display-flex">
-			<div class="title-box">
-				<a href="https://blog.csdn.net/qq_40671063/article/details/126803861" class="tit" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.6","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~CTRLIST~Rate-6-126803861-blog-125218735.235^v39^pc_relevant_3m_sort_dl_base2\",\"dist_request_id\":\"1701726859255_08392\"}","dist_request_id":"1701726859255_08392","ab_strategy":"3m_landing_cb_dl","index":"6","strategy":"2~default~CTRLIST~Rate","dest":"https://blog.csdn.net/qq_40671063/article/details/126803861"}'  data-report-query='spm=1001.2101.3001.6650.6&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-6-126803861-blog-125218735.235%5Ev39%5Epc_relevant_3m_sort_dl_base2&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-6-126803861-blog-125218735.235%5Ev39%5Epc_relevant_3m_sort_dl_base2'>
-					<div class="left ellipsis-online ellipsis-online-1"><em>pytorch</em> geometric（<em>PYG</em>） - <em>Neighbor</em>Sampler</div>
-				</a>
-			</div>
-			<div class="info-box display-flex">
-				<div class="info">
-					<a href="https://blog.csdn.net/qq_40671063" target="_blank"><span class="blog-title">qq_40671063的博客</span></a>
-				</div>
-				<div class="info display-flex">
-					<span class="info-block time">09-11</span>
-					<span class="info-block read"><img class="read-img" src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">
-					2604
-					</span>
-				</div>
-			</div>
-		</div>
-		<div class="desc-box">
-			<a href="https://blog.csdn.net/qq_40671063/article/details/126803861" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.6","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~CTRLIST~Rate-6-126803861-blog-125218735.235^v39^pc_relevant_3m_sort_dl_base2\",\"dist_request_id\":\"1701726859255_08392\"}","dist_request_id":"1701726859255_08392","ab_strategy":"3m_landing_cb_dl","index":"6","strategy":"2~default~CTRLIST~Rate","dest":"https://blog.csdn.net/qq_40671063/article/details/126803861"}'  data-report-query='spm=1001.2101.3001.6650.6&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-6-126803861-blog-125218735.235%5Ev39%5Epc_relevant_3m_sort_dl_base2&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-6-126803861-blog-125218735.235%5Ev39%5Epc_relevant_3m_sort_dl_base2'>
-				<div class="desc ellipsis-online ellipsis-online-1">https://blog.csdn.net/weixin_39925939/article/details/121458145</div>
-			</a>
-		</div>
-	</div>
-</div>
-<div class="recommend-item-box type_download clearfix" data-url="https://download.csdn.net/download/qq_38161040/78523411"  data-report-view='{"ab":"new","spm":"1001.2101.3001.6650.7","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-download-2~default~BlogCommendFromBaidu~AntiPaid-7-78523411-blog-125218735.235^v39^pc_relevant_3m_sort_dl_base2\",\"dist_request_id\":\"1701726859255_08392\"}","dist_request_id":"1701726859255_08392","ab_strategy":"3m_landing_cb_dl","index":"7","strategy":"2~default~BlogCommendFromBaidu~AntiPaid","dest":"https://download.csdn.net/download/qq_38161040/78523411"}'>
-	<div class="content-box">
-		<div class="content-blog display-flex">
-			<div class="title-box">
-				<a href="https://download.csdn.net/download/qq_38161040/78523411" class="tit" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.7","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-download-2~default~BlogCommendFromBaidu~AntiPaid-7-78523411-blog-125218735.235^v39^pc_relevant_3m_sort_dl_base2\",\"dist_request_id\":\"1701726859255_08392\"}","dist_request_id":"1701726859255_08392","ab_strategy":"3m_landing_cb_dl","index":"7","strategy":"2~default~BlogCommendFromBaidu~AntiPaid","dest":"https://download.csdn.net/download/qq_38161040/78523411"}'  data-report-query='spm=1001.2101.3001.6650.7&utm_medium=distribute.pc_relevant.none-task-download-2%7Edefault%7EBlogCommendFromBaidu%7EAntiPaid-7-78523411-blog-125218735.235%5Ev39%5Epc_relevant_3m_sort_dl_base2&depth_1-utm_source=distribute.pc_relevant.none-task-download-2%7Edefault%7EBlogCommendFromBaidu%7EAntiPaid-7-78523411-blog-125218735.235%5Ev39%5Epc_relevant_3m_sort_dl_base2'>
+				<a href="https://download.csdn.net/download/qq_38161040/78523411" class="tit" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6661.1","mod":"popu_871","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant_t0.none-task-download-2~default~BlogCommendFromBaidu~Paid-1-78523411-blog-125218735.235^v40^pc_relevant_anti_t3\",\"dist_request_id\":\"1704031114240_03552\"}","dist_request_id":"1704031114240_03552","ab_strategy":"increase_t0_anti_vip","index":"1","strategy":"2~default~BlogCommendFromBaidu~Paid","dest":"https://download.csdn.net/download/qq_38161040/78523411"}'  data-report-query='spm=1001.2101.3001.6661.1&utm_medium=distribute.pc_relevant_t0.none-task-download-2%7Edefault%7EBlogCommendFromBaidu%7EPaid-1-78523411-blog-125218735.235%5Ev40%5Epc_relevant_anti_t3&depth_1-utm_source=distribute.pc_relevant_t0.none-task-download-2%7Edefault%7EBlogCommendFromBaidu%7EPaid-1-78523411-blog-125218735.235%5Ev40%5Epc_relevant_anti_t3'>
 					<div class="left ellipsis-online ellipsis-online-1">PyPI 官网下载 | torch_sparse-0.6.12.tar.gz</div>
 				</a>
 			</div>
@@ -973,18 +760,60 @@ sampler = dgl.dataloading.MultiLayerFull<em>Neighbor</em>Sampler(2)
 			</div>
 		</div>
 		<div class="desc-box">
-			<a href="https://download.csdn.net/download/qq_38161040/78523411" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.7","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-download-2~default~BlogCommendFromBaidu~AntiPaid-7-78523411-blog-125218735.235^v39^pc_relevant_3m_sort_dl_base2\",\"dist_request_id\":\"1701726859255_08392\"}","dist_request_id":"1701726859255_08392","ab_strategy":"3m_landing_cb_dl","index":"7","strategy":"2~default~BlogCommendFromBaidu~AntiPaid","dest":"https://download.csdn.net/download/qq_38161040/78523411"}'  data-report-query='spm=1001.2101.3001.6650.7&utm_medium=distribute.pc_relevant.none-task-download-2%7Edefault%7EBlogCommendFromBaidu%7EAntiPaid-7-78523411-blog-125218735.235%5Ev39%5Epc_relevant_3m_sort_dl_base2&depth_1-utm_source=distribute.pc_relevant.none-task-download-2%7Edefault%7EBlogCommendFromBaidu%7EAntiPaid-7-78523411-blog-125218735.235%5Ev39%5Epc_relevant_3m_sort_dl_base2'>
+			<a href="https://download.csdn.net/download/qq_38161040/78523411" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6661.1","mod":"popu_871","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant_t0.none-task-download-2~default~BlogCommendFromBaidu~Paid-1-78523411-blog-125218735.235^v40^pc_relevant_anti_t3\",\"dist_request_id\":\"1704031114240_03552\"}","dist_request_id":"1704031114240_03552","ab_strategy":"increase_t0_anti_vip","index":"1","strategy":"2~default~BlogCommendFromBaidu~Paid","dest":"https://download.csdn.net/download/qq_38161040/78523411"}'  data-report-query='spm=1001.2101.3001.6661.1&utm_medium=distribute.pc_relevant_t0.none-task-download-2%7Edefault%7EBlogCommendFromBaidu%7EPaid-1-78523411-blog-125218735.235%5Ev40%5Epc_relevant_anti_t3&depth_1-utm_source=distribute.pc_relevant_t0.none-task-download-2%7Edefault%7EBlogCommendFromBaidu%7EPaid-1-78523411-blog-125218735.235%5Ev40%5Epc_relevant_anti_t3'>
 				<div class="desc ellipsis-online ellipsis-online-1">资源来自pypi官网。
 资源全名：torch_sparse-0.6.12.tar.gz</div>
 			</a>
 		</div>
 	</div>
 </div>
-<div class="recommend-item-box type_blog clearfix" data-url="https://blog.csdn.net/qq_40671063/article/details/130179435"  data-report-view='{"ab":"new","spm":"1001.2101.3001.6650.8","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-8-130179435-blog-125218735.235^v39^pc_relevant_3m_sort_dl_base2\",\"dist_request_id\":\"1701726859255_08392\"}","dist_request_id":"1701726859255_08392","ab_strategy":"3m_landing_cb_dl","index":"8","strategy":"2~default~BlogCommendFromBaidu~Rate","dest":"https://blog.csdn.net/qq_40671063/article/details/130179435"}'>
+                </div>
+              <script src="https://csdnimg.cn/release/blogv2/dist/components/js/pc_wap_commontools-094b8ec121.min.js" type="text/javascript" async></script>
+                <div class="second-recommend-box recommend-box ">
+<div class="recommend-item-box type_blog clearfix" data-url="https://blog.csdn.net/qq_40671063/article/details/126803861"  data-report-view='{"ab":"new","spm":"1001.2101.3001.6650.1","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-1-126803861-blog-125218735.235^v40^pc_relevant_anti_t3\",\"dist_request_id\":\"1704031114240_03552\"}","dist_request_id":"1704031114240_03552","ab_strategy":"increase_t0_anti_vip","index":"1","strategy":"2~default~BlogCommendFromBaidu~Rate","dest":"https://blog.csdn.net/qq_40671063/article/details/126803861"}'>
 	<div class="content-box">
 		<div class="content-blog display-flex">
 			<div class="title-box">
-				<a href="https://blog.csdn.net/qq_40671063/article/details/130179435" class="tit" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.8","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-8-130179435-blog-125218735.235^v39^pc_relevant_3m_sort_dl_base2\",\"dist_request_id\":\"1701726859255_08392\"}","dist_request_id":"1701726859255_08392","ab_strategy":"3m_landing_cb_dl","index":"8","strategy":"2~default~BlogCommendFromBaidu~Rate","dest":"https://blog.csdn.net/qq_40671063/article/details/130179435"}'  data-report-query='spm=1001.2101.3001.6650.8&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-8-130179435-blog-125218735.235%5Ev39%5Epc_relevant_3m_sort_dl_base2&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-8-130179435-blog-125218735.235%5Ev39%5Epc_relevant_3m_sort_dl_base2'>
+				<a href="https://blog.csdn.net/qq_40671063/article/details/126803861" class="tit" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.1","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-1-126803861-blog-125218735.235^v40^pc_relevant_anti_t3\",\"dist_request_id\":\"1704031114240_03552\"}","dist_request_id":"1704031114240_03552","ab_strategy":"increase_t0_anti_vip","index":"1","strategy":"2~default~BlogCommendFromBaidu~Rate","dest":"https://blog.csdn.net/qq_40671063/article/details/126803861"}'  data-report-query='spm=1001.2101.3001.6650.1&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-1-126803861-blog-125218735.235%5Ev40%5Epc_relevant_anti_t3&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-1-126803861-blog-125218735.235%5Ev40%5Epc_relevant_anti_t3'>
+					<div class="left ellipsis-online ellipsis-online-1"><em>pytorch</em> geometric（<em>PYG</em>） - <em>Neighbor</em>Sampler</div>
+				</a>
+			</div>
+			<div class="info-box display-flex">
+				<div class="info">
+					<a href="https://blog.csdn.net/qq_40671063" target="_blank"><span class="blog-title">qq_40671063的博客</span></a>
+				</div>
+				<div class="info display-flex">
+					<span class="info-block time">09-11</span>
+					<span class="info-block read"><img class="read-img" src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">
+					2753
+					</span>
+				</div>
+			</div>
+		</div>
+		<div class="desc-box">
+			<a href="https://blog.csdn.net/qq_40671063/article/details/126803861" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.1","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-1-126803861-blog-125218735.235^v40^pc_relevant_anti_t3\",\"dist_request_id\":\"1704031114240_03552\"}","dist_request_id":"1704031114240_03552","ab_strategy":"increase_t0_anti_vip","index":"1","strategy":"2~default~BlogCommendFromBaidu~Rate","dest":"https://blog.csdn.net/qq_40671063/article/details/126803861"}'  data-report-query='spm=1001.2101.3001.6650.1&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-1-126803861-blog-125218735.235%5Ev40%5Epc_relevant_anti_t3&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-1-126803861-blog-125218735.235%5Ev40%5Epc_relevant_anti_t3'>
+				<div class="desc ellipsis-online ellipsis-online-1">https://blog.csdn.net/weixin_39925939/article/details/121458145</div>
+			</a>
+		</div>
+	</div>
+</div>
+                </div>
+<a id="commentBox" name="commentBox"></a>
+  <div id="pcCommentBox" class="comment-box comment-box-new2 unlogin-comment-box-new" style="display:none">
+      <div class="unlogin-comment-model">
+          <span class="unlogin-comment-tit">3&nbsp;条评论</span>
+        <span class="unlogin-comment-text">您还未登录，请先</span>
+        <span class="unlogin-comment-bt">登录</span>
+        <span class="unlogin-comment-text">后发表或查看评论</span>
+      </div>
+  </div>
+              <div class="recommend-box insert-baidu-box recommend-box-style ">
+                <div class="recommend-item-box no-index" style="display:none"></div>
+<div class="recommend-item-box type_blog clearfix" data-url="https://blog.csdn.net/qq_40671063/article/details/130179435"  data-report-view='{"ab":"new","spm":"1001.2101.3001.6650.2","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-2-130179435-blog-125218735.235^v40^pc_relevant_anti_t3\",\"dist_request_id\":\"1704031114240_03552\"}","dist_request_id":"1704031114240_03552","ab_strategy":"increase_t0_anti_vip","index":"2","strategy":"2~default~BlogCommendFromBaidu~Rate","dest":"https://blog.csdn.net/qq_40671063/article/details/130179435"}'>
+	<div class="content-box">
+		<div class="content-blog display-flex">
+			<div class="title-box">
+				<a href="https://blog.csdn.net/qq_40671063/article/details/130179435" class="tit" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.2","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-2-130179435-blog-125218735.235^v40^pc_relevant_anti_t3\",\"dist_request_id\":\"1704031114240_03552\"}","dist_request_id":"1704031114240_03552","ab_strategy":"increase_t0_anti_vip","index":"2","strategy":"2~default~BlogCommendFromBaidu~Rate","dest":"https://blog.csdn.net/qq_40671063/article/details/130179435"}'  data-report-query='spm=1001.2101.3001.6650.2&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-2-130179435-blog-125218735.235%5Ev40%5Epc_relevant_anti_t3&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-2-130179435-blog-125218735.235%5Ev40%5Epc_relevant_anti_t3'>
 					<div class="left ellipsis-online ellipsis-online-1"><em>pyg</em>的<em>Neighbor</em><em>Loader</em>和Link<em>Neighbor</em><em>Loader</em></div>
 				</a>
 			</div>
@@ -995,23 +824,367 @@ sampler = dgl.dataloading.MultiLayerFull<em>Neighbor</em>Sampler(2)
 				<div class="info display-flex">
 					<span class="info-block time">04-16</span>
 					<span class="info-block read"><img class="read-img" src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">
-					1324
+					1438
 					</span>
 				</div>
 			</div>
 		</div>
 		<div class="desc-box">
-			<a href="https://blog.csdn.net/qq_40671063/article/details/130179435" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.8","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-8-130179435-blog-125218735.235^v39^pc_relevant_3m_sort_dl_base2\",\"dist_request_id\":\"1701726859255_08392\"}","dist_request_id":"1701726859255_08392","ab_strategy":"3m_landing_cb_dl","index":"8","strategy":"2~default~BlogCommendFromBaidu~Rate","dest":"https://blog.csdn.net/qq_40671063/article/details/130179435"}'  data-report-query='spm=1001.2101.3001.6650.8&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-8-130179435-blog-125218735.235%5Ev39%5Epc_relevant_3m_sort_dl_base2&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-8-130179435-blog-125218735.235%5Ev39%5Epc_relevant_3m_sort_dl_base2'>
+			<a href="https://blog.csdn.net/qq_40671063/article/details/130179435" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.2","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-2-130179435-blog-125218735.235^v40^pc_relevant_anti_t3\",\"dist_request_id\":\"1704031114240_03552\"}","dist_request_id":"1704031114240_03552","ab_strategy":"increase_t0_anti_vip","index":"2","strategy":"2~default~BlogCommendFromBaidu~Rate","dest":"https://blog.csdn.net/qq_40671063/article/details/130179435"}'  data-report-query='spm=1001.2101.3001.6650.2&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-2-130179435-blog-125218735.235%5Ev40%5Epc_relevant_anti_t3&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-2-130179435-blog-125218735.235%5Ev40%5Epc_relevant_anti_t3'>
 				<div class="desc ellipsis-online ellipsis-online-1">data:要求加载或者类型数据；: 每轮迭代要<em>采样</em><em>邻居</em>节点的个数，即第i-1轮要为每个节点<em>采样</em>个节点，如果为-1，则代表所有<em>邻居</em>节点都将被包含(一阶相邻<em>邻居</em>)，在异构图中，还可以使用字典来表示每个单独的边缘类型要<em>采样</em>的<em>邻居</em>数量；: 中心节点集合，用来指导<em>采样</em>一个mini-batch内的节点，如果为None，则代表包含data中的所有节点。如果设置为 None，将考虑所有节点。在异构图中，需要作为包含节点类型和节点索引的元组传递。（默认值：None）</div>
 			</a>
 		</div>
 	</div>
 </div>
-<div class="recommend-item-box type_blog clearfix" data-url="https://blog.csdn.net/weixin_43542525/article/details/115836895"  data-report-view='{"ab":"new","spm":"1001.2101.3001.6650.9","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-9-115836895-blog-125218735.235^v39^pc_relevant_3m_sort_dl_base2\",\"dist_request_id\":\"1701726859255_08392\"}","dist_request_id":"1701726859255_08392","ab_strategy":"3m_landing_cb_dl","index":"9","strategy":"2~default~BlogCommendFromBaidu~Rate","dest":"https://blog.csdn.net/weixin_43542525/article/details/115836895"}'>
+<div class="recommend-item-box type_blog clearfix" data-url="https://jingliu.blog.csdn.net/article/details/118386895"  data-report-view='{"ab":"new","spm":"1001.2101.3001.6650.3","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-3-118386895-blog-125218735.235^v40^pc_relevant_anti_t3\",\"dist_request_id\":\"1704031114240_03552\"}","dist_request_id":"1704031114240_03552","ab_strategy":"increase_t0_anti_vip","index":"3","strategy":"2~default~BlogCommendFromBaidu~Rate","dest":"https://jingliu.blog.csdn.net/article/details/118386895"}'>
 	<div class="content-box">
 		<div class="content-blog display-flex">
 			<div class="title-box">
-				<a href="https://blog.csdn.net/weixin_43542525/article/details/115836895" class="tit" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.9","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-9-115836895-blog-125218735.235^v39^pc_relevant_3m_sort_dl_base2\",\"dist_request_id\":\"1701726859255_08392\"}","dist_request_id":"1701726859255_08392","ab_strategy":"3m_landing_cb_dl","index":"9","strategy":"2~default~BlogCommendFromBaidu~Rate","dest":"https://blog.csdn.net/weixin_43542525/article/details/115836895"}'  data-report-query='spm=1001.2101.3001.6650.9&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-9-115836895-blog-125218735.235%5Ev39%5Epc_relevant_3m_sort_dl_base2&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-9-115836895-blog-125218735.235%5Ev39%5Epc_relevant_3m_sort_dl_base2'>
+				<a href="https://jingliu.blog.csdn.net/article/details/118386895" class="tit" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.3","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-3-118386895-blog-125218735.235^v40^pc_relevant_anti_t3\",\"dist_request_id\":\"1704031114240_03552\"}","dist_request_id":"1704031114240_03552","ab_strategy":"increase_t0_anti_vip","index":"3","strategy":"2~default~BlogCommendFromBaidu~Rate","dest":"https://jingliu.blog.csdn.net/article/details/118386895"}'  data-report-query='spm=1001.2101.3001.6650.3&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-3-118386895-blog-125218735.235%5Ev40%5Epc_relevant_anti_t3&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-3-118386895-blog-125218735.235%5Ev40%5Epc_relevant_anti_t3'>
+					<div class="left ellipsis-online ellipsis-online-1"><em>GNN</em><em>教程</em>：大规模分布式训练</div>
+				</a>
+			</div>
+			<div class="info-box display-flex">
+				<div class="info">
+					<a href="https://blog.csdn.net/lj2048" target="_blank"><span class="blog-title">图挖掘领域，新晋砖家 ☞ 未来可期，欢迎和静静一起学习交流吖 </span></a>
+				</div>
+				<div class="info display-flex">
+					<span class="info-block time">07-01</span>
+					<span class="info-block read"><img class="read-img" src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">
+					1326
+					</span>
+				</div>
+			</div>
+		</div>
+		<div class="desc-box">
+			<a href="https://jingliu.blog.csdn.net/article/details/118386895" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.3","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-3-118386895-blog-125218735.235^v40^pc_relevant_anti_t3\",\"dist_request_id\":\"1704031114240_03552\"}","dist_request_id":"1704031114240_03552","ab_strategy":"increase_t0_anti_vip","index":"3","strategy":"2~default~BlogCommendFromBaidu~Rate","dest":"https://jingliu.blog.csdn.net/article/details/118386895"}'  data-report-query='spm=1001.2101.3001.6650.3&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-3-118386895-blog-125218735.235%5Ev40%5Epc_relevant_anti_t3&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-3-118386895-blog-125218735.235%5Ev40%5Epc_relevant_anti_t3'>
+				<div class="desc ellipsis-online ellipsis-online-1">引言
+
+本文为<em>GNN</em><em>教程</em>的DGL框架之大规模分布式训练，前面的文章中我们介绍了图神经网络框架DGL如何利用<em>采样</em>的技术缩小计算图的规模来通过mini-batch的方式训练模型，当图特别大的时候，非常多的batches需要被计算，因此运算时间又成了问题，一个容易想到解决方案是采用并行计算的技术，很多worker同时<em>采样</em>，计算并且更新梯度。这篇博文重点介绍DGL的并行计算框架。
+
+多进程方案
+
+概括而言，目前DGL(version 0.3)采用的是多进程的并行方案，分布式的方案正在开发中。见下图，DGL的并行计算</div>
+			</a>
+		</div>
+	</div>
+</div>
+		<dl id="recommend-item-box-tow" class="recommend-item-box type_blog clearfix">
+			
+		</dl>
+<div class="recommend-item-box type_blog clearfix" data-url="https://blog.csdn.net/yanqianglifei/article/details/118671596"  data-report-view='{"ab":"new","spm":"1001.2101.3001.6650.4","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-4-118671596-blog-125218735.235^v40^pc_relevant_anti_t3\",\"dist_request_id\":\"1704031114240_03552\"}","dist_request_id":"1704031114240_03552","ab_strategy":"increase_t0_anti_vip","index":"4","strategy":"2~default~BlogCommendFromBaidu~Rate","dest":"https://blog.csdn.net/yanqianglifei/article/details/118671596"}'>
+	<div class="content-box">
+		<div class="content-blog display-flex">
+			<div class="title-box">
+				<a href="https://blog.csdn.net/yanqianglifei/article/details/118671596" class="tit" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.4","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-4-118671596-blog-125218735.235^v40^pc_relevant_anti_t3\",\"dist_request_id\":\"1704031114240_03552\"}","dist_request_id":"1704031114240_03552","ab_strategy":"increase_t0_anti_vip","index":"4","strategy":"2~default~BlogCommendFromBaidu~Rate","dest":"https://blog.csdn.net/yanqianglifei/article/details/118671596"}'  data-report-query='spm=1001.2101.3001.6650.4&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-4-118671596-blog-125218735.235%5Ev40%5Epc_relevant_anti_t3&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-4-118671596-blog-125218735.235%5Ev40%5Epc_relevant_anti_t3'>
+					<div class="left ellipsis-online ellipsis-online-1">图神经网络22-DGL实战：针对边分类任务的<em>邻居</em><em>采样</em>训练方法</div>
+				</a>
+			</div>
+			<div class="info-box display-flex">
+				<div class="info">
+					<a href="https://blog.csdn.net/yanqianglifei" target="_blank"><span class="blog-title">yanqianglifei的专栏</span></a>
+				</div>
+				<div class="info display-flex">
+					<span class="info-block time">07-12</span>
+					<span class="info-block read"><img class="read-img" src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">
+					1515
+					</span>
+				</div>
+			</div>
+		</div>
+		<div class="desc-box">
+			<a href="https://blog.csdn.net/yanqianglifei/article/details/118671596" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.4","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-4-118671596-blog-125218735.235^v40^pc_relevant_anti_t3\",\"dist_request_id\":\"1704031114240_03552\"}","dist_request_id":"1704031114240_03552","ab_strategy":"increase_t0_anti_vip","index":"4","strategy":"2~default~BlogCommendFromBaidu~Rate","dest":"https://blog.csdn.net/yanqianglifei/article/details/118671596"}'  data-report-query='spm=1001.2101.3001.6650.4&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-4-118671596-blog-125218735.235%5Ev40%5Epc_relevant_anti_t3&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-4-118671596-blog-125218735.235%5Ev40%5Epc_relevant_anti_t3'>
+				<div class="desc ellipsis-online ellipsis-online-1">边分类/回归的训练与节点分类/回归的训练类似，但还是有一些明显的区别。
+定义<em>邻居</em><em>采样</em>器和数据加载器
+用户可以使用和节点分类一样的<em>邻居</em><em>采样</em>器 。
+sampler = dgl.dataloading.MultiLayerFull<em>Neighbor</em>Sampler(2)
+想要用DGL提供的<em>邻居</em><em>采样</em>器做边分类，需要将其与
+:class:~dgl.dataloading.<em>pytorch</em>.EdgeDataLoad...</div>
+			</a>
+		</div>
+	</div>
+</div>
+<div class="recommend-item-box type_download clearfix" data-url="https://download.csdn.net/download/weixin_42121754/15635122"  data-report-view='{"ab":"new","spm":"1001.2101.3001.6650.5","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-download-2~default~OPENSEARCH~Rate-5-15635122-blog-125218735.235^v40^pc_relevant_anti_t3\",\"dist_request_id\":\"1704031114240_03552\"}","dist_request_id":"1704031114240_03552","ab_strategy":"increase_t0_anti_vip","index":"5","strategy":"2~default~OPENSEARCH~Rate","dest":"https://download.csdn.net/download/weixin_42121754/15635122"}'>
+	<div class="content-box">
+		<div class="content-blog display-flex">
+			<div class="title-box">
+				<a href="https://download.csdn.net/download/weixin_42121754/15635122" class="tit" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.5","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-download-2~default~OPENSEARCH~Rate-5-15635122-blog-125218735.235^v40^pc_relevant_anti_t3\",\"dist_request_id\":\"1704031114240_03552\"}","dist_request_id":"1704031114240_03552","ab_strategy":"increase_t0_anti_vip","index":"5","strategy":"2~default~OPENSEARCH~Rate","dest":"https://download.csdn.net/download/weixin_42121754/15635122"}'  data-report-query='spm=1001.2101.3001.6650.5&utm_medium=distribute.pc_relevant.none-task-download-2%7Edefault%7EOPENSEARCH%7ERate-5-15635122-blog-125218735.235%5Ev40%5Epc_relevant_anti_t3&depth_1-utm_source=distribute.pc_relevant.none-task-download-2%7Edefault%7EOPENSEARCH%7ERate-5-15635122-blog-125218735.235%5Ev40%5Epc_relevant_anti_t3'>
+					<div class="left ellipsis-online ellipsis-online-1"><em>PyG</em>2Plot::artist_palette:用于@ AntVG2Plot绘图库的Python3绑定</div>
+				</a>
+			</div>
+			<div class="info-box display-flex">
+				<div class="info display-flex">
+					<span class="info-block">03-07</span>
+				</div>
+			</div>
+		</div>
+		<div class="desc-box">
+			<a href="https://download.csdn.net/download/weixin_42121754/15635122" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.5","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-download-2~default~OPENSEARCH~Rate-5-15635122-blog-125218735.235^v40^pc_relevant_anti_t3\",\"dist_request_id\":\"1704031114240_03552\"}","dist_request_id":"1704031114240_03552","ab_strategy":"increase_t0_anti_vip","index":"5","strategy":"2~default~OPENSEARCH~Rate","dest":"https://download.csdn.net/download/weixin_42121754/15635122"}'  data-report-query='spm=1001.2101.3001.6650.5&utm_medium=distribute.pc_relevant.none-task-download-2%7Edefault%7EOPENSEARCH%7ERate-5-15635122-blog-125218735.235%5Ev40%5Epc_relevant_anti_t3&depth_1-utm_source=distribute.pc_relevant.none-task-download-2%7Edefault%7EOPENSEARCH%7ERate-5-15635122-blog-125218735.235%5Ev40%5Epc_relevant_anti_t3'>
+				<div class="desc ellipsis-online ellipsis-online-1"><em>PyG</em>2图  :artist_palette: Python3绑定，它是一个交互式的响应式图表库。 根据图形语法，您可以通过几行代码轻松制作出出色的统计图。 <em>PyG</em>2Plot受到<em>PyG</em>2Plot的启发。  文档：&middot;&middot;&middot; 安装 $ pip install <em>pyg</em>2plot ...</div>
+			</a>
+		</div>
+	</div>
+</div>
+<div class="recommend-item-box type_download clearfix" data-url="https://download.csdn.net/download/weixin_42181319/20198269"  data-report-view='{"ab":"new","spm":"1001.2101.3001.6650.6","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-download-2~default~OPENSEARCH~Rate-6-20198269-blog-125218735.235^v40^pc_relevant_anti_t3\",\"dist_request_id\":\"1704031114240_03552\"}","dist_request_id":"1704031114240_03552","ab_strategy":"increase_t0_anti_vip","index":"6","strategy":"2~default~OPENSEARCH~Rate","dest":"https://download.csdn.net/download/weixin_42181319/20198269"}'>
+	<div class="content-box">
+		<div class="content-blog display-flex">
+			<div class="title-box">
+				<a href="https://download.csdn.net/download/weixin_42181319/20198269" class="tit" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.6","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-download-2~default~OPENSEARCH~Rate-6-20198269-blog-125218735.235^v40^pc_relevant_anti_t3\",\"dist_request_id\":\"1704031114240_03552\"}","dist_request_id":"1704031114240_03552","ab_strategy":"increase_t0_anti_vip","index":"6","strategy":"2~default~OPENSEARCH~Rate","dest":"https://download.csdn.net/download/weixin_42181319/20198269"}'  data-report-query='spm=1001.2101.3001.6650.6&utm_medium=distribute.pc_relevant.none-task-download-2%7Edefault%7EOPENSEARCH%7ERate-6-20198269-blog-125218735.235%5Ev40%5Epc_relevant_anti_t3&depth_1-utm_source=distribute.pc_relevant.none-task-download-2%7Edefault%7EOPENSEARCH%7ERate-6-20198269-blog-125218735.235%5Ev40%5Epc_relevant_anti_t3'>
+					<div class="left ellipsis-online ellipsis-online-1"><em>pyg</em>2png:将 HTMLBook 代码列表转换为 PNG</div>
+				</a>
+			</div>
+			<div class="info-box display-flex">
+				<div class="info display-flex">
+					<span class="info-block">07-11</span>
+				</div>
+			</div>
+		</div>
+		<div class="desc-box">
+			<a href="https://download.csdn.net/download/weixin_42181319/20198269" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.6","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-download-2~default~OPENSEARCH~Rate-6-20198269-blog-125218735.235^v40^pc_relevant_anti_t3\",\"dist_request_id\":\"1704031114240_03552\"}","dist_request_id":"1704031114240_03552","ab_strategy":"increase_t0_anti_vip","index":"6","strategy":"2~default~OPENSEARCH~Rate","dest":"https://download.csdn.net/download/weixin_42181319/20198269"}'  data-report-query='spm=1001.2101.3001.6650.6&utm_medium=distribute.pc_relevant.none-task-download-2%7Edefault%7EOPENSEARCH%7ERate-6-20198269-blog-125218735.235%5Ev40%5Epc_relevant_anti_t3&depth_1-utm_source=distribute.pc_relevant.none-task-download-2%7Edefault%7EOPENSEARCH%7ERate-6-20198269-blog-125218735.235%5Ev40%5Epc_relevant_anti_t3'>
+				<div class="desc ellipsis-online ellipsis-online-1">ch01_listing_3.png ch02_listing_1.png ch02_listing_2.png 要求 你需要：  码头工人 1.3  原因是我使用了自动挂载目录功能，而且只有1.3才有！ 开始 注意：记得把odewahn 改成你的用户名！  首先，构建镜像：  ...</div>
+			</a>
+		</div>
+	</div>
+</div>
+<div class="recommend-item-box type_download clearfix" data-url="https://download.csdn.net/download/weixin_42102220/18664716"  data-report-view='{"ab":"new","spm":"1001.2101.3001.6650.7","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-download-2~default~OPENSEARCH~Rate-7-18664716-blog-125218735.235^v40^pc_relevant_anti_t3\",\"dist_request_id\":\"1704031114240_03552\"}","dist_request_id":"1704031114240_03552","ab_strategy":"increase_t0_anti_vip","index":"7","strategy":"2~default~OPENSEARCH~Rate","dest":"https://download.csdn.net/download/weixin_42102220/18664716"}'>
+	<div class="content-box">
+		<div class="content-blog display-flex">
+			<div class="title-box">
+				<a href="https://download.csdn.net/download/weixin_42102220/18664716" class="tit" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.7","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-download-2~default~OPENSEARCH~Rate-7-18664716-blog-125218735.235^v40^pc_relevant_anti_t3\",\"dist_request_id\":\"1704031114240_03552\"}","dist_request_id":"1704031114240_03552","ab_strategy":"increase_t0_anti_vip","index":"7","strategy":"2~default~OPENSEARCH~Rate","dest":"https://download.csdn.net/download/weixin_42102220/18664716"}'  data-report-query='spm=1001.2101.3001.6650.7&utm_medium=distribute.pc_relevant.none-task-download-2%7Edefault%7EOPENSEARCH%7ERate-7-18664716-blog-125218735.235%5Ev40%5Epc_relevant_anti_t3&depth_1-utm_source=distribute.pc_relevant.none-task-download-2%7Edefault%7EOPENSEARCH%7ERate-7-18664716-blog-125218735.235%5Ev40%5Epc_relevant_anti_t3'>
+					<div class="left ellipsis-online ellipsis-online-1"><em>pyg</em>-bench:脚本来编写postgresql并获取其行为</div>
+				</a>
+			</div>
+			<div class="info-box display-flex">
+				<div class="info display-flex">
+					<span class="info-block">05-13</span>
+				</div>
+			</div>
+		</div>
+		<div class="desc-box">
+			<a href="https://download.csdn.net/download/weixin_42102220/18664716" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.7","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-download-2~default~OPENSEARCH~Rate-7-18664716-blog-125218735.235^v40^pc_relevant_anti_t3\",\"dist_request_id\":\"1704031114240_03552\"}","dist_request_id":"1704031114240_03552","ab_strategy":"increase_t0_anti_vip","index":"7","strategy":"2~default~OPENSEARCH~Rate","dest":"https://download.csdn.net/download/weixin_42102220/18664716"}'  data-report-query='spm=1001.2101.3001.6650.7&utm_medium=distribute.pc_relevant.none-task-download-2%7Edefault%7EOPENSEARCH%7ERate-7-18664716-blog-125218735.235%5Ev40%5Epc_relevant_anti_t3&depth_1-utm_source=distribute.pc_relevant.none-task-download-2%7Edefault%7EOPENSEARCH%7ERate-7-18664716-blog-125218735.235%5Ev40%5Epc_relevant_anti_t3'>
+				<div class="desc ellipsis-online ellipsis-online-1">如何安装项目： 安装Redis请参阅： : sudo apt-get install libpq-dev python-devpython3 setup.py install项目的选择usage: <em>pyg</em>-bench [-h] --config-file CONFIG_FILE [--slave] [--send-tasks] --interval ...</div>
+			</a>
+		</div>
+	</div>
+</div>
+<div class="recommend-item-box type_download clearfix" data-url="https://download.csdn.net/download/weixin_42172972/15655660"  data-report-view='{"ab":"new","spm":"1001.2101.3001.6650.8","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-download-2~default~OPENSEARCH~Rate-8-15655660-blog-125218735.235^v40^pc_relevant_anti_t3\",\"dist_request_id\":\"1704031114240_03552\"}","dist_request_id":"1704031114240_03552","ab_strategy":"increase_t0_anti_vip","index":"8","strategy":"2~default~OPENSEARCH~Rate","dest":"https://download.csdn.net/download/weixin_42172972/15655660"}'>
+	<div class="content-box">
+		<div class="content-blog display-flex">
+			<div class="title-box">
+				<a href="https://download.csdn.net/download/weixin_42172972/15655660" class="tit" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.8","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-download-2~default~OPENSEARCH~Rate-8-15655660-blog-125218735.235^v40^pc_relevant_anti_t3\",\"dist_request_id\":\"1704031114240_03552\"}","dist_request_id":"1704031114240_03552","ab_strategy":"increase_t0_anti_vip","index":"8","strategy":"2~default~OPENSEARCH~Rate","dest":"https://download.csdn.net/download/weixin_42172972/15655660"}'  data-report-query='spm=1001.2101.3001.6650.8&utm_medium=distribute.pc_relevant.none-task-download-2%7Edefault%7EOPENSEARCH%7ERate-8-15655660-blog-125218735.235%5Ev40%5Epc_relevant_anti_t3&depth_1-utm_source=distribute.pc_relevant.none-task-download-2%7Edefault%7EOPENSEARCH%7ERate-8-15655660-blog-125218735.235%5Ev40%5Epc_relevant_anti_t3'>
+					<div class="left ellipsis-online ellipsis-online-1"><em>pyg</em>:初始化</div>
+				</a>
+			</div>
+			<div class="info-box display-flex">
+				<div class="info display-flex">
+					<span class="info-block">03-08</span>
+				</div>
+			</div>
+		</div>
+		<div class="desc-box">
+			<a href="https://download.csdn.net/download/weixin_42172972/15655660" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.8","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-download-2~default~OPENSEARCH~Rate-8-15655660-blog-125218735.235^v40^pc_relevant_anti_t3\",\"dist_request_id\":\"1704031114240_03552\"}","dist_request_id":"1704031114240_03552","ab_strategy":"increase_t0_anti_vip","index":"8","strategy":"2~default~OPENSEARCH~Rate","dest":"https://download.csdn.net/download/weixin_42172972/15655660"}'  data-report-query='spm=1001.2101.3001.6650.8&utm_medium=distribute.pc_relevant.none-task-download-2%7Edefault%7EOPENSEARCH%7ERate-8-15655660-blog-125218735.235%5Ev40%5Epc_relevant_anti_t3&depth_1-utm_source=distribute.pc_relevant.none-task-download-2%7Edefault%7EOPENSEARCH%7ERate-8-15655660-blog-125218735.235%5Ev40%5Epc_relevant_anti_t3'>
+				<div class="desc ellipsis-online ellipsis-online-1"><em>pyg</em>:初始化</div>
+			</a>
+		</div>
+	</div>
+</div>
+<div class="recommend-item-box type_download clearfix" data-url="https://download.csdn.net/download/qq_38161040/78862612"  data-report-view='{"ab":"new","spm":"1001.2101.3001.6650.9","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-download-2~default~OPENSEARCH~Rate-9-78862612-blog-125218735.235^v40^pc_relevant_anti_t3\",\"dist_request_id\":\"1704031114240_03552\"}","dist_request_id":"1704031114240_03552","ab_strategy":"increase_t0_anti_vip","index":"9","strategy":"2~default~OPENSEARCH~Rate","dest":"https://download.csdn.net/download/qq_38161040/78862612"}'>
+	<div class="content-box">
+		<div class="content-blog display-flex">
+			<div class="title-box">
+				<a href="https://download.csdn.net/download/qq_38161040/78862612" class="tit" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.9","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-download-2~default~OPENSEARCH~Rate-9-78862612-blog-125218735.235^v40^pc_relevant_anti_t3\",\"dist_request_id\":\"1704031114240_03552\"}","dist_request_id":"1704031114240_03552","ab_strategy":"increase_t0_anti_vip","index":"9","strategy":"2~default~OPENSEARCH~Rate","dest":"https://download.csdn.net/download/qq_38161040/78862612"}'  data-report-query='spm=1001.2101.3001.6650.9&utm_medium=distribute.pc_relevant.none-task-download-2%7Edefault%7EOPENSEARCH%7ERate-9-78862612-blog-125218735.235%5Ev40%5Epc_relevant_anti_t3&depth_1-utm_source=distribute.pc_relevant.none-task-download-2%7Edefault%7EOPENSEARCH%7ERate-9-78862612-blog-125218735.235%5Ev40%5Epc_relevant_anti_t3'>
+					<div class="left ellipsis-online ellipsis-online-1">PyPI 官网下载 | <em>pyg</em>3D-1.0.1.tar.gz</div>
+				</a>
+			</div>
+			<div class="info-box display-flex">
+				<div class="info display-flex">
+					<span class="info-block">02-01</span>
+				</div>
+			</div>
+		</div>
+		<div class="desc-box">
+			<a href="https://download.csdn.net/download/qq_38161040/78862612" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.9","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-download-2~default~OPENSEARCH~Rate-9-78862612-blog-125218735.235^v40^pc_relevant_anti_t3\",\"dist_request_id\":\"1704031114240_03552\"}","dist_request_id":"1704031114240_03552","ab_strategy":"increase_t0_anti_vip","index":"9","strategy":"2~default~OPENSEARCH~Rate","dest":"https://download.csdn.net/download/qq_38161040/78862612"}'  data-report-query='spm=1001.2101.3001.6650.9&utm_medium=distribute.pc_relevant.none-task-download-2%7Edefault%7EOPENSEARCH%7ERate-9-78862612-blog-125218735.235%5Ev40%5Epc_relevant_anti_t3&depth_1-utm_source=distribute.pc_relevant.none-task-download-2%7Edefault%7EOPENSEARCH%7ERate-9-78862612-blog-125218735.235%5Ev40%5Epc_relevant_anti_t3'>
+				<div class="desc ellipsis-online ellipsis-online-1">资源来自pypi官网。 资源全名：<em>pyg</em>3D-1.0.1.tar.gz</div>
+			</a>
+		</div>
+	</div>
+</div>
+<div class="recommend-item-box type_download clearfix" data-url="https://download.csdn.net/download/qq_39328436/84117362"  data-report-view='{"ab":"new","spm":"1001.2101.3001.6650.10","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-download-2~default~OPENSEARCH~Rate-10-84117362-blog-125218735.235^v40^pc_relevant_anti_t3\",\"dist_request_id\":\"1704031114240_03552\"}","dist_request_id":"1704031114240_03552","ab_strategy":"increase_t0_anti_vip","index":"10","strategy":"2~default~OPENSEARCH~Rate","dest":"https://download.csdn.net/download/qq_39328436/84117362"}'>
+	<div class="content-box">
+		<div class="content-blog display-flex">
+			<div class="title-box">
+				<a href="https://download.csdn.net/download/qq_39328436/84117362" class="tit" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.10","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-download-2~default~OPENSEARCH~Rate-10-84117362-blog-125218735.235^v40^pc_relevant_anti_t3\",\"dist_request_id\":\"1704031114240_03552\"}","dist_request_id":"1704031114240_03552","ab_strategy":"increase_t0_anti_vip","index":"10","strategy":"2~default~OPENSEARCH~Rate","dest":"https://download.csdn.net/download/qq_39328436/84117362"}'  data-report-query='spm=1001.2101.3001.6650.10&utm_medium=distribute.pc_relevant.none-task-download-2%7Edefault%7EOPENSEARCH%7ERate-10-84117362-blog-125218735.235%5Ev40%5Epc_relevant_anti_t3&depth_1-utm_source=distribute.pc_relevant.none-task-download-2%7Edefault%7EOPENSEARCH%7ERate-10-84117362-blog-125218735.235%5Ev40%5Epc_relevant_anti_t3'>
+					<div class="left ellipsis-online ellipsis-online-1">Core数据集+<em>PyG</em>实现Core分类</div>
+				</a>
+			</div>
+			<div class="info-box display-flex">
+				<div class="info display-flex">
+					<span class="info-block">03-09</span>
+				</div>
+			</div>
+		</div>
+		<div class="desc-box">
+			<a href="https://download.csdn.net/download/qq_39328436/84117362" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.10","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-download-2~default~OPENSEARCH~Rate-10-84117362-blog-125218735.235^v40^pc_relevant_anti_t3\",\"dist_request_id\":\"1704031114240_03552\"}","dist_request_id":"1704031114240_03552","ab_strategy":"increase_t0_anti_vip","index":"10","strategy":"2~default~OPENSEARCH~Rate","dest":"https://download.csdn.net/download/qq_39328436/84117362"}'  data-report-query='spm=1001.2101.3001.6650.10&utm_medium=distribute.pc_relevant.none-task-download-2%7Edefault%7EOPENSEARCH%7ERate-10-84117362-blog-125218735.235%5Ev40%5Epc_relevant_anti_t3&depth_1-utm_source=distribute.pc_relevant.none-task-download-2%7Edefault%7EOPENSEARCH%7ERate-10-84117362-blog-125218735.235%5Ev40%5Epc_relevant_anti_t3'>
+				<div class="desc ellipsis-online ellipsis-online-1">Core数据集+<em>PyG</em>实现Core分类</div>
+			</a>
+		</div>
+	</div>
+</div>
+<div class="recommend-item-box type_download clearfix" data-url="https://download.csdn.net/download/weixin_38670433/19415096"  data-report-view='{"ab":"new","spm":"1001.2101.3001.6650.11","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-download-2~default~OPENSEARCH~Rate-11-19415096-blog-125218735.235^v40^pc_relevant_anti_t3\",\"dist_request_id\":\"1704031114240_03552\"}","dist_request_id":"1704031114240_03552","ab_strategy":"increase_t0_anti_vip","index":"11","strategy":"2~default~OPENSEARCH~Rate","dest":"https://download.csdn.net/download/weixin_38670433/19415096"}'>
+	<div class="content-box">
+		<div class="content-blog display-flex">
+			<div class="title-box">
+				<a href="https://download.csdn.net/download/weixin_38670433/19415096" class="tit" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.11","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-download-2~default~OPENSEARCH~Rate-11-19415096-blog-125218735.235^v40^pc_relevant_anti_t3\",\"dist_request_id\":\"1704031114240_03552\"}","dist_request_id":"1704031114240_03552","ab_strategy":"increase_t0_anti_vip","index":"11","strategy":"2~default~OPENSEARCH~Rate","dest":"https://download.csdn.net/download/weixin_38670433/19415096"}'  data-report-query='spm=1001.2101.3001.6650.11&utm_medium=distribute.pc_relevant.none-task-download-2%7Edefault%7EOPENSEARCH%7ERate-11-19415096-blog-125218735.235%5Ev40%5Epc_relevant_anti_t3&depth_1-utm_source=distribute.pc_relevant.none-task-download-2%7Edefault%7EOPENSEARCH%7ERate-11-19415096-blog-125218735.235%5Ev40%5Epc_relevant_anti_t3'>
+					<div class="left ellipsis-online ellipsis-online-1">毕业设计电商网站源码-<em>pyg</em>:小猪</div>
+				</a>
+			</div>
+			<div class="info-box display-flex">
+				<div class="info display-flex">
+					<span class="info-block">06-06</span>
+				</div>
+			</div>
+		</div>
+		<div class="desc-box">
+			<a href="https://download.csdn.net/download/weixin_38670433/19415096" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.11","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-download-2~default~OPENSEARCH~Rate-11-19415096-blog-125218735.235^v40^pc_relevant_anti_t3\",\"dist_request_id\":\"1704031114240_03552\"}","dist_request_id":"1704031114240_03552","ab_strategy":"increase_t0_anti_vip","index":"11","strategy":"2~default~OPENSEARCH~Rate","dest":"https://download.csdn.net/download/weixin_38670433/19415096"}'  data-report-query='spm=1001.2101.3001.6650.11&utm_medium=distribute.pc_relevant.none-task-download-2%7Edefault%7EOPENSEARCH%7ERate-11-19415096-blog-125218735.235%5Ev40%5Epc_relevant_anti_t3&depth_1-utm_source=distribute.pc_relevant.none-task-download-2%7Edefault%7EOPENSEARCH%7ERate-11-19415096-blog-125218735.235%5Ev40%5Epc_relevant_anti_t3'>
+				<div class="desc ellipsis-online ellipsis-online-1">3 技术在线 ​	可能需要用得到的网站 名称 网址 备注 zepto zepto的中文api art-template 模版引擎 fontawesome 字体图标 mui官网 官方网站 hello-mui 在线案例 mui-辅助类 mui的辅助类 品优购在线 上课参照的案例 ...</div>
+			</a>
+		</div>
+	</div>
+</div>
+<div class="recommend-item-box type_download clearfix" data-url="https://download.csdn.net/download/weixin_35817272/86316720"  data-report-view='{"ab":"new","spm":"1001.2101.3001.6650.12","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-download-2~default~OPENSEARCH~Rate-12-86316720-blog-125218735.235^v40^pc_relevant_anti_t3\",\"dist_request_id\":\"1704031114240_03552\"}","dist_request_id":"1704031114240_03552","ab_strategy":"increase_t0_anti_vip","index":"12","strategy":"2~default~OPENSEARCH~Rate","dest":"https://download.csdn.net/download/weixin_35817272/86316720"}'>
+	<div class="content-box">
+		<div class="content-blog display-flex">
+			<div class="title-box">
+				<a href="https://download.csdn.net/download/weixin_35817272/86316720" class="tit" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.12","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-download-2~default~OPENSEARCH~Rate-12-86316720-blog-125218735.235^v40^pc_relevant_anti_t3\",\"dist_request_id\":\"1704031114240_03552\"}","dist_request_id":"1704031114240_03552","ab_strategy":"increase_t0_anti_vip","index":"12","strategy":"2~default~OPENSEARCH~Rate","dest":"https://download.csdn.net/download/weixin_35817272/86316720"}'  data-report-query='spm=1001.2101.3001.6650.12&utm_medium=distribute.pc_relevant.none-task-download-2%7Edefault%7EOPENSEARCH%7ERate-12-86316720-blog-125218735.235%5Ev40%5Epc_relevant_anti_t3&depth_1-utm_source=distribute.pc_relevant.none-task-download-2%7Edefault%7EOPENSEARCH%7ERate-12-86316720-blog-125218735.235%5Ev40%5Epc_relevant_anti_t3'>
+					<div class="left ellipsis-online ellipsis-online-1">3-环境配置与<em>PyG</em>库1</div>
+				</a>
+			</div>
+			<div class="info-box display-flex">
+				<div class="info display-flex">
+					<span class="info-block">08-03</span>
+				</div>
+			</div>
+		</div>
+		<div class="desc-box">
+			<a href="https://download.csdn.net/download/weixin_35817272/86316720" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.12","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-download-2~default~OPENSEARCH~Rate-12-86316720-blog-125218735.235^v40^pc_relevant_anti_t3\",\"dist_request_id\":\"1704031114240_03552\"}","dist_request_id":"1704031114240_03552","ab_strategy":"increase_t0_anti_vip","index":"12","strategy":"2~default~OPENSEARCH~Rate","dest":"https://download.csdn.net/download/weixin_35817272/86316720"}'  data-report-query='spm=1001.2101.3001.6650.12&utm_medium=distribute.pc_relevant.none-task-download-2%7Edefault%7EOPENSEARCH%7ERate-12-86316720-blog-125218735.235%5Ev40%5Epc_relevant_anti_t3&depth_1-utm_source=distribute.pc_relevant.none-task-download-2%7Edefault%7EOPENSEARCH%7ERate-12-86316720-blog-125218735.235%5Ev40%5Epc_relevant_anti_t3'>
+				<div class="desc ellipsis-online ellipsis-online-1">一、引言<em>PyTorch</em> Geometric (<em>PyG</em>)是面向几何<em>深度学习</em>的<em>PyTorch</em>的扩展库，几何<em>深度学习</em>指的是应用于图和其他不规则、非结构化数据的<em>深度学习</em></div>
+			</a>
+		</div>
+	</div>
+</div>
+<div class="recommend-item-box type_download clearfix" data-url="https://download.csdn.net/download/weixin_42132598/19669404"  data-report-view='{"ab":"new","spm":"1001.2101.3001.6650.13","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-download-2~default~OPENSEARCH~Rate-13-19669404-blog-125218735.235^v40^pc_relevant_anti_t3\",\"dist_request_id\":\"1704031114240_03552\"}","dist_request_id":"1704031114240_03552","ab_strategy":"increase_t0_anti_vip","index":"13","strategy":"2~default~OPENSEARCH~Rate","dest":"https://download.csdn.net/download/weixin_42132598/19669404"}'>
+	<div class="content-box">
+		<div class="content-blog display-flex">
+			<div class="title-box">
+				<a href="https://download.csdn.net/download/weixin_42132598/19669404" class="tit" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.13","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-download-2~default~OPENSEARCH~Rate-13-19669404-blog-125218735.235^v40^pc_relevant_anti_t3\",\"dist_request_id\":\"1704031114240_03552\"}","dist_request_id":"1704031114240_03552","ab_strategy":"increase_t0_anti_vip","index":"13","strategy":"2~default~OPENSEARCH~Rate","dest":"https://download.csdn.net/download/weixin_42132598/19669404"}'  data-report-query='spm=1001.2101.3001.6650.13&utm_medium=distribute.pc_relevant.none-task-download-2%7Edefault%7EOPENSEARCH%7ERate-13-19669404-blog-125218735.235%5Ev40%5Epc_relevant_anti_t3&depth_1-utm_source=distribute.pc_relevant.none-task-download-2%7Edefault%7EOPENSEARCH%7ERate-13-19669404-blog-125218735.235%5Ev40%5Epc_relevant_anti_t3'>
+					<div class="left ellipsis-online ellipsis-online-1"><em>pyg</em>:用于并行化遗传算法的 Python 样板</div>
+				</a>
+			</div>
+			<div class="info-box display-flex">
+				<div class="info display-flex">
+					<span class="info-block">06-15</span>
+				</div>
+			</div>
+		</div>
+		<div class="desc-box">
+			<a href="https://download.csdn.net/download/weixin_42132598/19669404" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.13","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-download-2~default~OPENSEARCH~Rate-13-19669404-blog-125218735.235^v40^pc_relevant_anti_t3\",\"dist_request_id\":\"1704031114240_03552\"}","dist_request_id":"1704031114240_03552","ab_strategy":"increase_t0_anti_vip","index":"13","strategy":"2~default~OPENSEARCH~Rate","dest":"https://download.csdn.net/download/weixin_42132598/19669404"}'  data-report-query='spm=1001.2101.3001.6650.13&utm_medium=distribute.pc_relevant.none-task-download-2%7Edefault%7EOPENSEARCH%7ERate-13-19669404-blog-125218735.235%5Ev40%5Epc_relevant_anti_t3&depth_1-utm_source=distribute.pc_relevant.none-task-download-2%7Edefault%7EOPENSEARCH%7ERate-13-19669404-blog-125218735.235%5Ev40%5Epc_relevant_anti_t3'>
+				<div class="desc ellipsis-online ellipsis-online-1">小猪用法： 创建一个文件simulation.py并覆盖Chromosome类。遗传算法染色体染色体存储其适应度和基因型。 基因型可以是一个整数列表、一个字符串&mdash;&mdash;任何数据结构。 适应度是适应度函数的值。 这里我们使用simulate ...</div>
+			</a>
+		</div>
+	</div>
+</div>
+<div class="recommend-item-box type_download clearfix" data-url="https://download.csdn.net/download/weixin_42676876/27508897"  data-report-view='{"ab":"new","spm":"1001.2101.3001.6650.14","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-download-2~default~OPENSEARCH~Rate-14-27508897-blog-125218735.235^v40^pc_relevant_anti_t3\",\"dist_request_id\":\"1704031114240_03552\"}","dist_request_id":"1704031114240_03552","ab_strategy":"increase_t0_anti_vip","index":"14","strategy":"2~default~OPENSEARCH~Rate","dest":"https://download.csdn.net/download/weixin_42676876/27508897"}'>
+	<div class="content-box">
+		<div class="content-blog display-flex">
+			<div class="title-box">
+				<a href="https://download.csdn.net/download/weixin_42676876/27508897" class="tit" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.14","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-download-2~default~OPENSEARCH~Rate-14-27508897-blog-125218735.235^v40^pc_relevant_anti_t3\",\"dist_request_id\":\"1704031114240_03552\"}","dist_request_id":"1704031114240_03552","ab_strategy":"increase_t0_anti_vip","index":"14","strategy":"2~default~OPENSEARCH~Rate","dest":"https://download.csdn.net/download/weixin_42676876/27508897"}'  data-report-query='spm=1001.2101.3001.6650.14&utm_medium=distribute.pc_relevant.none-task-download-2%7Edefault%7EOPENSEARCH%7ERate-14-27508897-blog-125218735.235%5Ev40%5Epc_relevant_anti_t3&depth_1-utm_source=distribute.pc_relevant.none-task-download-2%7Edefault%7EOPENSEARCH%7ERate-14-27508897-blog-125218735.235%5Ev40%5Epc_relevant_anti_t3'>
+					<div class="left ellipsis-online ellipsis-online-1"><em>pyg</em>_<em>PYG</em>_飘云阁密码工具_</div>
+				</a>
+			</div>
+			<div class="info-box display-flex">
+				<div class="info display-flex">
+					<span class="info-block">10-03</span>
+				</div>
+			</div>
+		</div>
+		<div class="desc-box">
+			<a href="https://download.csdn.net/download/weixin_42676876/27508897" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.14","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-download-2~default~OPENSEARCH~Rate-14-27508897-blog-125218735.235^v40^pc_relevant_anti_t3\",\"dist_request_id\":\"1704031114240_03552\"}","dist_request_id":"1704031114240_03552","ab_strategy":"increase_t0_anti_vip","index":"14","strategy":"2~default~OPENSEARCH~Rate","dest":"https://download.csdn.net/download/weixin_42676876/27508897"}'  data-report-query='spm=1001.2101.3001.6650.14&utm_medium=distribute.pc_relevant.none-task-download-2%7Edefault%7EOPENSEARCH%7ERate-14-27508897-blog-125218735.235%5Ev40%5Epc_relevant_anti_t3&depth_1-utm_source=distribute.pc_relevant.none-task-download-2%7Edefault%7EOPENSEARCH%7ERate-14-27508897-blog-125218735.235%5Ev40%5Epc_relevant_anti_t3'>
+				<div class="desc ellipsis-online ellipsis-online-1">密码，解密，编码，解密，加密，转义...............</div>
+			</a>
+		</div>
+	</div>
+</div>
+<div class="recommend-item-box type_blog clearfix" data-url="https://blog.csdn.net/minemine999/article/details/118658429"  data-report-view='{"ab":"new","spm":"1001.2101.3001.6650.15","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-15-118658429-blog-125218735.235^v40^pc_relevant_anti_t3\",\"dist_request_id\":\"1704031114240_03552\"}","dist_request_id":"1704031114240_03552","ab_strategy":"increase_t0_anti_vip","index":"15","strategy":"2~default~BlogCommendFromBaidu~Rate","dest":"https://blog.csdn.net/minemine999/article/details/118658429"}'>
+	<div class="content-box">
+		<div class="content-blog display-flex">
+			<div class="title-box">
+				<a href="https://blog.csdn.net/minemine999/article/details/118658429" class="tit" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.15","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-15-118658429-blog-125218735.235^v40^pc_relevant_anti_t3\",\"dist_request_id\":\"1704031114240_03552\"}","dist_request_id":"1704031114240_03552","ab_strategy":"increase_t0_anti_vip","index":"15","strategy":"2~default~BlogCommendFromBaidu~Rate","dest":"https://blog.csdn.net/minemine999/article/details/118658429"}'  data-report-query='spm=1001.2101.3001.6650.15&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-15-118658429-blog-125218735.235%5Ev40%5Epc_relevant_anti_t3&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-15-118658429-blog-125218735.235%5Ev40%5Epc_relevant_anti_t3'>
+					<div class="left ellipsis-online ellipsis-online-1">【图神经网络】GraphSAGE 无监督训练源码剖析</div>
+				</a>
+			</div>
+			<div class="info-box display-flex">
+				<div class="info">
+					<a href="https://blog.csdn.net/minemine999" target="_blank"><span class="blog-title">竹石破岩</span></a>
+				</div>
+				<div class="info display-flex">
+					<span class="info-block time">07-11</span>
+					<span class="info-block read"><img class="read-img" src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">
+					5089
+					</span>
+				</div>
+			</div>
+		</div>
+		<div class="desc-box">
+			<a href="https://blog.csdn.net/minemine999/article/details/118658429" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.15","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-15-118658429-blog-125218735.235^v40^pc_relevant_anti_t3\",\"dist_request_id\":\"1704031114240_03552\"}","dist_request_id":"1704031114240_03552","ab_strategy":"increase_t0_anti_vip","index":"15","strategy":"2~default~BlogCommendFromBaidu~Rate","dest":"https://blog.csdn.net/minemine999/article/details/118658429"}'  data-report-query='spm=1001.2101.3001.6650.15&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-15-118658429-blog-125218735.235%5Ev40%5Epc_relevant_anti_t3&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-15-118658429-blog-125218735.235%5Ev40%5Epc_relevant_anti_t3'>
+				<div class="desc ellipsis-online ellipsis-online-1">概述
+
+
+
+本<em>教程</em>主要介绍<em>pytorch</em>_geometric库examples下的graph_sage_unsup.py的源码剖析，主要的关键技术点，包括：
+
+如何实现随机<em>采样</em>的？
+	SAGEConv是如何训练的？
+
+
+关键问题1，随机<em>采样</em>和<em>采样</em>方向的问题（有向图）
+
+首先要理解的是，<em>采样</em>的过程和特征聚合的过程是相反的，<em>采样</em>的过程，比如，如下图所示，先<em>采样</em>A节点的一阶邻域节点，再根据一阶<em>采样</em>得到的节点进行二阶<em>采样</em>，是一个从左到右的<em>采样</em>过程，而在特征聚合消息传递的时候是先从二阶节点开始聚合，逐步收敛到目标节点</div>
+			</a>
+		</div>
+	</div>
+</div>
+<div class="recommend-item-box type_blog clearfix" data-url="https://blog.csdn.net/IntegerList/article/details/130150937"  data-report-view='{"ab":"new","spm":"1001.2101.3001.6650.16","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-16-130150937-blog-125218735.235^v40^pc_relevant_anti_t3\",\"dist_request_id\":\"1704031114240_03552\"}","dist_request_id":"1704031114240_03552","ab_strategy":"increase_t0_anti_vip","index":"16","strategy":"2~default~BlogCommendFromBaidu~Rate","dest":"https://blog.csdn.net/IntegerList/article/details/130150937"}'>
+	<div class="content-box">
+		<div class="content-blog display-flex">
+			<div class="title-box">
+				<a href="https://blog.csdn.net/IntegerList/article/details/130150937" class="tit" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.16","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-16-130150937-blog-125218735.235^v40^pc_relevant_anti_t3\",\"dist_request_id\":\"1704031114240_03552\"}","dist_request_id":"1704031114240_03552","ab_strategy":"increase_t0_anti_vip","index":"16","strategy":"2~default~BlogCommendFromBaidu~Rate","dest":"https://blog.csdn.net/IntegerList/article/details/130150937"}'  data-report-query='spm=1001.2101.3001.6650.16&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-16-130150937-blog-125218735.235%5Ev40%5Epc_relevant_anti_t3&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-16-130150937-blog-125218735.235%5Ev40%5Epc_relevant_anti_t3'>
+					<div class="left ellipsis-online ellipsis-online-1">在工业界落地的PinSAGE图卷积算法原理及源码学习（二）<em>采样</em></div>
+				</a>
+			</div>
+			<div class="info-box display-flex">
+				<div class="info">
+					<a href="https://blog.csdn.net/IntegerList" target="_blank"><span class="blog-title">IntegerList的博客</span></a>
+				</div>
+				<div class="info display-flex">
+					<span class="info-block time">04-14</span>
+					<span class="info-block read"><img class="read-img" src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">
+					230
+					</span>
+				</div>
+			</div>
+		</div>
+		<div class="desc-box">
+			<a href="https://blog.csdn.net/IntegerList/article/details/130150937" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.16","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-16-130150937-blog-125218735.235^v40^pc_relevant_anti_t3\",\"dist_request_id\":\"1704031114240_03552\"}","dist_request_id":"1704031114240_03552","ab_strategy":"increase_t0_anti_vip","index":"16","strategy":"2~default~BlogCommendFromBaidu~Rate","dest":"https://blog.csdn.net/IntegerList/article/details/130150937"}'  data-report-query='spm=1001.2101.3001.6650.16&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-16-130150937-blog-125218735.235%5Ev40%5Epc_relevant_anti_t3&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-16-130150937-blog-125218735.235%5Ev40%5Epc_relevant_anti_t3'>
+				<div class="desc ellipsis-online ellipsis-online-1">这一部分是PinSAGE算法最重要的一块，主要包括正负样本<em>采样</em>，PinSAGE<em>采样</em></div>
+			</a>
+		</div>
+	</div>
+</div>
+<div class="recommend-item-box type_blog clearfix" data-url="https://blog.csdn.net/weixin_43542525/article/details/115836895"  data-report-view='{"ab":"new","spm":"1001.2101.3001.6650.17","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-17-115836895-blog-125218735.235^v40^pc_relevant_anti_t3\",\"dist_request_id\":\"1704031114240_03552\"}","dist_request_id":"1704031114240_03552","ab_strategy":"increase_t0_anti_vip","index":"17","strategy":"2~default~BlogCommendFromBaidu~Rate","dest":"https://blog.csdn.net/weixin_43542525/article/details/115836895"}'>
+	<div class="content-box">
+		<div class="content-blog display-flex">
+			<div class="title-box">
+				<a href="https://blog.csdn.net/weixin_43542525/article/details/115836895" class="tit" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.17","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-17-115836895-blog-125218735.235^v40^pc_relevant_anti_t3\",\"dist_request_id\":\"1704031114240_03552\"}","dist_request_id":"1704031114240_03552","ab_strategy":"increase_t0_anti_vip","index":"17","strategy":"2~default~BlogCommendFromBaidu~Rate","dest":"https://blog.csdn.net/weixin_43542525/article/details/115836895"}'  data-report-query='spm=1001.2101.3001.6650.17&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-17-115836895-blog-125218735.235%5Ev40%5Epc_relevant_anti_t3&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-17-115836895-blog-125218735.235%5Ev40%5Epc_relevant_anti_t3'>
 					<div class="left ellipsis-online ellipsis-online-1">torch-sparse系列安装报错，通用解决方法</div>
 				</a>
 			</div>
@@ -1022,13 +1195,13 @@ sampler = dgl.dataloading.MultiLayerFull<em>Neighbor</em>Sampler(2)
 				<div class="info display-flex">
 					<span class="info-block time">04-18</span>
 					<span class="info-block read"><img class="read-img" src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">
-					4667
+					4778
 					</span>
 				</div>
 			</div>
 		</div>
 		<div class="desc-box">
-			<a href="https://blog.csdn.net/weixin_43542525/article/details/115836895" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.9","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-9-115836895-blog-125218735.235^v39^pc_relevant_3m_sort_dl_base2\",\"dist_request_id\":\"1701726859255_08392\"}","dist_request_id":"1701726859255_08392","ab_strategy":"3m_landing_cb_dl","index":"9","strategy":"2~default~BlogCommendFromBaidu~Rate","dest":"https://blog.csdn.net/weixin_43542525/article/details/115836895"}'  data-report-query='spm=1001.2101.3001.6650.9&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-9-115836895-blog-125218735.235%5Ev39%5Epc_relevant_3m_sort_dl_base2&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-9-115836895-blog-125218735.235%5Ev39%5Epc_relevant_3m_sort_dl_base2'>
+			<a href="https://blog.csdn.net/weixin_43542525/article/details/115836895" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.17","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-17-115836895-blog-125218735.235^v40^pc_relevant_anti_t3\",\"dist_request_id\":\"1704031114240_03552\"}","dist_request_id":"1704031114240_03552","ab_strategy":"increase_t0_anti_vip","index":"17","strategy":"2~default~BlogCommendFromBaidu~Rate","dest":"https://blog.csdn.net/weixin_43542525/article/details/115836895"}'  data-report-query='spm=1001.2101.3001.6650.17&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-17-115836895-blog-125218735.235%5Ev40%5Epc_relevant_anti_t3&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-17-115836895-blog-125218735.235%5Ev40%5Epc_relevant_anti_t3'>
 				<div class="desc ellipsis-online ellipsis-online-1">题主环境：
 Win10
 python3.7
@@ -1043,11 +1216,11 @@ torch-sparse、torch_scatter、torch_cluster等模块编译需要依赖Visual C+
 		</div>
 	</div>
 </div>
-<div class="recommend-item-box type_blog clearfix" data-url="https://blog.csdn.net/weixin_46052886/article/details/131253417"  data-report-view='{"ab":"new","spm":"1001.2101.3001.6650.10","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-10-131253417-blog-125218735.235^v39^pc_relevant_3m_sort_dl_base2\",\"dist_request_id\":\"1701726859255_08392\"}","dist_request_id":"1701726859255_08392","ab_strategy":"3m_landing_cb_dl","index":"10","strategy":"2~default~BlogCommendFromBaidu~Rate","dest":"https://blog.csdn.net/weixin_46052886/article/details/131253417"}'>
+<div class="recommend-item-box type_blog clearfix" data-url="https://blog.csdn.net/weixin_46052886/article/details/131253417"  data-report-view='{"ab":"new","spm":"1001.2101.3001.6650.18","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-18-131253417-blog-125218735.235^v40^pc_relevant_anti_t3\",\"dist_request_id\":\"1704031114240_03552\"}","dist_request_id":"1704031114240_03552","ab_strategy":"increase_t0_anti_vip","index":"18","strategy":"2~default~BlogCommendFromBaidu~Rate","dest":"https://blog.csdn.net/weixin_46052886/article/details/131253417"}'>
 	<div class="content-box">
 		<div class="content-blog display-flex">
 			<div class="title-box">
-				<a href="https://blog.csdn.net/weixin_46052886/article/details/131253417" class="tit" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.10","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-10-131253417-blog-125218735.235^v39^pc_relevant_3m_sort_dl_base2\",\"dist_request_id\":\"1701726859255_08392\"}","dist_request_id":"1701726859255_08392","ab_strategy":"3m_landing_cb_dl","index":"10","strategy":"2~default~BlogCommendFromBaidu~Rate","dest":"https://blog.csdn.net/weixin_46052886/article/details/131253417"}'  data-report-query='spm=1001.2101.3001.6650.10&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-10-131253417-blog-125218735.235%5Ev39%5Epc_relevant_3m_sort_dl_base2&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-10-131253417-blog-125218735.235%5Ev39%5Epc_relevant_3m_sort_dl_base2'>
+				<a href="https://blog.csdn.net/weixin_46052886/article/details/131253417" class="tit" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.18","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-18-131253417-blog-125218735.235^v40^pc_relevant_anti_t3\",\"dist_request_id\":\"1704031114240_03552\"}","dist_request_id":"1704031114240_03552","ab_strategy":"increase_t0_anti_vip","index":"18","strategy":"2~default~BlogCommendFromBaidu~Rate","dest":"https://blog.csdn.net/weixin_46052886/article/details/131253417"}'  data-report-query='spm=1001.2101.3001.6650.18&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-18-131253417-blog-125218735.235%5Ev40%5Epc_relevant_anti_t3&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-18-131253417-blog-125218735.235%5Ev40%5Epc_relevant_anti_t3'>
 					<div class="left ellipsis-online ellipsis-online-1">GPU资源紧张时<em>PYG</em> <em>Neighbor</em>Sampler报错原因分析</div>
 				</a>
 			</div>
@@ -1058,198 +1231,25 @@ torch-sparse、torch_scatter、torch_cluster等模块编译需要依赖Visual C+
 				<div class="info display-flex">
 					<span class="info-block time">06-16</span>
 					<span class="info-block read"><img class="read-img" src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">
-					145
+					168
 					</span>
 				</div>
 			</div>
 		</div>
 		<div class="desc-box">
-			<a href="https://blog.csdn.net/weixin_46052886/article/details/131253417" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.10","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-10-131253417-blog-125218735.235^v39^pc_relevant_3m_sort_dl_base2\",\"dist_request_id\":\"1701726859255_08392\"}","dist_request_id":"1701726859255_08392","ab_strategy":"3m_landing_cb_dl","index":"10","strategy":"2~default~BlogCommendFromBaidu~Rate","dest":"https://blog.csdn.net/weixin_46052886/article/details/131253417"}'  data-report-query='spm=1001.2101.3001.6650.10&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-10-131253417-blog-125218735.235%5Ev39%5Epc_relevant_3m_sort_dl_base2&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-10-131253417-blog-125218735.235%5Ev39%5Epc_relevant_3m_sort_dl_base2'>
+			<a href="https://blog.csdn.net/weixin_46052886/article/details/131253417" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.18","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-18-131253417-blog-125218735.235^v40^pc_relevant_anti_t3\",\"dist_request_id\":\"1704031114240_03552\"}","dist_request_id":"1704031114240_03552","ab_strategy":"increase_t0_anti_vip","index":"18","strategy":"2~default~BlogCommendFromBaidu~Rate","dest":"https://blog.csdn.net/weixin_46052886/article/details/131253417"}'  data-report-query='spm=1001.2101.3001.6650.18&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-18-131253417-blog-125218735.235%5Ev40%5Epc_relevant_anti_t3&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-18-131253417-blog-125218735.235%5Ev40%5Epc_relevant_anti_t3'>
 				<div class="desc ellipsis-online ellipsis-online-1">所以就仔细分析了一下报错内容，发现sampler代码内.cuda()默认使用了gpu:0，所以导致了cuda out of mem。所以我进入<em>pyg</em>包内将其修改为了。环境是gpu：0的资源已经用尽，使用os设置使用gpu：3，但是总是一到图<em>采样</em>就cuda out of mem。经过错误排除不是数据问题，知识单方面的函数问题。在<em>Neighbor</em>Sampler处报错如下。</div>
 			</a>
 		</div>
 	</div>
 </div>
-<div class="recommend-item-box type_blog clearfix" data-url="https://weibaohang.blog.csdn.net/article/details/132196789"  data-report-view='{"ab":"new","spm":"1001.2101.3001.6650.11","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-11-132196789-blog-125218735.235^v39^pc_relevant_3m_sort_dl_base2\",\"dist_request_id\":\"1701726859255_08392\"}","dist_request_id":"1701726859255_08392","ab_strategy":"3m_landing_cb_dl","index":"11","strategy":"2~default~BlogCommendFromBaidu~Rate","dest":"https://weibaohang.blog.csdn.net/article/details/132196789"}'>
+<div class="recommend-item-box type_chatgpt clearfix" data-url="https://wenku.csdn.net/answer/3udzpspejg"  data-report-view='{"ab":"new","spm":"1001.2101.3001.6650.19","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-chatgpt-2~default~CTRLIST~Position-19-3udzpspejg-blog-125218735.235^v40^pc_relevant_anti_t3\",\"dist_request_id\":\"1704031114240_03552\"}","dist_request_id":"1704031114240_03552","ab_strategy":"increase_t0_anti_vip","index":"19","strategy":"2~default~CTRLIST~Position","dest":"https://wenku.csdn.net/answer/3udzpspejg"}'>
 	<div class="content-box">
 		<div class="content-blog display-flex">
 			<div class="title-box">
-				<a href="https://weibaohang.blog.csdn.net/article/details/132196789" class="tit" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.11","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-11-132196789-blog-125218735.235^v39^pc_relevant_3m_sort_dl_base2\",\"dist_request_id\":\"1701726859255_08392\"}","dist_request_id":"1701726859255_08392","ab_strategy":"3m_landing_cb_dl","index":"11","strategy":"2~default~BlogCommendFromBaidu~Rate","dest":"https://weibaohang.blog.csdn.net/article/details/132196789"}'  data-report-query='spm=1001.2101.3001.6650.11&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-11-132196789-blog-125218735.235%5Ev39%5Epc_relevant_3m_sort_dl_base2&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-11-132196789-blog-125218735.235%5Ev39%5Epc_relevant_3m_sort_dl_base2'>
-					<div class="left ellipsis-online ellipsis-online-1">ImportError: &lsquo;SparseTensor&lsquo; requires &lsquo;torch-sparse&lsquo;</div>
-				</a>
-			</div>
-			<div class="info-box display-flex">
-				<div class="info">
-					<a href="https://blog.csdn.net/m0_47256162" target="_blank"><span class="blog-title">CSDN 精品推荐</span></a>
-				</div>
-				<div class="info display-flex">
-					<span class="info-block time">08-09</span>
-					<span class="info-block read"><img class="read-img" src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">
-					268
-					</span>
-				</div>
-			</div>
-		</div>
-		<div class="desc-box">
-			<a href="https://weibaohang.blog.csdn.net/article/details/132196789" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.11","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-11-132196789-blog-125218735.235^v39^pc_relevant_3m_sort_dl_base2\",\"dist_request_id\":\"1701726859255_08392\"}","dist_request_id":"1701726859255_08392","ab_strategy":"3m_landing_cb_dl","index":"11","strategy":"2~default~BlogCommendFromBaidu~Rate","dest":"https://weibaohang.blog.csdn.net/article/details/132196789"}'  data-report-query='spm=1001.2101.3001.6650.11&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-11-132196789-blog-125218735.235%5Ev39%5Epc_relevant_3m_sort_dl_base2&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-11-132196789-blog-125218735.235%5Ev39%5Epc_relevant_3m_sort_dl_base2'>
-				<div class="desc ellipsis-online ellipsis-online-1">安装好 `torch-geometric` 、 `torch` 和 `torch-sparse` 之后，运行从 `Github` 拷贝下来的图神经网络项目出现如下问题 `ImportError: &#39;SparseTensor&#39; requires &#39;torch-sparse&#39;`</div>
-			</a>
-		</div>
-	</div>
-</div>
-<div class="recommend-item-box type_download clearfix" data-url="https://download.csdn.net/download/f4u5t/1030226"  data-report-view='{"ab":"new","spm":"1001.2101.3001.6650.12","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-download-2~default~BlogCommendFromBaidu~AntiPaid-12-1030226-blog-125218735.235^v39^pc_relevant_3m_sort_dl_base2\",\"dist_request_id\":\"1701726859255_08392\"}","dist_request_id":"1701726859255_08392","ab_strategy":"3m_landing_cb_dl","index":"12","strategy":"2~default~BlogCommendFromBaidu~AntiPaid","dest":"https://download.csdn.net/download/f4u5t/1030226"}'>
-	<div class="content-box">
-		<div class="content-blog display-flex">
-			<div class="title-box">
-				<a href="https://download.csdn.net/download/f4u5t/1030226" class="tit" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.12","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-download-2~default~BlogCommendFromBaidu~AntiPaid-12-1030226-blog-125218735.235^v39^pc_relevant_3m_sort_dl_base2\",\"dist_request_id\":\"1701726859255_08392\"}","dist_request_id":"1701726859255_08392","ab_strategy":"3m_landing_cb_dl","index":"12","strategy":"2~default~BlogCommendFromBaidu~AntiPaid","dest":"https://download.csdn.net/download/f4u5t/1030226"}'  data-report-query='spm=1001.2101.3001.6650.12&utm_medium=distribute.pc_relevant.none-task-download-2%7Edefault%7EBlogCommendFromBaidu%7EAntiPaid-12-1030226-blog-125218735.235%5Ev39%5Epc_relevant_3m_sort_dl_base2&depth_1-utm_source=distribute.pc_relevant.none-task-download-2%7Edefault%7EBlogCommendFromBaidu%7EAntiPaid-12-1030226-blog-125218735.235%5Ev39%5Epc_relevant_3m_sort_dl_base2'>
-					<div class="left ellipsis-online ellipsis-online-1">[<em>PYG</em>]破解教学（含crackme）</div>
-				</a>
-			</div>
-			<div class="info-box display-flex">
-				<div class="info display-flex">
-					<span class="info-block">02-21</span>
-				</div>
-			</div>
-		</div>
-		<div class="desc-box">
-			<a href="https://download.csdn.net/download/f4u5t/1030226" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.12","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-download-2~default~BlogCommendFromBaidu~AntiPaid-12-1030226-blog-125218735.235^v39^pc_relevant_3m_sort_dl_base2\",\"dist_request_id\":\"1701726859255_08392\"}","dist_request_id":"1701726859255_08392","ab_strategy":"3m_landing_cb_dl","index":"12","strategy":"2~default~BlogCommendFromBaidu~AntiPaid","dest":"https://download.csdn.net/download/f4u5t/1030226"}'  data-report-query='spm=1001.2101.3001.6650.12&utm_medium=distribute.pc_relevant.none-task-download-2%7Edefault%7EBlogCommendFromBaidu%7EAntiPaid-12-1030226-blog-125218735.235%5Ev39%5Epc_relevant_3m_sort_dl_base2&depth_1-utm_source=distribute.pc_relevant.none-task-download-2%7Edefault%7EBlogCommendFromBaidu%7EAntiPaid-12-1030226-blog-125218735.235%5Ev39%5Epc_relevant_3m_sort_dl_base2'>
-				<div class="desc ellipsis-online ellipsis-online-1">[<em>PYG</em>]飘云阁破解教学，非常适合破解爱好者的一份<em>教程</em>。</div>
-			</a>
-		</div>
-	</div>
-</div>
-<div class="recommend-item-box type_download clearfix" data-url="https://download.csdn.net/download/h2995527/3248112"  data-report-view='{"ab":"new","spm":"1001.2101.3001.6650.13","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-download-2~default~BlogCommendFromBaidu~Rate-13-3248112-blog-125218735.235^v39^pc_relevant_3m_sort_dl_base2\",\"dist_request_id\":\"1701726859255_08392\"}","dist_request_id":"1701726859255_08392","ab_strategy":"3m_landing_cb_dl","index":"13","strategy":"2~default~BlogCommendFromBaidu~Rate","dest":"https://download.csdn.net/download/h2995527/3248112"}'>
-	<div class="content-box">
-		<div class="content-blog display-flex">
-			<div class="title-box">
-				<a href="https://download.csdn.net/download/h2995527/3248112" class="tit" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.13","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-download-2~default~BlogCommendFromBaidu~Rate-13-3248112-blog-125218735.235^v39^pc_relevant_3m_sort_dl_base2\",\"dist_request_id\":\"1701726859255_08392\"}","dist_request_id":"1701726859255_08392","ab_strategy":"3m_landing_cb_dl","index":"13","strategy":"2~default~BlogCommendFromBaidu~Rate","dest":"https://download.csdn.net/download/h2995527/3248112"}'  data-report-query='spm=1001.2101.3001.6650.13&utm_medium=distribute.pc_relevant.none-task-download-2%7Edefault%7EBlogCommendFromBaidu%7ERate-13-3248112-blog-125218735.235%5Ev39%5Epc_relevant_3m_sort_dl_base2&depth_1-utm_source=distribute.pc_relevant.none-task-download-2%7Edefault%7EBlogCommendFromBaidu%7ERate-13-3248112-blog-125218735.235%5Ev39%5Epc_relevant_3m_sort_dl_base2'>
-					<div class="left ellipsis-online ellipsis-online-1">[<em>PYG</em>]算法与破解入门系列<em>教程</em></div>
-				</a>
-			</div>
-			<div class="info-box display-flex">
-				<div class="info display-flex">
-					<span class="info-block">05-04</span>
-				</div>
-			</div>
-		</div>
-		<div class="desc-box">
-			<a href="https://download.csdn.net/download/h2995527/3248112" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.13","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-download-2~default~BlogCommendFromBaidu~Rate-13-3248112-blog-125218735.235^v39^pc_relevant_3m_sort_dl_base2\",\"dist_request_id\":\"1701726859255_08392\"}","dist_request_id":"1701726859255_08392","ab_strategy":"3m_landing_cb_dl","index":"13","strategy":"2~default~BlogCommendFromBaidu~Rate","dest":"https://download.csdn.net/download/h2995527/3248112"}'  data-report-query='spm=1001.2101.3001.6650.13&utm_medium=distribute.pc_relevant.none-task-download-2%7Edefault%7EBlogCommendFromBaidu%7ERate-13-3248112-blog-125218735.235%5Ev39%5Epc_relevant_3m_sort_dl_base2&depth_1-utm_source=distribute.pc_relevant.none-task-download-2%7Edefault%7EBlogCommendFromBaidu%7ERate-13-3248112-blog-125218735.235%5Ev39%5Epc_relevant_3m_sort_dl_base2'>
-				<div class="desc ellipsis-online ellipsis-online-1">[<em>PYG</em>]算法与破解入门系列<em>教程</em>!!很不错的!!!!</div>
-			</a>
-		</div>
-	</div>
-</div>
-<div class="recommend-item-box type_download clearfix" data-url="https://download.csdn.net/download/weixin_42121754/15635122"  data-report-view='{"ab":"new","spm":"1001.2101.3001.6650.14","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-download-2~default~OPENSEARCH~Rate-14-15635122-blog-125218735.235^v39^pc_relevant_3m_sort_dl_base2\",\"dist_request_id\":\"1701726859255_08392\"}","dist_request_id":"1701726859255_08392","ab_strategy":"3m_landing_cb_dl","index":"14","strategy":"2~default~OPENSEARCH~Rate","dest":"https://download.csdn.net/download/weixin_42121754/15635122"}'>
-	<div class="content-box">
-		<div class="content-blog display-flex">
-			<div class="title-box">
-				<a href="https://download.csdn.net/download/weixin_42121754/15635122" class="tit" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.14","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-download-2~default~OPENSEARCH~Rate-14-15635122-blog-125218735.235^v39^pc_relevant_3m_sort_dl_base2\",\"dist_request_id\":\"1701726859255_08392\"}","dist_request_id":"1701726859255_08392","ab_strategy":"3m_landing_cb_dl","index":"14","strategy":"2~default~OPENSEARCH~Rate","dest":"https://download.csdn.net/download/weixin_42121754/15635122"}'  data-report-query='spm=1001.2101.3001.6650.14&utm_medium=distribute.pc_relevant.none-task-download-2%7Edefault%7EOPENSEARCH%7ERate-14-15635122-blog-125218735.235%5Ev39%5Epc_relevant_3m_sort_dl_base2&depth_1-utm_source=distribute.pc_relevant.none-task-download-2%7Edefault%7EOPENSEARCH%7ERate-14-15635122-blog-125218735.235%5Ev39%5Epc_relevant_3m_sort_dl_base2'>
-					<div class="left ellipsis-online ellipsis-online-1"><em>PyG</em>2Plot::artist_palette:用于@ AntVG2Plot绘图库的Python3绑定</div>
-				</a>
-			</div>
-			<div class="info-box display-flex">
-				<div class="info display-flex">
-					<span class="info-block">03-07</span>
-				</div>
-			</div>
-		</div>
-		<div class="desc-box">
-			<a href="https://download.csdn.net/download/weixin_42121754/15635122" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.14","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-download-2~default~OPENSEARCH~Rate-14-15635122-blog-125218735.235^v39^pc_relevant_3m_sort_dl_base2\",\"dist_request_id\":\"1701726859255_08392\"}","dist_request_id":"1701726859255_08392","ab_strategy":"3m_landing_cb_dl","index":"14","strategy":"2~default~OPENSEARCH~Rate","dest":"https://download.csdn.net/download/weixin_42121754/15635122"}'  data-report-query='spm=1001.2101.3001.6650.14&utm_medium=distribute.pc_relevant.none-task-download-2%7Edefault%7EOPENSEARCH%7ERate-14-15635122-blog-125218735.235%5Ev39%5Epc_relevant_3m_sort_dl_base2&depth_1-utm_source=distribute.pc_relevant.none-task-download-2%7Edefault%7EOPENSEARCH%7ERate-14-15635122-blog-125218735.235%5Ev39%5Epc_relevant_3m_sort_dl_base2'>
-				<div class="desc ellipsis-online ellipsis-online-1"><em>PyG</em>2图  :artist_palette: Python3绑定，它是一个交互式的响应式图表库。 根据图形语法，您可以通过几行代码轻松制作出出色的统计图。 <em>PyG</em>2Plot受到<em>PyG</em>2Plot的启发。  文档：&middot;&middot;&middot; 安装 $ pip install <em>pyg</em>2plot ...</div>
-			</a>
-		</div>
-	</div>
-</div>
-<div class="recommend-item-box type_download clearfix" data-url="https://download.csdn.net/download/weixin_42181319/20198269"  data-report-view='{"ab":"new","spm":"1001.2101.3001.6650.15","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-download-2~default~OPENSEARCH~Rate-15-20198269-blog-125218735.235^v39^pc_relevant_3m_sort_dl_base2\",\"dist_request_id\":\"1701726859255_08392\"}","dist_request_id":"1701726859255_08392","ab_strategy":"3m_landing_cb_dl","index":"15","strategy":"2~default~OPENSEARCH~Rate","dest":"https://download.csdn.net/download/weixin_42181319/20198269"}'>
-	<div class="content-box">
-		<div class="content-blog display-flex">
-			<div class="title-box">
-				<a href="https://download.csdn.net/download/weixin_42181319/20198269" class="tit" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.15","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-download-2~default~OPENSEARCH~Rate-15-20198269-blog-125218735.235^v39^pc_relevant_3m_sort_dl_base2\",\"dist_request_id\":\"1701726859255_08392\"}","dist_request_id":"1701726859255_08392","ab_strategy":"3m_landing_cb_dl","index":"15","strategy":"2~default~OPENSEARCH~Rate","dest":"https://download.csdn.net/download/weixin_42181319/20198269"}'  data-report-query='spm=1001.2101.3001.6650.15&utm_medium=distribute.pc_relevant.none-task-download-2%7Edefault%7EOPENSEARCH%7ERate-15-20198269-blog-125218735.235%5Ev39%5Epc_relevant_3m_sort_dl_base2&depth_1-utm_source=distribute.pc_relevant.none-task-download-2%7Edefault%7EOPENSEARCH%7ERate-15-20198269-blog-125218735.235%5Ev39%5Epc_relevant_3m_sort_dl_base2'>
-					<div class="left ellipsis-online ellipsis-online-1"><em>pyg</em>2png:将 HTMLBook 代码列表转换为 PNG</div>
-				</a>
-			</div>
-			<div class="info-box display-flex">
-				<div class="info display-flex">
-					<span class="info-block">07-11</span>
-				</div>
-			</div>
-		</div>
-		<div class="desc-box">
-			<a href="https://download.csdn.net/download/weixin_42181319/20198269" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.15","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-download-2~default~OPENSEARCH~Rate-15-20198269-blog-125218735.235^v39^pc_relevant_3m_sort_dl_base2\",\"dist_request_id\":\"1701726859255_08392\"}","dist_request_id":"1701726859255_08392","ab_strategy":"3m_landing_cb_dl","index":"15","strategy":"2~default~OPENSEARCH~Rate","dest":"https://download.csdn.net/download/weixin_42181319/20198269"}'  data-report-query='spm=1001.2101.3001.6650.15&utm_medium=distribute.pc_relevant.none-task-download-2%7Edefault%7EOPENSEARCH%7ERate-15-20198269-blog-125218735.235%5Ev39%5Epc_relevant_3m_sort_dl_base2&depth_1-utm_source=distribute.pc_relevant.none-task-download-2%7Edefault%7EOPENSEARCH%7ERate-15-20198269-blog-125218735.235%5Ev39%5Epc_relevant_3m_sort_dl_base2'>
-				<div class="desc ellipsis-online ellipsis-online-1">ch01_listing_3.png ch02_listing_1.png ch02_listing_2.png 要求 你需要：  码头工人 1.3  原因是我使用了自动挂载目录功能，而且只有1.3才有！ 开始 注意：记得把odewahn 改成你的用户名！  首先，构建镜像：  ...</div>
-			</a>
-		</div>
-	</div>
-</div>
-<div class="recommend-item-box type_download clearfix" data-url="https://download.csdn.net/download/weixin_42102220/18664716"  data-report-view='{"ab":"new","spm":"1001.2101.3001.6650.16","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-download-2~default~OPENSEARCH~Rate-16-18664716-blog-125218735.235^v39^pc_relevant_3m_sort_dl_base2\",\"dist_request_id\":\"1701726859255_08392\"}","dist_request_id":"1701726859255_08392","ab_strategy":"3m_landing_cb_dl","index":"16","strategy":"2~default~OPENSEARCH~Rate","dest":"https://download.csdn.net/download/weixin_42102220/18664716"}'>
-	<div class="content-box">
-		<div class="content-blog display-flex">
-			<div class="title-box">
-				<a href="https://download.csdn.net/download/weixin_42102220/18664716" class="tit" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.16","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-download-2~default~OPENSEARCH~Rate-16-18664716-blog-125218735.235^v39^pc_relevant_3m_sort_dl_base2\",\"dist_request_id\":\"1701726859255_08392\"}","dist_request_id":"1701726859255_08392","ab_strategy":"3m_landing_cb_dl","index":"16","strategy":"2~default~OPENSEARCH~Rate","dest":"https://download.csdn.net/download/weixin_42102220/18664716"}'  data-report-query='spm=1001.2101.3001.6650.16&utm_medium=distribute.pc_relevant.none-task-download-2%7Edefault%7EOPENSEARCH%7ERate-16-18664716-blog-125218735.235%5Ev39%5Epc_relevant_3m_sort_dl_base2&depth_1-utm_source=distribute.pc_relevant.none-task-download-2%7Edefault%7EOPENSEARCH%7ERate-16-18664716-blog-125218735.235%5Ev39%5Epc_relevant_3m_sort_dl_base2'>
-					<div class="left ellipsis-online ellipsis-online-1"><em>pyg</em>-bench:脚本来编写postgresql并获取其行为</div>
-				</a>
-			</div>
-			<div class="info-box display-flex">
-				<div class="info display-flex">
-					<span class="info-block">05-13</span>
-				</div>
-			</div>
-		</div>
-		<div class="desc-box">
-			<a href="https://download.csdn.net/download/weixin_42102220/18664716" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.16","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-download-2~default~OPENSEARCH~Rate-16-18664716-blog-125218735.235^v39^pc_relevant_3m_sort_dl_base2\",\"dist_request_id\":\"1701726859255_08392\"}","dist_request_id":"1701726859255_08392","ab_strategy":"3m_landing_cb_dl","index":"16","strategy":"2~default~OPENSEARCH~Rate","dest":"https://download.csdn.net/download/weixin_42102220/18664716"}'  data-report-query='spm=1001.2101.3001.6650.16&utm_medium=distribute.pc_relevant.none-task-download-2%7Edefault%7EOPENSEARCH%7ERate-16-18664716-blog-125218735.235%5Ev39%5Epc_relevant_3m_sort_dl_base2&depth_1-utm_source=distribute.pc_relevant.none-task-download-2%7Edefault%7EOPENSEARCH%7ERate-16-18664716-blog-125218735.235%5Ev39%5Epc_relevant_3m_sort_dl_base2'>
-				<div class="desc ellipsis-online ellipsis-online-1">如何安装项目： 安装Redis请参阅： : sudo apt-get install libpq-dev python-devpython3 setup.py install项目的选择usage: <em>pyg</em>-bench [-h] --config-file CONFIG_FILE [--slave] [--send-tasks] --interval ...</div>
-			</a>
-		</div>
-	</div>
-</div>
-<div class="recommend-item-box type_download clearfix" data-url="https://download.csdn.net/download/weixin_42172972/15655660"  data-report-view='{"ab":"new","spm":"1001.2101.3001.6650.17","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-download-2~default~OPENSEARCH~Rate-17-15655660-blog-125218735.235^v39^pc_relevant_3m_sort_dl_base2\",\"dist_request_id\":\"1701726859255_08392\"}","dist_request_id":"1701726859255_08392","ab_strategy":"3m_landing_cb_dl","index":"17","strategy":"2~default~OPENSEARCH~Rate","dest":"https://download.csdn.net/download/weixin_42172972/15655660"}'>
-	<div class="content-box">
-		<div class="content-blog display-flex">
-			<div class="title-box">
-				<a href="https://download.csdn.net/download/weixin_42172972/15655660" class="tit" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.17","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-download-2~default~OPENSEARCH~Rate-17-15655660-blog-125218735.235^v39^pc_relevant_3m_sort_dl_base2\",\"dist_request_id\":\"1701726859255_08392\"}","dist_request_id":"1701726859255_08392","ab_strategy":"3m_landing_cb_dl","index":"17","strategy":"2~default~OPENSEARCH~Rate","dest":"https://download.csdn.net/download/weixin_42172972/15655660"}'  data-report-query='spm=1001.2101.3001.6650.17&utm_medium=distribute.pc_relevant.none-task-download-2%7Edefault%7EOPENSEARCH%7ERate-17-15655660-blog-125218735.235%5Ev39%5Epc_relevant_3m_sort_dl_base2&depth_1-utm_source=distribute.pc_relevant.none-task-download-2%7Edefault%7EOPENSEARCH%7ERate-17-15655660-blog-125218735.235%5Ev39%5Epc_relevant_3m_sort_dl_base2'>
-					<div class="left ellipsis-online ellipsis-online-1"><em>pyg</em>:初始化</div>
-				</a>
-			</div>
-			<div class="info-box display-flex">
-				<div class="info display-flex">
-					<span class="info-block">03-08</span>
-				</div>
-			</div>
-		</div>
-		<div class="desc-box">
-			<a href="https://download.csdn.net/download/weixin_42172972/15655660" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.17","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-download-2~default~OPENSEARCH~Rate-17-15655660-blog-125218735.235^v39^pc_relevant_3m_sort_dl_base2\",\"dist_request_id\":\"1701726859255_08392\"}","dist_request_id":"1701726859255_08392","ab_strategy":"3m_landing_cb_dl","index":"17","strategy":"2~default~OPENSEARCH~Rate","dest":"https://download.csdn.net/download/weixin_42172972/15655660"}'  data-report-query='spm=1001.2101.3001.6650.17&utm_medium=distribute.pc_relevant.none-task-download-2%7Edefault%7EOPENSEARCH%7ERate-17-15655660-blog-125218735.235%5Ev39%5Epc_relevant_3m_sort_dl_base2&depth_1-utm_source=distribute.pc_relevant.none-task-download-2%7Edefault%7EOPENSEARCH%7ERate-17-15655660-blog-125218735.235%5Ev39%5Epc_relevant_3m_sort_dl_base2'>
-				<div class="desc ellipsis-online ellipsis-online-1"><em>pyg</em>:初始化</div>
-			</a>
-		</div>
-	</div>
-</div>
-<div class="recommend-item-box type_download clearfix" data-url="https://download.csdn.net/download/qq_38161040/78862612"  data-report-view='{"ab":"new","spm":"1001.2101.3001.6650.18","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-download-2~default~OPENSEARCH~Rate-18-78862612-blog-125218735.235^v39^pc_relevant_3m_sort_dl_base2\",\"dist_request_id\":\"1701726859255_08392\"}","dist_request_id":"1701726859255_08392","ab_strategy":"3m_landing_cb_dl","index":"18","strategy":"2~default~OPENSEARCH~Rate","dest":"https://download.csdn.net/download/qq_38161040/78862612"}'>
-	<div class="content-box">
-		<div class="content-blog display-flex">
-			<div class="title-box">
-				<a href="https://download.csdn.net/download/qq_38161040/78862612" class="tit" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.18","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-download-2~default~OPENSEARCH~Rate-18-78862612-blog-125218735.235^v39^pc_relevant_3m_sort_dl_base2\",\"dist_request_id\":\"1701726859255_08392\"}","dist_request_id":"1701726859255_08392","ab_strategy":"3m_landing_cb_dl","index":"18","strategy":"2~default~OPENSEARCH~Rate","dest":"https://download.csdn.net/download/qq_38161040/78862612"}'  data-report-query='spm=1001.2101.3001.6650.18&utm_medium=distribute.pc_relevant.none-task-download-2%7Edefault%7EOPENSEARCH%7ERate-18-78862612-blog-125218735.235%5Ev39%5Epc_relevant_3m_sort_dl_base2&depth_1-utm_source=distribute.pc_relevant.none-task-download-2%7Edefault%7EOPENSEARCH%7ERate-18-78862612-blog-125218735.235%5Ev39%5Epc_relevant_3m_sort_dl_base2'>
-					<div class="left ellipsis-online ellipsis-online-1">PyPI 官网下载 | <em>pyg</em>3D-1.0.1.tar.gz</div>
-				</a>
-			</div>
-			<div class="info-box display-flex">
-				<div class="info display-flex">
-					<span class="info-block">02-01</span>
-				</div>
-			</div>
-		</div>
-		<div class="desc-box">
-			<a href="https://download.csdn.net/download/qq_38161040/78862612" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.18","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-download-2~default~OPENSEARCH~Rate-18-78862612-blog-125218735.235^v39^pc_relevant_3m_sort_dl_base2\",\"dist_request_id\":\"1701726859255_08392\"}","dist_request_id":"1701726859255_08392","ab_strategy":"3m_landing_cb_dl","index":"18","strategy":"2~default~OPENSEARCH~Rate","dest":"https://download.csdn.net/download/qq_38161040/78862612"}'  data-report-query='spm=1001.2101.3001.6650.18&utm_medium=distribute.pc_relevant.none-task-download-2%7Edefault%7EOPENSEARCH%7ERate-18-78862612-blog-125218735.235%5Ev39%5Epc_relevant_3m_sort_dl_base2&depth_1-utm_source=distribute.pc_relevant.none-task-download-2%7Edefault%7EOPENSEARCH%7ERate-18-78862612-blog-125218735.235%5Ev39%5Epc_relevant_3m_sort_dl_base2'>
-				<div class="desc ellipsis-online ellipsis-online-1">资源来自pypi官网。 资源全名：<em>pyg</em>3D-1.0.1.tar.gz</div>
-			</a>
-		</div>
-	</div>
-</div>
-<div class="recommend-item-box type_chatgpt clearfix" data-url="https://wenku.csdn.net/answer/3udzpspejg"  data-report-view='{"ab":"new","spm":"1001.2101.3001.6650.19","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-chatgpt-2~default~CTRLIST~Position-19-3udzpspejg-blog-125218735.235^v39^pc_relevant_3m_sort_dl_base2\",\"dist_request_id\":\"1701726859255_08392\"}","dist_request_id":"1701726859255_08392","ab_strategy":"3m_landing_cb_dl","index":"19","strategy":"2~default~CTRLIST~Position","dest":"https://wenku.csdn.net/answer/3udzpspejg"}'>
-	<div class="content-box">
-		<div class="content-blog display-flex">
-			<div class="title-box">
-				<a href="https://wenku.csdn.net/answer/3udzpspejg" class="tit" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.19","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-chatgpt-2~default~CTRLIST~Position-19-3udzpspejg-blog-125218735.235^v39^pc_relevant_3m_sort_dl_base2\",\"dist_request_id\":\"1701726859255_08392\"}","dist_request_id":"1701726859255_08392","ab_strategy":"3m_landing_cb_dl","index":"19","strategy":"2~default~CTRLIST~Position","dest":"https://wenku.csdn.net/answer/3udzpspejg"}'  data-report-query='spm=1001.2101.3001.6650.19&utm_medium=distribute.pc_relevant.none-task-chatgpt-2%7Edefault%7ECTRLIST%7EPosition-19-3udzpspejg-blog-125218735.235%5Ev39%5Epc_relevant_3m_sort_dl_base2&depth_1-utm_source=distribute.pc_relevant.none-task-chatgpt-2%7Edefault%7ECTRLIST%7EPosition-19-3udzpspejg-blog-125218735.235%5Ev39%5Epc_relevant_3m_sort_dl_base2'>
+				<a href="https://wenku.csdn.net/answer/3udzpspejg" class="tit" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.19","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-chatgpt-2~default~CTRLIST~Position-19-3udzpspejg-blog-125218735.235^v40^pc_relevant_anti_t3\",\"dist_request_id\":\"1704031114240_03552\"}","dist_request_id":"1704031114240_03552","ab_strategy":"increase_t0_anti_vip","index":"19","strategy":"2~default~CTRLIST~Position","dest":"https://wenku.csdn.net/answer/3udzpspejg"}'  data-report-query='spm=1001.2101.3001.6650.19&utm_medium=distribute.pc_relevant.none-task-chatgpt-2%7Edefault%7ECTRLIST%7EPosition-19-3udzpspejg-blog-125218735.235%5Ev40%5Epc_relevant_anti_t3&depth_1-utm_source=distribute.pc_relevant.none-task-chatgpt-2%7Edefault%7ECTRLIST%7EPosition-19-3udzpspejg-blog-125218735.235%5Ev40%5Epc_relevant_anti_t3'>
 					<div class="left ellipsis-online ellipsis-online-1">python <em>pyg</em></div>
+					<div class="tag">最新发布</div>
 				</a>
 			</div>
 			<div class="info-box display-flex">
@@ -1259,7 +1259,7 @@ torch-sparse、torch_scatter、torch_cluster等模块编译需要依赖Visual C+
 			</div>
 		</div>
 		<div class="desc-box">
-			<a href="https://wenku.csdn.net/answer/3udzpspejg" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.19","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-chatgpt-2~default~CTRLIST~Position-19-3udzpspejg-blog-125218735.235^v39^pc_relevant_3m_sort_dl_base2\",\"dist_request_id\":\"1701726859255_08392\"}","dist_request_id":"1701726859255_08392","ab_strategy":"3m_landing_cb_dl","index":"19","strategy":"2~default~CTRLIST~Position","dest":"https://wenku.csdn.net/answer/3udzpspejg"}'  data-report-query='spm=1001.2101.3001.6650.19&utm_medium=distribute.pc_relevant.none-task-chatgpt-2%7Edefault%7ECTRLIST%7EPosition-19-3udzpspejg-blog-125218735.235%5Ev39%5Epc_relevant_3m_sort_dl_base2&depth_1-utm_source=distribute.pc_relevant.none-task-chatgpt-2%7Edefault%7ECTRLIST%7EPosition-19-3udzpspejg-blog-125218735.235%5Ev39%5Epc_relevant_3m_sort_dl_base2'>
+			<a href="https://wenku.csdn.net/answer/3udzpspejg" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.19","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-chatgpt-2~default~CTRLIST~Position-19-3udzpspejg-blog-125218735.235^v40^pc_relevant_anti_t3\",\"dist_request_id\":\"1704031114240_03552\"}","dist_request_id":"1704031114240_03552","ab_strategy":"increase_t0_anti_vip","index":"19","strategy":"2~default~CTRLIST~Position","dest":"https://wenku.csdn.net/answer/3udzpspejg"}'  data-report-query='spm=1001.2101.3001.6650.19&utm_medium=distribute.pc_relevant.none-task-chatgpt-2%7Edefault%7ECTRLIST%7EPosition-19-3udzpspejg-blog-125218735.235%5Ev40%5Epc_relevant_anti_t3&depth_1-utm_source=distribute.pc_relevant.none-task-chatgpt-2%7Edefault%7ECTRLIST%7EPosition-19-3udzpspejg-blog-125218735.235%5Ev40%5Epc_relevant_anti_t3'>
 				<div class="desc ellipsis-online ellipsis-online-1">Python <em>PyG</em>是一个Python库，全名为<em>pyg</em>-0.7-py2.7.egg。它是一种用于图神经网络的库，可以进行图数据的处理和分析。它是官方提供的资源，并且可以通过指定的安装方法来安装。
 
 安装<em>PyG</em>时，需要注意的是它需要与特定的CUDA版本（如cu92，cu101，cu102，cu110）和<em>PyTorch</em>版本（如1.4.0，1.5.0，1.6.0，1.7.0）相匹配。你可以通过在命令行中输入相应的pip命令来安装所需的<em>PyG</em>库和依赖项。例如，对于<em>PyTorch</em> 1.7.0和CUDA 11.0，你可以使用以下命令来安装<em>PyG</em>及其相关库：
@@ -1386,20 +1386,20 @@ if __name__ == &#39;__main__&#39;:
                 <dd class="font">原创</dd>
             </a>
         </dl>
-        <dl class="text-center" data-report-click='{"mod":"1598321000_002","spm":"1001.2101.3001.4311"}' title="8349">
+        <dl class="text-center" data-report-click='{"mod":"1598321000_002","spm":"1001.2101.3001.4311"}' title="7724">
             <a href="https://blog.csdn.net/rank/list/weekly" target="_blank">
-                <dt><span class="count">8349</span></dt>
+                <dt><span class="count">7724</span></dt>
                 <dd class="font">周排名</dd>
             </a>
         </dl>
-        <dl class="text-center" title="5810">
+        <dl class="text-center" title="7551">
             <a href="https://blog.csdn.net/rank/list/total" data-report-click='{"mod":"1598321000_003","spm":"1001.2101.3001.4312"}' target="_blank">
-                <dt><span class="count">5810</span></dt>
+                <dt><span class="count">7551</span></dt>
                 <dd class="font">总排名</dd>
             </a>
         </dl>
-        <dl class="text-center" style="min-width:58px" title="365036">  
-            <dt><span class="count">36万+</span></dt>
+        <dl class="text-center" style="min-width:58px" title="373026">  
+            <dt><span class="count">37万+</span></dt>
             <dd>访问</dd>
         </dl>
         <dl class="text-center" title="5级,点击查看等级说明">
@@ -1412,24 +1412,24 @@ if __name__ == &#39;__main__&#39;:
     </div>
     <div class="item-rank"></div>
     <div class="data-info d-flex item-tiling">
-        <dl class="text-center" title="4030">
-            <dt><span class="count">4030</span></dt>
+        <dl class="text-center" title="4059">
+            <dt><span class="count">4059</span></dt>
             <dd>积分</dd>
         </dl>
-         <dl class="text-center" id="fanBox" title="7164">
-            <dt><span class="count" id="fan">7164</span></dt>
+         <dl class="text-center" id="fanBox" title="7330">
+            <dt><span class="count" id="fan">7330</span></dt>
             <dd>粉丝</dd>
         </dl>
-        <dl class="text-center" title="706">
-            <dt><span class="count">706</span></dt>
+        <dl class="text-center" title="718">
+            <dt><span class="count">718</span></dt>
             <dd>获赞</dd>
         </dl>
-        <dl class="text-center" title="302">
-            <dt><span class="count">302</span></dt>
+        <dl class="text-center" title="308">
+            <dt><span class="count">308</span></dt>
             <dd>评论</dd>
         </dl>
-        <dl class="text-center" title="2379">
-            <dt><span class="count">2379</span></dt>
+        <dl class="text-center" title="2418">
+            <dt><span class="count">2418</span></dt>
             <dd>收藏</dd>
         </dl>
     </div>
@@ -1556,13 +1556,6 @@ if __name__ == &#39;__main__&#39;:
 <a id="remuneration" data-report-click='{"spm":"1001.2101.3001.9809"}' rel="nofollow" href="" class="remuneration-box">
   <img src="" alt="">
 </a>
-  <div id="asideWriteGuide" class="aside-box side-write-guide-box type-2" data-report-view='{"spm":"3001.9728"}'>
-    <div class="content-box">
-      <a rel="nofollow" href="https://mp.csdn.net" target="_blank" class="btn-go-write" data-report-query="spm=3001.9728" data-report-click='{"spm":"3001.9728"}'>
-        <img src="https://img-home.csdnimg.cn/images/20230817060240.png" alt="写文章">
-      </a>
-    </div>
-  </div>
 <div id="asideSearchArticle" class="aside-box">
 	<div class="aside-content search-comter">
     <div class="aside-search aside-search-blog">         
@@ -1585,7 +1578,7 @@ if __name__ == &#39;__main__&#39;:
      data-full-width-responsive="true"></ins>
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
-</script><img class="pre-img-lasy" data-src="https://kunyu.csdn.net/1.png?p=56&adId=1033839&adBlockFlag=0&a=1033839&c=0&k=PyG教程3：邻居采样&spm=1001.2101.3001.5000&articleId=125218735&d=1&t=3&u=d4c98af2c67f4c3d8a35d57b22183f81" style="display: block;width: 0px;height: 0px;"></div>
+</script><img class="pre-img-lasy" data-src="https://kunyu.csdn.net/1.png?p=56&adId=1033839&adBlockFlag=0&a=1033839&c=0&k=PyG教程3：邻居采样&spm=1001.2101.3001.5000&articleId=125218735&d=1&t=3&u=a6cb670e99464809a566374af58210e9" style="display: block;width: 0px;height: 0px;"></div>
     </div>
 </div>
 
@@ -1599,35 +1592,35 @@ if __name__ == &#39;__main__&#39;:
 				<a href="https://blog.csdn.net/qq_42103091/article/details/102236398" target="_blank"  data-report-click='{"mod":"popu_541","spm":"1001.2101.3001.4139","dest":"https://blog.csdn.net/qq_42103091/article/details/102236398","ab":"new"}'>
 				STC89C52RC单片机程序烧录方法
 					<img src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">
-					<span class="read">20497</span>
+					<span class="read">20777</span>
                 </a>
 			</li>
 			<li>
 				<a href="https://blog.csdn.net/qq_42103091/article/details/104236873" target="_blank"  data-report-click='{"mod":"popu_541","spm":"1001.2101.3001.4139","dest":"https://blog.csdn.net/qq_42103091/article/details/104236873","ab":"new"}'>
 				利用Pandas来清除重复数据
 					<img src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">
-					<span class="read">19307</span>
+					<span class="read">19494</span>
                 </a>
 			</li>
 			<li>
 				<a href="https://blog.csdn.net/qq_42103091/article/details/98732085" target="_blank"  data-report-click='{"mod":"popu_541","spm":"1001.2101.3001.4139","dest":"https://blog.csdn.net/qq_42103091/article/details/98732085","ab":"new"}'>
 				Eclipse如何恢复默认窗口布局
 					<img src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">
-					<span class="read">14949</span>
+					<span class="read">15176</span>
                 </a>
 			</li>
 			<li>
 				<a href="https://blog.csdn.net/qq_42103091/article/details/123751444" target="_blank"  data-report-click='{"mod":"popu_541","spm":"1001.2101.3001.4139","dest":"https://blog.csdn.net/qq_42103091/article/details/123751444","ab":"new"}'>
 				安装transformers报错error can‘t find rust compiler
 					<img src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">
-					<span class="read">11440</span>
+					<span class="read">11825</span>
                 </a>
 			</li>
 			<li>
 				<a href="https://blog.csdn.net/qq_42103091/article/details/103746492" target="_blank"  data-report-click='{"mod":"popu_541","spm":"1001.2101.3001.4139","dest":"https://blog.csdn.net/qq_42103091/article/details/103746492","ab":"new"}'>
 				Java中的高级组件面板——JTabbedPane(选项卡面板)
 					<img src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">
-					<span class="read">10808</span>
+					<span class="read">11288</span>
                 </a>
 			</li>
 		</ul>
@@ -1738,38 +1731,39 @@ if __name__ == &#39;__main__&#39;:
     <div class="aside-content">
         <ul class="newcomment-list">
             <li>
-                <a class="title text-truncate" target="_blank" href="https://blog.csdn.net/qq_42103091/article/details/125844848#comments_29640977" data-report-click='{"mod":"popu_542","spm":"1001.2101.3001.4231","dest":"https://blog.csdn.net/qq_42103091/article/details/125844848#comments_29640977","ab":"new"}' data-report-view='{"mod":"popu_542","spm":"1001.2101.3001.4231","dest":"https://blog.csdn.net/qq_42103091/article/details/125844848#comments_29640977","ab":"new"}'>PyG教程(8)：计算更高效的稀疏矩阵形式</a>
+                <a class="title text-truncate" target="_blank" href="https://blog.csdn.net/qq_42103091/article/details/123287865#comments_30490830" data-report-click='{"mod":"popu_542","spm":"1001.2101.3001.4231","dest":"https://blog.csdn.net/qq_42103091/article/details/123287865#comments_30490830","ab":"new"}' data-report-view='{"mod":"popu_542","spm":"1001.2101.3001.4231","dest":"https://blog.csdn.net/qq_42103091/article/details/123287865#comments_30490830","ab":"new"}'>使用NNI，从此告别手动调参</a>
                 <p class="comment ellipsis">
-                    <a href="https://blog.csdn.net/qq_44723804" class="user-name" target="_blank">崴生丶: </a>
-                    <span class="code-comments">想问一下，稀疏矩阵的行下标是起始节点类型还是结束节点类型呢？</span>
+                    <a href="https://blog.csdn.net/weixin_45088702" class="user-name" target="_blank">stdio158: </a>
+                    <span class="code-comments">我知道了，需要等待一些时间，他会实时更新运行状态，虽然Python程序运行完了，但是后台还在运行，我后来又看了官方文档，他把stop语句删除了，然后加了一个input语句，就是Python最后会等待所有程序运行完，然后手动结束，不过这样刚开始运行，打开浏览器查看也是no data，</span>
                 </p>
             </li>
             <li>
-                <a class="title text-truncate" target="_blank" href="https://blog.csdn.net/qq_42103091/article/details/102597112#comments_29557445" data-report-click='{"mod":"popu_542","spm":"1001.2101.3001.4231","dest":"https://blog.csdn.net/qq_42103091/article/details/102597112#comments_29557445","ab":"new"}' data-report-view='{"mod":"popu_542","spm":"1001.2101.3001.4231","dest":"https://blog.csdn.net/qq_42103091/article/details/102597112#comments_29557445","ab":"new"}'>c++实现扫描线种子填充算法</a>
+                <a class="title text-truncate" target="_blank" href="https://blog.csdn.net/qq_42103091/article/details/123287865#comments_30490554" data-report-click='{"mod":"popu_542","spm":"1001.2101.3001.4231","dest":"https://blog.csdn.net/qq_42103091/article/details/123287865#comments_30490554","ab":"new"}' data-report-view='{"mod":"popu_542","spm":"1001.2101.3001.4231","dest":"https://blog.csdn.net/qq_42103091/article/details/123287865#comments_30490554","ab":"new"}'>使用NNI，从此告别手动调参</a>
                 <p class="comment ellipsis">
-                    <a href="https://blog.csdn.net/community_717" class="user-name" target="_blank">CSDN-Ada助手: </a>
-                    <span class="code-comments">多亏了你这篇博客, 解决了问题: https://ask.csdn.net/questions/8021785, 请多输出高质量博客, 帮助更多的人</span>
+                    <a href="https://blog.csdn.net/qq_51738832" class="user-name" target="_blank">qq_51738832: </a>
+                    <span class="code-comments">我也是！友友你解决了吗</span>
                 </p>
             </li>
             <li>
-                <a class="title text-truncate" target="_blank" href="https://blog.csdn.net/qq_42103091/article/details/123751444#comments_29253197" data-report-click='{"mod":"popu_542","spm":"1001.2101.3001.4231","dest":"https://blog.csdn.net/qq_42103091/article/details/123751444#comments_29253197","ab":"new"}' data-report-view='{"mod":"popu_542","spm":"1001.2101.3001.4231","dest":"https://blog.csdn.net/qq_42103091/article/details/123751444#comments_29253197","ab":"new"}'>安装transformers报错error can&lsquo;t find rust compiler</a>
+                <a class="title text-truncate" target="_blank" href="https://blog.csdn.net/qq_42103091/article/details/123287865#comments_30478947" data-report-click='{"mod":"popu_542","spm":"1001.2101.3001.4231","dest":"https://blog.csdn.net/qq_42103091/article/details/123287865#comments_30478947","ab":"new"}' data-report-view='{"mod":"popu_542","spm":"1001.2101.3001.4231","dest":"https://blog.csdn.net/qq_42103091/article/details/123287865#comments_30478947","ab":"new"}'>使用NNI，从此告别手动调参</a>
                 <p class="comment ellipsis">
-                    <a href="https://blog.csdn.net/weixin_50750441" class="user-name" target="_blank">小助手牧濑红莉栖: </a>
-                    <span class="code-comments">泰裤辣</span>
+                    <a href="https://blog.csdn.net/weixin_45088702" class="user-name" target="_blank">stdio158: </a>
+                    <span class="code-comments">为什么执行完成nnictl create --config exp_config.yaml
+之后再浏览器显示的no data</span>
                 </p>
             </li>
             <li>
-                <a class="title text-truncate" target="_blank" href="https://blog.csdn.net/qq_42103091/article/details/124695544#comments_28478871" data-report-click='{"mod":"popu_542","spm":"1001.2101.3001.4231","dest":"https://blog.csdn.net/qq_42103091/article/details/124695544#comments_28478871","ab":"new"}' data-report-view='{"mod":"popu_542","spm":"1001.2101.3001.4231","dest":"https://blog.csdn.net/qq_42103091/article/details/124695544#comments_28478871","ab":"new"}'>NLP实战：面向中文电子病历的命名实体识别</a>
+                <a class="title text-truncate" target="_blank" href="https://blog.csdn.net/qq_42103091/article/details/125844848#comments_30235473" data-report-click='{"mod":"popu_542","spm":"1001.2101.3001.4231","dest":"https://blog.csdn.net/qq_42103091/article/details/125844848#comments_30235473","ab":"new"}' data-report-view='{"mod":"popu_542","spm":"1001.2101.3001.4231","dest":"https://blog.csdn.net/qq_42103091/article/details/125844848#comments_30235473","ab":"new"}'>PyG教程(8)：计算更高效的稀疏矩阵形式</a>
                 <p class="comment ellipsis">
                     <a href="https://blog.csdn.net/qq_42103091" class="user-name" target="_blank">斯曦巍峨: </a>
-                    <span class="code-comments">有一个说明文档</span>
+                    <span class="code-comments">稀疏矩阵看具体的存储格式，你可以去查一下稀疏矩阵的常见存储格式，看看具体是咋存的。</span>
                 </p>
             </li>
             <li>
-                <a class="title text-truncate" target="_blank" href="https://blog.csdn.net/qq_42103091/article/details/124695544#comments_28478568" data-report-click='{"mod":"popu_542","spm":"1001.2101.3001.4231","dest":"https://blog.csdn.net/qq_42103091/article/details/124695544#comments_28478568","ab":"new"}' data-report-view='{"mod":"popu_542","spm":"1001.2101.3001.4231","dest":"https://blog.csdn.net/qq_42103091/article/details/124695544#comments_28478568","ab":"new"}'>NLP实战：面向中文电子病历的命名实体识别</a>
+                <a class="title text-truncate" target="_blank" href="https://blog.csdn.net/qq_42103091/article/details/125844848#comments_30235459" data-report-click='{"mod":"popu_542","spm":"1001.2101.3001.4231","dest":"https://blog.csdn.net/qq_42103091/article/details/125844848#comments_30235459","ab":"new"}' data-report-view='{"mod":"popu_542","spm":"1001.2101.3001.4231","dest":"https://blog.csdn.net/qq_42103091/article/details/125844848#comments_30235459","ab":"new"}'>PyG教程(8)：计算更高效的稀疏矩阵形式</a>
                 <p class="comment ellipsis">
-                    <a href="https://blog.csdn.net/m0_62639562" class="user-name" target="_blank">java全栈: </a>
-                    <span class="code-comments">请问得到解决方案了吗</span>
+                    <a href="https://blog.csdn.net/qq_42103091" class="user-name" target="_blank">斯曦巍峨: </a>
+                    <span class="code-comments">有一个转无向图的操作`to_undirected`，别只看`edge_index`</span>
                 </p>
             </li>
         </ul>
@@ -1849,10 +1843,18 @@ if __name__ == &#39;__main__&#39;:
 </div>
 	<div id="footerRightAds" class="isShowFooterAds">
 		<div class="aside-box">
-			<div id="kp_box_57" data-pid="57"><!-- PC-博客详情页左侧视窗2 -->
-<div class="wwads-cn wwads-vertical" data-id="149" style="max-width:300px;margin-top:0px;margin-bottom:10px;background-color: #fff;"></div> 
-<style>.wwads-img img {width: 150px; margin-top:10px}</style>
-<script type="text/javascript" charset="UTF-8" src="https://cdn.wwads.cn/js/makemoney.js" async></script><img class="pre-img-lasy" data-src="https://kunyu.csdn.net/1.png?p=57&adId=1043605&adBlockFlag=0&a=1043605&c=0&k=PyG教程3：邻居采样&spm=1001.2101.3001.5001&articleId=125218735&d=1&t=3&u=49b76e15de7844b3b9f602866ce9eb84" style="display: block;width: 0px;height: 0px;"></div>
+			<div id="kp_box_57" data-pid="57"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1076724771190722"
+     crossorigin="anonymous"></script>
+<!-- PC-博客-详情页-左下视窗-0-49 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1076724771190722"
+     data-ad-slot="4787882818"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script><img class="pre-img-lasy" data-src="https://kunyu.csdn.net/1.png?p=57&adId=1043607&adBlockFlag=0&a=1043607&c=0&k=PyG教程3：邻居采样&spm=1001.2101.3001.5001&articleId=125218735&d=1&t=3&u=35a1764499b046c9844cb99cb271dfa4" style="display: block;width: 0px;height: 0px;"></div>
 		</div>
 	</div>
     <!-- 详情页显示目录 -->
@@ -1882,9 +1884,18 @@ if __name__ == &#39;__main__&#39;:
     <aside class="recommend-right_aside">
         <div id="recommend-right" >
                                 <div class="programmer1Box">
-                        <div id="kp_box_530" data-pid="530"><!-- PC-博客详情页右上视窗 -->
-<div class="wwads-cn wwads-vertical" data-id="149" style="max-width:300px;margin-top:0px;margin-bottom:10px;background-color: #fff;"></div> 
-<style>.wwads-img img {width: 150px; margin-top:10px}</style><img class="pre-img-lasy" data-src="https://kunyu.csdn.net/1.png?p=530&adId=1043604&adBlockFlag=0&a=1043604&c=0&k=PyG教程3：邻居采样&spm=1001.2101.3001.4647&articleId=125218735&d=1&t=3&u=9e6d1579fae54a4db5580740fd4c08ce" style="display: block;width: 0px;height: 0px;"></div>
+                        <div id="kp_box_530" data-pid="530"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1076724771190722"
+     crossorigin="anonymous"></script>
+<!-- PC-博客-详情页-右上视窗-0-49 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1076724771190722"
+     data-ad-slot="2214239108"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script><img class="pre-img-lasy" data-src="https://kunyu.csdn.net/1.png?p=530&adId=1043606&adBlockFlag=0&a=1043606&c=0&k=PyG教程3：邻居采样&spm=1001.2101.3001.4647&articleId=125218735&d=1&t=3&u=08eb9ceb2eb44cc1a1b9c9ee9915b41a" style="display: block;width: 0px;height: 0px;"></div>
                     </div>
             <div class='flex-column aside-box groupfile' id="groupfile">
                 <div class="groupfile-div">
@@ -1899,17 +1910,17 @@ if __name__ == &#39;__main__&#39;:
                 </div>
             </div>
                 <div id="recommendAdBox">
-                    <div id="kp_box_479" data-pid="479"><div class="_nwikfgpvhh"></div>
+                    <div id="kp_box_479" data-pid="479"><div class="_zdzpnjj37z"></div>
     <script type="text/javascript">
         (window.slotbydup = window.slotbydup || []).push({
             id: "u6940829",
-            container: "_nwikfgpvhh",
+            container: "_zdzpnjj37z",
             async: true
         });
     </script>
     <!-- 多条广告如下脚本只需引入一次 -->
     <script type="text/javascript" src="//cpro.baidustatic.com/cpro/ui/cm.js" async="async" defer="defer" >
-    </script><img class="pre-img-lasy" data-src="https://kunyu.csdn.net/1.png?p=479&adId=1043312&adBlockFlag=0&a=1043312&c=0&k=PyG教程3：邻居采样&spm=1001.2101.3001.4834&articleId=125218735&d=1&t=3&u=a4a769abc16242f38b6d4439ec4643ca" style="display: block;width: 0px;height: 0px;"></div>
+    </script><img class="pre-img-lasy" data-src="https://kunyu.csdn.net/1.png?p=479&adId=1043312&adBlockFlag=0&a=1043312&c=0&k=PyG教程3：邻居采样&spm=1001.2101.3001.4834&articleId=125218735&d=1&t=3&u=1c5931f99eda440c8f8797f199d5ec49" style="display: block;width: 0px;height: 0px;"></div>
                 </div>
             <div class='aside-box kind_person d-flex flex-column'>
                     <h3 class="aside-title">分类专栏</h3>
@@ -2259,7 +2270,7 @@ if __name__ == &#39;__main__&#39;:
   <script src="https://csdnimg.cn/release/blogv2/dist/components/js/axios-83fa28cedf.min.js" type="text/javascript"></script>
   <script src="https://csdnimg.cn/release/blogv2/dist/components/js/pc_wap_highlight-8defd55d6e.min.js" type="text/javascript"></script>
   <script src="https://csdnimg.cn/release/blogv2/dist/components/js/pc_wap_common-be82269d23.min.js" type="text/javascript"></script>
-  <script src="https://csdnimg.cn/release/blogv2/dist/components/js/edit_copy_code-34867f99aa.min.js" type="text/javascript"></script>
+  <script src="https://csdnimg.cn/release/blogv2/dist/components/js/edit_copy_code-57e4b8f9ef.min.js" type="text/javascript"></script>
   <link rel="stylesheet" href="https://csdnimg.cn/release/blog_editor_html/release1.6.12/ckeditor/plugins/codesnippet/lib/highlight/styles/dracula.css">
   <script src="https://g.csdnimg.cn/user-accusation/1.0.6/user-accusation.js" type="text/javascript"></script>
   <script>
@@ -2314,11 +2325,11 @@ if __name__ == &#39;__main__&#39;:
   <script src="https://csdnimg.cn/release/download/old_static/js/qrcode.js"></script>
   <script src="https://g.csdnimg.cn/lib/qrcode/1.0.0/qrcode.min.js"></script>
   <script src="https://g.csdnimg.cn/user-ordercart/3.0.1/user-ordercart.js" type="text/javascript"></script>
-  <script src="https://g.csdnimg.cn/user-ordertip/5.0.1/user-ordertip.js" type="text/javascript"></script>
-  <script src="https://g.csdnimg.cn/order-payment/4.0.3/order-payment.js" type="text/javascript"></script>
+  <script src="https://g.csdnimg.cn/user-ordertip/5.0.3/user-ordertip.js" type="text/javascript"></script>
+  <script src="https://g.csdnimg.cn/order-payment/4.0.5/order-payment.js" type="text/javascript"></script>
   <script src="https://csdnimg.cn/release/blogv2/dist/pc/js/common-a425354f6a.min.js" type="text/javascript"></script>
-  <script src="https://csdnimg.cn/release/blogv2/dist/pc/js/detail-bc554b39ac.min.js" type="text/javascript"></script>
-  <script src="https://csdnimg.cn/release/blogv2/dist/pc/js/column-fe4f666d72.min.js" type="text/javascript"></script>
+  <script src="https://csdnimg.cn/release/blogv2/dist/pc/js/detail-f18ccb04e5.min.js" type="text/javascript"></script>
+  <script src="https://csdnimg.cn/release/blogv2/dist/pc/js/column-933409552c.min.js" type="text/javascript"></script>
   <script src="https://g.csdnimg.cn/side-toolbar/3.4/side-toolbar.js" type="text/javascript"></script>
     <script>
     window.csdn.extensionBox = window.csdn.extensionBox ? window.csdn.extensionBox : {};
