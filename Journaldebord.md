@@ -34,3 +34,4 @@ Zineb :
 j'ai ajouté le mot جيران (pluriel de voisin en arabe) et adapté le script du tableau arabe aux deux mots (càd au contexte + nombre d'occurences)
 J'ai modifié le css du tableau
 J'ai pu corriger le problème d'encodage des caractères arabes sur les liens du tableau avec la fonction urldecode trouvé sur Stackoverflow https://stackoverflow.com/questions/6250698/how-to-decode-url-encoded-string-in-shell
+J'ai trouvé les stopwords chinois sur le git : https://github.com/stopwords-iso/stopwords-zh/blob/master/stopwords-zh.txt
