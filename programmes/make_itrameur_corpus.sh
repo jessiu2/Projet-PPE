@@ -9,29 +9,23 @@ basename=$2
 
 echo "<lang=\"$basename\">" > "ITRAMEUR/$folder-$basename.txt"
 
-for filepath n $(ls $folder/"$basename.txt)
+for filename in $(ls $folder/${basename}-*.txt);
 do
-    pagename=$(basename -s .txt $filepath)
-
-    echo "<page!\"$apgename\">" >> "ITRAMEUR/$folder-$basename.txt"
-
-    echo"<text>" >> "ITRAMEUR/$folder-$basename.txt"
+    page=$(basename filename .txt)
+    content=$(cat $filename)
 
 
-    content=$(cat $filepath)
+    cleaned=$(echo "$content" | sed 's/&/&amp;/g')
+    cleaned=$(echo "$cleaned" | sed 's/</&lt;/g')
+    cleaned=$(echo "$cleaned" | sed 's/</&gt;/g')
 
-    content=$(echo "$content" | sed 's/&/&amp/g')
-    content=$(echo "$content" | sed 's/</&lt/g')
-    content=$(echo "$content" | sed 's/</&gt/g')
+ 	echo "<page="$page"\>" >> "ITRAMEUR/$folder-$basename.txt"
 
-
-    content=$(echo "$content" | tr '[:upper:]' '[:lower:] | sed 's/)
-    content=$(echo "$content" | sed 's/voisin/g')
-    content=$(echo "$content" | sed 's/جار/جيران/g')
-    content=$(echo "$content" | sed 's/邻居/g')
-
-    echo "$content" >> "ITRAMEUR/$folder-$basename.txt"
+    echo "<text>" >> "ITRAMEUR/$folder-$basename.txt"
+    
+    echo "$cleaned" >> "ITRAMEUR/$folder-$basename.txt"
 
     echo "</text>" >> "ITRAMEUR/$folder-$basename.txt"
-    echo "</page§" >> "ITRAMEUR/$folder-$basename.txt"
-
+    echo "</page> §" >> "ITRAMEUR/$folder-$basename.txt"
+    
+done
