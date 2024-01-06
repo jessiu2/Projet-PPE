@@ -59,7 +59,7 @@ if [ "$lang" = "arabe" ]; then
     <body>
         <table>
             <tr>
-                <th>N° ligne</th><th>URL</th><th>Aspiration</th><th>Dump textuel</th><th>Code HTTP</th><th>Encodage</th><th>Nombre total d'occurences</th><th>Contexte</th>
+                <th>N° ligne</th><th>URL</th><th>Aspiration</th><th>Dump textuel</th><th>Code HTTP</th><th>Encodage</th><th>Nombre total d'occurences</th><th>Contexte</th><th>Concordancier</th>
             </tr>" > "$tab"
     lineno=1
 
@@ -88,8 +88,12 @@ if [ "$lang" = "arabe" ]; then
         grep -i -C 2 "$MOT2" "$dump" >> "../contextes/contexte_${lang}-${lineno}.txt"
         cont="../contextes/contexte_${lang}-${lineno}.txt"
 
+        ./concordancier.sh "$MOT" "$lineno" "$cont" "$lang"
+		concordancier="../concordances/${lang}-${lineno}.html"
+
+
         echo "<tr>
-                <td>$lineno</td><td><a href=\"$URL\">$decoded_url</a></td><td><a href=\"$asp\">Aspiration</a></td><td><a href=\"$dump\">Dump</a></td><td>$reponse</td><td>$encoding</td><td>$total_occurences</td><td><a href=\"$cont\">Voir contexte</a></td></tr>" >> "$tab"
+                <td>$lineno</td><td><a href=\"$URL\">$decoded_url</a></td><td><a href=\"$asp\">Aspiration</a></td><td><a href=\"$dump\">Dump</a></td><td>$reponse</td><td>$encoding</td><td>$total_occurences</td><td><a href=\"$cont\">Voir contexte</a></td><td><a href='$concordancier'>Concordancier</a></td></tr>" >> "$tab"
 
         lineno=$(expr $lineno + 1)
     done < "$URLS"
