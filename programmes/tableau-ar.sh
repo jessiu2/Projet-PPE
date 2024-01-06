@@ -74,7 +74,7 @@ if [ "$lang" = "arabe" ]; then
         dumptext=$(lynx -dump -nolist "$URL" > "../dumps-text/${lang}-${lineno}.txt")
         dump="../dumps-text/${lang}-${lineno}.txt"
 
-        # Encodage
+        # Encodagegit@github.com:margot-a42/Projet-PPE.git
         encoding=$(curl -s -I -L -w "%{content_type}" -o /dev/null "$URL" | egrep -E -o "charset=\S+" | cut -d"=" -f2 | tail -n 1)
 
         # Calculer le nombre d'occurrences de chaque mot et leur somme
@@ -83,9 +83,9 @@ if [ "$lang" = "arabe" ]; then
         total_occurences=$(($occurence1 + $occurence2))
 
         # Extraire les contextes d'apparition des deux mots dans le même fichier
-        grep -i -C 2 "$MOT1" "$dump" > "../contextes/contexte_${lang}-${lineno}.txt"
-        echo "-----" >> "../contextes/contexte_${lang}-${lineno}.txt"  # Un séparateur
-        grep -i -C 2 "$MOT2" "$dump" >> "../contextes/contexte_${lang}-${lineno}.txt"
+        grep -i -C 2 "$MOT1" "$dump" > "../contextes/${lang}-${lineno}.txt"
+        echo "-----" >> "../contextes/${lang}-${lineno}.txt"  # Un séparateur
+        grep -i -C 2 "$MOT2" "$dump" >> "../contextes/${lang}-${lineno}.txt"
         cont="../contextes/contexte_${lang}-${lineno}.txt"
 
         ./concordancier.sh "$MOT" "$lineno" "$cont" "$lang"
