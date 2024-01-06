@@ -21,7 +21,7 @@ if [ "$lang" = "francais" ]; then
     echo "<html>
     <head>
     <meta charset=\"UTF-8\">
-    <title>Tableau arabe</title>
+    <title>Tableau français</title>
       <style>
         body {
             font-family: Arial, sans-serif;
@@ -51,7 +51,6 @@ if [ "$lang" = "francais" ]; then
     </style>
     </head>
     <body>
-        <h1><b>Tableau</b></h1>
         <table border='1'>
             <tr>
                 <th>Numero ligne</th><th>URL</th><th>Aspiration</th><th>Dump textuel</th><th>Code HTTP</th><th>Encodage</th><th>Nombre d'occurences</th><th>Contexte</th><th>Concordancier</th>

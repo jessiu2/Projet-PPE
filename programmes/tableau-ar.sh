@@ -86,7 +86,7 @@ if [ "$lang" = "arabe" ]; then
         grep -i -C 2 "$MOT1" "$dump" > "../contextes/${lang}-${lineno}.txt"
         echo "-----" >> "../contextes/${lang}-${lineno}.txt"  # Un séparateur
         grep -i -C 2 "$MOT2" "$dump" >> "../contextes/${lang}-${lineno}.txt"
-        cont="../contextes/contexte_${lang}-${lineno}.txt"
+        cont="../contextes/${lang}-${lineno}.txt"
 
         ./concordancier.sh "$MOT" "$lineno" "$cont" "$lang"
 		concordancier="../concordances/${lang}-${lineno}.html"

@@ -36,3 +36,4 @@ J'ai modifié le css du tableau
 J'ai pu corriger le problème d'encodage des caractères arabes sur les liens du tableau avec la fonction urldecode trouvé sur Stackoverflow https://stackoverflow.com/questions/6250698/how-to-decode-url-encoded-string-in-shell
 J'ai trouvé les stopwords chinois sur le git : https://github.com/stopwords-iso/stopwords-zh/blob/master/stopwords-zh.txt
 j'ai essayé différentes méthodes, y compris le changement de la police, la conversion et https://amueller.github.io/word_cloud/auto_examples/arabic.html, je rencontre encore des problèmes d'encodage en arabe dans le wordcloud
+Même souci pour le chinois quant à l'affichage des liens sur le tableau, et résolu par la fonction cotée plus haut (urldecode)
