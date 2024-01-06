@@ -2,9 +2,9 @@
 
 PyG教程(3)：邻居采样
 
-   最新推荐文章于 2023-04-14 12:35:03 发布
-   斯曦巍峨 最新推荐文章于 2023-04-14 12:35:03 发布
-   阅读量4.2k 收藏 17
+   最新推荐文章于 2023-12-28 21:32:41 发布
+   斯曦巍峨 最新推荐文章于 2023-12-28 21:32:41 发布
+   阅读量4.3k 收藏 17
    点赞数 9
    分类专栏： 图神经网络框架 文章标签： 深度学习 pytorch 人工智能 GNN
    版权声明：本文为博主原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接和本声明。
@@ -146,17 +146,18 @@ g.n_id = torch.arange(g.num_nodes)
 
    专栏目录
 
-   ImportError: ‘SparseTensor‘ requires ‘torch-sparse‘
-   CSDN 精品推荐
-   08-09 368
-   安装好 `torch-geometric` 、 `torch` 和 `torch-sparse` 之后，运行从 `Github`
-   拷贝下来的图神经网络项目出现如下问题 `ImportError: 'SparseTensor' requires
-   'torch-sparse'`
+   PyG2Plot::artist_palette:用于@ AntVG2Plot绘图库的Python3绑定
+   03-07
+   PyG2图 :artist_palette: Python3绑定，它是一个交互式的响应式图表库。
+   根据图形语法，您可以通过几行代码轻松制作出出色的统计图。 PyG2Plot受到PyG2Plot的启发。 文档：··· 安装 $ pip
+   install pyg2plot 用法 呈现HTML from pyg2plot import Plot line = Plot (
+   "Line" ) line . set_options ({ "data" : [ { "year" : "1991" , "value" :
+   3 }, { "year" : "1992" , "value" : 4 }, { "year" : "1993" , "value" :
+   3.5 }, { "year" : "1994" , "value" : 5 }, { "year" : "1995" , "
 
    pyg的NeighborLoader和LinkNeighborLoader
-   最新发布
    qq_40671063的博客
-   04-16 1438
+   04-16 1452
    data:要求加载或者类型数据；:
    每轮迭代要采样邻居节点的个数，即第i-1轮要为每个节点采样个节点，如果为-1，则代表所有邻居节点都将被包含(一阶相邻邻居)，在异构图中，还可以
    使用字典来表示每个单独的边缘类型要采样的邻居数量；:
@@ -165,123 +166,141 @@ g.n_id = torch.arange(g.num_nodes)
 
    3 条评论 您还未登录，请先 登录 后发表或查看评论
 
+   如何创建并训练异构图GCN神经网络(以论文引用数据集为例)
+   weixin_67482129的博客
+   10-23 208
+   注意一下边的构造形式，以data['paper', 'cites',
+   'paper'].edge_index为例，在描述paper到paper的边的时候，要按照“起始点”——“边的名称”——“终点”的格式传入。很
+   明显，上面的例子里创建的GNN模型是一个同构图模型。注意，此时输入的不是data[‘...’].x等，而是把所有种类的节点信息全部按照字典的形
+   式输入，所以x的输入是用.x_dict，同理，边的信息也是用的..._dict的形式。相互之间的关系也分为：具有主题，引用，撰写，隶属XX机构
+   。
+   [PYG]算法与破解入门系列教程
+   05-04
+   [PYG]算法与破解入门系列教程!!很不错的!!!!
+
+   pyg:用于并行化遗传算法的 Python 样板
+   06-15
+   小猪 用法： 创建一个文件simulation.py并覆盖Chromosome类。 遗传算法 染色体 染色体存储其适应度和基因型。
+   基因型可以是一个整数列表、一个字符串——任何数据结构。 适应度是适应度函数的值。 这里我们使用simulate ()来计算适应度。
+   染色体还提供两种方法： mate和mutate 。 mate ： mate将另一个染色体作为参数并返回一个子染色体。 这就是基因操作重组。
+   这是一些示例代码： def mate ( C ): """ Each gene has a 50% chance of being
+   passed on. """ child = list () for i in range ( num_param ): if random
+   . random () < 0.5 :
+   [PYG]破解教学（含crackme）
+   02-21
+   [PYG]飘云阁破解教学，非常适合破解爱好者的一份教程。
+   PyPI 官网下载 | torch_sparse-0.6.12.tar.gz
+   01-30
+   资源来自pypi官网。 资源全名：torch_sparse-0.6.12.tar.gz
+   pytorch geometric（PYG） - NeighborSampler
+   qq_40671063的博客
+   09-11 2774
+   https://blog.csdn.net/weixin_39925939/article/details/121458145
    GNN教程：大规模分布式训练
    图挖掘领域，新晋砖家 ☞ 未来可期，欢迎和静静一起学习交流吖
-   07-01 1326
+   07-01 1331
    引言
    本文为GNN教程的DGL框架之大规模分布式训练，前面的文章中我们介绍了图神经网络框架DGL如何利用采样的技术缩小计算图的规模来通过mini-b
    atch的方式训练模型，当图特别大的时候，非常多的batches需要被计算，因此运算时间又成了问题，一个容易想到解决方案是采用并行计算的技术，
    很多worker同时采样，计算并且更新梯度。这篇博文重点介绍DGL的并行计算框架。 多进程方案 概括而言，目前DGL(version
    0.3)采用的是多进程的并行方案，分布式的方案正在开发中。见下图，DGL的并行计算
+   图神经网络22-DGL实战：针对边分类任务的邻居采样训练方法
+   yanqianglifei的专栏
+   07-12 1524
+   边分类/回归的训练与节点分类/回归的训练类似，但还是有一些明显的区别。 定义邻居采样器和数据加载器 用户可以使用和节点分类一样的邻居采样器 。
+   sampler = dgl.dataloading.MultiLayerFullNeighborSampler(2)
+   想要用DGL提供的邻居采样器做边分类，需要将其与
+   :class:~dgl.dataloading.pytorch.EdgeDataLoad...
    【图神经网络】GraphSAGE 无监督训练源码剖析
    竹石破岩
-   07-11 5089
+   07-11 5103
    概述
    本教程主要介绍pytorch_geometric库examples下的graph_sage_unsup.py的源码剖析，主要的关键技术点，包括
    ： 如何实现随机采样的？ SAGEConv是如何训练的？ 关键问题1，随机采样和采样方向的问题（有向图）
    首先要理解的是，采样的过程和特征聚合的过程是相反的，采样的过程，比如，如下图所示，先采样A节点的一阶邻域节点，再根据一阶采样得到的节点进行二阶
    采样，是一个从左到右的采样过程，而在特征聚合消息传递的时候是先从二阶节点开始聚合，逐步收敛到目标节点
-
-   在工业界落地的PinSAGE图卷积算法原理及源码学习（二）采样
-   IntegerList的博客
-   04-14 230
-   这一部分是PinSAGE算法最重要的一块，主要包括正负样本采样，PinSAGE采样
-   GraphSage模型解析
-   qq_42479987的博客
-   04-09 1981
-   图卷积网络（GCN）的计算可以分为基于频域（Spectural）和基于空域（Spatial）两种方式。 频域方法：
-   图的频域卷积是在傅里叶空间完成的，我们对图的拉普拉斯矩阵进行特征值分解，特征分解更有助于我们理解图的底层特征，能够更好的找到图中的簇或者子图，
-   典型的频域方法有ChebNet，GCN等。但是图的特征值分解是一个特别耗时的操作，具有 [公式] 的复杂度，很难扩展到海量节点的场景中。
-   空域方法： 空间方法作用于节点的邻居节点，使用 K\ K K 个邻居节点来计算当前节点的属性。基
-   Task 01 图论基础与PyG库
-   sigmoid
-   06-16 470
-   Task 01 图论基础与PyG库
-   本次组队学习的第一个任务分为理论和实践两个部分，第一个部分为图论的一些基础知识，包括图的矩阵表示以及图上的性质等。 图论基础 图的定义
-   一个图由两大关键组件组成，分别为图中的节点以及节点之间的边，可以记为G={V,E}\mathcal{G}=\{\mathcal{V},
-   \mathcal{E}\}G={V,E}，其中 V={v1,…,vN}\mathcal{V}=\left\{v_{1}, \ldots,
-   v_{N}\right\}V={v1​,…,vN​} 是数量为 N
-   GNN Torch functions
-   天狼啸月1990的博客
-   10-25 1339
-   PyTorch functions related to GNN models
-   【DGL】定义邻居采样器和数据加载器
-   yuxeaotao的博客
-   04-14 2807
-   6.1 Training GNN for Node Classification with Neighborhood
-   Samplinghttps://docs.dgl.ai/en/0.6.x/guide/minibatch-node.html#guide-mi
-   nibatch-node-classification-sampler
-   DGL提供了几个邻居采样类，这些类会生成需计算的节点在每一层计算时所需的依赖图。
-   最简单的邻居采样器是MultiLayerFullNeighborSampler，它可获取节点.
-   【PyG】异构图学习 - 图神经网络
-   C橘子
-   12-30 7752
-   使用PyG库进行异构图神经网络学习
-   第十八课.Pytorch-geometric入门(三)
-   白景屹的博客
-   09-12 4655
-   目录异构图学习 heterogeneous graph learning示例图创建异构图异构图的转换创建异构GNNAutomatically
-   Converting GNN Models（示例）补充内容：同构图下的GATConvUsing the Heterogenous
-   Convolution Wrapper（示例）Deploy Existing Heterogenous
-   Operators（示例）异构图采样器Heterogeneous Graph Samplers（示例）从CSV加载Graph 异构图学习
-   力扣解题思路：图 纠错记录
-   qq_39879315的博客
-   07-25 357
-   785. 判断二分图
-   思路：给定一个无向图graph，当这个图为二分图时返回true。如果我们能将一个图的节点集合分割成两个独立的子集A和B，并使图中的每一条边的两
-   个节点一个来自A集合，一个来自B集合，我们就将这个图称为二分图。graph将会以邻接表方式给出，graph[i]表示图中与节点i相连的所有节点
-   。每个节点都是一个在0到graph.length-1之间的整数。这图中没有自环和平行边： graph[i]
-   中不存在i，并且graph[i]中没有重复的值。 举个例子： Input: [[1,3], [0,
-   OGB数据集的加载与处理【基于PyG】
-   智慧的旋风的博客
-   02-19 5753
-   GNN-Dataset 典型图数据集的加载与使用（基于PyG）。 OGB数据集 ogbn-arxiv ogbn-products
-   我的代码：https://github.com/ytchx1999/GNN-Dataset/blob/main/OGBn.ipynb from
-   ogb.nodeproppred import PygNodePropPredDataset, Evaluator import
-   torch_geometric.transforms as T ogbn-arxiv 1、加载数
-   跟着官方文档学DGL框架第十二天——大型图上的随机训练之节点分类
-   beilizhang的博客
-   01-05 1678
-   参考资料 https://docs.dgl.ai/en/latest/guide/minibatch.html
-   https://docs.dgl.ai/en/latest/guide/minibatch-node.html#guide-minibatch
-   -node-classification-sampler 概述
-   之前学习的训练图神经网络的方法，都是在整个图上进行的。对于大型图，图的节点或边是百万级、亿级的。假设一个LLL层的GCN，隐藏状态（hidde
-   n state）的维度为HHH，图的节点数量为N
-   超大图上节点表征学习
-   u012194696的专栏
-   06-30 160
-   超大图上的节点表征学习 注：此节文章翻译并整理自提出Cluster-GCN的论文：Cluster-GCN: An Efficient
-   Algorithm for Training Deep and Large Graph Convolutional Network 引言
-   图神经网络已经成功地应用于许多图节点或边的预测任务中，然而，在超大图上进行图神经网络的训练仍然具有挑战性。普通的基于SGD的图神经网络的训练方
-   法，要么面临着随着图神经网络层数增加计算成本呈指数增长的问题，要么面临着保存整个图的信息和每一层每
-   pytorch geometric教程四 利用NeighorSampler实现节点维度的mini-batch + GraphSAGE样例
-   weixin_39925939的博客
-   11-23 5908
-   pytorch geometric如何实现节点维度mini-batch模型训练: NeighorSampler
-   PyG的官方文档中有mini-batch和Advanced
-   mini-batching两部分内容，但实现的都是图维度的mini-batch。如何像GraphSAGE文章中对邻居进行采样从而实现节点维度m
-   ini-batch模型训练，使得大规模全连接图的GNNs模型训练成为可能，在PyG中是通过torch_geometric.Loader.Nei
-   ghborSampler实现的（早一点版本是torch_
-   知识图谱论文阅读（十七）【WWW2021】DGCN: Diversified Recommendation with Graph
-   Convolutional Networks
-   qq_35222729的博客
-   09-06 2271
-   本论文是很明显是基于KGCN的！ 如果不懂KGCN，可以看我上一篇博文 论文题目： DGCN: Diversified
-   Recommendation with Graph Convolutional Networks 论文链接： 论文代码： 创新
-   （1）和（2）没有改变生成阶段的顺序，而（3）则是存在实际问题。 那么我们就是添加上游任务中，生成一个排序结果，而不仅仅是候选items +
-   多样性排序 要有特定于多样性的设计，使的弱势类别更加容易获得 摘要 动机： 多样性是衡量推荐items的一个关键因.
-   图学习笔记（七）：图神经网络算法（二）——图采样、邻居聚合
-   Wangzx的博客
-   02-01 1785
-   图学习笔记（七）：图神经网络算法（二）——图采样图采样1. 为什么要图采样？图采样的原因：MiniBatch训练2. 什么是图采样？3.
-   图采样算法详解（GraphSAGE、PinSAGE）GraphSAGE (SAmple &
-   aggreGatE)邻居采样算法邻居采样算法的优点：PinSAGE：根据邻居节点重要性进行聚合的算法。 图采样 1. 为什么要图采样？
-   图采样的原因： 如果图很大，需要进行“图采样”。 权图规模太大，当代的GPU/CPU资源受限，无法一次性全图送入计算资源（难以将整张图放
-   图神经网络三剑客：GCN、GAT与GraphSAGE
-   Paper weekly
-   02-27 7954
-   ©PaperWeekly 原创 ·作者｜桑运鑫学校｜上海交通大学研究方向｜图神经网络在金融领域的应用2019
-   年号称图神经网络元年，在各个领域关于图神经网络的研究爆发式增长。本文主要介...
+   [PYG]破解教学--破解入门好教程
+   10-22
+   [PYG]破解教学，比较不错新手可以看看！
+   毕业设计电商网站源码-pyg:小猪
+   06-06
+   毕业设计电商网站源码 项目介绍 目录 重点技术 1 项目背景 ​ 品优购网上商城是一个综合性的B2B2C平台，类似京东商城，
+   天猫商城。网站采用商家入驻的模式，商家入驻平台提交申请，有平台资质审核，审核过后，商家拥有独立管理后台，录入商品信息。商品经过平台审核后即可发
+   布。 ​ 品优购网上商城主要分为网站前台，运营商、商家管理后台三个子系统。 B2B2C ​
+   B2B2C是一种电子商务类型的商业模式，B是BUSINESS的简称，C是CUSTOMER的简称，第一个B指的是商品或服务的供应商，第二个B指的
+   是从事电子商务的企业，C则是表示消费者。 2 架构介绍 ​ 目前企业中开发的项目，大部分是使用前后端分离的架构。 如图： 3 技术在线 ​
+   可能需要用得到的网站 名称 网址 备注 zepto zepto的中文api art-template 模版引擎 fontawesome
+   字体图标 mui官网 官方网站 hello-mui 在线案例 mui-辅助类 mui的辅助类 品优购在线 上课参照的案例 上课源代码
+   上课的源代码的地址 api接口文档 mui是做移动端的，bootstrap是做响应式的
+   pyg2png:将 HTMLBook 代码列表转换为 PNG
+   07-11
+   ch01_listing_3.png ch02_listing_1.png ch02_listing_2.png 要求 你需要： 码头工人
+   1.3 原因是我使用了自动挂载目录功能，而且只有1.3才有！ 开始 注意：记得把odewahn 改成你的用户名！ 首先，构建镜像： ...
+   pyg-bench:脚本来编写postgresql并获取其行为
+   05-13
+   如何安装项目： 安装Redis请参阅： : sudo apt-get install libpq-dev python-devpython3
+   setup.py install项目的选择usage: pyg-bench [-h] --config-file CONFIG_FILE
+   [--slave] [--send-tasks] --interval ...
+   pyg:初始化
+   03-08
+   pyg:初始化
+   PyPI 官网下载 | pyg3D-1.0.1.tar.gz
+   02-01
+   资源来自pypi官网。 资源全名：pyg3D-1.0.1.tar.gz
+   深度学习在语义分割中的进展与应用
+   gongdiwudu的专栏
+   12-28 1461
+   语义分割是计算机视觉领域的一项关键任务，涉及将图像中的每个像素分类为预定义的类。这项任务在从自动驾驶汽车到医学成像的各种应用中都具有深远的影响
+   。深度学习的出现显著提高了语义分割模型的功能和准确性。本文深入探讨了深度学习在语义分割中的作用，讨论了其演变、方法、当前趋势和未来前景。
+   [卷积神经网络]FCOS--仅使用卷积的Anchor Free目标检测
+   最新发布
+   就随便写写....
+   12-28 965
+   FCOS论文阅读笔记
+   python pyg
+   08-29
+   Python
+   PyG是一个Python库，全名为pyg-0.7-py2.7.egg。它是一种用于图神经网络的库，可以进行图数据的处理和分析。它是官方提供的资
+   源，并且可以通过指定的安装方法来安装。
+   安装PyG时，需要注意的是它需要与特定的CUDA版本（如cu92，cu101，cu102，cu110）和PyTorch版本（如1.4.0，1.
+   5.0，1.6.0，1.7.0）相匹配。你可以通过在命令行中输入相应的pip命令来安装所需的PyG库和依赖项。例如，对于PyTorch
+   1.7.0和CUDA 11.0，你可以使用以下命令来安装PyG及其相关库： pip install torch-scatter -f
+   https://pytorch-geometric.com/whl/torch-1.7.0 cu110.html pip install
+   torch-sparse -f https://pytorch-geometric.com/whl/torch-1.7.0
+   cu110.html pip install torch-cluster -f
+   https://pytorch-geometric.com/whl/torch-1.7.0 cu110.html pip install
+   torch-spline-conv -f https://pytorch-geometric.com/whl/torch-1.7.0
+   cu110.html pip install torch-geometric
+   这些命令将从指定的URL下载所需的PyG和依赖项，并将其安装到你的Python环境中。
+   一旦你成功安装了PyG，你就可以使用它来处理和分析图数据。例如，你可以定义一个CustomDataset对象，并打印出其中的一个样本数据。具体
+   的代码如下： if __name__ == '__main__': dataset = CustomDataset()
+   print(dataset) # Data(edge_index=[2, 162], x=[42, 32], y=)
+   这段代码创建了一个CustomDataset对象，并打印出了其中的第一个样本数据。样本数据包括边索引(edge_index)、节点特征(x)和
+   目标标签(y)等信息。 通过使用Python
+   PyG库，你可以方便地处理和分析图数据，并进行相关的机器学习和深度学习任务。希望这些信息对你有帮助！<span
+   class="em">1</span><span class="em">2</span><span class="em">3</span>
+   #### 引用[.reference_title] - *1* [Python库 |
+   pyg-0.7-py2.7.egg](https://download.csdn.net/download/qq_38161040/85454
+   809)[target="_blank"
+   data-report-click={"spm":"1018.2226.3001.9630","extra":{"utm_source":"v
+   ip_chatgpt_common_search_pc_result","utm_medium":"distribute.pc_search_
+   result.none-task-cask-2~all~insert_cask~default-1-null.142^v93^chatsear
+   chT3_2"}}] [.reference_item style="max-width: 33.333333333333336%"] -
+   *2*
+   [python安装使用PyG图神经网络框架](https://blog.csdn.net/weixin_43540533/article/de
+   tails/111186484)[target="_blank"
+   data-report-click={"spm":"1018.2226.3001.9630","extra":{"utm_source":"v
+   ip_chatgpt_common_search_pc_result","utm_medium":"distribute.pc_search_
+   result.none-task-cask-2~all~insert_cask~default-1-null.142^v93^chatsear
+   chT3_2"}}] [.reference_item style="max-width: 33.333333333333336%"] -
+   *3*
+   [PyG自定义数据集学习笔记（持续更新](https://blog.csdn.net/weixin_45928096/article/deta
+   ils/126910291)[target="_blank"
+   data-report-click={"spm":"1018.2226.3001.9630","extra":{"utm_source":"v
+   ip_chatgpt_common_search_pc_result","utm_medium":"distribute.pc_search_
+   result.none-task-cask-2~all~insert_cask~default-1-null.142^v93^chatsear
+   chT3_2"}}] [.reference_item style="max-width: 33.333333333333336%"] [
+   .reference_list ]
 
 “相关推荐”对你有帮助么？
 
@@ -300,10 +319,10 @@ g.n_id = torch.arange(g.num_nodes)
    129
           原创
 
-   7724
+   8348
           周排名
 
-   7551
+   8215
           总排名
 
    37万+
@@ -312,10 +331,10 @@ g.n_id = torch.arange(g.num_nodes)
    [blog5.png]
           等级
 
-   4059
+   4060
           积分
 
-   7330
+   7372
           粉丝
 
    718
@@ -324,7 +343,7 @@ g.n_id = torch.arange(g.num_nodes)
    308
           评论
 
-   2418
+   2423
           收藏
 
    签到新秀
@@ -357,11 +376,11 @@ g.n_id = torch.arange(g.num_nodes)
 
 热门文章
 
-     * STC89C52RC单片机程序烧录方法 20777
-     * 利用Pandas来清除重复数据 19494
-     * Eclipse如何恢复默认窗口布局 15176
-     * 安装transformers报错error can‘t find rust compiler 11825
-     * Java中的高级组件面板——JTabbedPane(选项卡面板) 11288
+     * STC89C52RC单片机程序烧录方法 20835
+     * 利用Pandas来清除重复数据 19525
+     * Eclipse如何恢复默认窗口布局 15228
+     * 安装transformers报错error can‘t find rust compiler 11885
+     * Java中的高级组件面板——JTabbedPane(选项卡面板) 11370
 
 分类专栏
 
@@ -414,11 +433,11 @@ g.n_id = torch.arange(g.num_nodes)
    2020年38篇
    2019年15篇
 
-   [INS: :INS] [npsFeelGrey5.png]
+   [javascript]
 
 目录
 
-   [INS: :INS] [javascript]
+   [javascript]
 
 目录
 

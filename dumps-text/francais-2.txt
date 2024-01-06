@@ -18,9 +18,6 @@
 
    (BUTTON) r/france A chip (BUTTON) A close button
 
-   Icon for Recap event Reddit RecapReddit Recap
-     __________________________________________________________________
-
    (BUTTON) Get app Get the Reddit app Log In Log in to Reddit
    (BUTTON) Expand user menu Open settings menu
      * Log In / Sign Up
@@ -186,4 +183,4 @@ Comment expulser ses voisins ?
 
      Português
 
-   Reddit, Inc. © 2023. All rights reserved.
+   Reddit, Inc. © 2024. All rights reserved.

@@ -1,0 +1,91 @@
+   #alternate
+
+PyG教程(3)：邻居采样
+
+   最新推荐文章于 2023-12-28 21:32:41 发布
+--
+   订阅专栏
+
+一.为什么需要邻居采样？
+
+   在GNN领域，大图是非常常见的，但由于GPU显存的限制，大图是无法放到GPU上进行训练的。为此，可以采用邻居采样，这样一来可以将GNN扩展到大
+   图上。在PyG中，邻居采样的方式有很多种，具体详解torch_geometric.loader。本文以GraphSage中的邻居采样为例进行介
+   绍，其在PyG中实现为NeighborLoader。
+
+     NeighborSampler也是PyG中关于GraphSage中邻居采样的实现，但已经被弃用，在未来版本中会被删除。
+
+二.NeighborLoader详解
+
+2.1 GraphSage邻居采样原理
+
+   假设采样的层数为 K K K，每层采样的邻居数为 S k S_k Sk​，GraphSage中邻居采样是这样进行的：
+     * 步骤一：首先给定要采样邻居的小批量节点集 B \mathcal{B} B；
+     * 步骤二：对 B \mathcal{B} B的 1 1 1跳（hop）邻居进行采样，然后得到 B 1 \mathcal{B}_1
+       B1​，然后对 B 1 \mathcal{B}_1 B1​的 1 1 1跳邻居进行采样（即最初结点集的 2 2 2跳邻居）得到 B 2
+       \mathcal{B}_2 B2​，如此往复进行 K K K次，得到最初小批量节点集相关的一个子图。
+
+   下图左是GraphSage中给出的一个2层邻居采样的示例，其中每层采样的邻居数 S k S_k Sk​是相等的（图中为3）。
+
+   graphsage
+--
+2.2 API介绍
+
+   PyG中，GraphSage的邻居采样实现为torch_geometric.loader.NeighborLoader，其初始化函数参数为：
+def __init__(
+    self,
+--
+   常用参数说明如下：
+     * data：要采样的图对象，可以为异构图HeteroData，也可以为同构图Data；
+     * num_neighbors：每个节点每次迭代（每层）采样的最大邻居数，List[int]类型，例如[2,2]表示采样2层，每层中每个节
+       点最多采样2个邻居；
+     * input_nodes：从原始图中采样得到的子图中需要包含的原始图中节点索引，即2.1节中最初的 B \mathcal{B}
+       B，torch.Tensor()类型；
+--
+   karateclub
+
+   下面是对该数据集的加载、可视化以及邻居采样的源码：
+import torch
+from torch_geometric.datasets import KarateClub
+--
+    break
+
+   在上述源码中，设置的采样层数为2层、每个节点每层采样最多采样2个邻居，采样的初始节点集为{14}，其对应的采样结果如下所示：
+
+   graphsage_sampler
+
+   从上图可以看出，在第一次迭代中，采样了节点{14}的两个1跳邻居{32,33}，然后在第二次迭代中对{32,33}分别进行采样得到{2,8]}
+   和{18,30}。
+
+--
+结语
+
+   PyG中对于邻居采样的实现远远不止上述这一种，具体参见如下官网资料：
+     * torch_geometric.loader
+
+--
+       评论
+     *
+     * PyG教程(3)：邻居采样
+       在GNN领域，大图是非常常见的，但由于GPU显存的限制，大图是无法放到GPU上进行训练的。为此，可以采用邻居采样，这样一来可以将GNN
+       扩展到大图上。在PyG中，邻居采样的方式有很多种，具体详解`torch_geometric.loader`。本文以GraphSage中
+       的邻居采样为例进行介绍，其在PyG中实现为`NeighborLoader`。...
+       复制链接
+       扫一扫
+--
+   04-16 1452
+   data:要求加载或者类型数据；:
+   每轮迭代要采样邻居节点的个数，即第i-1轮要为每个节点采样个节点，如果为-1，则代表所有邻居节点都将被包含(一阶相邻邻居)，在异构图中，还可以
+   使用字典来表示每个单独的边缘类型要采样的邻居数量；:
+   中心节点集合，用来指导采样一个mini-batch内的节点，如果为None，则代表包含data中的所有节点。如果设置为
+   None，将考虑所有节点。在异构图中，需要作为包含节点类型和节点索引的元组传递。（默认值：None）
+--
+   很多worker同时采样，计算并且更新梯度。这篇博文重点介绍DGL的并行计算框架。 多进程方案 概括而言，目前DGL(version
+   0.3)采用的是多进程的并行方案，分布式的方案正在开发中。见下图，DGL的并行计算
+   图神经网络22-DGL实战：针对边分类任务的邻居采样训练方法
+   yanqianglifei的专栏
+   07-12 1524
+   边分类/回归的训练与节点分类/回归的训练类似，但还是有一些明显的区别。 定义邻居采样器和数据加载器 用户可以使用和节点分类一样的邻居采样器 。
+   sampler = dgl.dataloading.MultiLayerFullNeighborSampler(2)
+   想要用DGL提供的邻居采样器做边分类，需要将其与
+   :class:~dgl.dataloading.pytorch.EdgeDataLoad...
+   【图神经网络】GraphSAGE 无监督训练源码剖析

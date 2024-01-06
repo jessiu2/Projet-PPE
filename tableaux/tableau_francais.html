@@ -1,52 +1,193 @@
 <html>
     <head>
-        <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <title>Tableau français</title>
+      <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            background-color: #eeeeee; /* Fond du tableau */
+        }
+        th {
+            background-color: #dcdcdc; /* Fond plus clair pour les en-têtes */
+            color: black; /* Texte en noir pour les en-têtes */
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        .url-column {
+            width: 5%; /* Largeur encore plus réduite pour la colonne URL */
+            word-break: break-all;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
     </head>
     <body>
-        <h1><b>Tableau</b></h1>
         <table border='1'>
             <tr>
-                <th>Numero ligne</th><th>URL</th><th>Aspiration</th><th>Dump textuel</th><th>Code HTTP</th><th>Encodage</th><th>Nombre d'occurences</th><th>Contexte</th>
+                <th>Numero ligne</th><th>URL</th><th>Aspiration</th><th>Dump textuel</th><th>Code HTTP</th><th>Encodage</th><th>Nombre d'occurences</th><th>Contexte</th><th>Concordancier</th>
             </tr>
 <tr>
 
-                <td>1</td><td><a href=﻿https://www.lefigaro.fr/maison/a-qui-me-plaindre-de-mon-voisin-20231120>﻿https://www.lefigaro.fr/maison/a-qui-me-plaindre-de-mon-voisin-20231120</a></td><td><a href="../aspirations/francais-1.html">Aspiration</a></td><td><a href="../dumps-text/francais-1.txt">Dump</a></td><td>000</td><td></td><td>0</td><td><a href="../contextes/contexte_francais-1.txt">Voir contexte</a></td></tr>
+                <td>1</td><td><a href=https://www.cdad-ca-rennes.fr/mon-voisin-a-installe-une-camera-orientee-vers-chez-moi-que-faire/>https://www.cdad-ca-rennes.fr/mon-voisin-a-installe-une-camera-orientee-vers-chez-moi-que-faire/</a></td><td><a href="../aspirations/francais-1.html">Aspiration</a></td><td><a href="../dumps-text/francais-1.txt">Dump</a></td><td>200</td><td>UTF-8</td><td>16</td><td><a href="../contextes/francais-1.txt">Voir contexte</a></td><td><a href='../concordances/francais-1.html'>Concordancier</a></td></tr>
 <tr>
 
-                <td>2</td><td><a href=https://www.reddit.com/r/france/comments/15mmy7t/comment_expulser_ses_voisins/>https://www.reddit.com/r/france/comments/15mmy7t/comment_expulser_ses_voisins/</a></td><td><a href="../aspirations/francais-2.html">Aspiration</a></td><td><a href="../dumps-text/francais-2.txt">Dump</a></td><td>200</td><td>utf-8</td><td>3</td><td><a href="../contextes/contexte_francais-2.txt">Voir contexte</a></td></tr>
+                <td>2</td><td><a href=https://www.reddit.com/r/france/comments/15mmy7t/comment_expulser_ses_voisins/>https://www.reddit.com/r/france/comments/15mmy7t/comment_expulser_ses_voisins/</a></td><td><a href="../aspirations/francais-2.html">Aspiration</a></td><td><a href="../dumps-text/francais-2.txt">Dump</a></td><td>200</td><td>utf-8</td><td>3</td><td><a href="../contextes/francais-2.txt">Voir contexte</a></td><td><a href='../concordances/francais-2.html'>Concordancier</a></td></tr>
 <tr>
 
-                <td>3</td><td><a href=https://www.jeuxvideo.com/forums/42-51-70412692-2-0-1-0-voisin-vos-pire-voisins.htm>https://www.jeuxvideo.com/forums/42-51-70412692-2-0-1-0-voisin-vos-pire-voisins.htm</a></td><td><a href="../aspirations/francais-3.html">Aspiration</a></td><td><a href="../dumps-text/francais-3.txt">Dump</a></td><td>200</td><td></td><td>27</td><td><a href="../contextes/contexte_francais-3.txt">Voir contexte</a></td></tr>
+                <td>3</td><td><a href=https://www.jeuxvideo.com/forums/42-51-70412692-2-0-1-0-voisin-vos-pire-voisins.htm>https://www.jeuxvideo.com/forums/42-51-70412692-2-0-1-0-voisin-vos-pire-voisins.htm</a></td><td><a href="../aspirations/francais-3.html">Aspiration</a></td><td><a href="../dumps-text/francais-3.txt">Dump</a></td><td>200</td><td></td><td>27</td><td><a href="../contextes/francais-3.txt">Voir contexte</a></td><td><a href='../concordances/francais-3.html'>Concordancier</a></td></tr>
 <tr>
 
-                <td>4</td><td><a href=https://www.clcv.org/locataires-hlm/troubles-de-voisinage-vos-droits-et-recours>https://www.clcv.org/locataires-hlm/troubles-de-voisinage-vos-droits-et-recours</a></td><td><a href="../aspirations/francais-4.html">Aspiration</a></td><td><a href="../dumps-text/francais-4.txt">Dump</a></td><td>200</td><td>UTF-8</td><td>44</td><td><a href="../contextes/contexte_francais-4.txt">Voir contexte</a></td></tr>
+                <td>4</td><td><a href=https://www.clcv.org/locataires-hlm/troubles-de-voisinage-vos-droits-et-recours>https://www.clcv.org/locataires-hlm/troubles-de-voisinage-vos-droits-et-recours</a></td><td><a href="../aspirations/francais-4.html">Aspiration</a></td><td><a href="../dumps-text/francais-4.txt">Dump</a></td><td>200</td><td>UTF-8</td><td>44</td><td><a href="../contextes/francais-4.txt">Voir contexte</a></td><td><a href='../concordances/francais-4.html'>Concordancier</a></td></tr>
 <tr>
 
-                <td>5</td><td><a href=https://fr.wikihow.com/ennuyer-votre-voisin>https://fr.wikihow.com/ennuyer-votre-voisin</a></td><td><a href="../aspirations/francais-5.html">Aspiration</a></td><td><a href="../dumps-text/francais-5.txt">Dump</a></td><td>200</td><td>UTF-8</td><td>75</td><td><a href="../contextes/contexte_francais-5.txt">Voir contexte</a></td></tr>
+                <td>5</td><td><a href=https://fr.wikihow.com/ennuyer-votre-voisin>https://fr.wikihow.com/ennuyer-votre-voisin</a></td><td><a href="../aspirations/francais-5.html">Aspiration</a></td><td><a href="../dumps-text/francais-5.txt">Dump</a></td><td>200</td><td>UTF-8</td><td>75</td><td><a href="../contextes/francais-5.txt">Voir contexte</a></td><td><a href='../concordances/francais-5.html'>Concordancier</a></td></tr>
 <tr>
 
-                <td>6</td><td><a href=https://forum.quechoisir.org/urgent-probleme-de-voisinage-t308288.html>https://forum.quechoisir.org/urgent-probleme-de-voisinage-t308288.html</a></td><td><a href="../aspirations/francais-6.html">Aspiration</a></td><td><a href="../dumps-text/francais-6.txt">Dump</a></td><td>200</td><td>UTF-8</td><td>37</td><td><a href="../contextes/contexte_francais-6.txt">Voir contexte</a></td></tr>
+                <td>6</td><td><a href=https://forum.quechoisir.org/urgent-probleme-de-voisinage-t308288.html>https://forum.quechoisir.org/urgent-probleme-de-voisinage-t308288.html</a></td><td><a href="../aspirations/francais-6.html">Aspiration</a></td><td><a href="../dumps-text/francais-6.txt">Dump</a></td><td>200</td><td>UTF-8</td><td>37</td><td><a href="../contextes/francais-6.txt">Voir contexte</a></td><td><a href='../concordances/francais-6.html'>Concordancier</a></td></tr>
 <tr>
 
-                <td>7</td><td><a href=https://fr.wiktionary.org/wiki/voisin>https://fr.wiktionary.org/wiki/voisin</a></td><td><a href="../aspirations/francais-7.html">Aspiration</a></td><td><a href="../dumps-text/francais-7.txt">Dump</a></td><td>200</td><td>UTF-8</td><td>36</td><td><a href="../contextes/contexte_francais-7.txt">Voir contexte</a></td></tr>
+                <td>7</td><td><a href=https://fr.wiktionary.org/wiki/voisin>https://fr.wiktionary.org/wiki/voisin</a></td><td><a href="../aspirations/francais-7.html">Aspiration</a></td><td><a href="../dumps-text/francais-7.txt">Dump</a></td><td>200</td><td>UTF-8</td><td>36</td><td><a href="../contextes/francais-7.txt">Voir contexte</a></td><td><a href='../concordances/francais-7.html'>Concordancier</a></td></tr>
 <tr>
 
-                <td>8</td><td><a href=https://www.dicocitations.com/citation.php>https://www.dicocitations.com/citation.php</a></td><td><a href="../aspirations/francais-8.html">Aspiration</a></td><td><a href="../dumps-text/francais-8.txt">Dump</a></td><td>200</td><td>ISO-8859-1</td><td>0</td><td><a href="../contextes/contexte_francais-8.txt">Voir contexte</a></td></tr>
+                <td>8</td><td><a href=https://www.alexia.fr/questions/307229/camera-de-mon-voisin.htm>https://www.alexia.fr/questions/307229/camera-de-mon-voisin.htm</a></td><td><a href="../aspirations/francais-8.html">Aspiration</a></td><td><a href="../dumps-text/francais-8.txt">Dump</a></td><td>200</td><td>ISO-8859-1</td><td>20</td><td><a href="../contextes/francais-8.txt">Voir contexte</a></td><td><a href='../concordances/francais-8.html'>Concordancier</a></td></tr>
 <tr>
 
-                <td>9</td><td><a href=https://www.capital.fr/auto/puis-je-interdire-a-mon-voisin-de-se-garer-devant-chez-moi-1471243>https://www.capital.fr/auto/puis-je-interdire-a-mon-voisin-de-se-garer-devant-chez-moi-1471243</a></td><td><a href="../aspirations/francais-9.html">Aspiration</a></td><td><a href="../dumps-text/francais-9.txt">Dump</a></td><td>200</td><td>UTF-8</td><td>15</td><td><a href="../contextes/contexte_francais-9.txt">Voir contexte</a></td></tr>
+                <td>9</td><td><a href=https://www.capital.fr/auto/puis-je-interdire-a-mon-voisin-de-se-garer-devant-chez-moi-1471243>https://www.capital.fr/auto/puis-je-interdire-a-mon-voisin-de-se-garer-devant-chez-moi-1471243</a></td><td><a href="../aspirations/francais-9.html">Aspiration</a></td><td><a href="../dumps-text/francais-9.txt">Dump</a></td><td>200</td><td>UTF-8</td><td>15</td><td><a href="../contextes/francais-9.txt">Voir contexte</a></td><td><a href='../concordances/francais-9.html'>Concordancier</a></td></tr>
 <tr>
 
-                <td>10</td><td><a href=https://www.droits.fr/mon-voisin-me-cherche-des-ennuis/>https://www.droits.fr/mon-voisin-me-cherche-des-ennuis/</a></td><td><a href="../aspirations/francais-10.html">Aspiration</a></td><td><a href="../dumps-text/francais-10.txt">Dump</a></td><td>200</td><td>UTF-8</td><td>41</td><td><a href="../contextes/contexte_francais-10.txt">Voir contexte</a></td></tr>
+                <td>10</td><td><a href=https://www.droits.fr/mon-voisin-me-cherche-des-ennuis/>https://www.droits.fr/mon-voisin-me-cherche-des-ennuis/</a></td><td><a href="../aspirations/francais-10.html">Aspiration</a></td><td><a href="../dumps-text/francais-10.txt">Dump</a></td><td>200</td><td>UTF-8</td><td>41</td><td><a href="../contextes/francais-10.txt">Voir contexte</a></td><td><a href='../concordances/francais-10.html'>Concordancier</a></td></tr>
 <tr>
 
-                <td>11</td><td><a href=https://forum.hardware.fr/hfr/Discussions/Viepratique/voisins-monde-merde-sujet_70616_2548.htm>https://forum.hardware.fr/hfr/Discussions/Viepratique/voisins-monde-merde-sujet_70616_2548.htm</a></td><td><a href="../aspirations/francais-11.html">Aspiration</a></td><td><a href="../dumps-text/francais-11.txt">Dump</a></td><td>200</td><td>utf-8</td><td>93</td><td><a href="../contextes/contexte_francais-11.txt">Voir contexte</a></td></tr>
+                <td>11</td><td><a href=https://forum.hardware.fr/hfr/Discussions/Viepratique/voisins-monde-merde-sujet_70616_2548.htm>https://forum.hardware.fr/hfr/Discussions/Viepratique/voisins-monde-merde-sujet_70616_2548.htm</a></td><td><a href="../aspirations/francais-11.html">Aspiration</a></td><td><a href="../dumps-text/francais-11.txt">Dump</a></td><td>200</td><td>utf-8</td><td>93</td><td><a href="../contextes/francais-11.txt">Voir contexte</a></td><td><a href='../concordances/francais-11.html'>Concordancier</a></td></tr>
 <tr>
 
-                <td>12</td><td><a href=https://forums.madmoizelle.com/sujets/comment-sont-vos-voisins.45897/>https://forums.madmoizelle.com/sujets/comment-sont-vos-voisins.45897/</a></td><td><a href="../aspirations/francais-12.html">Aspiration</a></td><td><a href="../dumps-text/francais-12.txt">Dump</a></td><td>200</td><td>utf-8</td><td>18</td><td><a href="../contextes/contexte_francais-12.txt">Voir contexte</a></td></tr>
+                <td>12</td><td><a href=https://forums.madmoizelle.com/sujets/comment-sont-vos-voisins.45897/>https://forums.madmoizelle.com/sujets/comment-sont-vos-voisins.45897/</a></td><td><a href="../aspirations/francais-12.html">Aspiration</a></td><td><a href="../dumps-text/francais-12.txt">Dump</a></td><td>200</td><td>utf-8</td><td>18</td><td><a href="../contextes/francais-12.txt">Voir contexte</a></td><td><a href='../concordances/francais-12.html'>Concordancier</a></td></tr>
 <tr>
 
-                <td>13</td><td><a href=https://psychologie.aufeminin.com/forum/des-voisins-tres-envahissants-fd1175131>https://psychologie.aufeminin.com/forum/des-voisins-tres-envahissants-fd1175131</a></td><td><a href="../aspirations/francais-13.html">Aspiration</a></td><td><a href="../dumps-text/francais-13.txt">Dump</a></td><td>200</td><td>UTF-8</td><td>47</td><td><a href="../contextes/contexte_francais-13.txt">Voir contexte</a></td></tr>
+                <td>13</td><td><a href=https://psychologie.aufeminin.com/forum/des-voisins-tres-envahissants-fd1175131>https://psychologie.aufeminin.com/forum/des-voisins-tres-envahissants-fd1175131</a></td><td><a href="../aspirations/francais-13.html">Aspiration</a></td><td><a href="../dumps-text/francais-13.txt">Dump</a></td><td>200</td><td>UTF-8</td><td>47</td><td><a href="../contextes/francais-13.txt">Voir contexte</a></td><td><a href='../concordances/francais-13.html'>Concordancier</a></td></tr>
+<tr>
+
+                <td>14</td><td><a href=https://dictionnaire.lerobert.com/definition/voisin>https://dictionnaire.lerobert.com/definition/voisin</a></td><td><a href="../aspirations/francais-14.html">Aspiration</a></td><td><a href="../dumps-text/francais-14.txt">Dump</a></td><td>200</td><td>UTF-8</td><td>55</td><td><a href="../contextes/francais-14.txt">Voir contexte</a></td><td><a href='../concordances/francais-14.html'>Concordancier</a></td></tr>
+<tr>
+
+                <td>15</td><td><a href=https://www.bienmeloger.nc/les-dossiers/lifestyle/10-conseils-pour-etre-un-bon-voisin-76>https://www.bienmeloger.nc/les-dossiers/lifestyle/10-conseils-pour-etre-un-bon-voisin-76</a></td><td><a href="../aspirations/francais-15.html">Aspiration</a></td><td><a href="../dumps-text/francais-15.txt">Dump</a></td><td>200</td><td></td><td>0</td><td><a href="../contextes/francais-15.txt">Voir contexte</a></td><td><a href='../concordances/francais-15.html'>Concordancier</a></td></tr>
+<tr>
+
+                <td>16</td><td><a href=https://basta.media/Voisins-vigilants-panneaux-cambriolages-gendarmerie-police-municipale-neighbourhood-watch-participation-citoyenne>https://basta.media/Voisins-vigilants-panneaux-cambriolages-gendarmerie-police-municipale-neighbourhood-watch-participation-citoyenne</a></td><td><a href="../aspirations/francais-16.html">Aspiration</a></td><td><a href="../dumps-text/francais-16.txt">Dump</a></td><td>200</td><td>utf-8</td><td>24</td><td><a href="../contextes/francais-16.txt">Voir contexte</a></td><td><a href='../concordances/francais-16.html'>Concordancier</a></td></tr>
+<tr>
+
+                <td>17</td><td><a href=https://www.caminteresse.fr/societe/et-vous-connaissez-vous-vos-voisins-11164826/>https://www.caminteresse.fr/societe/et-vous-connaissez-vous-vos-voisins-11164826/</a></td><td><a href="../aspirations/francais-17.html">Aspiration</a></td><td><a href="../dumps-text/francais-17.txt">Dump</a></td><td>200</td><td>UTF-8</td><td>45</td><td><a href="../contextes/francais-17.txt">Voir contexte</a></td><td><a href='../concordances/francais-17.html'>Concordancier</a></td></tr>
+<tr>
+
+                <td>18</td><td><a href=https://www.mypickme.com/>https://www.mypickme.com/</a></td><td><a href="../aspirations/francais-18.html">Aspiration</a></td><td><a href="../dumps-text/francais-18.txt">Dump</a></td><td>200</td><td></td><td>16</td><td><a href="../contextes/francais-18.txt">Voir contexte</a></td><td><a href='../concordances/francais-18.html'>Concordancier</a></td></tr>
+<tr>
+
+                <td>19</td><td><a href=https://www.forumconstruire.com/construire/topic-460361-soupe-voisins.php>https://www.forumconstruire.com/construire/topic-460361-soupe-voisins.php</a></td><td><a href="../aspirations/francais-19.html">Aspiration</a></td><td><a href="../dumps-text/francais-19.txt">Dump</a></td><td>200</td><td>iso-8859-1</td><td>86</td><td><a href="../contextes/francais-19.txt">Voir contexte</a></td><td><a href='../concordances/francais-19.html'>Concordancier</a></td></tr>
+<tr>
+
+                <td>20</td><td><a href=https://www.forumconstruire.com/construire/topic-434523-avis-comportement-voisin.php>https://www.forumconstruire.com/construire/topic-434523-avis-comportement-voisin.php</a></td><td><a href="../aspirations/francais-20.html">Aspiration</a></td><td><a href="../dumps-text/francais-20.txt">Dump</a></td><td>200</td><td>iso-8859-1</td><td>91</td><td><a href="../contextes/francais-20.txt">Voir contexte</a></td><td><a href='../concordances/francais-20.html'>Concordancier</a></td></tr>
+<tr>
+
+                <td>21</td><td><a href=https://www.jeuxvideo.com/forums/42-51-69751072-1-0-1-0-voisin-insupportable-que-faire.htm>https://www.jeuxvideo.com/forums/42-51-69751072-1-0-1-0-voisin-insupportable-que-faire.htm</a></td><td><a href="../aspirations/francais-21.html">Aspiration</a></td><td><a href="../dumps-text/francais-21.txt">Dump</a></td><td>200</td><td></td><td>7</td><td><a href="../contextes/francais-21.txt">Voir contexte</a></td><td><a href='../concordances/francais-21.html'>Concordancier</a></td></tr>
+<tr>
+
+                <td>22</td><td><a href=https://www.60millions-mag.com/forum/post388219.html>https://www.60millions-mag.com/forum/post388219.html</a></td><td><a href="../aspirations/francais-22.html">Aspiration</a></td><td><a href="../dumps-text/francais-22.txt">Dump</a></td><td>200</td><td>UTF-8</td><td>10</td><td><a href="../contextes/francais-22.txt">Voir contexte</a></td><td><a href='../concordances/francais-22.html'>Concordancier</a></td></tr>
+<tr>
+
+                <td>23</td><td><a href=https://forum.ubuntu-fr.org/viewtopic.php?id=80163>https://forum.ubuntu-fr.org/viewtopic.php?id=80163</a></td><td><a href="../aspirations/francais-23.html">Aspiration</a></td><td><a href="../dumps-text/francais-23.txt">Dump</a></td><td>200</td><td>utf-8</td><td>48</td><td><a href="../contextes/francais-23.txt">Voir contexte</a></td><td><a href='../concordances/francais-23.html'>Concordancier</a></td></tr>
+<tr>
+
+                <td>24</td><td><a href=https://forum.doctissimo.fr/viepratique/nuisances-sonores/plaignent-voisins-marche-sujet_370_1.htm>https://forum.doctissimo.fr/viepratique/nuisances-sonores/plaignent-voisins-marche-sujet_370_1.htm</a></td><td><a href="../aspirations/francais-24.html">Aspiration</a></td><td><a href="../dumps-text/francais-24.txt">Dump</a></td><td>200</td><td>utf-8</td><td>40</td><td><a href="../contextes/francais-24.txt">Voir contexte</a></td><td><a href='../concordances/francais-24.html'>Concordancier</a></td></tr>
+<tr>
+
+                <td>25</td><td><a href=https://zestedesavoir.com/forums/sujet/8513/nouveau-voisin-un-brin-fetard/>https://zestedesavoir.com/forums/sujet/8513/nouveau-voisin-un-brin-fetard/</a></td><td><a href="../aspirations/francais-25.html">Aspiration</a></td><td><a href="../dumps-text/francais-25.txt">Dump</a></td><td>200</td><td>utf-8</td><td>21</td><td><a href="../contextes/francais-25.txt">Voir contexte</a></td><td><a href='../concordances/francais-25.html'>Concordancier</a></td></tr>
+<tr>
+
+                <td>26</td><td><a href=https://www.ekie.co/questions/probleme-avec-mon-voisin-je-suis-locataire-je-ne-s>https://www.ekie.co/questions/probleme-avec-mon-voisin-je-suis-locataire-je-ne-s</a></td><td><a href="../aspirations/francais-26.html">Aspiration</a></td><td><a href="../dumps-text/francais-26.txt">Dump</a></td><td>200</td><td>utf-8</td><td>13</td><td><a href="../contextes/francais-26.txt">Voir contexte</a></td><td><a href='../concordances/francais-26.html'>Concordancier</a></td></tr>
+<tr>
+
+                <td>27</td><td><a href=https://fr.quora.com/Comment-g%C3%A9rez-vous-un-voisin-trop-amical-qui-pose-trop-de-questions-sur-votre-vie-alors-que-vous-%C3%AAtes-%C3%A0-lext%C3%A9rieur-en-m%C3%AAme-temps>https://fr.quora.com/Comment-g%C3%A9rez-vous-un-voisin-trop-amical-qui-pose-trop-de-questions-sur-votre-vie-alors-que-vous-%C3%AAtes-%C3%A0-lext%C3%A9rieur-en-m%C3%AAme-temps</a></td><td><a href="../aspirations/francais-27.html">Aspiration</a></td><td><a href="../dumps-text/francais-27.txt">Dump</a></td><td>200</td><td></td><td>0</td><td><a href="../contextes/francais-27.txt">Voir contexte</a></td><td><a href='../concordances/francais-27.html'>Concordancier</a></td></tr>
+<tr>
+
+                <td>28</td><td><a href=https://lesbambous.fr/forum/viewtopic.php?t=14346>https://lesbambous.fr/forum/viewtopic.php?t=14346</a></td><td><a href="../aspirations/francais-28.html">Aspiration</a></td><td><a href="../dumps-text/francais-28.txt">Dump</a></td><td>200</td><td>UTF-8</td><td>13</td><td><a href="../contextes/francais-28.txt">Voir contexte</a></td><td><a href='../concordances/francais-28.html'>Concordancier</a></td></tr>
+<tr>
+
+                <td>29</td><td><a href=https://www.largus.fr/forum-auto/droit-penal-routier-code-de-la-route/probleme-de-stationnement-de-mon-voisin/369993.html>https://www.largus.fr/forum-auto/droit-penal-routier-code-de-la-route/probleme-de-stationnement-de-mon-voisin/369993.html</a></td><td><a href="../aspirations/francais-29.html">Aspiration</a></td><td><a href="../dumps-text/francais-29.txt">Dump</a></td><td>403</td><td>utf-8</td><td>18</td><td><a href="../contextes/francais-29.txt">Voir contexte</a></td><td><a href='../concordances/francais-29.html'>Concordancier</a></td></tr>
+<tr>
+
+                <td>30</td><td><a href=https://www.chine-nouvelle.com/forum/read.html?q=3%2C129042>https://www.chine-nouvelle.com/forum/read.html?q=3%2C129042</a></td><td><a href="../aspirations/francais-30.html">Aspiration</a></td><td><a href="../dumps-text/francais-30.txt">Dump</a></td><td>200</td><td>UTF-8</td><td>33</td><td><a href="../contextes/francais-30.txt">Voir contexte</a></td><td><a href='../concordances/francais-30.html'>Concordancier</a></td></tr>
+<tr>
+
+                <td>31</td><td><a href=https://jvarchive.com/forums/42-51-61428438-1-0-1-0-les-voisins-l-enfer-sur-terre>https://jvarchive.com/forums/42-51-61428438-1-0-1-0-les-voisins-l-enfer-sur-terre</a></td><td><a href="../aspirations/francais-31.html">Aspiration</a></td><td><a href="../dumps-text/francais-31.txt">Dump</a></td><td>200</td><td>utf-8</td><td>40</td><td><a href="../contextes/francais-31.txt">Voir contexte</a></td><td><a href='../concordances/francais-31.html'>Concordancier</a></td></tr>
+<tr>
+
+                <td>32</td><td><a href=https://www.chat-et-cie.fr/forum/informations/mon-voisin-menace-mes-chats-t43513.html>https://www.chat-et-cie.fr/forum/informations/mon-voisin-menace-mes-chats-t43513.html</a></td><td><a href="../aspirations/francais-32.html">Aspiration</a></td><td><a href="../dumps-text/francais-32.txt">Dump</a></td><td>200</td><td>UTF-8</td><td>32</td><td><a href="../contextes/francais-32.txt">Voir contexte</a></td><td><a href='../concordances/francais-32.html'>Concordancier</a></td></tr>
+<tr>
+
+                <td>33</td><td><a href=https://www.koreus.com/modules/newbb/topic37878.html>https://www.koreus.com/modules/newbb/topic37878.html</a></td><td><a href="../aspirations/francais-33.html">Aspiration</a></td><td><a href="../dumps-text/francais-33.txt">Dump</a></td><td>200</td><td>UTF-8</td><td>29</td><td><a href="../contextes/francais-33.txt">Voir contexte</a></td><td><a href='../concordances/francais-33.html'>Concordancier</a></td></tr>
+<tr>
+
+                <td>34</td><td><a href=https://blog.mieux-apprendre.com/?p=4379>https://blog.mieux-apprendre.com/?p=4379</a></td><td><a href="../aspirations/francais-34.html">Aspiration</a></td><td><a href="../dumps-text/francais-34.txt">Dump</a></td><td>200</td><td>UTF-8</td><td>4</td><td><a href="../contextes/francais-34.txt">Voir contexte</a></td><td><a href='../concordances/francais-34.html'>Concordancier</a></td></tr>
+<tr>
+
+                <td>35</td><td><a href=https://www.madmoizelle.com/confinement-voisins-bruyants-1053375>https://www.madmoizelle.com/confinement-voisins-bruyants-1053375</a></td><td><a href="../aspirations/francais-35.html">Aspiration</a></td><td><a href="../dumps-text/francais-35.txt">Dump</a></td><td>200</td><td>utf-8</td><td>20</td><td><a href="../contextes/francais-35.txt">Voir contexte</a></td><td><a href='../concordances/francais-35.html'>Concordancier</a></td></tr>
+<tr>
+
+                <td>36</td><td><a href=https://www.lalibre.be/debats/opinions/2018/05/25/vos-plus-belles-histoires-de-voisinage-temoignages-AMK5RGU2EREPFKY6SBJPSOQIQU/>https://www.lalibre.be/debats/opinions/2018/05/25/vos-plus-belles-histoires-de-voisinage-temoignages-AMK5RGU2EREPFKY6SBJPSOQIQU/</a></td><td><a href="../aspirations/francais-36.html">Aspiration</a></td><td><a href="../dumps-text/francais-36.txt">Dump</a></td><td>200</td><td>utf-8</td><td>13</td><td><a href="../contextes/francais-36.txt">Voir contexte</a></td><td><a href='../concordances/francais-36.html'>Concordancier</a></td></tr>
+<tr>
+
+                <td>37</td><td><a href=https://www.selection.ca/sante/famille/histoires-de-voisinage/>https://www.selection.ca/sante/famille/histoires-de-voisinage/</a></td><td><a href="../aspirations/francais-37.html">Aspiration</a></td><td><a href="../dumps-text/francais-37.txt">Dump</a></td><td>403</td><td>UTF-8</td><td>1</td><td><a href="../contextes/francais-37.txt">Voir contexte</a></td><td><a href='../concordances/francais-37.html'>Concordancier</a></td></tr>
+<tr>
+
+                <td>38</td><td><a href=https://www.europe1.fr/societe/caroline-est-harcelee-par-son-voisin-je-vis-un-veritable-cauchemar-3953101>https://www.europe1.fr/societe/caroline-est-harcelee-par-son-voisin-je-vis-un-veritable-cauchemar-3953101</a></td><td><a href="../aspirations/francais-38.html">Aspiration</a></td><td><a href="../dumps-text/francais-38.txt">Dump</a></td><td>200</td><td>UTF-8</td><td>7</td><td><a href="../contextes/francais-38.txt">Voir contexte</a></td><td><a href='../concordances/francais-38.html'>Concordancier</a></td></tr>
+<tr>
+
+                <td>39</td><td><a href=https://www.streetpress.com/sujet/1677148452-je-suis-noire-et-mon-voisin-est-raciste-insultes-harcelement-racisme-discriminations-temoignage>https://www.streetpress.com/sujet/1677148452-je-suis-noire-et-mon-voisin-est-raciste-insultes-harcelement-racisme-discriminations-temoignage</a></td><td><a href="../aspirations/francais-39.html">Aspiration</a></td><td><a href="../dumps-text/francais-39.txt">Dump</a></td><td>200</td><td>utf-8</td><td>10</td><td><a href="../contextes/francais-39.txt">Voir contexte</a></td><td><a href='../concordances/francais-39.html'>Concordancier</a></td></tr>
+<tr>
+
+                <td>40</td><td><a href=https://www.neonmag.fr/societe-politique/fete-des-voisins-vos-pires-experiences-de-voisinage-473715>https://www.neonmag.fr/societe-politique/fete-des-voisins-vos-pires-experiences-de-voisinage-473715</a></td><td><a href="../aspirations/francais-40.html">Aspiration</a></td><td><a href="../dumps-text/francais-40.txt">Dump</a></td><td>200</td><td>UTF-8</td><td>30</td><td><a href="../contextes/francais-40.txt">Voir contexte</a></td><td><a href='../concordances/francais-40.html'>Concordancier</a></td></tr>
+<tr>
+
+                <td>41</td><td><a href=https://www.viedemerde.fr/Voisins_369>https://www.viedemerde.fr/Voisins_369</a></td><td><a href="../aspirations/francais-41.html">Aspiration</a></td><td><a href="../dumps-text/francais-41.txt">Dump</a></td><td>200</td><td>UTF-8</td><td>35</td><td><a href="../contextes/francais-41.txt">Voir contexte</a></td><td><a href='../concordances/francais-41.html'>Concordancier</a></td></tr>
+<tr>
+
+                <td>42</td><td><a href=http://voisins-de-merde.fr/>http://voisins-de-merde.fr/</a></td><td><a href="../aspirations/francais-42.html">Aspiration</a></td><td><a href="../dumps-text/francais-42.txt">Dump</a></td><td>200</td><td>UTF-8</td><td>32</td><td><a href="../contextes/francais-42.txt">Voir contexte</a></td><td><a href='../concordances/francais-42.html'>Concordancier</a></td></tr>
+<tr>
+
+                <td>43</td><td><a href=https://www.topito.com/top-pires-histoires-voisinage>https://www.topito.com/top-pires-histoires-voisinage</a></td><td><a href="../aspirations/francais-43.html">Aspiration</a></td><td><a href="../dumps-text/francais-43.txt">Dump</a></td><td>200</td><td>UTF-8</td><td>42</td><td><a href="../contextes/francais-43.txt">Voir contexte</a></td><td><a href='../concordances/francais-43.html'>Concordancier</a></td></tr>
+<tr>
+
+                <td>44</td><td><a href=https://forum-auto.caradisiac.com/topic/195991-vos-anecdotes-sur-les-voisins-insupportables/>https://forum-auto.caradisiac.com/topic/195991-vos-anecdotes-sur-les-voisins-insupportables/</a></td><td><a href="../aspirations/francais-44.html">Aspiration</a></td><td><a href="../dumps-text/francais-44.txt">Dump</a></td><td>200</td><td>UTF-8</td><td>31</td><td><a href="../contextes/francais-44.txt">Voir contexte</a></td><td><a href='../concordances/francais-44.html'>Concordancier</a></td></tr>
+<tr>
+
+                <td>45</td><td><a href=https://www.demotivateur.fr/article-buzz/les-13-choses-que-font-nos-voisins-et-qui-nous-rendent-completement-dingues-bon-courage-pour-la-6--2298>https://www.demotivateur.fr/article-buzz/les-13-choses-que-font-nos-voisins-et-qui-nous-rendent-completement-dingues-bon-courage-pour-la-6--2298</a></td><td><a href="../aspirations/francais-45.html">Aspiration</a></td><td><a href="../dumps-text/francais-45.txt">Dump</a></td><td>200</td><td>UTF-8</td><td>11</td><td><a href="../contextes/francais-45.txt">Voir contexte</a></td><td><a href='../concordances/francais-45.html'>Concordancier</a></td></tr>
+<tr>
+
+                <td>46</td><td><a href=https://www.forumconstruire.com/construire/topic-425013-voisinage-bruit-incivilite.php>https://www.forumconstruire.com/construire/topic-425013-voisinage-bruit-incivilite.php</a></td><td><a href="../aspirations/francais-46.html">Aspiration</a></td><td><a href="../dumps-text/francais-46.txt">Dump</a></td><td>200</td><td>iso-8859-1</td><td>20</td><td><a href="../contextes/francais-46.txt">Voir contexte</a></td><td><a href='../concordances/francais-46.html'>Concordancier</a></td></tr>
+<tr>
+
+                <td>47</td><td><a href=https://forum.doctissimo.fr/viepratique/nuisances-sonores/bruit-rend-sujet_1272_1.htm>https://forum.doctissimo.fr/viepratique/nuisances-sonores/bruit-rend-sujet_1272_1.htm</a></td><td><a href="../aspirations/francais-47.html">Aspiration</a></td><td><a href="../dumps-text/francais-47.txt">Dump</a></td><td>200</td><td>utf-8</td><td>20</td><td><a href="../contextes/francais-47.txt">Voir contexte</a></td><td><a href='../concordances/francais-47.html'>Concordancier</a></td></tr>
+<tr>
+
+                <td>48</td><td><a href=https://www.vinted.fr/forum/relations-and-sentiments/sentiments/1175311-au-secours-je-tombe-en-depression-a-cause-de-mes-voisins>https://www.vinted.fr/forum/relations-and-sentiments/sentiments/1175311-au-secours-je-tombe-en-depression-a-cause-de-mes-voisins</a></td><td><a href="../aspirations/francais-48.html">Aspiration</a></td><td><a href="../dumps-text/francais-48.txt">Dump</a></td><td>200</td><td>utf-8</td><td>0</td><td><a href="../contextes/francais-48.txt">Voir contexte</a></td><td><a href='../concordances/francais-48.html'>Concordancier</a></td></tr>
+<tr>
+
+                <td>49</td><td><a href=https://www.alexia.fr/questions/176089/nuisances-sonores-de-voisinage-comment-contraindre-le-bailleur-a-agir.htm>https://www.alexia.fr/questions/176089/nuisances-sonores-de-voisinage-comment-contraindre-le-bailleur-a-agir.htm</a></td><td><a href="../aspirations/francais-49.html">Aspiration</a></td><td><a href="../dumps-text/francais-49.txt">Dump</a></td><td>200</td><td>ISO-8859-1</td><td>43</td><td><a href="../contextes/francais-49.txt">Voir contexte</a></td><td><a href='../concordances/francais-49.html'>Concordancier</a></td></tr>
+<tr>
+
+                <td>50</td><td><a href=https://www.yabiladi.com/forum/voisins-sont-insupportables-70-6342245.html>https://www.yabiladi.com/forum/voisins-sont-insupportables-70-6342245.html</a></td><td><a href="../aspirations/francais-50.html">Aspiration</a></td><td><a href="../dumps-text/francais-50.txt">Dump</a></td><td>200</td><td>iso-8859-1</td><td>25</td><td><a href="../contextes/francais-50.txt">Voir contexte</a></td><td><a href='../concordances/francais-50.html'>Concordancier</a></td></tr>
+<tr>
+
+                <td>51</td><td><a href=></a></td><td><a href="../aspirations/francais-51.html">Aspiration</a></td><td><a href="../dumps-text/francais-51.txt">Dump</a></td><td>000</td><td></td><td>0</td><td><a href="../contextes/francais-51.txt">Voir contexte</a></td><td><a href='../concordances/francais-51.html'>Concordancier</a></td></tr>
         </table>
     </body>
     </html>

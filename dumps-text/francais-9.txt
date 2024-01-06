@@ -166,7 +166,7 @@ Signaler un stationnement gênant
    © Capital (avec 6medias)
    Outbrain
    Débat des lecteurs
-   2 débatteurs en ligne2 en ligne
+   14 débatteurs en ligne14 en ligne
    Les villes ont-elle raison d'augmenter les tarifs du stationnement ?
    Oui
    Non
@@ -211,12 +211,12 @@ Signaler un stationnement gênant
        Auto
      * Publicité
      *
-   Voisin bruyant : quels recours ?
-       Economie et politique
-     *
    Mon voisin a installé une caméra dans la cour commune, puis-je m’y
        opposer ?
        Immobilier
+     *
+   Voisin bruyant : quels recours ?
+       Economie et politique
      *
    Nouvelle manifestation de migrants devant la gare de Budapest
        Economie et politique
@@ -267,4 +267,4 @@ Signaler un stationnement gênant
      * CONDITIONS GÉNÉRALES DE VENTES ABONNEMENT ESSENTIEL, NOMADE &
        INTÉGRAL
 
-   © Prisma Media - Groupe Vivendi 2023 Tous droits réservés
+   © Prisma Media - Groupe Vivendi 2024 Tous droits réservés
