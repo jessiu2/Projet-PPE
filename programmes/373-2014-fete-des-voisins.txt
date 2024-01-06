@@ -1,0 +1,470 @@
+   #[1]搜索 youparis.com
+
+[2]youparis.com
+
+   搜索... ____________________
+     * [3]游巴黎最新消息
+     * [4]巴黎游览景点大全
+          + [5]岛区-拉丁区
+               o [6]巴黎圣母院
+               o [7]塞纳河畔
+               o [8]更多景点
+          + [9]卢浮宫区
+               o [10]卢浮宫博物馆
+               o [11]王宫和王宫庭园
+               o [12]杜乐丽花园
+          + [13]香榭丽舍区
+               o [14]香榭丽舍大街
+               o [15]协和广场
+               o [16]更多景点
+          + [17]铁塔区
+               o [18]罗丹博物馆
+               o [19]荣誉军人院
+               o [20]更多景点
+          + [21]歌剧院区
+               o [22]巴黎歌剧院
+               o [23]旺达姆广场
+               o [24]更多景点
+          + [25]蒙马特高地
+               o [26]圣心教堂
+               o [27]小丘广场
+               o [28]皮卡尔红灯区
+          + [29]夏特莱、马莱区
+               o [30]蓬皮杜文化中心
+               o [31]雷阿莱集市区
+               o [32]更多景点
+          + [33]维莱特园区
+               o [34]维莱特公园
+               o [35]科学与工业城
+               o [36]儿童城
+          + [37]贝西新区
+               o [38]贝西公园
+               o [39]财政部大楼
+               o [40]更多景点
+          + [41]巴黎市其它景点
+               o [42]水上游乐宫
+               o [43]拉雪兹神父公墓
+               o [44]更多景点
+          + [45]巴黎郊外
+               o [46]法兰西大球场
+               o [47]圣德尼大教堂
+               o [48]更多景点
+          + [49]巴黎冷门游
+     * [50]艺术与文化历史与人物
+     * [51]服务项目量身定制
+          + [52]法国主题游
+          + [53]翻译印刷展览服务
+     * [54]商务信息商展信息
+     * [55]购物边逛边看
+     * [56]实用吃住行通讯
+          + [57]认识巴黎
+          + [58]学几句法语
+          + [59]法国美食
+               o [60]品“味”识奶酪
+               o [61]美酒配佳肴
+               o [62]异国食珍馐
+               o [63]餐仪需记牢
+          + [64]巴黎美食好去处
+          + [65]巴黎的公共交通
+          + [66]药房
+          + [67]邮局
+          + [68]在巴黎打电话
+          + [69]巴黎WIFI
+          + [70]紧急电话
+          + [71]巴黎的旅馆
+          + [72]法国的假期
+          + [73]巴黎旅游安全指南
+     * [74]商家介绍各行各业
+     * [75]联络我们游客驿站
+          + [76]巴黎游记精选集
+     * [77]Fr / EngAbout youParis
+          + [78]Revue de presse français
+
+     * [79]Skip to content
+
+   [80]About [81]Guides [82]FAQs
+
+Font Size
+
+     * Increase font size
+     * Decrease font size
+     * Default font size
+
+SCREEN
+
+     * (*) Wide (default)
+     * ( ) Fluid
+     * ( ) Narrow
+
+Profile
+
+     * ( ) blue
+     * (*) default
+     * ( ) red
+
+Layout
+
+     * (*) default
+     * ( ) left-main
+     * ( ) left-right-main
+     * ( ) main-left-right
+     * ( ) main-left
+     * ( ) main-only
+     * ( ) main-right-left
+     * ( ) main-right
+     * ( ) right-main-left
+     * ( ) handheld
+
+Direction
+
+     * (*) LTR
+     * ( ) RTL
+
+Menu Style
+
+     * (*) Mega
+     * ( ) Css
+     * ( ) Dropline
+     * ( ) Split
+
+   [83]Apply [84]Reset
+   [85]Cpanel
+   当前位置：[86]Home [87]最新动态 邻居节！FÊTE DES VOISINS！
+     * [88]Top
+
+     * [89]Skip to content
+
+
+[90]邻居节！FÊTE DES VOISINS！
+
+     * [91]打印
+     * [92]Email
+
+   voisin1 俗话说远亲不如近邻，23号的邻居节要到了，你明天要和邻居们一起happy一下下吗？
+
+   什么是邻居节？
+   邻居节是一个法国节日，它发起的目的是为了能给居民楼或小区里的住户们提供一个能彼此认识、熟悉的友好环境，以打破邻居与邻居之间的心理设防、个人住户
+   的孤独感、以及抬头不见低头见却装作毫不认识的尴尬感觉。
+
+   怎样参加邻居节？
+   在这一天，参加者们将从家里拿来佳肴、糕点或是饮料，携家带口，在小区里的举办地点和邻居们共享美食，谈天说地，甚至唱歌跳舞。当曲终人散时，相信大家
+   在认识了几个好邻居的同时也收获了几个生活上的好朋友。
+
+
+   03 查看您所在社区是否举办邻居节，请前往官网[93]http://www.immeublesenfete.com/咨询。
+
+     fete de voisin1
+
+   扫一扫右方二维码，方便您随时关注巴黎旅游文化信息❤
+
+Main Menu
+
+     * [94]游巴黎 游巴黎
+     * [95]巴黎游览
+     * [96]艺术与文化
+     * [97]服务项目
+     * [98]商务信息
+     * [99]购物
+     * [100]实用
+     * [101]商家介绍
+     * [102]联络我们
+     * [103]Fr / Eng
+
+guide youParis
+
+   [104]guide youParis
+
+   《游巴黎》指南已经出版
+   [105]业务联络
+
+微信公众号
+
+   weixin
+
+   随时关注巴黎旅游文化信息
+
+Login Form
+
+   用户名 __________________
+
+   密码 __________________
+
+   登录
+
+     * [106]忘记密码?
+     * [107]忘记用户名?
+     * [108]创建账户
+
+巴黎景点精选
+
+   [109]mesees-gratuits
+
+   [110]louvre-right-side
+
+   [111]sacre-coeur-rubrique
+
+   [112]notre-dame
+
+巴黎冷门游
+
+   [113]
+
+   parislengmen
+
+合作伙伴
+     __________________________________________________________________
+
+     实用
+   [114]banniere pharmacie
+     __________________________________________________________________
+
+     酒店
+   [115]法兰西雅居
+     __________________________________________________________________
+
+     文化
+   [116]蓬皮杜中心
+   [117]马蒙丹-莫奈美术馆
+     __________________________________________________________________
+
+     旅游
+   [118]中国东方航空
+   [119]安塞尔旅行社
+     __________________________________________________________________
+
+     购物
+   [120]Waskoll珠宝
+   [121]banniereoggi
+     __________________________________________________________________
+
+     娱乐
+   [122]丽都夜总会
+   [123]癫马夜总会
+
+商家信息
+
+   [124]法国广场文化
+   [125]VIP in France 法悦君行集团
+   [126]Cuisine d'Histoire 历史盛宴再现公司
+   [127]大堂药妆店PARA & PHARMACIE DES HALLES
+   [128]WASKOLL
+   [129]中国东方航空公司巴黎办事处 CHINA EASTERN
+   [130]OGGI首饰
+   [131]巴黎太平洋通公司
+   [132]Studio Harcourt 摄影工作室
+   [133]VIP Paris水上酒店浪漫之旅
+
+最新动态
+
+     * [134]塞纳河畔公园（Parc Rives de Seine）
+       [135]塞纳河畔公园（Parc Rives de Seine） - 2017-03-31
+     * [136]展览：《星空之外》（Au-delà des étoiles）
+       [137]展览：《星空之外》（Au-delà des étoiles） - 2017-03-31
+     * [138]巴黎鸡尾酒周（Paris Cocktail Week）
+       [139]巴黎鸡尾酒周（Paris Cocktail Week） - 2017-03-14
+     * [140]SNCF将推出Happy Card
+       [141]SNCF将推出Happy Card - 2017-03-14
+     * [142]冬季打折季（Soldes d’hiver）
+       [143]冬季打折季（Soldes d’hiver） - 2017-03-14
+     * [144]巴黎香街元旦大巡游（La Grande Parade de Paris）
+       [145]巴黎香街元旦大巡游（La Grande Parade de Paris） - 2017-03-14
+     * [146]闪耀圣诞巴黎
+       [147]闪耀圣诞巴黎 - 2017-03-14
+     * [148]巴黎万圣夜
+       [149]巴黎万圣夜 - 2017-03-14
+     * [150]奥斯卡·王尔德——绝对的放肆无礼（Oscar Wilde, l’impertinent absolu）
+       [151]奥斯卡·王尔德——绝对的放肆无礼（Oscar Wilde, l’impertinent absolu） -
+       2017-03-14
+     * [152]雷内‧马格列特：形象的叛逆（René Magritte : La Trahison des Images）
+       [153]雷内‧马格列特：形象的叛逆（René Magritte : La Trahison des Images） -
+       2017-03-14
+
+最新文章
+
+     * [154]塞纳河畔公园（Parc Rives de Seine）
+     * [155]展览：《星空之外》（Au-delà des étoiles）
+     * [156]巴黎鸡尾酒周（Paris Cocktail Week）
+     * [157]SNCF将推出Happy Card
+     * [158]冬季打折季（Soldes d’hiver）
+
+网站链接
+
+     * [159]édtions pacifica
+     * [160]巴黎太平洋通出版社
+     * [161]法国安赛尔旅行社
+
+游客驿站
+
+     * [162]联系我们
+     * [163]网站地图
+
+References
+
+   Visible links
+   1. http://www.youparis.com/component/search/?Itemid=435&catid=79&id=373&format=opensearch
+   2. http://www.youparis.com/index.php
+   3. http://www.youparis.com/
+   4. http://www.youparis.com/sites-touristiques
+   5. http://www.youparis.com/sites-touristiques/cite-latin-quartier
+   6. http://www.youparis.com/sites-touristiques/cite-latin-quartier/notre-dame
+   7. http://www.youparis.com/sites-touristiques/cite-latin-quartier/seine-pourtout
+   8. http://www.youparis.com/sites-touristiques/cite-latin-quartier/plus-informations
+   9. http://www.youparis.com/sites-touristiques/louvre-quartier
+  10. http://www.youparis.com/sites-touristiques/louvre-quartier/louvre-musee
+  11. http://www.youparis.com/sites-touristiques/louvre-quartier/palais-royal
+  12. http://www.youparis.com/sites-touristiques/louvre-quartier/tuilerie-jardin
+  13. http://www.youparis.com/sites-touristiques/champs-elysees-quartier
+  14. http://www.youparis.com/sites-touristiques/champs-elysees-quartier/avenue-champs-elysees
+  15. http://www.youparis.com/sites-touristiques/champs-elysees-quartier/concorde-place
+  16. http://www.youparis.com/sites-touristiques/champs-elysees-quartier/plus-information
+  17. http://www.youparis.com/sites-touristiques/tour-eiffel-quartier
+  18. http://www.youparis.com/sites-touristiques/tour-eiffel-quartier/rodin-musee
+  19. http://www.youparis.com/sites-touristiques/tour-eiffel-quartier/invalides
+  20. http://www.youparis.com/sites-touristiques/tour-eiffel-quartier/plus-information
+  21. http://www.youparis.com/sites-touristiques/opera-quartier
+  22. http://www.youparis.com/sites-touristiques/opera-quartier/opera-garnier
+  23. http://www.youparis.com/sites-touristiques/opera-quartier/vendome-place
+  24. http://www.youparis.com/sites-touristiques/opera-quartier/plus-information
+  25. http://www.youparis.com/sites-touristiques/montmartre-quartier
+  26. http://www.youparis.com/sites-touristiques/montmartre-quartier/sacre-coeur-basilique
+  27. http://www.youparis.com/sites-touristiques/montmartre-quartier/tertre-place
+  28. http://www.youparis.com/sites-touristiques/montmartre-quartier/montmartre-quartier-pigalle
+  29. http://www.youparis.com/sites-touristiques/chatelet-marais-quartier
+  30. http://www.youparis.com/sites-touristiques/chatelet-marais-quartier/pompidou-centre
+  31. http://www.youparis.com/sites-touristiques/chatelet-marais-quartier/les-halls
+  32. http://www.youparis.com/sites-touristiques/chatelet-marais-quartier/plus-information
+  33. http://www.youparis.com/sites-touristiques/villette-quartier
+  34. http://www.youparis.com/sites-touristiques/villette-quartier/villette-quartier-parc-villette
+  35. http://www.youparis.com/sites-touristiques/villette-quartier/cite-science-industrie
+  36. http://www.youparis.com/sites-touristiques/villette-quartier/cite-enfants
+  37. http://www.youparis.com/sites-touristiques/bercy-quartier
+  38. http://www.youparis.com/sites-touristiques/bercy-quartier/bercy-parc
+  39. http://www.youparis.com/sites-touristiques/bercy-quartier/ministere-bercy
+  40. http://www.youparis.com/sites-touristiques/bercy-quartier/plus-information
+  41. http://www.youparis.com/sites-touristiques/autres-sites-paris
+  42. http://www.youparis.com/sites-touristiques/autres-sites-paris/aqua-boulevard
+  43. http://www.youparis.com/sites-touristiques/autres-sites-paris/pere-lachaise
+  44. http://www.youparis.com/sites-touristiques/autres-sites-paris/plus-information
+  45. http://www.youparis.com/sites-touristiques/banlieues-paris
+  46. http://www.youparis.com/sites-touristiques/banlieues-paris/stade-de-france
+  47. http://www.youparis.com/sites-touristiques/banlieues-paris/saint-denis-basilique
+  48. http://www.youparis.com/sites-touristiques/banlieues-paris/plus-information
+  49. http://www.youparis.com/sites-touristiques/paris-endroits-insolites
+  50. http://www.youparis.com/art-a-culture
+  51. http://www.youparis.com/services-youparis
+  52. http://www.youparis.com/services-youparis/francethemes
+  53. http://www.youparis.com/services-youparis/traductionetimpression
+  54. http://www.youparis.com/business
+  55. http://www.youparis.com/shopping
+  56. http://www.youparis.com/pratiques
+  57. http://www.youparis.com/pratiques/connaitre-paris
+  58. http://www.youparis.com/pratiques/apprendre-francais
+  59. http://www.youparis.com/pratiques/gastronomie-francais
+  60. http://www.youparis.com/pratiques/gastronomie-francais/fromages
+  61. http://www.youparis.com/pratiques/gastronomie-francais/vin-gastronomie
+  62. http://www.youparis.com/pratiques/gastronomie-francais/specialite
+  63. http://www.youparis.com/pratiques/gastronomie-francais/politesse-francaise-a-table
+  64. http://www.youparis.com/pratiques/resto-a-paris
+  65. http://www.youparis.com/pratiques/paris-transport
+  66. http://www.youparis.com/pratiques/pharmacie
+  67. http://www.youparis.com/pratiques/laposte
+  68. http://www.youparis.com/pratiques/telephone-paris
+  69. http://www.youparis.com/pratiques/paris-wifi
+  70. http://www.youparis.com/pratiques/urgence-telephone
+  71. http://www.youparis.com/pratiques/paris-hotel
+  72. http://www.youparis.com/pratiques/fetes-france
+  73. http://www.youparis.com/pratiques/paris-tourisme-securite
+  74. http://www.youparis.com/professionnels-parisiens
+  75. http://www.youparis.com/contacts
+  76. http://www.youparis.com/contacts/recit-voyages
+  77. http://www.youparis.com/francais
+  78. http://www.youparis.com/francais/revue-de-presse-francais
+  79. http://www.youparis.com/79-news/373-2014-fete-des-voisins#ja-content
+  80. http://wiki.joomlart.com/wiki/JA_T3_Framework_2/Overview
+  81. http://wiki.joomlart.com/wiki/JA_T3_Framework_2/Guides
+  82. http://wiki.joomlart.com/wiki/JA_T3_Framework_2/FAQs
+  83. http://www.youparis.com/79-news/373-2014-fete-des-voisins
+  84. http://www.youparis.com/79-news/373-2014-fete-des-voisins
+  85. http://www.youparis.com/79-news/373-2014-fete-des-voisins
+  86. http://www.youparis.com/
+  87. http://www.youparis.com/79-news
+  88. http://www.youparis.com/79-news/373-2014-fete-des-voisins#Top
+  89. http://www.youparis.com/79-news/373-2014-fete-des-voisins#ja-content
+  90. http://www.youparis.com/79-news/373-2014-fete-des-voisins
+  91. http://www.youparis.com/79-news/373-2014-fete-des-voisins?tmpl=component&print=1&page=
+  92. http://www.youparis.com/component/mailto/?tmpl=component&template=ja_t3_blank&link=2f75228dfd064a40282f00e066d05301f86b046e
+  93. http://www.immeublesenfete.com/
+  94. http://www.youparis.com/
+  95. http://www.youparis.com/sites-touristiques
+  96. http://www.youparis.com/art-a-culture
+  97. http://www.youparis.com/services-youparis
+  98. http://www.youparis.com/business
+  99. http://www.youparis.com/shopping
+ 100. http://www.youparis.com/pratiques
+ 101. http://www.youparis.com/professionnels-parisiens
+ 102. http://www.youparis.com/contacts
+ 103. http://www.youparis.com/francais
+ 104. http://www.pacifica-paris.com/editions/94-guide-paris-v2
+ 105. http://www.pacifica-paris.com/editions/94-guide-paris-v2
+ 106. http://www.youparis.com/your-profile?view=reset
+ 107. http://www.youparis.com/your-profile?view=remind
+ 108. http://www.youparis.com/your-profile?view=registration
+ 109. http://www.youparis.com/art-a-culture/307-musee-graduit
+ 110. http://www.youparis.com/sites-touristiques/88-louvre/105-musee-louvre
+ 111. http://www.youparis.com/sites-touristiques/94-montmartre/127-sacre-coeur
+ 112. http://www.youparis.com/sites-touristiques/87-cite-latin/81-notre-dame-de-paris
+ 113. http://www.youparis.com/sites-touristiques/paris-endroits-insolites
+ 114. http://www.youparis.com/professionnels-parisiens/124-magasins-marches/368-pub-para-pharmacie-des-halles
+ 115. http://www.bookinnfrance.com/
+ 116. http://www.youparis.com/sites-touristiques/chatelet-marais-quartier/132-centre-pompidou
+ 117. http://www.youparis.com/sites-touristiques/autres-sites-paris/212-musee-marmottan
+ 118. http://www.youparis.com/professionnels-parisiens/129-transport-visite/260-china-eastern
+ 119. http://www.youparis.com/professionnels-parisiens/125-agence-voyage/209-anseltravel
+ 120. http://www.youparis.com/professionnels-parisiens/124-magasins-marches/263-waskoll
+ 121. http://www.youparis.com/professionnels-parisiens/124-magasins-marches/259-oggi
+ 122. http://www.youparis.com/professionnels-parisiens/127-culutre-loisir/230-lido
+ 123. http://www.youparis.com/professionnels-parisiens/127-culutre-loisir/227-crazyhorse
+ 124. http://www.youparis.com/professionnels-parisiens/127-culutre-loisir/447-2015-05-26-13-33-48
+ 125. http://www.youparis.com/professionnels-parisiens/126-services/418-vip-in-france-1
+ 126. http://www.youparis.com/professionnels-parisiens/123-restaurateurs/404-cuisine-histoire-societe
+ 127. http://www.youparis.com/professionnels-parisiens/124-magasins-marches/368-pub-para-pharmacie-des-halles
+ 128. http://www.youparis.com/professionnels-parisiens/124-magasins-marches/263-waskoll
+ 129. http://www.youparis.com/professionnels-parisiens/129-transport-visite/260-china-eastern
+ 130. http://www.youparis.com/professionnels-parisiens/124-magasins-marches/259-oggi
+ 131. http://www.youparis.com/professionnels-parisiens/126-services/245-pacifica
+ 132. http://www.youparis.com/professionnels-parisiens/126-services/244-studio-harcourt
+ 133. http://www.youparis.com/professionnels-parisiens/122-hoteliers/239-vipparis
+ 134. http://www.youparis.com/79-news/512-parc-rives-de-seine
+ 135. http://www.youparis.com/79-news/512-parc-rives-de-seine
+ 136. http://www.youparis.com/79-news/510-au-dela-des-etoiles
+ 137. http://www.youparis.com/79-news/510-au-dela-des-etoiles
+ 138. http://www.youparis.com/79-news/509-paris-cocktail-week
+ 139. http://www.youparis.com/79-news/509-paris-cocktail-week
+ 140. http://www.youparis.com/79-news/508-sncf-happy-card
+ 141. http://www.youparis.com/79-news/508-sncf-happy-card
+ 142. http://www.youparis.com/79-news/507-2017-01-05-11-12-38
+ 143. http://www.youparis.com/79-news/507-2017-01-05-11-12-38
+ 144. http://www.youparis.com/79-news/506-la-grande-parade-de-paris
+ 145. http://www.youparis.com/79-news/506-la-grande-parade-de-paris
+ 146. http://www.youparis.com/79-news/505-2016-11-29-15-21-18
+ 147. http://www.youparis.com/79-news/505-2016-11-29-15-21-18
+ 148. http://www.youparis.com/79-news/504-2016-10-28-08-37-45
+ 149. http://www.youparis.com/79-news/504-2016-10-28-08-37-45
+ 150. http://www.youparis.com/79-news/501-oscar-wilde-l-impertient-absolu
+ 151. http://www.youparis.com/79-news/501-oscar-wilde-l-impertient-absolu
+ 152. http://www.youparis.com/79-news/503-rene-magritte-la-trahison-des-images
+ 153. http://www.youparis.com/79-news/503-rene-magritte-la-trahison-des-images
+ 154. http://www.youparis.com/79-news/512-parc-rives-de-seine
+ 155. http://www.youparis.com/79-news/510-au-dela-des-etoiles
+ 156. http://www.youparis.com/79-news/509-paris-cocktail-week
+ 157. http://www.youparis.com/79-news/508-sncf-happy-card
+ 158. http://www.youparis.com/79-news/507-2017-01-05-11-12-38
+ 159. http://www.pacifica-paris.com/editions
+ 160. http://www.pacifica-paris.com/editions
+ 161. http://www.anseltravel.com/
+ 162. http://www.youparis.com/contacts-cn
+ 163. http://www.youparis.com/?Itemid=625
+
+   Hidden links:
+ 165. http://www.joomlart.com/joomla/jat3-framework/
+ 166. http://www.addthis.com/bookmark.php

@@ -1,0 +1,197 @@
+   (BUTTON)
+     *
+     *
+     *
+     *
+     *
+     *
+     *
+     *
+     * [1][DEL: :DEL]
+          +
+          + [2]IT
+          +
+          +
+          +
+          +
+          +
+          +
+          +
+          +
+
+     * [DEL: :DEL] [3][DEL: :DEL]
+          +
+     * [4][DEL: :DEL]
+          + [jinyuxiao.jpg]
+     * [5][DEL: :DEL]
+          + [enorth_weixin_teml_2016.png]
+     * [6][DEL: :DEL]
+          + [enorth_weibo_teml_2016.png]
+
+[7][pic_20.jpg]
+
+   > > >
+
+   2023-11-18 20:19:30
+   18
+
+   18
+
+   10200
+
+   18
+     * [DEL: :DEL]
+     * [DEL: :DEL]
+     * [DEL: :DEL]
+
+   [00500578896_499bbf84.jpg]
+
+[DEL: :DEL]
+
+   [8][DEL: :DEL]
+
+   	<ul class="list">__________________________________________
+   		{#foreach $T as t}________________________________________
+   		{#if $T.t.guide_image!=''}________________________________
+   			 <li style="width:99%; overflow: hidden;border-bottom: 1p
+   				<a class="link" href="{$T.t.url}" target="_blank">______
+   					<h4>___________________________________________________
+                          {$T.t.title.substring(0, 28)}________
+                       </h4>___________________________________
+   					   <table>_____________________________________________
+   						 <tbody><tr>__________________________________________
+   								<td class="pic" valign="top"><img src="{$T.t.guide_i
+   								<td valign="top">___________________________________
+   {#if $T.t.abstract!=''}_____________________________________
+   									<p class="abstract"> {$T.t.abstract.substring(0, 50
+    {#/if}_____________________________________________________
+   									<p class="time">___________________________________
+   										<span class="mr5"> {$T.t.pub_date}</span><span>{$T
+   									</p>_______________________________________________
+   								</td>_______________________________________________
+   						</tr></tbody>_________________________________________
+   					  </table>_____________________________________________
+   				</a>____________________________________________________
+   			 </li>___________________________________________________
+   		{#else}___________________________________________________
+                <li class="block-txt" style="width:99%; overflo
+   				<a class="link" href="{$T.t.url}" target="_blank">______
+   					<h4>{$T.t.title.substring(0, 28)}</h4>_________________
+   						<table>_______________________________________________
+   						   <tbody><tr>________________________________________
+   								  <td valign="top">_________________________________
+   {#if $T.t.abstract!=''}_____________________________________
+   									  <p class="abstract">{$T.t.abstract.substring(0, 5
+    {#/if}_____________________________________________________
+   									  <p class="time">_________________________________
+   										 <span class="mr5">{$T.t.pub_date}</span><span>{$T
+   									  </p>_____________________________________________
+   								  </td>_____________________________________________
+   						   </tr></tbody>______________________________________
+   						</table>______________________________________________
+   				</a>____________________________________________________
+   			  </li>__________________________________________________
+   		{#/if}____________________________________________________
+   		{#/for} __________________________________________________
+   		</ul>_____________________________________________________
+   	___________________________________________________________
+
+     *
+     *
+     *
+     *
+     *
+     *
+     *
+     *
+     * [9]:
+     *
+
+     *
+     * [10]2024
+     *
+     *
+     *
+     * [11]12
+     * [12]B1
+     *
+
+            | | | | | | | 022-23602087 | jubao@staff.enorth.cn |
+       _______________________________________________________________
+
+        Copyright (C) 2000-2023 Enorth.com.cn, Tianjin ENORTH NETNEWS
+                         Co.,LTD.All rights reserved
+
+   [13][homepic.jpg]
+   [gohomepic.jpg]
+
+References
+
+   Visible links
+   1. http://news.enorth.com.cn/system/2023/11/18/054660992.shtml
+   2. http://it.enorth.com.cn/
+   3. http://news.enorth.com.cn/system/2023/11/18/054660992.shtml
+   4. http://news.enorth.com.cn/system/2023/11/18/054660992.shtml
+   5. http://news.enorth.com.cn/system/2023/11/18/054660992.shtml
+   6. http://news.enorth.com.cn/system/2023/11/18/054660992.shtml
+   7. http://www.enorth.com.cn/
+   8. javascript:void(0)
+   9. http://news.enorth.com.cn/system/2023/12/04/054746998.shtml
+  10. http://ms.enorth.com.cn/system/2023/12/01/054740197.shtml
+  11. http://news.enorth.com.cn/system/2023/12/01/054735699.shtml
+  12. http://ms.enorth.com.cn/system/2023/12/01/054736227.shtml
+  13. http://www.enorth.com.cn/
+
+   Hidden links:
+  15. http://www.enorth.com.cn/
+  16. http://news.enorth.com.cn/
+  17. http://ms.enorth.com.cn/
+  18. http://www.enorth.com.cn/indexapp.html#fff
+  19. http://sports.enorth.com.cn/
+  20. http://ent.enorth.com.cn/
+  21. http://edu.enorth.com.cn/
+  22. http://economy.enorth.com.cn/
+  23. http://house.enorth.com.cn/
+  24. http://travel.enorth.com.cn/
+  25. http://baby.enorth.com.cn/
+  26. http://health.enorth.com.cn/
+  27. http://fashion.enorth.com.cn/
+  28. http://www.tjtong.cn/
+  29. http://auto.enorth.com.cn/
+  30. http://home.enorth.com.cn/
+  31. https://www.gaodun.com/news/
+  32. http://www.enorth.com.cn/index.htm
+  33. http://news.enorth.com.cn/index.shtml
+  34. http://news.enorth.com.cn/tj/index.shtml
+  35. http://news.enorth.com.cn/tj/shipin/index.shtml
+  36. http://news.enorth.com.cn/system/2023/03/17/053746079.shtml
+  37. http://ms.enorth.com.cn/index.shtml#zmljl
+  38. http://ms.enorth.com.cn/lsbb/
+  39. http://ms.enorth.com.cn/yhljl/
+  40. http://news.enorth.com.cn/system/2023/12/04/054747038.shtml
+  41. http://news.enorth.com.cn/system/2023/12/04/054746972.shtml
+  42. http://news.enorth.com.cn/system/2023/12/04/054747149.shtml
+  43. http://news.enorth.com.cn/system/2023/12/03/054746252.shtml
+  44. http://news.enorth.com.cn/system/2023/12/04/054747155.shtml
+  45. http://news.enorth.com.cn/system/2023/11/29/054725637.shtml
+  46. http://news.enorth.com.cn/system/2023/12/04/054746973.shtml
+  47. http://news.enorth.com.cn/system/2023/12/04/054746882.shtml
+  48. http://news.enorth.com.cn/system/2023/12/04/054746996.shtml
+  49. http://news.enorth.com.cn/system/2023/12/05/054755104.shtml
+  50. http://news.enorth.com.cn/system/2023/12/05/054754669.shtml
+  51. http://news.enorth.com.cn/system/2023/12/05/054754893.shtml
+  52. http://news.enorth.com.cn/system/2023/12/05/054754982.shtml
+  53. http://news.enorth.com.cn/system/2023/12/05/054754749.shtml
+  54. http://ms.enorth.com.cn/system/2023/12/01/054738659.shtml
+  55. http://news.enorth.com.cn/system/2023/11/29/054725637.shtml
+  56. http://news.enorth.com.cn/system/2023/12/03/054746072.shtml
+  57. http://news.enorth.com.cn/system/2023/12/03/054746733.shtml
+  58. http://news.enorth.com.cn/system/2023/12/01/054735764.shtml
+  59. http://enterprise.enorth.com.cn/
+  60. http://teamwork.enorth.com.cn/
+  61. http://www.enorth.com.cn/index/zhaopin/index.htm
+  62. http://www.enorth.com.cn/index/feedback/index.htm
+  63. http://www.enorth.com.cn/index/wzls/index.htm
+  64. http://www.enorth.com.cn/index/firstpage/index.htm
+  65. http://www.enorth.com.cn/index/about/wolf/index.shtml
+  66. http://www.enorth.com.cn/index/jbpt/index.html

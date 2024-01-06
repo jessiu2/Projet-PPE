@@ -1,0 +1,371 @@
+    #[1]bookmark
+
+   我们使用cookie来确保您的高速浏览体验。继续浏览本站，即表示您同意我们使用cookie。 [2]详情
+
+   (BUTTON) 消费者业务网站
+   (BUTTON) 关闭
+   个人用户
+
+   手机，PC和平板，穿戴设备等个人及家用产品
+   [3]集团网站
+
+   公司信息，社会责任，新闻，展会活动，行业洞察等等
+   [4]企业用户
+
+   企业商用产品、解决方案和云服务
+   [5]运营商用户
+
+   运营商网络解决方案、产品及服务
+   [6]Huawei-v4
+
+     * [7]手机
+     * [8]电脑
+     * [9]平板
+     * [10]智慧屏
+     * [11]穿戴
+     * [12]耳机音箱
+     * [13]全屋智能
+     * [14]路由器
+     * [15]HarmonyOS 4
+
+     * [16]服务支持
+     * [17]零售店
+     * [18]商用
+     * [19]华为商城
+
+   (BUTTON) 搜索
+   简介
+     * [20]登录
+     * [21]注册
+
+     * [22]我的服务
+     * [23]我的个人信息
+     *
+     * [24]退出
+
+   华为商城商城
+   (BUTTON) 打开菜单
+   (BUTTON) 关闭
+   search ____________________ (BUTTON) 搜索 (BUTTON) 关闭
+   热门产品
+   HUAWEI Mate 60 Pro
+   [25]HUAWEI Mate 60 Pro
+   HUAWEI Mate X5
+   [26]HUAWEI Mate X5
+   HUAWEI MatePad Pro 11 英寸 2024 款
+   [27]HUAWEI MatePad Pro 11 英寸 2024 款
+   快速预览
+   [28]手机
+   [29]电脑
+   [30]打印机
+   [31]平板
+   [32]智慧屏
+   [33]穿戴
+   [34]耳机音箱
+   [35]全屋智能
+   [36]路由器
+   [37]配件
+   [38]终端云服务
+   [39]查找零售店
+   请键入更多关键词
+     * Africa
+     * Asia Pacific
+     * Europe
+     * Latin America
+     * Middle East
+     * North America
+     * Global
+
+   目录
+   选择版本
+
+文件管理中网络邻居的使用方法
+
+   适用产品： 手机，平板
+   适用版本： 不涉及系统版本
+   适用产品：
+
+   适用版本：
+
+   为您查询到以下结果，请选择
+
+   无法查询到结果，请重新选择
+   zoom in pic
+
+   文件管理中网络邻居的使用方法
+
+   文件管理 > 浏览 > 网络邻居可以访问同一WLAN局域网下的其它存储设备（如电脑、路由、NAS存储设备等）的文件。
+   [H4sIAAAAAAAAAD2Py07DMBRE_8XrFt0bP67Nqmlkq2wQi_IBxnFbS8VBiVNEEf-OgyKWR2
+   ekmflm8xTH49dHZI8M2Yb1w2dekVc8pWt89u8LpjDkbR5KfJhu51W9-HKpqjmB8iFqiSEIB
+   eB5JO77QDoYIG1q-i3dn_oaPbS7-2UbMoAQpLGpKozRlzTkY1p6UIERHAQgAGzYlM7Zl3lc
+   FlhyHSlhSWoUJPa20YgcjEESjtBZ2RreOUvKON5IA66ykXvbdgS6XWbc_DX1r_-XyzjHv23
+   r5UPLfn4B7EudBBMBAAA%3D.svg]
+    1. 电脑是Windows的操作系统，才能支持网络邻居功能，其他操作系统不支持该能力。
+    2. 电脑端目前由于Windows 10系统最新补丁修改了 Samba 访问服务器的安全策略，windows
+       10系统默认不开启“SMB1.0/CIFS 文件共享支持”功能，所以Windows
+       10电脑连接网络邻居前，要先打开SMB1.0/CIFS 文件共享支持”功能，具体操作步骤可以参考：[40]windows
+       10如何打开smb？
+    3. 若网络邻居内没有设备，请点击右上角刷新按钮进行刷新。若仍然没有设备，请检查手机和电脑是否已连接到同一个 WLAN 网络。
+    4. 电脑端设置匿名登录的教程，可以参考：[41]网络邻居电脑环境配置.docx
+    5. 部分手机文件管理中没有网络邻居功能，因为手机底层芯片不一致，支持能力也不一致，属于正常情况。
+    6. 若您的电视盒子或路由器等产品支持共享文件夹，也可以在手机上通过网络邻居访问。
+
+   以电脑举例具体操作步骤如下：
+    1. 将手机和电脑连接到同一个 WLAN 网络。
+    2. 在电脑上，设置想在手机上访问文件夹的共享权限。有关电脑侧的操作，请参考电脑所装操作系统的相关说明。
+    3. 在手机上，打开“
+       [H4sIAAAAAAAAAD2PwW6DMBBE_8XnNFp7F-PtKYBB6aXqIT1HBgyxlJCIQKqm6r8XEO
+       rxaZ92Zn7EePf94fvmxauQYiPq61e3Ik7YhLN_d5cZn6eXqjuGi2v9ESQRKI6N3t66d
+       vU-3HCavDIixoaqBrQkHXsunUZAxVhXaGAOKcPzrZ7UfbJbvgIQxUaq6VT13g3h2h3C
+       HCo1MCEQSADYiHtoOzeM_dIOISewEas0okypVJM1tsgKRZY5McR5hrlFmRZKZdJaZIM
+       2o1RSHhvDU9bDnUP9-b9_6Ee_dFv37xPx-weDw930IAEAAA%3D%3D.png]
+       ”文件管理，在浏览页签下，点击网络邻居，即可查看您的电脑设备。
+    4. 点击要访问的电脑设备，输入电脑设备的登录帐号和密码。登录成功后，即可在手机上访问电脑已共享的文件。
+    5. 如需停止访问，在网络邻居设备列表中，长按设备即可断开连接。
+
+   是否有帮助?
+   [42]是 [43]否
+   很抱歉，未能帮助到您。请选择以下方式获取更多支持:
+
+
+   ____________________________________________________________
+   ____________________________________________________________
+   ____________________________________________________________
+   ____________________________________________________________
+   提交
+   谢谢您的鼓励！
+
+   联系我们
+     * [44]在线客服 | 7*24小时
+     * 消费者服务热线
+     * Mate X系列、保时捷设计专属热线
+       950801
+     * [45]微信服务号
+     * [46]服务店查询
+     * Contact Icon Contact Icon
+       服务小程序
+     * [47]销售门店查询
+
+华为终端客户服务微信公众号
+
+   华为终端客户服务微信公众号
+
+   小程序二维码
+
+   扫一扫，打开华为终端客户服务小程序
+   为华为全场景产品提供一站式在线服务
+   微信公众号
+
+   扫一扫，关注华为终端服务微信公众号
+   为消费者提供方便、快捷、贴心的服务
+
+     * [48]主页
+     * [49]服务与支持
+     * 知识内容
+
+   购买产品
+     * [50]手机
+     * [51]笔记本
+     * [52]台式机
+     * [53]显示器
+     * [54]打印机
+     * [55]平板
+     * [56]智慧屏
+     * [57]穿戴
+     * [58]耳机音箱
+     * [59]路由器
+     * [60]配件
+     * [61]商用产品
+     * [62]教育商店
+
+   服务支持
+     * [63]保修政策
+     * [64]上门安装
+     * [65]维修服务
+     * [66]保修期及权益查询
+     * [67]维修备件价格
+     * [68]服务进度查询
+     * [69]联系我们
+     * [70]服务隐私声明
+     * [71]商用服务
+
+   应用与下载
+     * [72]终端云服务
+     * [73]华为商城 APP
+     * [74]我的华为 APP
+     * [75]华为手机助手
+     * [76]华为电脑管家
+     * [77]HarmonyOS 4
+     * [78]预置应用公示
+
+   新闻中心
+     * [79]华为新闻
+     * [80]华为活动
+
+   关于我们
+     * [81]关于我们
+     * [82]可持续发展
+     * [83]隐私
+     * [84]华为商城
+     * [85]华为云
+     * [86]企业业务
+     * [87]运营商网络
+     * [88]华为集团
+     * [89]加入华为
+     * [90]内容举报
+
+   在线支持
+
+   消费者服务热线
+
+   950800
+
+   7*24小时 | 普通话
+
+   Mate X系列、保时捷设计专属热线
+
+   950801
+
+   [91]在线客服 | 7*24小时
+   线下支持
+
+   [92]服务店查询
+
+   [93]零售店查询
+   关注我们
+     * weixin
+     *
+
+   版权所有 © 华为终端有限公司 1998-2023。保留一切权利。粤A2-20044005号
+     * [94]网站地图
+     * [95]使用条款
+     * [96]隐私声明
+     * [97]关于cookies
+     * [98]法律信息
+     *
+
+   [99]China - 简体中文
+
+   即将离开consumer.huawei.com
+   您即将跳转至第三方页面，华为无法控制，也无法对该页面内容负责。
+   取消 继续访问
+
+   尊敬的客户，现诚邀您对我们的服务质量进行评价。
+   是
+   否
+   本次调查已在浏览器窗口中打开，可在完成本页面访问后前往作答。
+   关闭
+   调查问卷
+
+References
+
+   Visible links
+   1. https://consumer.huawei.com/etc/designs/huawei-cbg-site/favicon/favicon.svg
+   2. https://consumer.huawei.com/cn/legal/cookie-policy/
+   3. https://www.huawei.com/cn/
+   4. https://e.huawei.com/cn/
+   5. https://carrier.huawei.com/cn/
+   6. https://consumer.huawei.com/cn/
+   7. https://consumer.huawei.com/cn/phones/
+   8. https://consumer.huawei.com/cn/laptops/
+   9. https://consumer.huawei.com/cn/tablets/
+  10. https://consumer.huawei.com/cn/visions/
+  11. https://consumer.huawei.com/cn/wearables/
+  12. https://consumer.huawei.com/cn/audio/
+  13. https://consumer.huawei.com/cn/wholehome/
+  14. https://consumer.huawei.com/cn/routers/
+  15. https://consumer.huawei.com/cn/harmonyos-4/
+  16. https://consumer.huawei.com/cn/support/
+  17. https://consumer.huawei.com/cn/retail/
+  18. https://qingyun.huawei.com/?utm_medium=referral&utm_source=consumer.huawei.com
+  19. https://m.vmall.com/index.html?cid=91712
+  20. javascript:void(0)
+  21. javascript:void(0)
+  22. https://consumer.huawei.com/cn/support/user-center.html?type=service
+  23. https://consumer.huawei.com/cn/support/user-center.html?type=userinfo
+  24. javascript:void(0)
+  25. https://consumer.huawei.com/cn/phones/mate60-pro/
+  26. https://consumer.huawei.com/cn/phones/mate-x5/
+  27. https://consumer.huawei.com/cn/tablets/matepad-pro-11-2024/
+  28. https://consumer.huawei.com/cn/phones/
+  29. https://consumer.huawei.com/cn/laptops/
+  30. https://consumer.huawei.com/cn/printers/
+  31. https://consumer.huawei.com/cn/tablets/
+  32. https://consumer.huawei.com/cn/visions/
+  33. https://consumer.huawei.com/cn/wearables/
+  34. https://consumer.huawei.com/cn/audio/
+  35. https://consumer.huawei.com/cn/wholehome/
+  36. https://consumer.huawei.com/cn/routers/
+  37. https://consumer.huawei.com/cn/accessories/
+  38. https://consumer.huawei.com/cn/mobileservices/
+  39. https://consumer.huawei.com/cn/retail/
+  40. https://zhidao.baidu.com/question/1836499539619768780.html
+  41. https://consumer-tkbdownload.huawei.com/ctkbfm/servlet/download/downloadServlet/H4sIAAAAAAAAAD2QvU7DMBSF38VzQfc6TmwzkRKjsiCG8gBO7FBLJUFpwk8RC9ARpEqMTDxAEQNT1cepQt8CB0WM597v6Byde9LMbDW-u7LkgCAZEFPeFL0MvMzd1J7qy062m2W7ft89rrdfi_bt--d52b5-bj-edouXdrPaN2V22xvOdD3xBsMoD61AKnPDJIVU5hSEMJSFRshUezp18xPj0VF8OJ_sZQUAY9w7_CurrK5dWYxdl44RSBYAAwSAAZm5i0LXTdX1StQxoowxBhQ45FxGKmKB4kxhOEwClfAw5lQpjsKfxREAcu4RDELKBUifda2nzpz_D1FXjf3r1g8xisnDL5k6otwpAQAA.docx
+  42. javascript:;
+  43. javascript:;
+  44. https://celia.consumer.huawei.com/official/
+  45. javascript:;
+  46. https://consumer.huawei.com/cn/support/service-center/
+  47. https://consumer.huawei.com/cn/retail/
+  48. https://consumer.huawei.com/cn/
+  49. https://consumer.huawei.com/cn/support/
+  50. https://consumer.huawei.com/cn/phones/
+  51. https://consumer.huawei.com/cn/laptops/
+  52. https://consumer.huawei.com/cn/desktops/
+  53. https://consumer.huawei.com/cn/monitors/
+  54. https://consumer.huawei.com/cn/printers/
+  55. https://consumer.huawei.com/cn/tablets/
+  56. https://consumer.huawei.com/cn/visions/
+  57. https://consumer.huawei.com/cn/wearables/
+  58. https://consumer.huawei.com/cn/audio/
+  59. https://consumer.huawei.com/cn/routers/
+  60. https://consumer.huawei.com/cn/accessories/overview/
+  61. https://qingyun.huawei.com/products-and-solutions/?utm_medium=referral&utm_source=consumer.huawei.com
+  62. https://www.vmall.com/portal/activity/index.html?pn=educationcenterpc
+  63. https://consumer.huawei.com/cn/support/warranty-policy/
+  64. https://consumer.huawei.com/cn/support/install/
+  65. https://consumer.huawei.com/cn/support/break-fix/
+  66. https://consumer.huawei.com/cn/support/warranty-query/
+  67. https://consumer.huawei.com/cn/support/sparepart-price/
+  68. https://consumer.huawei.com/cn/support/inquiry/
+  69. https://consumer.huawei.com/cn/support/contact-us/
+  70. https://consumer.huawei.com/cn/support/service-privacy-notice/
+  71. https://bsupport.huawei.com/
+  72. https://consumer.huawei.com/cn/mobileservices/
+  73. https://m.vmall.com/app/download?cid=1457312
+  74. https://consumer.huawei.com/cn/myhuawei-app/
+  75. https://consumer.huawei.com/cn/support/hisuite/
+  76. https://consumer.huawei.com/cn/support/pc-manager/
+  77. https://consumer.huawei.com/cn/harmonyos-4/
+  78. https://consumer.huawei.com/cn/support/apk/
+  79. https://consumer.huawei.com/cn/press/news/
+  80. https://consumer.huawei.com/cn/press/events/
+  81. https://consumer.huawei.com/cn/about-us/
+  82. https://consumer.huawei.com/cn/sustainability/
+  83. https://consumer.huawei.com/cn/privacy/
+  84. https://www.vmall.com/index.html?cid=27629229
+  85. https://www.huaweicloud.com/
+  86. https://e.huawei.com/cn/
+  87. https://carrier.huawei.com/cn/
+  88. https://www.huawei.com/cn/
+  89. https://career.huawei.com/reccampportal/campus4_index.html#campus4/content.html
+  90. https://consumer.huawei.com/cn/complaint-page/
+  91. https://celia.consumer.huawei.com/official/#/?businessUUID=fe8192189f0a40e8a883ab8bdf1ba8ea
+  92. https://consumer.huawei.com/cn/support/service-center/
+  93. https://consumer.huawei.com/cn/retail/
+  94. https://consumer.huawei.com/cn/sitemap/
+  95. https://consumer.huawei.com/cn/legal/terms-of-use/
+  96. https://consumer.huawei.com/cn/privacy/privacy-policy/
+  97. https://consumer.huawei.com/cn/legal/cookie-policy/
+  98. https://consumer.huawei.com/cn/legal/
+  99. https://consumer.huawei.com/en/worldwide/
+
+   Hidden links:
+ 101. https://consumer.huawei.com/cn/support/user-center.html
+ 102. https://www.vmall.com/index.html?cid=27629229
+ 103. https://consumer.huawei.com/cn/phones/mate60-pro/
+ 104. https://consumer.huawei.com/cn/phones/mate-x5/
+ 105. https://consumer.huawei.com/cn/tablets/matepad-pro-11-2024/
+ 106. https://consumer.huawei.com/cn/support/service-mini-program/
+ 107. http://t.sina.com.cn/huaweidevice
+ 108. https://consumer.huawei.com/en/worldwide/

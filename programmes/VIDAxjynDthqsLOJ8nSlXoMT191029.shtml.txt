@@ -1,0 +1,110 @@
+     * [1]Home
+     * [2]Skip to Content
+     * [3]Skip to Search
+
+   [4]Oracle
+   [5]Help Center
+   ____________________ Submit
+   ____________________
+   No matching results
+   Try a different search query.
+   Search Unavailable
+   We are making updates to our Search system right now. Please try again
+   later.
+     * [6]Sign In Account
+
+Oracle Account
+          + [7]Account
+          + [8]Help
+          + [9]Sign Out
+
+Oracle Account
+       Manage your account and access personalized content. [10]Sign up
+       for an Oracle Account
+       [11]Sign in to my Account
+
+Sign in to Cloud
+       Access your cloud dashboard, manage orders, and more. [12]Free
+       Cloud Platform Trial
+       [13]Sign in to Cloud
+
+
+
+Page not found
+
+We're sorry, the page you were looking for does not exist or is no longer
+available.
+
+   We have recorded the error (404) to help us fix the problem. You may
+   wish to try again using one of the tools below.
+   ____________________
+   [14]Previous Page
+   [15]Help Center Home
+   [16]Oracle.com Home
+
+Product Documentation
+
+   [17]Cloud Applications
+   [18]Database
+   [19]Operating Systems
+   [20]Cloud Infrastructure
+   [21]Engineered Systems
+   [22]Virtualization
+   [23]Applications
+   [24]Java
+   [25]Industries
+   [26]Middleware
+   [27]Hardware
+   [28]Solutions
+
+   (BUTTON)
+   (BUTTON) Was this page helpful? (No) (Yes)
+     * [29]© Oracle
+     * [30]About Oracle
+     * [31]Contact Us
+     * [32]Products A-Z
+     * [33]Terms of Use & Privacy
+     *
+     * [34]Ad Choices
+
+References
+
+   Visible links
+   1. https://docs.oracle.com/
+   2. https://docs.oracle.com/cd/E19126-01/java.sys.r2/817-5962/gosnautilus-465/index.htmlhttps://tv.cctv.com/2019/10/29/VIDAxjynDthqsLOJ8nSlXoMT191029.shtml#maincontent
+   3. https://docs.oracle.com/cd/E19126-01/java.sys.r2/817-5962/gosnautilus-465/index.htmlhttps://tv.cctv.com/2019/10/29/VIDAxjynDthqsLOJ8nSlXoMT191029.shtml#skip_to_search_form
+   4. https://www.oracle.com/
+   5. https://docs.oracle.com/
+   6. https://docs.oracle.com/cd/E19126-01/java.sys.r2/817-5962/gosnautilus-465/index.htmlhttps://tv.cctv.com/2019/10/29/VIDAxjynDthqsLOJ8nSlXoMT191029.shtml#usermenu
+   7. https://profile.oracle.com/myprofile/account/secure/update-account.jspx?nexturl=
+   8. https://www.oracle.com/corporate/contact/help.html
+   9. javascript:sso_sign_out();
+  10. https://profile.oracle.com/myprofile/account/create-account.jspx
+  11. https://www.oracle.com/webapps/redirect/signon?nexturl=
+  12. https://cloud.oracle.com/en_US/tryit
+  13. https://cloud.oracle.com/sign-in
+  14. javascript:history.back(-1);
+  15. https://docs.oracle.com/
+  16. https://www.oracle.com/index.html
+  17. https://docs.oracle.com/en/cloud/saas/
+  18. https://docs.oracle.com/en/database/
+  19. https://docs.oracle.com/en/operating-systems/
+  20. https://docs.oracle.com/en/cloud/iaas/
+  21. https://docs.oracle.com/en/engineered-systems/
+  22. https://docs.oracle.com/en/virtualization/
+  23. https://docs.oracle.com/en/applications/
+  24. https://docs.oracle.com/en/java/
+  25. https://docs.oracle.com/en/industries/
+  26. https://docs.oracle.com/en/middleware/
+  27. https://docs.oracle.com/en/hardware/
+  28. https://docs.oracle.com/en/solutions/
+  29. https://docs.oracle.com/pls/topic/lookup?ctx=en/legal&id=cpyr
+  30. https://www.oracle.com/corporate/index.html
+  31. https://www.oracle.com/corporate/contact/
+  32. https://docs.oracle.com/en/browseall.html
+  33. https://www.oracle.com/legal/privacy/
+  34. https://www.oracle.com/legal/privacy/marketing-cloud-data-cloud-privacy-policy.html#12
+
+   Hidden links:
+  36. https://docs.oracle.com/en/menu.html
+  37. https://profile.oracle.com/myprofile/account/secure/update-account.jspx?nexturl=

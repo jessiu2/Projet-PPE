@@ -1,0 +1,565 @@
+   [] [1]产品文档
+   (BUTTON)
+   搜索
+
+   关闭
+   精简结果
+   ____________________
+
+   选择产品
+   应用
+   全部清除
+   选定的过滤器
+   搜索 产品文档
+   (BUTTON)
+     * English
+     * EN
+     * Deutsch
+       Machine Translated
+     * DE
+       Machine Translated
+     * Français
+       Machine Translated
+     * FR
+       Machine Translated
+     * Español
+       Machine Translated
+     * ES
+       Machine Translated
+     * 日本語
+       Machine Translated
+     * JA
+       Machine Translated
+     * 简体中文
+       Machine Translated
+     * ZH
+       Machine Translated
+
+   [ ]
+   (BUTTON)
+   ADC
+   (BUTTON)
+
+   Current Release
+   Current Release 13.0 12.1
+     * [2]IP 寻址
+          + [3]配置 NetScaler 拥有的 IP 地址
+               o [4]配置 NSIP 地址
+               o [5]配置和管理虚拟 IP (VIP) 地址
+               o [6]为虚拟 IP 地址 (VIP) 配置 ARP 响应抑制
+               o [7]配置子网 IP 地址 (SNIP)
+               o [8]配置 GSLB 站点 IP 地址 (GSLBIP)
+               o [9]删除 NetScaler 拥有的 IP 地址
+               o [10]配置应用程序访问控制
+          + [11]NetScaler 如何代理连接
+          + [12]启用使用源 IP 模式
+          + [13]配置网络地址转换
+               o [14]配置 INAT
+               o [15]INAT 和虚拟服务器的共存
+               o [16]无状态 NAT46 转换
+               o [17]DNS64
+               o [18]有状态 NAT64 转换
+               o [19]配置 RNAT
+               o [20]配置基于前缀的 IPv6-IPv4 转换
+               o [21]IP 前缀 NAT
+          + [22]配置静态 ARP
+          + [23]设置动态 ARP 条目的超时
+          + 配置邻居发现
+          + [24]配置 IP 通道
+          + [25]E 类 IPv4 数据包
+          + [26]监视 NetScaler 设备上可用的空闲端口以建立新的后端连接
+     * [27]接口
+          + [28]配置基于 MAC 的转发
+          + [29]配置网络接口
+          + [30]配置转发会话规则
+          + [31]了解 VLAN
+          + [32]配置 VLAN
+               o [33]在单个子网上配置 VLAN
+               o [34]在多个子网上配置 VLAN
+               o [35]跨多个子网配置多个未标记的 VLAN
+               o [36]使用 802.1q 标记配置多个 VLAN
+               o [37]使用 VLAN 将 IP 子网与 NetScaler 接口关联
+               o [38]VLAN 配置的最佳实践
+          + [39]配置 NSVLAN
+          + [40]配置允许使用的 VLAN 列表
+          + [41]配置桥接组
+          + [42]配置虚拟 MAC
+          + [43]配置链路聚合
+          + [44]冗余接口集
+          + [45]将 SNIP 地址绑定到接口
+          + [46]监视桥接表和更改老化时间
+          + [47]使用 VRRP 处于主动模式的 NetScaler 设备
+               o [48]配置主动-主动模式
+               o [49]配置“发送到主服务器”
+               o [50]配置 VRRP 通信时间间隔
+               o [51]根据接口状态配置运行状况跟踪
+               o [52]延迟优先
+               o [53]将 VIP 地址保持在备份状态
+          + [54]使用网络可视化工具
+          + [55]配置链路层发现协议
+          + [56]巨型帧
+               o [57]在 NetScaler 设备上配置巨型帧支持
+               o [58]用例 1 — 巨型到巨型设置
+               o [59]用例 2 — 非巨型到巨型设置
+               o [60]用例 3 — 巨型和非巨型流在同一组接口上共存
+          + [61]Citrix ADC对 Microsoft 直接访问部署的支持
+     * [62]访问控制列表
+          + [63]简单 ACL 和简单 ACL6
+          + [64]扩展的 ACL 和扩展的 ACL6
+          + [65]ACL 的 MAC 地址通配符掩码
+          + [66]阻止内部端口上的流量
+     * [67]IP 路由
+          + [68]配置动态路由
+               o [69]配置 RIP
+               o [70]配置 OSPF
+               o [71]配置 BGP
+               o [72]配置 IPv6 RIP
+               o [73]配置 IPv6 OSPF
+               o [74]配置 ISIS
+               o [75]在 NetScaler 路由表中安装路由
+               o [76]到选定区域的 SNIP 和 VIP 路由的公告
+               o [77]配置双向转发检测
+          + [78]配置静态路由
+          + [79]基于虚拟服务器设置的路由运行状况注入
+          + [80]配置基于策略的路由
+               o [81]为 IPv4 流量配置基于策略的路由 (PBR)
+               o [82]为 IPv6 流量配置基于策略的路由 (PBR6)
+               o [83]PBR 的 MAC 地址通配符掩码
+               o [84]使用基于空策略的路由丢弃传出数据包
+          + [85]基于五个元组信息的多个路由中的流量分布
+          + [86]排除路由问题
+               o [87]通用路由常见问题解答
+               o [88]OSPF 特定问题的故障排除
+     * [89]Internet 协议版本 6 (IPv6)
+     * [90]流量域
+          + [91]流量域实体间绑定
+          + [92]基于虚拟 MAC 的流量域
+     * [93]VXLAN
+     * [94]Geneve 通道
+     * [95]网络连接配置的最佳实践
+     * [96]配置以从 SNIP 地址获取 NetScaler FreeBSD 数据流量
+
+   [97]查看 PDF
+   此内容已经过机器动态翻译。
+   [98]在此处提供反馈
+   [] 感谢您提供反馈
+    1.
+    2. [99]NetScaler
+    3. [100]NetScaler 13.1
+    4. [101]网络连接
+
+   This content has been machine translated dynamically.
+
+   Dieser Inhalt ist eine maschinelle Übersetzung, die dynamisch erstellt
+   wurde. [102](Haftungsausschluss)
+
+   Cet article a été traduit automatiquement de manière dynamique.
+   [103](Clause de non responsabilité)
+
+   Este artículo lo ha traducido una máquina de forma dinámica.
+   [104](Aviso legal)
+
+   此内容已经过机器动态翻译。 [105]放弃
+
+   このコンテンツは動的に機械翻訳されています。[106]免責事項
+
+   이 콘텐츠는 동적으로 기계 번역되었습니다. [107]책임 부인
+
+   Este texto foi traduzido automaticamente. [108](Aviso legal)
+
+   Questo contenuto è stato tradotto dinamicamente con traduzione
+   automatica.[109](Esclusione di responsabilità))
+
+   This article has been machine translated.
+
+   Dieser Artikel wurde maschinell übersetzt. [110](Haftungsausschluss)
+
+   Ce article a été traduit automatiquement. [111](Clause de non
+   responsabilité)
+
+   Este artículo ha sido traducido automáticamente. [112](Aviso legal)
+
+   この記事は機械翻訳されています.[113]免責事項
+
+   이 기사는 기계 번역되었습니다.[114]책임 부인
+
+   Este artigo foi traduzido automaticamente.[115](Aviso legal)
+
+   这篇文章已经过机器翻译.[116]放弃
+
+   Questo articolo è stato tradotto automaticamente.[117](Esclusione di
+   responsabilità))
+   [118][]   Switch to english Auf Englisch anzeigen Lire en anglais Leer
+   en inglés 英語に切り替え 영어로 전환 Mudar para ingles 切换到英文 Passa all'inglese
+
+   Translation failed!
+
+邻居发现
+
+   May 11, 2023
+   投稿者:
+   C
+
+   邻居发现 (ND) 是 IPv6 最重要的协议之一。它是一种基于消息的协议，结合了地址解析协议 (ARP)、互联网控制消息协议 (ICMP)
+   和路由器发现的功能。ND 允许节点通告其链路层地址并获取相邻节点的 MAC 地址或链路层地址。此过程由邻居发现协议 (ND6) 执行。
+
+   邻居搜索可以执行以下功能：
+     * 路由器发现：使主机能够在连接的链路上发现本地路由器并自动配置默认路由器。
+     * 前缀发现：使主机能够发现本地目标的网络前缀。
+       注意：NetScaler 设备不支持前缀发现。
+     * 参数发现：使主机能够发现其他操作参数，例如 MTU 和出站流量的默认跳数限制。
+     * 地址自动配置：使主机能够为带有和不带状态地址配置服务（如 DHCPv6）的接口自动配置 IP 地址。NetScaler 不支持全局
+       IPv6 地址的地址自动配置。
+     * 地址解析：等同于 IPv4 中的 ARP，允许节点将相邻节点的 IPv6 地址解析为其链路层地址。
+     * 邻居不可访问性检测：使节点能够确定邻居的可访问性状态。
+     * 重复地址检测：使节点能够确定相邻节点是否已在使用 NSIP 地址。
+     * 重定向：等同于 IPv4 ICMP 重定向消息，允许路由器将主机重定向到更好的第一跳 IPv6 地址以到达目的地。
+
+   注意： NetScaler 设备不支持 IPv6 重定向。
+
+配置步骤
+
+   配置邻居搜索包括以下任务：
+     * 添加 IPv6 邻居
+     * （可选）删除 IPv6 邻居
+
+CLI 过程
+
+   要使用 CLI 添加 IPv6 邻居，请执行以下操作：
+
+   在命令提示符下，键入：
+     * add nd6 <neighbor> <mac> <ifnum> [-**vlan** \<integer>]
+     * sh nd6
+
+   示例：
+> add nd6 2001::1 00:04:23:be:3c:06 1/1 –vlan 1
+ Done
+
+> show nd6
+   Neighbor                 MAC-Address(Vlan, Interface)       State        TIME
+   --------                 ----------------------------       -----      ------
+--
+1) ::1                      00:d0:68:0b:58:da(   1,  LO/1)   REACHABLE     PERMA
+NENT
+2) fe80::2d0:68ff:fe0b:58da 00:d0:68:0b:58:da(   1,  LO/1)   REACHABLE     PERMA
+NENT
+3) 2001::1                  00:04:23:be:3c:06(   1,   1/1)   REACHABLE       STA
+TIC
+ Done
+<!--NeedCopy-->
+
+   要使用 CLI 删除邻居搜索条目，请执行以下操作：
+
+   在命令提示符下，键入：
+     * rm nd6 <Neighbor> -vlan <VLANID>
+
+   示例：
+ rm nd6 3ffe:100:100::1 -vlan 1
+<!--NeedCopy-->
+
+   要使用 CLI 删除所有邻居搜索条目，请执行以下操作：
+
+   在命令提示符下，键入：
+     * 清除 nd6
+
+GUI 程序
+
+   要使用 GUI 添加 IPv6 邻居，请执行以下操作：
+
+   导航到“系统”>“网络”>“IPv6 邻居”，然后添加新的 IPv6 邻居。
+
+   要使用 GUI 删除邻居搜索条目，请执行以下操作：
+
+   导航到“系统”>“网络”>“IPv6 邻居”，删除 IPv6 邻居。
+
+   要使用 GUI 删除所有邻居搜索条目，请执行以下操作：
+
+   导航到“系统”>“网络”>“IPv6 邻居”，然后单击“清除”。
+   本内容的正式版本为英文版。部分 Cloud Software Group 文档内容采用了机器翻译，仅供您参考。Cloud Software
+   Group
+   无法控制机器翻译的内容，这些内容可能包含错误、不准确或不合适的语言。对于从英文原文翻译成任何其他语言的内容的准确性、可靠性、适用性或正确性，或
+   者您的 Cloud Software Group
+   产品或服务沿用了任何机器翻译的内容，我们均不作任何明示或暗示的保证，并且适用的最终用户许可协议或服务条款或者与 Cloud Software
+   Group
+   签订的任何其他协议（产品或服务与已进行机器翻译的任何文档保持一致）下的任何保证均不适用。对于因使用机器翻译的内容而引起的任何损害或问题，Clo
+   ud Software Group 不承担任何责任。
+   DIESER DIENST KANN ÜBERSETZUNGEN ENTHALTEN, DIE VON GOOGLE
+   BEREITGESTELLT WERDEN. GOOGLE LEHNT JEDE AUSDRÜCKLICHE ODER
+   STILLSCHWEIGENDE GEWÄHRLEISTUNG IN BEZUG AUF DIE ÜBERSETZUNGEN AB,
+   EINSCHLIESSLICH JEGLICHER GEWÄHRLEISTUNG DER GENAUIGKEIT,
+   ZUVERLÄSSIGKEIT UND JEGLICHER STILLSCHWEIGENDEN GEWÄHRLEISTUNG DER
+   MARKTGÄNGIGKEIT, DER EIGNUNG FÜR EINEN BESTIMMTEN ZWECK UND DER
+   NICHTVERLETZUNG VON RECHTEN DRITTER.
+   CE SERVICE PEUT CONTENIR DES TRADUCTIONS FOURNIES PAR GOOGLE. GOOGLE
+   EXCLUT TOUTE GARANTIE RELATIVE AUX TRADUCTIONS, EXPRESSE OU IMPLICITE,
+   Y COMPRIS TOUTE GARANTIE D'EXACTITUDE, DE FIABILITÉ ET TOUTE GARANTIE
+   IMPLICITE DE QUALITÉ MARCHANDE, D'ADÉQUATION À UN USAGE PARTICULIER ET
+   D'ABSENCE DE CONTREFAÇON.
+   ESTE SERVICIO PUEDE CONTENER TRADUCCIONES CON TECNOLOGÍA DE GOOGLE.
+   GOOGLE RENUNCIA A TODAS LAS GARANTÍAS RELACIONADAS CON LAS
+   TRADUCCIONES, TANTO IMPLÍCITAS COMO EXPLÍCITAS, INCLUIDAS LAS GARANTÍAS
+   DE EXACTITUD, FIABILIDAD Y OTRAS GARANTÍAS IMPLÍCITAS DE
+   COMERCIABILIDAD, IDONEIDAD PARA UN FIN EN PARTICULAR Y AUSENCIA DE
+   INFRACCIÓN DE DERECHOS.
+   本服务可能包含由 Google 提供技术支持的翻译。Google
+   对这些翻译内容不做任何明示或暗示的保证，包括对准确性、可靠性的任何保证以及对适销性、特定用途的适用性和非侵权性的任何暗示保证。
+   このサービスには、Google が提供する翻訳が含まれている可能性があります。Google
+   は翻訳について、明示的か黙示的かを問わず、精度と信頼性に関するあらゆる保証、および商品性、特定目的への適合性、第三者の権利を侵害しないことに関
+   するあらゆる黙示的保証を含め、一切保証しません。
+   ESTE SERVIÇO PODE CONTER TRADUÇÕES FORNECIDAS PELO GOOGLE. O GOOGLE SE
+   EXIME DE TODAS AS GARANTIAS RELACIONADAS COM AS TRADUÇÕES, EXPRESSAS OU
+   IMPLÍCITAS, INCLUINDO QUALQUER GARANTIA DE PRECISÃO, CONFIABILIDADE E
+   QUALQUER GARANTIA IMPLÍCITA DE COMERCIALIZAÇÃO, ADEQUAÇÃO A UM
+   PROPÓSITO ESPECÍFICO E NÃO INFRAÇÃO.
+   这是否有帮助？
+   [119]向我们发送反馈
+   [120]Instructions for Contributors
+   此内容已经过机器动态翻译。
+   [121]在此处提供反馈
+   [] 感谢您提供反馈
+    1.
+    2. [122]NetScaler
+    3. [123]NetScaler 13.1
+    4. [124]网络连接
+
+   邻居发现
+   May 11, 2023
+   投稿者:
+   C
+
+   共享
+   May 11, 2023
+   投稿者:
+   C
+
+   共享
+
+在本文中
+
+     * [125]配置步骤
+
+   这是否有帮助？
+   [126]向我们发送反馈
+   [127]Instructions for Contributors
+   Citrix Preview Documentation
+
+   This Preview product documentation is Citrix Confidential.
+
+   You agree to hold this documentation confidential pursuant to the terms
+   of your Citrix Beta/Tech Preview Agreement.
+
+   The development, release and timing of any features or functionality
+   described in the Preview documentation remains at our sole discretion
+   and are subject to change without notice or consultation.
+
+   The documentation is for informational purposes only and is not a
+   commitment, promise or legal obligation to deliver any material, code
+   or functionality and should not be relied upon in making Citrix product
+   purchase decisions.
+
+   If you do not agree, select Do Not Agree to exit.
+   (BUTTON) I AGREE (BUTTON) I DO NOT AGREE
+   向我们发送反馈
+
+此翻译有用吗？
+
+   是
+   否
+   填写内容
+   ________________________________________
+   ________________________________________
+   ________________________________________
+   ________________________________________
+   (BUTTON) 提交 loader
+   已复制! 失败!
+   []
+   [128]站点反馈 | [129]隐私和法律条款 | [130]Cookie 首选项 | [131]同意设置 |
+   [132]docs.cloud.com
+   © 1999- Cloud Software Group, Inc. All rights reserved.
+
+提供您的反馈
+
+   [] 感谢您提供反馈如果需要更多信息，我们将通过您提供的电子邮件地址与您联系。
+   [] 提交您的反馈时出错。请重试
+   发送反馈: *
+   (*) 关于本文
+   ( ) 关于本产品
+   此字段为必填字段
+   主题: *
+   ____________________ 此字段为必填字段
+   描述: *
+
+   ____________________________________________________________
+   ____________________________________________________________
+   ____________________________________________________________
+   ____________________________________________________________
+   此字段为必填字段
+   URL:
+   ____________________
+   姓名: *
+   ____________________ Please enter a valid name
+   电子邮件: *
+   ____________________ 请输入有效的电子邮件
+   必填字段带标记 *
+   (BUTTON) 提交
+   [ ] I confirm that I have read the instructions and requested required
+   access. [BUTTON Input] (not implemented)________
+   (BUTTON) ×
+   ____________________ Please enter a Commit message
+   (BUTTON) Request Change loader
+
+References
+
+   Visible links
+   1. https://docs.netscaler.com/zh-cn
+   2. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/ip-addressing
+   3. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/ip-addressing/configuring-citrix-adc-owned-ip-addresses
+   4. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/ip-addressing/configuring-citrix-adc-owned-ip-addresses/configuring-citrix-adc-ip-address
+   5. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/ip-addressing/configuring-citrix-adc-owned-ip-addresses/configuring-and-managing-virtual-ip-addresses-vips
+   6. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/ip-addressing/configuring-citrix-adc-owned-ip-addresses/configuring-arp-response-suppression-for-vips
+   7. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/ip-addressing/configuring-citrix-adc-owned-ip-addresses/configuring-subnet-ip-addresses-snips
+   8. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/ip-addressing/configuring-citrix-adc-owned-ip-addresses/configuring-gslb-ip-addresses
+   9. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/ip-addressing/configuring-citrix-adc-owned-ip-addresses/removing-citrix-adc-owned-ip-address
+  10. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/ip-addressing/configuring-citrix-adc-owned-ip-addresses/configuring-application-access-controls
+  11. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/ip-addressing/how-citrix-adc-proxies-connections
+  12. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/ip-addressing/enabling-use-source-ip-mode
+  13. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/ip-addressing/configuring-network-address-translation
+  14. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/ip-addressing/configuring-network-address-translation/configuring-inbound-network-address-translation-inat
+  15. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/ip-addressing/configuring-network-address-translation/coexistence-of-inat-and-virtual-servers
+  16. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/ip-addressing/configuring-network-address-translation/stateless-nat46-translation
+  17. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/ip-addressing/configuring-network-address-translation/dns64
+  18. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/ip-addressing/configuring-network-address-translation/stateful-nat64-translation
+  19. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/ip-addressing/configuring-network-address-translation/configuring-rnat
+  20. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/ip-addressing/configuring-network-address-translation/configuring-prefix-based-ipv6-ipv4-translation
+  21. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/ip-addressing/configuring-network-address-translation/partial-nat
+  22. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/ip-addressing/configuring-static-arp
+  23. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/ip-addressing/setting-timeout-dynamic-arp-entries
+  24. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/ip-addressing/configuring-ip-tunnels
+  25. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/ip-addressing/class-e-packets
+  26. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/ip-addressing/monitor-free-ports-back-end-connections
+  27. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/interfaces
+  28. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/interfaces/configuring-mac-based-forwarding
+  29. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/interfaces/configuring-network-interfaces
+  30. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/interfaces/configuring-forwarding-session-rules
+  31. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/interfaces/understanding-vlans
+  32. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/interfaces/configuring-vlans
+  33. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/interfaces/configuring-vlans/configuring-vlans-on-a-single-subnet
+  34. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/interfaces/configuring-vlans/configuring-vlans-on-multiple-subnets
+  35. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/interfaces/configuring-vlans/configuring-multiple-untagged-vlans-across-multiple-subnets
+  36. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/interfaces/configuring-vlans/configuring-multiple-vlans-with-802-1q-tagging
+  37. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/interfaces/configuring-vlans/associate-subnet-with-interface-using-vlans
+  38. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/interfaces/configuring-vlans/best-practices-vlan-configurations
+  39. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/interfaces/configuring-nsvlan
+  40. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/interfaces/configure-allowed-vlan-list
+  41. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/interfaces/configuring-bridge-groups
+  42. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/interfaces/configuring-vmacs
+  43. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/interfaces/configuring-link-aggregation
+  44. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/interfaces/redundant-interface-set
+  45. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/interfaces/binding-snip-address-to-an-interface
+  46. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/interfaces/monitoring-the-bridge-table-and-changing-aging-time
+  47. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/interfaces/active-active-mode-using-vrrp
+  48. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/interfaces/active-active-mode-using-vrrp/configuring-active-active-mode
+  49. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/interfaces/active-active-mode-using-vrrp/configuring-send-to-master
+  50. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/interfaces/active-active-mode-using-vrrp/configuring-vrrp-communication-intervals
+  51. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/interfaces/active-active-mode-using-vrrp/configuring-health-tracking-based-on-interface-state
+  52. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/interfaces/active-active-mode-using-vrrp/configuring-delay-preemption
+  53. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/interfaces/active-active-mode-using-vrrp/keeping-vip-address-in-backup-state
+  54. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/interfaces/using-the-network-visualizer
+  55. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/interfaces/configuring-link-layer-discovery-protocol
+  56. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/interfaces/jumbo-frames
+  57. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/interfaces/jumbo-frames/configuring-jumbo-frames-support-on-citrix-adc-appliance
+  58. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/interfaces/jumbo-frames/use-case-1-jumbo-to-jumbo-setup
+  59. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/interfaces/jumbo-frames/use-case-2-non-jumbo-to-jumbo-setup
+  60. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/interfaces/jumbo-frames/use-case-3-coexistence-jumbo-non-jumbo-flows-same-set-of-interfaces
+  61. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/interfaces/citrix-adc-support-microsoft-direct-access-deployment
+  62. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/access-control-lists-acls
+  63. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/access-control-lists-acls/simple-acls-and-simple-acl6s
+  64. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/access-control-lists-acls/extended-acls-and-extended-acl6s
+  65. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/access-control-lists-acls/mac-address-wildcard-mask-for-acls
+  66. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/access-control-lists-acls/acls-blocking-traffic-on-internal-ports
+  67. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/ip-routing
+  68. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/ip-routing/configuring-dynamic-routes
+  69. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/ip-routing/configuring-dynamic-routes/configuring-routing-information-protocol-rip
+  70. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/ip-routing/configuring-dynamic-routes/configuring-ospf
+  71. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/ip-routing/configuring-dynamic-routes/configuring-bgp
+  72. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/ip-routing/configuring-dynamic-routes/configuring-ipv6-rip
+  73. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/ip-routing/configuring-dynamic-routes/configuring-ipv6-ospf
+  74. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/ip-routing/configuring-dynamic-routes/configuring-isis
+  75. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/ip-routing/configuring-dynamic-routes/installing-routes-to-the-citrix-adc-routing-table
+  76. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/ip-routing/configuring-dynamic-routes/advertisement-of-snip-and-vip-routes-to-selective-areas
+  77. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/ip-routing/configuring-dynamic-routes/configuring-bidirectional-forwarding-detection
+  78. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/ip-routing/configuring-static-routes
+  79. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/ip-routing/route-health-injection-based-on-virtual-server-settings
+  80. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/ip-routing/configuring-policy-based-routes
+  81. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/ip-routing/configuring-policy-based-routes/configuring-policy-based-routes-pbrs-for-ipv4-traffic
+  82. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/ip-routing/configuring-policy-based-routes/configuring-policy-based-routes-pbr6s-for-ipv6-traffic
+  83. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/ip-routing/configuring-policy-based-routes/mac-address-wildcard-mask-for-pbrs
+  84. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/ip-routing/configuring-policy-based-routes/null-policy-based-routes-drop-outgoing-packets
+  85. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/ip-routing/route-selection-based-on-five-tuples
+  86. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/ip-routing/troubleshooting-routing-issues
+  87. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/ip-routing/troubleshooting-routing-issues/generic-routing-faqs
+  88. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/ip-routing/troubleshooting-routing-issues/troubleshooting-ospf-specific-issues
+  89. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/internet-protocol-version-6-ipv6
+  90. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/traffic-domains
+  91. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/traffic-domains/inter-traffic-domain-entity-bindings
+  92. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/traffic-domains/vmac-based-traffic-domains
+  93. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/vxlans
+  94. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/geneve-tunnels
+  95. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/best-practices-network-configurations
+  96. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/source-citrix-adc-freebsd-traffic-from-snip
+  97. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/netscaler-13.1.pdf
+  98. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/ip-addressing/configuring-neighbor-discovery.html
+  99. https://docs.netscaler.com/zh-cn/citrix-adc
+ 100. https://docs.netscaler.com/zh-cn/citrix-adc/current-release
+ 101. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking
+ 102. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/ip-addressing/configuring-neighbor-discovery.html#mt-disclaimer
+ 103. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/ip-addressing/configuring-neighbor-discovery.html#mt-disclaimer
+ 104. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/ip-addressing/configuring-neighbor-discovery.html#mt-disclaimer
+ 105. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/ip-addressing/configuring-neighbor-discovery.html#mt-disclaimer
+ 106. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/ip-addressing/configuring-neighbor-discovery.html#mt-disclaimer
+ 107. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/ip-addressing/configuring-neighbor-discovery.html#mt-disclaimer
+ 108. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/ip-addressing/configuring-neighbor-discovery.html#mt-disclaimer
+ 109. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/ip-addressing/configuring-neighbor-discovery.html#mt-disclaimer
+ 110. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/ip-addressing/configuring-neighbor-discovery.html#mt-disclaimer
+ 111. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/ip-addressing/configuring-neighbor-discovery.html#mt-disclaimer
+ 112. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/ip-addressing/configuring-neighbor-discovery.html#mt-disclaimer
+ 113. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/ip-addressing/configuring-neighbor-discovery.html#mt-disclaimer
+ 114. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/ip-addressing/configuring-neighbor-discovery.html#mt-disclaimer
+ 115. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/ip-addressing/configuring-neighbor-discovery.html#mt-disclaimer
+ 116. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/ip-addressing/configuring-neighbor-discovery.html#mt-disclaimer
+ 117. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/ip-addressing/configuring-neighbor-discovery.html#mt-disclaimer
+ 118. javascript:/
+ 119. javascript:;
+ 120. javascript:void(0)
+ 121. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/ip-addressing/configuring-neighbor-discovery.html
+ 122. https://docs.netscaler.com/zh-cn/citrix-adc
+ 123. https://docs.netscaler.com/zh-cn/citrix-adc/current-release
+ 124. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking
+ 125. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/ip-addressing/configuring-neighbor-discovery.html#配置步骤
+ 126. javascript:;
+ 127. javascript:void(0)
+ 128. javascript:;
+ 129. https://www.cloud.com/legal.html
+ 130. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/ip-addressing/configuring-neighbor-discovery.html
+ 131. https://docs.netscaler.com/en-us/settings.html
+ 132. https://docs.cloud.com/
+
+   Hidden links:
+ 134. https://docs.netscaler.com/en-us/citrix-adc/current-release/networking/ip-addressing/configuring-neighbor-discovery.html?lang-switch=true
+ 135. https://docs.netscaler.com/en-us/citrix-adc/current-release/networking/ip-addressing/configuring-neighbor-discovery.html?lang-switch=true
+ 136. https://docs.netscaler.com/de-de/citrix-adc/current-release/networking/ip-addressing/configuring-neighbor-discovery.html?lang-switch=true
+ 137. https://docs.netscaler.com/de-de/citrix-adc/current-release/networking/ip-addressing/configuring-neighbor-discovery.html?lang-switch=true
+ 138. https://docs.netscaler.com/fr-fr/citrix-adc/current-release/networking/ip-addressing/configuring-neighbor-discovery.html?lang-switch=true
+ 139. https://docs.netscaler.com/fr-fr/citrix-adc/current-release/networking/ip-addressing/configuring-neighbor-discovery.html?lang-switch=true
+ 140. https://docs.netscaler.com/es-es/citrix-adc/current-release/networking/ip-addressing/configuring-neighbor-discovery.html?lang-switch=true
+ 141. https://docs.netscaler.com/es-es/citrix-adc/current-release/networking/ip-addressing/configuring-neighbor-discovery.html?lang-switch=true
+ 142. https://docs.netscaler.com/ja-jp/citrix-adc/current-release/networking/ip-addressing/configuring-neighbor-discovery.html?lang-switch=true
+ 143. https://docs.netscaler.com/ja-jp/citrix-adc/current-release/networking/ip-addressing/configuring-neighbor-discovery.html?lang-switch=true
+ 144. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/ip-addressing/configuring-neighbor-discovery?lang-switch=true
+ 145. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/ip-addressing/configuring-neighbor-discovery?lang-switch=true
+ 146. https://docs.netscaler.com/zh-cn
+ 147. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/ip-addressing/configuring-neighbor-discovery.html%0D#%E9%85%8D%E7%BD%AE%E6%AD%A5%E9%AA%A4
+ 148. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/ip-addressing/configuring-neighbor-discovery.html%0D#cli-%E8%BF%87%E7%A8%8B
+ 149. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/ip-addressing/configuring-neighbor-discovery.html%0D#gui-%E7%A8%8B%E5%BA%8F
+ 150. https://docs.netscaler.com/zh-cn
+ 151. https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/ip-addressing/configuring-neighbor-discovery.html%0D
