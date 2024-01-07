@@ -11,7 +11,7 @@ echo "<lang=\"$basename\">" > "ITRAMEUR/$folder-$basename.txt"
 
 for filename in $(ls $folder/${basename}-*.txt);
 do
-    page=$(basename filename .txt)
+    page=$(basename -s .txt $filename)
     content=$(cat $filename)
 
 
@@ -23,9 +23,11 @@ do
 
     echo "<text>" >> "ITRAMEUR/$folder-$basename.txt"
     
-    echo $cleaned >> "ITRAMEUR/$folder-$basename.txt"
+    echo "$cleaned" >> "ITRAMEUR/$folder-$basename.txt"
 
     echo "</text>" >> "ITRAMEUR/$folder-$basename.txt"
     echo "</page> §" >> "ITRAMEUR/$folder-$basename.txt"
     
 done
+
+echo "</lang>" >> "ITRAMEUR/$folder-$basename.txt"
