@@ -19,7 +19,7 @@ do
     cleaned=$(echo "$cleaned" | sed 's/</&lt;/g')
     cleaned=$(echo "$cleaned" | sed 's/</&gt;/g')
 
- 	echo "<page="$page"\>" >> "ITRAMEUR/$folder-$basename.txt"
+ 	echo "<page=\"$page\">" >> "ITRAMEUR/$folder-$basename.txt"
 
     echo "<text>" >> "ITRAMEUR/$folder-$basename.txt"
     
