@@ -1,0 +1,55 @@
+
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <meta charset=utf-8>
+    <meta name=viewport content=width=device-width, initial-scale=1>
+    <title>Concordances</title>
+    <link rel=stylesheet href=https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css>
+  </head>
+      <body>
+        <table class=table>
+          <thead>
+            <tr>
+            <th class="has-text-right">Contexte gauche</th>
+            <th>Cible</th>
+            <th class="has-text-left">Contexte droit</th>
+            </tr>
+          </thead>
+          <tbody>
+  
+<tr><td class=has-text-right>2.1 GraphSage</td><td class=has-text-centered><strong>邻居</strong></td><td class=has-text-left>采样原理</td></tr>
+<tr><td class=has-text-right> B1​的 1 1 1跳</td><td class=has-text-centered><strong>邻居</strong></td><td class=has-text-left>进行采样（即最</td></tr>
+<tr><td class=has-text-right>B的 1 1 1跳（hop）</td><td class=has-text-centered><strong>邻居</strong></td><td class=has-text-left>进行采样，然后得到 B 1 \</td></tr>
+<tr><td class=has-text-right>data:要求加载或者类型数据；: 每轮迭代要采样</td><td class=has-text-centered><strong>邻居</strong></td><td class=has-text-left>节点的个数，即第i-1轮要为每个节</td></tr>
+<tr><td class=has-text-right>dgl.dataloading.MultiLayerFullNeighborSampler(2) 想要用DGL提供的</td><td class=has-text-centered><strong>邻居</strong></td><td class=has-text-left>采样器做边</td></tr>
+<tr><td class=has-text-right>GraphSage中</td><td class=has-text-centered><strong>邻居</strong></td><td class=has-text-left>采样是这</td></tr>
+<tr><td class=has-text-right>    NeighborSampler也是PyG中关于GraphSage中</td><td class=has-text-centered><strong>邻居</strong></td><td class=has-text-left>采样的实现，但已经被弃用，在未来</td></tr>
+<tr><td class=has-text-right>  • num_neighbors：每个节点每次迭代（每层）采样的最大</td><td class=has-text-centered><strong>邻居</strong></td><td class=has-text-left>数，List[int]类型，例</td></tr>
+<tr><td class=has-text-right>PyG中，GraphSage的</td><td class=has-text-centered><strong>邻居</strong></td><td class=has-text-left>采样实现为torch_geometric.loader.NeighborLoader，其初始化</td></tr>
+<tr><td class=has-text-right>PyG中对于</td><td class=has-text-centered><strong>邻居</strong></td><td class=has-text-left>采样的实现远远不止上述这一种，具体参见如下官网资料：</td></tr>
+<tr><td class=has-text-right>    PyG教程(3)：</td><td class=has-text-centered><strong>邻居</strong></td><td class=has-text-left>采样</td></tr>
+<tr><td class=has-text-right>PyG教程(3)：</td><td class=has-text-centered><strong>邻居</strong></td><td class=has-text-left>采样</td></tr>
+<tr><td class=has-text-right>一.为什么需要</td><td class=has-text-centered><strong>邻居</strong></td><td class=has-text-left>采样？</td></tr>
+<tr><td class=has-text-right>下图左是GraphSage中给出的一个2层邻居采样的示例，其中每层采样的</td><td class=has-text-centered><strong>邻居</strong></td><td class=has-text-left>数 S k S_k Sk</td></tr>
+<tr><td class=has-text-right>下面是对该数据集的加载、可视化以及</td><td class=has-text-centered><strong>邻居</strong></td><td class=has-text-left>采样的源码：</td></tr>
+<tr><td class=has-text-right>。为此，可以采用邻居采样，这样一来可以将GNN扩展到大图上。在PyG中，</td><td class=has-text-centered><strong>邻居</strong></td><td class=has-text-left>采样的方</td></tr>
+<tr><td class=has-text-right>从上图可以看出，在第一次迭代中，采样了节点{14}的两个1跳</td><td class=has-text-centered><strong>邻居</strong></td><td class=has-text-left>{32,33}，然后在第二</td></tr>
+<tr><td class=has-text-right>假设采样的层数为 K K K，每层采样的</td><td class=has-text-centered><strong>邻居</strong></td><td class=has-text-left>数为 S k S_k Sk​，</td></tr>
+<tr><td class=has-text-right>    初结点集的 2 2 2跳</td><td class=has-text-centered><strong>邻居</strong></td><td class=has-text-left>）得到 B 2 \mathcal{B</td></tr>
+<tr><td class=has-text-right>图神经网络22-DGL实战：针对边分类任务的</td><td class=has-text-centered><strong>邻居</strong></td><td class=has-text-left>采样训练方法</td></tr>
+<tr><td class=has-text-right>在上述源码中，设置的采样层数为2层、每个节点每层采样最多采样2个</td><td class=has-text-centered><strong>邻居</strong></td><td class=has-text-left>，采样的初始</td></tr>
+<tr><td class=has-text-right>    如[2,2]表示采样2层，每层中每个节点最多采样2个</td><td class=has-text-centered><strong>邻居</strong></td><td class=has-text-left>；</td></tr>
+<tr><td class=has-text-right>式有很多种，具体详解torch_geometric.loader。本文以GraphSage中的</td><td class=has-text-centered><strong>邻居</strong></td><td class=has-text-left>采样为例进行</td></tr>
+<tr><td class=has-text-right>样器和数据加载器用户可以使用和节点分类一样的</td><td class=has-text-centered><strong>邻居</strong></td><td class=has-text-left>采样器。 sampler =</td></tr>
+<tr><td class=has-text-right>  • 步骤一：首先给定要采样</td><td class=has-text-centered><strong>邻居</strong></td><td class=has-text-left>的小批量节点集 B \mathcal{B} B；</td></tr>
+<tr><td class=has-text-right>点采样个节点，如果为-1，则代表所有邻居节点都将被包含(一阶相邻</td><td class=has-text-centered><strong>邻居</strong></td><td class=has-text-left>)，在异构图中</td></tr>
+<tr><td class=has-text-right>    练的。为此，可以采用邻居采样，这样一来可以将GNN扩展到大图上。在PyG中，</td><td class=has-text-centered><strong>邻居</strong></td><td class=has-text-left></td></tr>
+<tr><td class=has-text-right>边分类/回归的训练与节点分类/回归的训练类似，但还是有一些明显的区别。定义</td><td class=has-text-centered><strong>邻居</strong></td><td class=has-text-left>采</td></tr>
+<tr><td class=has-text-right>，还可以使用字典来表示每个单独的边缘类型要采样的</td><td class=has-text-centered><strong>邻居</strong></td><td class=has-text-left>数量；: 中心节点集合，用来</td></tr>
+
+  </tbody>
+  </table>
+  </body>
+  </html>
+  
