@@ -13,21 +13,21 @@ from nltk.corpus import stopwords
 from os.path import isfile
 
 # Définissez le chemin des stopwords et des polices
-stopwords_path = '/media/zina/Commun/Studies/Programmation et projet encadré PPE/Projet-PPE/programmes'
+stopwords_path = '/media/zina/Commun/Studies/Programmation et projet encadré PPE/Projet-PPE/programmes/'
 fonts_path = '/usr/share/fonts/truetype/noto/'
 
 # Chargez les stopwords pour chaque langue
 francais_stopwords = set(stopwords.words('french'))
-nouveaux_stopwords = ["c'est", "ça","a","si","qu'il"]
+nouveaux_stopwords = ["c'est", "ça","a","si","qu'il","your","https","www","neighbor","and","jpg","thumbnail","v4", "annoy", "an","noy","button","your", "step", "wikihow","alternate","icon","com"]
 francais_stopwords.update(nouveaux_stopwords)
 arabe_stopwords = set(stopwords.words('arabic'))
 with open(f'{stopwords_path}stopwords-zh.txt', 'r', encoding='utf-8') as file:
     chinois_stopwords = set(file.read().splitlines())
-
+chinois_stopwords.update(nouveaux_stopwords)
 # Définissez le chemin des polices pour chaque langue
 font_paths = {
     'francais': f'{fonts_path}NotoSans-Regular.ttf',
-    'chinois': f'{fonts_path}NotoSansSC-Regular.otf',
+    'chinois': '/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc',
     'arabe': f'{fonts_path}NotoNaskhArabic-Regular.ttf'
 }
 
