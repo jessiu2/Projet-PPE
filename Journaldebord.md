@@ -38,3 +38,4 @@ J'ai trouvé les stopwords chinois sur le git : https://github.com/stopwords-iso
 j'ai essayé différentes méthodes, y compris le changement de la police, la conversion et https://amueller.github.io/word_cloud/auto_examples/arabic.html, je rencontre encore des problèmes d'encodage en arabe dans le wordcloud
 Même souci pour le chinois quant à l'affichage des liens sur le tableau, et je l'ai également résolu avec la fonction citée plus haut (urldecode)
 Quant au nuage de mots, je n'ai rencontré aucun problème avec le français, contrairement aux autres langues
+Corrigé pour le chinois en modifiant le chemin vers la police :'/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc',
