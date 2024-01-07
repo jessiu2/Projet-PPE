@@ -546,4 +546,10 @@
   <td><a href="https://jessiu2.github.io/Projet-PPE/concordances/concordance_ch-50.html">concordance</a></td>
   </tr>
 </table>
+<script>
+    var linkElement = document.getElementById('link');
+    var hrefAttribute = linkElement.getAttribute('href'); 
+    var decodedURL = decodeURIComponent(hrefAttribute);
+    linkElement.setAttribute('href', decodedURL);
+</script>
 </body></html>
