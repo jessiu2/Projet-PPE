@@ -15,15 +15,15 @@ do
     content=$(cat $filename)
 
 
-    cleaned=$(echo "$content" | sed 's/&/&amp;/g')
-    cleaned=$(echo "$cleaned" | sed 's/</&lt;/g')
-    cleaned=$(echo "$cleaned" | sed 's/</&gt;/g')
+    cleaned=$(echo $content | sed 's/&/&amp;/g')
+    cleaned=$(echo $cleaned | sed 's/</&lt;/g')
+    cleaned=$(echo $cleaned | sed 's/</&gt;/g')
 
- 	echo "<page="$page"\>" >> "ITRAMEUR/$folder-$basename.txt"
+ 	echo "<page=\"$page\">" >> "ITRAMEUR/$folder-$basename.txt"
 
     echo "<text>" >> "ITRAMEUR/$folder-$basename.txt"
     
-    echo "$cleaned" >> "ITRAMEUR/$folder-$basename.txt"
+    echo $cleaned >> "ITRAMEUR/$folder-$basename.txt"
 
     echo "</text>" >> "ITRAMEUR/$folder-$basename.txt"
     echo "</page> §" >> "ITRAMEUR/$folder-$basename.txt"
