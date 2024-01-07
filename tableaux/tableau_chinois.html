@@ -1,190 +1,519 @@
-<html>
-    <head>
-    <meta charset="UTF-8">
-    <title>Tableau chinois</title>
-      <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-        }
-        table {
-            border-collapse: collapse;
-            width: 100%;
-            background-color: #eeeeee; /* Fond du tableau */
-        }
-        th {
-            background-color: #dcdcdc; /* Fond plus clair pour les en-têtes */
-            color: black; /* Texte en noir pour les en-têtes */
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-        .url-column {
-            width: 5%; /* Largeur encore plus réduite pour la colonne URL */
-            word-break: break-all;
-        }
-        tr:nth-child(even) {
-            background-color: #f2f2f2;
-        }
-    </style>
-    </head>
-    <body>
-        <table border=1>
-            <tr>
-                <th>Numero ligne</th><th>URL</th><th>Aspiration</th><th>Dump textuel</th><th>Code HTTP</th><th>Encodage</th><th>Nombre d'occurences</th><th>Contexte</th><th>Concordancier</th>
-            </tr>
-<tr>
 
-                <td>1</td><td><a href=https://www.bbc.com/zhongwen/simp/science-65963585>https://www.bbc.com/zhongwen/simp/science-65963585</a></td><td><a href="../aspirations/chinois-1.html">Aspiration</a></td><td><a href="../dumps-text/chinois-1.txt">Dump</a></td><td>200</td><td>utf-8</td><td>4</td><td><a href="../contextes/chinois-1.txt">Voir contexte</a></td><td><a href='../concordances/chinois-1.html'>Concordancier</a></td></tr>
+  <html>
+  <body>
+<h2>Tableau chinois :</h2>
+<br></br>
+<table>
 <tr>
-
-                <td>2</td><td><a href=https://news.bandao.cn/a/1700185945777285.html>https://news.bandao.cn/a/1700185945777285.html</a></td><td><a href="../aspirations/chinois-2.html">Aspiration</a></td><td><a href="../dumps-text/chinois-2.txt">Dump</a></td><td>000</td><td>utf-8</td><td>0</td><td><a href="../contextes/chinois-2.txt">Voir contexte</a></td><td><a href='../concordances/chinois-2.html'>Concordancier</a></td></tr>
+  <th>ligne</th>
+  <th>code</th>
+  <th>URL</th>
+  <th>Encodage</th>
+  <th>Occurences</th>
+  <th>DumpText</th>
+  <th>HTML</th>
+  <th>Contexte</th>
+  <th>Concordances</th>
+  </tr>
 <tr>
-
-                <td>3</td><td><a href=https://zh.wikipedia.org/zh-cn/%E9%84%B0%E5%B1%85_(%E9%9B%BB%E5%BD%B1)>https://zh.wikipedia.org/zh-cn/鄰居_(電影)</a></td><td><a href="../aspirations/chinois-3.html">Aspiration</a></td><td><a href="../dumps-text/chinois-3.txt">Dump</a></td><td>200</td><td>UTF-8</td><td>7</td><td><a href="../contextes/chinois-3.txt">Voir contexte</a></td><td><a href='../concordances/chinois-3.html'>Concordancier</a></td></tr>
+  <td>1</td>
+  <td>200</td>
+  <td><a href="https://www.bbc.com/zhongwen/simp/science-65963585">https://www.bbc.com/zhongwen/simp/science-65963585</a></td>
+  <td>UTF-8</td><td>0</td>
+  <td><a href="../Projet-PPE/dumps-text/chinois-1.txt">text</a></td>
+  <td><a href="../Projet-PPE/aspirations/chinois-1.html">html</a></td>
+  <td><a href="../Projet-PPE/contextes/chinois-1.txt">contexte</a></td>
+  <td><a href="../projet-PPE/concordances/concordance_ch-1.html">concordance</a></td>
+  </tr>
 <tr>
-
-                <td>4</td><td><a href=https://zh.wiktionary.org/wiki/%E9%82%BB%E5%B1%85>https://zh.wiktionary.org/wiki/邻居</a></td><td><a href="../aspirations/chinois-4.html">Aspiration</a></td><td><a href="../dumps-text/chinois-4.txt">Dump</a></td><td>200</td><td>UTF-8</td><td>3</td><td><a href="../contextes/chinois-4.txt">Voir contexte</a></td><td><a href='../concordances/chinois-4.html'>Concordancier</a></td></tr>
+  <td>2</td>
+  <td>200</td>
+  <td><a href="https://news.bandao.cn/a/1700185945777285.html">https://news.bandao.cn/a/1700185945777285.html</a></td>
+  <td>utf-8</td><td>1</td>
+  <td><a href="../Projet-PPE/dumps-text/chinois-2.txt">text</a></td>
+  <td><a href="../Projet-PPE/aspirations/chinois-2.html">html</a></td>
+  <td><a href="../Projet-PPE/contextes/chinois-2.txt">contexte</a></td>
+  <td><a href="../projet-PPE/concordances/concordance_ch-2.html">concordance</a></td>
+  </tr>
 <tr>
-
-                <td>5</td><td><a href=http://www.youparis.com/79-news/373-2014-fete-des-voisins>http://www.youparis.com/79-news/373-2014-fete-des-voisins</a></td><td><a href="../aspirations/chinois-5.html">Aspiration</a></td><td><a href="../dumps-text/chinois-5.txt">Dump</a></td><td>200</td><td>utf-8</td><td>12</td><td><a href="../contextes/chinois-5.txt">Voir contexte</a></td><td><a href='../concordances/chinois-5.html'>Concordancier</a></td></tr>
+  <td>3</td>
+  <td>200</td>
+  <td><a href="https://zh.wikipedia.org/zh-cn/%E9%84%B0%E5%B1%85_(%E9%9B%BB%E5%BD%B1)">https://zh.wikipedia.org/zh-cn/%E9%84%B0%E5%B1%85_(%E9%9B%BB%E5%BD%B1)</a></td>
+  <td>UTF-8</td><td>6</td>
+  <td><a href="../Projet-PPE/dumps-text/chinois-3.txt">text</a></td>
+  <td><a href="../Projet-PPE/aspirations/chinois-3.html">html</a></td>
+  <td><a href="../Projet-PPE/contextes/chinois-3.txt">contexte</a></td>
+  <td><a href="../projet-PPE/concordances/concordance_ch-3.html">concordance</a></td>
+  </tr>
 <tr>
-
-                <td>6</td><td><a href=https://m.haiwainet.cn/middle/3540917/2017/1016/content_31149126_1.html>https://m.haiwainet.cn/middle/3540917/2017/1016/content_31149126_1.html</a></td><td><a href="../aspirations/chinois-6.html">Aspiration</a></td><td><a href="../dumps-text/chinois-6.txt">Dump</a></td><td>200</td><td>UTF-8</td><td>10</td><td><a href="../contextes/chinois-6.txt">Voir contexte</a></td><td><a href='../concordances/chinois-6.html'>Concordancier</a></td></tr>
+  <td>4</td>
+  <td>200</td>
+  <td><a href="https://zh.wiktionary.org/wiki/%E9%82%BB%E5%B1%85">https://zh.wiktionary.org/wiki/%E9%82%BB%E5%B1%85</a></td>
+  <td>UTF-8</td><td>3</td>
+  <td><a href="../Projet-PPE/dumps-text/chinois-4.txt">text</a></td>
+  <td><a href="../Projet-PPE/aspirations/chinois-4.html">html</a></td>
+  <td><a href="../Projet-PPE/contextes/chinois-4.txt">contexte</a></td>
+  <td><a href="../projet-PPE/concordances/concordance_ch-4.html">concordance</a></td>
+  </tr>
 <tr>
-
-                <td>7</td><td><a href=https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/ip-addressing/configuring-neighbor-discovery.html>https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/ip-addressing/configuring-neighbor-discovery.html</a></td><td><a href="../aspirations/chinois-7.html">Aspiration</a></td><td><a href="../dumps-text/chinois-7.txt">Dump</a></td><td>200</td><td>UTF-8</td><td>22</td><td><a href="../contextes/chinois-7.txt">Voir contexte</a></td><td><a href='../concordances/chinois-7.html'>Concordancier</a></td></tr>
+  <td>5</td>
+  <td>200</td>
+  <td><a href="http://www.youparis.com/79-news/373-2014-fete-des-voisins">http://www.youparis.com/79-news/373-2014-fete-des-voisins</a></td>
+  <td>utf-8</td><td>0</td>
+  <td><a href="../Projet-PPE/dumps-text/chinois-5.txt">text</a></td>
+  <td><a href="../Projet-PPE/aspirations/chinois-5.html">html</a></td>
+  <td><a href="../Projet-PPE/contextes/chinois-5.txt">contexte</a></td>
+  <td><a href="../projet-PPE/concordances/concordance_ch-5.html">concordance</a></td>
+  </tr>
 <tr>
-
-                <td>8</td><td><a href=https://docs.oracle.com/cd/E19126-01/java.sys.r2/817-5962/gosnautilus-465/index.htmlhttps://tv.cctv.com/2019/10/29/VIDAxjynDthqsLOJ8nSlXoMT191029.shtml>https://docs.oracle.com/cd/E19126-01/java.sys.r2/817-5962/gosnautilus-465/index.htmlhttps://tv.cctv.com/2019/10/29/VIDAxjynDthqsLOJ8nSlXoMT191029.shtml</a></td><td><a href="../aspirations/chinois-8.html">Aspiration</a></td><td><a href="../dumps-text/chinois-8.txt">Dump</a></td><td>404</td><td>utf-8</td><td>0</td><td><a href="../contextes/chinois-8.txt">Voir contexte</a></td><td><a href='../concordances/chinois-8.html'>Concordancier</a></td></tr>
+  <td>6</td>
+  <td>200</td>
+  <td><a href="https://m.haiwainet.cn/middle/3540917/2017/1016/content_31149126_1.html">https://m.haiwainet.cn/middle/3540917/2017/1016/content_31149126_1.html</a></td>
+  <td>UTF-8</td><td>0</td>
+  <td><a href="../Projet-PPE/dumps-text/chinois-6.txt">text</a></td>
+  <td><a href="../Projet-PPE/aspirations/chinois-6.html">html</a></td>
+  <td><a href="../Projet-PPE/contextes/chinois-6.txt">contexte</a></td>
+  <td><a href="../projet-PPE/concordances/concordance_ch-6.html">concordance</a></td>
+  </tr>
 <tr>
-
-                <td>9</td><td><a href=https://consumer.huawei.com/cn/support/content/zh-cn00447812/>https://consumer.huawei.com/cn/support/content/zh-cn00447812/</a></td><td><a href="../aspirations/chinois-9.html">Aspiration</a></td><td><a href="../dumps-text/chinois-9.txt">Dump</a></td><td>200</td><td>UTF-8</td><td>11</td><td><a href="../contextes/chinois-9.txt">Voir contexte</a></td><td><a href='../concordances/chinois-9.html'>Concordancier</a></td></tr>
+  <td>7</td>
+  <td>200</td>
+  <td><a href="https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/ip-addressing/configuring-neighbor-discovery.html">https://docs.netscaler.com/zh-cn/citrix-adc/current-release/networking/ip-addressing/configuring-neighbor-discovery.html</a></td>
+  <td>UTF-8</td><td>7</td>
+  <td><a href="../Projet-PPE/dumps-text/chinois-7.txt">text</a></td>
+  <td><a href="../Projet-PPE/aspirations/chinois-7.html">html</a></td>
+  <td><a href="../Projet-PPE/contextes/chinois-7.txt">contexte</a></td>
+  <td><a href="../projet-PPE/concordances/concordance_ch-7.html">concordance</a></td>
+  </tr>
 <tr>
-
-                <td>10</td><td><a href=https://www.bbc.com/ukchina/simp/uk_life/2013/08/130806_life_neighbours>https://www.bbc.com/ukchina/simp/uk_life/2013/08/130806_life_neighbours</a></td><td><a href="../aspirations/chinois-10.html">Aspiration</a></td><td><a href="../dumps-text/chinois-10.txt">Dump</a></td><td>200</td><td>utf-8</td><td>15</td><td><a href="../contextes/chinois-10.txt">Voir contexte</a></td><td><a href='../concordances/chinois-10.html'>Concordancier</a></td></tr>
+  <td>8</td>
+  <td>404</td>
+  <td><a href="https://docs.oracle.com/cd/E19126-01/java.sys.r2/817-5962/gosnautilus-465/index.htmlhttps://tv.cctv.com/2019/10/29/VIDAxjynDthqsLOJ8nSlXoMT191029.shtml">https://docs.oracle.com/cd/E19126-01/java.sys.r2/817-5962/gosnautilus-465/index.htmlhttps://tv.cctv.com/2019/10/29/VIDAxjynDthqsLOJ8nSlXoMT191029.shtml</a></td>
+  <td></td><td>0</td>
+  <td><a href="../Projet-PPE/dumps-text/chinois-8.txt">text</a></td>
+  <td><a href="../Projet-PPE/aspirations/chinois-8.html">html</a></td>
+  <td><a href="../Projet-PPE/contextes/chinois-8.txt">contexte</a></td>
+  <td><a href="../projet-PPE/concordances/concordance_ch-8.html">concordance</a></td>
+  </tr>
 <tr>
-
-                <td>11</td><td><a href=https://www.cisco.com/c/zh_cn/support/docs/ip/open-shortest-path-first-ospf/13699-29.html>https://www.cisco.com/c/zh_cn/support/docs/ip/open-shortest-path-first-ospf/13699-29.html</a></td><td><a href="../aspirations/chinois-11.html">Aspiration</a></td><td><a href="../dumps-text/chinois-11.txt">Dump</a></td><td>200</td><td>utf-8</td><td>78</td><td><a href="../contextes/chinois-11.txt">Voir contexte</a></td><td><a href='../concordances/chinois-11.html'>Concordancier</a></td></tr>
+  <td>9</td>
+  <td>200</td>
+  <td><a href="https://consumer.huawei.com/cn/support/content/zh-cn00447812/">https://consumer.huawei.com/cn/support/content/zh-cn00447812/</a></td>
+  <td>utf-8</td><td>1</td>
+  <td><a href="../Projet-PPE/dumps-text/chinois-9.txt">text</a></td>
+  <td><a href="../Projet-PPE/aspirations/chinois-9.html">html</a></td>
+  <td><a href="../Projet-PPE/contextes/chinois-9.txt">contexte</a></td>
+  <td><a href="../projet-PPE/concordances/concordance_ch-9.html">concordance</a></td>
+  </tr>
 <tr>
-
-                <td>12</td><td><a href=https://www.sohu.com/a/665093396_121119356>https://www.sohu.com/a/665093396_121119356</a></td><td><a href="../aspirations/chinois-12.html">Aspiration</a></td><td><a href="../dumps-text/chinois-12.txt">Dump</a></td><td>200</td><td>UTF-8</td><td>38</td><td><a href="../contextes/chinois-12.txt">Voir contexte</a></td><td><a href='../concordances/chinois-12.html'>Concordancier</a></td></tr>
+  <td>10</td>
+  <td>200</td>
+  <td><a href="https://www.bbc.com/ukchina/simp/uk_life/2013/08/130806_life_neighbours">https://www.bbc.com/ukchina/simp/uk_life/2013/08/130806_life_neighbours</a></td>
+  <td>UTF-8</td><td>2</td>
+  <td><a href="../Projet-PPE/dumps-text/chinois-10.txt">text</a></td>
+  <td><a href="../Projet-PPE/aspirations/chinois-10.html">html</a></td>
+  <td><a href="../Projet-PPE/contextes/chinois-10.txt">contexte</a></td>
+  <td><a href="../projet-PPE/concordances/concordance_ch-10.html">concordance</a></td>
+  </tr>
 <tr>
-
-                <td>13</td><td><a href=https://wap.peopleapp.com/article/7164392/7010849>https://wap.peopleapp.com/article/7164392/7010849</a></td><td><a href="../aspirations/chinois-13.html">Aspiration</a></td><td><a href="../dumps-text/chinois-13.txt">Dump</a></td><td>200</td><td></td><td>0</td><td><a href="../contextes/chinois-13.txt">Voir contexte</a></td><td><a href='../concordances/chinois-13.html'>Concordancier</a></td></tr>
+  <td>11</td>
+  <td>200</td>
+  <td><a href="https://www.cisco.com/c/zh_cn/support/docs/ip/open-shortest-path-first-ospf/13699-29.html">https://www.cisco.com/c/zh_cn/support/docs/ip/open-shortest-path-first-ospf/13699-29.html</a></td>
+  <td>UTF-8</td><td>14</td>
+  <td><a href="../Projet-PPE/dumps-text/chinois-11.txt">text</a></td>
+  <td><a href="../Projet-PPE/aspirations/chinois-11.html">html</a></td>
+  <td><a href="../Projet-PPE/contextes/chinois-11.txt">contexte</a></td>
+  <td><a href="../projet-PPE/concordances/concordance_ch-11.html">concordance</a></td>
+  </tr>
 <tr>
-
-                <td>14</td><td><a href=https://36kr.com/p/2390746450194688>https://36kr.com/p/2390746450194688</a></td><td><a href="../aspirations/chinois-14.html">Aspiration</a></td><td><a href="../dumps-text/chinois-14.txt">Dump</a></td><td>200</td><td>utf-8</td><td>0</td><td><a href="../contextes/chinois-14.txt">Voir contexte</a></td><td><a href='../concordances/chinois-14.html'>Concordancier</a></td></tr>
+  <td>12</td>
+  <td>200</td>
+  <td><a href="https://www.sohu.com/a/665093396_121119356">https://www.sohu.com/a/665093396_121119356</a></td>
+  <td>UTF-8</td><td>24</td>
+  <td><a href="../Projet-PPE/dumps-text/chinois-12.txt">text</a></td>
+  <td><a href="../Projet-PPE/aspirations/chinois-12.html">html</a></td>
+  <td><a href="../Projet-PPE/contextes/chinois-12.txt">contexte</a></td>
+  <td><a href="../projet-PPE/concordances/concordance_ch-12.html">concordance</a></td>
+  </tr>
 <tr>
-
-                <td>15</td><td><a href=https://news.sina.cn/2023-03-21/detail-imympums0083082.d.html>https://news.sina.cn/2023-03-21/detail-imympums0083082.d.html</a></td><td><a href="../aspirations/chinois-15.html">Aspiration</a></td><td><a href="../dumps-text/chinois-15.txt">Dump</a></td><td>200</td><td>utf-8</td><td>26</td><td><a href="../contextes/chinois-15.txt">Voir contexte</a></td><td><a href='../concordances/chinois-15.html'>Concordancier</a></td></tr>
+  <td>13</td>
+  <td>200</td>
+  <td><a href="https://wap.peopleapp.com/article/7164392/7010849">https://wap.peopleapp.com/article/7164392/7010849</a></td>
+  <td>utf-8</td><td>0</td>
+  <td><a href="../Projet-PPE/dumps-text/chinois-13.txt">text</a></td>
+  <td><a href="../Projet-PPE/aspirations/chinois-13.html">html</a></td>
+  <td><a href="../Projet-PPE/contextes/chinois-13.txt">contexte</a></td>
+  <td><a href="../projet-PPE/concordances/concordance_ch-13.html">concordance</a></td>
+  </tr>
 <tr>
-
-                <td>16</td><td><a href=https://xiandangdai.xiusha.com/l/luyin/000/011.htm>https://xiandangdai.xiusha.com/l/luyin/000/011.htm</a></td><td><a href="../aspirations/chinois-16.html">Aspiration</a></td><td><a href="../dumps-text/chinois-16.txt">Dump</a></td><td>200</td><td></td><td>8</td><td><a href="../contextes/chinois-16.txt">Voir contexte</a></td><td><a href='../concordances/chinois-16.html'>Concordancier</a></td></tr>
+  <td>14</td>
+  <td>200</td>
+  <td><a href="https://36kr.com/p/2390746450194688">https://36kr.com/p/2390746450194688</a></td>
+  <td>UTF-8</td><td>0</td>
+  <td><a href="../Projet-PPE/dumps-text/chinois-14.txt">text</a></td>
+  <td><a href="../Projet-PPE/aspirations/chinois-14.html">html</a></td>
+  <td><a href="../Projet-PPE/contextes/chinois-14.txt">contexte</a></td>
+  <td><a href="../projet-PPE/concordances/concordance_ch-14.html">concordance</a></td>
+  </tr>
 <tr>
-
-                <td>17</td><td><a href=https://zh.wikihow.com/%E6%83%B9%E6%81%BC%E4%BD%A0%E7%9A%84%E9%82%BB%E5%B1%85>https://zh.wikihow.com/惹恼你的邻居</a></td><td><a href="../aspirations/chinois-17.html">Aspiration</a></td><td><a href="../dumps-text/chinois-17.txt">Dump</a></td><td>200</td><td>UTF-8</td><td>106</td><td><a href="../contextes/chinois-17.txt">Voir contexte</a></td><td><a href='../concordances/chinois-17.html'>Concordancier</a></td></tr>
+  <td>15</td>
+  <td>200</td>
+  <td><a href="https://news.sina.cn/2023-03-21/detail-imympums0083082.d.html">https://news.sina.cn/2023-03-21/detail-imympums0083082.d.html</a></td>
+  <td>UTF-8</td><td>6</td>
+  <td><a href="../Projet-PPE/dumps-text/chinois-15.txt">text</a></td>
+  <td><a href="../Projet-PPE/aspirations/chinois-15.html">html</a></td>
+  <td><a href="../Projet-PPE/contextes/chinois-15.txt">contexte</a></td>
+  <td><a href="../projet-PPE/concordances/concordance_ch-15.html">concordance</a></td>
+  </tr>
 <tr>
-
-                <td>18</td><td><a href=http://www.xinhuanet.com/world/2017-07/06/c_1121270810.htm>http://www.xinhuanet.com/world/2017-07/06/c_1121270810.htm</a></td><td><a href="../aspirations/chinois-18.html">Aspiration</a></td><td><a href="../dumps-text/chinois-18.txt">Dump</a></td><td>200</td><td>utf-8</td><td>6</td><td><a href="../contextes/chinois-18.txt">Voir contexte</a></td><td><a href='../concordances/chinois-18.html'>Concordancier</a></td></tr>
+  <td>16</td>
+  <td>200</td>
+  <td><a href="https://xiandangdai.xiusha.com/l/luyin/000/011.htm">https://xiandangdai.xiusha.com/l/luyin/000/011.htm</a></td>
+  <td>GB2312</td><td>4</td>
+  <td><a href="../Projet-PPE/dumps-text/chinois-16.txt">text</a></td>
+  <td><a href="../Projet-PPE/aspirations/chinois-16.html">html</a></td>
+  <td><a href="../Projet-PPE/contextes/chinois-16.txt">contexte</a></td>
+  <td><a href="../projet-PPE/concordances/concordance_ch-16.html">concordance</a></td>
+  </tr>
 <tr>
-
-                <td>19</td><td><a href=https://huaren.us/showtopic.html?topicid=2970310>https://huaren.us/showtopic.html?topicid=2970310</a></td><td><a href="../aspirations/chinois-19.html">Aspiration</a></td><td><a href="../dumps-text/chinois-19.txt">Dump</a></td><td>200</td><td></td><td>0</td><td><a href="../contextes/chinois-19.txt">Voir contexte</a></td><td><a href='../concordances/chinois-19.html'>Concordancier</a></td></tr>
+  <td>17</td>
+  <td>200</td>
+  <td><a href="https://zh.wikihow.com/%E6%83%B9%E6%81%BC%E4%BD%A0%E7%9A%84%E9%82%BB%E5%B1%85">https://zh.wikihow.com/%E6%83%B9%E6%81%BC%E4%BD%A0%E7%9A%84%E9%82%BB%E5%B1%85</a></td>
+  <td>UTF-8</td><td>14</td>
+  <td><a href="../Projet-PPE/dumps-text/chinois-17.txt">text</a></td>
+  <td><a href="../Projet-PPE/aspirations/chinois-17.html">html</a></td>
+  <td><a href="../Projet-PPE/contextes/chinois-17.txt">contexte</a></td>
+  <td><a href="../projet-PPE/concordances/concordance_ch-17.html">concordance</a></td>
+  </tr>
 <tr>
-
-                <td>20</td><td><a href=https://www.mycaijing.com/article/detail/435125?source_id=40>https://www.mycaijing.com/article/detail/435125?source_id=40</a></td><td><a href="../aspirations/chinois-20.html">Aspiration</a></td><td><a href="../dumps-text/chinois-20.txt">Dump</a></td><td>200</td><td>UTF-8</td><td>8</td><td><a href="../contextes/chinois-20.txt">Voir contexte</a></td><td><a href='../concordances/chinois-20.html'>Concordancier</a></td></tr>
+  <td>18</td>
+  <td>200</td>
+  <td><a href="http://www.xinhuanet.com/world/2017-07/06/c_1121270810.htm">http://www.xinhuanet.com/world/2017-07/06/c_1121270810.htm</a></td>
+  <td>utf-8</td><td>6</td>
+  <td><a href="../Projet-PPE/dumps-text/chinois-18.txt">text</a></td>
+  <td><a href="../Projet-PPE/aspirations/chinois-18.html">html</a></td>
+  <td><a href="../Projet-PPE/contextes/chinois-18.txt">contexte</a></td>
+  <td><a href="../projet-PPE/concordances/concordance_ch-18.html">concordance</a></td>
+  </tr>
 <tr>
-
-                <td>21</td><td><a href=https://www.ecentime.com/article/ecentime-probleme-voisinage>https://www.ecentime.com/article/ecentime-probleme-voisinage</a></td><td><a href="../aspirations/chinois-21.html">Aspiration</a></td><td><a href="../dumps-text/chinois-21.txt">Dump</a></td><td>200</td><td>utf-8</td><td>11</td><td><a href="../contextes/chinois-21.txt">Voir contexte</a></td><td><a href='../concordances/chinois-21.html'>Concordancier</a></td></tr>
+  <td>19</td>
+  <td>200</td>
+  <td><a href="https://huaren.us/showtopic.html?topicid=2970310">https://huaren.us/showtopic.html?topicid=2970310</a></td>
+  <td>UTF-8</td><td>0</td>
+  <td><a href="../Projet-PPE/dumps-text/chinois-19.txt">text</a></td>
+  <td><a href="../Projet-PPE/aspirations/chinois-19.html">html</a></td>
+  <td><a href="../Projet-PPE/contextes/chinois-19.txt">contexte</a></td>
+  <td><a href="../projet-PPE/concordances/concordance_ch-19.html">concordance</a></td>
+  </tr>
 <tr>
-
-                <td>22</td><td><a href=https://www.worldprotectiongroup.com/zh-hans/%E5%A6%82%E4%BD%95%E5%BA%94%E5%AF%B9%E9%82%BB%E5%B1%85%E7%9A%84%E9%AA%9A%E6%89%B0/>https://www.worldprotectiongroup.com/zh-hans/如何应对邻居的骚扰/</a></td><td><a href="../aspirations/chinois-22.html">Aspiration</a></td><td><a href="../dumps-text/chinois-22.txt">Dump</a></td><td>200</td><td>UTF-8</td><td>17</td><td><a href="../contextes/chinois-22.txt">Voir contexte</a></td><td><a href='../concordances/chinois-22.html'>Concordancier</a></td></tr>
+  <td>20</td>
+  <td>200</td>
+  <td><a href="https://www.mycaijing.com/article/detail/435125?source_id=40">https://www.mycaijing.com/article/detail/435125?source_id=40</a></td>
+  <td>UTF-8</td><td>6</td>
+  <td><a href="../Projet-PPE/dumps-text/chinois-20.txt">text</a></td>
+  <td><a href="../Projet-PPE/aspirations/chinois-20.html">html</a></td>
+  <td><a href="../Projet-PPE/contextes/chinois-20.txt">contexte</a></td>
+  <td><a href="../projet-PPE/concordances/concordance_ch-20.html">concordance</a></td>
+  </tr>
 <tr>
-
-                <td>23</td><td><a href=https://lab.cs.tsinghua.edu.cn/router/doc/joint/nd/>https://lab.cs.tsinghua.edu.cn/router/doc/joint/nd/</a></td><td><a href="../aspirations/chinois-23.html">Aspiration</a></td><td><a href="../dumps-text/chinois-23.txt">Dump</a></td><td>200</td><td></td><td>31</td><td><a href="../contextes/chinois-23.txt">Voir contexte</a></td><td><a href='../concordances/chinois-23.html'>Concordancier</a></td></tr>
+  <td>21</td>
+  <td>200</td>
+  <td><a href="https://www.ecentime.com/article/ecentime-probleme-voisinage">https://www.ecentime.com/article/ecentime-probleme-voisinage</a></td>
+  <td>UTF-8</td><td>1</td>
+  <td><a href="../Projet-PPE/dumps-text/chinois-21.txt">text</a></td>
+  <td><a href="../Projet-PPE/aspirations/chinois-21.html">html</a></td>
+  <td><a href="../Projet-PPE/contextes/chinois-21.txt">contexte</a></td>
+  <td><a href="../projet-PPE/concordances/concordance_ch-21.html">concordance</a></td>
+  </tr>
 <tr>
-
-                <td>24</td><td><a href=https://blog.csdn.net/qq_42103091/article/details/125218735>https://blog.csdn.net/qq_42103091/article/details/125218735</a></td><td><a href="../aspirations/chinois-24.html">Aspiration</a></td><td><a href="../dumps-text/chinois-24.txt">Dump</a></td><td>200</td><td>utf-8</td><td>34</td><td><a href="../contextes/chinois-24.txt">Voir contexte</a></td><td><a href='../concordances/chinois-24.html'>Concordancier</a></td></tr>
+  <td>22</td>
+  <td>200</td>
+  <td><a href="https://www.worldprotectiongroup.com/zh-hans/%E5%A6%82%E4%BD%95%E5%BA%94%E5%AF%B9%E9%82%BB%E5%B1%85%E7%9A%84%E9%AA%9A%E6%89%B0/">https://www.worldprotectiongroup.com/zh-hans/%E5%A6%82%E4%BD%95%E5%BA%94%E5%AF%B9%E9%82%BB%E5%B1%85%E7%9A%84%E9%AA%9A%E6%89%B0/</a></td>
+  <td>UTF-8</td><td>1</td>
+  <td><a href="../Projet-PPE/dumps-text/chinois-22.txt">text</a></td>
+  <td><a href="../Projet-PPE/aspirations/chinois-22.html">html</a></td>
+  <td><a href="../Projet-PPE/contextes/chinois-22.txt">contexte</a></td>
+  <td><a href="../projet-PPE/concordances/concordance_ch-22.html">concordance</a></td>
+  </tr>
 <tr>
-
-                <td>25</td><td><a href=https://www.mycrazyparis.com/en/2019/07/18/57998c1b60/>https://www.mycrazyparis.com/en/2019/07/18/57998c1b60/</a></td><td><a href="../aspirations/chinois-25.html">Aspiration</a></td><td><a href="../dumps-text/chinois-25.txt">Dump</a></td><td>200</td><td>UTF-8</td><td>35</td><td><a href="../contextes/chinois-25.txt">Voir contexte</a></td><td><a href='../concordances/chinois-25.html'>Concordancier</a></td></tr>
+  <td>23</td>
+  <td>200</td>
+  <td><a href="https://lab.cs.tsinghua.edu.cn/router/doc/joint/nd/">https://lab.cs.tsinghua.edu.cn/router/doc/joint/nd/</a></td>
+  <td>UTF-8</td><td>0</td>
+  <td><a href="../Projet-PPE/dumps-text/chinois-23.txt">text</a></td>
+  <td><a href="../Projet-PPE/aspirations/chinois-23.html">html</a></td>
+  <td><a href="../Projet-PPE/contextes/chinois-23.txt">contexte</a></td>
+  <td><a href="../projet-PPE/concordances/concordance_ch-23.html">concordance</a></td>
+  </tr>
 <tr>
-
-                <td>26</td><td><a href=https://www.ourjiangsu.com/a/20231122/1700641981985.shtml>https://www.ourjiangsu.com/a/20231122/1700641981985.shtml</a></td><td><a href="../aspirations/chinois-26.html">Aspiration</a></td><td><a href="../dumps-text/chinois-26.txt">Dump</a></td><td>200</td><td></td><td>4</td><td><a href="../contextes/chinois-26.txt">Voir contexte</a></td><td><a href='../concordances/chinois-26.html'>Concordancier</a></td></tr>
+  <td>24</td>
+  <td>200</td>
+  <td><a href="https://blog.csdn.net/qq_42103091/article/details/125218735">https://blog.csdn.net/qq_42103091/article/details/125218735</a></td>
+  <td>utf-8</td><td>6</td>
+  <td><a href="../Projet-PPE/dumps-text/chinois-24.txt">text</a></td>
+  <td><a href="../Projet-PPE/aspirations/chinois-24.html">html</a></td>
+  <td><a href="../Projet-PPE/contextes/chinois-24.txt">contexte</a></td>
+  <td><a href="../projet-PPE/concordances/concordance_ch-24.html">concordance</a></td>
+  </tr>
 <tr>
-
-                <td>27</td><td><a href=http://web.hwjyw.com/jxyd/xizuo/200803/t20080306_13675.shtml>http://web.hwjyw.com/jxyd/xizuo/200803/t20080306_13675.shtml</a></td><td><a href="../aspirations/chinois-27.html">Aspiration</a></td><td><a href="../dumps-text/chinois-27.txt">Dump</a></td><td>200</td><td></td><td>3</td><td><a href="../contextes/chinois-27.txt">Voir contexte</a></td><td><a href='../concordances/chinois-27.html'>Concordancier</a></td></tr>
+  <td>25</td>
+  <td>200</td>
+  <td><a href="https://www.mycrazyparis.com/en/2019/07/18/57998c1b60/">https://www.mycrazyparis.com/en/2019/07/18/57998c1b60/</a></td>
+  <td>UTF-8</td><td>3</td>
+  <td><a href="../Projet-PPE/dumps-text/chinois-25.txt">text</a></td>
+  <td><a href="../Projet-PPE/aspirations/chinois-25.html">html</a></td>
+  <td><a href="../Projet-PPE/contextes/chinois-25.txt">contexte</a></td>
+  <td><a href="../projet-PPE/concordances/concordance_ch-25.html">concordance</a></td>
+  </tr>
 <tr>
-
-                <td>28</td><td><a href=https://m.163.com/dy/article/IK3FL2QL0525BSU0.html>https://m.163.com/dy/article/IK3FL2QL0525BSU0.html</a></td><td><a href="../aspirations/chinois-28.html">Aspiration</a></td><td><a href="../dumps-text/chinois-28.txt">Dump</a></td><td>200</td><td>utf-8</td><td>9</td><td><a href="../contextes/chinois-28.txt">Voir contexte</a></td><td><a href='../concordances/chinois-28.html'>Concordancier</a></td></tr>
+  <td>26</td>
+  <td>200</td>
+  <td><a href="https://www.ourjiangsu.com/a/20231122/1700641981985.shtml">https://www.ourjiangsu.com/a/20231122/1700641981985.shtml</a></td>
+  <td>UTF-8</td><td>1</td>
+  <td><a href="../Projet-PPE/dumps-text/chinois-26.txt">text</a></td>
+  <td><a href="../Projet-PPE/aspirations/chinois-26.html">html</a></td>
+  <td><a href="../Projet-PPE/contextes/chinois-26.txt">contexte</a></td>
+  <td><a href="../projet-PPE/concordances/concordance_ch-26.html">concordance</a></td>
+  </tr>
 <tr>
-
-                <td>29</td><td><a href=https://www.edgeprop.my/content/1785882/%E5%B1%8B%E6%89%80%E4%B8%8D%E8%B0%88%EF%BC%9A%E6%88%91%E4%BB%AC%E9%9C%80%E8%A6%81%E5%AF%B9%E4%BB%98%E6%81%B6%E9%82%BB%E5%B1%85%E7%9A%84%E6%B3%95%E4%BB%A4%EF%BC%81>https://www.edgeprop.my/content/1785882/屋所不谈：我们需要对付恶邻居的法令！</a></td><td><a href="../aspirations/chinois-29.html">Aspiration</a></td><td><a href="../dumps-text/chinois-29.txt">Dump</a></td><td>200</td><td>utf-8</td><td>28</td><td><a href="../contextes/chinois-29.txt">Voir contexte</a></td><td><a href='../concordances/chinois-29.html'>Concordancier</a></td></tr>
+  <td>27</td>
+  <td>200</td>
+  <td><a href="http://web.hwjyw.com/jxyd/xizuo/200803/t20080306_13675.shtml">http://web.hwjyw.com/jxyd/xizuo/200803/t20080306_13675.shtml</a></td>
+  <td>utf-8</td><td>1</td>
+  <td><a href="../Projet-PPE/dumps-text/chinois-27.txt">text</a></td>
+  <td><a href="../Projet-PPE/aspirations/chinois-27.html">html</a></td>
+  <td><a href="../Projet-PPE/contextes/chinois-27.txt">contexte</a></td>
+  <td><a href="../projet-PPE/concordances/concordance_ch-27.html">concordance</a></td>
+  </tr>
 <tr>
-
-                <td>30</td><td><a href=http://news.enorth.com.cn/system/2023/11/18/054660992.shtml>http://news.enorth.com.cn/system/2023/11/18/054660992.shtml</a></td><td><a href="../aspirations/chinois-30.html">Aspiration</a></td><td><a href="../dumps-text/chinois-30.txt">Dump</a></td><td>200</td><td></td><td>1</td><td><a href="../contextes/chinois-30.txt">Voir contexte</a></td><td><a href='../concordances/chinois-30.html'>Concordancier</a></td></tr>
+  <td>28</td>
+  <td>200</td>
+  <td><a href="https://m.163.com/dy/article/IK3FL2QL0525BSU0.html">https://m.163.com/dy/article/IK3FL2QL0525BSU0.html</a></td>
+  <td>UTF-8</td><td>3</td>
+  <td><a href="../Projet-PPE/dumps-text/chinois-28.txt">text</a></td>
+  <td><a href="../Projet-PPE/aspirations/chinois-28.html">html</a></td>
+  <td><a href="../Projet-PPE/contextes/chinois-28.txt">contexte</a></td>
+  <td><a href="../projet-PPE/concordances/concordance_ch-28.html">concordance</a></td>
+  </tr>
 <tr>
-
-                <td>31</td><td><a href=https://www.163.com/dy/article/IK5630C80514R9KQ.html>https://www.163.com/dy/article/IK5630C80514R9KQ.html</a></td><td><a href="../aspirations/chinois-31.html">Aspiration</a></td><td><a href="../dumps-text/chinois-31.txt">Dump</a></td><td>200</td><td>utf-8</td><td>8</td><td><a href="../contextes/chinois-31.txt">Voir contexte</a></td><td><a href='../concordances/chinois-31.html'>Concordancier</a></td></tr>
+  <td>29</td>
+  <td>200</td>
+  <td><a href="https://www.edgeprop.my/content/1785882/%E5%B1%8B%E6%89%80%E4%B8%8D%E8%B0%88%EF%BC%9A%E6%88%91%E4%BB%AC%E9%9C%80%E8%A6%81%E5%AF%B9%E4%BB%98%E6%81%B6%E9%82%BB%E5%B1%85%E7%9A%84%E6%B3%95%E4%BB%A4%EF%BC%81">https://www.edgeprop.my/content/1785882/%E5%B1%8B%E6%89%80%E4%B8%8D%E8%B0%88%EF%BC%9A%E6%88%91%E4%BB%AC%E9%9C%80%E8%A6%81%E5%AF%B9%E4%BB%98%E6%81%B6%E9%82%BB%E5%B1%85%E7%9A%84%E6%B3%95%E4%BB%A4%EF%BC%81</a></td>
+  <td>utf-8</td><td>5</td>
+  <td><a href="../Projet-PPE/dumps-text/chinois-29.txt">text</a></td>
+  <td><a href="../Projet-PPE/aspirations/chinois-29.html">html</a></td>
+  <td><a href="../Projet-PPE/contextes/chinois-29.txt">contexte</a></td>
+  <td><a href="../projet-PPE/concordances/concordance_ch-29.html">concordance</a></td>
+  </tr>
 <tr>
-
-                <td>32</td><td><a href=http://www.englang.cn/ShowYuanDi.asp?YDId=2216>http://www.englang.cn/ShowYuanDi.asp?YDId=2216</a></td><td><a href="../aspirations/chinois-32.html">Aspiration</a></td><td><a href="../dumps-text/chinois-32.txt">Dump</a></td><td>200</td><td></td><td>24</td><td><a href="../contextes/chinois-32.txt">Voir contexte</a></td><td><a href='../concordances/chinois-32.html'>Concordancier</a></td></tr>
+  <td>30</td>
+  <td>200</td>
+  <td><a href="http://news.enorth.com.cn/system/2023/11/18/054660992.shtml">http://news.enorth.com.cn/system/2023/11/18/054660992.shtml</a></td>
+  <td>UTF-8</td><td>0</td>
+  <td><a href="../Projet-PPE/dumps-text/chinois-30.txt">text</a></td>
+  <td><a href="../Projet-PPE/aspirations/chinois-30.html">html</a></td>
+  <td><a href="../Projet-PPE/contextes/chinois-30.txt">contexte</a></td>
+  <td><a href="../projet-PPE/concordances/concordance_ch-30.html">concordance</a></td>
+  </tr>
 <tr>
-
-                <td>33</td><td><a href=https://m.wenxuecity.com/myblog/75958/202311/20405.html>https://m.wenxuecity.com/myblog/75958/202311/20405.html</a></td><td><a href="../aspirations/chinois-33.html">Aspiration</a></td><td><a href="../dumps-text/chinois-33.txt">Dump</a></td><td>200</td><td>UTF-8</td><td>18</td><td><a href="../contextes/chinois-33.txt">Voir contexte</a></td><td><a href='../concordances/chinois-33.html'>Concordancier</a></td></tr>
+  <td>31</td>
+  <td>200</td>
+  <td><a href="https://www.163.com/dy/article/IK5630C80514R9KQ.html">https://www.163.com/dy/article/IK5630C80514R9KQ.html</a></td>
+  <td>UTF-8</td><td>3</td>
+  <td><a href="../Projet-PPE/dumps-text/chinois-31.txt">text</a></td>
+  <td><a href="../Projet-PPE/aspirations/chinois-31.html">html</a></td>
+  <td><a href="../Projet-PPE/contextes/chinois-31.txt">contexte</a></td>
+  <td><a href="../projet-PPE/concordances/concordance_ch-31.html">concordance</a></td>
+  </tr>
 <tr>
-
-                <td>34</td><td><a href=https://web.shobserver.com/wx/detail.do?id=162492>https://web.shobserver.com/wx/detail.do?id=162492</a></td><td><a href="../aspirations/chinois-34.html">Aspiration</a></td><td><a href="../dumps-text/chinois-34.txt">Dump</a></td><td>200</td><td>utf-8</td><td>7</td><td><a href="../contextes/chinois-34.txt">Voir contexte</a></td><td><a href='../concordances/chinois-34.html'>Concordancier</a></td></tr>
+  <td>32</td>
+  <td>200</td>
+  <td><a href="http://www.englang.cn/ShowYuanDi.asp?YDId=2216">http://www.englang.cn/ShowYuanDi.asp?YDId=2216</a></td>
+  <td>gb2312</td><td>0</td>
+  <td><a href="../Projet-PPE/dumps-text/chinois-32.txt">text</a></td>
+  <td><a href="../Projet-PPE/aspirations/chinois-32.html">html</a></td>
+  <td><a href="../Projet-PPE/contextes/chinois-32.txt">contexte</a></td>
+  <td><a href="../projet-PPE/concordances/concordance_ch-32.html">concordance</a></td>
+  </tr>
 <tr>
-
-                <td>35</td><td><a href=https://www.backchina.com/news/2023/11/22/887510.html>https://www.backchina.com/news/2023/11/22/887510.html</a></td><td><a href="../aspirations/chinois-35.html">Aspiration</a></td><td><a href="../dumps-text/chinois-35.txt">Dump</a></td><td>200</td><td>utf-8</td><td>2</td><td><a href="../contextes/chinois-35.txt">Voir contexte</a></td><td><a href='../concordances/chinois-35.html'>Concordancier</a></td></tr>
+  <td>33</td>
+  <td>200</td>
+  <td><a href="https://m.wenxuecity.com/myblog/75958/202311/20405.html">https://m.wenxuecity.com/myblog/75958/202311/20405.html</a></td>
+  <td>UTF-8</td><td>0</td>
+  <td><a href="../Projet-PPE/dumps-text/chinois-33.txt">text</a></td>
+  <td><a href="../Projet-PPE/aspirations/chinois-33.html">html</a></td>
+  <td><a href="../Projet-PPE/contextes/chinois-33.txt">contexte</a></td>
+  <td><a href="../projet-PPE/concordances/concordance_ch-33.html">concordance</a></td>
+  </tr>
 <tr>
-
-                <td>36</td><td><a href=https://m.lawtime.cn/wenda/q_40398491.html>https://m.lawtime.cn/wenda/q_40398491.html</a></td><td><a href="../aspirations/chinois-36.html">Aspiration</a></td><td><a href="../dumps-text/chinois-36.txt">Dump</a></td><td>200</td><td>utf-8</td><td>22</td><td><a href="../contextes/chinois-36.txt">Voir contexte</a></td><td><a href='../concordances/chinois-36.html'>Concordancier</a></td></tr>
+  <td>34</td>
+  <td>403</td>
+  <td><a href="https://web.shobserver.com/wx/detail.do?id=162492">https://web.shobserver.com/wx/detail.do?id=162492</a></td>
+  <td></td><td>2</td>
+  <td><a href="../Projet-PPE/dumps-text/chinois-34.txt">text</a></td>
+  <td><a href="../Projet-PPE/aspirations/chinois-34.html">html</a></td>
+  <td><a href="../Projet-PPE/contextes/chinois-34.txt">contexte</a></td>
+  <td><a href="../projet-PPE/concordances/concordance_ch-34.html">concordance</a></td>
+  </tr>
 <tr>
-
-                <td>37</td><td><a href=https://news.hsw.cn/system/2023/1119/1690202.shtml?rand=AJz3a9k4>https://news.hsw.cn/system/2023/1119/1690202.shtml?rand=AJz3a9k4</a></td><td><a href="../aspirations/chinois-37.html">Aspiration</a></td><td><a href="../dumps-text/chinois-37.txt">Dump</a></td><td>200</td><td>utf-8</td><td>2</td><td><a href="../contextes/chinois-37.txt">Voir contexte</a></td><td><a href='../concordances/chinois-37.html'>Concordancier</a></td></tr>
+  <td>35</td>
+  <td>200</td>
+  <td><a href="https://www.backchina.com/news/2023/11/22/887510.html">https://www.backchina.com/news/2023/11/22/887510.html</a></td>
+  <td>utf-8</td><td>2</td>
+  <td><a href="../Projet-PPE/dumps-text/chinois-35.txt">text</a></td>
+  <td><a href="../Projet-PPE/aspirations/chinois-35.html">html</a></td>
+  <td><a href="../Projet-PPE/contextes/chinois-35.txt">contexte</a></td>
+  <td><a href="../projet-PPE/concordances/concordance_ch-35.html">concordance</a></td>
+  </tr>
 <tr>
-
-                <td>38</td><td><a href=https://www.phillyaptrentals.com/zh-CN/blog/respectful-apartment-neighbor/>https://www.phillyaptrentals.com/zh-CN/blog/respectful-apartment-neighbor/</a></td><td><a href="../aspirations/chinois-38.html">Aspiration</a></td><td><a href="../dumps-text/chinois-38.txt">Dump</a></td><td>200</td><td>utf-8</td><td>0</td><td><a href="../contextes/chinois-38.txt">Voir contexte</a></td><td><a href='../concordances/chinois-38.html'>Concordancier</a></td></tr>
+  <td>36</td>
+  <td>200</td>
+  <td><a href="https://m.lawtime.cn/wenda/q_40398491.html">https://m.lawtime.cn/wenda/q_40398491.html</a></td>
+  <td>UTF-8</td><td>4</td>
+  <td><a href="../Projet-PPE/dumps-text/chinois-36.txt">text</a></td>
+  <td><a href="../Projet-PPE/aspirations/chinois-36.html">html</a></td>
+  <td><a href="../Projet-PPE/contextes/chinois-36.txt">contexte</a></td>
+  <td><a href="../projet-PPE/concordances/concordance_ch-36.html">concordance</a></td>
+  </tr>
 <tr>
-
-                <td>39</td><td><a href=https://www.unionesarda.it/zh/%E6%92%92%E4%B8%81%E5%B2%9B/%E5%A5%A5%E5%B0%94%E6%AF%94%E4%BA%9A%E8%A2%AB%E9%82%BB%E5%B1%85%E6%B4%BB%E6%B4%BB%E7%83%A7%E6%AD%BB%E4%BB%96%E7%9A%84%E4%BC%B4%E4%BE%A3%E6%B2%A1%E6%9C%89%E5%87%BA%E5%BA%AD-w7ird16s>https://www.unionesarda.it/zh/撒丁岛/奥尔比亚被邻居活活烧死他的伴侣没有出庭-w7ird16s</a></td><td><a href="../aspirations/chinois-39.html">Aspiration</a></td><td><a href="../dumps-text/chinois-39.txt">Dump</a></td><td>200</td><td>utf-8</td><td>2</td><td><a href="../contextes/chinois-39.txt">Voir contexte</a></td><td><a href='../concordances/chinois-39.html'>Concordancier</a></td></tr>
+  <td>37</td>
+  <td>200</td>
+  <td><a href="https://news.hsw.cn/system/2023/1119/1690202.shtml?rand=AJz3a9k4">https://news.hsw.cn/system/2023/1119/1690202.shtml?rand=AJz3a9k4</a></td>
+  <td>UTF-8</td><td>0</td>
+  <td><a href="../Projet-PPE/dumps-text/chinois-37.txt">text</a></td>
+  <td><a href="../Projet-PPE/aspirations/chinois-37.html">html</a></td>
+  <td><a href="../Projet-PPE/contextes/chinois-37.txt">contexte</a></td>
+  <td><a href="../projet-PPE/concordances/concordance_ch-37.html">concordance</a></td>
+  </tr>
 <tr>
-
-                <td>40</td><td><a href=http://www.fwsir.com/fanwen/html/fanwen_20210528141550_1098019.html>http://www.fwsir.com/fanwen/html/fanwen_20210528141550_1098019.html</a></td><td><a href="../aspirations/chinois-40.html">Aspiration</a></td><td><a href="../dumps-text/chinois-40.txt">Dump</a></td><td>200</td><td></td><td>182</td><td><a href="../contextes/chinois-40.txt">Voir contexte</a></td><td><a href='../concordances/chinois-40.html'>Concordancier</a></td></tr>
+  <td>38</td>
+  <td>200</td>
+  <td><a href="https://www.phillyaptrentals.com/zh-CN/blog/respectful-apartment-neighbor/">https://www.phillyaptrentals.com/zh-CN/blog/respectful-apartment-neighbor/</a></td>
+  <td>UTF-8</td><td>9</td>
+  <td><a href="../Projet-PPE/dumps-text/chinois-38.txt">text</a></td>
+  <td><a href="../Projet-PPE/aspirations/chinois-38.html">html</a></td>
+  <td><a href="../Projet-PPE/contextes/chinois-38.txt">contexte</a></td>
+  <td><a href="../projet-PPE/concordances/concordance_ch-38.html">concordance</a></td>
+  </tr>
 <tr>
-
-                <td>41</td><td><a href=https://www.zuowen.net/erbaizizuowen/article_35601.html>https://www.zuowen.net/erbaizizuowen/article_35601.html</a></td><td><a href="../aspirations/chinois-41.html">Aspiration</a></td><td><a href="../dumps-text/chinois-41.txt">Dump</a></td><td>200</td><td></td><td>77</td><td><a href="../contextes/chinois-41.txt">Voir contexte</a></td><td><a href='../concordances/chinois-41.html'>Concordancier</a></td></tr>
+  <td>39</td>
+  <td>200</td>
+  <td><a href="https://www.unionesarda.it/zh/%E6%92%92%E4%B8%81%E5%B2%9B/%E5%A5%A5%E5%B0%94%E6%AF%94%E4%BA%9A%E8%A2%AB%E9%82%BB%E5%B1%85%E6%B4%BB%E6%B4%BB%E7%83%A7%E6%AD%BB%E4%BB%96%E7%9A%84%E4%BC%B4%E4%BE%A3%E6%B2%A1%E6%9C%89%E5%87%BA%E5%BA%AD-w7ird16s">https://www.unionesarda.it/zh/%E6%92%92%E4%B8%81%E5%B2%9B/%E5%A5%A5%E5%B0%94%E6%AF%94%E4%BA%9A%E8%A2%AB%E9%82%BB%E5%B1%85%E6%B4%BB%E6%B4%BB%E7%83%A7%E6%AD%BB%E4%BB%96%E7%9A%84%E4%BC%B4%E4%BE%A3%E6%B2%A1%E6%9C%89%E5%87%BA%E5%BA%AD-w7ird16s</a></td>
+  <td>UTF-8</td><td>0</td>
+  <td><a href="../Projet-PPE/dumps-text/chinois-39.txt">text</a></td>
+  <td><a href="../Projet-PPE/aspirations/chinois-39.html">html</a></td>
+  <td><a href="../Projet-PPE/contextes/chinois-39.txt">contexte</a></td>
+  <td><a href="../projet-PPE/concordances/concordance_ch-39.html">concordance</a></td>
+  </tr>
 <tr>
-
-                <td>42</td><td><a href=https://zhcn.insterne.com/%E5%A6%82%E4%BD%95%E5%81%9A%E4%B8%80%E4%B8%AA%E5%A5%BD%E9%82%BB%E5%B1%85/>https://zhcn.insterne.com/如何做一个好邻居/</a></td><td><a href="../aspirations/chinois-42.html">Aspiration</a></td><td><a href="../dumps-text/chinois-42.txt">Dump</a></td><td>200</td><td>UTF-8</td><td>36</td><td><a href="../contextes/chinois-42.txt">Voir contexte</a></td><td><a href='../concordances/chinois-42.html'>Concordancier</a></td></tr>
+  <td>40</td>
+  <td>200</td>
+  <td><a href="http://www.fwsir.com/fanwen/html/fanwen_20210528141550_1098019.html">http://www.fwsir.com/fanwen/html/fanwen_20210528141550_1098019.html</a></td>
+  <td>UTF-8</td><td>42</td>
+  <td><a href="../Projet-PPE/dumps-text/chinois-40.txt">text</a></td>
+  <td><a href="../Projet-PPE/aspirations/chinois-40.html">html</a></td>
+  <td><a href="../Projet-PPE/contextes/chinois-40.txt">contexte</a></td>
+  <td><a href="../projet-PPE/concordances/concordance_ch-40.html">concordance</a></td>
+  </tr>
 <tr>
-
-                <td>43</td><td><a href=https://k.sina.cn/article_6358247220_17afb273400100vaem.html?from=edu>https://k.sina.cn/article_6358247220_17afb273400100vaem.html?from=edu</a></td><td><a href="../aspirations/chinois-43.html">Aspiration</a></td><td><a href="../dumps-text/chinois-43.txt">Dump</a></td><td>200</td><td>utf-8</td><td>7</td><td><a href="../contextes/chinois-43.txt">Voir contexte</a></td><td><a href='../concordances/chinois-43.html'>Concordancier</a></td></tr>
+  <td>41</td>
+  <td>200</td>
+  <td><a href="https://www.zuowen.net/erbaizizuowen/article_35601.html">https://www.zuowen.net/erbaizizuowen/article_35601.html</a></td>
+  <td>UTF-8</td><td>15</td>
+  <td><a href="../Projet-PPE/dumps-text/chinois-41.txt">text</a></td>
+  <td><a href="../Projet-PPE/aspirations/chinois-41.html">html</a></td>
+  <td><a href="../Projet-PPE/contextes/chinois-41.txt">contexte</a></td>
+  <td><a href="../projet-PPE/concordances/concordance_ch-41.html">concordance</a></td>
+  </tr>
 <tr>
-
-                <td>44</td><td><a href=https://www.jy135.com/qinggan/177759.html>https://www.jy135.com/qinggan/177759.html</a></td><td><a href="../aspirations/chinois-44.html">Aspiration</a></td><td><a href="../dumps-text/chinois-44.txt">Dump</a></td><td>200</td><td>gbk</td><td>50</td><td><a href="../contextes/chinois-44.txt">Voir contexte</a></td><td><a href='../concordances/chinois-44.html'>Concordancier</a></td></tr>
+  <td>42</td>
+  <td>200</td>
+  <td><a href="https://zhcn.insterne.com/%E5%A6%82%E4%BD%95%E5%81%9A%E4%B8%80%E4%B8%AA%E5%A5%BD%E9%82%BB%E5%B1%85/">https://zhcn.insterne.com/%E5%A6%82%E4%BD%95%E5%81%9A%E4%B8%80%E4%B8%AA%E5%A5%BD%E9%82%BB%E5%B1%85/</a></td>
+  <td>UTF-8</td><td>11</td>
+  <td><a href="../Projet-PPE/dumps-text/chinois-42.txt">text</a></td>
+  <td><a href="../Projet-PPE/aspirations/chinois-42.html">html</a></td>
+  <td><a href="../Projet-PPE/contextes/chinois-42.txt">contexte</a></td>
+  <td><a href="../projet-PPE/concordances/concordance_ch-42.html">concordance</a></td>
+  </tr>
 <tr>
-
-                <td>45</td><td><a href=https://wap.peopleapp.com/article/6724093/6595674>https://wap.peopleapp.com/article/6724093/6595674</a></td><td><a href="../aspirations/chinois-45.html">Aspiration</a></td><td><a href="../dumps-text/chinois-45.txt">Dump</a></td><td>200</td><td></td><td>0</td><td><a href="../contextes/chinois-45.txt">Voir contexte</a></td><td><a href='../concordances/chinois-45.html'>Concordancier</a></td></tr>
+  <td>43</td>
+  <td>200</td>
+  <td><a href="https://k.sina.cn/article_6358247220_17afb273400100vaem.html?from=edu">https://k.sina.cn/article_6358247220_17afb273400100vaem.html?from=edu</a></td>
+  <td>UTF-8</td><td>4</td>
+  <td><a href="../Projet-PPE/dumps-text/chinois-43.txt">text</a></td>
+  <td><a href="../Projet-PPE/aspirations/chinois-43.html">html</a></td>
+  <td><a href="../Projet-PPE/contextes/chinois-43.txt">contexte</a></td>
+  <td><a href="../projet-PPE/concordances/concordance_ch-43.html">concordance</a></td>
+  </tr>
 <tr>
-
-                <td>46</td><td><a href=https://fanqienovel.com/reader/7303511599749759498>https://fanqienovel.com/reader/7303511599749759498</a></td><td><a href="../aspirations/chinois-46.html">Aspiration</a></td><td><a href="../dumps-text/chinois-46.txt">Dump</a></td><td>200</td><td>utf-8</td><td>1</td><td><a href="../contextes/chinois-46.txt">Voir contexte</a></td><td><a href='../concordances/chinois-46.html'>Concordancier</a></td></tr>
+  <td>44</td>
+  <td>200</td>
+  <td><a href="https://www.jy135.com/qinggan/177759.html">https://www.jy135.com/qinggan/177759.html</a></td>
+  <td>UTF-8</td><td>10</td>
+  <td><a href="../Projet-PPE/dumps-text/chinois-44.txt">text</a></td>
+  <td><a href="../Projet-PPE/aspirations/chinois-44.html">html</a></td>
+  <td><a href="../Projet-PPE/contextes/chinois-44.txt">contexte</a></td>
+  <td><a href="../projet-PPE/concordances/concordance_ch-44.html">concordance</a></td>
+  </tr>
 <tr>
-
-                <td>47</td><td><a href=https://hunan.voc.com.cn/article/202311/202311070928427852.html>https://hunan.voc.com.cn/article/202311/202311070928427852.html</a></td><td><a href="../aspirations/chinois-47.html">Aspiration</a></td><td><a href="../dumps-text/chinois-47.txt">Dump</a></td><td>200</td><td></td><td>14</td><td><a href="../contextes/chinois-47.txt">Voir contexte</a></td><td><a href='../concordances/chinois-47.html'>Concordancier</a></td></tr>
+  <td>45</td>
+  <td>200</td>
+  <td><a href="https://wap.peopleapp.com/article/6724093/6595674">https://wap.peopleapp.com/article/6724093/6595674</a></td>
+  <td>utf-8</td><td>0</td>
+  <td><a href="../Projet-PPE/dumps-text/chinois-45.txt">text</a></td>
+  <td><a href="../Projet-PPE/aspirations/chinois-45.html">html</a></td>
+  <td><a href="../Projet-PPE/contextes/chinois-45.txt">contexte</a></td>
+  <td><a href="../projet-PPE/concordances/concordance_ch-45.html">concordance</a></td>
+  </tr>
 <tr>
-
-                <td>48</td><td><a href=https://v.hebnews.cn/2023-11/13/content_9097022.htm>https://v.hebnews.cn/2023-11/13/content_9097022.htm</a></td><td><a href="../aspirations/chinois-48.html">Aspiration</a></td><td><a href="../dumps-text/chinois-48.txt">Dump</a></td><td>200</td><td></td><td>3</td><td><a href="../contextes/chinois-48.txt">Voir contexte</a></td><td><a href='../concordances/chinois-48.html'>Concordancier</a></td></tr>
+  <td>46</td>
+  <td>200</td>
+  <td><a href="https://fanqienovel.com/reader/7303511599749759498">https://fanqienovel.com/reader/7303511599749759498</a></td>
+  <td>UTF-8</td><td>1</td>
+  <td><a href="../Projet-PPE/dumps-text/chinois-46.txt">text</a></td>
+  <td><a href="../Projet-PPE/aspirations/chinois-46.html">html</a></td>
+  <td><a href="../Projet-PPE/contextes/chinois-46.txt">contexte</a></td>
+  <td><a href="../projet-PPE/concordances/concordance_ch-46.html">concordance</a></td>
+  </tr>
 <tr>
-
-                <td>49</td><td><a href=https://www.kwongwah.com.my/20231110/%E5%B1%8B%E5%A0%86%E6%97%A7%E7%89%A9-%E9%82%BB%E5%B1%85%E5%A4%B4%E7%97%9B-%E4%BA%A4%E9%80%9A%E5%8F%97%E9%98%BB-%E7%B1%B3%E9%83%BD%E5%B8%82%E5%8E%85%E6%89%A7%E6%B3%95%E5%91%98%E4%B8%8A%E9%97%A8/>https://www.kwongwah.com.my/20231110/屋堆旧物-邻居头痛-交通受阻-米都市厅执法员上门/</a></td><td><a href="../aspirations/chinois-49.html">Aspiration</a></td><td><a href="../dumps-text/chinois-49.txt">Dump</a></td><td>200</td><td>utf-8</td><td>4</td><td><a href="../contextes/chinois-49.txt">Voir contexte</a></td><td><a href='../concordances/chinois-49.html'>Concordancier</a></td></tr>
+  <td>47</td>
+  <td>200</td>
+  <td><a href="https://hunan.voc.com.cn/article/202311/202311070928427852.html">https://hunan.voc.com.cn/article/202311/202311070928427852.html</a></td>
+  <td>utf-8</td><td>3</td>
+  <td><a href="../Projet-PPE/dumps-text/chinois-47.txt">text</a></td>
+  <td><a href="../Projet-PPE/aspirations/chinois-47.html">html</a></td>
+  <td><a href="../Projet-PPE/contextes/chinois-47.txt">contexte</a></td>
+  <td><a href="../projet-PPE/concordances/concordance_ch-47.html">concordance</a></td>
+  </tr>
 <tr>
-
-                <td>50</td><td><a href=https://www.chinatimes.com/cn/realtimenews/20231111002147-260405?ctrack=pc_life_headl_p01&chdtv>https://www.chinatimes.com/cn/realtimenews/20231111002147-260405?ctrack=pc_life_headl_p01&chdtv</a></td><td><a href="../aspirations/chinois-50.html">Aspiration</a></td><td><a href="../dumps-text/chinois-50.txt">Dump</a></td><td>403</td><td>UTF-8</td><td>21</td><td><a href="../contextes/chinois-50.txt">Voir contexte</a></td><td><a href='../concordances/chinois-50.html'>Concordancier</a></td></tr>
-        </table>
-    </body>
-    </html>
+  <td>48</td>
+  <td>200</td>
+  <td><a href="https://v.hebnews.cn/2023-11/13/content_9097022.htm">https://v.hebnews.cn/2023-11/13/content_9097022.htm</a></td>
+  <td>utf-8</td><td>0</td>
+  <td><a href="../Projet-PPE/dumps-text/chinois-48.txt">text</a></td>
+  <td><a href="../Projet-PPE/aspirations/chinois-48.html">html</a></td>
+  <td><a href="../Projet-PPE/contextes/chinois-48.txt">contexte</a></td>
+  <td><a href="../projet-PPE/concordances/concordance_ch-48.html">concordance</a></td>
+  </tr>
+<tr>
+  <td>49</td>
+  <td>200</td>
+  <td><a href="https://www.kwongwah.com.my/20231110/%E5%B1%8B%E5%A0%86%E6%97%A7%E7%89%A9-%E9%82%BB%E5%B1%85%E5%A4%B4%E7%97%9B-%E4%BA%A4%E9%80%9A%E5%8F%97%E9%98%BB-%E7%B1%B3%E9%83%BD%E5%B8%82%E5%8E%85%E6%89%A7%E6%B3%95%E5%91%98%E4%B8%8A%E9%97%A8/">https://www.kwongwah.com.my/20231110/%E5%B1%8B%E5%A0%86%E6%97%A7%E7%89%A9-%E9%82%BB%E5%B1%85%E5%A4%B4%E7%97%9B-%E4%BA%A4%E9%80%9A%E5%8F%97%E9%98%BB-%E7%B1%B3%E9%83%BD%E5%B8%82%E5%8E%85%E6%89%A7%E6%B3%95%E5%91%98%E4%B8%8A%E9%97%A8/</a></td>
+  <td>UTF-8</td><td>0</td>
+  <td><a href="../Projet-PPE/dumps-text/chinois-49.txt">text</a></td>
+  <td><a href="../Projet-PPE/aspirations/chinois-49.html">html</a></td>
+  <td><a href="../Projet-PPE/contextes/chinois-49.txt">contexte</a></td>
+  <td><a href="../projet-PPE/concordances/concordance_ch-49.html">concordance</a></td>
+  </tr>
+<tr>
+  <td>50</td>
+  <td>403</td>
+  <td><a href="https://www.chinatimes.com/cn/realtimenews/20231111002147-260405?ctrack=pc_life_headl_p01&chdtv">https://www.chinatimes.com/cn/realtimenews/20231111002147-260405?ctrack=pc_life_headl_p01&chdtv</a></td>
+  <td></td><td>2</td>
+  <td><a href="../Projet-PPE/dumps-text/chinois-50.txt">text</a></td>
+  <td><a href="../Projet-PPE/aspirations/chinois-50.html">html</a></td>
+  <td><a href="../Projet-PPE/contextes/chinois-50.txt">contexte</a></td>
+  <td><a href="../projet-PPE/concordances/concordance_ch-50.html">concordance</a></td>
+  </tr>
+</table>
+</body></html>
