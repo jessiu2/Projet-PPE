@@ -9,15 +9,15 @@ basename=$2
 
 echo "<lang=\"$basename\">" > "ITRAMEUR/$folder-$basename.txt"
 
-for filename in $(ls $folder/${basename}-*.txt);
+for filename in $(ls ${folder}/${basename}-*.txt);
 do
-    page=$(basename -s .txt $filename)
+    page=$(basename -s .txt "$filename")
     content=$(cat $filename)
 
 
-    cleaned=$(echo $content | sed 's/&/&amp;/g')
-    cleaned=$(echo $cleaned | sed 's/</&lt;/g')
-    cleaned=$(echo $cleaned | sed 's/</&gt;/g')
+    cleaned=$(echo "$content" | sed 's/&/&amp;/g')
+    cleaned=$(echo "$cleaned" | sed 's/</&lt;/g')
+    cleaned=$(echo "$cleaned" | sed 's/>/&gt;/g')
 
  	echo "<page=\"$page\">" >> "ITRAMEUR/$folder-$basename.txt"
 
