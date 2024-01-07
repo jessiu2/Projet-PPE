@@ -39,3 +39,7 @@ j'ai essayé différentes méthodes, y compris le changement de la police, la co
 Même souci pour le chinois quant à l'affichage des liens sur le tableau, et je l'ai également résolu avec la fonction citée plus haut (urldecode)
 Quant au nuage de mots, je n'ai rencontré aucun problème avec le français, contrairement aux autres langues
 Corrigé pour le chinois en modifiant le chemin vers la police :'/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc',
+
+Jing LIU : Au cours de traitement du corpus en chinois, j'ai trouvé beaucoup de problèmes inattendu à cause des opérations des scripts. Zineb m'a aidé à résoudre ces problèmes, mais on n'a pas obtenus les résultats prévus surtout les cordonances ne s'affiche pas bien. Donc j'ai fait référence aux scripts du prof et des étudiants anciens pour créer un script pratique pour traiter les corpus en chinois. Ensuite, basé sur les fichiers dumps-text, aspirations, contextes et cooccurrences, on a généré un tableau correspondant. 
+La partie la plus difficile est le corpus iTrameur, j'ai pas bien compris l'opération de ce script.J'ai passé plusieurs jours pour lire le guide sur Internet et chercher des scripts correspondants. Zineb a réalisé le fichier pour les nuages de mot du corpus chinois et l'iTrameur, basé sur son travail ,j'ai fait une analyse pour le corpus. 
+Enfin, j'ai créé le site pour afficher notre travail sur le web et ai compléter les détails nécessaires avec mes collègues du groupe.
