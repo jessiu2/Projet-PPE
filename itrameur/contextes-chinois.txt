@@ -1,5 +1,5 @@
 <lang="chinois">
-<page=filename\>
+<page="filename">
 <text>
      * BBC英伦网
 
@@ -24,7 +24,7 @@
 亚洲反应为何激烈
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
      * 主页
 
@@ -57,7 +57,7 @@
    1 他们堵住了我的车道
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
      * 故障排除技术说明
 
@@ -204,7 +204,7 @@ OSPF 邻居问题的典型原因
    由于资源不足（如 CPU 利用率高或内存不足），无法处理 OSPF HELLO 数据包。 show memory summary show
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    无障碍 关怀版
 
@@ -326,17 +326,17 @@ OSPF 邻居问题的典型原因
    家园，永不退缩!返回搜狐，查看更多
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
 
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
 
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    nej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=]
 
@@ -403,7 +403,7 @@ OSPF 邻居问题的典型原因
    互相理解，她帮忙进行了装修，而且装得更好，也很感谢她。”
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
                                   回目录
                                    邻居
@@ -438,7 +438,7 @@ OSPF 邻居问题的典型原因
                                  [INS: :INS]
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
      * 人际关系
 
@@ -667,7 +667,7 @@ OSPF 邻居问题的典型原因
    广告
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
      * ·纽约油价２６日下跌(03:19)
 
@@ -698,17 +698,17 @@ OSPF 邻居问题的典型原因
    [shareImg.jpg]
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
 
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
 
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    logo 付费资讯 公司介绍 联系我们 用户注册
 
@@ -754,7 +754,7 @@ OSPF 邻居问题的典型原因
    ______________________________
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    ____________________ (BUTTON)
    下载APP
@@ -806,7 +806,7 @@ OSPF 邻居问题的典型原因
    门卫法语是Concierge，门卫要么住在同一栋楼的入口处，要么住在楼栋附近，只要有问题或者家里有什么问题都可以找门卫问一问。
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    ____________________
 
@@ -864,7 +864,7 @@ OSPF 邻居问题的典型原因
    如果涉及的骚扰实际上是对您安全的威胁，则可以考虑采取另一种方式，例如向安全小组寻求帮助以评估威胁。
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
 
    Router Lab 实验文档
@@ -961,7 +961,7 @@ Neighbor Advertisement 发送¶
      __________________________________________________________________
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    #alternate
 
@@ -1056,7 +1056,7 @@ from torch_geometric.datasets import KarateClub
    【图神经网络】GraphSAGE 无监督训练源码剖析
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    #alternate My Crazy Paris » Feed My Crazy Paris » Comments Feed My
    Crazy Paris » 你的邻居晚上夜夜蹦迪，白天翩翩起舞？治理攻略在这里… Comments Feed alternate
@@ -1186,7 +1186,7 @@ from torch_geometric.datasets import KarateClub
 Post Navigation
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    首页 > 我苏网 > 无锡
 
@@ -1204,7 +1204,7 @@ Post Navigation
    老王身体不舒服之后，李女士也送他去医院并且陪护 。”
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
      您的位置：首页 / 教学园地 / 学生习作
 
@@ -1220,7 +1220,7 @@ Post Navigation
    会带我们三个孩子去公园玩，放风筝、骑自行车，在沙滩上建城堡，好玩极了。
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    0
 
@@ -1269,7 +1269,7 @@ Post Navigation
    和这样的人相处容易丢掉防备；
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    Main>   NEWS
 
@@ -1353,7 +1353,7 @@ Post Navigation
    和经济环境等的因素。
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    [ ] 开关目录
 
@@ -1382,7 +1382,7 @@ Post Navigation
    家与杀人魔展开对决……
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    您当前的位置 ： 北方网 > 新闻中心 > 天津 > 视频报道
 
@@ -1391,7 +1391,7 @@ Post Navigation
    扫码阅读手机版
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    网易首页 > 网易号 > 正文 申请入驻
 
@@ -1437,7 +1437,7 @@ Post Navigation
    有没有打扰到你？
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
      * [03.jpg]
 
@@ -1506,7 +1506,7 @@ Post Navigation
    4.邻里纠纷
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
      * 2024房产税大涨，发现一处错误，今天找city降评估价
      * 考虑砍树，找了几个砍树公司询价，是几笔大开销
@@ -1552,7 +1552,7 @@ Post Navigation
    今天是个好日子，两个房子的树枝问题都有了解决的眉目，希望这两个邻居能尽快执行。
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    [logo-top.png] [open-top.png]
 
@@ -1574,7 +1574,7 @@ Post Navigation
    间会组织些活动，大人聚聚，孩子一起玩玩。孩子上大学甚至是进入初、高中后，朋友间相互走动的机会就少很多，甚至慢慢消失殆尽。
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    [887510.html]
 
@@ -1588,7 +1588,7 @@ Post Navigation
    来源：倍可亲(backchina.com)
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    问答详情
 
@@ -1660,7 +1660,7 @@ Post Navigation
        沧州律师 沧州律师
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    首页 > 新闻 > 九州 > 社会新闻 > 正文
 
@@ -1673,12 +1673,12 @@ Post Navigation
    地方流，下雨时雨水会淤积在他家门前的马路上。随后，两家人展开明里暗里的较量。
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
 
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    21 novembre 2023 alle 14:36
 
@@ -1693,7 +1693,7 @@ Post Navigation
    该女子没有出现在萨萨里巡回法院的法庭上作证：事实上，该男子死后，她搬到了原籍国波兰，并且没有回应检察官丹尼尔·罗莎的传票：“我最近几天收到了她
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    [ ] 开关目录
 
@@ -1714,7 +1714,7 @@ Post Navigation
      * 漢語詞元
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
      * 报告材料
 
@@ -2276,7 +2276,7 @@ Post Navigation
      * 我的家作文
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    当前位置：作文网>作文训练>200字作文> 邻居作文
    我要投稿 投诉建议
@@ -2498,7 +2498,7 @@ Post Navigation
      * 过春节的作文200字
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    礼节和建议 礼貌与文明
 
@@ -2592,7 +2592,7 @@ Post Navigation
 Enjoy similar articles
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    nej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=]
 
@@ -2623,7 +2623,7 @@ Enjoy similar articles
    发布于：辽宁
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    投诉建议 我要投稿
 
@@ -2794,12 +2794,12 @@ Enjoy similar articles
      * 分手的伤感语录86条
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
 
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
 与GNZ48的故事
 
@@ -2808,7 +2808,7 @@ Enjoy similar articles
    本章字数：3339字更新时间：2023-11-20
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    [BUTTON Input] (not implemented)_____
 
@@ -2861,7 +2861,7 @@ Enjoy similar articles
    （一审：余画 二审：文杰 三审：禹振华）
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
           + 视觉
 
@@ -2882,7 +2882,7 @@ Enjoy similar articles
    下一篇：从青丝到白发！来看光影中的守护与传承
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
      * 重点新闻
 
@@ -2904,7 +2904,7 @@ Enjoy similar articles
    亚罗士打市厅在脸书发布市厅执法单位是根据亚罗士打推事庭发出搬迁和关闭令，联合哥打士打卫生局、警方及固体废料管理机构展开这项联合取缔行动。
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    Apply Reset
    Cpanel
@@ -2935,7 +2935,7 @@ Enjoy similar articles
      fete de voisin1
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
      生活
 
@@ -3033,7 +3033,7 @@ Enjoy similar articles
        政治
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    31149126____________ 31149126,.在法国，邻居噪音扰民怎么办？,.2017-10-16 08:50:47
    ,.204278,.康凯凝、海外编辑部,.middle
@@ -3082,7 +3082,7 @@ Enjoy similar articles
    如果您的健康状况因为噪音滋扰而恶化的话可以提交医疗证明。
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
           + 配置静态 ARP
           + 设置动态 ARP 条目的超时
@@ -3158,12 +3158,12 @@ GUI 程序
    投稿者:
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
 
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    选择版本
 

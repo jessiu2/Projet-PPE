@@ -1,5 +1,5 @@
 <lang="arabe">
-<page=filename\>
+<page="filename">
 <text>
    #alternate عدل ويكيبيديا (ar) تلقيمة أتوم ويكيبيديا
 
@@ -620,7 +620,7 @@
      * (BUTTON) تبديل عرض المحتوى المحدود
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    #wikiHow (ar) alternate alternate alternate alternate alternate
    alternate alternate alternate alternate alternate alternate alternate
@@ -1192,7 +1192,7 @@
    372
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    #publisher
 
@@ -1416,7 +1416,7 @@
 التعليقات المنشورة لا تعبر عن رأي الايــام وإنما تعبر عن رأي أصحابها
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    #alternate alternate alternate alternate alternate
 
@@ -1525,7 +1525,7 @@ Share this:
    Property Finder
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    #موقع المعلومات « الخلاصة موقع المعلومات « خلاصة التعليقات موقع
    المعلومات « ماهو مفهوم الجار خلاصة التعليقات alternate alternate
@@ -1813,7 +1813,7 @@ Share this:
    ____________________ (BUTTON) أكتب كلمة البحث
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
      * التصنيفات
      * أجدد المقالات
@@ -2087,7 +2087,7 @@ Share this:
    IFRAME: https://www.googletagmanager.com/ns.html?id=GTM-K5733BJ
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    السبت 06 يناير 2024
 
@@ -2389,7 +2389,7 @@ Share this:
    (BUTTON) لاحقا (BUTTON) اشترك
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    #alternate alternate
 
@@ -2761,7 +2761,7 @@ Share this:
    [clicksegypt.png]
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    #alternate alternate
 
@@ -3134,7 +3134,7 @@ Share this:
    [clicksegypt.png]
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    #alternate alternate
 
@@ -3380,7 +3380,7 @@ Share this:
    (BUTTON______________) بحث (BUTTON______________) إلغاء
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    Skip to main content
 
@@ -3555,7 +3555,7 @@ Changed
    www.alaraby.com التلفزيون العربي - جميع الحقوق محفوظة 2024 ©
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
      *
      * ____________________ (BUTTON) 
@@ -3655,7 +3655,7 @@ Changed
    small logo of wifi4games جميع الحقوق محفوظة لفريق عمل WIFI4Games
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    #alternate alternate
 
@@ -4002,7 +4002,7 @@ Changed
    [clicksegypt.png]
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    السبت 06 يناير 2024
 
@@ -4304,7 +4304,7 @@ Changed
    (BUTTON) لاحقا (BUTTON) اشترك
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    السبت، 06 يناير 2024 09:02 م
    (BUTTON) search here ____________________
@@ -4694,7 +4694,7 @@ Changed
    الرجوع الى أعلى الصفحة
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    #alternate alternate
 
@@ -4928,7 +4928,7 @@ Changed
    (BUTTON______________) بحث (BUTTON______________) إلغاء
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    #alternate alternate
 
@@ -5170,7 +5170,7 @@ Changed
    (BUTTON______________) بحث (BUTTON______________) إلغاء
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    #القلعة نيوز « الخلاصة
 
@@ -5359,7 +5359,7 @@ Changed
      * الرئيسية
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    #جهينة نيوز « الخلاصة
 
@@ -5559,7 +5559,7 @@ Changed
    Email : info [at] johinanews.com
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    السبت 06 يناير 2024
 
@@ -5857,7 +5857,7 @@ Changed
    (BUTTON) لاحقا (BUTTON) اشترك
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    #alternate alternate
 
@@ -6484,7 +6484,7 @@ Changed
 © جميع حقوق النشر محفوظة لموقع الوطن
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    #alternate
 
@@ -6772,7 +6772,7 @@ Changed
    (BUTTON) بحث (BUTTON) إلغاء
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    <gt;lt;> تجاوز إلى المحتوى الرئيسي
 
@@ -6970,7 +6970,7 @@ Changed
      * 
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    ____________________ (BUTTON)
      * تسجيل دخول
@@ -7264,7 +7264,7 @@ Changed
    [Cairo&amp;6599a28fdcb17]
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    #القدس العربي « كيف ستلعب موريتانيا أوراقها كقنطرة وصل بين جاراتها
    المغاربية والإفريقية؟ خلاصة التعليقات alternate alternate alternate
@@ -7894,7 +7894,7 @@ Changed
    جميع الحقوق محفوظة © 2024 صحيفة القدس العربي
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    السبت 06 يناير 2024
    facebook twitter youtube instagram rss feed
@@ -8054,7 +8054,7 @@ Changed
    (BUTTON) بحث (BUTTON) إلغاء
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
 
      *
@@ -8258,7 +8258,7 @@ Changed
    "
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    #alternate
 
@@ -8569,7 +8569,7 @@ Changed
    To Top
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    #alternate آخر الأخبار من CNN بالعربية متفرقات
 
@@ -8643,7 +8643,7 @@ Changed
    Reserved.
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    #Le12.ma « الخلاصة Le12.ma « خلاصة التعليقات Le12.ma « عند الجيران..
    وفاة 4 أشخاص من عائلة واحدة اختناقا بغاز سخان الماء خلاصة التعليقات
@@ -8885,7 +8885,7 @@ Changed
    العشاء --:--
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    #alternate
 
@@ -9064,7 +9064,7 @@ Changed
    (BUTTON) بحث (BUTTON) إلغاء
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    pen
    pen
@@ -9371,7 +9371,7 @@ Changed
    جميع الحقوق محفوظة لمؤسسة المرصد @ 2024
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    ads
 
@@ -9569,7 +9569,7 @@ Changed
    (BUTTON) بحث (BUTTON) إلغاء
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    #alternate آخر الأخبار من CNN بالعربية متفرقات
 
@@ -9643,7 +9643,7 @@ Changed
    Reserved.
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    #Le12.ma « الخلاصة Le12.ma « خلاصة التعليقات Le12.ma « عند الجيران..
    وفاة 4 أشخاص من عائلة واحدة اختناقا بغاز سخان الماء خلاصة التعليقات
@@ -9885,7 +9885,7 @@ Changed
    العشاء --:--
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    رئيس مجلس الإدارة : د. خالد بن ثاني آل ثاني
 
@@ -10205,7 +10205,7 @@ Changed
    تصميم وتطوير الشرق الشرق
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    #alternate alternate
 
@@ -10451,7 +10451,7 @@ Changed
    (BUTTON______________) بحث (BUTTON______________) إلغاء
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    #alternate alternate
 
@@ -10870,7 +10870,7 @@ Changed
    [clicksegypt.png]
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    #alternate alternate
 
@@ -11117,7 +11117,7 @@ Changed
    (BUTTON______________) بحث (BUTTON______________) إلغاء
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
     #أكادير24 | Agadir24 « الخلاصة أكادير24 | Agadir24 « خلاصة التعليقات
    أكادير24 | Agadir24 « أكادير : إشهار بالضوضاء و الضجيج لمحل تجاري معروف
@@ -11396,7 +11396,7 @@ Changed
    إرسال كلمة المرور
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    Captcha Page
 
@@ -11426,7 +11426,7 @@ We apologize for the inconvenience...
    on January 06 2024, 18:57:30 UTC
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
     #صحيفة أثير الإلكترونية « الخلاصة صحيفة أثير الإلكترونية « خلاصة
    التعليقات صحيفة أثير الإلكترونية « واقعة الجيران في المعبيلة؛ ما الرأي
@@ -11662,12 +11662,12 @@ We apologize for the inconvenience...
    (BUTTON) (BUTTON)
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    You have to enable JavaScript to run this app.
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    #شبكة بلجيكا 24 الإخبارية « الخلاصة شبكة بلجيكا 24 الإخبارية « خلاصة
    التعليقات alternate alternate alternate
@@ -11875,7 +11875,7 @@ We apologize for the inconvenience...
    برجاء دعمنا عن طريق تعطيل إضافة Adblock
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    #alternate alternate
 
@@ -12145,7 +12145,7 @@ We apologize for the inconvenience...
    (BUTTON______________) بحث (BUTTON______________) إلغاء
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    Skip to main content
 
@@ -12343,7 +12343,7 @@ Changed
    www.alaraby.com التلفزيون العربي - جميع الحقوق محفوظة 2024 ©
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    #alternate alternate
 
@@ -12712,7 +12712,7 @@ Changed
    [clicksegypt.png]
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
      * التصنيفات
      * أجدد المقالات
@@ -13023,7 +13023,7 @@ Changed
    IFRAME: https://www.googletagmanager.com/ns.html?id=GTM-K5733BJ
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    السبت 06 يناير 2024
    facebook twitter youtube instagram rss feed
@@ -13162,7 +13162,7 @@ Changed
    (BUTTON) بحث (BUTTON) إلغاء
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    [tr?id=754610532623350&amp;ev=PageView&amp;noscript=1] #العرب في بريطانيا - AUK
    » Feed العرب في بريطانيا - AUK » Comments Feed العرب في بريطانيا - AUK

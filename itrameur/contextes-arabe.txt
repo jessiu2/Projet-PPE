@@ -1,5 +1,5 @@
 <lang="arabe">
-<page=filename\>
+<page="filename">
 <text>
    الموسوعة
      * الصفحة الرئيسية
@@ -422,7 +422,7 @@
      * قول عنترة:
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
      * التعاملات الاجتماعية
 
@@ -639,7 +639,7 @@
      * كن هادئًا ومتعقلًا، فهذا له تأثير كبير في تخفيف حدة الموقف وتجنب
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
      * الصفحة الرئيسية
      * منوعات
@@ -727,7 +727,7 @@
    يعوضون عني اذية هذا الجار السيئ الذي لا نتمنى له سوى الهداية والغفران
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
 
      * للبيع
@@ -793,7 +793,7 @@ Share this:
    نقر هنا للعثور على عقارات للإيجار في البحرين
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    #موقع المعلومات « الخلاصة موقع المعلومات « خلاصة التعليقات موقع
    المعلومات « ماهو مفهوم الجار خلاصة التعليقات alternate alternate
@@ -944,7 +944,7 @@ Share this:
    إلى جار آخر، وهكذا تدور على أكثر من عشرة
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
      /
 
@@ -1044,7 +1044,7 @@ Share this:
    وفي هذا الباب قصة له، في امرأة محتاجة جاءته، فقالت: أنا جارتك، قال: كم
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    BBC
 
@@ -1066,7 +1066,7 @@ Share this:
 -----
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    الرئيسية [arrowBread.png?2] المرأة والمنوعات
 
@@ -1160,7 +1160,7 @@ Share this:
    الأربعاء، 28 يونيو 2023 07:00 م
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    الرئيسية [arrowBread.png?2] سياسة
 
@@ -1222,7 +1222,7 @@ Share this:
 -----
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
 منوعات
 
@@ -1286,7 +1286,7 @@ Share this:
    [356.png] الرسالة
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    السبت 6 يناير / يناير 2024
 
@@ -1323,7 +1323,7 @@ Changed
    وبعد التحقيقات والتحريات المكثفة، تبين أن أحد المقيمين في شارع مقابل
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    تتعدى على الشروط و الأحكام.
 
@@ -1361,7 +1361,7 @@ Changed
 -----
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    وتبدأ اللقطات المؤلمة، بصورة رجل يرتدي ملابس سوداء ويمشي بغضب خارج شقة
    جيرانه في الطابق العلوي من مجمع سكني معروف، وإذا بامرأة تخرج من الشقة
@@ -1421,7 +1421,7 @@ Changed
    أنها جيسون باس، وتبلغ من العمر 47 عاما.
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    BBC
 
@@ -1449,7 +1449,7 @@ Changed
 -----
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
 تحقيقات برلمانية
 
@@ -1557,7 +1557,7 @@ Changed
 -----
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
 توك شو
 
@@ -1578,7 +1578,7 @@ Changed
    الكهربائي باوسيم، وذلك حسبما أذاعت فضائية العربية.
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
 
    سردت إسراء زوجة موسى ضحية القتل على يد جيرانه بعد استغاثتها به، وذلك
@@ -1631,7 +1631,7 @@ Changed
    أتهجم عليه وأنا بكنس البيت مرتكب الجريمة الجار
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    الرئيسية / منوعات
 
@@ -1714,7 +1714,7 @@ Changed
    "حملت الجندل والحديد وكل شيء ثقيل فلم أحمل شيئاً أثقل من جار السوء،
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    banner
 
@@ -1828,7 +1828,7 @@ Changed
    فقل رسول الله صلى الله عليه وسلم: (لا يؤمن أحدكم حتى يأمن جاره بوائقه)،
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    BBC
 
@@ -1864,7 +1864,7 @@ Changed
 -----
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
 
 تحرير عدد من المخالفات المرورية في حملات خلال 24 ساعة
@@ -1919,7 +1919,7 @@ Changed
    بمكانه مؤكدا عدم رؤيته له إطلاقًا، وعندما ذهبنا إلى قسم الشرطة، لمتابعة
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
 ملفات وحوارات
 
@@ -1957,7 +1957,7 @@ Changed
    جميع محاولاتها باءت بالفشل، فقامت باحتضان طفليها حتى فارقوا الحياة.
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
 
 
@@ -1979,7 +1979,7 @@ Changed
    حياته، ويحكمه البعض ممن ارتضوا لأنفسهم الأكل من خيرات بلدهم والارتماء
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    منذ 7 ايام — الأحد — 31 / ديسمبر / 2023
 
@@ -2010,7 +2010,7 @@ Changed
 -----
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    #القدس العربي « كيف ستلعب موريتانيا أوراقها كقنطرة وصل بين جاراتها
    المغاربية والإفريقية؟ خلاصة التعليقات alternate alternate alternate
@@ -2063,7 +2063,7 @@ Changed
        إفريقية غير المغرب التي تستقبل المهاجرين الأفارقة وتقوم بتسوية
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
 -----
    السبت 30/ديسمبر/2023 - 07:23 م 12/30/2023 7:23:08 PM
@@ -2091,7 +2091,7 @@ Changed
    وقالهم إنه هيعمل كدة في خاله لو مجوزهوش بنته، بعدها عمل جريمته البشعة.
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
        الارشيف / اخبار السعوديه
 
@@ -2132,7 +2132,7 @@ Changed
        وبعد أن قام ذلك الجار بتطليق زوجته، عز ذلك على والد الفتاة وأراد أن
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    x
 
@@ -2172,7 +2172,7 @@ Changed
 -----
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    Reserved.
 
@@ -2200,7 +2200,7 @@ Changed
    أخذت المواجهة في حفل عيد ميلاد أقيم العام الماضي في منطقة فورست هيلز
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
 -----
    #Le12.ma « الخلاصة Le12.ma « خلاصة التعليقات Le12.ma « عند الجيران..
@@ -2218,7 +2218,7 @@ Changed
    Twitter
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
 
    وذكر هنيدي، في حواره مع الإعلامي محمود سعد في برنامج "سولد أوت كامل
@@ -2243,7 +2243,7 @@ Changed
    الجمعة 29/ديسمبر/2023 - 11:20 م 12/29/2023 11:20:59 PM
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    للعلاج، ولكنه دائم الرفض، وتحدث بينهما مشادات كلامية وضرب وإهانة
    وأحيانا طرد خارج شقة الزوجية، ويرد عليها قائلا «انتى عايزه تفضحيني بين
@@ -2278,7 +2278,7 @@ Changed
    خلع زوجها
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
 -----
 حوادث وقضايا
@@ -2294,7 +2294,7 @@ Changed
    للشقة.
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    Reserved.
 
@@ -2322,7 +2322,7 @@ Changed
    أخذت المواجهة في حفل عيد ميلاد أقيم العام الماضي في منطقة فورست هيلز
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
 -----
    #Le12.ma « الخلاصة Le12.ma « خلاصة التعليقات Le12.ma « عند الجيران..
@@ -2340,7 +2340,7 @@ Changed
    Twitter
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    نعيمة عبدالوهاب المطاوعة
 
@@ -2409,7 +2409,7 @@ Changed
    بالسؤال عنه ومشاركته المناسبات، فقد قال رسولنا الكريم: ما زال جبريل
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
 منوعات
 
@@ -2473,7 +2473,7 @@ Changed
    [356.png] الرسالة
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    الرئيسية [arrowBread.png?2] سياسة
 
@@ -2539,7 +2539,7 @@ Changed
 النبى وصى على سابع جار
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
 -----
    وفقا للقانون ..
@@ -2554,7 +2554,7 @@ Changed
    قانون العقوبات، حيث يعتبرها جريمة قانونية يعاقب عليها.
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
     #أكادير24 | Agadir24 « الخلاصة أكادير24 | Agadir24 « خلاصة التعليقات
    أكادير24 | Agadir24 « أكادير : إشهار بالضوضاء و الضجيج لمحل تجاري معروف
@@ -2610,12 +2610,12 @@ Changed
    بأنهم عانوا الأمرين مع هذا الوضع الغير اللائق في مكان فوقه خمسة طوابق،
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
 -----
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
 
    وتستعرض “أثير” في هذا الموضوع حالة تداولتها منصات التواصل الاجتماعي
@@ -2666,12 +2666,12 @@ Changed
    بصورة سلمية وبالتفاوض، دون اللجوء إلى الأمور القانونية إلا في حالة
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
 -----
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
 -----
    [INS: :INS]
@@ -2690,7 +2690,7 @@ Changed
    ووفقًا للتقارير الواردة من وسائل الإعلام المحلية، كانت المشاجرة هي
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
 محافظات
 
@@ -2714,7 +2714,7 @@ Changed
 -----
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    أصدقاء لك على الدوام". لكن شعار إكس العملاق لم يبق كثيرًا في مكانه.
 
@@ -2757,7 +2757,7 @@ Changed
      إزالة شعار "#تويتر" من واجهة مقر الشركة في #سان_فرانسيسكو بولاية
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    الرئيسية [arrowBread.png?2] المرأة والمنوعات
 
@@ -2866,7 +2866,7 @@ Changed
    المنزل فعلى الطفل الرد بأنه لا يعرف و أن الإجابة عند الوالدين فقط،
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
      /
 
@@ -3062,7 +3062,7 @@ Changed
        أو هدية ما شابه.
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    (BUTTON) (BUTTON)
 
@@ -3077,7 +3077,7 @@ Changed
 -----
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    مع هذا الأمر.
 

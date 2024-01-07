@@ -1,5 +1,5 @@
 <lang="francais">
-<page=filename\>
+<page="filename">
 <text>
    Show Menu
 
@@ -82,7 +82,7 @@ Quelles sanctions pour mon voisin en cas d’atteinte à ma vie privée ?
    En cas d’atteinte à la vie privée, son auteur peut se voir condamner à
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    #Droits » Flux Droits » Flux des commentaires Droits » Mon voisin me
    cherche des ennuis : que prévoit la loi ? Flux des commentaires
@@ -200,7 +200,7 @@ Pour résumer – Mon voisin me cherche des ennuis
        terrain vous pouvez le mettre en demeure de les couper
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
      Vie pratique
 
@@ -650,7 +650,7 @@ Topic des voisins (monde de merde)
    (c) 2000-2011 Doctissimo
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    (BUTTON) Installer
 
@@ -734,7 +734,7 @@ Comment sont vos voisins?
    :d
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    Forum / Psychologie
 
@@ -917,7 +917,7 @@ Des voisins très envahissants
    peu..je ne suis pas sauvage mais pas question de me sentir redevable ou
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    Email catcher
 
@@ -1049,12 +1049,12 @@ Définition ancienne de VOISIN, INE adj.
    Ces définitions du XVII^e siècle, qui montrent l'évolution de la langue
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
 
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    Lire plus tard Enregistrer S’abonner au RSS
 
@@ -1226,7 +1226,7 @@ vigilants »
    2020/2(58-2), p. 189-216.
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    SOCIÉTÉ
 
@@ -1431,7 +1431,7 @@ Les variations locales du voisinage
        d'être violemment sacrifiée - pour...
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    Grand jeu concours jusqu'au 1er février 2023
 
@@ -1543,7 +1543,7 @@ Rejoignez l'aventure et devenez un voisin-relais Pickme !
    Services
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
      Cloture - muret
 
@@ -1972,7 +1972,7 @@ Jen ai soupé de mes voisins !
        extérieurs
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    Calvin0411
 
@@ -1990,7 +1990,7 @@ Comment expulser ses voisins ?
    mais personne n'y peux rien.
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
      Faire construire, par où commencer ?
 
@@ -2362,7 +2362,7 @@ Avis sur le comportement du voisin. Résolu
    administratif.
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    jeuxvideo.comTous les forumsForum Blabla 18-25 ans
 
@@ -2413,7 +2413,7 @@ Sujet : Voisin insupportable, que faire ?
    réprime le tapage nocturne.
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    #Flux - Forum 60 millions de consommateurs Flux - Tous les forums Flux
    - Nouveaux sujets Flux - Forum - Logement - Immobilier - Syndics -
@@ -2520,7 +2520,7 @@ Re: Voisins bruyants
    Albert77
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
      * » Forum
      * » Archives
@@ -2774,7 +2774,7 @@ Re : je hais mes voisins
 Pied de page des forums
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
      * Nuisances sonores
 
@@ -2992,7 +2992,7 @@ Marre des voisins!
    Voir plus
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
     3. Savoirs
     4. Les autres savoirs
@@ -3098,7 +3098,7 @@ Comprendre : ça fait 3 fois que je me déplace pour la musique en 8 jours et
      __________________________________________________________________
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    Ressources
 
@@ -3144,12 +3144,12 @@ Problème avec mon voisin je suis locataire je ne sais plus quoi faire
      * Servitude de passage : définition et conséquences
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
 
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    #Flux - Lesbambous.fr forum des fous de bambous Flux - Tous les forums
    Flux - Nouveaux sujets Flux - Sujets actifs Flux - Forum - Vos bambous
@@ -3326,7 +3326,7 @@ Re: Help ! Voisin envahissant...
                 Posté dans Les haies
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
      Stationnement
 
@@ -3431,7 +3431,7 @@ Problème de stationnement de mon voisin
      faire grand chose.
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    [INS: :INS]
 
@@ -3595,7 +3595,7 @@ Sujet : [Voisin] Vos pire Voisins ?
      toilettes :)
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    Voir les nouveaux messages | Chercher | Navigation:
    [- Forum général_______________________..]
@@ -3770,7 +3770,7 @@ Sujet : [Voisin] Vos pire Voisins ?
    Date: Thu 29 April 2010 03:28:17
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    Topic de nefaitespasESC :
 
@@ -3986,7 +3986,7 @@ les voisins = l'enfer sur terre
      touchait quasiment la mienne, en plus c'était un couple de jeunes
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
       Informations
 
@@ -4155,7 +4155,7 @@ Mon voisin menace mes chats
                 15
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
       Le Bar
 
@@ -4425,7 +4425,7 @@ Mon voisin menace mes chats
     0  #20
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
      * Revenir sur le site de Mieux-Apprendre
 
@@ -4451,7 +4451,7 @@ Parcourir les articles
      * Retour à la liste des articles
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
 
    >
@@ -4566,7 +4566,7 @@ Le voisin du 5ème, passionné de clous
    femme-regard-haut femme-regard-haut
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
     3. Opinions
 
@@ -4616,7 +4616,7 @@ Vos plus belles histoires de voisinage (TEMOIGNAGES)
    insoluble.
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    REFRESH(375 sec):
    https://www.selection.ca/sante/famille/histoires-de-voisinage/
@@ -4624,7 +4624,7 @@ Vos plus belles histoires de voisinage (TEMOIGNAGES)
    Enable JavaScript and cookies to continue
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
      * société
 
@@ -4662,7 +4662,7 @@ Caroline est harcelée par son voisin : "Je vis un véritable cauchemar"
    ma ville. Qu’est-ce que cela protège ? Qu’est-ce qu’il y a derrière ?
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
 « J'avais le droit à un : “Sale négresse ou grosse salope !” »
 
@@ -4720,7 +4720,7 @@ Je suis noire et mon voisin est raciste
    https://backend.streetpress.com/sites/default/files/le_nom_de_famille_d
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
           + Nos structures
 
@@ -4919,7 +4919,7 @@ Les plantations
    mauvais œil ces projets susceptibles de vous porter préjudice ? Vous
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    SOCIÉTÉ ET POLITIQUE
 
@@ -5047,7 +5047,7 @@ AUSSI SUR NEON
        autour de la sienne pour ne pas être embêté...
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    Envoyer
 
@@ -5236,7 +5236,7 @@ Bonne année !
    Je valide, c'est une VDM 2 775
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    #Fil des anecdotes Fil des commentaires Fil des commentaires du blog
 
@@ -5514,7 +5514,7 @@ Kadideo, vos idées cadeaux à partager
    01 02 03 04 05 06 07 08 09 10 >>
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    (BUTTON)
 
@@ -5680,7 +5680,7 @@ Les derniers contenus publiés
        devraient déménager)
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
      * Le Bistrot
      * Société
@@ -5863,7 +5863,7 @@ Lien vers le commentaire
      * Politique de confidentialité
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
     3. Insolite
 
@@ -5920,7 +5920,7 @@ Les 13 pires voisins de l'histoire....Moi perso j'ai le 8 dans mon immeuble !
    On a trouvé les pires chaussures de l'histoire de l'Humanité ! Et elles
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
      Lotissement
 
@@ -6030,7 +6030,7 @@ Voisinage bruit/ incivilité
    La piscine de leur jardin est devenue municipale,pas de savoir-vivre,
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    (BUTTON) Alerter (BUTTON) Copier le lien Le lien a été copié dans votre
    presse-papier
@@ -6136,12 +6136,12 @@ voisin qui se plaint du moindre bruit
    ta le proposer.
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
 
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    facebooktwitterlinkedinyoutubeWwikipedia
 
@@ -6343,7 +6343,7 @@ Nuisances sonores de voisinage : comment contraindre le bailleur à agir ?
    Résolue par Maître CISSE
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
      * Gestion des relations difficiles
 
@@ -6647,7 +6647,7 @@ Ennuyer son voisin si l'on vit en immeuble
             n'avez vraiment pas de jambon ? C'est bizarre quand même. »
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
 
    ____________________
@@ -6761,12 +6761,12 @@ Ennuyer son voisin si l'on vit en immeuble
      * Aide sur le BBcode
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
 
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
      * Rechercher
 
@@ -6947,7 +6947,7 @@ Re: URGENT : problème de voisinage
    Tous les contenus de Que Choisir
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    [ ] Basculer la table des matières
 
@@ -7058,7 +7058,7 @@ Voir aussi[modifier le wikicode]
      * français
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    facebooktwitterlinkedinyoutubeWwikipedia
 
@@ -7147,7 +7147,7 @@ Caméra de mon voisin
    J'ai une question cependant ... Ne pensez vous pas que même en étant
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    Accueil > Auto
 

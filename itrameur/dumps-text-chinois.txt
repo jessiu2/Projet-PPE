@@ -1,5 +1,5 @@
 <lang="chinois">
-<page=filename\>
+<page="filename">
 <text>
    #alternate
 
@@ -348,7 +348,7 @@
    © 2024 BBC. BBC对外部网站内容不负责任。 阅读了解我们对待外部链接的做法。
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    #alternate
 
@@ -508,7 +508,7 @@ BBC英伦网停止更新公告
    © 2024 BBC. BBC对外部网站内容不负责任。 阅读了解我们对待外部链接的做法。
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    #alternate alternate alternate alternate alternate alternate alternate
    alternate alternate alternate alternate alternate alternate
@@ -821,7 +821,7 @@ OSPF 邻居问题的典型原因
      * (需要思科服务合同)
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    #alternate
 
@@ -981,17 +981,17 @@ OSPF 邻居问题的典型原因
    免费获取
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
 
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    #alternate
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
 新浪新闻
 
@@ -1122,7 +1122,7 @@ OSPF 邻居问题的典型原因
    Sina.cn(京ICP证000007)   2024-01-07 02:59
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
                                   回目录
                                    邻居
@@ -1175,7 +1175,7 @@ OSPF 邻居问题的典型原因
                                   回目录
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    #wikiHow (zh) alternate alternate alternate alternate alternate
    alternate alternate alternate alternate alternate alternate alternate
@@ -1689,7 +1689,7 @@ OSPF 邻居问题的典型原因
    330
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    [shareImg.jpg]
 
@@ -1855,7 +1855,7 @@ OSPF 邻居问题的典型原因
    [1.gif?z=1&amp;_wdxid=010020030300000000000000011105721121270810]
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    You need to enable JavaScript to run this app.
 
@@ -1863,12 +1863,12 @@ OSPF 邻居问题的典型原因
    Captcha ChallengeHuman OR Robot??
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
 
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    logo 付费资讯 公司介绍 联系我们 用户注册
 
@@ -2111,7 +2111,7 @@ OSPF 邻居问题的典型原因
    取消
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    (BUTTON)
    首页
@@ -2335,7 +2335,7 @@ OSPF 邻居问题的典型原因
    ×
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    #alternate alternate alternate alternate Premium Executive Protection
    Company, Private Security Services » Feed Premium Executive Protection
@@ -2619,7 +2619,7 @@ OSPF 邻居问题的典型原因
    VIEW JOBS
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    #prev next
 
@@ -2872,7 +2872,7 @@ Neighbor Advertisement 发送¶
    Made with Material for MkDocs
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    #alternate
 
@@ -3396,7 +3396,7 @@ g.n_id = torch.arange(g.num_nodes)
    []
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    #alternate My Crazy Paris » Feed My Crazy Paris » Comments Feed My
    Crazy Paris » 你的邻居晚上夜夜蹦迪，白天翩翩起舞？治理攻略在这里… Comments Feed alternate
@@ -3804,7 +3804,7 @@ Leave a Reply Cancel reply
    © Copyright 2020 Crazy Paris.
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    [watermark]
 
@@ -3886,7 +3886,7 @@ Leave a Reply Cancel reply
      * QQ空间
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
 首页 | 华教资讯 | 师资培训 | 华文教材 | 网上课堂 | 中华文化 | 寻根之旅 | 教学园地 | 资源中心 | 基金会 | 华教社区
                                | 网站地图
@@ -3932,7 +3932,7 @@ Copyright ©2007-2008 www.hwjyw.com All Rights Reserved.  京ICP备08007911号
                         [不良和违法信息举报]
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    [?url=http%3A%2F%2Fdingyue.ws.126.net%2F2023%2F1121%2F48c127c1j00s4h228
    001zc000tb00l8m.jpg&amp;thumbnail=750x2147483647&amp;quality=75&amp;type=jpg] 网易
@@ -4258,7 +4258,7 @@ Copyright ©2007-2008 www.hwjyw.com All Rights Reserved.  京ICP备08007911号
    回到顶部 回到首页
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    #EdgeProp.my Search
 
@@ -4993,7 +4993,7 @@ Follow us
    Close clear
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    #alternate 编辑本页 Wikipedia (zh) alternate alternate alternate alternate
    alternate alternate alternate alternate alternate alternate
@@ -5210,7 +5210,7 @@ Follow us
      * (BUTTON) 开关有限宽度模式
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    (BUTTON) 切换导航
      * 北方网首页
@@ -5371,7 +5371,7 @@ Follow us
    [gohomepic.jpg]
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    #alternate
 
@@ -6155,7 +6155,7 @@ Follow us
    无障碍浏览 进入关怀版
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
      *  网站首页
      * 最新课表
@@ -6331,7 +6331,7 @@ Follow us
    浙公安备案号：33010502005499
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    预定义模板
    自定义模板
@@ -6519,7 +6519,7 @@ mominma
    [pixel.gif?refe=none]
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    [logo.png]
 
@@ -6595,7 +6595,7 @@ mominma
    [logo-bottom.png] [open-bottom.png]
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    ﻿
 
@@ -7275,7 +7275,7 @@ mominma
    返回顶部
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    问答详情
 
@@ -7428,7 +7428,7 @@ mominma
    隐私协议协侵投诉律师加盟
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    ﻿
 
@@ -7578,7 +7578,7 @@ mominma
        029-63907152 [label_sm_90030.png]
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
                                 403 Forbidden
      __________________________________________________________________
@@ -7586,7 +7586,7 @@ mominma
                                     nginx
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    #Our RSS feed alternate alternate alternate alternate alternate
 
@@ -8002,7 +8002,7 @@ Aggiorna il tuo browser
    Il Team de L’Unione Sarda.it
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    #alternate 编辑本页 Wiktionary (zh) alternate alternate alternate alternate
    Wiktionary的Atom feed
@@ -8245,7 +8245,7 @@ Aggiorna il tuo browser
      * (BUTTON) 开关有限宽度模式
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    我要投稿 投诉建议
 
@@ -9031,7 +9031,7 @@ Aggiorna il tuo browser
    Copyright©2007-2023fwsir.com版权所有
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    当前位置：作文网>作文训练>200字作文> 邻居作文
    我要投稿 投诉建议
@@ -9308,7 +9308,7 @@ Aggiorna il tuo browser
    Copyright©2001-2023zuowen.net版权所有
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    (BUTTON)
 
@@ -9501,7 +9501,7 @@ Users choice
    © 2024 zhcn.insterne.com
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    #bookmark
 
@@ -9621,7 +9621,7 @@ Hi糖果妈妈
    首页 导航 反馈 登录 Sina.cn(京ICP0000007) 2024-01-07 03:01
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    首页 年终总结活动总结合同范本工作计划工作报告读书笔记
    投诉建议 我要投稿
@@ -9868,12 +9868,12 @@ Hi糖果妈妈
    Copyright©2009-2023jy135.com版权所有
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
 
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    You need to enable JavaScript to run this app.
 
@@ -10005,7 +10005,7 @@ Hi糖果妈妈
    领红包
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    #alternate
 
@@ -10128,7 +10128,7 @@ Hi糖果妈妈
    [top.gif] [fd1.jpg] [fd3_hn.jpg] [fd5.jpg]
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    #从青丝到白发！来看光影中的守护与传承
 
@@ -10252,7 +10252,7 @@ Hi糖果妈妈
    河北互联网违法和不良信息举报 经营性备案信息 网络文化经营单位 中国互联网举报中心 新闻记者证管核系统
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    IFRAME: https://www.googletagmanager.com/ns.html?id=GTM-PHZ86CX
 
@@ -10856,7 +10856,7 @@ IPK学院师生访冬丁宜安老院 移交3000令吉捐款
    © Copyright 2019 Kwong Wah e-news - Solution Powered By Bluevy PLT
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    #搜索 youparis.com
 
@@ -11155,7 +11155,7 @@ Login Form
      * 网站地图
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    #alternate alternate alternate alternate
 
@@ -11498,7 +11498,7 @@ Login Form
    回到页首发表意见
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    31149126____________ 31149126,.在法国，邻居噪音扰民怎么办？,.2017-10-16 08:50:47
    ,.204278,.康凯凝、海外编辑部,.middle
@@ -11649,7 +11649,7 @@ Login Form
    责任编辑：康凯凝、海外编辑部
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    [] 产品文档
    (BUTTON)
@@ -12066,7 +12066,7 @@ GUI 程序
    (BUTTON) Request Change loader
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
      * Home
      * Skip to Content
@@ -12138,7 +12138,7 @@ Product Documentation
      * Ad Choices
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
     #bookmark
 

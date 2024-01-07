@@ -1,5 +1,5 @@
 <lang="francais">
-<page=filename\>
+<page="filename">
 <text>
    #alternate alternate alternate
 
@@ -229,7 +229,7 @@ Quelles sanctions pour mon voisin en cas d’atteinte à ma vie privée ?
    J'accepteJe refuseEn savoir plus
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    #Droits » Flux Droits » Flux des commentaires Droits » Mon voisin me
    cherche des ennuis : que prévoit la loi ? Flux des commentaires
@@ -467,7 +467,7 @@ Articles populaires
    supposerons que vous en êtes satisfait.OK
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
     Forum |
    HardWare.fr | News | Articles | PC | S'identifier | S'inscrire | Shop
@@ -2388,7 +2388,7 @@ Topic des voisins (monde de merde)
                Données personnelles) / Groupe LDLC / Shop HFR
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
     #next
 
@@ -3013,7 +3013,7 @@ Les Immanquables du forum
    ____________________
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    Explorez
    ____________________ ok
@@ -3900,7 +3900,7 @@ L'Oréal - Revitalift Filler Gel-Crème Repulpant
    IFRAME: https://www.googletagmanager.com/ns.html?id=GTM-WVM77R
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    #alternate
 
@@ -4109,7 +4109,7 @@ Définition ancienne de VOISIN, INE adj.
    légales Gestion des cookies CGU Le Robert et Google
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
     [javascript]
    Javascript ne semble pas être activé.
@@ -4119,7 +4119,7 @@ Définition ancienne de VOISIN, INE adj.
    bienmeloger.nc
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    #Syndiquer tout le site alternate
 
@@ -4571,7 +4571,7 @@ Articles populaires
    CGU Politique de confidentialité Mentions légales Basta! CC 2024
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
      * Société
      * Santé
@@ -4981,7 +4981,7 @@ Les articles les plus lus
    RÉSERVÉS
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    Grand jeu concours jusqu'au 1er février 2023
 
@@ -5171,7 +5171,7 @@ Sauvez les colis et la planète avec nous !
    Préférences
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    #next ForumConstruire.com Les messages du forum Les guides construction
 
@@ -6774,7 +6774,7 @@ Picto forum Autres discussions sur ce sujet :
    Picto notification Picto share Remonter en haut
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    Skip to main content
 
@@ -6964,7 +6964,7 @@ Comment expulser ses voisins ?
    Reddit, Inc. © 2024. All rights reserved.
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    #next ForumConstruire.com Les messages du forum Les guides construction
 
@@ -8307,7 +8307,7 @@ Picto forum Autres discussions sur ce sujet :
    Picto notification Picto share Remonter en haut
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    #alternate alternate alternate next
 
@@ -8693,7 +8693,7 @@ Sujets à ne pas manquer
    IFRAME: //www.googletagmanager.com/ns.html?id=GTM-T9WX8T
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    #Flux - Forum 60 millions de consommateurs Flux - Tous les forums Flux
    - Nouveaux sujets Flux - Forum - Logement - Immobilier - Syndics -
@@ -8955,7 +8955,7 @@ Qui est en ligne ?
    phpBB SEO
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    #Page 2
 
@@ -9706,7 +9706,7 @@ Pied de page des forums
      * Contact
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    Doctissimo : Santé et bien être avec Doctissimo Doctissimo
    Forums
@@ -10617,7 +10617,7 @@ Découvrez les sujets experts
    protection des données personnelles Conditions générales d’abonnement
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    #Forum Nouveaux tutoriels (RSS) Nouveaux tutoriels (ATOM) Nouveaux
    articles (RSS) Nouveaux articles (ATOM) Nouveaux billets (RSS) Nouveaux
@@ -11357,7 +11357,7 @@ Pas encore membre ?
      * Les cookies
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    Ekie
    (BUTTON)
@@ -11498,7 +11498,7 @@ Réponse de Équipe Ekie
    Nous rejoindre
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    Un problème est survenu. Veuillez patienter et réessayer plus tard.
    (BUTTON) Réessayer
@@ -11506,7 +11506,7 @@ Réponse de Équipe Ekie
    Veuillez activer Javascript et réactualiser la page pour continuer
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    #Flux - Lesbambous.fr forum des fous de bambous Flux - Tous les forums
    Flux - Nouveaux sujets Flux - Sujets actifs Flux - Forum - Vos bambous
@@ -12213,7 +12213,7 @@ Re: Help ! Voisin envahissant...
    Confidentialité | Conditions
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
     #Page 2
 
@@ -12823,7 +12823,7 @@ Problème de stationnement de mon voisin
                       d=7&amp;mode=iframe
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    #alternate alternate alternate prev next
 
@@ -13445,7 +13445,7 @@ Sujets à ne pas manquer
    IFRAME: //www.googletagmanager.com/ns.html?id=GTM-T9WX8T
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    ﻿
 
@@ -13772,7 +13772,7 @@ Sujets à ne pas manquer
                             page served in 0.083s
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    JvArchive Logo 🤬 (BUTTON) (BUTTON)
      * Recherche
@@ -14264,7 +14264,7 @@ JvArchive compagnon
      * Service Tor
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    #Flux - Forum sur les chats - Chat et Compagnie Flux - Nouvelles
    informations Flux - Tous les forums Flux - Nouveaux sujets Flux -
@@ -14879,7 +14879,7 @@ Mon voisin menace mes chats
    Quantcast
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    #Koreus.com Recherche Koreus.com : Les articles Koreus.com : Les
    derniers fichiers ajoutés Koreus.com : Les vidéos Koreus.com : Les
@@ -15521,7 +15521,7 @@ Suivez Koreus sur : ▶︎ Mastodon ▶︎ Twitter ▶︎ Telegram ▶︎ Dailym
       Merci de me contacter par mail. Déclaré à la CNIL N°1031721.
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    #» Flux » Flux des commentaires alternate alternate alternate
 
@@ -15768,7 +15768,7 @@ Suivez-nous, likez-nous :)
    (BUTTON)
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    #alternate alternate
 
@@ -16439,7 +16439,7 @@ Le voisin du 5ème, passionné de clous
    Politique cookies
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
     (BUTTON) (BUTTON)
      * Journal
@@ -16796,7 +16796,7 @@ Vos plus belles histoires de voisinage (TEMOIGNAGES)
    le site.
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    REFRESH(375 sec):
    https://www.selection.ca/sante/famille/histoires-de-voisinage/
@@ -16804,7 +16804,7 @@ Vos plus belles histoires de voisinage (TEMOIGNAGES)
    Enable JavaScript and cookies to continue
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
     En directProgrammesIsraël
    (BUTTON)
@@ -16999,7 +16999,7 @@ Caroline est harcelée par son voisin : "Je vis un véritable cauchemar"
    ent_type=&amp;content_id=&amp;content_level1=&amp;content_level2=&amp;content_level3=
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    IFRAME: https://www.googletagmanager.com/ns.html?id=GTM-ZRCYXT3R5N&amp;
 
@@ -17153,7 +17153,7 @@ La police ne fait rien
    A lire aussi
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
      * Accueil
      * Consommation
@@ -17901,7 +17901,7 @@ Où nous trouver ?
    (BUTTON) Tout accepter et fermer
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
     >
 
@@ -18212,7 +18212,7 @@ AUSSI SUR NEON
    RÉSERVÉS
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    IFRAME: https://www.googletagmanager.com/ns.html?id=GTM-TLZ3J94
 
@@ -18776,7 +18776,7 @@ VDM autour du monde
    Quantcast
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    #Fil des anecdotes Fil des commentaires Fil des commentaires du blog
 
@@ -19178,7 +19178,7 @@ Kadideo, vos idées cadeaux à partager
    simplifié
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    #Topito
 
@@ -19527,7 +19527,7 @@ Les articles les plus lus
    En savoir plus Accepter &amp; afficher
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    #next last
 
@@ -21496,7 +21496,7 @@ Pourquoi s'inscrire ?
        Logo Ma voiture cash
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    #Demotivateur - Dernières news
 
@@ -21728,7 +21728,7 @@ Au sujet de l'auteur : Nathan Weber
    facebook twitter instagram youtube tiktok snapchat
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    #ForumConstruire.com Les messages du forum Les guides construction
 
@@ -22177,7 +22177,7 @@ Picto forum C'est intéressant aussi !
    Picto notification Picto share Remonter en haut
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    Doctissimo : Santé et bien être avec Doctissimo Doctissimo
    Forums
@@ -23093,14 +23093,14 @@ Découvrez les sujets experts
    protection des données personnelles Conditions générales d’abonnement
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    #alternate alternate alternate alternate alternate alternate alternate
    alternate alternate alternate alternate alternate alternate alternate
    alternate alternate alternate alternate alternate alternate
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    Attention vous n'êtes pas connecté à internet.
 
@@ -24431,7 +24431,7 @@ Les dernières fiches pratiques de nos avocats en droit de la santé
    Fermer X
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    #wikiHow (fr) alternate alternate alternate alternate alternate
    alternate alternate alternate alternate alternate alternate alternate
@@ -25158,7 +25158,7 @@ Partager
    470
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
     #Les derniers articles Les brèves Agenda marocain Flux RSS
 
@@ -25840,12 +25840,12 @@ International
    Accèder directement au site X
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
 
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    #publisher Forum Que Choisir - Le forum des consommateurs
 
@@ -26268,7 +26268,7 @@ Qui est en ligne
    En savoir plus
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    #alternate Modifier Wiktionnaire (fr) Flux Atom de Wiktionnaire
 
@@ -26710,7 +26710,7 @@ Références[modifier le wikicode]
      * (BUTTON) Activer ou désactiver la limitation de largeur du contenu
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
    Attention vous n'êtes pas connecté à internet.
 
@@ -27434,7 +27434,7 @@ personnes
    Fermer X
 </text>
 </page> §
-<page=filename\>
+<page="filename">
 <text>
     #Flux RSS pour capital.fr
 
